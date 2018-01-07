@@ -16,10 +16,10 @@ limitations under the License.
 
 :root {
   /* Modify these to change your theme colors: */
-  --primary: #09F;
-  --text: #DDD;
-  --background: #111;
-  --background-elevated: #222;
+  --primary: #61AFEF;
+  --text: #ABB2BF;
+  --background: #282C34;
+  --background-elevated: #3B4048;
 
   /* These should be less important: */
   --background-hover: rgba(255, 255, 255, 0.1);
@@ -69,7 +69,7 @@ nav.p-channel_sidebar {
 
 #team_menu,
 body:not(.loading) #team_menu:hover,
-body:not(.loading) #team_menu:active {
+body:not(.loading) #team_menu:active{
   background-color: var(--background-elevated) !important;
 }
 
@@ -80,7 +80,10 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__channel:visited,
 .p-channel_sidebar__link:visited,
 .p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover {
+.p-channel_sidebar__link:hover,
+.creator_link,
+.creator_link:hover,
+.channel_link{
   color: var(--text) !important;
 }
 
@@ -89,7 +92,7 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
-.p-channel_sidebar__quickswitcher:hover {
+.p-channel_sidebar__quickswitcher:hover{
   color: var(--text-bright) !important;
 }
 
@@ -131,7 +134,7 @@ ts-jumper input[type="text"],
   background-color: var(--background-hover) !important;
   border-color: transparent;
   color: var(--text) !important;
-  height: 24px !important;
+
 }
 
 .p-channel_sidebar__close_container {
@@ -207,6 +210,7 @@ li.active[class] span,
 }
 
 ts-message, .channel_title .channel_name, ts-jumper input[type="text"],
+.channel_purpose_text,
 ts-jumper ol li .member_real_name, ts-jumper ol li .view_name, ts-jumper ol li .channel_name {
   color: var(--text) !important;
 }
@@ -402,9 +406,17 @@ span.match {
 
 .mention_rxn .mention_rxn_summary .app_preview_link,
 .mention_rxn .mention_rxn_summary .member_preview_link,
-.mention_rxn .mention_rxn_summary .mention_rxn_summary_members {
-  color: var(--text);
+.mention_rxn .mention_rxn_summary .mention_rxn_summary_members,
+.section_content,
+#member_preview_scroller .member_details .member_name_and_presence .member_name,
+#member_preview_web_container .member_details .member_name_and_presence .member_name,
+.menu_member_header .member_details .member_name_and_presence .member_name,
+.member_data_table a,
+.member_data_table span,
+.member_info_timezone *{
+  color: var(--text) !important;
 }
+
 
 #member_mentions h3 a {
   color: var(--text-special);
@@ -454,6 +466,10 @@ a:hover {
   color: var(--text);
 }
 
+.disclosure_triangle {
+  color: var(--text) !important;
+}
+
 .channels_list_holder ul li a.channel_name,
 .channels_list_holder ul li:not(.unread) .group_name,
 .channels_list_holder ul li .im_name,
@@ -501,12 +517,19 @@ ts-message a.timestamp {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--background-elevated)), color-stop(1, rgba(255, 255, 255, 0)));
 }
 
-.tab_container .file_list_item .contents .member, .tab_container .file_list_item .contents .service_link, .tab_container .file_list_item .contents .share_info, .tab_container .file_list_item .contents .time {
+.tab_container .file_list_item .contents .member,
+.tab_container .file_list_item .contents .service_link,
+.tab_container .file_list_item .contents .share_info,
+.tab_container .file_list_item .contents .time {
   color: var(--text-special);
 }
 
 .tab_container .file_list_item:focus, .tab_container .file_list_item:hover {
   background-color: var(--background-hover);
+}
+
+.file_list_item {
+  border: 1px solid var(--border-dim) !important;
 }
 
 /* files */
@@ -1036,3 +1059,35 @@ ts-jumper, ts-jumper.active {
 ts-jumper ts-jumper-container {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
 }
+
+ts-jumper ol li.highlighted:not(.no_hover),
+ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
+  background: var(--background-hover)!important;
+}
+
+.charcoal_grey {
+  color: var(--primary) !important;
+}
+
+.c-member__name,
+.c-member__display-name{
+  color: var(--text) !important;
+}
+
+.c-member__secondary-name{
+  color: var(--text) !important;
+  opacity: 0.64;
+  font-style: italic;
+}
+
+.c-member__title {
+  color: var(--text) !important;
+  opacity: 0.44;
+}
+
+.channel_page_member_row:hover,
+.im_browser_row:hover {
+  background: var(--background-hover)!important;
+  border: 1px solid rgba(0,0,0,0) !important;
+}
+
