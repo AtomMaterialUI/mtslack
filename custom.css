@@ -16,7 +16,7 @@ limitations under the License.
 
 :root {
   /* Modify these to change your theme colors: */
-  --primary: #61AFEF;
+  --primary: #E5C17C;
   --text: #ABB2BF;
   --background: #282C34;
   --background-elevated: #3B4048;
@@ -52,9 +52,8 @@ h1, h2, h3, h4 {
   z-index: 1;
 }
 
-/* Channel selector */
+/* Channel sidenav */
 /*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
-/*nav.p-channel_sidebar {*/
 div.client_channels_list_container {
   background-color: var(--background-elevated) !important;
   box-shadow: var(--background-elevated) 1px 1px 25px;
@@ -62,17 +61,20 @@ div.client_channels_list_container {
   z-index: 1;
 }
 
+/* Channel sidenav */
 nav.p-channel_sidebar {
   background-color: var(--background-elevated);
   color: var(--text);
 }
 
+/* Team selector */
 #team_menu,
 body:not(.loading) #team_menu:hover,
-body:not(.loading) #team_menu:active{
+body:not(.loading) #team_menu:active {
   background-color: var(--background-elevated) !important;
 }
 
+/* Channels */
 .p-channel_sidebar__channel,
 .p-channel_sidebar__link,
 .p-channel_sidebar__channel:link,
@@ -83,7 +85,8 @@ body:not(.loading) #team_menu:active{
 .p-channel_sidebar__link:hover,
 .creator_link,
 .creator_link:hover,
-.channel_link{
+.channel_link,
+.c-message__sender_link{
   color: var(--text) !important;
 }
 
@@ -92,7 +95,8 @@ body:not(.loading) #team_menu:active{
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
-.p-channel_sidebar__quickswitcher:hover{
+.c-message__sender_link:hover,
+.p-channel_sidebar__quickswitcher:hover {
   color: var(--text-bright) !important;
 }
 
@@ -102,14 +106,25 @@ __TODO-highlight-indicator {
   opacity: 1;
 }
 
-#msgs_scroller_div::-webkit-scrollbar-track, .client_container,
-#search_terms, #footer, ts-message, .channel_header, ts-jumper ts-jumper-container,
+/* Replace the background for all panels */
+#msgs_scroller_div::-webkit-scrollbar-track,
+.client_container /* main window */,
+#search_terms,
+#footer,
+.c-message,
+.channel_header,
+ts-jumper ts-jumper-container /* The jump to... */,
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
-#channel_header_info, #channel_topic_text, #channel_topic_text code, #edit_topic_inner:before {
+#channel_header_info /* Channel header info (number of members) */,
+#channel_topic_text,
+#channel_topic_text code,
+#edit_topic_inner:before,
+.toolbar_container {
   background: var(--background) !important;
 }
 
+/* Remove header box shadow */
 .channel_header, #col_messages, #footer {
   box-shadow: none;
 }
@@ -118,6 +133,7 @@ ts-jumper input[type="text"],
   color: var(--text);
 }
 
+/* Selected channel */
 .p-channel_sidebar__channel--selected,
 .p-channel_sidebar__link--selected,
 .p-channel_sidebar__channel--selected:link,
@@ -129,29 +145,27 @@ ts-jumper input[type="text"],
   background-color: var(--background) !important;
 }
 
+/* Hover channel */
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover {
   background-color: var(--background-hover) !important;
   border-color: transparent;
   color: var(--text) !important;
-
 }
 
 .p-channel_sidebar__close_container {
   background: none !important;
 }
 
+/* Add a border to focused selected channe */
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
   border: solid var(--border-dim);
   border-width: 1px 1px 1px 0;
 }
 
-/*broken*/
-li.active[class] span,
-#channels_scroller.show_which_channel_is_active[class] ul li.active .primary_action .prefix,
-#channels_scroller.show_which_channel_is_active[class] ul li.active .primary_action,
-#channels_scroller.show_which_channel_is_active[class] ul li.active .primary_action.im_name > *:not(.unread_highlights) {
+/* All File types active tab */
+li.active[class] span {
   color: var(--text-special) !important;
   background-color: transparent;
   opacity: 1;
@@ -193,40 +207,55 @@ li.active[class] span,
   border: 1px solid var(--scrollbar-border);
 }
 
-#channels_scroller.show_which_channel_is_active[class] li.active .presence.active i.presence_icon,
-#channels_scroller.show_which_channel_is_active[class] li.active .slackbot_icon,
-#channels_scroller.show_which_channel_is_active[class] li.active .presence.away i.presence_icon {
-  color: inherit !important;
-}
+/*#channels_scroller.show_which_channel_is_active[class] li.active .presence.active i.presence_icon,*/
+/*#channels_scroller.show_which_channel_is_active[class] li.active .slackbot_icon,*/
+/*#channels_scroller.show_which_channel_is_active[class] li.active .presence.away i.presence_icon {*/
+  /*color: inherit !important;*/
+/*}*/
 
-#client_body::before, #client_body:not(.onboarding):before {
+/* The chat window */
+#client_body::before,
+#client_body:not(.onboarding):before {
   border-bottom: 1px solid var(--border-dim) !important;
   background: var(--background);
   box-shadow: none;
 }
 
-#client_body, #messages_container.has_top_messages_banner:before {
+#client_body,
+#messages_container.has_top_messages_banner:before {
   background: var(--background) !important;
-}
-
-ts-message, .channel_title .channel_name, ts-jumper input[type="text"],
-.channel_purpose_text,
-ts-jumper ol li .member_real_name, ts-jumper ol li .view_name, ts-jumper ol li .channel_name {
   color: var(--text) !important;
 }
 
-.light_theme ts-message .message_content a.message_sender, #msg_input::-webkit-input-placeholder,
+.c-message,
+.c-message .c-message__sender,
+.c-message .c-message__content,
+.c-message .c-message__body,
+.c-message_attachment__text,
+.channel_title .channel_name,
+ts-jumper input[type="text"],
+.channel_purpose_text /* Right side channel details */,
+ts-jumper ol li .member_real_name /* Quick jump lists */,
+ts-jumper ol li .view_name,
+ts-jumper ol li .channel_name {
+  color: var(--text) !important;
+}
+
+/* File sender */
+a.message_sender,
+#msg_input::-webkit-input-placeholder,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
   color: var(--text) !important;
 }
 
-#msg_input, #primary_file_button {
+/* Input message - File button */
+#msg_input,
+#primary_file_button {
   background: transparent !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important;
 }
 
-.day_divider .day_divider_label,
 #convo_container .convo_flexpane_divider .reply_count {
   color: var(--text) !important;
   background-color: var(--background) !important;
@@ -234,10 +263,12 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
   border-radius: 1rem;
 }
 
-.mention_day_container_div .day_divider .day_divider_label {
+/* Mentions */
+.mention_day_container_div .c-message_list__day_divider__label {
   border: 1px solid var(--border-dim) !important;
 }
 
+/* Conversations */
 #convo_container .convo_flexpane_divider .reply_count {
   border-radius: 10px;
   padding: 0px 10px;
@@ -265,13 +296,13 @@ textarea:focus, input[type="text"]:focus, #file_comment_textarea {
   color: var(--text-bright) !important;
 }
 
-ts-message {
+.c-message {
   border-radius: 5px;
   margin: 1px 5px !important;
   box-shadow: none !important;
 }
 
-ts-message:hover {
+.c-message:hover {
   background: var(--background-hover) !important;
 }
 
@@ -294,7 +325,7 @@ ts-message:hover {
 #col_channels,
 #col_channels_footer,
 pre,
-ts-message .action_hover_container .btn_msg_action,
+.c-message .action_hover_container .btn_msg_action,
 .file_container,
 .file_container .CodeMirror .CodeMirror-code > div:before, .file_container .CodeMirror .sssh-line:before, .file_container .sssh-code .CodeMirror-code > div:before, .file_container .sssh-code .sssh-line:before,
 #col_flex,
@@ -317,7 +348,7 @@ ts-message .action_hover_container .btn_msg_action,
 }
 
 pre,
-ts-message .action_hover_container .btn_msg_action,
+.c-message .action_hover_container .btn_msg_action,
 .file_container .CodeMirror .CodeMirror-code > div pre, .file_container .CodeMirror .sssh-line pre, .file_container .sssh-code .CodeMirror-code > div pre, .file_container .sssh-code .sssh-line pre,
 .search_message_result .search_message_result_meta a,
 .search_message_result .search_message_result_meta .date_links a,
@@ -384,7 +415,7 @@ ts-message .action_hover_container .btn_msg_action,
   border-color: var(--background-elevated);
 }
 
-.feature_name_tagging_client ts-message .mention, ts-message .mention,
+.feature_name_tagging_client .c-message .mention, .c-message .mention,
 span.match {
   border: 1px solid var(--border-bright) !important;
   background-color: var(--background-elevated) !important;
@@ -413,12 +444,12 @@ span.match {
 .menu_member_header .member_details .member_name_and_presence .member_name,
 .member_data_table a,
 .member_data_table span,
-.member_info_timezone *{
+.member_info_timezone * {
   color: var(--text) !important;
 }
 
-
-#member_mentions h3 a {
+#member_mentions h3 a,
+.c-deprecated_button--link {
   color: var(--text-special);
 }
 
@@ -454,7 +485,7 @@ a, a:link, a:visited {
   color: var(--text-special);
 }
 
-ts-message a .mention {
+.c-message a .mention {
   color: var(--text-special) !important;
 }
 
@@ -475,7 +506,7 @@ a:hover {
 .channels_list_holder ul li .im_name,
 .channels_list_holder ul li .mpim_name,
 .channels_list_holder ul li > a:link,
-ts-message a.timestamp {
+.c-message a.timestamp {
   color: #aaa !important;
 }
 
@@ -700,7 +731,7 @@ ts-mention.ts_tip:hover {
 }
 
 /* threads */
-ts-message .reply_bar:hover {
+.c-message .reply_bar:hover {
   background: var(--background) !important;
   border: 1px solid var(--border-dim) !important;
 }
@@ -771,7 +802,7 @@ ts-thread .thread_messages,
   border-color: var(--border-dim);
 }
 
-#threads_msgs_scroller_div ts-thread ts-message {
+#threads_msgs_scroller_div ts-thread .c-message {
   margin: 0 !important;
   border-radius: 10px;
 }
@@ -826,7 +857,8 @@ ts-thread .view_all_replies_container:hover {
 }
 
 #threads_msgs_scroller_div .threads_caught_up_divider .divider_line,
-#threads_msgs_scroller_div .threads_caught_up_divider .divider_label {
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_label,
+.c-message_list__day_divider__label__pill {
   background-color: var(--background-elevated);
   border: 1px solid var(--border-dim);
   color: var(--text);
@@ -839,7 +871,8 @@ ts-thread .view_all_replies_container:hover {
 
 .unread_group_header,
 .sli_briefing, .sli_briefing__header, .sli_briefing__title,
-.sli_briefing_view__footer_title, .bottom_mark_all_read {
+.sli_briefing_view__footer_title, .bottom_mark_all_read,
+.c-message__bot_label {
   background-color: var(--background);
   color: var(--text);
   border-color: var(--border-dim);
@@ -1062,7 +1095,7 @@ ts-jumper ts-jumper-container {
 
 ts-jumper ol li.highlighted:not(.no_hover),
 ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
-  background: var(--background-hover)!important;
+  background: var(--background-hover) !important;
 }
 
 .charcoal_grey {
@@ -1070,11 +1103,11 @@ ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
 }
 
 .c-member__name,
-.c-member__display-name{
+.c-member__display-name {
   color: var(--text) !important;
 }
 
-.c-member__secondary-name{
+.c-member__secondary-name {
   color: var(--text) !important;
   opacity: 0.64;
   font-style: italic;
@@ -1087,7 +1120,7 @@ ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
 
 .channel_page_member_row:hover,
 .im_browser_row:hover {
-  background: var(--background-hover)!important;
-  border: 1px solid rgba(0,0,0,0) !important;
+  background: var(--background-hover) !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
 }
 
