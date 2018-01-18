@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://cdn.rawgit.com/mallowigi/slack-black-theme/master/custom.css';
+   const cssPath = 'https://raw.githubusercontent.com/mallowigi/slack-black-theme/master/custom.css';
    let cssPromise = fetch(cssPath).then(response => response.text());
 
    let customCustomCSS = `
@@ -117,16 +117,17 @@ Here's some example color variations you might like.
 --background-elevated: #114;
 ```
 
-## Hot Dog Stand
-![Hot Dog Stand](https://cloud.githubusercontent.com/assets/7691630/24120351/4cca6182-0d82-11e7-8de8-7ab99dcde042.png)
-```
---primary: #000;
---text: #FFF;
---background: #F00;
---background-elevated: #FF0;
-```
-
 # Development
+
+
+## Inspect
+
+Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
+
+To test your CSS, install a Stylish-like extension (https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) then create
+a new style for slack and paste the CSS inside and save.
+
+## Local Dev
 
 `git clone` the project and `cd` into it.
 
@@ -143,7 +144,7 @@ In addition to running the required modifications, you will likely want to add a
 
 ```js
 const cssPath = 'http://localhost:8080/custom.css';
-const localCssPath = '/Users/bryankeller/Code/slack-black-theme/custom.css';
+const localCssPath = '/Users/username/Code/slack-black-theme/custom.css';
 
 window.reloadCss = function() {
    const webviews = document.querySelectorAll(".TeamView webview");
