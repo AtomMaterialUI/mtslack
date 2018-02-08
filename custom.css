@@ -72,6 +72,32 @@ h1, h2, h3, h4 {
   #trouble_loading a {
     color: var(--text); }
 
+.client_container {
+  background: var(--background) !important; }
+
+.client_channels_list_container {
+  background-color: var(--background);
+  color: var(--text);
+  box-shadow: var(--background-elevated) 1px 1px 25px;
+  z-index: 1;
+  /* Team selector */ }
+  .client_channels_list_container #col_channels_overlay,
+  .client_channels_list_container #team_menu_overlay {
+    background: var(--background) !important; }
+    .client_channels_list_container #col_channels_overlay .overlay_mock_text,
+    .client_channels_list_container #team_menu_overlay .overlay_mock_text {
+      background: var(--background-hover); }
+  .client_channels_list_container #team_menu {
+    background-color: var(--background-elevated) !important;
+    border-color: transparent !important; }
+    .client_channels_list_container #team_menu:hover, .client_channels_list_container #team_menu:active {
+      background-color: var(--background-hover); }
+    .client_channels_list_container #team_menu .team_name_caret,
+    .client_channels_list_container #team_menu #team_name {
+      color: var(--text-bright); }
+    .client_channels_list_container #team_menu .notifications_menu_btn {
+      color: var(--text-bright); }
+
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3); }
 
@@ -83,23 +109,9 @@ h1, h2, h3, h4 {
   z-index: 1; }
 
 /* Channel sidenav */
-/*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
-div.client_channels_list_container {
-  background-color: var(--background-elevated) !important;
-  box-shadow: var(--background-elevated) 1px 1px 25px;
-  color: var(--text);
-  z-index: 1; }
-
-/* Channel sidenav */
 nav.p-channel_sidebar {
   background-color: var(--background-elevated);
   color: var(--text); }
-
-/* Team selector */
-#team_menu,
-body:not(.loading) #team_menu:hover,
-body:not(.loading) #team_menu:active {
-  background-color: var(--background-elevated) !important; }
 
 /* Channels */
 .p-channel_sidebar__channel,
@@ -132,8 +144,6 @@ __TODO-highlight-indicator {
 
 /* Replace the background for all panels */
 #msgs_scroller_div::-webkit-scrollbar-track,
-.client_container
-,
 #search_terms,
 #footer,
 .c-message,
@@ -809,7 +819,7 @@ div::-webkit-scrollbar-thumb {
   background-color: var(--background) !important;
   border: 0 1px 1px 1px solid var(--border-bright) !important; }
 
-#team_menu, #quick_switcher_btn, #team_menu_overlay, #col_channels_overlay {
+#quick_switcher_btn, #col_channels_overlay {
   border-color: transparent !important; }
 
 /* CodeMirror syntax highlighting */

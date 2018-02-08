@@ -53,6 +53,7 @@ $textSpecial: var(--text-special);
 @import "general";
 @import "dropzone";
 @import "popups";
+@import "main";
 
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3);
@@ -67,25 +68,9 @@ $textSpecial: var(--text-special);
 }
 
 /* Channel sidenav */
-/*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
-div.client_channels_list_container {
-  background-color: var(--background-elevated) !important;
-  box-shadow: var(--background-elevated) 1px 1px 25px;
-  color: var(--text);
-  z-index: 1;
-}
-
-/* Channel sidenav */
 nav.p-channel_sidebar {
   background-color: var(--background-elevated);
   color: var(--text);
-}
-
-/* Team selector */
-#team_menu,
-body:not(.loading) #team_menu:hover,
-body:not(.loading) #team_menu:active {
-  background-color: var(--background-elevated) !important;
 }
 
 /* Channels */
@@ -122,8 +107,6 @@ __TODO-highlight-indicator {
 
 /* Replace the background for all panels */
 #msgs_scroller_div::-webkit-scrollbar-track,
-.client_container /* main window */
-,
 #search_terms,
 #footer,
 .c-message,
@@ -935,7 +918,7 @@ div::-webkit-scrollbar-thumb {
   border: 0 1px 1px 1px solid var(--border-bright) !important;
 }
 
-#team_menu, #quick_switcher_btn, #team_menu_overlay, #col_channels_overlay {
+#quick_switcher_btn, #col_channels_overlay {
   border-color: transparent !important;
 }
 
