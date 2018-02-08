@@ -1,0 +1,27 @@
+h1, h2, h3, h4 {
+  color: $text;
+}
+
+.btn-link {
+  color: $primary;
+}
+
+.sk_fill_blue_bg,
+.blue_fill_bg,
+.seafoam_green_bg,
+.mustard_yellow_bg {
+  background: $accent !important;
+}
+
+.c-keyboard_key {
+  background: $bg;
+  border-color: $borderDim;
+  box-shadow: 0 1px $borderDim;
+  color: $text;
+}
+
+.c-button, .c-button--outline {
+  background: $bg;
+  color: $text;
+  box-shadow: inset 0 0 0 1px $borderDim;
+}

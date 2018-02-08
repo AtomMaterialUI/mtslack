@@ -1,0 +1,15 @@
+#trouble_loading {
+  background: $bg;
+  color: $text;
+  border-color: $borderDim;
+
+  transform: translateX(-52.75%) translateY(-52.75%);
+
+  h1, h2, h3 {
+    color: $textBright;
+  }
+
+  a {
+    color: $primary;
+  }
+}

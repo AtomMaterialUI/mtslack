@@ -13,6 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+
 :root {
   /* Modify these to change your theme colors: */
   --primary: #E5C17C;
@@ -20,67 +21,50 @@ limitations under the License.
   --text: #ABB2BF;
   --background: #282C34;
   --background-elevated: #3B4048;
+
   /* These should be less important: */
   --background-hover: rgba(255, 255, 255, 0.1);
   --background-light: #AAA;
   --background-bright: #FFF;
+
   --border-dim: #666;
   --border-bright: var(--primary);
+
   --text-bright: #FFF;
   --text-special: var(--primary);
+
   --scrollbar-background: #000;
-  --scrollbar-border: var(--primary); }
+  --scrollbar-border: var(--primary);
+}
 
-h1, h2, h3, h4 {
-  color: var(--text); }
+$primary: var(--text);
+$accent: var(--accent);
+$text: var(--text);
+$bg: var(--background);
+$bg2: var(--background-elevated);
+$bgHover: var(--background-hover);
+$bgLight: var(--background-light);
+$bgBright: var(--background-bright);
+$borderDim: var(--border-dim);
+$border: var(--border-bright);
+$textBright: var(--text-bright);
+$textSpecial: var(--text-special);
 
-.btn-link {
-  color: var(--text); }
-
-.sk_fill_blue_bg,
-.blue_fill_bg,
-.seafoam_green_bg,
-.mustard_yellow_bg {
-  background: var(--accent) !important; }
-
-.c-keyboard_key {
-  background: var(--background);
-  border-color: var(--border-dim);
-  box-shadow: 0 1px var(--border-dim);
-  color: var(--text); }
-
-.c-button, .c-button--outline {
-  background: var(--background);
-  color: var(--text);
-  box-shadow: inset 0 0 0 1px var(--border-dim); }
-
-#drop-zone,
-#over-storage-limit-modal {
-  background: var(--background-elevated);
-  color: var(--text); }
-  #drop-zone h1,
-  #over-storage-limit-modal h1 {
-    color: var(--text-bright); }
-
-#trouble_loading {
-  background: var(--background);
-  color: var(--text);
-  border-color: var(--border-dim);
-  transform: translateX(-52.75%) translateY(-52.75%); }
-  #trouble_loading h1, #trouble_loading h2, #trouble_loading h3 {
-    color: var(--text-bright); }
-  #trouble_loading a {
-    color: var(--text); }
+@import "general";
+@import "dropzone";
+@import "popups";
 
 .popover_mask {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {
   background-color: var(--background) !important;
   box-shadow: var(--background) 1px 1px 25px;
   color: var(--text);
-  z-index: 1; }
+  z-index: 1;
+}
 
 /* Channel sidenav */
 /*.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {*/
@@ -88,18 +72,21 @@ div.client_channels_list_container {
   background-color: var(--background-elevated) !important;
   box-shadow: var(--background-elevated) 1px 1px 25px;
   color: var(--text);
-  z-index: 1; }
+  z-index: 1;
+}
 
 /* Channel sidenav */
 nav.p-channel_sidebar {
   background-color: var(--background-elevated);
-  color: var(--text); }
+  color: var(--text);
+}
 
 /* Team selector */
 #team_menu,
 body:not(.loading) #team_menu:hover,
 body:not(.loading) #team_menu:active {
-  background-color: var(--background-elevated) !important; }
+  background-color: var(--background-elevated) !important;
+}
 
 /* Channels */
 .p-channel_sidebar__channel,
@@ -114,7 +101,8 @@ body:not(.loading) #team_menu:active {
 .creator_link:hover,
 .channel_link,
 .c-message__sender_link {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 /* Channel with unread messages */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
@@ -123,39 +111,44 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .c-message__sender_link:hover,
 .p-channel_sidebar__quickswitcher:hover {
-  color: var(--text-bright) !important; }
+  color: var(--text-bright) !important;
+}
 
 /*broken*/
 __TODO-highlight-indicator {
   background-color: var(--border-bright) !important;
-  opacity: 1; }
+  opacity: 1;
+}
 
 /* Replace the background for all panels */
 #msgs_scroller_div::-webkit-scrollbar-track,
-.client_container
+.client_container /* main window */
 ,
 #search_terms,
 #footer,
 .c-message,
 .channel_header,
-ts-jumper ts-jumper-container
+ts-jumper ts-jumper-container /* The jump to... */
 ,
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
-#channel_header_info
+#channel_header_info /* Channel header info (number of members) */
 ,
 #channel_topic_text,
 #channel_topic_text code,
 #edit_topic_inner:before,
 .toolbar_container {
-  background: var(--background) !important; }
+  background: var(--background) !important;
+}
 
 /* Remove header box shadow */
 .channel_header, #col_messages, #footer {
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 .p-channel_sidebar__channel a {
-  color: var(--text); }
+  color: var(--text);
+}
 
 /* Selected channel */
 .p-channel_sidebar__channel--selected,
@@ -166,43 +159,50 @@ ts-jumper input[type="text"],
 .p-channel_sidebar__link--selected:visited,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
-  background-color: var(--background) !important; }
+  background-color: var(--background) !important;
+}
 
 /* Hover channel */
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover {
   background-color: var(--background-hover) !important;
   border-color: transparent;
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .p-channel_sidebar__close_container {
-  background: none !important; }
+  background: none !important;
+}
 
 /* Add a border to focused selected channe */
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
   border: solid var(--border-dim);
-  border-width: 1px 1px 1px 0; }
+  border-width: 1px 1px 1px 0;
+}
 
 /* All File types active tab */
 li.active[class] span {
   color: var(--text-special) !important;
   background-color: transparent;
-  opacity: 1; }
+  opacity: 1;
+}
 
 /*"more unreads" bottom*/
 .p-channel_sidebar__banner--top {
   background-color: var(--background);
   border: 1px solid var(--border-bright);
   border-top: none;
-  border-radius: 0 0 15px 15px; }
+  border-radius: 0 0 15px 15px;
+}
 
 /*"more unreads" bottom */
 .p-channel_sidebar__banner--bottom {
   background-color: var(--background);
   border: 1px solid var(--border-bright);
   border-bottom: none;
-  border-radius: 15px 15px 0 0; }
+  border-radius: 15px 15px 0 0;
+}
 
 /*"unread mentions"*/
 .p-channel_sidebar__badge,
@@ -210,33 +210,39 @@ li.active[class] span {
   /*inverted because important*/
   background-color: var(--border-bright) !important;
   border-color: var(--text-bright);
-  color: var(--text-bright); }
+  color: var(--text-bright);
+}
 
 /*also add border to unread count for individual channels*/
 .p-channel_sidebar__badge {
-  border: 1px solid; }
+  border: 1px solid;
+}
 
 /* new scrollbar */
 .p-channel_sidebar div.c-custom_scrollbar__thumb_vertical, .p-channel_sidebar div.c-scrollbar__bar {
   background: var(--background-elevated);
-  border: 1px solid var(--scrollbar-border); }
+  border: 1px solid var(--scrollbar-border);
+}
 
 /*#channels_scroller.show_which_channel_is_active[class] li.active .presence.active i.presence_icon,*/
 /*#channels_scroller.show_which_channel_is_active[class] li.active .slackbot_icon,*/
 /*#channels_scroller.show_which_channel_is_active[class] li.active .presence.away i.presence_icon {*/
 /*color: inherit !important;*/
 /*}*/
+
 /* The chat window */
 #client_body::before,
 #client_body:not(.onboarding):before {
   border-bottom: 1px solid var(--border-dim) !important;
   background: var(--background);
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 #client_body,
 #messages_container.has_top_messages_banner:before {
   background: var(--background) !important;
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .c-message,
 .c-message .c-message__sender,
@@ -245,79 +251,94 @@ li.active[class] span {
 .c-message_attachment__text,
 .channel_title .channel_name,
 ts-jumper input[type="text"],
-.channel_purpose_text
+.channel_purpose_text /* Right side channel details */
 ,
-ts-jumper ol li .member_real_name
+ts-jumper ol li .member_real_name /* Quick jump lists */
 ,
 ts-jumper ol li .view_name,
 ts-jumper ol li .channel_name {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 /* File sender */
 a.message_sender,
 #msg_input::-webkit-input-placeholder,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 /* Input message - File button */
 #msg_input,
 #primary_file_button {
   background: transparent !important;
   color: var(--text) !important;
-  border-color: var(--border-dim) !important; }
+  border-color: var(--border-dim) !important;
+}
 
 #convo_container .convo_flexpane_divider .reply_count {
   color: var(--text) !important;
   background-color: var(--background) !important;
   border: 1px solid var(--border-bright) !important;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+}
 
 /* Mentions */
 .mention_day_container_div .c-message_list__day_divider__label {
-  border: 1px solid var(--border-dim) !important; }
+  border: 1px solid var(--border-dim) !important;
+}
 
 /* Conversations */
 #convo_container .convo_flexpane_divider .reply_count {
   border-radius: 10px;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+}
 
 .mention_day_container_div .day_divider:before {
   background-color: transparent !important;
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 .day_container .day_msgs {
   border-top: 1px solid var(--border-bright) !important;
   padding-right: 10px;
-  padding-left: 2px; }
+  padding-left: 2px;
+}
 
 textarea, input[type="text"], #file_comment_textarea {
   background-color: var(--background) !important;
   border-color: var(--border-dim) !important;
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 textarea:focus, input[type="text"]:focus, #file_comment_textarea {
   border-color: var(--border-bright) !important;
-  color: var(--text-bright) !important; }
+  color: var(--text-bright) !important;
+}
 
 .c-message {
   border-radius: 5px;
   margin: 1px 5px !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
 .c-message:hover {
-  background: var(--background-hover) !important; }
+  background: var(--background-hover) !important;
+}
 
 #messages_container::after {
-  background: none !important; }
+  background: none !important;
+}
 
 .bot_label {
   padding: 0 4px !important;
   border-radius: 3px !important;
   background: var(--background) !important;
-  border: 1px solid var(--border-bright); }
+  border: 1px solid var(--border-bright);
+}
 
 .file_container:after {
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, #333 100%) !important; }
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, #333 100%) !important;
+}
 
 .rxn,
 #col_channels,
@@ -333,7 +354,8 @@ pre,
 .menu,
 .menu #menu_items_scroller,
 .btn, .btn_outline {
-  background: var(--background-elevated) !important; }
+  background: var(--background-elevated) !important;
+}
 
 #flex_contents .heading,
 #flex_contents .heading a,
@@ -341,7 +363,8 @@ pre,
 #flex_contents .subheading {
   background: var(--background) !important;
   color: var(--text) !important;
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 pre,
 .c-message .action_hover_container .btn_msg_action,
@@ -354,23 +377,30 @@ pre,
 .menu ul li a,
 .btn, .btn_outline, .menu {
   color: var(--text) !important;
-  border-color: var(--border-dim) !important; }
+  border-color: var(--border-dim) !important;
+}
 
 .btn:hover:after {
-  border-color: var(--border-bright); }
+  border-color: var(--border-bright);
+}
 
 .action_hover_container {
-  border: 1px solid var(--border-dim) !important; }
+  border: 1px solid var(--border-dim) !important;
+}
 
 .ts_tip_float.btn_msg_action:not(:last-child) {
-  border-right: 1px solid var(--border-dim) !important; }
+  border-right: 1px solid var(--border-dim) !important;
+}
 
 .ts_tip_float.btn_msg_action:hover {
-  background-color: var(--background) !important; }
+  background-color: var(--background) !important;
+}
 
 #quick_switcher_btn {
   /*border-top-color: #333 !important;*/
-  background-color: transparent; }
+  background-color: transparent;
+
+}
 
 .rxn,
 .search_result_with_extract,
@@ -379,24 +409,30 @@ pre,
 #flex_contents .subheading,
 .search_segmented_control,
 .menu {
-  border-color: var(--border-dim) !important; }
+  border-color: var(--border-dim) !important;
+}
 
 .search_result_with_extract {
-  box-shadow: 0 1px 10px var(--background-elevated) !important; }
+  box-shadow: 0 1px 10px var(--background-elevated) !important;
+}
 
 .ql-placeholder {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .ql-container.texty_single_line_input {
   background-color: var(--background-elevated);
-  color: var(--text); }
+  color: var(--text);
+}
 
 .ql-container .ql-editor p {
-  color: var(--text); }
+  color: var(--text);
+}
 
 #quick_switcher_btn:active, #quick_switcher_btn:focus, #quick_switcher_btn:hover {
   background-color: var(--background-elevated);
-  border-color: var(--background-elevated); }
+  border-color: var(--background-elevated);
+}
 
 .feature_name_tagging_client .c-message .mention, .c-message .mention,
 span.match {
@@ -405,15 +441,18 @@ span.match {
   font-weight: bold;
   padding: 2px 4px;
   margin: 2px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .mention > .mention {
   /* I'm assuming this is a Slack bug */
-  border: none; }
+  border: none;
+}
 
 .mention_rxn {
   border-radius: 5px;
-  margin: 1px 5px; }
+  margin: 1px 5px;
+}
 
 .mention_rxn .mention_rxn_summary .app_preview_link,
 .mention_rxn .mention_rxn_summary .member_preview_link,
@@ -425,19 +464,23 @@ span.match {
 .member_data_table a,
 .member_data_table span,
 .member_info_timezone * {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 #member_mentions h3 a,
 .c-deprecated_button--link {
-  color: var(--text-special); }
+  color: var(--text-special);
+}
 
 pre.special_formatting {
-  background: var(--background-elevated) !important; }
+  background: var(--background-elevated) !important;
+}
 
 code {
   color: var(--text-special) !important;
   background-color: var(--background-elevated) !important;
-  border-color: var(--border-dim) !important; }
+  border-color: var(--border-dim) !important;
+}
 
 .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-thumb,
 .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-thumb,
@@ -445,7 +488,8 @@ code {
   /* scrollbar draggy bit */
   color: transparent !important;
   border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-track,
 .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-track,
@@ -453,22 +497,28 @@ code {
   /* scrollbar endcaps */
   color: transparent !important;
   border: 1px solid var(--border-dim) !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 a, a:link, a:visited {
-  color: var(--text-special); }
+  color: var(--text-special);
+}
 
 .c-message a .mention {
-  color: var(--text-special) !important; }
+  color: var(--text-special) !important;
+}
 
 a:hover {
-  color: var(--text-special) !important; }
+  color: var(--text-special) !important;
+}
 
 #msgs_scroller_div #end_display_div p {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .disclosure_triangle {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .channels_list_holder ul li a.channel_name,
 .channels_list_holder ul li:not(.unread) .group_name,
@@ -476,67 +526,84 @@ a:hover {
 .channels_list_holder ul li .mpim_name,
 .channels_list_holder ul li > a:link,
 .c-message a.timestamp {
-  color: #aaa !important; }
+  color: #aaa !important;
+}
 
 #channels_scroller.show_which_channel_is_active ul li.active .im_name {
-  color: #fff !important; }
+  color: #fff !important;
+}
 
 #msgs_div .unread_divider.no_unreads .divider_label {
   background: #000 !important;
-  color: #aaa !important; }
+  color: #aaa !important;
+}
 
 #msgs_div .unread_divider.no_unreads hr {
-  border-top-color: #888 !important; }
+  border-top-color: #888 !important;
+}
 
 .flexpane_redesign #member_mentions {
-  background-color: var(--background); }
+  background-color: var(--background);
+}
 
 #details_tab .channel_page_section {
-  background-color: var(--background-elevated); }
+  background-color: var(--background-elevated);
+}
 
 #details_tab .channel_page_section .section_title {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .greigh {
   /* greigh = label?? */
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .pinned_item .pin_member_name a, .pinned_item {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .pinned_item .pinned_message_text .pin_truncate_fade {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--background-elevated)), color-stop(1, rgba(255, 255, 255, 0))); }
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--background-elevated)), color-stop(1, rgba(255, 255, 255, 0)));
+}
 
 .tab_container .file_list_item .contents .member,
 .tab_container .file_list_item .contents .service_link,
 .tab_container .file_list_item .contents .share_info,
 .tab_container .file_list_item .contents .time {
-  color: var(--text-special); }
+  color: var(--text-special);
+}
 
 .tab_container .file_list_item:focus, .tab_container .file_list_item:hover {
-  background-color: var(--background-hover); }
+  background-color: var(--background-hover);
+}
 
 .file_list_item {
-  border: 1px solid var(--border-dim) !important; }
+  border: 1px solid var(--border-dim) !important;
+}
 
 /* files */
 .file_container.generic_container .file_header_meta .meta_hover {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 .file_preview_action.btn.ts_tip, .file_preview_link.btn.file_comment_link {
   border: 1px solid var(--border-bright) !important;
   background-color: var(--background-hover) !important;
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .file_preview_action.btn.ts_tip:hover, .file_preview_link.btn.file_comment_link:hover {
-  background-color: var(--background) !important; }
+  background-color: var(--background) !important;
+}
 
 /* user profile popup */
 #member_preview_scroller, #member_preview_web_container,
 .menu_member_header, .menu_member_footer {
   background-color: var(--background-elevated);
   border-color: var(--border-dim);
-  color: var(--text); }
+  color: var(--text);
+}
 
 /* user mentions for other people */
 .app_preview_link_slug.ts_tip,
@@ -548,27 +615,32 @@ ts-mention.ts_tip {
   border: 1px solid var(--border-dim);
   padding: 2px 4px;
   margin: 2px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .app_preview_link_slug.ts_tip:hover,
 .internal_member_link.ts_tip:hover,
 .internal_user_group_link.ts_tip:hover,
 ts-mention.ts_tip:hover {
   color: var(--text-bright) !important;
-  border: 1px solid var(--border-bright); }
+  border: 1px solid var(--border-bright);
+}
 
 /* emojis */
 .rxn[data-emoji] {
   /*background-color: var(--background-light) !important;
   transition: background-color 200ms ease-in;*/
-  height: 28px; }
+  height: 28px;
+}
 
 .rxn[data-emoji]:hover {
-  /*background-color: var(--background-bright) !important;*/ }
+  /*background-color: var(--background-bright) !important;*/
+}
 
 .rxn[data-emoji] .emoji_rxn_count {
   font-size: 0.9rem;
-  /*color: black !important;*/ }
+  /*color: black !important;*/
+}
 
 .rxn .emoji-sizer {
   background-color: transparent !important;
@@ -576,201 +648,245 @@ ts-mention.ts_tip:hover {
   width: 24px;
   height: 24px;
   margin: 0 0 0 -2px !important;
-  border: 1px solid transparent;
-  /* looks silly but it makes the outline work */ }
+  border: 1px solid transparent; /* looks silly but it makes the outline work */
+}
 
 .emoji-sizer {
   /* outline for black-on-transparent emojis */
-  -webkit-filter: drop-shadow(1px 0 0 var(--background-bright)) drop-shadow(-1px 0 0 var(--background-bright)) drop-shadow(0 1px 0 var(--background-bright)) drop-shadow(0 -1px 0 var(--background-bright));
-  margin: 0 !important; }
+  -webkit-filter: drop-shadow(1px 0 0 var(--background-bright)) drop-shadow(-1px 0 0 var(--background-bright)) drop-shadow(-0 1px 0 var(--background-bright)) drop-shadow(0 -1px 0 var(--background-bright));
+  margin: 0 !important;
+}
 
 .ts_icon.ts_icon_smile_o {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .emoji_menu_ng #emoji_input_container,
 #emoji_menu #emoji_menu_items_scroller,
 #emoji_menu #emoji_menu_footer,
 #emoji_menu #emoji_input_container {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .menu .p-emoji_picker__input_container,
 .menu .p-emoji_picker__list_container,
 .menu .p-emoji_picker__heading,
 .menu .p-emoji_picker__footer {
   background: transparent;
-  color: var(--text); }
+  color: var(--text);
+}
 
 .p-emoji_picker__group_tab {
   border: 1px solid transparent;
-  border-bottom-width: 2px; }
+  border-bottom-width: 2px;
+}
 
 .menu .p-emoji_picker__group_tab--active {
   background-color: var(--background);
   color: var(--text-special);
   border-color: var(--border-bright);
   border-width: 1px 1px 2px 1px;
-  border-style: solid; }
+  border-style: solid;
+}
 
 .p-emoji_picker__group_tab:hover {
   background-color: var(--background-elevated);
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 .p-emoji_picker__group_tab .emoji-sizer {
   filter: none;
-  -webkit-filter: none; }
+  -webkit-filter: none;
+}
 
 .p-emoji_picker__group_tab:hover .emoji-sizer {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .p-emoji_picker__preview_text {
   background-color: var(--background-elevated);
-  color: var(--text); }
+  color: var(--text);
+}
 
 #emoji_menu h3, #emoji_menu #emoji_preview_text {
   background-color: var(--background-elevated);
-  color: var(--text); }
+  color: var(--text);
+}
 
 #emoji_menu a.emoji_grouping_tab .emoji-sizer {
-  -webkit-filter: none; }
+  -webkit-filter: none;
+}
 
 .emoji_menu_ng #emoji_menu_header .emoji_grouping_tab.active {
   background-color: transparent;
   border-color: var(--border-bright);
   border-width: 1px 1px 3px 1px;
-  border-style: solid; }
+  border-style: solid;
+}
 
 .light_theme .emoji-only {
   line-height: 3rem;
   font-size: 3rem;
-  margin-top: 3px !important; }
+  margin-top: 3px !important;
+}
 
 /* menus */
 .menu ul li a, .menu ul li:not(.disabled) a {
-  border: 1px solid var(--background-elevated) !important; }
+  border: 1px solid var(--background-elevated) !important;
+}
 
 .menu ul li.highlighted a, .menu ul li:hover:not(.disabled) a {
   background: var(--background-elevated) !important;
-  border-color: var(--border-bright) !important; }
+  border-color: var(--border-bright) !important;
+}
 
 .menu .section_header .header_label {
   color: var(--text) !important;
-  background-color: var(--background-elevated) !important; }
+  background-color: var(--background-elevated) !important;
+}
 
 .menu .section_header hr {
-  border-color: transparent; }
+  border-color: transparent;
+}
 
 /* threads */
 .c-message .reply_bar:hover {
   background: var(--background) !important;
-  border: 1px solid var(--border-dim) !important; }
+  border: 1px solid var(--border-dim) !important;
+}
 
 /* editor in thread reply */
 #convo_tab .message_input, #convo_tab textarea#msg_text {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .inline_message_input_container .ql-container.focus,
 .inline_message_input_container .ql-container:active {
-  border-color: var(--border-dim) !important; }
+  border-color: var(--border-dim) !important;
+}
 
 #file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
 #reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
 .reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
 #convo_tab #convo_tab_header {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 /* other */
 .special_formatting_quote .quote_bar {
-  background: var(--border-bright) !important; }
+  background: var(--border-bright) !important;
+}
 
 #details_toggle.active:hover, #recent_mentions_toggle.active:hover,
 #stars_toggle.active:hover {
   background-color: var(--background-hover);
-  color: var(--text); }
+  color: var(--text);
+}
 
 #details_toggle.active, #recent_mentions_toggle.active,
 #sli_recap_toggle.active, #stars_toggle.active {
   background-color: var(--background-elevated);
   border: 1px solid var(--border-bright);
-  color: var(--border-bright); }
+  color: var(--border-bright);
+}
 
 .star_item,
 .current_status_input_for_team_menu .current_status_presets {
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 #archives_return, .messages_banner {
   color: var(--text);
   background-color: var(--background-elevated);
   border: 1px solid var(--border-bright);
   border-bottom: 0px;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+}
 
 #threads_msgs_scroller_div, ts-thread {
-  background-color: var(--background); }
+  background-color: var(--background);
+}
 
 ts-thread .thread_header .thread_channel_name a {
-  color: var(--text-special); }
+  color: var(--text-special);
+}
 
 #convo_tab .thread_participants, ts-thread .thread_participants {
-  color: var(--text); }
+  color: var(--text);
+}
 
 ts-thread .thread_messages,
 .reply_input_container .ql-container {
   background-color: var(--background);
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 #threads_msgs_scroller_div ts-thread .c-message {
   margin: 0 !important;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 ts-thread .collapse_inline_thread_container:hover,
 ts-thread .view_all_replies_container:hover {
-  background-color: var(--background-elevated); }
+  background-color: var(--background-elevated);
+}
 
 /* preferences page */
 #fs_modal, .modal, .modal-header, .modal-footer {
-  background-color: var(--background-elevated); }
+  background-color: var(--background-elevated);
+}
 
 #fs_modal, #fs_modal h1, #fs_modal h2,
 #fs_modal h3, #fs_modal h4, #fs_modal h5,
 .modal, .modal h1, .modal h2, .modal h3,
 .modal h4, .modal h5 {
-  color: var(--text); }
+  color: var(--text);
+}
 
 #fs_modal .fs_modal_file_viewer_header {
-  background: transparent; }
+  background: transparent;
+}
 
 #fs_modal .fs_modal_file_viewer_content .viewer {
-  background: var(--background); }
+  background: var(--background);
+}
 
 .fs_modal_file_viewer_header .control_btn {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .section_rollup:hover:not(.is_active) {
   background: var(--background-hover);
-  color: inherit; }
+  color: inherit;
+}
 
 #fs_modal #fs_modal_sidebar a {
   padding: 10px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.01);
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 #fs_modal #fs_modal_sidebar a:hover {
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 #fs_modal #fs_modal_sidebar a.is_active {
-  border-color: var(--border-bright); }
+  border-color: var(--border-bright);
+}
 
 #threads_msgs_scroller_div .threads_caught_up_divider .divider_line,
 #threads_msgs_scroller_div .threads_caught_up_divider .divider_label,
 .c-message_list__day_divider__label__pill {
   background-color: var(--background-elevated);
   border: 1px solid var(--border-dim);
-  color: var(--text); }
+  color: var(--text);
+}
 
 /* unreads */
 .unread_empty_state {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .unread_group_header,
 .sli_briefing, .sli_briefing__header, .sli_briefing__title,
@@ -778,198 +894,252 @@ ts-thread .view_all_replies_container:hover {
 .c-message__bot_label {
   background-color: var(--background);
   color: var(--text);
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 .unread_group_header button {
-  color: var(--text-special); }
+  color: var(--text-special);
+}
 
 /* scroller for threads & unreads */
 #threads_msgs_scroller_div:not(.loading):before {
-  background: var(--background); }
+  background: var(--background);
+}
 
 /* putting this on so many elements might cause performance issues but #yolo */
 div::-webkit-scrollbar-track {
-  display: none !important; }
+  display: none !important;
+}
 
 div::-webkit-scrollbar-thumb {
   color: transparent !important;
   border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 #threads_msgs_scroller_div:not(.loading):before {
-  background: none; }
+  background: none;
+}
 
 /* thread side panel */
+
 #mentions_scroller {
   background: var(--background) !important;
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 /* global (left sidebar) */
+
 #channel_scroll_down, #channel_scroll_up {
   background-color: var(--background) !important;
-  border: 0 1px 1px 1px solid var(--border-bright) !important; }
+  border: 0 1px 1px 1px solid var(--border-bright) !important;
+}
 
 #team_menu, #quick_switcher_btn, #team_menu_overlay, #col_channels_overlay {
-  border-color: transparent !important; }
+  border-color: transparent !important;
+}
 
 /* CodeMirror syntax highlighting */
 .cm-s-default .cm-header {
-  color: #66f; }
+  color: #66f
+}
 
 .cm-s-default .cm-quote {
-  color: #0f0; }
+  color: #0f0
+}
 
 .cm-negative {
-  color: #f44; }
+  color: #f44
+}
 
 .cm-positive {
-  color: #2f2; }
+  color: #2f2
+}
 
 .cm-s-default .cm-keyword {
-  color: #f0a; }
+  color: #f0a
+}
 
 .cm-s-default .cm-atom {
-  color: #7ff; }
+  color: #7ff
+}
 
 .cm-s-default .cm-number {
-  color: #5fa; }
+  color: #5fa
+}
 
 .cm-s-default .cm-def {
-  color: #37f; }
+  color: #37f
+}
 
 .cm-s-default .cm-variable-2 {
-  color: #09f; }
+  color: #09f
+}
 
 .cm-s-default .cm-variable-3 {
-  color: #0fa; }
+  color: #0fa
+}
 
 .cm-s-default .cm-comment {
-  color: #f80; }
+  color: #f80
+}
 
 .cm-s-default .cm-string {
-  color: #f33; }
+  color: #f33
+}
 
 .cm-s-default .cm-string-2 {
-  color: #f50; }
+  color: #f50
+}
 
 .cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
-  color: #aaa; }
+  color: #aaa
+}
 
 .cm-s-default .cm-builtin {
-  color: #96f; }
+  color: #96f
+}
 
 .cm-s-default .cm-bracket {
-  color: #ffa; }
+  color: #ffa
+}
 
 .cm-s-default .cm-tag {
-  color: #5f0; }
+  color: #5f0
+}
 
 .cm-s-default .cm-attribute {
-  color: #33f; }
+  color: #33f
+}
 
 .cm-s-default .cm-hr {
-  color: #ccc; }
+  color: #ccc
+}
 
 .cm-s-default .cm-link {
-  color: #33f; }
+  color: #33f
+}
 
 /* Snippets */
 select {
   background-color: var(--background);
   color: var(--text);
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 .CodeMirror, .CodeMirror .CodeMirror-gutters, .CodeMirror-gutter {
-  background-color: var(--background) !important;
+  background-color: var(--background) !important;;
   border-color: var(--border-bright);
-  color: var(--text); }
+  color: var(--text);
+}
 
 .CodeMirror .CodeMirror-line {
-  background-color: var(--background); }
+  background-color: var(--background);
+}
 
 .CodeMirror-cursor {
-  border-left-color: var(--text); }
+  border-left-color: var(--text);
+}
 
 .CodeMirror-selected {
-  background-color: rgba(255, 255, 255, 0.2) !important; }
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
 
 .modal div, .modal span, .modal label {
-  color: var(--text); }
+  color: var(--text);
+}
 
 .lazy_filter_select .lfs_list_container,
 .lazy_filter_select .lfs_list .lfs_item.active {
-  background-color: var(--background-elevated); }
+  background-color: var(--background-elevated);
+}
 
 .lfs_list::-webkit-scrollbar-track {
-  display: none; }
+  display: none;
+}
 
 .lfs_list::-webkit-scrollbar-thumb {
   color: transparent !important;
   border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 /* profile */
 #fs_modal #fs_modal_footer {
-  background-color: var(--background-elevated); }
+  background-color: var(--background-elevated)
+}
 
 #contents_container::-webkit-scrollbar-track {
-  display: none; }
+  display: none;
+}
 
 #contents_container::-webkit-scrollbar-thumb {
   color: transparent !important;
   border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 /* scroll border fix */
 .client_channels_list_container {
-  border-right: none; }
+  border-right: none;
+}
 
 .flex_pane_showing #col_flex {
-  border-color: var(--border-dim); }
+  border-color: var(--border-dim);
+}
 
 /* setting menu fix */
 #fs_modal.prefs_modal .global_notification_block {
   background: transparent;
-  border: none; }
+  border: none;
+}
 
 #fs_modal.prefs_modal .global_notification_block.selected {
   background: transparent;
-  border: 1px solid var(--border-bright); }
+  border: 1px solid var(--border-bright);
+}
 
 .notification_example.mac {
-  color: #555459;
-  /* default color - leave unthemed */ }
+  color: #555459; /* default color - leave unthemed */
+}
 
 /* global jumper */
 ts-jumper, ts-jumper.active {
-  background-color: rgba(32, 32, 32, 0.6); }
+  background-color: rgba(32, 32, 32, 0.6);
+}
 
 ts-jumper ts-jumper-container {
-  box-shadow: 0 5px 20px black; }
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+}
 
 ts-jumper ol li.highlighted:not(.no_hover),
 ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
-  background: var(--background-hover) !important; }
+  background: var(--background-hover) !important;
+}
 
 .charcoal_grey {
-  color: var(--primary) !important; }
+  color: var(--primary) !important;
+}
 
 .c-member__name,
 .c-member__display-name {
-  color: var(--text) !important; }
+  color: var(--text) !important;
+}
 
 .c-member__secondary-name {
   color: var(--text) !important;
   opacity: 0.64;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .c-member__title {
   color: var(--text) !important;
-  opacity: 0.44; }
+  opacity: 0.44;
+}
 
 .channel_page_member_row:hover,
 .im_browser_row:hover {
   background: var(--background-hover) !important;
-  border: 1px solid transparent !important; }
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+}
 
-/*# sourceMappingURL=custom.css.map */
