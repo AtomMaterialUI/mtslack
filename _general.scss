@@ -25,3 +25,16 @@ h1, h2, h3, h4 {
   color: $text;
   box-shadow: inset 0 0 0 1px $borderDim;
 }
+
+// Presence Indicators
+.presence {
+  color: $text;
+  &.active {
+    color: $green;
+  }
+}
+
+// Spinners
+.ts_icon_spin.ts_icon_spinner:empty, svg.ts_icon_spinner:empty {
+  filter: invert(50%);
+}

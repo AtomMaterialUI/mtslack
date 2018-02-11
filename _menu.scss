@@ -1,0 +1,38 @@
+// Menu at the top right
+.menu {
+  background: $bg2;
+  color: $text;
+  border-color: $borderDim;
+
+  #monkey_scroll_wrapper_for_menu_items_scroller {
+    background: $bg !important;
+  }
+
+  .monkey_scroll_bar {
+    background: $bg !important;
+  }
+
+  .monkey_scroll_handle_inner {
+    background: $bg !important;
+    border-color: $border !important;
+  }
+
+  #menu_items {
+    .flexpane_menu_item {
+      a, a:not(.disabled) {
+        background: $bg2 !important;
+        color: $text !important;
+        border-color: $borderDim !important;
+      }
+    }
+
+    .flexpane_menu_item.highlighted,
+    .flexpane_menu_item:hover {
+      a, a:not(.disabled) {
+        background: $bgHover !important;
+        color: $text !important;
+        border: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// The header at the top of the channel
+.channel_header {
+  background: $bg2;
+  box-shadow: none;
+}
+
+// The channel info
+.messages_header {
+  color: $text;
+
+  .channel_title .channel_name {
+    color: $text !important;
+  }
+
+  .channel_header_info {
+    background: $bg2;
+  }
+
+  .channel_header_info_item {
+    &::before {
+      color: $borderDim !important;
+    }
+  }
+
+  // The action buttons
+  .channel_title_info {
+    color: $textSpecial;
+  }
+
+}
+
+.channel_header_icon {
+  color: $textSpecial !important;
+}
+
+.search_form {
+  border-color: $borderDim;
+  background-color: $bg;
+
+  .icon_search {
+    color: $text;
+  }
+
+  .ql-placeholder {
+    color: $text;
+  }
+
+  // The search background
+  .ql-container.texty_single_line_input {
+    background-color: $bg;
+    color: $text;
+  }
+
+  // Query editor
+  .ql-container .ql-editor p {
+    color: $text;
+  }
+
+}
+
+#rxn_toast_div {
+  background: $bg;
+  border-color: $border;
+}

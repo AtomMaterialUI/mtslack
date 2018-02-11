@@ -23,7 +23,7 @@ limitations under the License.
   --background-elevated: #3B4048;
 
   /* These should be less important: */
-  --background-hover: rgba(255, 255, 255, 0.1);
+  --background-hover: lighten(#3B4048, 10%);
   --background-light: #AAA;
   --background-bright: #FFF;
 
@@ -35,6 +35,18 @@ limitations under the License.
 
   --scrollbar-background: #000;
   --scrollbar-border: var(--primary);
+
+  --green: #98C379;
+  --cyan: #56B6C2;
+  --blue: #61AFEF;
+  --purple: #C678DD;
+  --red: #E06C75;
+  --red2: #BE5046;
+  --orange: #D19A66;
+  --orange2: #E5707B;
+  --gray: #3E4451;
+  --silver: #9da5b4;
+  --black: #21252b;
 }
 
 $primary: var(--text);
@@ -50,10 +62,24 @@ $border: var(--border-bright);
 $textBright: var(--text-bright);
 $textSpecial: var(--text-special);
 
+$green: var(--green);
+$cyan: var(--cyan);
+$blue: var(--blue);
+$purple: var(--purple);
+$red: var(--red);
+$red2: var(--red2);
+$orange: var(--orange);
+$orange2: var(--orange2);
+$gray: var(--gray);
+$silver: var(--silver);
+$black: var(--black);
+
 @import "general";
 @import "dropzone";
 @import "popups";
+@import "loading";
 @import "main";
+@import "menu";
 
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3);
@@ -110,13 +136,10 @@ __TODO-highlight-indicator {
 #search_terms,
 #footer,
 .c-message,
-.channel_header,
 ts-jumper ts-jumper-container /* The jump to... */
 ,
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
-#channel_header_info /* Channel header info (number of members) */
-,
 #channel_topic_text,
 #channel_topic_text code,
 #edit_topic_inner:before,
@@ -125,7 +148,7 @@ ts-jumper input[type="text"],
 }
 
 /* Remove header box shadow */
-.channel_header, #col_messages, #footer {
+#col_messages, #footer {
   box-shadow: none;
 }
 
@@ -213,15 +236,6 @@ li.active[class] span {
 /*color: inherit !important;*/
 /*}*/
 
-/* The chat window */
-#client_body::before,
-#client_body:not(.onboarding):before {
-  border-bottom: 1px solid var(--border-dim) !important;
-  background: var(--background);
-  box-shadow: none;
-}
-
-#client_body,
 #messages_container.has_top_messages_banner:before {
   background: var(--background) !important;
   color: var(--text) !important;
@@ -232,7 +246,6 @@ li.active[class] span {
 .c-message .c-message__content,
 .c-message .c-message__body,
 .c-message_attachment__text,
-.channel_title .channel_name,
 ts-jumper input[type="text"],
 .channel_purpose_text /* Right side channel details */
 ,
@@ -334,7 +347,6 @@ pre,
 .search_message_result,
 .search_result_with_extract,
 #search_filters a,
-.menu,
 .menu #menu_items_scroller,
 .btn, .btn_outline {
   background: var(--background-elevated) !important;
@@ -390,26 +402,12 @@ pre,
 .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex,
 .flexpane_redesign #flex_contents .heading,
 #flex_contents .subheading,
-.search_segmented_control,
-.menu {
+.search_segmented_control {
   border-color: var(--border-dim) !important;
 }
 
 .search_result_with_extract {
   box-shadow: 0 1px 10px var(--background-elevated) !important;
-}
-
-.ql-placeholder {
-  color: var(--text);
-}
-
-.ql-container.texty_single_line_input {
-  background-color: var(--background-elevated);
-  color: var(--text);
-}
-
-.ql-container .ql-editor p {
-  color: var(--text);
 }
 
 #quick_switcher_btn:active, #quick_switcher_btn:focus, #quick_switcher_btn:hover {
@@ -711,16 +709,6 @@ ts-mention.ts_tip:hover {
   line-height: 3rem;
   font-size: 3rem;
   margin-top: 3px !important;
-}
-
-/* menus */
-.menu ul li a, .menu ul li:not(.disabled) a {
-  border: 1px solid var(--background-elevated) !important;
-}
-
-.menu ul li.highlighted a, .menu ul li:hover:not(.disabled) a {
-  background: var(--background-elevated) !important;
-  border-color: var(--border-bright) !important;
 }
 
 .menu .section_header .header_label {

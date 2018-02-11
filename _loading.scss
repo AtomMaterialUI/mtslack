@@ -1,0 +1,16 @@
+#loading-zone {
+  background: $bg !important;
+  color: $text !important;
+
+  .infinite_spinner_blue {
+    stroke: $primary !important;
+  }
+}
+
+#loading_message p {
+  color: $textBright !important;
+}
+
+#loading_message_attribution {
+  color: $text !important;
+}

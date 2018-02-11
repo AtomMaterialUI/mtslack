@@ -21,7 +21,7 @@ limitations under the License.
   --background: #282C34;
   --background-elevated: #3B4048;
   /* These should be less important: */
-  --background-hover: rgba(255, 255, 255, 0.1);
+  --background-hover: #525964;
   --background-light: #AAA;
   --background-bright: #FFF;
   --border-dim: #666;
@@ -29,7 +29,18 @@ limitations under the License.
   --text-bright: #FFF;
   --text-special: var(--primary);
   --scrollbar-background: #000;
-  --scrollbar-border: var(--primary); }
+  --scrollbar-border: var(--primary);
+  --green: #98C379;
+  --cyan: #56B6C2;
+  --blue: #61AFEF;
+  --purple: #C678DD;
+  --red: #E06C75;
+  --red2: #BE5046;
+  --orange: #D19A66;
+  --orange2: #E5707B;
+  --gray: #3E4451;
+  --silver: #9da5b4;
+  --black: #21252b; }
 
 h1, h2, h3, h4 {
   color: var(--text); }
@@ -54,6 +65,14 @@ h1, h2, h3, h4 {
   color: var(--text);
   box-shadow: inset 0 0 0 1px var(--border-dim); }
 
+.presence {
+  color: var(--text); }
+  .presence.active {
+    color: var(--green); }
+
+.ts_icon_spin.ts_icon_spinner:empty, svg.ts_icon_spinner:empty {
+  filter: invert(50%); }
+
 #drop-zone,
 #over-storage-limit-modal {
   background: var(--background-elevated);
@@ -71,6 +90,18 @@ h1, h2, h3, h4 {
     color: var(--text-bright); }
   #trouble_loading a {
     color: var(--text); }
+
+#loading-zone {
+  background: var(--background) !important;
+  color: var(--text) !important; }
+  #loading-zone .infinite_spinner_blue {
+    stroke: var(--text) !important; }
+
+#loading_message p {
+  color: var(--text-bright) !important; }
+
+#loading_message_attribution {
+  color: var(--text) !important; }
 
 .client_container {
   background: var(--background) !important; }
@@ -97,6 +128,71 @@ h1, h2, h3, h4 {
       color: var(--text-bright); }
     .client_channels_list_container #team_menu .notifications_menu_btn {
       color: var(--text-bright); }
+
+.client_main_container .channel_header {
+  background: var(--background-elevated);
+  box-shadow: none; }
+.client_main_container .messages_header {
+  color: var(--text); }
+  .client_main_container .messages_header .channel_title .channel_name {
+    color: var(--text) !important; }
+  .client_main_container .messages_header .channel_header_info {
+    background: var(--background-elevated); }
+  .client_main_container .messages_header .channel_header_info_item::before {
+    color: var(--border-dim) !important; }
+  .client_main_container .messages_header .channel_title_info {
+    color: var(--text-special); }
+.client_main_container .channel_header_icon {
+  color: var(--text-special) !important; }
+.client_main_container .search_form {
+  border-color: var(--border-dim);
+  background-color: var(--background); }
+  .client_main_container .search_form .icon_search {
+    color: var(--text); }
+  .client_main_container .search_form .ql-placeholder {
+    color: var(--text); }
+  .client_main_container .search_form .ql-container.texty_single_line_input {
+    background-color: var(--background);
+    color: var(--text); }
+  .client_main_container .search_form .ql-container .ql-editor p {
+    color: var(--text); }
+.client_main_container #rxn_toast_div {
+  background: var(--background);
+  border-color: var(--border-bright); }
+.client_main_container #client_body {
+  background: var(--background);
+  color: var(--text); }
+  .client_main_container #client_body::before {
+    border-bottom: 1px solid var(--border-dim) !important;
+    background: var(--background);
+    box-shadow: none; }
+
+.p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+  border-bottom-color: var(--border-dim) !important;
+  background: var(--background); }
+
+.menu {
+  background: var(--background-elevated);
+  color: var(--text);
+  border-color: var(--border-dim); }
+  .menu #monkey_scroll_wrapper_for_menu_items_scroller {
+    background: var(--background) !important; }
+  .menu .monkey_scroll_bar {
+    background: var(--background) !important; }
+  .menu .monkey_scroll_handle_inner {
+    background: var(--background) !important;
+    border-color: var(--border-bright) !important; }
+  .menu #menu_items .flexpane_menu_item a, .menu #menu_items .flexpane_menu_item a:not(.disabled) {
+    background: var(--background-elevated) !important;
+    color: var(--text) !important;
+    border-color: var(--border-dim) !important; }
+  .menu #menu_items .flexpane_menu_item.highlighted a, .menu #menu_items .flexpane_menu_item.highlighted a:not(.disabled),
+  .menu #menu_items .flexpane_menu_item:hover a,
+  .menu #menu_items .flexpane_menu_item:hover a:not(.disabled) {
+    background: var(--background-hover) !important;
+    color: var(--text) !important;
+    border: none !important; }
 
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -147,13 +243,10 @@ __TODO-highlight-indicator {
 #search_terms,
 #footer,
 .c-message,
-.channel_header,
 ts-jumper ts-jumper-container
 ,
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
-#channel_header_info
-,
 #channel_topic_text,
 #channel_topic_text code,
 #edit_topic_inner:before,
@@ -161,7 +254,7 @@ ts-jumper input[type="text"],
   background: var(--background) !important; }
 
 /* Remove header box shadow */
-.channel_header, #col_messages, #footer {
+#col_messages, #footer {
   box-shadow: none; }
 
 .p-channel_sidebar__channel a {
@@ -236,14 +329,6 @@ li.active[class] span {
 /*#channels_scroller.show_which_channel_is_active[class] li.active .presence.away i.presence_icon {*/
 /*color: inherit !important;*/
 /*}*/
-/* The chat window */
-#client_body::before,
-#client_body:not(.onboarding):before {
-  border-bottom: 1px solid var(--border-dim) !important;
-  background: var(--background);
-  box-shadow: none; }
-
-#client_body,
 #messages_container.has_top_messages_banner:before {
   background: var(--background) !important;
   color: var(--text) !important; }
@@ -253,7 +338,6 @@ li.active[class] span {
 .c-message .c-message__content,
 .c-message .c-message__body,
 .c-message_attachment__text,
-.channel_title .channel_name,
 ts-jumper input[type="text"],
 .channel_purpose_text
 ,
@@ -340,7 +424,6 @@ pre,
 .search_message_result,
 .search_result_with_extract,
 #search_filters a,
-.menu,
 .menu #menu_items_scroller,
 .btn, .btn_outline {
   background: var(--background-elevated) !important; }
@@ -387,22 +470,11 @@ pre,
 .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex,
 .flexpane_redesign #flex_contents .heading,
 #flex_contents .subheading,
-.search_segmented_control,
-.menu {
+.search_segmented_control {
   border-color: var(--border-dim) !important; }
 
 .search_result_with_extract {
   box-shadow: 0 1px 10px var(--background-elevated) !important; }
-
-.ql-placeholder {
-  color: var(--text); }
-
-.ql-container.texty_single_line_input {
-  background-color: var(--background-elevated);
-  color: var(--text); }
-
-.ql-container .ql-editor p {
-  color: var(--text); }
 
 #quick_switcher_btn:active, #quick_switcher_btn:focus, #quick_switcher_btn:hover {
   background-color: var(--background-elevated);
@@ -653,14 +725,6 @@ ts-mention.ts_tip:hover {
   line-height: 3rem;
   font-size: 3rem;
   margin-top: 3px !important; }
-
-/* menus */
-.menu ul li a, .menu ul li:not(.disabled) a {
-  border: 1px solid var(--background-elevated) !important; }
-
-.menu ul li.highlighted a, .menu ul li:hover:not(.disabled) a {
-  background: var(--background-elevated) !important;
-  border-color: var(--border-bright) !important; }
 
 .menu .section_header .header_label {
   color: var(--text) !important;

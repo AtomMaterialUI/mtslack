@@ -1,0 +1,10 @@
+#client_body {
+  background: $bg;
+  color: $text;
+
+  &::before {
+    border-bottom: 1px solid $borderDim !important;
+    background: $bg;
+    box-shadow: none;
+  }
+}
