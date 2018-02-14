@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
   color: var(--text); }
 
 .btn-link {
-  color: var(--text); }
+  color: var(--primary); }
 
 .sk_fill_blue_bg,
 .blue_fill_bg,
@@ -95,13 +95,17 @@ h1, h2, h3, h4 {
   #trouble_loading h1, #trouble_loading h2, #trouble_loading h3 {
     color: var(--text-bright); }
   #trouble_loading a {
-    color: var(--text); }
+    color: var(--primary); }
+
+.popover_menu {
+  background: var(--background);
+  border-color: var(--border-dim); }
 
 #loading-zone {
   background: var(--background) !important;
   color: var(--text) !important; }
   #loading-zone .infinite_spinner_blue {
-    stroke: var(--text) !important; }
+    stroke: var(--primary) !important; }
 
 #loading_message p {
   color: var(--text-bright) !important; }
@@ -149,12 +153,12 @@ h1, h2, h3, h4 {
           font-weight: bold !important; }
       .client_channels_list_container #col_channels .p-channel_sidebar__badge {
         border: 1px solid;
-        background-color: var(--text) !important;
-        border-color: var(--text) !important;
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
         color: var(--text-bright) !important; }
       .client_channels_list_container #col_channels .p-channel_sidebar__banner--mentions {
-        background-color: var(--text) !important;
-        border-color: var(--text) !important;
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
         color: var(--text-bright) !important; }
       .client_channels_list_container #col_channels .p-channel_sidebar__link, .client_channels_list_container #col_channels .p-channel_sidebar__channel {
         color: var(--text) !important; }
@@ -167,10 +171,11 @@ h1, h2, h3, h4 {
           color: var(--text-bright) !important; }
         .client_channels_list_container #col_channels .p-channel_sidebar__link--selected, .client_channels_list_container #col_channels .p-channel_sidebar__channel--selected {
           background: var(--background) !important;
-          border: solid var(--border-dim);
-          border-width: 1px 1px 1px 0; }
+          border: solid var(--border-bright);
+          border-width: 1px 1px 1px 0;
+          border-radius: 0 20px 20px 0; }
           .client_channels_list_container #col_channels .p-channel_sidebar__link--selected .c-presence, .client_channels_list_container #col_channels .p-channel_sidebar__channel--selected .c-presence {
-            color: var(--accent) !important; }
+            color: var(--primary) !important; }
         .client_channels_list_container #col_channels .p-channel_sidebar__link--draft, .client_channels_list_container #col_channels .p-channel_sidebar__channel--draft {
           font-style: italic; }
         .client_channels_list_container #col_channels .p-channel_sidebar__link .c-presence--away, .client_channels_list_container #col_channels .p-channel_sidebar__channel .c-presence--away {
@@ -199,13 +204,16 @@ h1, h2, h3, h4 {
 .client_main_container .messages_header {
   color: var(--text); }
   .client_main_container .messages_header .channel_title .channel_name {
-    color: var(--text) !important; }
+    color: var(--text-bright) !important; }
   .client_main_container .messages_header .channel_header_info {
     background: var(--background-elevated); }
   .client_main_container .messages_header .channel_header_info_item::before {
     color: var(--border-dim) !important; }
   .client_main_container .messages_header .channel_title_info {
     color: var(--text-special); }
+  .client_main_container .messages_header #channel_topic_text::before {
+    background: var(--background-elevated) !important;
+    border: none !important; }
 .client_main_container .channel_header_icon {
   color: var(--text-special) !important; }
 .client_main_container .search_form {
@@ -289,9 +297,7 @@ ts-jumper ts-jumper-container
 ,
 ts-jumper input[type="text"],
 .supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
-#channel_topic_text,
 #channel_topic_text code,
-#edit_topic_inner:before,
 .toolbar_container {
   background: var(--background) !important; }
 

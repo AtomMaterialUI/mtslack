@@ -85,12 +85,13 @@
         }
         &--selected {
           background: $bg !important;
-          border: solid $borderDim;
+          border: solid $border;
           border-width: 1px 1px 1px 0;
+          border-radius: 0 20px 20px 0;
 
           // Highlight presence of current channel
           .c-presence {
-            color: $accent !important;
+            color: $primary !important;
           }
         }
 

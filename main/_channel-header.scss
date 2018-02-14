@@ -9,7 +9,7 @@
   color: $text;
 
   .channel_title .channel_name {
-    color: $text !important;
+    color: $textBright !important;
   }
 
   .channel_header_info {
@@ -27,6 +27,10 @@
     color: $textSpecial;
   }
 
+  #channel_topic_text::before {
+    background: $bg2 !important;
+    border: none !important;
+  }
 }
 
 .channel_header_icon {
