@@ -93,36 +93,12 @@ $black: var(--black);
   z-index: 1;
 }
 
-/* Channel sidenav */
-nav.p-channel_sidebar {
-  background-color: var(--background-elevated);
-  color: var(--text);
-}
-
 /* Channels */
-.p-channel_sidebar__channel,
-.p-channel_sidebar__link,
-.p-channel_sidebar__channel:link,
-.p-channel_sidebar__link:link,
-.p-channel_sidebar__channel:visited,
-.p-channel_sidebar__link:visited,
-.p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover,
 .creator_link,
 .creator_link:hover,
 .channel_link,
 .c-message__sender_link {
   color: var(--text) !important;
-}
-
-/* Channel with unread messages */
-.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
-.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
-.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
-.p-channel_sidebar__section_heading_label--clickable:hover,
-.c-message__sender_link:hover,
-.p-channel_sidebar__quickswitcher:hover {
-  color: var(--text-bright) !important;
 }
 
 /*broken*/
@@ -152,76 +128,11 @@ ts-jumper input[type="text"],
   box-shadow: none;
 }
 
-.p-channel_sidebar__channel a {
-  color: var(--text);
-}
-
-/* Selected channel */
-.p-channel_sidebar__channel--selected,
-.p-channel_sidebar__link--selected,
-.p-channel_sidebar__channel--selected:link,
-.p-channel_sidebar__link--selected:link,
-.p-channel_sidebar__channel--selected:visited,
-.p-channel_sidebar__link--selected:visited,
-.p-channel_sidebar__channel--selected:hover,
-.p-channel_sidebar__link--selected:hover {
-  background-color: var(--background) !important;
-}
-
-/* Hover channel */
-.p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover {
-  background-color: var(--background-hover) !important;
-  border-color: transparent;
-  color: var(--text) !important;
-}
-
-.p-channel_sidebar__close_container {
-  background: none !important;
-}
-
-/* Add a border to focused selected channe */
-.p-channel_sidebar__channel--selected:hover,
-.p-channel_sidebar__link--selected:hover {
-  border: solid var(--border-dim);
-  border-width: 1px 1px 1px 0;
-}
-
 /* All File types active tab */
 li.active[class] span {
   color: var(--text-special) !important;
   background-color: transparent;
   opacity: 1;
-}
-
-/*"more unreads" bottom*/
-.p-channel_sidebar__banner--top {
-  background-color: var(--background);
-  border: 1px solid var(--border-bright);
-  border-top: none;
-  border-radius: 0 0 15px 15px;
-}
-
-/*"more unreads" bottom */
-.p-channel_sidebar__banner--bottom {
-  background-color: var(--background);
-  border: 1px solid var(--border-bright);
-  border-bottom: none;
-  border-radius: 15px 15px 0 0;
-}
-
-/*"unread mentions"*/
-.p-channel_sidebar__badge,
-.p-channel_sidebar__banner--mentions {
-  /*inverted because important*/
-  background-color: var(--border-bright) !important;
-  border-color: var(--text-bright);
-  color: var(--text-bright);
-}
-
-/*also add border to unread count for individual channels*/
-.p-channel_sidebar__badge {
-  border: 1px solid;
 }
 
 /* new scrollbar */
@@ -337,7 +248,6 @@ textarea:focus, input[type="text"]:focus, #file_comment_textarea {
 }
 
 .rxn,
-#col_channels,
 #col_channels_footer,
 pre,
 .c-message .action_hover_container .btn_msg_action,
@@ -906,7 +816,7 @@ div::-webkit-scrollbar-thumb {
   border: 0 1px 1px 1px solid var(--border-bright) !important;
 }
 
-#quick_switcher_btn, #col_channels_overlay {
+#quick_switcher_btn {
   border-color: transparent !important;
 }
 

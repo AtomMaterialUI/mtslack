@@ -1,20 +1,22 @@
+// Left sidebar
 .client_channels_list_container {
   background-color: $bg;
   color: $text;
   box-shadow: var(--background-elevated) 1px 1px 25px;
   z-index: 1;
 
-  // Channel overlay
+  // Channel overlay (on loading)
   #col_channels_overlay,
   #team_menu_overlay {
     background: $bg !important;
+    border-color: transparent !important;
 
     .overlay_mock_text {
       background: $bgHover;
     }
   }
 
-  /* Team selector */
+  /* Team selector at the top */
   #team_menu {
     background-color: $bg2 !important;
     border-color: transparent !important;
@@ -32,6 +34,121 @@
     .notifications_menu_btn {
       color: $textBright;
     }
+  }
+
+  /* Channel list panel */
+  #col_channels {
+    background: $bg2 !important;
+
+    // The channel sidebar
+    .p-channel_sidebar {
+      background-color: $bg2;
+      color: $text;
+
+      &__section_heading {
+        border-bottom: 1px solid $borderDim !important;
+        .p-channel_sidebar__section_heading_label {
+          font-weight: bold !important;
+        }
+      }
+
+      &__badge {
+        border: 1px solid;
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: $textBright !important;
+      }
+
+      &__banner--mentions {
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: $textBright !important;
+      }
+
+      // Channels and users
+      &__link, &__channel {
+        color: $text !important;
+
+        &:hover,
+        &:link,
+        &:visited {
+          color: $text !important;
+        }
+
+        &:hover {
+          background-color: $bgHover !important;
+          border-color: transparent;
+        }
+
+        &--unread {
+          color: $textBright !important;
+        }
+        &--selected {
+          background: $bg !important;
+          border: solid $borderDim;
+          border-width: 1px 1px 1px 0;
+
+          // Highlight presence of current channel
+          .c-presence {
+            color: $accent !important;
+          }
+        }
+
+        &--all-unreads {
+          // shall we do something here?
+        }
+
+        &--all-threads {
+          // shall we do something here?
+        }
+
+        // Users
+        &--im {
+          // shall we do something here ?
+        }
+
+        // Channels with messages
+        &--draft {
+          font-style: italic;
+        }
+
+        // Presence indicator
+        .c-presence {
+          &--away {
+            color: $silver;
+          }
+          &--active {
+            color: $green;
+          }
+        }
+      }
+
+      &__close_container {
+        background: none !important;
+      }
+    }
+
+    // Jump to button
+    .p-channel_sidebar__jumper {
+      background: $bg;
+      color: $text;
+    }
+
+    /*"more unreads" bottom*/
+    .p-channel_sidebar__banner--top {
+      background-color: $bg;
+      border: 1px solid $bgBright;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+    }
+    /*"more unreads" bottom */
+    .p-channel_sidebar__banner--bottom {
+      background-color: $bg;
+      border: 1px solid $bgBright;
+      border-bottom: none;
+      border-radius: 15px 15px 0 0;
+    }
+
   }
 
 }
