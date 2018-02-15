@@ -1,0 +1,59 @@
+#fs_modal,
+.modal,
+.modal-header,
+.modal-footer {
+  background-color: $bg !important;
+  color: $text !important;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $textBright;
+  }
+
+  div, span, label {
+    color: $text !important;
+  }
+
+  .input_note_special,
+  .modal_input_note {
+    color: $text;
+  }
+
+  // Buttons (back, close...)
+  .fs_modal_btn {
+    color: $text !important;
+  }
+
+  .fs_modal_file_viewer_header {
+    background: transparent;
+    .control_btn {
+      color: $text !important;
+
+    }
+  }
+
+  .fs_modal_file_viewer_content {
+    background: $bg;
+
+  }
+
+  #fs_modal_sidebar a {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+
+    &:hover {
+      border-color: $borderDim
+    }
+
+    &.is_active {
+      border-color: $primary;
+    }
+  }
+
+  #fs_modal_footer {
+    background-color: $bg2;
+
+  }
+}
+

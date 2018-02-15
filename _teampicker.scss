@@ -1,0 +1,8 @@
+/* Team Picker */
+.TeamSidebar, .TeamSidebar .StoplightContainer,
+.TeamSidebar .TeamSidebar-addArea {
+  background-color: $bg !important;
+  box-shadow: $bg 1px 1px 25px;
+  color: $text;
+  z-index: 1;
+}

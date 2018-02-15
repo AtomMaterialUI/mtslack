@@ -1,0 +1,21 @@
+/* putting this on so many elements might cause performance issues but #yolo */
+div::-webkit-scrollbar-track,
+#contents_container::-webkit-scrollbar-track,
+.lfs_list::-webkit-scrollbar-track {
+  display: none !important;
+}
+
+div::-webkit-scrollbar-thumb,
+.lfs_list::-webkit-scrollbar-thumb,
+#contents_container::-webkit-scrollbar-thumb {
+  color: transparent !important;
+  border: 1px solid var(--scrollbar-border) !important;
+  background-color: transparent !important;
+}
+
+/* new scrollbar */
+.p-channel_sidebar div.c-custom_scrollbar__thumb_vertical,
+.p-channel_sidebar div.c-scrollbar__bar {
+  background: $bg2;
+  border: 1px solid $border;
+}

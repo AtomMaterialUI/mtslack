@@ -7,4 +7,92 @@
     background: $bg;
     box-shadow: none;
   }
+
+  // Remove box shadow on messages column
+  #col_messages {
+    box-shadow: none;
+  }
+
+  // Threads container
+  #threads_msgs_scroller_div, ts-thread {
+    background-color: $bg;
+
+    .c-message_list__day_divider__label {
+      background: $bg;
+    }
+  }
+
+  // Day pill
+  .c-message_list__day_divider__label__pill {
+    background-color: $bg2;
+    border: 1px solid $borderDim;
+    color: $text;
+  }
+
+  // timestamp
+  .c-timestamp__label {
+    color: $text !important;
+  }
+
+  .c-message {
+    border-radius: 5px;
+    margin: 1px 5px !important;
+    box-shadow: none !important;
+
+    &:hover {
+      background: $bg2 !important;
+    }
+  }
+
+  // Actual message content
+  .c-message,
+  .c-message__content,
+  .c-message__body,
+  .c-message__sender {
+    color: $text !important;
+  }
+
+  .c-message__sender_link {
+    color: $text !important;
+  }
+
+  // Attachment image
+  .c-message_attachment {
+    color: $bg;
+
+    .c-message_attachment__border {
+      color: $border;
+    }
+
+    .c-message_attachment__author {
+      color: $textBright;
+    }
+
+    .c-message_attachment__text {
+      color: $text;
+    }
+
+    .c-message_attachment__media_trigger {
+      color: $text !important;
+
+      .c-expandable_trigger {
+        color: $primary !important;
+      }
+    }
+  }
+
+  // Day divider
+  .c-message_list__day_divider__line {
+    border-top-color: $borderDim !important;
+  }
+
+  .c-message_list__day_divider__label {
+    color: $bg;
+  }
+
+  // Loading history
+  .p-degraded_list__loading {
+    background: $bg !important;
+    color: $text !important;
+  }
 }

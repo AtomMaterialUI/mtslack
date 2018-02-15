@@ -2,6 +2,19 @@ h1, h2, h3, h4 {
   color: $text;
 }
 
+textarea, input[type="text"],
+#file_comment_textarea {
+  background-color: $bg !important;
+  border-color: $borderDim !important;
+  color: $text !important;
+}
+
+textarea:focus, input[type="text"]:focus,
+#file_comment_textarea {
+  border-color: $primary !important;
+  color: $textBright !important;
+}
+
 .btn-link {
   color: $primary;
 }
@@ -11,6 +24,14 @@ h1, h2, h3, h4 {
 .seafoam_green_bg,
 .mustard_yellow_bg {
   background: $accent !important;
+}
+
+.subtle_silver {
+  color: $text !important;
+}
+
+.greigh {
+  color: $text !important;
 }
 
 .c-keyboard_key {
@@ -45,4 +66,61 @@ h1, h2, h3, h4 {
 
 .top_border {
   border-top-color: $borderDim !important;
+}
+
+// toggles
+.ts_toggle {
+  .ts_toggle_button {
+    background: $green;
+  }
+
+  .ts_toggle_secondary_label {
+    color: $text !important;
+  }
+}
+
+// btns
+.btn, .btn_outline {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+
+  &:hover,
+  &:hover::after {
+    background: $bgHover !important;
+  }
+}
+
+hr {
+  border-top: 1px solid $border;
+}
+
+a, a:link, a:visited {
+  color: $textSpecial;
+
+  &:hover {
+    color: $textSpecial;
+  }
+}
+
+code {
+  color: $textSpecial !important;
+  background-color: $bg2 !important;
+  border-color: $borderDim !important;
+}
+
+pre {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+}
+
+.lazy_filter_select .lfs_input_container {
+  border-color: $borderDim !important;
+  background: $bg !important;
+  color: $text !important;
+}
+
+.ql-placeholder {
+  color: $text !important;
 }

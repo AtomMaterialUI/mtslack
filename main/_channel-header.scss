@@ -49,20 +49,24 @@
     color: $text;
   }
 
-  // The search background
-  .ql-container.texty_single_line_input {
-    background-color: $bg;
-    color: $text;
-  }
+}
 
-  // Query editor
-  .ql-container .ql-editor p {
-    color: $text;
-  }
+// The search background
+.ql-container.texty_single_line_input {
+  background-color: $bg !important;
+  color: $text !important;
+}
 
+// Query editor
+.ql-container .ql-editor p {
+  color: $text;
 }
 
 #rxn_toast_div {
   background: $bg;
   border-color: $border;
+}
+
+#im_title.away {
+  color: $textBright !important;
 }

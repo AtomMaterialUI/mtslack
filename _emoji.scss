@@ -1,0 +1,95 @@
+/* emojis */
+.rxn[data-emoji] {
+  height: 28px;
+}
+
+.rxn[data-emoji] .emoji_rxn_count {
+  font-size: 0.9rem;
+}
+
+.rxn .emoji-sizer {
+  background-color: transparent !important;
+  border-radius: 7px;
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 -2px !important;
+  border: 1px solid transparent; /* looks silly but it makes the outline work */
+}
+
+.emoji-sizer {
+  /* outline for black-on-transparent emojis */
+  -webkit-filter: drop-shadow(1px 0 0 $primary) drop-shadow(-1px 0 0 $primary) drop-shadow(-0 1px 0 $primary) drop-shadow(0 -1px 0 $primary);
+  margin: 0 !important;
+}
+
+.ts_icon.ts_icon_smile_o {
+  color: $text;
+}
+
+.emoji_menu_ng #emoji_input_container,
+#emoji_menu #emoji_menu_items_scroller,
+#emoji_menu #emoji_menu_footer,
+#emoji_menu #emoji_input_container {
+  background-color: transparent;
+}
+
+.menu .p-emoji_picker__input_container,
+.menu .p-emoji_picker__list_container,
+.menu .p-emoji_picker__heading,
+.menu .p-emoji_picker__footer {
+  background: transparent;
+  color: $text;
+}
+
+.p-emoji_picker__group_tab {
+  border: 1px solid transparent;
+  border-bottom-width: 2px;
+}
+
+.menu .p-emoji_picker__group_tab--active {
+  background-color: $bg;
+  color: $textSpecial;
+  border: 1px solid $primary;
+  border-bottom-width: 2px;
+}
+
+.p-emoji_picker__group_tab:hover {
+  background-color: $bg2;
+  border-color: $borderDim;
+}
+
+.p-emoji_picker__group_tab .emoji-sizer {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.p-emoji_picker__group_tab:hover .emoji-sizer {
+  color: $text;
+}
+
+.p-emoji_picker__preview_text {
+  background-color: $bg2;
+  color: $text;
+}
+
+#emoji_menu h3, #emoji_menu #emoji_preview_text {
+  background-color: $bg2;
+  color: $text;
+}
+
+#emoji_menu a.emoji_grouping_tab .emoji-sizer {
+  -webkit-filter: none;
+}
+
+.emoji_menu_ng #emoji_menu_header .emoji_grouping_tab.active {
+  background-color: transparent;
+  border-color: var(--border-bright);
+  border-width: 1px 1px 3px 1px;
+  border-style: solid;
+}
+
+.light_theme .emoji-only {
+  line-height: 3rem;
+  font-size: 3rem;
+  margin-top: 3px !important;
+}

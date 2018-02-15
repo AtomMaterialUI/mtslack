@@ -75,55 +75,39 @@ $silver: var(--silver);
 $black: var(--black);
 
 @import "general";
+@import "teampicker";
 @import "dropzone";
 @import "popups";
 @import "popovers";
 @import "loading";
 @import "main";
 @import "menu";
-
-.popover_mask {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* Team Picker */
-.TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {
-  background-color: var(--background) !important;
-  box-shadow: var(--background) 1px 1px 25px;
-  color: var(--text);
-  z-index: 1;
-}
+@import "scrollbar";
+@import "modals";
+@import "emoji";
+@import "input";
+@import "new_channel";
 
 /* Channels */
 .creator_link,
 .creator_link:hover,
-.channel_link,
-.c-message__sender_link {
-  color: var(--text) !important;
-}
-
-/*broken*/
-__TODO-highlight-indicator {
-  background-color: var(--border-bright) !important;
-  opacity: 1;
+.channel_link {
+  color: $text !important;
 }
 
 /* Replace the background for all panels */
-#msgs_scroller_div::-webkit-scrollbar-track,
 #search_terms,
 #footer,
-.c-message,
 ts-jumper ts-jumper-container /* The jump to... */
 ,
 ts-jumper input[type="text"],
-.supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track,
 #channel_topic_text code,
 .toolbar_container {
   background: var(--background) !important;
 }
 
 /* Remove header box shadow */
-#col_messages, #footer {
+#footer {
   box-shadow: none;
 }
 
@@ -132,12 +116,6 @@ li.active[class] span {
   color: var(--text-special) !important;
   background-color: transparent;
   opacity: 1;
-}
-
-/* new scrollbar */
-.p-channel_sidebar div.c-custom_scrollbar__thumb_vertical, .p-channel_sidebar div.c-scrollbar__bar {
-  background: var(--background-elevated);
-  border: 1px solid var(--scrollbar-border);
 }
 
 /*#channels_scroller.show_which_channel_is_active[class] li.active .presence.active i.presence_icon,*/
@@ -151,11 +129,6 @@ li.active[class] span {
   color: var(--text) !important;
 }
 
-.c-message,
-.c-message .c-message__sender,
-.c-message .c-message__content,
-.c-message .c-message__body,
-.c-message_attachment__text,
 ts-jumper input[type="text"],
 .channel_purpose_text /* Right side channel details */
 ,
@@ -168,13 +141,11 @@ ts-jumper ol li .channel_name {
 
 /* File sender */
 a.message_sender,
-#msg_input::-webkit-input-placeholder,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
   color: var(--text) !important;
 }
 
 /* Input message - File button */
-#msg_input,
 #primary_file_button {
   background: transparent !important;
   color: var(--text) !important;
@@ -210,27 +181,6 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
   padding-left: 2px;
 }
 
-textarea, input[type="text"], #file_comment_textarea {
-  background-color: var(--background) !important;
-  border-color: var(--border-dim) !important;
-  color: var(--text) !important;
-}
-
-textarea:focus, input[type="text"]:focus, #file_comment_textarea {
-  border-color: var(--border-bright) !important;
-  color: var(--text-bright) !important;
-}
-
-.c-message {
-  border-radius: 5px;
-  margin: 1px 5px !important;
-  box-shadow: none !important;
-}
-
-.c-message:hover {
-  background: var(--background-hover) !important;
-}
-
 #messages_container::after {
   background: none !important;
 }
@@ -248,16 +198,17 @@ textarea:focus, input[type="text"]:focus, #file_comment_textarea {
 
 .rxn,
 #col_channels_footer,
-pre,
 .c-message .action_hover_container .btn_msg_action,
 .file_container,
-.file_container .CodeMirror .CodeMirror-code > div:before, .file_container .CodeMirror .sssh-line:before, .file_container .sssh-code .CodeMirror-code > div:before, .file_container .sssh-code .sssh-line:before,
+.file_container .CodeMirror .CodeMirror-code > div:before,
+.file_container .CodeMirror .sssh-line:before,
+.file_container .sssh-code .CodeMirror-code > div:before,
+.file_container .sssh-code .sssh-line:before,
 #col_flex,
 .search_message_result,
 .search_result_with_extract,
 #search_filters a,
-.menu #menu_items_scroller,
-.btn, .btn_outline {
+.menu #menu_items_scroller {
   background: var(--background-elevated) !important;
 }
 
@@ -270,7 +221,6 @@ pre,
   border-color: var(--border-dim);
 }
 
-pre,
 .c-message .action_hover_container .btn_msg_action,
 .file_container .CodeMirror .CodeMirror-code > div pre, .file_container .CodeMirror .sssh-line pre, .file_container .sssh-code .CodeMirror-code > div pre, .file_container .sssh-code .sssh-line pre,
 .search_message_result .search_message_result_meta a,
@@ -279,13 +229,9 @@ pre,
 #flex_contents .subheading,
 #search_filters.files #filter_files, #search_filters.messages #filter_messages,
 .menu ul li a,
-.btn, .btn_outline, .menu {
+.menu {
   color: var(--text) !important;
   border-color: var(--border-dim) !important;
-}
-
-.btn:hover:after {
-  border-color: var(--border-bright);
 }
 
 .action_hover_container {
@@ -362,43 +308,7 @@ span.match {
   color: var(--text-special);
 }
 
-pre.special_formatting {
-  background: var(--background-elevated) !important;
-}
-
-code {
-  color: var(--text-special) !important;
-  background-color: var(--background-elevated) !important;
-  border-color: var(--border-dim) !important;
-}
-
-.supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-thumb,
-.supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-thumb,
-.supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-thumb {
-  /* scrollbar draggy bit */
-  color: transparent !important;
-  border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important;
-}
-
-.supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-track,
-.supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-track,
-.supports_custom_scrollbar:not(.slim_scrollbar) #col_channels:hover #channels_scroller::-webkit-scrollbar-track {
-  /* scrollbar endcaps */
-  color: transparent !important;
-  border: 1px solid var(--border-dim) !important;
-  background-color: transparent !important;
-}
-
-a, a:link, a:visited {
-  color: var(--text-special);
-}
-
 .c-message a .mention {
-  color: var(--text-special) !important;
-}
-
-a:hover {
   color: var(--text-special) !important;
 }
 
@@ -442,11 +352,6 @@ a:hover {
 
 #details_tab .channel_page_section .section_title {
   color: var(--text);
-}
-
-.greigh {
-  /* greigh = label?? */
-  color: var(--text) !important;
 }
 
 .pinned_item .pin_member_name a, .pinned_item {
@@ -516,110 +421,6 @@ ts-mention.ts_tip:hover {
   border: 1px solid var(--border-bright);
 }
 
-/* emojis */
-.rxn[data-emoji] {
-  /*background-color: var(--background-light) !important;
-  transition: background-color 200ms ease-in;*/
-  height: 28px;
-}
-
-.rxn[data-emoji]:hover {
-  /*background-color: var(--background-bright) !important;*/
-}
-
-.rxn[data-emoji] .emoji_rxn_count {
-  font-size: 0.9rem;
-  /*color: black !important;*/
-}
-
-.rxn .emoji-sizer {
-  background-color: transparent !important;
-  border-radius: 7px;
-  width: 24px;
-  height: 24px;
-  margin: 0 0 0 -2px !important;
-  border: 1px solid transparent; /* looks silly but it makes the outline work */
-}
-
-.emoji-sizer {
-  /* outline for black-on-transparent emojis */
-  -webkit-filter: drop-shadow(1px 0 0 var(--background-bright)) drop-shadow(-1px 0 0 var(--background-bright)) drop-shadow(-0 1px 0 var(--background-bright)) drop-shadow(0 -1px 0 var(--background-bright));
-  margin: 0 !important;
-}
-
-.ts_icon.ts_icon_smile_o {
-  color: var(--text);
-}
-
-.emoji_menu_ng #emoji_input_container,
-#emoji_menu #emoji_menu_items_scroller,
-#emoji_menu #emoji_menu_footer,
-#emoji_menu #emoji_input_container {
-  background-color: transparent;
-}
-
-.menu .p-emoji_picker__input_container,
-.menu .p-emoji_picker__list_container,
-.menu .p-emoji_picker__heading,
-.menu .p-emoji_picker__footer {
-  background: transparent;
-  color: var(--text);
-}
-
-.p-emoji_picker__group_tab {
-  border: 1px solid transparent;
-  border-bottom-width: 2px;
-}
-
-.menu .p-emoji_picker__group_tab--active {
-  background-color: var(--background);
-  color: var(--text-special);
-  border-color: var(--border-bright);
-  border-width: 1px 1px 2px 1px;
-  border-style: solid;
-}
-
-.p-emoji_picker__group_tab:hover {
-  background-color: var(--background-elevated);
-  border-color: var(--border-dim);
-}
-
-.p-emoji_picker__group_tab .emoji-sizer {
-  filter: none;
-  -webkit-filter: none;
-}
-
-.p-emoji_picker__group_tab:hover .emoji-sizer {
-  color: var(--text);
-}
-
-.p-emoji_picker__preview_text {
-  background-color: var(--background-elevated);
-  color: var(--text);
-}
-
-#emoji_menu h3, #emoji_menu #emoji_preview_text {
-  background-color: var(--background-elevated);
-  color: var(--text);
-}
-
-#emoji_menu a.emoji_grouping_tab .emoji-sizer {
-  -webkit-filter: none;
-}
-
-.emoji_menu_ng #emoji_menu_header .emoji_grouping_tab.active {
-  background-color: transparent;
-  border-color: var(--border-bright);
-  border-width: 1px 1px 3px 1px;
-  border-style: solid;
-}
-
-.light_theme .emoji-only {
-  line-height: 3rem;
-  font-size: 3rem;
-  margin-top: 3px !important;
-}
-
 .menu .section_header .header_label {
   color: var(--text) !important;
   background-color: var(--background-elevated) !important;
@@ -683,10 +484,6 @@ ts-mention.ts_tip:hover {
   border-radius: 10px 10px 0 0;
 }
 
-#threads_msgs_scroller_div, ts-thread {
-  background-color: var(--background);
-}
-
 ts-thread .thread_header .thread_channel_name a {
   color: var(--text-special);
 }
@@ -711,53 +508,13 @@ ts-thread .view_all_replies_container:hover {
   background-color: var(--background-elevated);
 }
 
-/* preferences page */
-#fs_modal, .modal, .modal-header, .modal-footer {
-  background-color: var(--background-elevated);
-}
-
-#fs_modal, #fs_modal h1, #fs_modal h2,
-#fs_modal h3, #fs_modal h4, #fs_modal h5,
-.modal, .modal h1, .modal h2, .modal h3,
-.modal h4, .modal h5 {
-  color: var(--text);
-}
-
-#fs_modal .fs_modal_file_viewer_header {
-  background: transparent;
-}
-
-#fs_modal .fs_modal_file_viewer_content .viewer {
-  background: var(--background);
-}
-
-.fs_modal_file_viewer_header .control_btn {
-  color: var(--text) !important;
-}
-
 .section_rollup:hover:not(.is_active) {
   background: var(--background-hover);
   color: inherit;
 }
 
-#fs_modal #fs_modal_sidebar a {
-  padding: 10px;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.01);
-  border-radius: 10px;
-}
-
-#fs_modal #fs_modal_sidebar a:hover {
-  border-color: var(--border-dim);
-}
-
-#fs_modal #fs_modal_sidebar a.is_active {
-  border-color: var(--border-bright);
-}
-
 #threads_msgs_scroller_div .threads_caught_up_divider .divider_line,
-#threads_msgs_scroller_div .threads_caught_up_divider .divider_label,
-.c-message_list__day_divider__label__pill {
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_label {
   background-color: var(--background-elevated);
   border: 1px solid var(--border-dim);
   color: var(--text);
@@ -786,17 +543,6 @@ ts-thread .view_all_replies_container:hover {
   background: var(--background);
 }
 
-/* putting this on so many elements might cause performance issues but #yolo */
-div::-webkit-scrollbar-track {
-  display: none !important;
-}
-
-div::-webkit-scrollbar-thumb {
-  color: transparent !important;
-  border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important;
-}
-
 #threads_msgs_scroller_div:not(.loading):before {
   background: none;
 }
@@ -819,86 +565,7 @@ div::-webkit-scrollbar-thumb {
   border-color: transparent !important;
 }
 
-/* CodeMirror syntax highlighting */
-.cm-s-default .cm-header {
-  color: #66f
-}
-
-.cm-s-default .cm-quote {
-  color: #0f0
-}
-
-.cm-negative {
-  color: #f44
-}
-
-.cm-positive {
-  color: #2f2
-}
-
-.cm-s-default .cm-keyword {
-  color: #f0a
-}
-
-.cm-s-default .cm-atom {
-  color: #7ff
-}
-
-.cm-s-default .cm-number {
-  color: #5fa
-}
-
-.cm-s-default .cm-def {
-  color: #37f
-}
-
-.cm-s-default .cm-variable-2 {
-  color: #09f
-}
-
-.cm-s-default .cm-variable-3 {
-  color: #0fa
-}
-
-.cm-s-default .cm-comment {
-  color: #f80
-}
-
-.cm-s-default .cm-string {
-  color: #f33
-}
-
-.cm-s-default .cm-string-2 {
-  color: #f50
-}
-
-.cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
-  color: #aaa
-}
-
-.cm-s-default .cm-builtin {
-  color: #96f
-}
-
-.cm-s-default .cm-bracket {
-  color: #ffa
-}
-
-.cm-s-default .cm-tag {
-  color: #5f0
-}
-
-.cm-s-default .cm-attribute {
-  color: #33f
-}
-
-.cm-s-default .cm-hr {
-  color: #ccc
-}
-
-.cm-s-default .cm-link {
-  color: #33f
-}
+@import "codemirror";
 
 /* Snippets */
 select {
@@ -907,56 +574,9 @@ select {
   border-color: var(--border-dim);
 }
 
-.CodeMirror, .CodeMirror .CodeMirror-gutters, .CodeMirror-gutter {
-  background-color: var(--background) !important;;
-  border-color: var(--border-bright);
-  color: var(--text);
-}
-
-.CodeMirror .CodeMirror-line {
-  background-color: var(--background);
-}
-
-.CodeMirror-cursor {
-  border-left-color: var(--text);
-}
-
-.CodeMirror-selected {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-
-.modal div, .modal span, .modal label {
-  color: var(--text);
-}
-
 .lazy_filter_select .lfs_list_container,
 .lazy_filter_select .lfs_list .lfs_item.active {
   background-color: var(--background-elevated);
-}
-
-.lfs_list::-webkit-scrollbar-track {
-  display: none;
-}
-
-.lfs_list::-webkit-scrollbar-thumb {
-  color: transparent !important;
-  border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important;
-}
-
-/* profile */
-#fs_modal #fs_modal_footer {
-  background-color: var(--background-elevated)
-}
-
-#contents_container::-webkit-scrollbar-track {
-  display: none;
-}
-
-#contents_container::-webkit-scrollbar-thumb {
-  color: transparent !important;
-  border: 1px solid var(--scrollbar-border) !important;
-  background-color: transparent !important;
 }
 
 /* scroll border fix */

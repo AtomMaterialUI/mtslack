@@ -1,0 +1,9 @@
+#msg_input {
+  background: transparent !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+}
+
+#msg_input::-webkit-input-placeholder {
+  color: $text !important;
+}

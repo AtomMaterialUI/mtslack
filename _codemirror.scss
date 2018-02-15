@@ -1,0 +1,104 @@
+/* CodeMirror syntax highlighting */
+.cm-s-default .cm-header {
+  color: #66f
+}
+
+.cm-s-default .cm-quote {
+  color: #0f0
+}
+
+.cm-negative {
+  color: #f44
+}
+
+.cm-positive {
+  color: #2f2
+}
+
+.cm-s-default .cm-keyword {
+  color: #f0a
+}
+
+.cm-s-default .cm-atom {
+  color: #7ff
+}
+
+.cm-s-default .cm-number {
+  color: #5fa
+}
+
+.cm-s-default .cm-def {
+  color: #37f
+}
+
+.cm-s-default .cm-variable-2 {
+  color: #09f
+}
+
+.cm-s-default .cm-variable-3 {
+  color: #0fa
+}
+
+.cm-s-default .cm-comment {
+  color: #f80
+}
+
+.cm-s-default .cm-string {
+  color: #f33
+}
+
+.cm-s-default .cm-string-2 {
+  color: #f50
+}
+
+.cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
+  color: #aaa
+}
+
+.cm-s-default .cm-builtin {
+  color: #96f
+}
+
+.cm-s-default .cm-bracket {
+  color: #ffa
+}
+
+.cm-s-default .cm-tag {
+  color: #5f0
+}
+
+.cm-s-default .cm-attribute {
+  color: #33f
+}
+
+.cm-s-default .cm-hr {
+  color: #ccc
+}
+
+.cm-s-default .cm-link {
+  color: #33f
+}
+
+.CodeMirror,
+.CodeMirror .CodeMirror-gutters,
+.CodeMirror-gutter {
+  background-color: $bg !important;;
+  border-color: $border;
+  color: $text;
+
+  .CodeMirror-line {
+    background: $bg;
+  }
+}
+
+.CodeMirror-cursor {
+  border-left-color: $text;
+}
+
+.CodeMirror-selected {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+pre.special_formatting {
+  background: $bg2 !important;
+}
