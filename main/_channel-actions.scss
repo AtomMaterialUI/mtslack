@@ -1,0 +1,13 @@
+.c-message_actions__container {
+  background: $bg2 !important;
+  color: $text !important;
+}
+
+.c-message_actions__button {
+  color: $text !important;
+  border-color: $borderDim !important;
+
+  &:hover {
+    color: $primary !important;
+  }
+}

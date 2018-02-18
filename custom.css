@@ -27,6 +27,7 @@ limitations under the License.
   --border-dim: #666;
   --border-bright: var(--primary);
   --text-bright: #FFF;
+  --text-dim: #555c69;
   --text-special: var(--primary);
   --scrollbar-background: #000;
   --scrollbar-border: var(--primary);
@@ -64,6 +65,9 @@ textarea:focus, input[type="text"]:focus,
 .seafoam_green_bg,
 .mustard_yellow_bg {
   background: var(--accent) !important; }
+
+.blue_fill {
+  color: var(--primary) !important; }
 
 .subtle_silver {
   color: var(--text) !important; }
@@ -134,6 +138,12 @@ pre {
 .ql-placeholder {
   color: var(--text) !important; }
 
+.close_flexpane {
+  color: var(--text) !important; }
+
+.disclosure_triangle {
+  color: var(--text) !important; }
+
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
 .TeamSidebar .TeamSidebar-addArea {
@@ -160,12 +170,47 @@ pre {
   #trouble_loading a {
     color: var(--primary); }
 
-.popover_menu {
-  background: var(--background);
-  border-color: var(--border-dim); }
+.popover_menu,
+.c-menu {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+  border-color: var(--border-dim) !important; }
 
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3); }
+
+.c-menu_item__button {
+  color: var(--text) !important; }
+  .c-menu_item__button--danger {
+    color: var(--red); }
+  .c-menu_item__button--highlighted {
+    background: var(--background-hover) !important;
+    color: var(--text-bright) !important; }
+
+.c-menu_separator__separator {
+  border-bottom-color: var(--border-dim); }
+
+#autocomplete_menu {
+  background-color: var(--background-elevated) !important;
+  color: var(--text) !important; }
+  #autocomplete_menu .query_header {
+    background: var(--background) !important;
+    color: var(--text) !important; }
+  #autocomplete_menu .result_item_btn {
+    color: var(--text) !important; }
+    #autocomplete_menu .result_item_btn .icon, #autocomplete_menu .result_item_btn .text, #autocomplete_menu .result_item_btn .action {
+      color: var(--text) !important; }
+    #autocomplete_menu .result_item_btn .token {
+      background-color: var(--primary) !important;
+      color: var(--text-bright) !important; }
+    #autocomplete_menu .result_item_btn:hover {
+      background: var(--background-hover) !important;
+      color: var(--text-bright) !important; }
+  #autocomplete_menu footer.unified {
+    background: var(--background) !important;
+    color: var(--text) !important; }
+    #autocomplete_menu footer.unified > * {
+      color: var(--text) !important; }
 
 #loading-zone {
   background: var(--background) !important;
@@ -289,7 +334,7 @@ pre {
     color: var(--text); }
   .client_main_container .search_form .ql-placeholder {
     color: var(--text); }
-.client_main_container .ql-container.texty_single_line_input {
+.client_main_container #search_terms {
   background-color: var(--background) !important;
   color: var(--text) !important; }
 .client_main_container .ql-container .ql-editor p {
@@ -350,11 +395,93 @@ pre {
   .client_main_container #client_body .p-degraded_list__loading {
     background: var(--background) !important;
     color: var(--text) !important; }
+  .client_main_container #client_body .c-message--hover {
+    background: var(--background-hover) !important; }
+.client_main_container .c-message_actions__container {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important; }
+.client_main_container .c-message_actions__button {
+  color: var(--text) !important;
+  border-color: var(--border-dim) !important; }
+  .client_main_container .c-message_actions__button:hover {
+    color: var(--primary) !important; }
+
+#col_flex {
+  border-left: none !important; }
+
+#flex_contents .heading {
+  background: var(--background);
+  color: var(--text);
+  border-color: var(--border-dim); }
+
+#details_tab .channel_page_section {
+  background: var(--background-elevated) !important;
+  border-top: 1px solid var(--border-dim) !important; }
+  #details_tab .channel_page_section .section_header,
+  #details_tab .channel_page_section .section_title {
+    color: var(--text) !important; }
 
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   border-bottom-color: var(--border-dim) !important;
   background: var(--background); }
+
+#client-ui .file_list_item,
+.tab_container .file_list_item {
+  color: var(--text); }
+  #client-ui .file_list_item:hover, #client-ui .file_list_item:focus,
+  .tab_container .file_list_item:hover,
+  .tab_container .file_list_item:focus {
+    background: var(--background-hover);
+    color: var(--text-bright); }
+  #client-ui .file_list_item.file_list_item--redesign,
+  .tab_container .file_list_item.file_list_item--redesign {
+    border-color: var(--border-dim) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  #client-ui .file_list_item .contents .title,
+  .tab_container .file_list_item .contents .title {
+    color: var(--text-bright); }
+  #client-ui .file_list_item .contents .member,
+  #client-ui .file_list_item .contents .message_sender,
+  #client-ui .file_list_item .contents .service_link,
+  #client-ui .file_list_item .contents .share_info,
+  #client-ui .file_list_item .contents .time,
+  .tab_container .file_list_item .contents .member,
+  .tab_container .file_list_item .contents .message_sender,
+  .tab_container .file_list_item .contents .service_link,
+  .tab_container .file_list_item .contents .share_info,
+  .tab_container .file_list_item .contents .time {
+    color: var(--text-special); }
+
+.pickmeup {
+  background: var(--background) !important;
+  color: var(--text) !important;
+  border-color: var(--border-dim) !important; }
+  .pickmeup .pmu-instance .pmu-button {
+    color: var(--text); }
+  .pickmeup .pmu-instance .pmu-selected {
+    background: var(--accent) !important;
+    color: var(--text-bright) !important; }
+  .pickmeup .pmu-instance .pmu-button:not(.pmu-disabled):hover {
+    background: var(--background-hover) !important;
+    color: var(--text-bright) !important; }
+  .pickmeup .pmu-instance .pmu-disabled {
+    background: var(--background-elevated) !important;
+    color: var(--text-dim) !important; }
+  .pickmeup .pmu-instance .pmu-not-in-month {
+    background: var(--background-elevated) !important;
+    color: var(--text); }
+  .pickmeup .pmu-instance .pmu-today.pmu-selected {
+    background: var(--background) !important; }
+  .pickmeup .pmu-instance .pmu-today .pmu-today-border {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important; }
+  .pickmeup .pmu-instance .pmu-day-of-week *,
+  .pickmeup .pmu-instance .pmu-years *,
+  .pickmeup .pmu-instance .pmu-months *,
+  .pickmeup .pmu-instance .pmu-days * {
+    color: var(--text);
+    border-color: var(--border-dim); }
 
 .menu {
   background: var(--background-elevated);
@@ -367,6 +494,13 @@ pre {
   .menu .monkey_scroll_handle_inner {
     background: var(--background) !important;
     border-color: var(--border-bright) !important; }
+  .menu #menu_items_scroller {
+    background: var(--background-elevated) !important; }
+  .menu .section_header .header_label {
+    color: var(--text) !important;
+    background-color: var(--background-elevated) !important; }
+  .menu .section_header hr {
+    border-color: transparent; }
   .menu #menu_items .flexpane_menu_item a, .menu #menu_items .flexpane_menu_item a:not(.disabled) {
     background: var(--background-elevated) !important;
     color: var(--text) !important;
@@ -377,6 +511,14 @@ pre {
     background: var(--background-hover) !important;
     color: var(--text) !important;
     border: none !important; }
+  .menu #menu_items .member_jump_item:hover a {
+    background: var(--background-hover);
+    color: var(--text-bright); }
+  .menu #menu_items li a {
+    color: var(--text) !important; }
+  .menu #menu_items li:hover a {
+    background: var(--background-hover) !important;
+    color: var(--text-bright) !important; }
 
 /* putting this on so many elements might cause performance issues but #yolo */
 div::-webkit-scrollbar-track,
@@ -396,6 +538,12 @@ div::-webkit-scrollbar-thumb,
 .p-channel_sidebar div.c-scrollbar__bar {
   background: var(--background-elevated);
   border: 1px solid var(--border-bright); }
+
+#client-ui .monkey_scroll_bar {
+  background: var(--background-light) !important; }
+#client-ui .monkey_scroll_handle_inner {
+  border-color: var(--border-dim);
+  background: var(--background-light) !important; }
 
 #fs_modal,
 .modal,
@@ -571,9 +719,92 @@ div::-webkit-scrollbar-thumb,
   background: transparent !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
+  #msg_input.offline {
+    background-color: var(--red) !important; }
 
 #msg_input::-webkit-input-placeholder {
   color: var(--text) !important; }
+
+/* CodeMirror syntax highlighting */
+.cm-s-default .cm-header {
+  color: #66f; }
+
+.cm-s-default .cm-quote {
+  color: #0f0; }
+
+.cm-negative {
+  color: #f44; }
+
+.cm-positive {
+  color: #2f2; }
+
+.cm-s-default .cm-keyword {
+  color: #f0a; }
+
+.cm-s-default .cm-atom {
+  color: #7ff; }
+
+.cm-s-default .cm-number {
+  color: #5fa; }
+
+.cm-s-default .cm-def {
+  color: #37f; }
+
+.cm-s-default .cm-variable-2 {
+  color: #09f; }
+
+.cm-s-default .cm-variable-3 {
+  color: #0fa; }
+
+.cm-s-default .cm-comment {
+  color: #f80; }
+
+.cm-s-default .cm-string {
+  color: #f33; }
+
+.cm-s-default .cm-string-2 {
+  color: #f50; }
+
+.cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
+  color: #aaa; }
+
+.cm-s-default .cm-builtin {
+  color: #96f; }
+
+.cm-s-default .cm-bracket {
+  color: #ffa; }
+
+.cm-s-default .cm-tag {
+  color: #5f0; }
+
+.cm-s-default .cm-attribute {
+  color: #33f; }
+
+.cm-s-default .cm-hr {
+  color: #ccc; }
+
+.cm-s-default .cm-link {
+  color: #33f; }
+
+.CodeMirror,
+.CodeMirror .CodeMirror-gutters,
+.CodeMirror-gutter {
+  background-color: var(--background) !important;
+  border-color: var(--border-bright);
+  color: var(--text); }
+  .CodeMirror .CodeMirror-line,
+  .CodeMirror .CodeMirror-gutters .CodeMirror-line,
+  .CodeMirror-gutter .CodeMirror-line {
+    background: var(--background); }
+
+.CodeMirror-cursor {
+  border-left-color: var(--text); }
+
+.CodeMirror-selected {
+  background-color: rgba(255, 255, 255, 0.2) !important; }
+
+pre.special_formatting {
+  background: var(--background-elevated) !important; }
 
 /* Channels */
 .creator_link,
@@ -582,7 +813,6 @@ div::-webkit-scrollbar-thumb,
   color: var(--text) !important; }
 
 /* Replace the background for all panels */
-#search_terms,
 #footer,
 ts-jumper ts-jumper-container
 ,
@@ -674,14 +904,11 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 .file_container .CodeMirror .sssh-line:before,
 .file_container .sssh-code .CodeMirror-code > div:before,
 .file_container .sssh-code .sssh-line:before,
-#col_flex,
 .search_message_result,
 .search_result_with_extract,
-#search_filters a,
-.menu #menu_items_scroller {
+#search_filters a {
   background: var(--background-elevated) !important; }
 
-#flex_contents .heading,
 #flex_contents .heading a,
 #flex_contents .heading_text,
 #flex_contents .subheading {
@@ -695,9 +922,7 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 .search_message_result .search_message_result_meta .date_links a,
 .flexpane_redesign #flex_contents .heading_text,
 #flex_contents .subheading,
-#search_filters.files #filter_files, #search_filters.messages #filter_messages,
-.menu ul li a,
-.menu {
+#search_filters.files #filter_files, #search_filters.messages #filter_messages {
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
 
@@ -768,9 +993,6 @@ span.match {
 #msgs_scroller_div #end_display_div p {
   color: var(--text); }
 
-.disclosure_triangle {
-  color: var(--text) !important; }
-
 .channels_list_holder ul li a.channel_name,
 .channels_list_holder ul li:not(.unread) .group_name,
 .channels_list_holder ul li .im_name,
@@ -792,29 +1014,11 @@ span.match {
 .flexpane_redesign #member_mentions {
   background-color: var(--background); }
 
-#details_tab .channel_page_section {
-  background-color: var(--background-elevated); }
-
-#details_tab .channel_page_section .section_title {
-  color: var(--text); }
-
 .pinned_item .pin_member_name a, .pinned_item {
   color: var(--text) !important; }
 
 .pinned_item .pinned_message_text .pin_truncate_fade {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--background-elevated)), color-stop(1, rgba(255, 255, 255, 0))); }
-
-.tab_container .file_list_item .contents .member,
-.tab_container .file_list_item .contents .service_link,
-.tab_container .file_list_item .contents .share_info,
-.tab_container .file_list_item .contents .time {
-  color: var(--text-special); }
-
-.tab_container .file_list_item:focus, .tab_container .file_list_item:hover {
-  background-color: var(--background-hover); }
-
-.file_list_item {
-  border: 1px solid var(--border-dim) !important; }
 
 /* files */
 .file_container.generic_container .file_header_meta .meta_hover {
@@ -853,13 +1057,6 @@ ts-mention.ts_tip {
 ts-mention.ts_tip:hover {
   color: var(--text-bright) !important;
   border: 1px solid var(--border-bright); }
-
-.menu .section_header .header_label {
-  color: var(--text) !important;
-  background-color: var(--background-elevated) !important; }
-
-.menu .section_header hr {
-  border-color: transparent; }
 
 /* threads */
 .c-message .reply_bar:hover {
@@ -969,87 +1166,6 @@ ts-thread .view_all_replies_container:hover {
 
 #quick_switcher_btn {
   border-color: transparent !important; }
-
-/* CodeMirror syntax highlighting */
-.cm-s-default .cm-header {
-  color: #66f; }
-
-.cm-s-default .cm-quote {
-  color: #0f0; }
-
-.cm-negative {
-  color: #f44; }
-
-.cm-positive {
-  color: #2f2; }
-
-.cm-s-default .cm-keyword {
-  color: #f0a; }
-
-.cm-s-default .cm-atom {
-  color: #7ff; }
-
-.cm-s-default .cm-number {
-  color: #5fa; }
-
-.cm-s-default .cm-def {
-  color: #37f; }
-
-.cm-s-default .cm-variable-2 {
-  color: #09f; }
-
-.cm-s-default .cm-variable-3 {
-  color: #0fa; }
-
-.cm-s-default .cm-comment {
-  color: #f80; }
-
-.cm-s-default .cm-string {
-  color: #f33; }
-
-.cm-s-default .cm-string-2 {
-  color: #f50; }
-
-.cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
-  color: #aaa; }
-
-.cm-s-default .cm-builtin {
-  color: #96f; }
-
-.cm-s-default .cm-bracket {
-  color: #ffa; }
-
-.cm-s-default .cm-tag {
-  color: #5f0; }
-
-.cm-s-default .cm-attribute {
-  color: #33f; }
-
-.cm-s-default .cm-hr {
-  color: #ccc; }
-
-.cm-s-default .cm-link {
-  color: #33f; }
-
-.CodeMirror,
-.CodeMirror .CodeMirror-gutters,
-.CodeMirror-gutter {
-  background-color: var(--background) !important;
-  border-color: var(--border-bright);
-  color: var(--text); }
-  .CodeMirror .CodeMirror-line,
-  .CodeMirror .CodeMirror-gutters .CodeMirror-line,
-  .CodeMirror-gutter .CodeMirror-line {
-    background: var(--background); }
-
-.CodeMirror-cursor {
-  border-left-color: var(--text); }
-
-.CodeMirror-selected {
-  background-color: rgba(255, 255, 255, 0.2) !important; }
-
-pre.special_formatting {
-  background: var(--background-elevated) !important; }
 
 /* Snippets */
 select {

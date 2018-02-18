@@ -1,0 +1,24 @@
+#col_flex {
+  border-left: none !important;
+}
+
+#flex_contents {
+  .heading {
+    background: $bg;
+    color: $text;
+    border-color: $borderDim;
+  }
+}
+
+#details_tab {
+  .channel_page_section {
+    background: $bg2 !important;
+    border-top: 1px solid $borderDim !important;
+
+    .section_header,
+    .section_title {
+      color: $text !important;
+    }
+  }
+}
+

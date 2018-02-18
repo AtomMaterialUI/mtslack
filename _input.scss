@@ -2,6 +2,10 @@
   background: transparent !important;
   color: $text !important;
   border-color: $borderDim !important;
+
+  &.offline {
+    background-color: $red !important;
+  }
 }
 
 #msg_input::-webkit-input-placeholder {

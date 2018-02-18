@@ -31,6 +31,7 @@ limitations under the License.
   --border-bright: var(--primary);
 
   --text-bright: #FFF;
+  --text-dim: #555c69;
   --text-special: var(--primary);
 
   --scrollbar-background: #000;
@@ -60,6 +61,7 @@ $bgBright: var(--background-bright);
 $borderDim: var(--border-dim);
 $border: var(--border-bright);
 $textBright: var(--text-bright);
+$textDim: var(--text-dim);
 $textSpecial: var(--text-special);
 
 $green: var(--green);
@@ -81,12 +83,17 @@ $black: var(--black);
 @import "popovers";
 @import "loading";
 @import "main";
+
+@import "file-list";
+@import "datepicker";
 @import "menu";
 @import "scrollbar";
 @import "modals";
 @import "emoji";
 @import "input";
 @import "new_channel";
+
+@import "codemirror";
 
 /* Channels */
 .creator_link,
@@ -96,7 +103,6 @@ $black: var(--black);
 }
 
 /* Replace the background for all panels */
-#search_terms,
 #footer,
 ts-jumper ts-jumper-container /* The jump to... */
 ,
@@ -204,15 +210,12 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 .file_container .CodeMirror .sssh-line:before,
 .file_container .sssh-code .CodeMirror-code > div:before,
 .file_container .sssh-code .sssh-line:before,
-#col_flex,
 .search_message_result,
 .search_result_with_extract,
-#search_filters a,
-.menu #menu_items_scroller {
+#search_filters a {
   background: var(--background-elevated) !important;
 }
 
-#flex_contents .heading,
 #flex_contents .heading a,
 #flex_contents .heading_text,
 #flex_contents .subheading {
@@ -227,9 +230,7 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 .search_message_result .search_message_result_meta .date_links a,
 .flexpane_redesign #flex_contents .heading_text,
 #flex_contents .subheading,
-#search_filters.files #filter_files, #search_filters.messages #filter_messages,
-.menu ul li a,
-.menu {
+#search_filters.files #filter_files, #search_filters.messages #filter_messages {
   color: var(--text) !important;
   border-color: var(--border-dim) !important;
 }
@@ -316,10 +317,6 @@ span.match {
   color: var(--text);
 }
 
-.disclosure_triangle {
-  color: var(--text) !important;
-}
-
 .channels_list_holder ul li a.channel_name,
 .channels_list_holder ul li:not(.unread) .group_name,
 .channels_list_holder ul li .im_name,
@@ -346,35 +343,12 @@ span.match {
   background-color: var(--background);
 }
 
-#details_tab .channel_page_section {
-  background-color: var(--background-elevated);
-}
-
-#details_tab .channel_page_section .section_title {
-  color: var(--text);
-}
-
 .pinned_item .pin_member_name a, .pinned_item {
   color: var(--text) !important;
 }
 
 .pinned_item .pinned_message_text .pin_truncate_fade {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--background-elevated)), color-stop(1, rgba(255, 255, 255, 0)));
-}
-
-.tab_container .file_list_item .contents .member,
-.tab_container .file_list_item .contents .service_link,
-.tab_container .file_list_item .contents .share_info,
-.tab_container .file_list_item .contents .time {
-  color: var(--text-special);
-}
-
-.tab_container .file_list_item:focus, .tab_container .file_list_item:hover {
-  background-color: var(--background-hover);
-}
-
-.file_list_item {
-  border: 1px solid var(--border-dim) !important;
 }
 
 /* files */
@@ -419,15 +393,6 @@ ts-mention.ts_tip {
 ts-mention.ts_tip:hover {
   color: var(--text-bright) !important;
   border: 1px solid var(--border-bright);
-}
-
-.menu .section_header .header_label {
-  color: var(--text) !important;
-  background-color: var(--background-elevated) !important;
-}
-
-.menu .section_header hr {
-  border-color: transparent;
 }
 
 /* threads */
@@ -564,8 +529,6 @@ ts-thread .view_all_replies_container:hover {
 #quick_switcher_btn {
   border-color: transparent !important;
 }
-
-@import "codemirror";
 
 /* Snippets */
 select {

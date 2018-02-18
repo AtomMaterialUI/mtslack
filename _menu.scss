@@ -17,6 +17,19 @@
     border-color: $border !important;
   }
 
+  #menu_items_scroller {
+    background: $bg2 !important;
+  }
+
+  .section_header .header_label {
+    color: $text !important;
+    background-color: $bg2 !important;
+  }
+
+  .section_header hr {
+    border-color: transparent;
+  }
+
   #menu_items {
     .flexpane_menu_item {
       a, a:not(.disabled) {
@@ -34,5 +47,23 @@
         border: none !important;
       }
     }
+
+    .member_jump_item {
+      &:hover a {
+        background: $bgHover;
+        color: $textBright;
+      }
+    }
+
+    li {
+      a {
+        color: $text !important;
+      }
+      &:hover a {
+        background: $bgHover !important;
+        color: $textBright !important;
+      }
+    }
   }
+
 }

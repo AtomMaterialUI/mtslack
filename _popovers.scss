@@ -1,8 +1,67 @@
-.popover_menu {
-  background: $bg;
-  border-color: $borderDim;
+.popover_menu,
+.c-menu {
+  background-color: $bg !important;
+  color: $text !important;
+  border-color: $borderDim !important;
 }
 
 .popover_mask {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+// Channel menu items
+.c-menu_item__button {
+  color: $text !important;
+  &--danger {
+    color: $red;
+  }
+  &--highlighted {
+    background: $bgHover !important;
+    color: $textBright !important;
+  }
+}
+
+.c-menu_separator__separator {
+  border-bottom-color: $borderDim;
+}
+
+#autocomplete_menu {
+  background-color: $bg2 !important;
+  color: $text !important;
+
+  // Header
+  .query_header {
+    background: $bg !important;
+    color: $text !important;
+  }
+
+  // Result
+  .result_item_btn {
+    color: $text !important;
+
+    .icon, .text, .action {
+      color: $text !important;
+    }
+
+    // in: @channel
+    .token {
+      background-color: $primary !important;
+      color: $textBright !important;
+    }
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+
+  // Footer
+  footer.unified {
+    background: $bg !important;
+    color: $text !important;
+
+    > * {
+      color: $text !important;
+    }
+  }
 }

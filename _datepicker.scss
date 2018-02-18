@@ -1,0 +1,53 @@
+// Calendar
+.pickmeup {
+  background: $bg !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+
+  .pmu-instance {
+    .pmu-button {
+      color: $text;
+    }
+
+    .pmu-selected {
+      background: $accent !important;
+      color: $textBright !important;
+    }
+
+    .pmu-button:not(.pmu-disabled):hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+
+    .pmu-disabled {
+      background: $bg2 !important;
+      color: $textDim !important;
+    }
+
+    .pmu-not-in-month {
+      background: $bg2 !important;
+      color: $text;
+    }
+
+    // Today date
+    .pmu-today {
+      &.pmu-selected {
+        background: $bg !important;
+      }
+
+      .pmu-today-border {
+        background: $primary !important;
+        border-color: $primary !important;
+      }
+    }
+
+    // selecting the day
+    .pmu-day-of-week *,
+    .pmu-years *,
+    .pmu-months *,
+    .pmu-days * {
+      color: $text;
+      border-color: $borderDim;
+    }
+  }
+}

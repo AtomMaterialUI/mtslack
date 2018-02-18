@@ -26,6 +26,10 @@ textarea:focus, input[type="text"]:focus,
   background: $accent !important;
 }
 
+.blue_fill {
+  color: $primary !important;
+}
+
 .subtle_silver {
   color: $text !important;
 }
@@ -122,5 +126,13 @@ pre {
 }
 
 .ql-placeholder {
+  color: $text !important;
+}
+
+.close_flexpane {
+  color: $text !important;
+}
+
+.disclosure_triangle {
   color: $text !important;
 }
