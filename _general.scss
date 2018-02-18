@@ -93,7 +93,8 @@ textarea:focus, input[type="text"]:focus,
   &:hover,
   &:hover::after {
     background: $bgHover !important;
-    color: $accent !important;
+    color: $primary !important;
+    border-color: $border !important;
   }
 }
 
@@ -160,4 +161,22 @@ pre {
   border: 1px solid $border;
   color: $textAccent !important;
   background: $primary !important;
+}
+
+// New messages banner
+.p-message_pane__unread_banner__banner {
+  background: $accent !important;
+  color: $textBright !important;
+}
+
+// unread
+.c-message_list__unread_divider {
+  &__separator {
+    border-color: $red2 !important;
+  }
+
+  &__label {
+    background: $red2 !important;
+    color: $textBright !important;
+  }
 }

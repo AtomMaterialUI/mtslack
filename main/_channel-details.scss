@@ -39,8 +39,17 @@ ts-message.selected {
   background: $bg2 !important;
 }
 
-.light_theme ts-message .message_content .message_sender {
+ts-message.selected .message_content .message_sender {
   color: $textBright !important;
+}
+
+ts-message .message_content {
+  .message_sender {
+    color: $textBright !important;
+  }
+  .message_body {
+    color: $text !important;
+  }
 }
 
 .thread_channel_link {

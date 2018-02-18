@@ -1,0 +1,23 @@
+.tab_complete_ui {
+  background: $bg2;
+  color: $text;
+  border-color: $borderDim;
+
+  .tab_complete_ui_header {
+    background: $bg !important;
+    color: $textBright !important;
+    border-bottom-color: $borderDim;
+
+    #chat_input_tab_ui_header_query strong {
+      color: $accent !important;
+    }
+  }
+
+  li.tab_complete_ui_group,
+  li.tab_complete_ui_item {
+    &.active {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+}

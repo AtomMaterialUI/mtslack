@@ -116,7 +116,8 @@ textarea:focus, input[type="text"]:focus,
   .btn_outline:hover,
   .btn_outline:hover::after {
     background: var(--background-hover) !important;
-    color: var(--accent) !important; }
+    color: var(--primary) !important;
+    border-color: var(--border-bright) !important; }
 
 hr {
   border-top: 1px solid var(--border-bright); }
@@ -170,6 +171,16 @@ pre {
   border: 1px solid var(--border-bright);
   color: var(--text-accent) !important;
   background: var(--primary) !important; }
+
+.p-message_pane__unread_banner__banner {
+  background: var(--accent) !important;
+  color: var(--text-bright) !important; }
+
+.c-message_list__unread_divider__separator {
+  border-color: var(--red2) !important; }
+.c-message_list__unread_divider__label {
+  background: var(--red2) !important;
+  color: var(--text-bright) !important; }
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
@@ -432,6 +443,14 @@ pre {
   border-color: var(--border-dim) !important; }
   .client_main_container .c-message_actions__button:hover {
     color: var(--primary) !important; }
+.client_main_container ts-message .action_hover_container {
+  background: var(--background-elevated) !important; }
+  .client_main_container ts-message .action_hover_container .btn_msg_action {
+    background: var(--background-elevated) !important;
+    color: var(--text) !important;
+    border-color: var(--border-dim) !important; }
+    .client_main_container ts-message .action_hover_container .btn_msg_action:hover {
+      color: var(--primary) !important; }
 
 #col_flex {
   border-left: none !important; }
@@ -458,8 +477,13 @@ pre {
 ts-message.selected {
   background: var(--background-elevated) !important; }
 
-.light_theme ts-message .message_content .message_sender {
+ts-message.selected .message_content .message_sender {
   color: var(--text-bright) !important; }
+
+ts-message .message_content .message_sender {
+  color: var(--text-bright) !important; }
+ts-message .message_content .message_body {
+  color: var(--text) !important; }
 
 .thread_channel_link {
   color: var(--text) !important; }
@@ -488,6 +512,24 @@ ts-message.selected {
   background: transparent !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
+
+.inline_message_input_container .ql-container {
+  border-color: var(--border-dim) !important; }
+
+.tab_complete_ui {
+  background: var(--background-elevated);
+  color: var(--text);
+  border-color: var(--border-dim); }
+  .tab_complete_ui .tab_complete_ui_header {
+    background: var(--background) !important;
+    color: var(--text-bright) !important;
+    border-bottom-color: var(--border-dim); }
+    .tab_complete_ui .tab_complete_ui_header #chat_input_tab_ui_header_query strong {
+      color: var(--accent) !important; }
+  .tab_complete_ui li.tab_complete_ui_group.active,
+  .tab_complete_ui li.tab_complete_ui_item.active {
+    background: var(--background-hover) !important;
+    color: var(--text-bright) !important; }
 
 #footer {
   background: var(--background) !important;
@@ -823,6 +865,9 @@ div::-webkit-scrollbar-thumb,
 #primary_file_button {
   background: transparent !important;
   color: var(--text) !important;
+  border-color: var(--border-dim) !important; }
+
+.inline_message_input_container .ql-container {
   border-color: var(--border-dim) !important; }
 
 /* CodeMirror syntax highlighting */

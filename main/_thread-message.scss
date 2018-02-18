@@ -1,0 +1,15 @@
+ts-message {
+  .action_hover_container {
+    background: $bg2 !important;
+
+    .btn_msg_action {
+      background: $bg2 !important;
+      color: $text !important;
+      border-color: $borderDim !important;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
