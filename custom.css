@@ -29,6 +29,7 @@ limitations under the License.
   --text-bright: #FFF;
   --text-dim: #555c69;
   --text-special: var(--primary);
+  --text-accent: var(--text-bright);
   --scrollbar-background: #000;
   --scrollbar-border: var(--primary);
   --green: #98C379;
@@ -143,6 +144,20 @@ pre {
 
 .disclosure_triangle {
   color: var(--text) !important; }
+
+.c-mrkdwn__mention,
+.c-mrkdwn__member--mention,
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__subteam--mention {
+  background: var(--accent);
+  color: var(--text-accent); }
+  .c-mrkdwn__mention:hover,
+  .c-mrkdwn__member--mention:hover,
+  .c-mrkdwn__broadcast--mention:hover,
+  .c-mrkdwn__subteam--mention:hover {
+    background: var(--accent);
+    color: var(--text-accent);
+    opacity: 0.8; }
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
@@ -377,7 +392,7 @@ pre {
   .client_main_container #client_body .c-message__sender_link {
     color: var(--text) !important; }
   .client_main_container #client_body .c-message_attachment {
-    color: var(--background); }
+    color: var(--text); }
     .client_main_container #client_body .c-message_attachment .c-message_attachment__border {
       color: var(--border-bright); }
     .client_main_container #client_body .c-message_attachment .c-message_attachment__author {

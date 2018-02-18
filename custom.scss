@@ -33,6 +33,7 @@ limitations under the License.
   --text-bright: #FFF;
   --text-dim: #555c69;
   --text-special: var(--primary);
+  --text-accent: var(--text-bright);
 
   --scrollbar-background: #000;
   --scrollbar-border: var(--primary);
@@ -63,6 +64,7 @@ $border: var(--border-bright);
 $textBright: var(--text-bright);
 $textDim: var(--text-dim);
 $textSpecial: var(--text-special);
+$textAccent: var(--text-accent);
 
 $green: var(--green);
 $cyan: var(--cyan);

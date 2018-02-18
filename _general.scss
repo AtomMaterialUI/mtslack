@@ -136,3 +136,17 @@ pre {
 .disclosure_triangle {
   color: $text !important;
 }
+
+// Highlight words
+.c-mrkdwn__mention,
+.c-mrkdwn__member--mention,
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__subteam--mention {
+  background: $accent;
+  color: $textAccent;
+  &:hover {
+    background: $accent;
+    color: $textAccent;
+    opacity: 0.8;
+  }
+}
