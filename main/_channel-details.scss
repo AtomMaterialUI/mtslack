@@ -3,10 +3,18 @@
 }
 
 #flex_contents {
-  .heading {
+  .heading,
+  .heading_text,
+  .subheading {
     background: $bg;
     color: $text;
     border-color: $borderDim;
+  }
+
+  .flexpane_tab_bar {
+    li.active {
+      border-bottom-color: $accent;
+    }
   }
 }
 

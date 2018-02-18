@@ -32,6 +32,7 @@ limitations under the License.
   --text-accent: var(--text-bright);
   --scrollbar-background: #000;
   --scrollbar-border: var(--primary);
+  --yellow: #fc0;
   --green: #98C379;
   --cyan: #56B6C2;
   --blue: #61AFEF;
@@ -106,12 +107,16 @@ textarea:focus, input[type="text"]:focus,
 .ts_toggle .ts_toggle_secondary_label {
   color: var(--text) !important; }
 
-.btn, .btn_outline {
+.btn,
+.btn_outline {
   background: var(--background-elevated) !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
-  .btn:hover, .btn:hover::after, .btn_outline:hover, .btn_outline:hover::after {
-    background: var(--background-hover) !important; }
+  .btn:hover, .btn:hover::after,
+  .btn_outline:hover,
+  .btn_outline:hover::after {
+    background: var(--background-hover) !important;
+    color: var(--accent) !important; }
 
 hr {
   border-top: 1px solid var(--border-bright); }
@@ -158,6 +163,13 @@ pre {
     background: var(--accent);
     color: var(--text-accent);
     opacity: 0.8; }
+
+.bot_label {
+  padding: 0 4px !important;
+  border-radius: 3px !important;
+  border: 1px solid var(--border-bright);
+  color: var(--text-accent) !important;
+  background: var(--primary) !important; }
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
@@ -424,10 +436,14 @@ pre {
 #col_flex {
   border-left: none !important; }
 
-#flex_contents .heading {
+#flex_contents .heading,
+#flex_contents .heading_text,
+#flex_contents .subheading {
   background: var(--background);
   color: var(--text);
   border-color: var(--border-dim); }
+#flex_contents .flexpane_tab_bar li.active {
+  border-bottom-color: var(--accent); }
 
 #details_tab .channel_page_section {
   background: var(--background-elevated) !important;
@@ -467,6 +483,22 @@ pre {
   .tab_container .file_list_item .contents .share_info,
   .tab_container .file_list_item .contents .time {
     color: var(--text-special); }
+  #client-ui .file_list_item .star,
+  .tab_container .file_list_item .star {
+    color: var(--text); }
+  #client-ui .file_list_item .star.starred,
+  #client-ui .file_list_item .star:hover,
+  .tab_container .file_list_item .star.starred,
+  .tab_container .file_list_item .star:hover {
+    color: var(--yellow); }
+
+#file_list_container {
+  background: var(--background-elevated); }
+
+.filetype_icon.email.s30:before,
+.filetype_icon.email.s48:before,
+.ts_icon_file_email:before {
+  color: var(--primary); }
 
 .pickmeup {
   background: var(--background) !important;
@@ -902,12 +934,6 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 #messages_container::after {
   background: none !important; }
 
-.bot_label {
-  padding: 0 4px !important;
-  border-radius: 3px !important;
-  background: var(--background) !important;
-  border: 1px solid var(--border-bright); }
-
 .file_container:after {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, #333 100%) !important; }
 
@@ -924,19 +950,13 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 #search_filters a {
   background: var(--background-elevated) !important; }
 
-#flex_contents .heading a,
-#flex_contents .heading_text,
-#flex_contents .subheading {
-  background: var(--background) !important;
-  color: var(--text) !important;
-  border-color: var(--border-dim); }
-
 .c-message .action_hover_container .btn_msg_action,
-.file_container .CodeMirror .CodeMirror-code > div pre, .file_container .CodeMirror .sssh-line pre, .file_container .sssh-code .CodeMirror-code > div pre, .file_container .sssh-code .sssh-line pre,
+.file_container .CodeMirror .CodeMirror-code > div pre,
+.file_container .CodeMirror .sssh-line pre,
+.file_container .sssh-code .CodeMirror-code > div pre,
+.file_container .sssh-code .sssh-line pre,
 .search_message_result .search_message_result_meta a,
 .search_message_result .search_message_result_meta .date_links a,
-.flexpane_redesign #flex_contents .heading_text,
-#flex_contents .subheading,
 #search_filters.files #filter_files, #search_filters.messages #filter_messages {
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }

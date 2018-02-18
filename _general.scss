@@ -84,7 +84,8 @@ textarea:focus, input[type="text"]:focus,
 }
 
 // btns
-.btn, .btn_outline {
+.btn,
+.btn_outline {
   background: $bg2 !important;
   color: $text !important;
   border-color: $borderDim !important;
@@ -92,6 +93,7 @@ textarea:focus, input[type="text"]:focus,
   &:hover,
   &:hover::after {
     background: $bgHover !important;
+    color: $accent !important;
   }
 }
 
@@ -149,4 +151,13 @@ pre {
     color: $textAccent;
     opacity: 0.8;
   }
+}
+
+// Label for bots
+.bot_label {
+  padding: 0 4px !important;
+  border-radius: 3px !important;
+  border: 1px solid $border;
+  color: $textAccent !important;
+  background: $primary !important;
 }
