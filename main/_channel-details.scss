@@ -2,6 +2,10 @@
   border-left: none !important;
 }
 
+.monkey_scroll_hider {
+  background: $bg2 !important;
+}
+
 #flex_contents {
   .heading,
   .heading_text,
@@ -28,5 +32,17 @@
       color: $text !important;
     }
   }
+
 }
 
+ts-message.selected {
+  background: $bg2 !important;
+}
+
+.light_theme ts-message .message_content .message_sender {
+  color: $textBright !important;
+}
+
+.thread_channel_link {
+  color: $text !important;
+}

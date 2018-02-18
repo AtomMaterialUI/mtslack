@@ -1,0 +1,34 @@
+#msg_input {
+  background: transparent !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+
+  &.offline {
+    background-color: $red !important;
+  }
+
+  .emo_menu {
+    color: $textBright !important;
+  }
+}
+
+#msg_input::-webkit-input-placeholder {
+  color: $text !important;
+}
+
+.ql-container {
+  background: $bg !important;
+  border-color: $borderDim !important;
+
+  .ql-editor {
+    background: $bg !important;
+    color: $text !important;
+  }
+}
+
+/* Input message - File button */
+#primary_file_button {
+  background: transparent !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+}

@@ -94,7 +94,7 @@ $black: var(--black);
 @import "scrollbar";
 @import "modals";
 @import "emoji";
-@import "input";
+@import "main/input";
 @import "new_channel";
 
 @import "codemirror";
@@ -107,18 +107,12 @@ $black: var(--black);
 }
 
 /* Replace the background for all panels */
-#footer,
 ts-jumper ts-jumper-container /* The jump to... */
 ,
 ts-jumper input[type="text"],
 #channel_topic_text code,
 .toolbar_container {
   background: var(--background) !important;
-}
-
-/* Remove header box shadow */
-#footer {
-  box-shadow: none;
 }
 
 /* All File types active tab */
@@ -153,13 +147,6 @@ ts-jumper ol li .channel_name {
 a.message_sender,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
   color: var(--text) !important;
-}
-
-/* Input message - File button */
-#primary_file_button {
-  background: transparent !important;
-  color: var(--text) !important;
-  border-color: var(--border-dim) !important;
 }
 
 #convo_container .convo_flexpane_divider .reply_count {
@@ -247,7 +234,6 @@ ts-jumper input[type="text"]::-webkit-input-placeholder {
 .search_result_with_extract,
 .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex,
 .flexpane_redesign #flex_contents .heading,
-#flex_contents .subheading,
 .search_segmented_control {
   border-color: var(--border-dim) !important;
 }
