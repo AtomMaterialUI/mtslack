@@ -13,3 +13,14 @@ ts-message {
     }
   }
 }
+
+// Channel foreword
+.p-message_pane__foreword {
+  &__description {
+    color: $text !important;
+  }
+
+  .c-member__other-names--large {
+    color: $textDim !important;
+  }
+}

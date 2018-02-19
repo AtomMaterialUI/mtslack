@@ -154,15 +154,20 @@ pre {
 .c-mrkdwn__mention,
 .c-mrkdwn__member--mention,
 .c-mrkdwn__broadcast--mention,
-.c-mrkdwn__subteam--mention {
+.c-mrkdwn__subteam--mention,
+.c-mrkdwn__member--link,
+.c-mrkdwn__subteam--link {
   background: var(--accent);
-  color: var(--text-accent); }
+  color: var(--text-accent) !important;
+  padding: 4px; }
   .c-mrkdwn__mention:hover,
   .c-mrkdwn__member--mention:hover,
   .c-mrkdwn__broadcast--mention:hover,
-  .c-mrkdwn__subteam--mention:hover {
+  .c-mrkdwn__subteam--mention:hover,
+  .c-mrkdwn__member--link:hover,
+  .c-mrkdwn__subteam--link:hover {
     background: var(--accent);
-    color: var(--text-accent);
+    color: var(--text-accent) !important;
     opacity: 0.8; }
 
 .bot_label {
@@ -451,6 +456,10 @@ pre {
     border-color: var(--border-dim) !important; }
     .client_main_container ts-message .action_hover_container .btn_msg_action:hover {
       color: var(--primary) !important; }
+.client_main_container .p-message_pane__foreword__description {
+  color: var(--text) !important; }
+.client_main_container .p-message_pane__foreword .c-member__other-names--large {
+  color: var(--text-dim) !important; }
 
 #col_flex {
   border-left: none !important; }

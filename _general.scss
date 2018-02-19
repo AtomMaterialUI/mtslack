@@ -144,12 +144,15 @@ pre {
 .c-mrkdwn__mention,
 .c-mrkdwn__member--mention,
 .c-mrkdwn__broadcast--mention,
-.c-mrkdwn__subteam--mention {
+.c-mrkdwn__subteam--mention,
+.c-mrkdwn__member--link,
+.c-mrkdwn__subteam--link {
   background: $accent;
-  color: $textAccent;
+  color: $textAccent !important;
+  padding: 4px;
   &:hover {
     background: $accent;
-    color: $textAccent;
+    color: $textAccent !important;
     opacity: 0.8;
   }
 }
