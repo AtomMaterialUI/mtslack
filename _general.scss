@@ -173,7 +173,8 @@ svg.ts_icon_spinner:empty {
 .c-mrkdwn__broadcast--mention,
 .c-mrkdwn__subteam--mention,
 .c-mrkdwn__member--link,
-.c-mrkdwn__subteam--link {
+.c-mrkdwn__subteam--link,
+ts-mention {
   background: $accent;
   color: $textAccent !important;
   padding: 4px;
@@ -209,4 +210,11 @@ svg.ts_icon_spinner:empty {
     background: $red2 !important;
     color: $textBright !important;
   }
+}
+
+// Snippets, formatting...
+#snippet_prompt,
+#special_formatting_text,
+#typing_text {
+  color: $textDim;
 }

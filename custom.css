@@ -178,7 +178,8 @@ svg.ts_icon_spinner:empty {
 .c-mrkdwn__broadcast--mention,
 .c-mrkdwn__subteam--mention,
 .c-mrkdwn__member--link,
-.c-mrkdwn__subteam--link {
+.c-mrkdwn__subteam--link,
+ts-mention {
   background: var(--accent);
   color: var(--text-accent) !important;
   padding: 4px; }
@@ -187,7 +188,8 @@ svg.ts_icon_spinner:empty {
   .c-mrkdwn__broadcast--mention:hover,
   .c-mrkdwn__subteam--mention:hover,
   .c-mrkdwn__member--link:hover,
-  .c-mrkdwn__subteam--link:hover {
+  .c-mrkdwn__subteam--link:hover,
+  ts-mention:hover {
     background: var(--accent);
     color: var(--text-accent) !important;
     opacity: 0.8; }
@@ -208,6 +210,11 @@ svg.ts_icon_spinner:empty {
 .c-message_list__unread_divider__label {
   background: var(--red2) !important;
   color: var(--text-bright) !important; }
+
+#snippet_prompt,
+#special_formatting_text,
+#typing_text {
+  color: var(--text-dim); }
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
