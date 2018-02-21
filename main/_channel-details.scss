@@ -1,9 +1,10 @@
 #col_flex {
+  background: $bg2;
   border-left: none !important;
 }
 
 .monkey_scroll_hider {
-  background: $bg2 !important;
+  background: $bg2;
 }
 
 #flex_contents {
@@ -33,25 +34,22 @@
     }
   }
 
-}
-
-ts-message.selected {
-  background: $bg2 !important;
-}
-
-ts-message.selected .message_content .message_sender {
-  color: $textBright !important;
-}
-
-ts-message .message_content {
-  .message_sender {
-    color: $textBright !important;
+  .conversation_details {
+    .member_info_timezone {
+      border-top-color: $borderDim;
+    }
   }
-  .message_body {
+
+}
+
+// Channel foreword
+.p-message_pane__foreword {
+  &__description {
     color: $text !important;
   }
+
+  .c-member__other-names--large {
+    color: $textDim !important;
+  }
 }
 
-.thread_channel_link {
-  color: $text !important;
-}

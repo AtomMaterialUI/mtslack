@@ -1,24 +1,58 @@
+@import "core/animations";
+
 h1, h2, h3, h4 {
   color: $text;
 }
 
-textarea, input[type="text"],
+textarea,
+input[type="text"],
 #file_comment_textarea {
   background-color: $bg !important;
   border-color: $borderDim !important;
   color: $text !important;
+
+  &:focus {
+    border-color: $primary !important;
+    color: $textBright !important;
+  }
 }
 
-textarea:focus, input[type="text"]:focus,
-#file_comment_textarea {
-  border-color: $primary !important;
-  color: $textBright !important;
+/* Snippets */
+select {
+  background-color: $bg;
+  color: $text;
+  border-color: $borderDim;
+}
+
+hr {
+  border-top: 1px solid $border;
+}
+
+a, a:link, a:visited {
+  color: $textSpecial;
+
+  &:hover {
+    color: $textSpecial;
+  }
+}
+
+code {
+  color: $textSpecial !important;
+  background-color: $bg2 !important;
+  border-color: $borderDim !important;
+}
+
+pre {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $borderDim !important;
 }
 
 .btn-link {
   color: $primary;
 }
 
+// Override custom colors
 .sk_fill_blue_bg,
 .blue_fill_bg,
 .seafoam_green_bg,
@@ -26,7 +60,9 @@ textarea:focus, input[type="text"]:focus,
   background: $accent !important;
 }
 
-.blue_fill {
+.blue_fill,
+.charcoal_grey,
+.blue_link {
   color: $primary !important;
 }
 
@@ -60,7 +96,8 @@ textarea:focus, input[type="text"]:focus,
 }
 
 // Spinners
-.ts_icon_spin.ts_icon_spinner:empty, svg.ts_icon_spinner:empty {
+.ts_icon_spin.ts_icon_spinner:empty,
+svg.ts_icon_spinner:empty {
   filter: invert(50%);
 }
 
@@ -75,11 +112,21 @@ textarea:focus, input[type="text"]:focus,
 // toggles
 .ts_toggle {
   .ts_toggle_button {
-    background: $green;
+    background: $bg2;
   }
 
   .ts_toggle_secondary_label {
-    color: $text !important;
+    color: $text;
+  }
+
+  &.checked {
+    .ts_toggle_button {
+      background: $accent;
+    }
+
+    .ts_toggle_secondary_label {
+      color: $textBright;
+    }
   }
 }
 
@@ -90,36 +137,16 @@ textarea:focus, input[type="text"]:focus,
   color: $text !important;
   border-color: $borderDim !important;
 
-  &:hover,
-  &:hover::after {
+  &:hover {
     background: $bgHover !important;
     color: $primary !important;
     border-color: $border !important;
   }
-}
 
-hr {
-  border-top: 1px solid $border;
-}
-
-a, a:link, a:visited {
-  color: $textSpecial;
-
-  &:hover {
-    color: $textSpecial;
+  &:hover::after {
+    color: $primary !important;
+    border-color: $border !important;
   }
-}
-
-code {
-  color: $textSpecial !important;
-  background-color: $bg2 !important;
-  border-color: $borderDim !important;
-}
-
-pre {
-  background: $bg2 !important;
-  color: $text !important;
-  border-color: $borderDim !important;
 }
 
 .lazy_filter_select .lfs_input_container {

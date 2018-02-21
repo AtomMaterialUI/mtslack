@@ -1,0 +1,57 @@
+ts-jumper {
+
+  input[type="text"] {
+    background: $bg;
+    color: $text;
+
+    &::-webkit-input-placeholder {
+      color: $text;
+    }
+  }
+
+  ts-jumper-container {
+    background: $bg;
+    color: $text;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+  }
+
+  // Top text
+  ts-jumper-shortcut-banner {
+    color: $textDim;
+  }
+
+  .monkey_scroll_hider {
+    background: $bg;
+    color: $text;
+  }
+
+  // Result list
+  ts-jumper-results {
+    background: $bg;
+    color: $text;
+  }
+
+  // Lists
+  ol li {
+    .member_real_name,
+    .view_name,
+    .channel_name {
+      color: $text;
+    }
+
+    &.highlighted {
+      background-color: $bg2 !important;
+      color: $textBright !important;
+    }
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+
+  ts-jumper-help {
+    color: $text;
+    border-color: $borderDim;
+  }
+}

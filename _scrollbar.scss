@@ -22,10 +22,15 @@ div::-webkit-scrollbar-thumb,
 
 #client-ui {
   .monkey_scroll_bar {
-    background: $bgLight !important;
+    background: $bg2;
   }
   .monkey_scroll_handle_inner {
     border-color: $borderDim;
-    background: $bgLight !important;
+    background: $bg2;
   }
+}
+
+.monkey_scroll_handle_inner {
+  border-color: $borderDim;
+  background: $bg2;
 }

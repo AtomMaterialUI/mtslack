@@ -34,6 +34,7 @@
     color: $text !important;
   }
 
+  // Channel message
   .c-message {
     border-radius: 5px;
     margin: 1px 5px !important;
@@ -48,8 +49,14 @@
   .c-message,
   .c-message__content,
   .c-message__body,
+  .c-message__label,
   .c-message__sender {
     color: $text !important;
+
+    // Starred messages
+    &--starred {
+      background-color: $bg2 !important;
+    }
   }
 
   .c-message__sender_link {
@@ -70,6 +77,10 @@
 
     .c-message_attachment__text {
       color: $text;
+    }
+
+    .c-message_attachment__text_expander {
+      color: $primary;
     }
 
     .c-message_attachment__media_trigger {
@@ -99,4 +110,5 @@
   .c-message--hover {
     background: $bgHover !important;
   }
+
 }

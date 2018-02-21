@@ -10,7 +10,7 @@
   }
 
   div, span, label {
-    color: $text !important;
+    color: $text;
   }
 
   .input_note_special,
@@ -20,20 +20,28 @@
 
   // Buttons (back, close...)
   .fs_modal_btn {
-    color: $text !important;
+    color: $text;
+    &:hover {
+      background: $bgHover;
+    }
   }
 
+  // File viewer header
   .fs_modal_file_viewer_header {
     background: transparent;
     .control_btn {
-      color: $text !important;
+      color: $text;
 
     }
   }
 
+  // File Viewer content
   .fs_modal_file_viewer_content {
     background: $bg;
 
+    .viewer {
+      background-color: $bg;
+    }
   }
 
   #fs_modal_sidebar a {

@@ -1,0 +1,8 @@
+@keyframes fade-background-highlight {
+  from {
+    background-color: $bgHover;
+  }
+  to {
+    background-color: $bg;
+  }
+}

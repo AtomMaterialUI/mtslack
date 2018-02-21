@@ -96,6 +96,7 @@ $black: var(--black);
 @import "emoji";
 @import "main/input";
 @import "new_channel";
+@import "jumper";
 
 @import "codemirror";
 
@@ -107,9 +108,6 @@ $black: var(--black);
 }
 
 /* Replace the background for all panels */
-ts-jumper ts-jumper-container /* The jump to... */
-,
-ts-jumper input[type="text"],
 #channel_topic_text code,
 .toolbar_container {
   background: var(--background) !important;
@@ -133,19 +131,12 @@ li.active[class] span {
   color: var(--text) !important;
 }
 
-ts-jumper input[type="text"],
-.channel_purpose_text /* Right side channel details */
-,
-ts-jumper ol li .member_real_name /* Quick jump lists */
-,
-ts-jumper ol li .view_name,
-ts-jumper ol li .channel_name {
+.channel_purpose_text {
   color: var(--text) !important;
 }
 
 /* File sender */
-a.message_sender,
-ts-jumper input[type="text"]::-webkit-input-placeholder {
+a.message_sender {
   color: var(--text) !important;
 }
 
@@ -506,13 +497,6 @@ ts-thread .view_all_replies_container:hover {
   border-color: transparent !important;
 }
 
-/* Snippets */
-select {
-  background-color: var(--background);
-  color: var(--text);
-  border-color: var(--border-dim);
-}
-
 .lazy_filter_select .lfs_list_container,
 .lazy_filter_select .lfs_list .lfs_item.active {
   background-color: var(--background-elevated);
@@ -540,24 +524,6 @@ select {
 
 .notification_example.mac {
   color: #555459; /* default color - leave unthemed */
-}
-
-/* global jumper */
-ts-jumper, ts-jumper.active {
-  background-color: rgba(32, 32, 32, 0.6);
-}
-
-ts-jumper ts-jumper-container {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
-}
-
-ts-jumper ol li.highlighted:not(.no_hover),
-ts-jumper ol:not(.keyboard_active) li:hover:not(.no_hover) {
-  background: var(--background-hover) !important;
-}
-
-.charcoal_grey {
-  color: var(--primary) !important;
 }
 
 .c-member__name,
