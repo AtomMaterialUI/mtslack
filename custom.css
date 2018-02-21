@@ -89,8 +89,8 @@ pre {
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
 
-.btn-link {
-  color: var(--primary); }
+.btn_link {
+  color: var(--primary) !important; }
 
 .sk_fill_blue_bg,
 .blue_fill_bg,
@@ -550,6 +550,14 @@ ts-mention {
 .p-message_pane__foreword .c-member__other-names--large {
   color: var(--text-dim) !important; }
 
+.c-channel_insights__drawer_title {
+  color: var(--text-bright); }
+
+.c-channel_insights__member_count {
+  color: var(--primary); }
+  .c-channel_insights__member_count .ts_icon_user {
+    color: var(--primary); }
+
 #msg_input {
   background: transparent !important;
   color: var(--text) !important;
@@ -566,7 +574,6 @@ ts-mention {
   background: var(--background) !important;
   border-color: var(--border-dim) !important; }
   .ql-container .ql-editor {
-    background: var(--background) !important;
     color: var(--text) !important; }
 
 /* Input message - File button */
@@ -743,6 +750,28 @@ div::-webkit-scrollbar-thumb,
 .monkey_scroll_handle_inner {
   border-color: var(--border-dim);
   background: var(--background-elevated); }
+
+#member_preview_scroller,
+#member_preview_web_container,
+.menu_member_header,
+.menu_member_footer {
+  background-color: var(--background-elevated);
+  border-color: var(--border-dim);
+  color: var(--text); }
+
+.menu_member_header .member_details .member_name_and_presence,
+.menu_member_header .member_details .member_display_name,
+.menu_member_header .member_details .member_title {
+  color: var(--text-bright); }
+.menu_member_header .member_details hr,
+.menu_member_header .member_details .divider {
+  border-color: var(--border-dim) !important; }
+.menu_member_header .member_details .member_timezone_value {
+  color: var(--text); }
+.menu_member_header .member_details .member_current_status {
+  color: var(--text) !important; }
+  .menu_member_header .member_details .member_current_status .member_current_status_label {
+    color: var(--text) !important; }
 
 #fs_modal,
 .modal,
@@ -934,7 +963,6 @@ div::-webkit-scrollbar-thumb,
   background: var(--background) !important;
   border-color: var(--border-dim) !important; }
   .ql-container .ql-editor {
-    background: var(--background) !important;
     color: var(--text) !important; }
 
 /* Input message - File button */
@@ -1193,9 +1221,6 @@ span.match {
 .mention_rxn .mention_rxn_summary .member_preview_link,
 .mention_rxn .mention_rxn_summary .mention_rxn_summary_members,
 .section_content,
-#member_preview_scroller .member_details .member_name_and_presence .member_name,
-#member_preview_web_container .member_details .member_name_and_presence .member_name,
-.menu_member_header .member_details .member_name_and_presence .member_name,
 .member_data_table a,
 .member_data_table span,
 .member_info_timezone * {
@@ -1249,13 +1274,6 @@ span.match {
 
 .file_preview_action.btn.ts_tip:hover, .file_preview_link.btn.file_comment_link:hover {
   background-color: var(--background) !important; }
-
-/* user profile popup */
-#member_preview_scroller, #member_preview_web_container,
-.menu_member_header, .menu_member_footer {
-  background-color: var(--background-elevated);
-  border-color: var(--border-dim);
-  color: var(--text); }
 
 /* user mentions for other people */
 .app_preview_link_slug.ts_tip,

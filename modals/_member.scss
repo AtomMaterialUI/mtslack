@@ -1,0 +1,38 @@
+#member_preview_scroller,
+#member_preview_web_container,
+.menu_member_header,
+.menu_member_footer {
+  background-color: $bg2;
+  border-color: $borderDim;
+  color: $text;
+}
+
+// Menu member header
+.menu_member_header {
+  .member_details {
+    // Name and description
+    .member_name_and_presence,
+    .member_display_name,
+    .member_title {
+      color: $textBright;
+    }
+
+    hr,
+    .divider {
+      border-color: $borderDim !important;
+    }
+
+    .member_timezone_value {
+      color: $text;
+    }
+
+    // Current status
+    .member_current_status {
+      color: $text !important;
+      .member_current_status_label {
+        color: $text !important;
+      }
+    }
+  }
+
+}

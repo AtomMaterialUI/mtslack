@@ -53,3 +53,13 @@
   }
 }
 
+.c-channel_insights__drawer_title {
+  color: $textBright;
+}
+
+.c-channel_insights__member_count {
+  color: $primary;
+  .ts_icon_user {
+    color: $primary;
+  }
+}
