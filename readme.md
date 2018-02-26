@@ -1,4 +1,4 @@
-# Slack Black Theme
+# One Dark Theme for Slack
 
 Atom One Dark Theme for Slack!
 

@@ -14,6 +14,9 @@
 
   .channel_header_info {
     background: $bg2;
+    button {
+      color: $primary;
+    }
   }
 
   .channel_header_info_item {
@@ -69,4 +72,17 @@
 
 #im_title.away {
   color: $textBright !important;
+}
+
+// topic
+#edit_topic_inner {
+  &::before {
+    background: $bg2;
+    border: none;
+  }
+  color: $text;
+
+  &:hover {
+    color: $primary;
+  }
 }

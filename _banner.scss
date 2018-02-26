@@ -1,0 +1,15 @@
+// Banner on top for limited history
+.p-message_pane__limited_history_foreword {
+  background: $bg2;
+  color: $text;
+
+  .c-deprecated_rounded_button {
+    background: $bg;
+  }
+}
+
+// Viewing archies
+.p-archives_banner {
+  background: $bg2;
+  color: $text;
+}

@@ -194,6 +194,19 @@ ts-mention {
     color: var(--text-accent) !important;
     opacity: 0.8; }
 
+.c-reaction {
+  background: var(--background-elevated);
+  color: var(--text-accent) !important;
+  border: none; }
+  .c-reaction:hover {
+    background: var(--background-hover);
+    color: var(--text-accent) !important; }
+  .c-reaction .c-reaction__count {
+    color: var(--primary) !important; }
+  .c-reaction .c-reaction_add {
+    background: var(--background-elevated);
+    border-color: var(--border-dim); }
+
 .bot_label {
   padding: 0 4px !important;
   border-radius: 3px !important;
@@ -215,6 +228,19 @@ ts-mention {
 #special_formatting_text,
 #typing_text {
   color: var(--text-dim); }
+
+.member_details_divider {
+  border-color: var(--border-dim) !important; }
+
+.p-message_pane__limited_history_foreword {
+  background: var(--background-elevated);
+  color: var(--text); }
+  .p-message_pane__limited_history_foreword .c-deprecated_rounded_button {
+    background: var(--background); }
+
+.p-archives_banner {
+  background: var(--background-elevated);
+  color: var(--text); }
 
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer,
@@ -390,6 +416,8 @@ ts-mention {
     color: var(--text-bright) !important; }
   .client_main_container .messages_header .channel_header_info {
     background: var(--background-elevated); }
+    .client_main_container .messages_header .channel_header_info button {
+      color: var(--primary); }
   .client_main_container .messages_header .channel_header_info_item::before {
     color: var(--border-dim) !important; }
   .client_main_container .messages_header .channel_title_info {
@@ -416,6 +444,13 @@ ts-mention {
   border-color: var(--border-bright); }
 .client_main_container #im_title.away {
   color: var(--text-bright) !important; }
+.client_main_container #edit_topic_inner {
+  color: var(--text); }
+  .client_main_container #edit_topic_inner::before {
+    background: var(--background-elevated);
+    border: none; }
+  .client_main_container #edit_topic_inner:hover {
+    color: var(--primary); }
 .client_main_container #client_body {
   background: var(--background);
   color: var(--text); }
@@ -607,6 +642,10 @@ ts-mention {
 #msg_preview {
   background: var(--background) !important; }
 
+#msg_input_message {
+  background: var(--background-elevated);
+  color: var(--text); }
+
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   border-bottom-color: var(--border-dim) !important;
@@ -721,6 +760,20 @@ ts-mention {
   .menu #menu_items li:hover a {
     background: var(--background-hover) !important;
     color: var(--text-bright) !important; }
+  .menu .slack_menu_section {
+    background: var(--background-elevated) !important; }
+    .menu .slack_menu_section::before {
+      border-top-color: var(--border-dim); }
+    .menu .slack_menu_section .slack_menu_header_primary,
+    .menu .slack_menu_section .slack_menu_header_secondary {
+      color: var(--text-bright); }
+    .menu .slack_menu_section .menu_list li:hover {
+      background: var(--background-hover); }
+      .menu .slack_menu_section .menu_list li:hover a {
+        background: var(--background-hover) !important;
+        color: var(--text-bright); }
+    .menu .slack_menu_section .menu_list li a {
+      color: var(--text) !important; }
 
 /* putting this on so many elements might cause performance issues but #yolo */
 div::-webkit-scrollbar-track,
@@ -877,6 +930,13 @@ div::-webkit-scrollbar-thumb,
   background: var(--background-elevated) !important;
   color: var(--text) !important;
   width: 380px; }
+  .menu.p-emoji_picker .p-emoji_picker__update_overlay {
+    background: var(--background-elevated);
+    color: var(--text); }
+    .menu.p-emoji_picker .p-emoji_picker__update_overlay p {
+      color: var(--text); }
+    .menu.p-emoji_picker .p-emoji_picker__update_overlay .c-button {
+      color: var(--text); }
 
 /* emojis */
 .rxn[data-emoji] {
@@ -900,9 +960,12 @@ div::-webkit-scrollbar-thumb,
 .ts_icon.ts_icon_smile_o {
   color: var(--text); }
 
-.menu .p-emoji_picker__input_container, .menu .p-emoji_picker__list_container, .menu .p-emoji_picker__heading, .menu .p-emoji_picker__footer {
+.menu .p-emoji_picker__input_container, .menu .p-emoji_picker__list_container, .menu .p-emoji_picker__emoji_deluxe_label, .menu .p-emoji_picker__heading, .menu .p-emoji_picker__footer {
   background: transparent;
   color: var(--text); }
+
+.p-emoji_picker__group_tabs {
+  border-bottom-color: var(--primary); }
 
 .p-emoji_picker__group_tab {
   border: 1px solid transparent;

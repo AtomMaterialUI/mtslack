@@ -66,4 +66,30 @@
     }
   }
 
+  // Menu section
+  .slack_menu_section {
+    background: $bg2 !important;
+    &::before {
+      border-top-color: $borderDim;
+    }
+
+    .slack_menu_header_primary,
+    .slack_menu_header_secondary {
+      color: $textBright;
+    }
+
+    .menu_list li {
+      &:hover {
+        background: $bgHover;
+        a {
+          background: $bgHover !important;
+          color: $textBright;
+        }
+      }
+      a {
+        color: $text !important;
+      }
+    }
+
+  }
 }

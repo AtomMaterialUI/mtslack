@@ -2,6 +2,18 @@
   background: $bg2 !important;
   color: $text !important;
   width: 380px;
+
+  .p-emoji_picker__update_overlay {
+    background: $bg2;
+    color: $text;
+    p {
+      color: $text;
+    }
+
+    .c-button {
+      color: $text;
+    }
+  }
 }
 
 /* emojis */
@@ -34,14 +46,20 @@
 .menu .p-emoji_picker {
   &__input_container,
   &__list_container,
+  &__emoji_deluxe_label,
   &__heading,
   &__footer {
     background: transparent;
     color: $text;
+
   }
 }
 
 // Groups
+.p-emoji_picker__group_tabs {
+  border-bottom-color: $primary;
+}
+
 .p-emoji_picker__group_tab {
   border: 1px solid transparent;
   border-bottom-width: 2px;

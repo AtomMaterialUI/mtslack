@@ -185,6 +185,25 @@ ts-mention {
   }
 }
 
+// reactions
+.c-reaction {
+  background: $bg2;
+  color: $textAccent !important;
+  border: none;
+  &:hover {
+    background: $bgHover;
+    color: $textAccent !important;
+  }
+  .c-reaction__count {
+    color: $primary !important;
+  }
+
+  .c-reaction_add {
+    background: $bg2;
+    border-color: $borderDim;
+  }
+}
+
 // Label for bots
 .bot_label {
   padding: 0 4px !important;
@@ -217,4 +236,8 @@ ts-mention {
 #special_formatting_text,
 #typing_text {
   color: $textDim;
+}
+
+.member_details_divider {
+  border-color: $borderDim !important;
 }
