@@ -4,7 +4,7 @@ Atom One Dark Theme for Slack!
 
 # Preview
 
-![Screenshot](https://cloud.githubusercontent.com/assets/7691630/24120350/4cbb643e-0d82-11e7-8353-5d4eb65dfd6a.png)
+![Screenshot](preview.png)
 
 # Installing into Slack
 
