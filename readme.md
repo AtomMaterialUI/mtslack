@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://raw.githubusercontent.com/mallowigi/slack-black-theme/master/custom.css';
+   const cssPath = 'https://raw.githubusercontent.com/mallowigi/slack-one-dark-theme/master/custom.css';
    let cssPromise = fetch(cssPath).then(response => response.text());
 
    let customCustomCSS = `
@@ -174,7 +174,7 @@ In addition to running the required modifications, you will likely want to add a
 
 ```js
 const cssPath = 'http://localhost:8080/custom.css';
-const localCssPath = '/Users/username/Code/slack-black-theme/custom.css';
+const localCssPath = '/Users/username/Code/slack-one-dark-theme/custom.css';
 
 window.reloadCss = function() {
    const webviews = document.querySelectorAll(".TeamView webview");
