@@ -532,9 +532,9 @@ ts-thread .view_all_replies_container:hover {
   opacity: 0.44;
 }
 
-.channel_page_member_row:hover,
-.im_browser_row:hover {
-  background: var(--background-hover) !important;
-  border: 1px solid rgba(0, 0, 0, 0) !important;
+.im_browser_row {
+  border-top: none !important;
+  &:hover {
+    background: $bgHover;
+  }
 }
-

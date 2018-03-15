@@ -1503,9 +1503,9 @@ ts-thread .view_all_replies_container:hover {
   color: var(--text) !important;
   opacity: 0.44; }
 
-.channel_page_member_row:hover,
-.im_browser_row:hover {
-  background: var(--background-hover) !important;
-  border: 1px solid transparent !important; }
+.im_browser_row {
+  border-top: none !important; }
+  .im_browser_row:hover {
+    background: var(--background-hover); }
 
 /*# sourceMappingURL=custom.css.map */
