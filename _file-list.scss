@@ -37,6 +37,18 @@
   }
 }
 
+.file_list_item {
+  background: $bg !important;
+}
+
+// The tabs
+.toolbar_container {
+  background: $bg !important;
+  border-bottom: none;
+  color: $text !important;
+  @include shadow;
+}
+
 #file_list_container {
   background: $bg2;
 }
@@ -44,5 +56,27 @@
 .filetype_icon.email.s30:before,
 .filetype_icon.email.s48:before,
 .ts_icon_file_email:before {
-  color: $primary;
+  color: $primary !important;
+}
+
+.searchable_member_list {
+  .team_list_item:hover {
+    background: none !important;
+  }
+  .list_items {
+    .c-member__display-name {
+      color: $text;
+    }
+  }
+}
+
+#file_comment_submit_btn:after,
+#file_listing_bottom_button:after {
+  border: 1px solid $borderDim;
+}
+
+#file_list_toggle {
+  button {
+    color: $text !important;
+  }
 }

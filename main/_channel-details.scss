@@ -14,12 +14,21 @@
     background: $bg;
     color: $text;
     border-color: $borderDim;
+
+    .menu_icon {
+      color: $text !important;
+    }
   }
 
   .flexpane_tab_bar {
     li.active {
       border-bottom-color: $accent;
     }
+  }
+
+  .help {
+    color: $text !important;
+    border-top-color: $accent !important;
   }
 }
 

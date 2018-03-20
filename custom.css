@@ -158,6 +158,10 @@ svg.ts_icon_spinner:empty {
   .btn_outline:hover::after {
     color: var(--primary) !important;
     border-color: var(--border-bright) !important; }
+  .btn.btn_green,
+  .btn_outline.btn_green {
+    background: var(--primary) !important;
+    color: var(--text-bright) !important; }
 
 .lazy_filter_select .lfs_input_container {
   border-color: var(--border-dim) !important;
@@ -568,8 +572,15 @@ ts-mention {
   background: var(--background);
   color: var(--text);
   border-color: var(--border-dim); }
+  #flex_contents .heading .menu_icon,
+  #flex_contents .heading_text .menu_icon,
+  #flex_contents .subheading .menu_icon {
+    color: var(--text) !important; }
 #flex_contents .flexpane_tab_bar li.active {
   border-bottom-color: var(--accent); }
+#flex_contents .help {
+  color: var(--text) !important;
+  border-top-color: var(--accent) !important; }
 
 #details_tab .channel_page_section {
   background: var(--background-elevated) !important;
@@ -646,6 +657,15 @@ ts-mention {
   background: var(--background-elevated);
   color: var(--text); }
 
+#footer_archives_preview {
+  background: var(--background-elevated);
+  color: var(--text);
+  border-color: var(--border-dim); }
+  #footer_archives_preview .c-archive_footer__title {
+    color: var(--text); }
+  #footer_archives_preview .c-archive_footer__metadata {
+    color: var(--text-dim) !important; }
+
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   border-bottom-color: var(--border-dim) !important;
@@ -686,13 +706,34 @@ ts-mention {
   .tab_container .file_list_item .star:hover {
     color: var(--yellow); }
 
+.file_list_item {
+  background: var(--background) !important; }
+
+.toolbar_container {
+  background: var(--background) !important;
+  border-bottom: none;
+  color: var(--text) !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
 #file_list_container {
   background: var(--background-elevated); }
 
 .filetype_icon.email.s30:before,
 .filetype_icon.email.s48:before,
 .ts_icon_file_email:before {
-  color: var(--primary); }
+  color: var(--primary) !important; }
+
+.searchable_member_list .team_list_item:hover {
+  background: none !important; }
+.searchable_member_list .list_items .c-member__display-name {
+  color: var(--text); }
+
+#file_comment_submit_btn:after,
+#file_listing_bottom_button:after {
+  border: 1px solid var(--border-dim); }
+
+#file_list_toggle button {
+  color: var(--text) !important; }
 
 .pickmeup {
   background: var(--background) !important;
@@ -1054,7 +1095,11 @@ ts-jumper .monkey_scroll_hider {
 ts-jumper ts-jumper-results {
   background: var(--background);
   color: var(--text); }
+ts-jumper ts-jumper-results::-webkit-scrollbar-thumb,
+ts-jumper ts-jumper-results::-webkit-scrollbar-track {
+  color: var(--background) !important; }
 ts-jumper ol li .member_real_name,
+ts-jumper ol li .c-member__display-name,
 ts-jumper ol li .view_name,
 ts-jumper ol li .channel_name {
   color: var(--text); }
@@ -1252,7 +1297,6 @@ a.message_sender {
 .rxn,
 .search_result_with_extract,
 .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex,
-.flexpane_redesign #flex_contents .heading,
 .search_segmented_control {
   border-color: var(--border-dim) !important; }
 
@@ -1263,7 +1307,8 @@ a.message_sender {
   background-color: var(--background-elevated);
   border-color: var(--background-elevated); }
 
-.feature_name_tagging_client .c-message .mention, .c-message .mention,
+.feature_name_tagging_client .c-message .mention,
+.c-message .mention,
 span.match {
   border: 1px solid var(--border-bright) !important;
   background-color: var(--background-elevated) !important;
@@ -1271,6 +1316,13 @@ span.match {
   padding: 2px 4px;
   margin: 2px;
   border-radius: 10px; }
+
+.feature_name_tagging_client .app_preview_link_slug,
+.feature_name_tagging_client .internal_member_link,
+.feature_name_tagging_client .internal_user_group_link,
+.feature_name_tagging_client ts-mention {
+  background-color: #0576B9 !important;
+  color: #eef7fc !important; }
 
 .mention > .mention {
   /* I'm assuming this is a Slack bug */

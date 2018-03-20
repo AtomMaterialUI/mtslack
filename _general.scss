@@ -147,6 +147,11 @@ svg.ts_icon_spinner:empty {
     color: $primary !important;
     border-color: $border !important;
   }
+
+  &.btn_green {
+    background: $primary !important;
+    color: $textBright !important;
+  }
 }
 
 .lazy_filter_select .lfs_input_container {

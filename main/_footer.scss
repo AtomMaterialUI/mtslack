@@ -14,3 +14,17 @@
   background: $bg2;
   color: $text;
 }
+
+#footer_archives_preview {
+  background: $bg2;
+  color: $text;
+  border-color: $borderDim;
+
+  .c-archive_footer__title {
+    color: $text;
+  }
+
+  .c-archive_footer__metadata {
+    color: $textDim !important;
+  }
+}

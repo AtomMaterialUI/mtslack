@@ -31,9 +31,15 @@ ts-jumper {
     color: $text;
   }
 
+  ts-jumper-results::-webkit-scrollbar-thumb,
+  ts-jumper-results::-webkit-scrollbar-track {
+    color: $bg !important;
+  }
+
   // Lists
   ol li {
     .member_real_name,
+    .c-member__display-name,
     .view_name,
     .channel_name {
       color: $text;

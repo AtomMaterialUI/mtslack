@@ -80,6 +80,10 @@ $gray: var(--gray);
 $silver: var(--silver);
 $black: var(--black);
 
+@mixin shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
 @import "general";
 @import "banner";
 @import "teampicker";
@@ -225,7 +229,6 @@ a.message_sender {
 .rxn,
 .search_result_with_extract,
 .flexbox_client.flexpane_redesign.flex_pane_showing #col_flex,
-.flexpane_redesign #flex_contents .heading,
 .search_segmented_control {
   border-color: var(--border-dim) !important;
 }
@@ -239,7 +242,8 @@ a.message_sender {
   border-color: var(--background-elevated);
 }
 
-.feature_name_tagging_client .c-message .mention, .c-message .mention,
+.feature_name_tagging_client .c-message .mention,
+.c-message .mention,
 span.match {
   border: 1px solid var(--border-bright) !important;
   background-color: var(--background-elevated) !important;
@@ -247,6 +251,14 @@ span.match {
   padding: 2px 4px;
   margin: 2px;
   border-radius: 10px;
+}
+
+.feature_name_tagging_client .app_preview_link_slug,
+.feature_name_tagging_client .internal_member_link,
+.feature_name_tagging_client .internal_user_group_link,
+.feature_name_tagging_client ts-mention {
+  background-color: #0576B9 !important;
+  color: #eef7fc !important;
 }
 
 .mention > .mention {
@@ -538,3 +550,4 @@ ts-thread .view_all_replies_container:hover {
     background: $bgHover;
   }
 }
+
