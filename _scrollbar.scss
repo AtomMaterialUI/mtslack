@@ -34,3 +34,13 @@ div::-webkit-scrollbar-thumb,
   border-color: $borderDim;
   background: $bg2;
 }
+
+.c-scrollbar__hider {
+  background: $bg !important;
+  color: $text !important;
+}
+
+.flex_content_scroller {
+  background: $bg !important;
+  color: $text;
+}

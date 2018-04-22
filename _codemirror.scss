@@ -83,7 +83,7 @@
 .CodeMirror .CodeMirror-gutters,
 .CodeMirror-gutter {
   background-color: $bg !important;;
-  border-color: $border;
+  border-color: $borderDim;
   color: $text;
 
   .CodeMirror-line {
@@ -101,4 +101,17 @@
 
 pre.special_formatting {
   background: $bg2 !important;
+}
+
+.c-snippet__code .CodeMirror {
+  color: $text !important;
+}
+
+.c-snippet__code .CodeMirror-code > div:before {
+  background: $bg;
+  border-right: $borderDim;
+}
+
+.c-file_container--gradient::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), $bg);
 }

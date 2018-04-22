@@ -72,3 +72,14 @@
     color: $primary;
   }
 }
+
+.channel_page_members,
+.channel_page_about,
+.channel_page_pinned_items,
+.channel_page_shared_files,
+.channel_page_notif_prefs,
+.global_notification_block,
+#fs_modal_header {
+  background: $bg !important;
+  color: $text !important;
+}

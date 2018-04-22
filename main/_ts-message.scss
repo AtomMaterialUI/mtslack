@@ -42,6 +42,9 @@ ts-message {
     .message_body {
       color: $text !important;
     }
+    .message_content_header {
+      color: $primary !important;
+    }
   }
 
   // Attachments
@@ -68,4 +71,13 @@ ts-message {
     color: $text !important;
   }
 
+}
+
+#msgs_div {
+  color: $primary !important;
+  font-weight: bold;
+}
+
+#typing_text {
+  color: $textDim !important;
 }

@@ -62,7 +62,8 @@ pre {
 
 .blue_fill,
 .charcoal_grey,
-.blue_link {
+.blue_link,
+.indifferent_grey {
   color: $primary !important;
 }
 
@@ -132,6 +133,7 @@ svg.ts_icon_spinner:empty {
 
 // btns
 .btn,
+.btn.dialog_go,
 .btn_outline {
   background: $bg2 !important;
   color: $text !important;
@@ -260,4 +262,13 @@ ts-mention {
 
 .very_small_bottom_margin {
   color: $textBright !important;
+}
+
+.color_ea2977 {
+  color: $primary !important;
+}
+
+.close,
+.ts_icon_close_filled {
+  color: $primary !important;
 }

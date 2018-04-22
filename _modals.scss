@@ -1,5 +1,6 @@
 @import "modals/member";
 
+#generic_dialog,
 #fs_modal,
 .modal,
 .modal-header,
@@ -64,5 +65,23 @@
   #fs_modal_footer {
     background-color: $bg2;
   }
+
+  .ts_icon_times {
+    color: $text !important;
+  }
 }
 
+#generic_dialog,
+.basic_share_dialog,
+.modal-body,
+.modal-header,
+.modal-footer {
+  background-color: $bg2 !important;
+}
+
+#fs_modal,
+#fs_modal_header {
+  * {
+    color: $text !important;
+  }
+}

@@ -87,3 +87,8 @@
     border: 1px solid $borderDim !important;
   }
 }
+
+.file_container .preview_actions .btn {
+  background: $bg !important;
+  color: $text !important;
+}

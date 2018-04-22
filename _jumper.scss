@@ -29,6 +29,7 @@ ts-jumper {
   ts-jumper-results {
     background: $bg;
     color: $text;
+    border-top-color: $borderDim !important;
   }
 
   ts-jumper-results::-webkit-scrollbar-thumb,
@@ -59,5 +60,10 @@ ts-jumper {
   ts-jumper-help {
     color: $text;
     border-color: $borderDim;
+  }
+
+  .p-jumper__help {
+    background: $bg !important;
+    color: $text !important;
   }
 }

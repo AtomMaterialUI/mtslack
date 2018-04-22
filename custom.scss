@@ -1,18 +1,4 @@
-/*
-Copyright 2017 Bryan Keller (https://github.com/widget-)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Rajdhani');
 
 :root {
   /* Modify these to change your theme colors: */
@@ -144,7 +130,8 @@ li.active[class] span {
 }
 
 /* Mentions */
-.mention_day_container_div .c-message_list__day_divider__label {
+.mention_day_container_div .c-message_list__day_divider__label,
+.member_data_table {
   border: 1px solid var(--border-dim) !important;
 }
 
@@ -502,3 +489,73 @@ ts-mention.ts_tip:hover {
   }
 }
 
+.supports_css_mask_image .light_theme ts-message .message_content .message_sender {
+  font-weight: 900;
+  line-height: 18px;
+  font-size: large;
+  color: $primary !important;
+}
+
+feature_archive_deeplink feature_texty winssb light_theme {
+  font-weight: 100;
+  line-height: 18px;
+  font-size: medium;
+}
+
+.screenhero_attachment,
+.relative,
+.help,
+.selectable_flex_pane_padder {
+  background: $bg !important;
+  color: $text;
+}
+
+.comment_body,
+.channel_prefs_body,
+.comment .special_formatting_quote .content,
+.comment_body {
+  color: $text !important;
+}
+
+.contents_container,
+.heading_text,
+.ql-editor,
+.ql-blank,
+.ql-placeholder,
+.inline_block,
+.global_prefs_container,
+.list_items
+.channel_overrides_row,
+.contents,
+.btn_outline,
+.notification_prefs_section .btn_outline,
+.p-shortcuts_flexpane__shortcut_title,
+.p-shortcuts_flexpane__title,
+#prefs_a11y_font_size,
+#prefs_a11y_animations,
+#whats_new_tab p {
+  color: $text !important;
+}
+
+.p-shortcuts_flexpane__shortcut:last-of-type {
+  border: none;
+}
+
+.p-shortcuts_flexpane__shortcut_title {
+  padding: 0 !important;
+}
+
+.p-shortcuts_flexpane__shortcut {
+  border: none;
+}
+
+.p-flexpane_header {
+  background: $bg !important;
+  color: $text !important;
+}
+
+.message_body, .file_container, .initial_comment {
+  font-weight: lighter !important;
+  font-family: var(--font-family) !important;
+  margin-left: 20px !important;
+}

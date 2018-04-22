@@ -1,18 +1,4 @@
-/*
-Copyright 2017 Bryan Keller (https://github.com/widget-)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Rajdhani");
 :root {
   /* Modify these to change your theme colors: */
   --primary: #E5C17C;
@@ -100,7 +86,8 @@ pre {
 
 .blue_fill,
 .charcoal_grey,
-.blue_link {
+.blue_link,
+.indifferent_grey {
   color: var(--primary) !important; }
 
 .subtle_silver {
@@ -145,20 +132,24 @@ svg.ts_icon_spinner:empty {
   color: var(--text-bright); }
 
 .btn,
+.btn.dialog_go,
 .btn_outline {
   background: var(--background-elevated) !important;
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
   .btn:hover,
+  .btn.dialog_go:hover,
   .btn_outline:hover {
     background: var(--background-hover) !important;
     color: var(--primary) !important;
     border-color: var(--border-bright) !important; }
   .btn:hover::after,
+  .btn.dialog_go:hover::after,
   .btn_outline:hover::after {
     color: var(--primary) !important;
     border-color: var(--border-bright) !important; }
   .btn.btn_green,
+  .btn.dialog_go.btn_green,
   .btn_outline.btn_green {
     background: var(--primary) !important;
     color: var(--text-bright) !important; }
@@ -245,6 +236,13 @@ ts-mention {
 
 .very_small_bottom_margin {
   color: var(--text-bright) !important; }
+
+.color_ea2977 {
+  color: var(--primary) !important; }
+
+.close,
+.ts_icon_close_filled {
+  color: var(--primary) !important; }
 
 .p-message_pane__limited_history_foreword {
   background: var(--background-elevated);
@@ -460,6 +458,9 @@ ts-mention {
 .client_main_container #rxn_toast_div {
   background: var(--background);
   border-color: var(--border-bright); }
+.client_main_container #im_title {
+  color: var(--primary) !important;
+  font-weight: bold; }
 .client_main_container #im_title.away {
   color: var(--text-bright) !important; }
 .client_main_container #edit_topic_inner {
@@ -561,6 +562,8 @@ ts-mention {
   color: var(--text-bright) !important; }
 .client_main_container ts-message .message_content .message_body {
   color: var(--text) !important; }
+.client_main_container ts-message .message_content .message_content_header {
+  color: var(--primary) !important; }
 .client_main_container ts-message .attachment_group .msg_inline_attachment_column.column_border {
   background-color: var(--primary); }
 .client_main_container ts-message .attachment_group .attachment_source span {
@@ -572,6 +575,11 @@ ts-mention {
   color: var(--text) !important; }
 .client_main_container ts-message .thread_channel_link {
   color: var(--text) !important; }
+.client_main_container #msgs_div {
+  color: var(--primary) !important;
+  font-weight: bold; }
+.client_main_container #typing_text {
+  color: var(--text-dim) !important; }
 
 #col_flex {
   background: var(--background-elevated);
@@ -617,6 +625,16 @@ ts-mention {
   color: var(--primary); }
   .c-channel_insights__member_count .ts_icon_user {
     color: var(--primary); }
+
+.channel_page_members,
+.channel_page_about,
+.channel_page_pinned_items,
+.channel_page_shared_files,
+.channel_page_notif_prefs,
+.global_notification_block,
+#fs_modal_header {
+  background: var(--background) !important;
+  color: var(--text) !important; }
 
 #msg_input {
   background: transparent !important;
@@ -775,6 +793,10 @@ ts-mention {
   .upload_actions .dialog_go:after {
     border: 1px solid var(--border-dim) !important; }
 
+.file_container .preview_actions .btn {
+  background: var(--background) !important;
+  color: var(--text) !important; }
+
 .pickmeup {
   background: var(--background) !important;
   color: var(--text) !important;
@@ -885,6 +907,14 @@ div::-webkit-scrollbar-thumb,
   border-color: var(--border-dim);
   background: var(--background-elevated); }
 
+.c-scrollbar__hider {
+  background: var(--background) !important;
+  color: var(--text) !important; }
+
+.flex_content_scroller {
+  background: var(--background) !important;
+  color: var(--text); }
+
 #member_preview_scroller,
 #member_preview_web_container,
 .menu_member_header,
@@ -907,13 +937,26 @@ div::-webkit-scrollbar-thumb,
   .menu_member_header .member_details .member_current_status .member_current_status_label {
     color: var(--text) !important; }
 
+a .message_sender .member .member_preview_link {
+  font-weight: 100;
+  line-height: 18px;
+  font-size: medium;
+  color: var(--primary) !important; }
+
+#generic_dialog,
 #fs_modal,
 .modal,
 .modal-header,
 .modal-footer {
   background-color: var(--background) !important;
   color: var(--text) !important; }
-  #fs_modal h1, #fs_modal h2, #fs_modal h3, #fs_modal h4, #fs_modal h5, #fs_modal h6,
+  #generic_dialog h1, #generic_dialog h2, #generic_dialog h3, #generic_dialog h4, #generic_dialog h5, #generic_dialog h6,
+  #fs_modal h1,
+  #fs_modal h2,
+  #fs_modal h3,
+  #fs_modal h4,
+  #fs_modal h5,
+  #fs_modal h6,
   .modal h1,
   .modal h2,
   .modal h3,
@@ -933,7 +976,10 @@ div::-webkit-scrollbar-thumb,
   .modal-footer h5,
   .modal-footer h6 {
     color: var(--text-bright); }
-  #fs_modal div, #fs_modal span, #fs_modal label,
+  #generic_dialog div, #generic_dialog span, #generic_dialog label,
+  #fs_modal div,
+  #fs_modal span,
+  #fs_modal label,
   .modal div,
   .modal span,
   .modal label,
@@ -944,6 +990,8 @@ div::-webkit-scrollbar-thumb,
   .modal-footer span,
   .modal-footer label {
     color: var(--text); }
+  #generic_dialog .input_note_special,
+  #generic_dialog .modal_input_note,
   #fs_modal .input_note_special,
   #fs_modal .modal_input_note,
   .modal .input_note_special,
@@ -953,36 +1001,43 @@ div::-webkit-scrollbar-thumb,
   .modal-footer .input_note_special,
   .modal-footer .modal_input_note {
     color: var(--text); }
+  #generic_dialog .fs_modal_btn,
   #fs_modal .fs_modal_btn,
   .modal .fs_modal_btn,
   .modal-header .fs_modal_btn,
   .modal-footer .fs_modal_btn {
     color: var(--text); }
+    #generic_dialog .fs_modal_btn:hover,
     #fs_modal .fs_modal_btn:hover,
     .modal .fs_modal_btn:hover,
     .modal-header .fs_modal_btn:hover,
     .modal-footer .fs_modal_btn:hover {
       background: var(--background-hover); }
+  #generic_dialog .fs_modal_file_viewer_header,
   #fs_modal .fs_modal_file_viewer_header,
   .modal .fs_modal_file_viewer_header,
   .modal-header .fs_modal_file_viewer_header,
   .modal-footer .fs_modal_file_viewer_header {
     background: transparent; }
+    #generic_dialog .fs_modal_file_viewer_header .control_btn,
     #fs_modal .fs_modal_file_viewer_header .control_btn,
     .modal .fs_modal_file_viewer_header .control_btn,
     .modal-header .fs_modal_file_viewer_header .control_btn,
     .modal-footer .fs_modal_file_viewer_header .control_btn {
       color: var(--text); }
+  #generic_dialog .fs_modal_file_viewer_content,
   #fs_modal .fs_modal_file_viewer_content,
   .modal .fs_modal_file_viewer_content,
   .modal-header .fs_modal_file_viewer_content,
   .modal-footer .fs_modal_file_viewer_content {
     background: var(--background); }
+    #generic_dialog .fs_modal_file_viewer_content .viewer,
     #fs_modal .fs_modal_file_viewer_content .viewer,
     .modal .fs_modal_file_viewer_content .viewer,
     .modal-header .fs_modal_file_viewer_content .viewer,
     .modal-footer .fs_modal_file_viewer_content .viewer {
       background-color: var(--background); }
+  #generic_dialog #fs_modal_sidebar a,
   #fs_modal #fs_modal_sidebar a,
   .modal #fs_modal_sidebar a,
   .modal-header #fs_modal_sidebar a,
@@ -991,21 +1046,41 @@ div::-webkit-scrollbar-thumb,
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.01);
     border-radius: 10px; }
+    #generic_dialog #fs_modal_sidebar a:hover,
     #fs_modal #fs_modal_sidebar a:hover,
     .modal #fs_modal_sidebar a:hover,
     .modal-header #fs_modal_sidebar a:hover,
     .modal-footer #fs_modal_sidebar a:hover {
       border-color: var(--border-dim); }
+    #generic_dialog #fs_modal_sidebar a.is_active,
     #fs_modal #fs_modal_sidebar a.is_active,
     .modal #fs_modal_sidebar a.is_active,
     .modal-header #fs_modal_sidebar a.is_active,
     .modal-footer #fs_modal_sidebar a.is_active {
       border-color: var(--primary); }
+  #generic_dialog #fs_modal_footer,
   #fs_modal #fs_modal_footer,
   .modal #fs_modal_footer,
   .modal-header #fs_modal_footer,
   .modal-footer #fs_modal_footer {
     background-color: var(--background-elevated); }
+  #generic_dialog .ts_icon_times,
+  #fs_modal .ts_icon_times,
+  .modal .ts_icon_times,
+  .modal-header .ts_icon_times,
+  .modal-footer .ts_icon_times {
+    color: var(--text) !important; }
+
+#generic_dialog,
+.basic_share_dialog,
+.modal-body,
+.modal-header,
+.modal-footer {
+  background-color: var(--background-elevated) !important; }
+
+#fs_modal *,
+#fs_modal_header * {
+  color: var(--text) !important; }
 
 .menu.p-emoji_picker {
   background: var(--background-elevated) !important;
@@ -1154,7 +1229,8 @@ ts-jumper .monkey_scroll_hider {
   color: var(--text); }
 ts-jumper ts-jumper-results {
   background: var(--background);
-  color: var(--text); }
+  color: var(--text);
+  border-top-color: var(--border-dim) !important; }
 ts-jumper ts-jumper-results::-webkit-scrollbar-thumb,
 ts-jumper ts-jumper-results::-webkit-scrollbar-track {
   color: var(--background) !important; }
@@ -1172,6 +1248,9 @@ ts-jumper ol li:hover {
 ts-jumper ts-jumper-help {
   color: var(--text);
   border-color: var(--border-dim); }
+ts-jumper .p-jumper__help {
+  background: var(--background) !important;
+  color: var(--text) !important; }
 
 .threads_section,
 .threads_caught_up_divider,
@@ -1275,7 +1354,7 @@ ts-thread .view_all_replies_container:hover {
 .CodeMirror .CodeMirror-gutters,
 .CodeMirror-gutter {
   background-color: var(--background) !important;
-  border-color: var(--border-bright);
+  border-color: var(--border-dim);
   color: var(--text); }
   .CodeMirror .CodeMirror-line,
   .CodeMirror .CodeMirror-gutters .CodeMirror-line,
@@ -1290,6 +1369,16 @@ ts-thread .view_all_replies_container:hover {
 
 pre.special_formatting {
   background: var(--background-elevated) !important; }
+
+.c-snippet__code .CodeMirror {
+  color: var(--text) !important; }
+
+.c-snippet__code .CodeMirror-code > div:before {
+  background: var(--background);
+  border-right: var(--border-dim); }
+
+.c-file_container--gradient::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--background)); }
 
 /* Channels */
 .creator_link,
@@ -1322,7 +1411,8 @@ li.active[class] span {
   border-radius: 1rem; }
 
 /* Mentions */
-.mention_day_container_div .c-message_list__day_divider__label {
+.mention_day_container_div .c-message_list__day_divider__label,
+.member_data_table {
   border: 1px solid var(--border-dim) !important; }
 
 /* Conversations */
@@ -1614,5 +1704,66 @@ ts-mention.ts_tip:hover {
   border-top: none !important; }
   .im_browser_row:hover {
     background: var(--background-hover); }
+
+.supports_css_mask_image .light_theme ts-message .message_content .message_sender {
+  font-weight: 900;
+  line-height: 18px;
+  font-size: large;
+  color: var(--primary) !important; }
+
+feature_archive_deeplink feature_texty winssb light_theme {
+  font-weight: 100;
+  line-height: 18px;
+  font-size: medium; }
+
+.screenhero_attachment,
+.relative,
+.help,
+.selectable_flex_pane_padder {
+  background: var(--background) !important;
+  color: var(--text); }
+
+.comment_body,
+.channel_prefs_body,
+.comment .special_formatting_quote .content,
+.comment_body {
+  color: var(--text) !important; }
+
+.contents_container,
+.heading_text,
+.ql-editor,
+.ql-blank,
+.ql-placeholder,
+.inline_block,
+.global_prefs_container,
+.list_items
+.channel_overrides_row,
+.contents,
+.btn_outline,
+.notification_prefs_section .btn_outline,
+.p-shortcuts_flexpane__shortcut_title,
+.p-shortcuts_flexpane__title,
+#prefs_a11y_font_size,
+#prefs_a11y_animations,
+#whats_new_tab p {
+  color: var(--text) !important; }
+
+.p-shortcuts_flexpane__shortcut:last-of-type {
+  border: none; }
+
+.p-shortcuts_flexpane__shortcut_title {
+  padding: 0 !important; }
+
+.p-shortcuts_flexpane__shortcut {
+  border: none; }
+
+.p-flexpane_header {
+  background: var(--background) !important;
+  color: var(--text) !important; }
+
+.message_body, .file_container, .initial_comment {
+  font-weight: lighter !important;
+  font-family: var(--font-family) !important;
+  margin-left: 20px !important; }
 
 /*# sourceMappingURL=custom.css.map */

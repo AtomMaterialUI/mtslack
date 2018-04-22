@@ -36,3 +36,10 @@
   }
 
 }
+
+a .message_sender .member .member_preview_link {
+  font-weight: 100;
+  line-height: 18px;
+  font-size: medium;
+  color: $primary !important;
+}

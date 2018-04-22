@@ -76,6 +76,11 @@
   border-color: $border;
 }
 
+#im_title {
+  color: $primary !important;
+  font-weight: bold;
+}
+
 #im_title.away {
   color: $textBright !important;
 }
