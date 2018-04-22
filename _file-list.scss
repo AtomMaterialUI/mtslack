@@ -70,13 +70,20 @@
   }
 }
 
+// Various buttons
 #file_comment_submit_btn:after,
 #file_listing_bottom_button:after {
   border: 1px solid $borderDim;
 }
 
-#file_list_toggle {
-  button {
-    color: $text !important;
+#file_list_toggle button {
+  color: $text !important;
+}
+
+.upload_actions .dialog_go {
+  color: $text;
+  border-color: $borderDim;
+  &:after {
+    border: 1px solid $borderDim !important;
   }
 }

@@ -12,6 +12,11 @@
   }
 }
 
+.message_container_item {
+  background: $bg;
+  color: $text;
+}
+
 #msg_input::-webkit-input-placeholder {
   color: $text !important;
 }
@@ -21,8 +26,25 @@
   border-color: $borderDim !important;
 
   .ql-editor {
-    //background: $bg !important;
+    background: $bg !important;
     color: $text !important;
+  }
+
+  .ql-blank {
+    color: $text !important;
+  }
+
+}
+
+.selectable_flex_pane_padder {
+  color: $text !important;
+}
+
+#details_tab .channel_page_section {
+  background: $bg !important;
+
+  .section_title {
+    color: $text;
   }
 }
 
@@ -35,4 +57,10 @@
 
 .inline_message_input_container .ql-container {
   border-color: $borderDim !important;
+}
+
+#file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+#reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+.reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
+  color: $text !important;
 }

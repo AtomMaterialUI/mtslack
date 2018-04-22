@@ -246,3 +246,18 @@ ts-mention {
 .member_details_divider {
   border-color: $borderDim !important;
 }
+
+// Don't know what are these but they look like mentions
+.feature_name_tagging_client {
+  .app_preview_link_slug,
+  .internal_member_link,
+  .internal_user_group_link,
+  ts-mention {
+    background-color: $accent !important;
+    color: $textAccent !important;
+  }
+}
+
+.very_small_bottom_margin {
+  color: $textBright !important;
+}

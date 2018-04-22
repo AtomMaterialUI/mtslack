@@ -236,6 +236,16 @@ ts-mention {
 .member_details_divider {
   border-color: var(--border-dim) !important; }
 
+.feature_name_tagging_client .app_preview_link_slug,
+.feature_name_tagging_client .internal_member_link,
+.feature_name_tagging_client .internal_user_group_link,
+.feature_name_tagging_client ts-mention {
+  background-color: var(--accent) !important;
+  color: var(--text-accent) !important; }
+
+.very_small_bottom_margin {
+  color: var(--text-bright) !important; }
+
 .p-message_pane__limited_history_foreword {
   background: var(--background-elevated);
   color: var(--text); }
@@ -438,6 +448,10 @@ ts-mention {
     color: var(--text); }
   .client_main_container .search_form .ql-placeholder {
     color: var(--text); }
+  .client_main_container .search_form .ql-container.texty_single_line_input {
+    background-color: var(--background-elevated);
+    color: var(--text);
+    opacity: 0.875; }
 .client_main_container #search_terms {
   background-color: var(--background) !important;
   color: var(--text) !important; }
@@ -613,6 +627,10 @@ ts-mention {
   #msg_input .emo_menu {
     color: var(--text-bright) !important; }
 
+.message_container_item {
+  background: var(--background);
+  color: var(--text); }
+
 #msg_input::-webkit-input-placeholder {
   color: var(--text) !important; }
 
@@ -620,7 +638,18 @@ ts-mention {
   background: var(--background) !important;
   border-color: var(--border-dim) !important; }
   .ql-container .ql-editor {
+    background: var(--background) !important;
     color: var(--text) !important; }
+  .ql-container .ql-blank {
+    color: var(--text) !important; }
+
+.selectable_flex_pane_padder {
+  color: var(--text) !important; }
+
+#details_tab .channel_page_section {
+  background: var(--background) !important; }
+  #details_tab .channel_page_section .section_title {
+    color: var(--text); }
 
 /* Input message - File button */
 #primary_file_button {
@@ -630,6 +659,11 @@ ts-mention {
 
 .inline_message_input_container .ql-container {
   border-color: var(--border-dim) !important; }
+
+#file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+#reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+.reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
+  color: var(--text) !important; }
 
 .tab_complete_ui {
   background: var(--background-elevated);
@@ -734,6 +768,12 @@ ts-mention {
 
 #file_list_toggle button {
   color: var(--text) !important; }
+
+.upload_actions .dialog_go {
+  color: var(--text);
+  border-color: var(--border-dim); }
+  .upload_actions .dialog_go:after {
+    border: 1px solid var(--border-dim) !important; }
 
 .pickmeup {
   background: var(--background) !important;
@@ -1060,6 +1100,10 @@ div::-webkit-scrollbar-thumb,
   #msg_input .emo_menu {
     color: var(--text-bright) !important; }
 
+.message_container_item {
+  background: var(--background);
+  color: var(--text); }
+
 #msg_input::-webkit-input-placeholder {
   color: var(--text) !important; }
 
@@ -1067,7 +1111,18 @@ div::-webkit-scrollbar-thumb,
   background: var(--background) !important;
   border-color: var(--border-dim) !important; }
   .ql-container .ql-editor {
+    background: var(--background) !important;
     color: var(--text) !important; }
+  .ql-container .ql-blank {
+    color: var(--text) !important; }
+
+.selectable_flex_pane_padder {
+  color: var(--text) !important; }
+
+#details_tab .channel_page_section {
+  background: var(--background) !important; }
+  #details_tab .channel_page_section .section_title {
+    color: var(--text); }
 
 /* Input message - File button */
 #primary_file_button {
@@ -1077,6 +1132,11 @@ div::-webkit-scrollbar-thumb,
 
 .inline_message_input_container .ql-container {
   border-color: var(--border-dim) !important; }
+
+#file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+#reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+.reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
+  color: var(--text) !important; }
 
 ts-jumper input[type="text"] {
   background: var(--background);
@@ -1112,6 +1172,43 @@ ts-jumper ol li:hover {
 ts-jumper ts-jumper-help {
   color: var(--text);
   border-color: var(--border-dim); }
+
+.threads_section,
+.threads_caught_up_divider,
+.thread_body_container,
+.divider_label,
+.divider_line {
+  background: var(--background);
+  color: var(--text); }
+
+.c-message .reply_bar:hover {
+  background: var(--background) !important;
+  border: 1px solid var(--border-dim) !important; }
+
+#convo_tab .message_input,
+#convo_tab #msg_text {
+  color: var(--text) !important; }
+#convo_tab #convo_tab_header {
+  color: var(--text) !important; }
+
+.thread_participants {
+  color: var(--text) !important; }
+
+.message_pane_scroller {
+  color: var(--text) !important; }
+
+.monkey_scroller {
+  color: var(--text) !important; }
+
+ts-thread .thread_messages {
+  background-color: var(--background) !important;
+  border-color: var(--border-dim) !important; }
+ts-thread .thread_channel_name a {
+  color: var(--text-special); }
+
+ts-thread .collapse_inline_thread_container:hover,
+ts-thread .view_all_replies_container:hover {
+  background-color: var(--background-elevated); }
 
 /* CodeMirror syntax highlighting */
 .cm-s-default .cm-header {
@@ -1211,20 +1308,11 @@ li.active[class] span {
   background-color: transparent;
   opacity: 1; }
 
-/*#channels_scroller.show_which_channel_is_active[class] li.active .presence.active i.presence_icon,*/
-/*#channels_scroller.show_which_channel_is_active[class] li.active .slackbot_icon,*/
-/*#channels_scroller.show_which_channel_is_active[class] li.active .presence.away i.presence_icon {*/
-/*color: inherit !important;*/
-/*}*/
 #messages_container.has_top_messages_banner:before {
   background: var(--background) !important;
   color: var(--text) !important; }
 
 .channel_purpose_text {
-  color: var(--text) !important; }
-
-/* File sender */
-a.message_sender {
   color: var(--text) !important; }
 
 #convo_container .convo_flexpane_divider .reply_count {
@@ -1317,13 +1405,6 @@ span.match {
   margin: 2px;
   border-radius: 10px; }
 
-.feature_name_tagging_client .app_preview_link_slug,
-.feature_name_tagging_client .internal_member_link,
-.feature_name_tagging_client .internal_user_group_link,
-.feature_name_tagging_client ts-mention {
-  background-color: #0576B9 !important;
-  color: #eef7fc !important; }
-
 .mention > .mention {
   /* I'm assuming this is a Slack bug */
   border: none; }
@@ -1409,24 +1490,9 @@ ts-mention.ts_tip:hover {
   color: var(--text-bright) !important;
   border: 1px solid var(--border-bright); }
 
-/* threads */
-.c-message .reply_bar:hover {
-  background: var(--background) !important;
-  border: 1px solid var(--border-dim) !important; }
-
-/* editor in thread reply */
-#convo_tab .message_input, #convo_tab textarea#msg_text {
-  color: var(--text) !important; }
-
 .inline_message_input_container .ql-container.focus,
 .inline_message_input_container .ql-container:active {
   border-color: var(--border-dim) !important; }
-
-#file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
-#reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
-.reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
-#convo_tab #convo_tab_header {
-  color: var(--text) !important; }
 
 /* other */
 .special_formatting_quote .quote_bar {
@@ -1454,13 +1520,6 @@ ts-mention.ts_tip:hover {
   border-bottom: 0px;
   border-radius: 10px 10px 0 0; }
 
-ts-thread .thread_header .thread_channel_name a {
-  color: var(--text-special); }
-
-#convo_tab .thread_participants, ts-thread .thread_participants {
-  color: var(--text); }
-
-ts-thread .thread_messages,
 .reply_input_container .ql-container {
   background-color: var(--background);
   border-color: var(--border-dim); }
@@ -1468,10 +1527,6 @@ ts-thread .thread_messages,
 #threads_msgs_scroller_div ts-thread .c-message {
   margin: 0 !important;
   border-radius: 10px; }
-
-ts-thread .collapse_inline_thread_container:hover,
-ts-thread .view_all_replies_container:hover {
-  background-color: var(--background-elevated); }
 
 .section_rollup:hover:not(.is_active) {
   background: var(--background-hover);

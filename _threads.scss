@@ -1,0 +1,55 @@
+.threads_section,
+.threads_caught_up_divider,
+.thread_body_container,
+.divider_label,
+.divider_line {
+  background: $bg;
+  color: $text;
+}
+
+//The reply bar
+.c-message .reply_bar:hover {
+  background: $bg !important;
+  border: 1px solid $borderDim !important;
+}
+
+// The tab on the right
+#convo_tab {
+  .message_input,
+  #msg_text {
+    color: $text !important;
+  }
+
+  #convo_tab_header {
+    color: $text !important;
+  }
+}
+
+// Thread participants group
+.thread_participants {
+  color: $text !important;
+}
+
+.message_pane_scroller {
+  color: $text !important;
+}
+
+.monkey_scroller {
+  color: $text !important;
+}
+
+ts-thread {
+  .thread_messages {
+    background-color: $bg !important;
+    border-color: $borderDim !important;
+  }
+
+  .thread_channel_name a {
+    color: $textSpecial;
+  }
+}
+
+ts-thread .collapse_inline_thread_container:hover,
+ts-thread .view_all_replies_container:hover {
+  background-color: $bg2;
+}

@@ -52,6 +52,12 @@
     color: $text;
   }
 
+  .ql-container.texty_single_line_input {
+    background-color: $bg2;
+    color: $text;
+    opacity: 0.875;
+  }
+
 }
 
 // The search background
