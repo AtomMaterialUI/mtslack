@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Rajdhani');
+
+:root {
+  /* Modify these to change your theme colors: */
+  --primary: #E5C17C;
+  --accent: #568AF2;
+  --text: #ABB2BF;
+  --background: #282C34;
+  --background-elevated: #3B4048;
+
+  /* These should be less important: */
+  --background-hover: #3B4048;
+  --background-light: #AAA;
+  --background-bright: #FFF;
+
+  --border-dim: #666;
+  --border-bright: var(--primary);
+
+  --text-bright: #FFF;
+  --text-dim: #555c69;
+  --text-special: var(--primary);
+  --text-accent: var(--text-bright);
+
+  --scrollbar-background: #000;
+  --scrollbar-border: var(--primary);
+
+  --yellow: #fc0;
+  --green: #98C379;
+  --cyan: #56B6C2;
+  --blue: #61AFEF;
+  --purple: #C678DD;
+  --red: #E06C75;
+  --red2: #BE5046;
+  --orange: #D19A66;
+  --orange2: #E5707B;
+  --gray: #3E4451;
+  --silver: #9da5b4;
+  --black: #21252b;
+}
+
+$primary: var(--primary);
+$accent: var(--accent);
+$text: var(--text);
+$bg: var(--background);
+$bg2: var(--background-elevated);
+$bgHover: var(--background-hover);
+$bgLight: var(--background-light);
+$bgBright: var(--background-bright);
+$borderDim: var(--border-dim);
+$border: var(--border-bright);
+$textBright: var(--text-bright);
+$textDim: var(--text-dim);
+$textSpecial: var(--text-special);
+$textAccent: var(--text-accent);
+
+$yellow: var(--yellow);
+$green: var(--green);
+$cyan: var(--cyan);
+$blue: var(--blue);
+$purple: var(--purple);
+$red: var(--red);
+$red2: var(--red2);
+$orange: var(--orange);
+$orange2: var(--orange2);
+$gray: var(--gray);
+$silver: var(--silver);
+$black: var(--black);
+
+@mixin shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+@import "general/vendor";
+@import "general/helpers";
+@import "general/legacy";
+@import "general/general";
+@import "general/primary";
+@import "general/second";

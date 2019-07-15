@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/mallowigi/slack-one-dark-theme#readme",
   "devDependencies": {
-    "asar": "^2.0.1"
+    "asar": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   }
 }
