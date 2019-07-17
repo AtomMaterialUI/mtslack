@@ -53,6 +53,5 @@ fabric.properties
 .idea/
 
 package-lock.json
-*.css
 
 node_modules
