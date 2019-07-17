@@ -4,9 +4,9 @@
   "description": "Atom One Dark Theme for Slack!",
   "main": "index.js",
   "scripts": {
-    "apply": "node apply.js",
+    "apply": "npx ./main.js apply",
     "build": "gulp styles",
-    "restore": "node restore.js"
+    "restore": "./main.js restore"
   },
   "repository": {
     "type": "git",
