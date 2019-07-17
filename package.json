@@ -30,6 +30,7 @@
     "gulp-sass": "^4.0.2",
     "inquirer": "^6.5.0",
     "minimist": "^1.2.0",
+    "npx": "^10.2.0",
     "rimraf": "latest"
   }
 }
