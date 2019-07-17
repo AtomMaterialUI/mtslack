@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "apply": "node apply.js",
+    "build": "gulp styles",
     "restore": "node restore.js"
   },
   "repository": {
