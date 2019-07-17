@@ -6,8 +6,24 @@ Atom One Dark Theme for Slack!
 
 ![Screenshot](preview.png)
 
+# Pledge
+
+If you like this plugin, you can buy me a beer (or a coffee, or something else) using [PayPal](https://paypal.me/mallowigi?locale.x=en_US)
+
 # Installing into Slack
 
+### For Slack > 4.0
+
+- Clone this repository
+- Install NodeJS if you didn't do it yet (<>https://nodejs.org/en/download/</>)
+- Run `npm install`
+- Run `npm run apply`
+- Select **Apply** in the menu
+- Open or Restart Slack
+- ??????
+- PROFIT!!!!!!
+
+### For Slack < 4.0
 Find your Slack's application directory.
 
 * Windows: `%homepath%\AppData\Local\slack\`
@@ -149,60 +165,12 @@ Here's some example color variations you might like.
 
 # Development
 
-
 ## Inspect
 
 Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
 
 To test your CSS, install a Stylish-like extension (https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) then create
 a new style for slack and paste the CSS inside and save.
-
-## Local Dev
-
-`git clone` the project and `cd` into it.
-
-Change the CSS URL to `const cssPath = 'http://localhost:8080/custom.css';`
-
-Run a static webserver of some sort on port 8080:
-
-```bash
-npm install -g static
-static .
-```
-
-In addition to running the required modifications, you will likely want to add auto-reloading:
-
-```js
-const cssPath = 'http://localhost:8080/custom.css';
-const localCssPath = '/Users/username/Code/slack-one-dark-theme/custom.css';
-
-window.reloadCss = function() {
-   const webviews = document.querySelectorAll(".TeamView webview");
-   fetch(cssPath + '?zz=' + Date.now(), {cache: "no-store"}) // qs hack to prevent cache
-      .then(response => response.text())
-      .then(css => {
-         console.log(css.slice(0,50));
-         webviews.forEach(webview =>
-            webview.executeJavaScript(`
-               (function() {
-                  let styleElement = document.querySelector('style#slack-custom-css');
-                  styleElement.innerHTML = \`${css}\`;
-               })();
-            `)
-         )
-      });
-};
-
-fs.watchFile(localCssPath, reloadCss);
-```
-
-Instead of launching Slack normally, you'll need to enable developer mode to be able to inspect things.
-
-* Mac: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
-
-* Linux: (todo)
-
-* Windows: (todo)
 
 # Acknowledgements
 
