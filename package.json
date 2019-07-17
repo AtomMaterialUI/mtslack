@@ -4,9 +4,8 @@
   "description": "Atom One Dark Theme for Slack!",
   "main": "index.js",
   "scripts": {
-    "apply": "npx ./main.js apply",
-    "build": "gulp styles",
-    "restore": "./main.js restore"
+    "apply": "npx ./main.js",
+    "build": "gulp styles"
   },
   "repository": {
     "type": "git",
@@ -20,9 +19,17 @@
   "homepage": "https://github.com/mallowigi/slack-one-dark-theme#readme",
   "devDependencies": {
     "asar": "^2.0.1",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.0",
+    "figlet": "^1.2.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "inquirer": "^6.5.0",
+    "minimist": "^1.2.0",
+    "rimraf": "latest"
   }
 }
