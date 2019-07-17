@@ -4,7 +4,7 @@
   "description": "Atom One Dark Theme for Slack!",
   "main": "index.js",
   "scripts": {
-    "apply": "sudo npx ./main.js",
+    "apply": "npx ./main.js",
     "build": "gulp styles"
   },
   "repository": {
