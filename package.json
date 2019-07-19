@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "apply": "npx ./main.js",
-    "build": "gulp styles"
+    "build": "gulp styles",
+    "debug": "gulp debugStyles"
   },
   "repository": {
     "type": "git",

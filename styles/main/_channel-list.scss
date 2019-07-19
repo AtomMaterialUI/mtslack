@@ -16,26 +16,6 @@
     }
   }
 
-  /* Team selector at the top */
-  #team_menu {
-    background-color: $bg2 !important;
-    border-color: transparent !important;
-
-    &:hover,
-    &:active {
-      background-color: $bgHover;
-    }
-
-    .team_name_caret,
-    #team_name {
-      color: $textBright;
-    }
-
-    .notifications_menu_btn {
-      color: $textBright;
-    }
-  }
-
   /* Channel list panel */
   #col_channels {
     background: $bg2 !important;
@@ -152,4 +132,25 @@
 
   }
 
+}
+
+/* Team selector at the top */
+#team_menu {
+  background-color: $bg2 !important;
+  border-color: transparent !important;
+  color: $text !important;
+
+  &:hover,
+  &:active {
+    background-color: $bgHover;
+  }
+
+  .team_name_caret,
+  #team_name {
+    color: $textBright;
+  }
+
+  .notifications_menu_btn {
+    color: $textBright;
+  }
 }

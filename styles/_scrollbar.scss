@@ -20,14 +20,13 @@ div::-webkit-scrollbar-thumb,
   border: 1px solid $border;
 }
 
-#client-ui {
-  .monkey_scroll_bar {
-    background: $bg2;
-  }
-  .monkey_scroll_handle_inner {
-    border-color: $borderDim;
-    background: $bg2;
-  }
+.monkey_scroll_bar {
+  background: $bg2;
+}
+
+.monkey_scroll_handle_inner {
+  border-color: $borderDim;
+  background: $bg2;
 }
 
 .monkey_scroll_handle_inner {

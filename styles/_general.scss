@@ -1,5 +1,22 @@
 @import "core/animations";
 
+html {
+  background: $bg;
+}
+
+body {
+  background: $bg;
+  color: $text;
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: $textBright;
+  }
+}
+
 h1, h2, h3, h4 {
   color: $text;
 }
@@ -24,10 +41,6 @@ select {
   border-color: $borderDim;
 }
 
-hr {
-  border-top: 1px solid $border;
-}
-
 a, a:link, a:visited {
   color: $textSpecial;
 
@@ -48,8 +61,121 @@ pre {
   border-color: $borderDim !important;
 }
 
+.muted,
+a.muted {
+  color: $textDim !important;
+
+  &:focus, &:hover {
+    color: $textBright !important;
+  }
+}
+
+hr {
+  border-color: $borderDim !important;
+}
+
+abbr {
+  border-color: $borderDim !important;
+}
+
+blockquote {
+  border-color: $borderDim !important;
+
+  small {
+    color: $textDim !important;
+  }
+}
+
+legend {
+  color: $text !important;
+  border: none !important;
+
+  small {
+    color: $textDim !important;
+  }
+}
+
+.badge, .label, a.badge, a.label {
+  background: $accent;
+
+  &:focus, &:hover {
+    color: $textBright !important;
+  }
+}
+
 .btn_link {
   color: $primary !important;
+}
+
+.table,
+.table-bordered {
+  background: $bg !important;
+
+  td, th {
+    border-color: $borderDim !important;
+  }
+}
+
+.table-striped tr:nth-child(odd) {
+  td, th {
+    background: $bg2 !important;
+  }
+}
+
+.table-hover tr:hover {
+  td, th {
+    background: $bgHover !important;
+  }
+}
+
+input,
+textarea {
+  color: $text !important;
+  background: $bg !important;
+  border: $borderDim !important;
+
+  &:focus {
+    border-color: $accent !important;
+    border-width: 2px !important;
+  }
+}
+
+.uneditable-input,
+.uneditable-textarea {
+  color: $textDim !important;
+  background: $bg2 !important;
+  border: $borderDim !important;
+
+  &:focus {
+    border-color: $accent !important;
+    border-width: 2px !important;
+  }
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $textDim !important;
+}
+
+.form-actions {
+  background: $bg;
+}
+
+.help-block,
+.help-inline {
+  color: $textSpecial !important;
+}
+
+.input-append,
+.input-prepend {
+  .add-on {
+    background: $bg2 !important;
+    border: none !important;
+  }
 }
 
 // Override custom colors
@@ -91,6 +217,7 @@ pre {
 // Presence Indicators
 .presence {
   color: $text;
+
   &.active {
     color: $green;
   }
@@ -139,6 +266,12 @@ svg.ts_icon_spinner:empty {
   color: $text !important;
   border-color: $borderDim !important;
 
+  &.active,
+  &:active {
+    background: $accent !important;
+    color: $textBright !important;
+  }
+
   &:hover {
     background: $bgHover !important;
     color: $primary !important;
@@ -154,6 +287,38 @@ svg.ts_icon_spinner:empty {
     background: $primary !important;
     color: $textBright !important;
   }
+}
+
+.btn-primary {
+  color: $textBright !important;
+  background: $primary !important;
+  border: $primary !important;
+}
+
+.btn-link {
+  color: $primary !important;
+
+  &:focus, &:hover {
+    color: $textBright !important;
+  }
+}
+
+.alert {
+  background: $bg2 !important;
+  color: $accent !important;
+  h4 {
+    color: $accent !important;
+  }
+}
+
+.tooltip-inner {
+  background: $bg2 !important;
+  color: $text !important;
+}
+
+.modal-backdrop {
+  background: $bg2 !important;
+  color: $text !important;
 }
 
 .lazy_filter_select .lfs_input_container {
@@ -185,6 +350,7 @@ ts-mention {
   background: $accent;
   color: $textAccent !important;
   padding: 4px;
+
   &:hover {
     background: $accent;
     color: $textAccent !important;
@@ -197,10 +363,12 @@ ts-mention {
   background: $bg2;
   color: $textAccent !important;
   border: none;
+
   &:hover {
     background: $bgHover;
     color: $textAccent !important;
   }
+
   .c-reaction__count {
     color: $primary !important;
   }
@@ -271,4 +439,34 @@ ts-mention {
 .close,
 .ts_icon_close_filled {
   color: $primary !important;
+}
+
+.dropdown-menu {
+  background: $bg !important;
+  border-color: $textDim !important;
+  color: $text !important;
+}
+
+.dropdown-submenu {
+  &:focus > a, &:hover > a {
+    color: $textBright;
+    background-color: $textAccent;
+  }
+}
+
+.dropdown-menu > {
+  .active > a {
+    color: $textBright;
+    background-color: $textAccent;
+    &:focus, &:hover {
+      color: $textBright;
+      background-color: $textAccent;
+    }
+  }
+  .disabled > a {
+    color: $textDim;
+    &:focus, &:hover {
+      color: $textDim;
+    }
+  }
 }
