@@ -349,10 +349,6 @@ ts-mention.ts_tip:hover {
   background-color: $bg2 !important;
 }
 
-/* scroll border fix */
-.client_channels_list_container {
-  border-right: none !important;
-}
 
 .flex_pane_showing #col_flex {
   border-color: $borderDim !important;
@@ -507,4 +503,11 @@ ts-memory-instrument {
 .zoom_level_indicator {
   background: $bg2 !important;
   color: $textBright !important;
+}
+
+.message_current_status,
+.current_status {
+  ts-icon {
+    color: $text !important;
+  }
 }

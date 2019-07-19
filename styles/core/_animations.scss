@@ -15,3 +15,13 @@
     background: $bgLight;
   }
 }
+
+@keyframes highlight_page_load {
+  from {
+    background-color: $bg;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}

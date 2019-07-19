@@ -1,4 +1,64 @@
-/* putting this on so many elements might cause performance issues but #yolo */
+.supports_custom_scrollbar {
+  &:not(.slim_scrollbar) .slack_scrollbar_theme {
+
+    &::-webkit-scrollbar-thumb {
+      color: $accent !important;
+    }
+
+    &::-webkit-scrollbar-track {
+      color: $accent !important;
+      background: $accent !important;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: $accent !important;
+    }
+  }
+
+  &.slim_scrollbar .slack_scrollbar_theme {
+    margin-right: 2px;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $accent !important;
+      color: $accent !important;
+
+      &:hover {
+        background-color: $accent !important;
+      }
+    }
+  }
+
+  &:not(.slim_scrollbar) .slack_scrollbar {
+    &::-webkit-scrollbar-thumb {
+      color: $accent !important;
+    }
+
+    &::-webkit-scrollbar-track {
+      color: $accent !important;
+      background: $accent !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $bg !important;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: $accent !important;
+    }
+  }
+
+  &.slim_scrollbar .slack_scrollbar {
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg !important;
+      color: $bg !important;
+
+      &:hover {
+        background-color: $bg !important;
+      }
+    }
+  }
+}
+
 div::-webkit-scrollbar-track,
 #contents_container::-webkit-scrollbar-track,
 .lfs_list::-webkit-scrollbar-track {
@@ -34,12 +94,7 @@ div::-webkit-scrollbar-thumb,
   background: $bg2;
 }
 
-.c-scrollbar__hider {
-  background: $bg !important;
-  color: $text !important;
-}
-
 .flex_content_scroller {
   background: $bg !important;
-  color: $text;
+  color: $text !important;
 }

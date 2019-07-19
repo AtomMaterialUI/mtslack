@@ -10,5 +10,5 @@
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   border-bottom-color: $borderDim !important;
-  background: $bg;
+  background: $bg !important;
 }

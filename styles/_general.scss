@@ -202,20 +202,6 @@ textarea::-webkit-input-placeholder {
   }
 }
 
-// Override custom colors
-.blue_fill_bg,
-.seafoam_green_bg,
-.mustard_yellow_bg {
-  background: $accent !important;
-}
-
-.blue_fill,
-.charcoal_grey,
-.blue_link,
-.indifferent_grey {
-  color: $primary !important;
-}
-
 .sk_black {
   color: $black !important
 }
@@ -288,10 +274,12 @@ textarea::-webkit-input-placeholder {
   background-color: $blue !important;
 }
 
+.seafoam_green,
 .sk_seafoam_green {
   color: $green !important
 }
 
+.seafoam_green_bg,
 .sk_seafoam_green_bg {
   background-color: $green !important
 }
@@ -428,8 +416,217 @@ textarea::-webkit-input-placeholder {
   border-left: 1px solid $borderBright !important;
 }
 
+.clear_blue {
+  color: $blue !important;
+}
+
+.clear_blue_bg {
+  background-color: $blue !important;
+}
+
+.solid_blue {
+  color: $blue !important;
+}
+
+.solid_blue_bg {
+  background-color: $blue !important;
+}
+
+.candy_red, .candy_red_on_hover:hover {
+  color: $red !important;
+}
+
+.candy_red_bg {
+  background-color: $red !important;
+}
+
+.code_red {
+  color: $red !important;
+}
+
+
+.mention_yellow_bg {
+  background-color: $yellow !important;
+}
+
+.star_yellow {
+  color: $yellow !important;
+}
+
+.star_yellow_bg {
+  background-color: $yellow !important;
+}
+
+.yolk_orange {
+  color: $orange2 !important;
+}
+
+.yolk_orange_bg {
+  background-color: $orange2 !important;
+}
+
+.thrills_purple {
+  color: $purple !important;
+}
+
+.thrills_purple_bg {
+  background-color: $purple !important;
+}
+
+.mantis_green {
+  color: $green !important;
+}
+
+.burnt_violet {
+  color: $purple !important;
+}
+
+.burnt_violet_bg {
+  background-color: $purple !important;
+}
+
+.ocean_teal {
+  color: $cyan !important;
+}
+
+.ocean_teal_bg {
+  background-color: $cyan !important;
+}
+
+.havana_blue {
+  color: $blue !important;
+}
+
+.havana_blue_bg {
+  background-color: $blue !important;
+}
+
+.sky_blue {
+  color: $cyan !important;
+}
+
+.sky_blue_bg {
+  background-color: $cyan !important;
+}
+
+.slate_blue {
+  color: $textDim !important;
+}
+
+.slate_blue_bg {
+  background-color: $textDim !important;
+}
+
+.muddy_lilac {
+  color: $purple !important;
+}
+
+.muddy_lilac_bg {
+  background-color: $purple !important;
+}
+
+.moscow_red, .moscow_red_dark, .moscow_red_on_hover:hover, moscow_red_bg {
+  color: $red !important;
+}
+
+.moscow_red_dark_bg {
+  background-color: $red !important;
+}
+
+.mustard_yellow {
+  color: $orange2 !important;
+}
+
+.mustard_yellow_bg {
+  background-color: $orange2 !important;
+}
+
+.kelly_green, .kelly_green_dark {
+  color: $green !important;
+}
+
+.kelly_green_bg {
+  background-color: $green !important;
+}
+
+.channel_page_blue {
+  color: $blue !important;
+}
+
+.pin_orange {
+  color: $orange !important;
+}
+
+.charcoal_grey {
+  color: $black !important;
+}
+
+.old_petunia_grey {
+  color: $textDim !important;
+}
+
+.cool_purple {
+  color: $purple !important;
+}
+
+.cool_purple_bg {
+  background-color: $purple !important;
+}
+
+.dusty_springfield_grey {
+  color: $textDim !important;
+}
+
+.dropbox_blue {
+  color: $blue !important;
+}
+
+.dropbox_blue_bg {
+  background-color: $blue !important;
+}
+
+.twitter_blue {
+  color: $cyan !important;
+}
+
+.twitter_blue_bg {
+  background-color: $cyan !important;
+}
+
+.gdrive_blue_bg {
+  background-color: $blue !important;
+}
+
+.screenhero_blue {
+  color: $blue !important;
+}
+
+.screenhero_blue_bg {
+  background-color: $blue !important;
+}
+
+.blue_link {
+  color: $accent !important;
+}
+
+.blue_hover {
+  color: $accent !important;
+}
+
+.blue_fill {
+  color: $cyan;
+}
+
+.blue_fill_bg {
+  background-color: $cyan !important;
+}
+
 .greigh {
   color: $text !important;
+}
+
+.greigh_bg {
+  background-color: $text !important;
 }
 
 .c-keyboard_key {
@@ -462,20 +659,69 @@ svg.ts_icon_spinner:empty {
 // toggles
 .ts_toggle {
   .ts_toggle_button {
-    background: $bg2;
+    background: $bgLight;
+    color: $text !important;
   }
 
   .ts_toggle_secondary_label {
-    color: $text;
+    color: $accent !important;
   }
 
   &.checked {
     .ts_toggle_button {
-      background: $accent;
+      background: $accent !important;
+      color: $textBright !important;
     }
 
     .ts_toggle_secondary_label {
-      color: $textBright;
+      color: $textBright !important;
+    }
+  }
+
+  &.ts_toggle_orange .ts_toggle_button {
+    background: $purple !important;
+    color: $textBright !important;
+  }
+}
+
+.focus-ring + .ts_toggle {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
+}
+
+// Tooltips
+.ts_tip {
+  .ts_tip_multiline_inner,
+  &:not(.ts_tip_multiline) .ts_tip_tip {
+    background: $bgLight !important;
+    color: $text !important;
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+
+  .ts_tip_tip {
+    color: $textBright !important;
+  }
+
+  &.ts_tip_top .ts_tip_tip {
+    background: $bgLight !important;
+    color: $text !important;
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+
+  &.ts_tip_bottom {
+    background: $bg2 !important;
+    color: $text !important;
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
     }
   }
 }
@@ -528,9 +774,19 @@ svg.ts_icon_spinner:empty {
 .alert {
   background: $bg2 !important;
   color: $accent !important;
+  border-color: $bg2 !important;
 
   h4 {
     color: $accent !important;
+  }
+}
+
+.alert_page {
+  background: $accent !important;
+  color: $textBright !important;
+
+  a, a:link, a:visited {
+    color: $primary !important
   }
 }
 
@@ -696,4 +952,165 @@ button:not(.c-button--focus-visible).focus-ring,
 #msg_form.focusablesection:focus .sectionfocusindicator,
 .focusablesection:focus .sectionfocusindicator {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
+}
+
+//.c-scrollbar__hider {
+//  background: $bg !important;
+//  color: $text !important;
+//}
+
+.bordered {
+  border: 1px solid $borderDim !important;
+}
+
+.top_border {
+  border-top: 1px solid $borderDim !important;
+}
+
+.bottom_border {
+  border-bottom: 1px solid $borderDim !important;
+}
+
+.left_border {
+  border-left: 1px solid $borderDim !important;
+}
+
+.right_border {
+  border-right: 1px solid $borderDim !important;
+}
+
+.flexpane_grey {
+  color: $bg2 !important;
+}
+
+.flexpane_grey_bg {
+  background-color: $bg2 !important;
+}
+
+.mini {
+  color: $textDim !important;
+}
+
+a.mini {
+  color: $primary !important;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.inline_color_block {
+  border: $bg !important;
+}
+
+.well {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+}
+
+.log_output {
+  border-bottom-color: $borderDim !important;
+}
+
+.square_icon {
+  color: $primary !important;
+}
+
+.team_icon {
+  color: $primary !important;
+
+  &.default {
+    color: $accent !important;
+  }
+}
+
+.action_cog {
+  color: $text !important;
+
+  &:hover {
+    color: $textBright !important;
+
+    i {
+      color: $textBright !important;
+    }
+  }
+}
+
+.quote_block {
+  text: $text !important;
+
+  &:before {
+    background: $bg !important;
+  }
+}
+
+.pager {
+  li {
+    a, span {
+      color: $text !important;
+    }
+  }
+
+  .disabled {
+    a, span {
+      color: $textDim !important;
+    }
+  }
+}
+
+.pagination {
+  li {
+    span, a {
+      background: $bg !important;
+      border-color: $borderDim !important;
+    }
+  }
+
+  li > a:focus {
+    background: $primary !important;
+    color: $textBright !important;
+  }
+
+  .active {
+    a, span {
+      background: $primary !important;
+      color: $textBright !important;
+    }
+  }
+
+  .disabled a,
+  .disabled span {
+    color: $textDim !important;
+    background: $bg !important;
+
+    &:focus {
+      color: $textDim !important;
+      background: $bg !important;
+    }
+  }
+}
+
+.service_row {
+  border-bottom-color: $borderDim !important;
+  color: $textDim !important;
+
+  a.summary {
+    color: $accent !important;
+  }
+
+  .summary strong {
+    background: $bg !important;
+    color: $accent !important;
+  }
+}
+
+.service {
+  &.open {
+    background: $bg2 !important;
+    border: 1px solid $bg2 !important;
+  }
 }

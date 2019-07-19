@@ -1,8 +1,9 @@
 // Left sidebar
 .client_channels_list_container {
-  background-color: $bg;
-  color: $text;
-  box-shadow: var(--background-elevated) 1px 1px 25px;
+  border-right: none !important;
+  background-color: $contrast !important;
+  color: $text !important;
+  box-shadow: $bg2 1px 1px 25px;
   z-index: 1;
 
   /* Channel list panel */
@@ -11,8 +12,8 @@
 
     // The channel sidebar
     .p-channel_sidebar {
-      background-color: $bg2;
-      color: $text;
+      background: $contrast !important;
+      color: $text !important;
 
       &__section_heading {
         border-bottom: 1px solid $borderDim !important;
