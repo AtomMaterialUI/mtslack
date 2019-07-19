@@ -2,9 +2,14 @@
   background: $bg;
   color: $text;
 
+  &.disable_border::before {
+    background: $bg2 !important;
+    box-shadow: none !important;
+  }
+
   &::before {
     border-bottom: 1px solid $borderDim !important;
-    background: $bg;
+    background: $bg2 !important;
     box-shadow: none;
   }
 
@@ -68,7 +73,7 @@
     color: $text;
 
     .c-message_attachment__border {
-      color: $border;
+      color: $borderBright;
     }
 
     .c-message_attachment__author {
@@ -111,4 +116,16 @@
     background: $bgHover !important;
   }
 
+}
+
+// Back to my messages
+.sli_briefing__channel_back_button {
+  color: $text !important;
+  background-color: $bgLight !important;
+  border: 1px solid $borderDim !important;
+
+  &:hover {
+    background: $selection !important;
+    color: $textBright !important;
+  }
 }

@@ -5,17 +5,6 @@
   box-shadow: var(--background-elevated) 1px 1px 25px;
   z-index: 1;
 
-  // Channel overlay (on loading)
-  #col_channels_overlay,
-  #team_menu_overlay {
-    background: $bg !important;
-    border-color: transparent !important;
-
-    .overlay_mock_text {
-      background: $bgHover;
-    }
-  }
-
   /* Channel list panel */
   #col_channels {
     background: $bg2 !important;
@@ -27,6 +16,7 @@
 
       &__section_heading {
         border-bottom: 1px solid $borderDim !important;
+
         .p-channel_sidebar__section_heading_label {
           font-weight: bold !important;
         }
@@ -63,9 +53,10 @@
         &--unread {
           color: $textBright !important;
         }
+
         &--selected {
           background: $bg !important;
-          border: solid $border;
+          border: solid $borderBright;
           border-width: 1px 1px 1px 0;
           border-radius: 0 20px 20px 0;
 
@@ -98,6 +89,7 @@
           &--away {
             color: $silver;
           }
+
           &--active {
             color: $green;
           }
@@ -122,6 +114,7 @@
       border-top: none;
       border-radius: 0 0 15px 15px;
     }
+
     /*"more unreads" bottom */
     .p-channel_sidebar__banner--bottom {
       background-color: $bg;
@@ -131,7 +124,6 @@
     }
 
   }
-
 }
 
 /* Team selector at the top */
@@ -142,7 +134,7 @@
 
   &:hover,
   &:active {
-    background-color: $bgHover;
+    background-color: $bgHover !important;
   }
 
   .team_name_caret,
@@ -153,4 +145,84 @@
   .notifications_menu_btn {
     color: $textBright;
   }
+
+  #presence {
+    &.active::before {
+      color: $green !important;
+    }
+
+    &.away::before {
+      color: $textDim !important;
+    }
+
+    &.offline::before {
+      color: $red !important;
+    }
+
+    &.connecting::before {
+      color: $orange !important;
+    }
+  }
+}
+
+body {
+  &:not(.loading) #team_menu {
+    &.active, &:hover {
+      background-color: $bgHover !important;
+      border-color: $bgHover !important;
+    }
+  }
+}
+
+#team_menu_user {
+  color: $text !important;
+  font-style: italic !important;
+}
+
+#team_menu_user_details {
+  .current_user_current_status {
+    ts-icon {
+      color: $textSpecial !important;
+    }
+  }
+}
+
+#flex_menu_toggle {
+  &.unread {
+    #help_icon_circle_count {
+      background: $accent !important;
+      color: $textBright !important;
+    }
+
+    .help_icon_icon {
+      background: $accent !important;
+      color: $textBright !important;
+    }
+  }
+}
+
+.whats_new_showing {
+  #flex_menu_toggle.unread #help_icon_circle_count,
+  #help_toggle.unread .help_icon_icon {
+    background-color: $accent !important;
+    color: $textBright !important;
+    box-shadow: 0 0 0 2px $accent !important;
+  }
+}
+
+#flex_menu_toggle.open #help_icon_circle_count,
+#help_toggle.open .help_icon_icon {
+  background-color: $accent !important;
+  color: $textBright !important;
+}
+
+.overlay_mock_text {
+  background: $bgHover;
+}
+
+// Channel overlay (on loading)
+#col_channels_overlay,
+#team_menu_overlay {
+  background: $bg !important;
+  border-color: transparent !important;
 }

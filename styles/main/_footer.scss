@@ -2,8 +2,13 @@
 @import "complete";
 
 #footer {
-  background: $bg !important;
-  box-shadow: none;
+  background: $bg2 !important;
+  box-shadow: none !important;
+
+  &.disabled #msg_input {
+    border-color: $borderDim !important;
+    background: $bg2 !important;
+  }
 }
 
 #msg_preview {
@@ -15,13 +20,17 @@
   color: $text;
 }
 
+#footer_archives_table {
+  color: $text !important;
+}
+
 #footer_archives_preview {
-  background: $bg2;
-  color: $text;
+  background: $bg2 !important;
+  color: $text !important;
   border-color: $borderDim;
 
   .c-archive_footer__title {
-    color: $text;
+    color: $text !important;
   }
 
   .c-archive_footer__metadata {

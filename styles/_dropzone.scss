@@ -1,3 +1,36 @@
+// Drop to upload to slack
+.drop-target #drop-zone {
+  color: $text !important;
+
+  .instructions {
+    background: $bg !important;
+    color: $text !important;
+  }
+
+  h1 {
+    color: $textBright !important;
+  }
+}
+
+// Too much files
+.over-file-limit-target #over-storage-limit-modal {
+  background: $bg !important;
+  color: $text !important;
+
+  .instructions {
+    background: $bg !important;
+    color: $text !important;
+  }
+
+  h1 {
+    color: $textBright !important;
+  }
+
+  a {
+    color: $primary !important;
+  }
+}
+
 #drop-zone,
 #over-storage-limit-modal {
   background: $bg2;
@@ -6,4 +39,20 @@
   h1 {
     color: $textBright;
   }
+
+  button {
+    color: $textBright !important;
+
+    &.dismiss_over_storage_limit_modal.focus-ring {
+      box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accent !important;
+    }
+  }
+}
+
+#onboarding_header {
+  color: $text !important;
+}
+
+#onboarding_fade_out_mask {
+  background: linear-gradient($bg, $bg2) !important;
 }

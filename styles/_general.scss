@@ -214,15 +214,6 @@ textarea::-webkit-input-placeholder {
   box-shadow: inset 0 0 0 1px $borderDim;
 }
 
-// Presence Indicators
-.presence {
-  color: $text;
-
-  &.active {
-    color: $green;
-  }
-}
-
 // Spinners
 .ts_icon_spin.ts_icon_spinner:empty,
 svg.ts_icon_spinner:empty {
@@ -275,12 +266,12 @@ svg.ts_icon_spinner:empty {
   &:hover {
     background: $bgHover !important;
     color: $primary !important;
-    border-color: $border !important;
+    border-color: $borderBright !important;
   }
 
   &:hover::after {
     color: $primary !important;
-    border-color: $border !important;
+    border-color: $borderBright !important;
   }
 
   &.btn_green {
@@ -306,6 +297,7 @@ svg.ts_icon_spinner:empty {
 .alert {
   background: $bg2 !important;
   color: $accent !important;
+
   h4 {
     color: $accent !important;
   }
@@ -383,7 +375,7 @@ ts-mention {
 .bot_label {
   padding: 0 4px !important;
   border-radius: 3px !important;
-  border: 1px solid $border;
+  border: 1px solid $borderBright;
   color: $textAccent !important;
   background: $primary !important;
 }
@@ -404,13 +396,6 @@ ts-mention {
     background: $red2 !important;
     color: $textBright !important;
   }
-}
-
-// Snippets, formatting...
-#snippet_prompt,
-#special_formatting_text,
-#typing_text {
-  color: $textDim;
 }
 
 .member_details_divider {
@@ -458,15 +443,26 @@ ts-mention {
   .active > a {
     color: $textBright;
     background-color: $textAccent;
+
     &:focus, &:hover {
       color: $textBright;
       background-color: $textAccent;
     }
   }
+
   .disabled > a {
     color: $textDim;
+
     &:focus, &:hover {
       color: $textDim;
     }
   }
+}
+
+[role=button].focus-ring,
+a:not(.c-link--focus-visible).focus-ring,
+button:not(.c-button--focus-visible).focus-ring,
+#msg_form.focusablesection:focus .sectionfocusindicator,
+.focusablesection:focus .sectionfocusindicator {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
 }

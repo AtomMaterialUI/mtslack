@@ -1,7 +1,26 @@
+// Don't know where this is used :(
+#msg_input_mount_point {
+  .p-workspace__input {
+    &.p-message_input--focus-visible .p-message_input_field.focus {
+      box-shadow: 0 0 0 1px $borderDim, 0 0 0 5px $borderDim !important;
+    }
+
+    .p-message_input_file_button {
+      color: $textDim !important;
+
+      &.p-message_input_file_button--active, &:hover {
+        color: $textDim !important;
+        background: $green !important;
+      }
+    }
+  }
+}
+
 #msg_input {
-  background: transparent !important;
+  background: $bgLight !important;
   color: $text !important;
   border-color: $borderDim !important;
+  margin-top: 1em !important;
 
   &.offline {
     background-color: $red !important;
@@ -10,6 +29,27 @@
   .emo_menu {
     color: $textBright !important;
   }
+}
+
+#message_edit_form {
+  .current_status_empty_emoji,
+  .current_status_empty_emoji_cover,
+  .emo_menu {
+    color: $text !important;
+  }
+}
+
+// The mentions (@) button
+.msg_mentions_button {
+  color: $primary !important;
+
+  &:hover {
+    color: $textBright !important;
+  }
+}
+
+.current_status_input.focus ~ .current_status_emoji_picker .current_status_empty_emoji {
+  color: $textBright !important;
 }
 
 .message_container_item {
@@ -21,6 +61,38 @@
   color: $text !important;
 }
 
+// Emojis ?
+#msg_form,
+.current_status_container,
+.current_status_input_container,
+.inline_message_input_container,
+.share_channel_modal_contents {
+  .current_status_empty_emoji,
+  .current_status_empty_emoji_cover,
+  .emo_menu {
+    color: $text !important;
+  }
+}
+
+// When input is in focus
+#message_edit_form,
+#msg_form,
+.current_status_container,
+.current_status_input_container,
+.inline_message_input_container,
+.share_channel_modal_contents {
+  #msg_input.focus ~,
+  #msg_input:focus ~,
+  .message_input.focus ~,
+  .message_input:focus ~ {
+    #primary_file_button:not(:hover):not(.active),
+    .emo_menu,
+    .msg_mentions_button:not(:hover) {
+      color: $primary !important;
+    }
+  }
+}
+
 .ql-container {
   background: $bg !important;
   border-color: $borderDim !important;
@@ -28,6 +100,11 @@
   .ql-editor {
     background: $bg !important;
     color: $text !important;
+    border: 1px solid transparent !important;
+
+    &.focus-ring {
+      border: 1px solid $primary !important;
+    }
   }
 
   .ql-blank {
@@ -52,7 +129,17 @@
 #primary_file_button {
   background: transparent !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: transparent !important;
+  top: 1em !important;
+
+  &.focus-ring,
+  &.active,
+  &:hover {
+    background: $accent !important;
+    color: $textBright !important;
+    border-color: $accent !important;
+    transition: all 0.5s ease-in-out !important;
+  }
 }
 
 .inline_message_input_container .ql-container {
@@ -63,4 +150,45 @@
 #reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
 .reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
   color: $text !important;
+}
+
+#archives_return,
+.messages_banner {
+  color: $text !important;
+  background-color: $bg2 !important;
+  border: 1px solid $borderDim !important;
+
+  a {
+    color: $primary !important;
+
+    &:hover {
+      color: $textBright !important;
+    }
+  }
+}
+
+.reply_input_container .ql-container {
+  background-color: $bg !important;
+  border-color: $borderDim !important;
+}
+
+.secondary_file_button {
+  color: $text !important;
+
+  &:hover {
+    color: $accent !important;
+  }
+}
+
+// Snippets
+#snippet_prompt,
+#special_formatting_text,
+#typing_text {
+  color: $textDim !important;
+}
+
+#message-input.onboarding,
+#msg_input_mount_point.onboarding .p-workspace__input .p-message_input_field,
+#primary_file_button.onboarding {
+  border-color: $accent !important;
 }

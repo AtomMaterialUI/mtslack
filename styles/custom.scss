@@ -8,10 +8,12 @@
   --background: #282C34;
   --background-elevated: #2F333D;
 
-  /* These should be less important: */
+  --contrast: #21252B;
   --background-hover: #3A3F4B;
   --background-light: #383D48;
   --background-bright: #FFF;
+  --selection: #3A3F4B;
+  --excluded: #3c4150;
 
   --border-dim: #282C34;
   --border-bright: var(--primary);
@@ -46,8 +48,11 @@ $bg2: var(--background-elevated);
 $bgHover: var(--background-hover);
 $bgLight: var(--background-light);
 $bgBright: var(--background-bright);
+$contrast: var(--contrast);
+$selection: var(--selection);
+$excluded: var(--excluded);
 $borderDim: var(--border-dim);
-$border: var(--border-bright);
+$borderBright: var(--border-bright);
 $textBright: var(--text-bright);
 $textDim: var(--text-dim);
 $textSpecial: var(--text-special);

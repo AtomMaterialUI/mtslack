@@ -14,3 +14,17 @@
 #loading_message_attribution {
   color: $text !important;
 }
+
+// Connection modal
+#connection_div {
+  background: $bg2 !important;
+  color: $text !important;
+
+  a {
+    color: $primary !important;
+  }
+
+  &.resync_banner {
+    background: $bg !important;
+  }
+}

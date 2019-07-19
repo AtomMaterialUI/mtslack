@@ -1,5 +1,27 @@
 @import "modals/member";
 
+#shortcuts_dialog {
+  background: $bg !important;
+  color: $text !important;
+
+  h1, h3 {
+    color: $textBright !important;
+  }
+
+  .shortcut_category {
+    border-left-color: $borderDim !important;
+  }
+
+  .info_block {
+    color: $textDim !important;
+  }
+
+  .close {
+    background: $bg !important;
+    color: $textBright !important;
+  }
+}
+
 #generic_dialog,
 #fs_modal,
 .modal,
@@ -77,6 +99,7 @@
 .modal-header,
 .modal-footer {
   background-color: $bg2 !important;
+  color: $textBright !important;
 }
 
 #fs_modal,
