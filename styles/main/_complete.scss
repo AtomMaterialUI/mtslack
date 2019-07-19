@@ -22,3 +22,8 @@
     }
   }
 }
+
+.c-unified_member--dark .c-app_label,
+.tab_complete_ui li.tab_complete_ui_item.active .c-app_label {
+  color: $textBright !important
+}

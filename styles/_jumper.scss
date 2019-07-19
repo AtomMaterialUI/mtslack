@@ -1,4 +1,10 @@
 ts-jumper {
+  ol {
+    li.highlighted:not(.no_hover) .c-app_label,
+    &:not(.keyboard_active) li:hover:not(.no_hover) .c-app_label {
+      color: $textBright !important;
+    }
+  }
 
   input[type="text"] {
     background: $bg;

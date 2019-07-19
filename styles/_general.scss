@@ -138,6 +138,30 @@ textarea {
     border-color: $accent !important;
     border-width: 2px !important;
   }
+
+  &.c-input_text,
+  &[type=text].c-input_text,
+  &[type=password].c-input_text {
+    border: 1px solid $borderDim !important;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary;
+    }
+  }
+
+  &.c-input_text[disabled],
+  &[type=text].c-input_text[disabled],
+  &[type=password].c-input_text[disabled] {
+    background: $bg2 !important;
+    border: 1px solid $borderDim !important;
+  }
+
+  &.c-input_text--with_default,
+  &[type=text].c-input_text--with_default,
+  &[type=password].c-input_text--with_default {
+    border: 1px solid $borderDim !important;
+    box-shadow: 0 0 0 1px $borderDim, 0 0 0 5px $borderDim !important;
+  }
 }
 
 .uneditable-input,
@@ -179,7 +203,6 @@ textarea::-webkit-input-placeholder {
 }
 
 // Override custom colors
-.sk_fill_blue_bg,
 .blue_fill_bg,
 .seafoam_green_bg,
 .mustard_yellow_bg {
@@ -193,8 +216,216 @@ textarea::-webkit-input-placeholder {
   color: $primary !important;
 }
 
+.sk_black {
+  color: $black !important
+}
+
+.sk_black_bg {
+  background-color: $black !important;
+}
+
+.sk_dark_gray, .sk_dark_grey {
+  color: $gray !important;
+}
+
+.sk_dark_gray_bg, .sk_dark_grey_bg {
+  background-color: $gray !important;
+}
+
+.sk_light_gray, .sk_light_grey {
+  color: $silver !important
+}
+
+.sk_light_gray_bg, .sk_light_grey_bg {
+  background-color: $silver !important
+}
+
+.sk_soft_gray, .sk_soft_grey {
+  color: $textBright !important
+}
+
+.sk_soft_gray_bg, .sk_soft_grey_bg {
+  background-color: $textBright !important
+}
+
+.sk_link_blue {
+  color: $blue !important
+}
+
+.sk_link_blue_bg {
+  background-color: $blue !important
+}
+
+.sk_hover_blue {
+  color: $blue !important;
+}
+
+.sk_hover_blue_bg {
+  background-color: $blue !important;
+}
+
+.sk_fill_blue {
+  color: $accent !important;
+}
+
+.sk_fill_blue_bg {
+  background-color: $accent !important;
+}
+
+.sk_sapphire_blue {
+  color: $blue !important
+}
+
+.sk_sapphire_blue_bg {
+  background-color: $blue !important
+}
+
+.sk_pale_blue {
+  color: $blue !important;
+}
+
+.sk_pale_blue_bg {
+  background-color: $blue !important;
+}
+
+.sk_seafoam_green {
+  color: $green !important
+}
+
+.sk_seafoam_green_bg {
+  background-color: $green !important
+}
+
+.sk_warning_red {
+  color: $red !important
+}
+
+.sk_warning_red_bg {
+  background-color: $red !important
+}
+
+.sk_pin_orange {
+  color: $orange !important;
+}
+
+.sk_pin_orange_bg {
+  background-color: $orange !important;
+}
+
 .subtle_silver {
   color: $text !important;
+}
+
+.sk_colonel_mustard {
+  color: $orange2 !important
+}
+
+.sk_colonel_mustard_bg {
+  background-color: $orange2 !important
+}
+
+.sk_star_yellow {
+  color: $yellow !important;
+}
+
+.sk_star_yellow_bg {
+  background-color: $yellow !important;
+}
+
+.sk_aubergine {
+  color: $purple !important
+}
+
+.sk_aubergine_bg {
+  background-color: $purple !important
+}
+
+.sk_just_orange {
+  color: $orange !important
+}
+
+.sk_just_orange_bg {
+  background-color: $orange !important
+}
+
+.sk_reddish_orange {
+  color: $orange2 !important
+}
+
+.sk_reddish_orange_bg {
+  background-color: $orange2 !important
+}
+
+.sk_indigo {
+  color: $purple !important
+}
+
+.sk_indigo_bg {
+  background-color: $purple !important
+}
+
+.sk_sky_blue {
+  color: $cyan !important
+}
+
+.sk_sky_blue_bg {
+  background-color: $cyan !important
+}
+
+.sk_frosty_blue {
+  color: $textBright !important
+}
+
+.sk_frosty_blue_bg {
+  background-color: $textBright !important
+}
+
+.sk_raspberry_red {
+  color: $red2 !important
+}
+
+.sk_raspberry_red_bg {
+  background-color: $red2 !important
+}
+
+.sk_sunshine_yellow {
+  color: $yellow !important
+}
+
+.sk_sunshine_yellow_bg {
+  background-color: $yellow !important
+}
+
+.sk_pale_yellow {
+  color: $textBright !important
+}
+
+.sk_pale_yellow_bg {
+  background-color: $textBright !important
+}
+
+.sk_lilypad_green {
+  color: $green !important
+}
+
+.sk_lilypad_green_bg {
+  background-color: $green !important
+}
+
+.top_border {
+  border-top: 1px solid $borderBright !important;
+}
+
+.right_border {
+  border-right: 1px solid $borderBright !important;
+}
+
+.bottom_border {
+  border-bottom: 1px solid $borderBright !important;
+}
+
+.left_border {
+  border-left: 1px solid $borderBright !important;
 }
 
 .greigh {

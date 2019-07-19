@@ -6,3 +6,12 @@
     background-color: $bg;
   }
 }
+
+@keyframes c-highlight {
+  from {
+    background: $bg;
+  }
+  to {
+    background: $bgLight;
+  }
+}

@@ -102,6 +102,11 @@
     color: $text !important;
     border: 1px solid transparent !important;
 
+    blockquote:before {
+      background: $bg2 !important;
+      color: $text !important;
+    }
+
     &.focus-ring {
       border: 1px solid $primary !important;
     }
@@ -191,4 +196,32 @@
 #msg_input_mount_point.onboarding .p-workspace__input .p-message_input_field,
 #primary_file_button.onboarding {
   border-color: $accent !important;
+}
+
+.c-multi_select_input {
+  border: 1px solid $borderDim !important;
+  background-color: $bg !important;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
+  }
+
+  &[disabled] {
+    background: $bg2 !important;
+    border: 1px solid $borderDim !important;
+  }
+}
+
+.c-multi_select_input--disabled,
+.c-multi_select_input__input--disabled {
+  background: $bg2 !important;
+}
+
+.c-multi_select_input--focused {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
+}
+
+.c-multi_select_token__remove {
+  color: $textAccent !important;
 }
