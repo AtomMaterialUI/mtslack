@@ -8,9 +8,10 @@
   }
 
   &::before {
-    border-bottom: 1px solid $borderDim !important;
-    background: $bg2 !important;
-    box-shadow: none;
+    display: none !important;
+    //border-bottom: 1px solid $borderDim !important;
+    //background: $bg2 !important;
+    //box-shadow: none;
   }
 
   // Remove box shadow on messages column
@@ -29,9 +30,12 @@
 
   // Day pill
   .c-message_list__day_divider__label__pill {
-    background-color: $bg2;
-    border: 1px solid $borderDim;
-    color: $text;
+    background-color: $primary !important;
+    border: none !important;
+    color: $bg !important;
+    box-shadow: 0 0 10px 5px $bgLight !important;
+
+
   }
 
   // timestamp
@@ -103,7 +107,18 @@
   }
 
   .c-message_list__day_divider__label {
-    color: $bg;
+    color: $bg !important;
+    &:before {
+      content: '' !important;
+      display: block !important;
+      height: 1px !important;
+      position: absolute !important;
+      top: 12px !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      background: $bgLight !important;
+    }
   }
 
   // Loading history
@@ -128,4 +143,25 @@
     background: $selection !important;
     color: $textBright !important;
   }
+}
+
+.icon_comment {
+  color: $text !important;
+  text-shadow: 0 0 2px $bg2 !important;
+}
+
+.icon_search_input {
+  color: $text !important;
+}
+
+.icon_search_close {
+  color: $textBright !important;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.c-message_kit__file__meta {
+  color: $text !important;
 }

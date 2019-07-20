@@ -1,3 +1,16 @@
+::-webkit-scrollbar-thumb {
+  color: $accent !important;
+}
+
+::-webkit-scrollbar-track {
+  color: $accent !important;
+  background: $accent !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: $accent !important;
+}
+
 .supports_custom_scrollbar {
   &:not(.slim_scrollbar) .slack_scrollbar_theme {
 
@@ -39,7 +52,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background: $bg !important;
+      background: $accent !important;
     }
 
     &::-webkit-scrollbar-corner {
@@ -49,11 +62,11 @@
 
   &.slim_scrollbar .slack_scrollbar {
     &::-webkit-scrollbar-thumb {
-      background-color: $bg !important;
-      color: $bg !important;
+      background-color: $accent !important;
+      color: $accent !important;
 
       &:hover {
-        background-color: $bg !important;
+        background-color: $accent !important;
       }
     }
   }
@@ -69,32 +82,34 @@ div::-webkit-scrollbar-thumb,
 .lfs_list::-webkit-scrollbar-thumb,
 #contents_container::-webkit-scrollbar-thumb {
   color: transparent !important;
-  border: 1px solid var(--scrollbar-border) !important;
   background-color: transparent !important;
 }
 
 /* new scrollbar */
 .p-channel_sidebar div.c-custom_scrollbar__thumb_vertical,
 .p-channel_sidebar div.c-scrollbar__bar {
-  background: $bg2;
-  border: 1px solid $borderBright;
+  background: $accent;
 }
 
 .monkey_scroll_bar {
-  background: $bg2;
+  background: $accent;
 }
 
 .monkey_scroll_handle_inner {
   border-color: $borderDim;
-  background: $bg2;
+  background: $accent;
 }
 
 .monkey_scroll_handle_inner {
   border-color: $borderDim;
-  background: $bg2;
+  background: $accent;
 }
 
 .flex_content_scroller {
-  background: $bg !important;
+  background: $accent !important;
   color: $text !important;
+}
+
+.c-scrollbar__bar {
+  background: $accent !important;
 }

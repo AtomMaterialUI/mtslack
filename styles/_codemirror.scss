@@ -1,102 +1,102 @@
 /* CodeMirror syntax highlighting */
 .cm-s-default .cm-header {
-  color: #66f
+  color: $purple !important;
 }
 
 .cm-s-default .cm-quote {
-  color: #0f0
+  color: $green !important;
 }
 
 .cm-negative {
-  color: #f44
+  color: $red !important;
 }
 
 .cm-positive {
-  color: #2f2
+  color: $green !important;
 }
 
 .cm-s-default .cm-keyword {
-  color: #f0a
+  color: $purple !important;
 }
 
 .cm-s-default .cm-atom {
-  color: #7ff
+  color: $cyan !important
 }
 
 .cm-s-default .cm-number {
-  color: #5fa
+  color: $orange !important
 }
 
 .cm-s-default .cm-def {
-  color: #37f
+  color: $blue !important
 }
 
 .cm-s-default .cm-variable-2 {
-  color: #09f
+  color: $textBright !important;
 }
 
 .cm-s-default .cm-variable-3 {
-  color: #0fa
+  color: $green !important
 }
 
 .cm-s-default .cm-comment {
-  color: #f80
+  color: $textDim !important;
 }
 
 .cm-s-default .cm-string {
-  color: #f33
+  color: $green !important;
 }
 
 .cm-s-default .cm-string-2 {
-  color: #f50
+  color: $red2 !important
 }
 
 .cm-s-default .cm-meta, .cm-s-default .cm-qualifier {
-  color: #aaa
+  color: $text !important;
 }
 
 .cm-s-default .cm-builtin {
-  color: #96f
+  color: $purple !important;
 }
 
 .cm-s-default .cm-bracket {
-  color: #ffa
+  color: $text !important;
 }
 
 .cm-s-default .cm-tag {
-  color: #5f0
+  color: $red !important;
 }
 
 .cm-s-default .cm-attribute {
-  color: #33f
+  color: $yellow !important;
 }
 
 .cm-s-default .cm-hr {
-  color: #ccc
+  color: $textDim !important;
 }
 
 .cm-s-default .cm-link {
-  color: #33f
+  color: $accent !important;
 }
 
 .CodeMirror,
 .CodeMirror .CodeMirror-gutters,
 .CodeMirror-gutter {
-  background-color: $bg !important;;
-  border-color: $borderDim;
-  color: $text;
+  background-color: $bg !important;
+  border-color: $borderDim !important;
+  color: $text !important;
 
   .CodeMirror-line {
-    background: $bg;
+    background: $bg !important;
   }
 }
 
 .CodeMirror-cursor {
-  border-left-color: $text;
+  border-left-color: $accent !important;
 }
 
 .CodeMirror-selected {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: $selection !important;
 }
 
 pre.special_formatting {
@@ -108,10 +108,10 @@ pre.special_formatting {
 }
 
 .c-snippet__code .CodeMirror-code > div:before {
-  background: $bg;
-  border-right: $borderDim;
+  background: $bg !important;
+  border-right: $borderDim !important;
 }
 
 .c-file_container--gradient::after {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), $bg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), $bg) !important;
 }

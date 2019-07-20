@@ -36,7 +36,6 @@ li.active[class] span {
 }
 
 /* Mentions */
-.mention_day_container_div .c-message_list__day_divider__label,
 .member_data_table {
   border: 1px solid $borderDim !important;
 }
@@ -45,11 +44,6 @@ li.active[class] span {
 #convo_container .convo_flexpane_divider .reply_count {
   border-radius: 10px;
   padding: 0 10px;
-}
-
-.mention_day_container_div .day_divider:before {
-  background-color: transparent !important;
-  border-color: $borderDim !important;
 }
 
 .day_container .day_msgs {
@@ -369,6 +363,10 @@ ts-mention.ts_tip:hover {
   color: $accent !important;
 }
 
+.c-member_slug--mention {
+  background: $bgLight !important;
+}
+
 .c-member__name,
 .c-member__display-name {
   color: $text !important;
@@ -509,5 +507,20 @@ ts-memory-instrument {
 .current_status {
   ts-icon {
     color: $text !important;
+  }
+}
+
+.username_input_container {
+  &::before {
+    color: $textDim !important
+  }
+
+  input[type=text].username_input {
+    padding-left: 0.75rem;
+
+    &.validation_error, &.validation_warning {
+      background-color: $bg !important;
+      border-color: $orange !important;
+    }
   }
 }

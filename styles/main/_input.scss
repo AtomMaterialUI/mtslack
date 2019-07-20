@@ -225,3 +225,12 @@
 .c-multi_select_token__remove {
   color: $textAccent !important;
 }
+
+.plastic_select {
+  border: 1px solid $borderDim !important;
+  color: $text !important;
+
+  &:active, &:focus {
+    border-color: $borderBright !important
+  }
+}

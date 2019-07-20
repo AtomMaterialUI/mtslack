@@ -6,7 +6,8 @@
 
   .pmu-instance {
     .pmu-button {
-      color: $text;
+      background: $accent !important;
+      color: $text !important;
     }
 
     .pmu-selected {
@@ -26,7 +27,7 @@
 
     .pmu-not-in-month {
       background: $bg2 !important;
-      color: $text;
+      color: $text !important;
     }
 
     // Today date
