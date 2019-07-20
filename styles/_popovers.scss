@@ -3,6 +3,15 @@
   background-color: $bg2 !important;
   color: $text !important;
   border-color: $borderDim !important;
+
+  .arrow:after,
+  .arrow_shadow:after {
+    background: $bg !important;
+  }
+
+  .content {
+    background: $bg !important;
+  }
 }
 
 .popover_mask {
@@ -63,5 +72,19 @@
     > * {
       color: $text !important;
     }
+  }
+}
+
+.menu_launcher,
+.menu_launcher_large {
+  background: $bg !important;
+  border-bottom: $borderDim !important;
+}
+
+.avatar_menu_signin_item {
+  color: $accent !important;
+
+  &:hover {
+    color: $textBright !important;
   }
 }

@@ -50,5 +50,19 @@
       color: $text;
       border-color: $borderDim;
     }
+
+    li.date_picker_item {
+      a {
+        color: $primary !important;
+
+        &:hover {
+          color: $textBright !important;
+        }
+      }
+
+      &.highlighted a {
+        color: $textBright !important;
+      }
+    }
   }
 }

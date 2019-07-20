@@ -3,6 +3,7 @@
 :root {
   /* Modify these to change your theme colors: */
   --primary: #E5C17C;
+  --primaryT: #E5C17C90;
   --accent: #568AF2;
   --text: #979FAD;
   --background: #282C34;
@@ -41,6 +42,7 @@
 }
 
 $primary: var(--primary);
+$primaryT: var(--primaryT);
 $accent: var(--accent);
 $text: var(--text);
 $bg: var(--background);
@@ -97,4 +99,5 @@ $black: var(--black);
 
 @import "codemirror";
 @import "coachmark";
+@import "carousel";
 @import "other";

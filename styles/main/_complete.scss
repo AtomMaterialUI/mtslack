@@ -1,25 +1,119 @@
 // Autocomplete name and channels
 .tab_complete_ui {
-  background: $bg2;
-  color: $text;
-  border-color: $borderDim;
+  background: $bg !important;
+  color: $text !important;
+  border-color: $borderDim !important;
 
   .tab_complete_ui_header {
-    background: $bg !important;
-    color: $textBright !important;
-    border-bottom-color: $borderDim;
+    background: $bg2 !important;
+    color: $textDim !important;
+    border-bottom-color: $borderDim !important;
 
     #chat_input_tab_ui_header_query strong {
       color: $accent !important;
     }
   }
 
-  li.tab_complete_ui_group,
-  li.tab_complete_ui_item {
-    &.active {
-      background: $bgHover !important;
+  li {
+    &.tab_complete_ui_group,
+    &.tab_complete_ui_item {
+      &.active {
+        background: $bgHover !important;
+        color: $textBright !important;
+      }
+    }
+
+    &.tab_complete_ui_group.active {
+      .cmd-left-td,
+      .cmd-right-td,
+      .presence.active,
+      span {
+        color: $textBright !important;
+      }
+    }
+
+    &.tab_complete_ui_item.active {
+      .cmd-left-td,
+      .cmd-right-td,
+      .presence.active,
+      span {
+        color: $textBright !important;
+      }
+    }
+
+    &.tab_complete_ui_group.active .ts_icon_broadcast,
+    &.tab_complete_ui_item.active .ts_icon_broadcast {
       color: $textBright !important;
     }
+  }
+
+  ul {
+    &.type_emoji {
+      li {
+        color: $text !important;
+      }
+    }
+
+    &.type_members {
+
+      .unify_broadcast {
+        color: $text !important;
+
+        .ts_icon_broadcast {
+          color: $textDim !important;
+        }
+      }
+
+      .broadcast_info {
+        color: $textDim !important;
+      }
+
+      .realname,
+      .team_name {
+        color: $textDim !important
+      }
+
+      .secondary_name {
+        color: $textDim !important;
+      }
+    }
+
+    &.type_cmds {
+      li {
+        &.tab_complete_ui_group {
+
+          .group_name {
+            color: $textDim !important;
+          }
+
+          .group_divider {
+            border-top-color: $bgLight !important;
+          }
+
+          .not_in_channel {
+            color: $textDim !important;
+          }
+        }
+      }
+
+      .cmdname {
+        color: $blue !important;
+      }
+
+      .cmddesc {
+        color: $textDim !important;
+      }
+    }
+
+    &.type_channels {
+      .not_in_channel {
+        color: $textDim !important;
+      }
+    }
+  }
+
+  .not_in_channel {
+    color: $textDim !important;
   }
 }
 

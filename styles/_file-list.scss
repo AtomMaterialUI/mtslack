@@ -136,10 +136,12 @@
 .c-pillow_file__content--collapsed:after {
   background: linear-gradient(0deg, $bg, #fff0 40px) !important;
 }
+
 .c-input_select {
   background: $bg2 !important;
   border: none !important;
 }
+
 .p-file_list__file_type_select .c-input_select__selected_value--placeholder {
   color: $text !important;
 }

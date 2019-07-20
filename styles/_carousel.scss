@@ -1,0 +1,25 @@
+.c-card_carousel__text_section {
+  p {
+    color: $text !important;
+  }
+}
+
+.c-card_carousel__btn {
+  background: $bg !important;
+
+  .ts_icon {
+    color: $text !important;
+  }
+
+  :hover {
+    color: $primary !important;
+  }
+}
+
+.c-card_carousel__page_count {
+  background: $bg !important;
+
+  p {
+    color: $text !important;
+  }
+}
