@@ -1,0 +1,11 @@
+.c-sidebar_menu {
+  .c-sidebar_menu__list_item {
+    color: $text !important;
+  }
+
+  .c-sidebar_menu__list_item.is_active {
+    background: $selection !important;
+    border-color: $selection !important;
+    color: $textBright !important;
+  }
+}

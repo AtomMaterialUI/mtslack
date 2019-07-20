@@ -31,7 +31,7 @@ textarea,
 input[type="text"],
 #file_comment_textarea {
   background-color: $bg !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
   color: $text !important;
 
   &:focus {
@@ -74,13 +74,13 @@ input {
 
 input {
   &[type=url], &[type=text], &[type=tel], &[type=number], &[type=email], &[type=password] {
-    border: 1px solid $borderDim !important;
+    border: 1px solid $bgLight !important;
     color: $text !important;
   }
 }
 
 textarea {
-  border: 1px solid $borderDim !important;
+  border: 1px solid $bgLight !important;
   color: $text !important;
 
   &:active, &:focus {
@@ -92,7 +92,7 @@ textarea {
 select {
   background-color: $bg !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 
   &:active, &:focus {
     border-color: $borderBright !important;
@@ -248,7 +248,7 @@ input,
 textarea {
   color: $text !important;
   background: $bg !important;
-  border: $borderDim !important;
+  border-color: $bgLight !important;
 
   &:focus {
     border-color: $accent !important;
@@ -258,7 +258,7 @@ textarea {
   &.c-input_text,
   &[type=text].c-input_text,
   &[type=password].c-input_text {
-    border: 1px solid $borderDim !important;
+    border: 1px solid $bgLight !important;
 
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primary !important;
@@ -269,14 +269,14 @@ textarea {
   &[type=text].c-input_text[disabled],
   &[type=password].c-input_text[disabled] {
     background: $bg2 !important;
-    border: 1px solid $borderDim !important;
+    border: 1px solid $bgLight !important;
   }
 
   &.c-input_text--with_default,
   &[type=text].c-input_text--with_default,
   &[type=password].c-input_text--with_default {
-    border: 1px solid $borderDim !important;
-    box-shadow: 0 0 0 1px $borderDim, 0 0 0 5px $borderDim !important;
+    border: 1px solid $bgLight !important;
+    box-shadow: 0 0 0 1px $bgLight, 0 0 0 5px $bgLight !important;
   }
 }
 
@@ -303,6 +303,20 @@ textarea::-webkit-input-placeholder {
 
 .form-actions {
   background: $bg !important;
+}
+
+// Help panels
+.help {
+  color: $textDim !important;
+  border-top-color: $accent !important;
+
+  i.callout {
+    color: $accent !important;
+  }
+
+  h4 {
+    color: $textDim !important;
+  }
 }
 
 .help-block,
@@ -345,7 +359,7 @@ textarea::-webkit-input-placeholder {
 .c-button, .c-button--outline {
   background: $bg !important;
   color: $text !important;
-  box-shadow: inset 0 0 0 1px $borderDim !important;
+  box-shadow: inset 0 0 0 1px $bgLight !important;
 }
 
 // Spinners
@@ -355,11 +369,11 @@ svg.ts_icon_spinner:empty {
 }
 
 .bottom_border {
-  border-bottom-color: $borderDim !important;
+  border-bottom-color: $bgLight !important;
 }
 
 .top_border {
-  border-top-color: $borderDim !important;
+  border-top-color: $bgLight !important;
 }
 
 //.c-scrollbar__hider {
@@ -466,7 +480,7 @@ svg.ts_icon_spinner:empty {
 .btn.dialog_go {
   background: $bgLight !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 
   &.active,
   &:active {
@@ -548,7 +562,7 @@ svg.ts_icon_spinner:empty {
 .btn.btn_outline {
   background: transparent !important;
   color: $text !important;
-  border-color: $bg2 !important;
+  border: 1px solid $bgBright !important;
 
   &:hover {
     color: $textBright !important;
@@ -621,7 +635,7 @@ svg.ts_icon_spinner:empty {
 
 .btn_with_icon {
   .ts_icon, i, ts-icon {
-    border-right: 1px solid $borderDim !important;
+    border-right: 1px solid $bgLight !important;
     background: $bg !important;
   }
 }
@@ -798,7 +812,7 @@ svg.ts_icon_spinner:empty {
 }
 
 .lazy_filter_select .lfs_input_container {
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
   background: $bg !important;
   color: $text !important;
 }
@@ -851,7 +865,7 @@ ts-mention {
 
   .c-reaction_add {
     background: $bg2 !important;
-    border-color: $borderDim !important;
+    border-color: $bgLight !important;
   }
 }
 
@@ -883,7 +897,7 @@ ts-mention {
 }
 
 .member_details_divider {
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 }
 
 // Don't know what are these but they look like mentions
@@ -953,23 +967,23 @@ button:not(.c-button--focus-visible).focus-ring,
 
 
 .bordered {
-  border: 1px solid $borderDim !important;
+  border: 1px solid $bgLight !important;
 }
 
 .top_border {
-  border-top: 1px solid $borderDim !important;
+  border-top: 1px solid $bgLight !important;
 }
 
 .bottom_border {
-  border-bottom: 1px solid $borderDim !important;
+  border-bottom: 1px solid $bgLight !important;
 }
 
 .left_border {
-  border-left: 1px solid $borderDim !important;
+  border-left: 1px solid $bgLight !important;
 }
 
 .right_border {
-  border-right: 1px solid $borderDim !important;
+  border-right: 1px solid $bgLight !important;
 }
 
 .flexpane_grey {
@@ -1002,11 +1016,11 @@ a.mini {
 .well {
   background: $bg2 !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 }
 
 .log_output {
-  border-bottom-color: $borderDim !important;
+  border-bottom-color: $bgLight !important;
 }
 
 .square_icon {
@@ -1059,7 +1073,7 @@ a.mini {
   li {
     span, a {
       background: $bg !important;
-      border-color: $borderDim !important;
+      border-color: $bgLight !important;
     }
   }
 
@@ -1088,7 +1102,7 @@ a.mini {
 }
 
 .service_row {
-  border-bottom-color: $borderDim !important;
+  border-bottom-color: $bgLight !important;
   color: $textDim !important;
 
   a.summary {
@@ -1155,4 +1169,12 @@ textarea.validation_warning:focus {
 .c-icon_button--light.c-button-unstyled,
 .c-icon_button--light:link {
   color: $text !important;
+}
+
+// Special button with loader
+.ladda-button {
+  .ladda-spinner,
+  .ladda-progress {
+    background: $bgLight !important;
+  }
 }

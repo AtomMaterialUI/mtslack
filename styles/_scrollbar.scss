@@ -88,25 +88,26 @@ div::-webkit-scrollbar-thumb,
 /* new scrollbar */
 .p-channel_sidebar div.c-custom_scrollbar__thumb_vertical,
 .p-channel_sidebar div.c-scrollbar__bar {
-  background: $accent;
+  background: $accent !important;
 }
 
-.monkey_scroll_bar {
-  background: $accent;
-}
-
-.monkey_scroll_handle_inner {
-  border-color: $borderDim;
-  background: $accent;
+.monkey_scroll_bar,
+.monkey_scroll_bar_native_scrollbar_shim {
+  background: $accent !important;
 }
 
 .monkey_scroll_handle_inner {
-  border-color: $borderDim;
-  background: $accent;
+  border-color: $borderDim !important;
+  background: $accent !important;
+}
+
+.monkey_scroll_handle_inner {
+  border-color: $borderDim !important;
+  background: $accent !important;
 }
 
 .flex_content_scroller {
-  background: $accent !important;
+  background: $bg !important;
   color: $text !important;
 }
 

@@ -172,3 +172,14 @@
     color: $text !important;
   }
 }
+
+// Settings modal
+.c-fullscreen_modal__header {
+  background: $bg2 !important;
+  color: $text !important;
+}
+.c-fullscreen_modal__content,
+.c-fullscreen_modal__body {
+  background: $bg !important;
+  color: $text !important;
+}
