@@ -121,6 +121,10 @@
     }
   }
 
+  .c-virtual_list__item--sticky {
+    top: -8px !important;
+  }
+
   // Loading history
   .p-degraded_list__loading {
     background: $bg !important;

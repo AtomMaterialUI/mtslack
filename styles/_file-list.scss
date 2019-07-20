@@ -1,22 +1,36 @@
+#file_sharing_div {
+  // Lazy filter select
+  .lfs_item {
+    .presence:not(.active):not(.away) {
+      color: $textDim !important;
+    }
+  }
+
+  .lfs_group {
+    color: $text !important;
+    border-bottom: 1px solid $borderDim !important;
+  }
+}
+
 #client-ui .file_list_item,
 .tab_container .file_list_item {
-  color: $text;
+  color: $text !important;
 
   &:hover, &:focus {
-    background: $bgHover;
-    color: $textBright;
+    background: $bgHover !important;
+    color: $textBright !important;
   }
 
   // File card
   &.file_list_item--redesign {
     border-color: $borderDim !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
   }
 
   // File card contents
   .contents {
     .title {
-      color: $textBright;
+      color: $textBright !important;
     }
 
     .member,
@@ -24,16 +38,17 @@
     .service_link,
     .share_info,
     .time {
-      color: $textSpecial;
+      color: $textSpecial !important;
     }
   }
 
   .star {
-    color: $text;
+    color: $text !important;
   }
+
   .star.starred,
   .star:hover {
-    color: $yellow;
+    color: $yellow !important;
   }
 }
 
@@ -63,6 +78,7 @@
   .team_list_item:hover {
     background: none !important;
   }
+
   .list_items {
     .c-member__display-name {
       color: $text;
@@ -83,6 +99,7 @@
 .upload_actions .dialog_go {
   color: $text;
   border-color: $borderDim;
+
   &:after {
     border: 1px solid $borderDim !important;
   }
@@ -90,5 +107,39 @@
 
 .file_container .preview_actions .btn {
   background: $bg !important;
+  color: $text !important;
+}
+
+.c-pillow_file_container {
+  background: $bg !important;
+  color: $text !important;
+  border-color: $bgLight !important;
+
+  .c-pillow_file__title {
+    color: $text !important;
+
+    &:hover {
+      color: $textBright !important;
+    }
+  }
+
+  .c-pillow_file__description {
+    color: $textDim !important;
+  }
+
+  .c-app_badge, .c-app_label {
+    background: $primary !important;
+    color: $bg !important;
+  }
+}
+
+.c-pillow_file__content--collapsed:after {
+  background: linear-gradient(0deg, $bg, #fff0 40px) !important;
+}
+.c-input_select {
+  background: $bg2 !important;
+  border: none !important;
+}
+.p-file_list__file_type_select .c-input_select__selected_value--placeholder {
   color: $text !important;
 }

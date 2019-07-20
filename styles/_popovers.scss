@@ -1,6 +1,6 @@
 .popover_menu,
 .c-menu {
-  background-color: $bg !important;
+  background-color: $bg2 !important;
   color: $text !important;
   border-color: $borderDim !important;
 }
@@ -13,7 +13,7 @@
 .c-menu_item__button {
   color: $text !important;
   &--danger {
-    color: $red;
+    color: $red !important;
   }
   &--highlighted {
     background: $bgHover !important;
@@ -22,7 +22,7 @@
 }
 
 .c-menu_separator__separator {
-  border-bottom-color: $borderDim;
+  border-bottom-color: $bgLight !important;
 }
 
 #autocomplete_menu {

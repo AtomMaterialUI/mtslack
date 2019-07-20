@@ -22,6 +22,34 @@
   }
 }
 
+.modal {
+  .close {
+    color: $text !important;
+
+    &:hover {
+      color: $textBright !important;
+    }
+  }
+}
+
+.invite_channels {
+  .warning_already_member {
+    color: $orange !important;
+  }
+}
+
+.input_note_special,
+.modal_input_note,
+.modal_input_note_full_width {
+  color: $text !important;
+}
+
+.modal_alert_sharing {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $borderDim !important;
+}
+
 #generic_dialog,
 #fs_modal,
 .modal,
@@ -31,41 +59,38 @@
   color: $text !important;
 
   h1, h2, h3, h4, h5, h6 {
-    color: $textBright;
+    color: $textBright !important;
   }
 
   div, span, label {
-    color: $text;
-  }
-
-  .input_note_special,
-  .modal_input_note {
-    color: $text;
+    color: $text !important;
   }
 
   // Buttons (back, close...)
   .fs_modal_btn {
-    color: $text;
+    color: $text !important;
+
     &:hover {
-      background: $bgHover;
+      background: $bgHover !important;
     }
   }
 
   // File viewer header
   .fs_modal_file_viewer_header {
-    background: transparent;
+    background: transparent !important;
+
     .control_btn {
-      color: $text;
+      color: $text !important;
 
     }
   }
 
   // File Viewer content
   .fs_modal_file_viewer_content {
-    background: $bg;
+    background: $bg !important;
 
     .viewer {
-      background-color: $bg;
+      background-color: $bg !important;
     }
   }
 
@@ -104,7 +129,46 @@
 
 #fs_modal,
 #fs_modal_header {
+  background: $bg2 !important;
+  color: $text !important;
   * {
+    color: $text !important;
+  }
+}
+
+.dialog_tabs {
+  border-bottom-color: $borderDim !important;
+
+  a {
+    color: $primary !important;
+    border-bottom-color: $borderDim !important;
+
+    &:hover {
+      color: $textBright !important;
+      background: transparent !important;
+      border-bottom-color: $borderBright !important;
+    }
+  }
+}
+
+#at_channel_warning_dialog {
+  .channel_members_count_underlay {
+    background: $bg2 !important;
+    color: $text !important;
+    border-color: $borderDim !important;
+  }
+
+  .dialog_admin_hint, .dialog_cancel_hint, .dialog_go_hint {
+    color: $textDim !important;
+  }
+}
+
+#convert_to_shared_dialog {
+  .title {
+    border-bottom-color: $borderDim !important;
+  }
+
+  label {
     color: $text !important;
   }
 }

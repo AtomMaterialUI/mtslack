@@ -1,0 +1,227 @@
+#coachmark {
+  &.channels_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.enterprise_analytics_usage_callouts_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.calls_interactive_screen_share_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.calls_screen_share_window_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.direct_messages_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.gdrive_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.highlights_arrows_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.highlights_feedback_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.highlights_message_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.intl_channel_names_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.invites_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.joiner_landing_greeting_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.onboarding_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.private_shared_channels_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.recent_mentions_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.starred_items_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.tractor_send_message_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.tractor_upload_file_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.unread_view_coachmark_div {
+    background: $accent !important;
+
+    #coachmark_callout, #coachmark_interior {
+      background: $accent !important;
+    }
+  }
+
+  &.private_shared_channels_coachmark_div .coachmark_ok {
+    background: #0b4c8c;
+
+    &:hover {
+      background: #07325d;
+    }
+  }
+
+  &.shared_channels_coachmark_div {
+    background: #ffffff;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    #coachmark_callout, #coachmark_interior {
+      color: #1d1c1d;
+      background: #ffffff;
+    }
+
+    #coachmark_callout {
+      border-radius: 3px;
+    }
+  }
+
+  &.onboarding_coachmark_div {
+    #onboarding_coachmark_div {
+      width: 350px;
+    }
+
+    h4 {
+      color: #ffffff;
+    }
+  }
+
+  &.calls_screen_share_window_coachmark_div h2 {
+    margin: 0 0 .5rem;
+    font-size: 1.35rem;
+  }
+
+  &.small_coachmark {
+    #coachmark_interior {
+      cursor: pointer;
+      padding: 1.125rem;
+    }
+
+    #coachmark_footer {
+      visibility: hidden;
+      display: none;
+    }
+
+    .small_coachmark_contents {
+      visibility: visible;
+      display: block;
+    }
+
+    .coachmark_contents {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}
+
+#coachmark_footer {
+  .coachmark_done, .coachmark_got_it, .coachmark_next_tip, .coachmark_ok {
+    background: $contrast !important;
+  }
+}
+
+#coachmark_interior {
+  color: $textBright !important;
+
+  .coachmark_close_btn {
+    color: $textBright !important;
+  }
+}

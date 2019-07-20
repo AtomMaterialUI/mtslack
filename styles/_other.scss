@@ -451,6 +451,7 @@ feature_archive_deeplink feature_texty winssb light_theme {
 .p-flexpane_header {
   background: $bg !important;
   color: $text !important;
+  border-bottom-color: $bgLight !important;
 }
 
 .message_body, .file_container, .initial_comment {

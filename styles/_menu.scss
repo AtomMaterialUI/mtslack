@@ -93,3 +93,14 @@
 
   }
 }
+
+.c-menu_item__icon {
+  color: $text !important;
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.c-menu_item__header {
+  color: $text !important;
+}
