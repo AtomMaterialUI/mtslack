@@ -131,6 +131,7 @@
 #fs_modal_header {
   background: $bg2 !important;
   color: $text !important;
+
   * {
     color: $text !important;
   }
@@ -178,8 +179,32 @@
   background: $bg2 !important;
   color: $text !important;
 }
+
 .c-fullscreen_modal__content,
 .c-fullscreen_modal__body {
   background: $bg !important;
   color: $text !important;
+}
+
+.c-search,
+.c-search__tabs,
+.c-message_group,
+.c-search_autocomplete footer,
+.c-search_modal .popover > div,
+.p-search_filter__dates,
+.p-search_filter__date,
+.c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
+  background: $bg2 !important;
+  color: $text !important;
+}
+
+.c-link--button {
+  color: $primary !important;
+}
+.c-search__input_box__clear,
+.c-search__input_and_close__close {
+  color: $text !important;
+  &:hover {
+    color: $textBright !important;
+  }
 }

@@ -158,7 +158,7 @@ code {
 }
 
 pre {
-  background: $bg2 !important;
+  background: $contrast !important;
   color: $text !important;
   border-color: $bgLight !important;
 }
@@ -863,6 +863,15 @@ ts-mention {
     opacity: 0.8 !important;
   }
 }
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__broadcast--mention:hover,
+.c-mrkdwn__highlight,
+.c-mrkdwn__mention,
+.c-mrkdwn__mention:hover,
+.c-mrkdwn__user_group--mention,
+.c-mrkdwn__user_group--mention:hover {
+  background: $bgHover !important;
+}
 
 // reactions
 .c-reaction {
@@ -962,7 +971,8 @@ ts-mention {
 }
 
 .dropdown-submenu {
-  &:focus > a, &:hover > a {
+  &:focus > a,
+  &:hover > a {
     color: $textBright !important;
     background-color: $textAccent !important;
   }

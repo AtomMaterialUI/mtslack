@@ -23,6 +23,26 @@
   #convo_tab_header {
     color: $text !important;
   }
+
+  #convo_tab_back {
+    color: $text !important;
+
+    &:focus, &:hover {
+      color: $primary !important;
+    }
+  }
+
+  #convo_tab_back_container {
+    border-right-color: $bgLight !important;
+  }
+
+  #convo_tab_btns {
+    .close_flexpane {
+      &:focus, &:hover {
+        color: $primary !important
+      }
+    }
+  }
 }
 
 // Thread participants group

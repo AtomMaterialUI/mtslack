@@ -146,8 +146,7 @@ span.match {
 .mention_rxn .mention_rxn_summary .mention_rxn_summary_members,
 .section_content,
 .member_data_table a,
-.member_data_table span,
-.member_info_timezone * {
+.member_data_table span {
   color: $text !important;
 }
 
@@ -188,10 +187,6 @@ span.match {
 
 .flexpane_redesign #member_mentions {
   background-color: $bg;
-}
-
-.pinned_item .pin_member_name a, .pinned_item {
-  color: $text !important;
 }
 
 .pinned_item .pinned_message_text .pin_truncate_fade {
@@ -579,6 +574,8 @@ ts-mention.ts_tip:hover {
 .c-member_slug--mention,
 .c-member_slug--link {
   background: $bgLight !important;
+  border-radius: 20px !important;
+  color: $primary !important;
 }
 
 .c-member__name,
@@ -646,6 +643,16 @@ feature_archive_deeplink feature_texty winssb light_theme {
 #prefs_a11y_animations,
 #whats_new_tab p {
   color: $text !important;
+
+  .ts_icon_presence_online {
+    color: $primary !important;
+  }
+}
+
+.flex_heading_controls {
+  label {
+    color: $textDim !important;
+  }
 }
 
 .p-shortcuts_flexpane__shortcut:last-of-type {
@@ -676,7 +683,6 @@ feature_archive_deeplink feature_texty winssb light_theme {
   background: $bg2 !important;
   border: 1px solid $bg2 !important;
 }
-
 
 
 ts-memory-instrument {
@@ -731,4 +737,9 @@ ts-inline-saver {
   &.failed {
     color: $red !important;
   }
+}
+
+.c-search__tab_new {
+  color: $accent !important;
+  background: $bgHover !important;
 }

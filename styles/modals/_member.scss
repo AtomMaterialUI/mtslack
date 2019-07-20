@@ -29,6 +29,7 @@
     // Current status
     .member_current_status {
       color: $text !important;
+
       .member_current_status_label {
         color: $text !important;
       }
@@ -42,4 +43,28 @@ a .message_sender .member .member_preview_link {
   line-height: 18px;
   font-size: medium;
   color: $primary !important;
+}
+
+
+#team_list_admin_link {
+  color: $textDim !important;
+}
+
+.searchable_member_list_filter {
+  border-bottom-color: $bgLight !important;
+
+  .faux_input {
+    border-color: $borderDim !important;
+    color: $text !important;
+  }
+}
+
+.searchable_member_list_filter_menu ul li {
+  a span {
+    color: $textDim !important;
+  }
+
+  &:hover a span {
+    color: $textBright !important;
+  }
 }

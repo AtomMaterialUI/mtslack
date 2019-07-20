@@ -139,3 +139,16 @@
 .p-file_list__file_type_select .c-input_select__selected_value--placeholder {
   color: $text !important;
 }
+
+#file_list_toggle_users {
+  color: $textDim !important;
+
+  &.active {
+    color: $text !important;
+  }
+
+  &.active:hover,
+  &:hover {
+    color: $accent !important;
+  }
+}

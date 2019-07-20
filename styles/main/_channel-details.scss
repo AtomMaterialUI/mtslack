@@ -79,7 +79,7 @@
     }
 
     li.focus-ring {
-      box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px  $primaryT !important;
+      box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px $primaryT !important;
     }
 
     .tab {
@@ -94,7 +94,7 @@
         border: 1px solid transparent !important;
 
         &:active,
-        &.focus-ring{
+        &.focus-ring {
           border: 1px solid $primary !important;
         }
       }
@@ -133,8 +133,136 @@
 
   .conversation_details {
     .member_info_timezone {
-      border-top-color: $borderDim;
+      border-top-color: $borderDim !important;
     }
+
+    .member_name:hover {
+      color: $textBright !important;
+    }
+
+    .member_username:hover {
+      color: $textBright !important;
+    }
+
+    .member_info_timezone {
+      border-top-color: $bgLight !important;
+    }
+  }
+
+  hr {
+    border-top-color: $borderDim !important;
+  }
+
+  .channel_page_section {
+    background: $bg !important;
+    border-top: 1px solid $bgLight !important;
+  }
+
+  .channel_page_section {
+    background: $bg !important;
+
+    .section_header {
+      &:hover .disclosure_triangle {
+        color: $text !important;
+      }
+
+      &.focus-ring {
+        .channel_section_label {
+          box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px $primaryT !important;
+        }
+      }
+    }
+
+    .section_title,
+    .disclosure_triangle {
+      color: $text !important;
+    }
+
+    .channel_section_label .ts_icon_info_circle {
+      color: $text !important;
+    }
+
+    .created_by {
+      color: $textDim !important;
+    }
+
+    .channel_page_member_tabs .icon_member_header {
+      color: $accent !important;
+    }
+
+    .pinned_item {
+      color: $text !important;
+
+      &.unread_pin {
+        border: 1px solid $orange !important;
+      }
+
+      .pin_file_title {
+        font-weight: 900;
+        color: $text !important;
+      }
+
+      .pin_member_name a,
+      .pin_member_title {
+        color: $text !important;
+      }
+
+      .pin_metadata {
+        color: $textDim !important;
+      }
+
+      .remove_pin {
+        color: $textDim !important;
+
+        &:hover {
+          color: $primary !important;
+        }
+      }
+
+      .pinned_message_text {
+        .pin_truncate_fade {
+          background: $bg !important;
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(0, $bg), color-stop(1, rgba(255, 255, 255, 0)));
+          background: -moz-linear-gradient(center bottom, $bg 0, rgba(255, 255, 255, 0) 100%);
+          background: -ms-linear-gradient(bottom, $bg, rgba(255, 255, 255, 0));
+        }
+      }
+
+      &.delete_mode {
+        border-color: $red !important;
+      }
+    }
+
+    .channel_page_action {
+      .leave_link {
+        color: $textDim !important;
+
+        &:hover {
+          color: $primary !important;
+        }
+      }
+    }
+
+    .channel_page_member_lists {
+      margin-top: 1px;
+    }
+  }
+}
+
+.channel_page_member_row {
+  color: $text !important;
+
+  a {
+    color: $text !important;
+  }
+
+  &.away {
+    color: $textDim !important;
+  }
+
+  &:hover {
+    background-color: $bgHover !important;
+    border-color: $bgHover !important;
   }
 
 }
@@ -156,6 +284,7 @@
 
 .c-channel_insights__member_count {
   color: $primary;
+
   .ts_icon_user {
     color: $primary;
   }
@@ -176,4 +305,12 @@
   .ts_icon_shared_channels {
     color: $text !important;
   }
+}
+
+.c-message_attachment__author_name {
+  color: $text !important;
+}
+
+.c-message_attachment__author_subname, .c-message_attachment__part {
+  color: $textDim !important;
 }
