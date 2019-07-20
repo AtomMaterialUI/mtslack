@@ -6,8 +6,7 @@
 }
 
 /* Replace the background for all panels */
-#channel_topic_text code,
-.toolbar_container {
+#channel_topic_text code {
   background: $bg !important;
 }
 
@@ -577,7 +576,8 @@ ts-mention.ts_tip:hover {
   color: $accent !important;
 }
 
-.c-member_slug--mention {
+.c-member_slug--mention,
+.c-member_slug--link {
   background: $bgLight !important;
 }
 
@@ -633,8 +633,6 @@ feature_archive_deeplink feature_texty winssb light_theme {
 }
 
 .contents_container,
-.heading_text,
-.ql-blank,
 .ql-placeholder,
 .inline_block,
 .global_prefs_container,

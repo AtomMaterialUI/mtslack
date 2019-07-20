@@ -17,10 +17,14 @@
 }
 
 #msg_input {
-  background: $bgLight !important;
+  background: $contrast !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
   margin-top: 1em !important;
+
+  &[data-placeholder]:empty:before {
+    color: $text !important;
+  }
 
   &.offline {
     background-color: $red !important;
@@ -28,6 +32,31 @@
 
   .emo_menu {
     color: $textBright !important;
+  }
+
+  + #primary_file_button {
+    &:not(:hover):not(.active) {
+      border-color: $bg2 !important;
+    }
+    &.focus-ring:not(:hover):not(.active) {
+      border-color: $accent !important;
+    }
+  }
+  &.focus, &:focus {
+    border-color: $primary !important;
+  }
+  &.focus + #primary_file_button:not(:hover):not(.active),
+  &:focus + #primary_file_button:not(:hover):not(.active) {
+    border-color: $primaryT !important;
+  }
+  &.offline:not(.pretend-to-be-online) {
+    background-color: $bgHover !important;
+  }
+  &.disabled,
+  &.ql-disabled {
+    border-color: $bgLight !important;
+    background-color: $bg2 !important;
+    color: $textDim !important;
   }
 }
 
@@ -102,6 +131,16 @@
     color: $text !important;
     border: 1px solid transparent !important;
 
+    ul {
+      &[data-checked=false] > li::before {
+        color: $text !important;
+      }
+
+      &[data-checked=true] > li::before {
+        color: $text !important;
+      }
+    }
+
     blockquote:before {
       background: $bg2 !important;
       color: $text !important;
@@ -112,7 +151,8 @@
     }
   }
 
-  .ql-blank {
+  .ql-blank,
+  .ql-blank::before {
     color: $text !important;
   }
 

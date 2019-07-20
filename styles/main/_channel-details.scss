@@ -1,5 +1,5 @@
 #col_flex {
-  background: $bg2;
+  background: $bg2 !important;
   border-left: none !important;
 }
 
@@ -11,19 +11,112 @@
   .heading,
   .heading_text,
   .subheading {
-    background: $bg;
-    color: $text;
-    border-color: $borderDim;
+    background: $bg2 !important;
+    color: $text !important;
+    border-color: $borderDim !important;
 
     .menu_icon {
       color: $text !important;
     }
   }
 
-  .flexpane_tab_bar {
-    li.active {
-      border-bottom-color: $accent;
+  .heading {
+    a {
+      color: $text !important;
+
+      &:hover {
+        color: $textBright !important;
+      }
     }
+
+    .cancel_link {
+      color: $textDim !important;
+    }
+  }
+
+  .menu_heading {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+
+  .subheading:not(:empty) {
+    a {
+      color: $text !important;
+    }
+
+    .filter_menu_label.active .arrow_down {
+      color: $accent !important;
+    }
+  }
+
+  .local_only_sub_heading {
+    color: $text !important;
+    background: $bg2 !important;
+    border-top-color: $bgLight !important;
+  }
+
+  #mentions_options {
+    background: $bg2 !important;
+    border-bottom: 1px solid $borderDim !important;
+  }
+
+  .flexpane_tab_bar {
+    li:hover {
+      border-bottom-color: $accent !important;
+
+      .tab {
+        color: $textBright !important;
+      }
+    }
+
+    li.active {
+      border-bottom-color: $accent !important;
+
+      .tab {
+        color: $primary !important;
+      }
+    }
+
+    li.focus-ring {
+      box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px  $primaryT !important;
+    }
+
+    .tab {
+      color: $text !important;
+    }
+  }
+
+  .flexpane_tab_toolbar {
+    #search {
+      .member_filter {
+        border-radius: 20px !important;
+        border: 1px solid transparent !important;
+
+        &:active,
+        &.focus-ring{
+          border: 1px solid $primary !important;
+        }
+      }
+    }
+
+
+    #user_group_edit {
+      background: $bg2 !important;
+    }
+
+    .tab_action_button {
+      color: $primary !important;
+    }
+  }
+
+  .flexpane_load_more {
+    background: $bg !important;
+    color: $text !important;
+  }
+
+  .flexpane_load_error_msg {
+    color: $textDim !important;
   }
 }
 
@@ -77,4 +170,10 @@
 #fs_modal_header {
   background: $bg !important;
   color: $text !important;
+}
+
+#details_tab_header {
+  .ts_icon_shared_channels {
+    color: $text !important;
+  }
 }

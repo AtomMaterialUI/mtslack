@@ -236,52 +236,44 @@
     }
   }
 
-  &.team_menu {
-    min-width: 240px;
-  }
-
   &.selectable li {
-    position: relative;
-
-    a {
-      padding-left: 32px;
-    }
-
     &.selected {
-      color: #1264a3;
+      color: $accent !important;
 
       a {
-        color: #1264a3;
+        color: $accent !important;
 
         &:hover {
-          color: #ffffff;
+          color: $textBright !important;
         }
       }
 
       &.highlighted a, &:hover {
-        color: #ffffff;
-      }
-
-      &:before {
-        position: absolute;
-        top: 1px;
-        left: 8px;
-        font-family: Slack;
-        font-weight: 400;
-        font-size: 19px;
-        content: "";
+        color: $textBright !important;
       }
     }
   }
+}
 
-  &.onboarding_close_menu {
-    -webkit-transform: translate3d(0, 26px, 0);
-    -moz-transform: translate3d(0, 26px, 0);
-    -ms-transform: translate3d(0, 26px, 0);
-    transform: translate3d(0, 26px, 0);
+// Right submenu
+.flex_menu {
+  #list_shortcuts .ts_icon:before {
+    color: $textDim !important;
+  }
 
-    > .menu_content {
-      border-radius: 6px;
+  #apps,
+  #downloads,
+  #files_all,
+  #files_user,
+  #help,
+  #list_groups,
+  #list_shortcuts,
+  #list_team,
+  #whats_new,
+  [data-tab-id=deploy]{
+    &.highlighted .ts_icon:before,
+    &:hover .ts_icon:before {
+      color: $textBright !important;
     }
   }
 }
@@ -371,5 +363,14 @@
   &:hover .sound_preview_button {
     background: $accent !important;
     color: $textBright !important;
+  }
+}
+
+#menu .flexpane_menu_item #downloads_menu_progress {
+  .download_progress_row {
+    background-color: $bg2 !important;
+  }
+  .download_progress_bar {
+    background-color: $accent !important;
   }
 }

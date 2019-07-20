@@ -16,8 +16,13 @@
 }
 
 #msg_input_message {
-  background: $bg2;
-  color: $text;
+  background: $bg2 !important;
+  color: $text !important;
+
+  &.feature_announce_only {
+    background: $bg !important;
+    border-top-color: $bgLight !important;
+  }
 }
 
 #footer_archives_table {

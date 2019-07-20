@@ -18,13 +18,21 @@ body {
 a {
   color: $primary !important;
 
-  &:hover {
+  &:visited, &:link {
+    color: $primary !important;
+  }
+
+  &:active, &:focus, &:hover {
     color: $textBright !important;
   }
 }
 
 h1, h2, h3, h4 {
   color: $text !important;
+
+  a {
+    color: $textBright !important;
+  }
 }
 
 textarea,
@@ -144,15 +152,15 @@ a, a:link, a:visited {
 }
 
 code {
-  color: $textSpecial !important;
+  color: $text !important;
   background-color: $bg2 !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 }
 
 pre {
   background: $bg2 !important;
   color: $text !important;
-  border-color: $borderDim !important;
+  border-color: $bgLight !important;
 }
 
 ::-webkit-input-placeholder,
@@ -160,6 +168,10 @@ pre {
 ::-moz-placeholder,
 ::-ms-input-placeholder {
   color: $textDim !important;
+}
+
+.bullet {
+  color: $primary !important;
 }
 
 .input_note {
@@ -823,6 +835,10 @@ svg.ts_icon_spinner:empty {
 
 .close_flexpane {
   color: $text !important;
+
+  &:focus, &:hover {
+    color: $primary !important;
+  }
 }
 
 .disclosure_triangle {
@@ -850,22 +866,37 @@ ts-mention {
 
 // reactions
 .c-reaction {
-  background: $bg2 !important;
+  background: $bgLight !important;
   color: $textAccent !important;
-  border: none;
+  border: none !important;
 
   &:hover {
-    background: $bgHover !important;
+    background: $selection !important;
     color: $textAccent !important;
+    box-shadow: 0 0 5px $primaryT !important;
   }
 
   .c-reaction__count {
     color: $primary !important;
   }
 
-  .c-reaction_add {
-    background: $bg2 !important;
-    border-color: $bgLight !important;
+}
+
+.c-reaction_add {
+  background: $bg2 !important;
+  color: $text !important;
+  border-color: $bgLight !important;
+
+  &:hover {
+    box-shadow: 0 0 5px $primaryT !important;
+
+    .c-reaction_add__icon--fg {
+      color: $black !important;
+    }
+  }
+
+  .c-reaction_add__icon--fg {
+    color: $text !important;
   }
 }
 

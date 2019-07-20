@@ -59,7 +59,7 @@
 // The tabs
 .toolbar_container {
   background: $bg !important;
-  border-bottom: none;
+  border-bottom: none !important;
   color: $text !important;
   @include shadow;
 }
