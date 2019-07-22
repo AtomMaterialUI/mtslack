@@ -38,20 +38,25 @@
     &:not(:hover):not(.active) {
       border-color: $bg2 !important;
     }
+
     &.focus-ring:not(:hover):not(.active) {
       border-color: $accent !important;
     }
   }
+
   &.focus, &:focus {
     border-color: $primary !important;
   }
+
   &.focus + #primary_file_button:not(:hover):not(.active),
   &:focus + #primary_file_button:not(:hover):not(.active) {
     border-color: $primaryT !important;
   }
+
   &.offline:not(.pretend-to-be-online) {
     background-color: $bgHover !important;
   }
+
   &.disabled,
   &.ql-disabled {
     border-color: $bgLight !important;
@@ -265,5 +270,19 @@
 
   &:active, &:focus {
     border-color: $borderBright !important
+  }
+}
+
+.plastic_row {
+  color: $text !important;
+
+  &:hover {
+    background: $bgHover !important;
+    border-color: $bgLight !important;
+    color: $textBright !important;
+  }
+
+  .description {
+    color: $textDim !important;
   }
 }

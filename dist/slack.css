@@ -52,6 +52,9 @@
   to {
     background-color: transparent; } }
 
+.neutral_white_bg {
+  background: var(--background) !important; }
+
 .sk_black {
   color: var(--black) !important; }
 
@@ -221,6 +224,12 @@
 
 .code_red {
   color: var(--red) !important; }
+
+.flat_grey {
+  color: var(--text-bright) !important; }
+
+.indifferent_grey {
+  color: var(--text) !important; }
 
 .mention_yellow_bg {
   background-color: var(--yellow) !important; }
@@ -755,6 +764,37 @@ body {
   body input[readonly] {
     background: var(--contrast) !important; }
 
+header,
+footer {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important;
+  border-top-color: var(--border-dim) !important; }
+  header ul a,
+  header ul a:link,
+  footer ul a,
+  footer ul a:link {
+    color: var(--text) !important; }
+    header ul a:hover,
+    header ul a:link:hover,
+    footer ul a:hover,
+    footer ul a:link:hover {
+      color: var(--text-bright) !important; }
+  header:hover,
+  footer:hover {
+    color: var(--text-bright) !important; }
+  header label,
+  header .label,
+  footer label,
+  footer .label {
+    color: var(--text) !important;
+    background: transparent !important; }
+    header label:hover,
+    header .label:hover,
+    footer label:hover,
+    footer .label:hover {
+      background: var(--background-hover) !important;
+      color: var(--text-bright) !important; }
+
 a {
   color: var(--primary) !important; }
   a:visited, a:link {
@@ -891,7 +931,8 @@ a.muted {
   a.muted:hover {
     color: var(--text-bright) !important; }
 
-hr {
+hr,
+.divider {
   border-color: var(--background-light) !important; }
 
 abbr {
@@ -1278,7 +1319,8 @@ svg.ts_icon_spinner:empty {
     .alert.alert_warning > i:first-of-type, .alert.alert_warning > ts-icon:first-of-type {
       color: var(--orange) !important; }
   .alert.alert_info {
-    border-left-color: var(--blue) !important; }
+    border-left-color: var(--blue) !important;
+    color: var(--text-bright) !important; }
     .alert.alert_info a {
       color: var(--text-bright) !important; }
       .alert.alert_info a:hover {
@@ -1287,7 +1329,8 @@ svg.ts_icon_spinner:empty {
       color: var(--blue) !important; }
   .alert.alert_success {
     border-left-color: var(--green) !important;
-    background: var(--green); }
+    background: var(--green);
+    color: var(--text-bright) !important; }
     .alert.alert_success a {
       color: var(--text-bright) !important; }
       .alert.alert_success a:hover {
@@ -1296,7 +1339,8 @@ svg.ts_icon_spinner:empty {
       color: var(--green) !important; }
   .alert.alert_error {
     border-left-color: var(--red) !important;
-    background: var(--red) !important; }
+    background: var(--red) !important;
+    color: var(--text-bright) !important; }
     .alert.alert_error a {
       color: var(--text-bright) !important; }
       .alert.alert_error a:hover {
@@ -1499,6 +1543,7 @@ a.mini {
 .team_icon {
   color: var(--primary) !important; }
   .team_icon.default {
+    background: var(--background-hover) !important;
     color: var(--accent) !important; }
 
 .action_cog {
@@ -1592,6 +1637,9 @@ textarea.validation_warning:focus {
 .ladda-button .ladda-spinner,
 .ladda-button .ladda-progress {
   background: var(--background-light) !important; }
+
+.infinite_spinner {
+  background: transparent !important; }
 
 .banner {
   color: var(--text-bright) !important; }
@@ -2541,6 +2589,15 @@ body:not(.loading) #team_menu.active, body:not(.loading) #team_menu:hover {
   .plastic_select:active, .plastic_select:focus {
     border-color: var(--border-bright) !important; }
 
+.plastic_row {
+  color: var(--text) !important; }
+  .plastic_row:hover {
+    background: var(--background-hover) !important;
+    border-color: var(--background-light) !important;
+    color: var(--text-bright) !important; }
+  .plastic_row .description {
+    color: var(--text-dim) !important; }
+
 .tab_complete_ui {
   background: var(--background) !important;
   color: var(--text) !important;
@@ -2875,6 +2932,15 @@ body:not(.loading) #team_menu.active, body:not(.loading) #team_menu:hover {
   .plastic_select:active, .plastic_select:focus {
     border-color: var(--border-bright) !important; }
 
+.plastic_row {
+  color: var(--text) !important; }
+  .plastic_row:hover {
+    background: var(--background-hover) !important;
+    border-color: var(--background-light) !important;
+    color: var(--text-bright) !important; }
+  .plastic_row .description {
+    color: var(--text-dim) !important; }
+
 .c-tabs__tab {
   color: var(--text) !important; }
   .c-tabs__tab:hover {
@@ -2922,6 +2988,52 @@ a.c-tabs__tab--plastic {
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   border-bottom-color: var(--border-dim) !important;
   background: var(--background) !important; }
+
+.card,
+nav.top.persistent,
+nav.top.with_color {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important;
+  border-color: var(--border-dim) !important; }
+
+.find_team_flow_wrapper #get_started_card {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important;
+  box-shadow: 0 0 5px var(--contrast) !important; }
+
+.find_team_flow_wrapper .cta_lead {
+  border-color: var(--background-light) !important; }
+  .find_team_flow_wrapper .cta_lead:hover {
+    background: var(--selection) !important;
+    color: var(--text-bright) !important; }
+  .find_team_flow_wrapper .cta_lead .link_head {
+    color: var(--text) !important; }
+  .find_team_flow_wrapper .cta_lead .descrip {
+    color: var(--text-dim) !important; }
+  .find_team_flow_wrapper .cta_lead .cta_subdomain {
+    color: var(--primary) !important; }
+
+#header_plans_nav,
+#header_team_nav {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important;
+  border-color: var(--background-light) !important; }
+  #header_plans_nav li a:hover,
+  #header_plans_nav li.active a,
+  #header_team_nav li a:hover,
+  #header_team_nav li.active a {
+    background: var(--selection) !important;
+    color: var(--text-bright) !important; }
+  #header_plans_nav #add_team_option,
+  #header_team_nav #add_team_option {
+    border-top-color: var(--background-light) !important; }
+  #header_plans_nav .team_icon.ts_icon_plus,
+  #header_team_nav .team_icon.ts_icon_plus {
+    background: var(--accent) !important; }
+
+#page_contents > section:nth-child(3) {
+  background: var(--background-elevated) !important;
+  color: var(--text) !important; }
 
 #file_sharing_div .lfs_item .presence:not(.active):not(.away) {
   color: var(--text-dim) !important; }

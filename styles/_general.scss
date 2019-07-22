@@ -15,6 +15,37 @@ body {
   }
 }
 
+header,
+footer {
+  background: $bg2 !important;
+  color: $text !important;
+  border-top-color: $borderDim !important;
+
+  ul a,
+  ul a:link {
+    color: $text !important;
+
+    &:hover {
+      color: $textBright !important;
+    }
+  }
+
+  &:hover {
+    color: $textBright !important;
+  }
+
+  label,
+  .label {
+    color: $text !important;
+    background: transparent !important;
+
+    &:hover {
+      background: $bgHover !important;
+      color: $textBright !important;
+    }
+  }
+}
+
 a {
   color: $primary !important;
 
@@ -195,7 +226,8 @@ a.muted {
   }
 }
 
-hr {
+hr,
+.divider {
   border-color: $bgLight !important;
 }
 
@@ -749,6 +781,7 @@ svg.ts_icon_spinner:empty {
 
   &.alert_info {
     border-left-color: $blue !important;
+    color: $textBright !important;
 
     a {
       color: $textBright !important;
@@ -768,6 +801,8 @@ svg.ts_icon_spinner:empty {
   &.alert_success {
     border-left-color: $green !important;
     background: $green;
+    color: $textBright !important;
+
 
     a {
       color: $textBright !important;
@@ -787,6 +822,7 @@ svg.ts_icon_spinner:empty {
   &.alert_error {
     border-left-color: $red !important;
     background: $red !important;
+    color: $textBright !important;
 
     a {
       color: $textBright !important;
@@ -863,6 +899,7 @@ ts-mention {
     opacity: 0.8 !important;
   }
 }
+
 .c-mrkdwn__broadcast--mention,
 .c-mrkdwn__broadcast--mention:hover,
 .c-mrkdwn__highlight,
@@ -1072,6 +1109,7 @@ a.mini {
   color: $primary !important;
 
   &.default {
+    background: $bgHover !important;
     color: $accent !important;
   }
 }
@@ -1218,4 +1256,8 @@ textarea.validation_warning:focus {
   .ladda-progress {
     background: $bgLight !important;
   }
+}
+
+.infinite_spinner {
+  background: transparent !important;
 }

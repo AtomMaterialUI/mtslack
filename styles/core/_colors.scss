@@ -1,4 +1,6 @@
-
+.neutral_white_bg {
+  background: $bg !important;
+}
 .sk_black {
   color: $black !important
 }
@@ -226,6 +228,13 @@
   color: $red !important;
 }
 
+.flat_grey {
+  color: $textBright !important;
+}
+
+.indifferent_grey {
+  color: $text !important;
+}
 
 .mention_yellow_bg {
   background-color: $yellow !important;
