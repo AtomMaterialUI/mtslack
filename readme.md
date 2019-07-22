@@ -2,6 +2,24 @@
 
 Atom One Dark Theme for Slack!
 
+# IMPORTANT NOTICE!!!!!!!!!!!!
+
+>
+> This repository is now archived since Slack changed the way they work. Until a workaround, if exists, is found, there is no > way to change the theme again.
+
+> If you still own a previous version though, here is how to apply it:
+> 
+
+
+
+
+
+
+
+
+
+
+----------------------------
 # Preview
 
 ![Screenshot](preview.png)
