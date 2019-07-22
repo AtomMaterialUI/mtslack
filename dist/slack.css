@@ -1341,8 +1341,8 @@ svg.ts_icon_spinner:empty {
 .c-mrkdwn__member--link,
 .c-mrkdwn__subteam--link,
 ts-mention {
-  background: var(--accent) !important;
-  color: var(--text-accent) !important;
+  background: var(--background-elevated) !important;
+  color: var(--primary) !important;
   padding: 4px !important; }
   .c-mrkdwn__mention:hover,
   .c-mrkdwn__member--mention:hover,
@@ -1351,8 +1351,8 @@ ts-mention {
   .c-mrkdwn__member--link:hover,
   .c-mrkdwn__subteam--link:hover,
   ts-mention:hover {
-    background: var(--accent) !important;
-    color: var(--text-accent) !important;
+    background: var(--background-hover) !important;
+    color: var(--text-bright) !important;
     opacity: 0.8 !important; }
 
 .c-mrkdwn__broadcast--mention,
@@ -1956,7 +1956,7 @@ body:not(.loading) #team_menu.active, body:not(.loading) #team_menu:hover {
     background-color: var(--primary) !important;
     border: none !important;
     color: var(--background) !important;
-    box-shadow: 0 0 10px 5px var(--background-light) !important; }
+    box-shadow: 0 0 10px var(--background-light) !important; }
   .client_main_container #client_body .c-timestamp__label {
     color: var(--text) !important; }
   .client_main_container #client_body .c-message {

@@ -853,13 +853,13 @@ svg.ts_icon_spinner:empty {
 .c-mrkdwn__member--link,
 .c-mrkdwn__subteam--link,
 ts-mention {
-  background: $accent !important;
-  color: $textAccent !important;
+  background: $bg2 !important;
+  color: $primary !important;
   padding: 4px !important;
 
   &:hover {
-    background: $accent !important;
-    color: $textAccent !important;
+    background: $bgHover !important;
+    color: $textBright !important;
     opacity: 0.8 !important;
   }
 }
