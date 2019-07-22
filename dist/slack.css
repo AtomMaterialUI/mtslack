@@ -2996,21 +2996,35 @@ nav.top.with_color {
   color: var(--text) !important;
   border-color: var(--border-dim) !important; }
 
-.find_team_flow_wrapper #get_started_card {
-  background: var(--background-elevated) !important;
-  color: var(--text) !important;
-  box-shadow: 0 0 5px var(--contrast) !important; }
-
-.find_team_flow_wrapper .cta_lead {
-  border-color: var(--background-light) !important; }
-  .find_team_flow_wrapper .cta_lead:hover {
-    background: var(--selection) !important;
-    color: var(--text-bright) !important; }
-  .find_team_flow_wrapper .cta_lead .link_head {
-    color: var(--text) !important; }
-  .find_team_flow_wrapper .cta_lead .descrip {
-    color: var(--text-dim) !important; }
-  .find_team_flow_wrapper .cta_lead .cta_subdomain {
+.find_team_flow_wrapper {
+  color: var(--text) !important; }
+  .find_team_flow_wrapper #get_started_card {
+    background: var(--background-elevated) !important;
+    color: var(--text) !important;
+    box-shadow: 0 0 5px var(--contrast) !important;
+    border-color: var(--background-light) !important; }
+  .find_team_flow_wrapper .team_container {
+    background: var(--background-elevated) !important;
+    color: var(--text) !important;
+    border-color: var(--background-light) !important; }
+    .find_team_flow_wrapper .team_container .team_name {
+      color: var(--text-special) !important; }
+    .find_team_flow_wrapper .team_container .member_count {
+      color: var(--text-dim) !important; }
+    .find_team_flow_wrapper .team_container .cta_subdomain {
+      color: var(--text) !important; }
+  .find_team_flow_wrapper .cta_lead {
+    border-color: var(--background-light) !important; }
+    .find_team_flow_wrapper .cta_lead:hover {
+      background: var(--selection) !important;
+      color: var(--text-bright) !important; }
+    .find_team_flow_wrapper .cta_lead .link_head {
+      color: var(--text) !important; }
+    .find_team_flow_wrapper .cta_lead .descrip {
+      color: var(--text-dim) !important; }
+    .find_team_flow_wrapper .cta_lead .cta_subdomain {
+      color: var(--primary) !important; }
+  .find_team_flow_wrapper .unstyled_text_button {
     color: var(--primary) !important; }
 
 #header_plans_nav,
@@ -3030,10 +3044,6 @@ nav.top.with_color {
   #header_plans_nav .team_icon.ts_icon_plus,
   #header_team_nav .team_icon.ts_icon_plus {
     background: var(--accent) !important; }
-
-#page_contents > section:nth-child(3) {
-  background: var(--background-elevated) !important;
-  color: var(--text) !important; }
 
 #file_sharing_div .lfs_item .presence:not(.active):not(.away) {
   color: var(--text-dim) !important; }
