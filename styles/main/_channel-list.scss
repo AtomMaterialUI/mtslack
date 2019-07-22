@@ -231,3 +231,56 @@ body {
 .c-sidebar_menu__divider {
   border-top-color: $borderDim !important;
 }
+
+.channel_overlay {
+  color: $text !important;
+  border-left-color: $accent !important;
+
+  &.channel_overlay_redesign {
+    .channel_overlay_title {
+      color: $text !important;
+    }
+
+    li {
+      color: $textDim !important;
+    }
+
+    .app_preview_link {
+      color: $textDim !important;
+    }
+  }
+}
+
+.channel_overlay_title_wrap {
+  border-bottom: 2px solid $borderDim !important;
+}
+
+.channel_overlay_title_shared {
+  color: $text !important;
+}
+
+.channels_list_holder ul li a.channel_name,
+.channels_list_holder ul li:not(.unread) .group_name,
+.channels_list_holder ul li .im_name,
+.channels_list_holder ul li .mpim_name,
+.channels_list_holder ul li > a:link,
+.c-message a.timestamp {
+  color: $textDim !important;
+}
+
+.channels_list_holder ul li {
+  &.active .slackbot_icon {
+    color: $bg !important;
+  }
+}
+
+#channels_scroller.show_which_channel_is_active ul li.active .im_name {
+  color: $textBright !important;
+}
+
+.presence {
+  color: $text !important;
+  &.active {
+    color: $green !important;
+  }
+}

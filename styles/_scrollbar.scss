@@ -12,6 +12,31 @@
 }
 
 .supports_custom_scrollbar {
+  &:not(.slim_scrollbar) {
+    #app_space_scroller_div,
+    #archive_msgs_scroller_div,
+    #msgs_scroller_div {
+      &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+        color: $bg !important;
+      }
+
+      &::-webkit-scrollbar-track, &::-webkit-scrollbar-track, &::-webkit-scrollbar-track {
+        background: $bg2 !important;
+      }
+
+      &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-thumb {
+        background: $accent !important;
+      }
+
+      &::-webkit-scrollbar-corner, &::-webkit-scrollbar-corner, &::-webkit-scrollbar-corner {
+        background: $bg !important;
+      }
+    }
+  }
+}
+
+
+.supports_custom_scrollbar {
   &:not(.slim_scrollbar) .slack_scrollbar_theme {
 
     &::-webkit-scrollbar-thumb {

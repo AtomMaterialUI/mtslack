@@ -240,3 +240,11 @@
   color: $textBright !important;
   border-top: 1px solid $bgLight !important;
 }
+
+.current_status_emoji_picker {
+  border-right-color: $textDim !important;;
+}
+
+.current_status_emoji_picker_cover {
+  border-right-color: transparent !important;
+}

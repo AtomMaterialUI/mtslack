@@ -1,0 +1,282 @@
+ts-message {
+  // hover state
+  &:hover {
+    background: $bgHover !important;
+
+    .timestamp {
+      color: $primary !important;
+    }
+  }
+
+  .is_pinned_holder {
+    color: $text;
+  }
+
+  .action_hover_container {
+    background: $bg2 !important;
+
+    .btn_msg_action {
+      background: $bg2 !important;
+      color: $text !important;
+      border-color: $borderDim !important;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+
+  // Selected message
+  &.selected {
+    background: $bg2;
+
+    .message_content .message_sender {
+      color: $textBright !important;
+    }
+  }
+
+  // Message content
+  .message_content {
+    .message_sender {
+      color: $textBright !important;
+    }
+
+    .message_body {
+      color: $text !important;
+    }
+
+    .message_content_header {
+      color: $primary !important;
+    }
+  }
+
+  // Attachments
+  .attachment_group {
+    .msg_inline_attachment_column.column_border {
+      background-color: $primary;
+    }
+
+    .attachment_source span {
+      color: $text !important;
+
+      a {
+        color: $primary !important;
+      }
+    }
+
+    .attachment_footer,
+    .attachment_ts {
+      color: $text !important;
+    }
+  }
+
+  .thread_channel_link {
+    color: $text !important;
+  }
+
+}
+
+#msgs_div {
+  color: $primary !important;
+  font-weight: bold !important;
+}
+
+#typing_text {
+  color: $textDim !important;
+}
+
+#col_messages {
+  box-shadow: inset 1px 0 0 0 $primaryT !important;
+}
+
+.msg_right_link {
+  color: $primary !important;
+}
+
+#end_display_status {
+  color: $bgHover !important;
+}
+
+#end_display_meta {
+  color: $textDim !important;
+
+  #im_meta .mpim_notif_prefs {
+    .quote_bar {
+      background: $bg2 !important;
+    }
+  }
+
+  .mpim_notif_prefs.feature_turn_mpdm_notifs_on {
+    color: $text !important;
+  }
+}
+
+#msgs_scroller_div #end_display_div {
+  #end_display_meta {
+    h1 {
+      color: $accent !important;
+
+      .ts_icon_shared_channel {
+        color: $accent !important;
+      }
+    }
+  }
+
+  p {
+    color: $text !important;
+
+    &.dm_explanation {
+      color: $text !important;
+    }
+  }
+}
+
+#archives_end_div_msg_lim,
+#end_display_msg_lim {
+  h1, h2 {
+    color: $text !important;
+  }
+}
+
+.msg_lim_div {
+  background-color: $bg !important;
+}
+
+.msgs_holder {
+  .message.automated_grey {
+    background: $bg !important;
+
+    .timestamp {
+      color: $text !important;
+    }
+
+    &:hover .timestamp {
+      color: $textBright !important;
+    }
+  }
+}
+
+.member_mentions_options {
+  background-color: $bg !important;
+  border-top: 1px solid $bgLight !important;
+}
+
+#member_mentions {
+  h3 a {
+    color: $text !important;
+  }
+}
+
+#msgs_overlay_div {
+  background: $bg !important;
+}
+
+#growl_prompt_overlay {
+  background: $bg2 !important;
+  border: 1px solid $borderDim !important;
+  text-shadow: 0 1px $bgLight !important;
+  color: $textDim !important
+}
+
+#archives_return {
+  background: $bg2 !important;
+  color: $textDim !important;
+
+  &.warning {
+    background: $yellow !important;
+  }
+
+  a {
+    color: $primary !important;
+
+    &:hover {
+      color: $textBright !important;
+    }
+  }
+}
+
+.clear_unread_messages {
+  border-left: 1px solid $accent !important;
+}
+
+#messages_unread_status {
+  &.quiet {
+    color: $bg !important;
+    a {
+      color: $primary !important;
+    }
+  }
+
+  &:hover {
+    background: $accent !important;
+
+    .clear_unread_messages {
+      background: $accent !important;
+      opacity: 0.8 !important;
+
+      &:hover {
+        background: $accent !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+.message_location_label {
+  color: $textDim !important;
+
+  a {
+    color: $textDim !important;
+  }
+}
+
+.bot_message .message_sender {
+  color: $text !important;
+
+  a {
+    color: $text !important;
+  }
+}
+
+.ephemeral.message {
+  .ephemeral_notice {
+    color: $textDim !important;
+  }
+
+  &.highlight_yellow_bg {
+    color: $text !important;
+  }
+}
+
+.msg_inline_attachment_collapser,
+.msg_inline_attachment_expander,
+.msg_inline_img_collapser,
+.msg_inline_img_expander,
+.msg_inline_media_toggler,
+.msg_inline_room_preview_collapser,
+.msg_inline_room_preview_expander {
+  color: $primary !important;
+}
+
+.msg_inline_attachment_collapser:hover,
+.msg_inline_attachment_expander:hover,
+.msg_inline_img_collapser:hover,
+.msg_inline_img_expander:hover,
+.msg_inline_media_toggler:hover,
+.msg_inline_room_preview_collapser:hover,
+.msg_inline_room_preview_expander:hover {
+  color: $textBright !important;
+}
+
+.msg_inline_img {
+  overflow: hidden;
+  background: $bg !important;
+}
+
+.msg_inline_room_preview_collapser {
+  color: $textDim !important;;
+
+  &:hover {
+    color: $textDim !important;;
+  }
+}

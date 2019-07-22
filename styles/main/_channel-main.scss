@@ -1,6 +1,8 @@
-.client_main_container {
-  @import "channel-header";
-  @import "channel-body";
-  @import "channel-actions";
-  @import 'ts-message';
+@import "channel-header";
+@import "channel-body";
+@import "channel-actions";
+@import 'messages';
+
+.channel_meta {
+  color: $textDim !important;
 }

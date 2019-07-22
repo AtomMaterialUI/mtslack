@@ -115,3 +115,97 @@ pre.special_formatting {
 .c-file_container--gradient::after {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0), $bg) !important;
 }
+
+.sssh-keyword {
+  color: $purple !important;
+}
+
+.sssh-atom {
+  color: $cyan !important;
+}
+
+.sssh-number {
+  color: $orange !important;
+}
+
+.sssh-def {
+  color: $blue !important;
+}
+
+.sssh-variable {
+  color: $textBright !important;
+}
+
+.sssh-variable-2 {
+  color: $textBright !important;
+}
+
+.sssh-variable-3 {
+  color: $gray !important;
+}
+
+.sssh-operator, .sssh-property {
+  color: $cyan !important;
+}
+
+.sssh-comment {
+  color: $textDim !important;
+}
+
+.sssh-string {
+  color: $green !important;
+}
+
+.sssh-string-2 {
+  color: $red2 !important;
+}
+
+.sssh-meta {
+  color: $text !important;
+}
+
+.sssh-error {
+  color: $red !important;
+}
+
+.sssh-qualifier {
+  color: $text !important;
+}
+
+.sssh-builtin {
+  color: $blue !important;
+}
+
+.sssh-bracket {
+  color: $text !important;
+}
+
+.sssh-tag {
+  color: $red !important;
+}
+
+.sssh-attribute {
+  color: $yellow !important;
+}
+
+.sssh-header {
+  color: $silver !important;
+}
+
+.sssh-quote {
+  color: $text !important;
+}
+
+.sssh-hr {
+  color: $borderDim !important;
+}
+
+.sssh-link {
+  color: $accent !important;
+}
+
+.block_kit_error_color_bar {
+  &::before {
+    background-color: $bg2 !important;
+  }
+}

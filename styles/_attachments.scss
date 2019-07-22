@@ -1,0 +1,62 @@
+.attachment_fallback {
+  border: 1px dashed $borderDim !important;
+}
+
+.special_formatting_quote .quote_bar {
+  background: $bgHover !important;
+}
+
+.inline_attachment {
+  span {
+    &.attachment_author_name {
+      color: $text !important;
+    }
+
+    &.attachment_author_subname,
+    &.attachment_service_name {
+      color: $textDim !important;
+    }
+  }
+
+  a span {
+    &:active, &:hover {
+      color: $primary !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+.inline_attachment {
+  .attachment_footer, .attachment_ts {
+    color: $textDim !important;
+  }
+
+  .attachment_footer a, .attachment_ts a {
+    color: $textDim !important;
+  }
+
+  .attachment_footer a {
+    &:active, &:hover {
+      color: $textBright !important;
+    }
+  }
+
+  .attachment_ts a {
+    &:active, &:hover {
+      color: $textBright !important;
+    }
+  }
+
+  .iframe_placeholder,
+  iframe {
+    background-color: $bg2 !important;
+  }
+}
+
+.delete_attachment_link {
+  color: $text !important;
+}
+
+.delete_attachment_link:hover {
+  color: $textBright !important;
+}

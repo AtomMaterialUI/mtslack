@@ -973,10 +973,6 @@ ts-mention {
   }
 }
 
-.member_details_divider {
-  border-color: $bgLight !important;
-}
-
 // Don't know what are these but they look like mentions
 .feature_name_tagging_client {
   .app_preview_link_slug,
@@ -1260,4 +1256,12 @@ textarea.validation_warning:focus {
 
 .infinite_spinner {
   background: transparent !important;
+}
+
+.too_large_for_auto_expand {
+  color: $textDim !important;;
+}
+
+.slackbot_icon {
+  color: $primary !important;
 }

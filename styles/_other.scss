@@ -33,11 +33,6 @@ li.active[class] span {
   border-radius: 1rem;
 }
 
-/* Mentions */
-.member_data_table {
-  border: 1px solid $borderDim !important;
-}
-
 /* Conversations */
 #convo_container .convo_flexpane_divider .reply_count {
   border-radius: 10px;
@@ -150,30 +145,12 @@ span.match {
   color: $text !important;
 }
 
-#member_mentions h3 a,
 .c-deprecated_button--link {
   color: $primary !important;
 }
 
 .c-message a .mention {
   color: $primary !important;
-}
-
-#msgs_scroller_div #end_display_div p {
-  color: $text;
-}
-
-.channels_list_holder ul li a.channel_name,
-.channels_list_holder ul li:not(.unread) .group_name,
-.channels_list_holder ul li .im_name,
-.channels_list_holder ul li .mpim_name,
-.channels_list_holder ul li > a:link,
-.c-message a.timestamp {
-  color: $textDim !important;
-}
-
-#channels_scroller.show_which_channel_is_active ul li.active .im_name {
-  color: $textBright !important;
 }
 
 #msgs_div .unread_divider.no_unreads .divider_label {
@@ -236,10 +213,6 @@ ts-mention.ts_tip:hover {
 }
 
 /* other */
-.special_formatting_quote .quote_bar {
-  background: $borderBright !important;
-}
-
 #channel_actions_toggle.onboarding,
 #details_toggle.onboarding,
 #flex_menu_toggle.onboarding,
@@ -448,13 +421,23 @@ ts-mention.ts_tip:hover {
       }
     }
   }
+}
 
-  .team_image {
-    &.default {
-      background-color: $bg2 !important;
-      color: $text !important;
-    }
+.team_image {
+  &.default {
+    background-color: $bg2 !important;
+    color: $text !important;
   }
+
+  &.p-shared_team_icons__team_image--pending {
+    border: 1px dashed $textDim !important;;
+    background-color: transparent !important;
+    color: $textDim !important;
+  }
+}
+
+.unknown_team {
+  background: $bg2 !important;
 }
 
 .feature_channel_browser_dropdown {
@@ -550,7 +533,6 @@ ts-mention.ts_tip:hover {
 .lazy_filter_select .lfs_list .lfs_item.active {
   background-color: $bg2 !important;
 }
-
 
 .flex_pane_showing #col_flex {
   border-color: $borderDim !important;
@@ -684,7 +666,6 @@ feature_archive_deeplink feature_texty winssb light_theme {
   border: 1px solid $bg2 !important;
 }
 
-
 ts-memory-instrument {
   background: $bg !important;
   color: $text !important;
@@ -698,7 +679,6 @@ ts-memory-instrument {
   &:hover {
     color: $primary !important;
   }
-
 
   &.disabled {
     background: $bg2 !important;
@@ -743,3 +723,4 @@ ts-inline-saver {
   color: $accent !important;
   background: $bgHover !important;
 }
+

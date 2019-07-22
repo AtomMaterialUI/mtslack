@@ -17,3 +17,48 @@
   background: $bg2 !important;
   color: $text !important;
 }
+
+#notification_banner {
+  background-color: $bg !important;
+
+  ts-icon {
+    color: $bgLight !important;
+  }
+
+  h2 {
+    color: $text !important;
+  }
+
+  &.messages_banner_tractor {
+    > {
+      #notification_banner_go_button {
+        background: $accent !important;
+        color: $bg !important;
+
+        &:link, &:visited {
+          color: $bg !important;
+        }
+
+        &:hover {
+          color: $bg !important;
+        }
+
+        &:active {
+          background: $accent !important;
+        }
+      }
+    }
+  }
+}
+
+.messages_banner_image_wrapper {
+  background-color: $bg !important;
+}
+
+.msg_lim_activation_banner_menu_overlay {
+  background-color: $bg2 !important;
+}
+
+.end_div_msg_lim {
+  background-color: $bg !important;
+}

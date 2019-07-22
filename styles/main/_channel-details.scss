@@ -100,7 +100,6 @@
       }
     }
 
-
     #user_group_edit {
       background: $bg2 !important;
     }
@@ -313,4 +312,86 @@
 
 .c-message_attachment__author_subname, .c-message_attachment__part {
   color: $textDim !important;
+}
+
+.mentions_reply {
+  .mentions_reply_icon {
+    background-color: $bg2 !important;
+    color: $primary !important;
+  }
+
+  .replier_info {
+    color: $textDim !important;
+
+    .member,
+    .n_others {
+      color: $text !important;
+    }
+  }
+
+  .original_msg {
+    color: $textDim !important;
+  }
+}
+
+.dense_meta,
+.meta {
+  &.msg_inline_file_preview_toggler .msg_inline_file_preview_title,
+  &.msg_inline_img_toggler .msg_inline_file_preview_title {
+    color: $primary !important;
+  }
+
+  &.msg_inline_file_preview_toggler .msg_inline_file_preview_title:hover,
+  &.msg_inline_img_toggler .msg_inline_file_preview_title:hover {
+    color: $textBright !important;
+  }
+
+  &.msg_inline_file_preview_toggler {
+    .ts_icon.msg_inline_media_toggler:hover,
+    ts-icon.msg_inline_media_toggler:hover {
+      color: $text !important;
+    }
+  }
+
+  &.msg_inline_img_toggler {
+    .ts_icon.msg_inline_media_toggler:hover,
+    ts-icon.msg_inline_media_toggler:hover {
+      color: $text !important;
+    }
+  }
+}
+
+.meta {
+  &.meta_feature_fix_files {
+    .file_new_window_link:hover {
+      color: $text !important;
+
+      .file_inline_icon {
+        color: $text !important;
+      }
+    }
+
+    .member {
+      color: $text !important;
+    }
+  }
+}
+
+.dense_meta {
+  &.msg_inline_file_preview_toggler, &.msg_inline_img_toggler {
+    color: $text !important;
+
+    a[data-file-id] {
+      color: $text !important;
+    }
+  }
+
+  &.msg_inline_file_preview_toggler:hover,
+  &.msg_inline_img_toggler:hover {
+    color: $textBright !important;
+
+    a[data-file-id] {
+      color: $textBright !important;
+    }
+  }
 }

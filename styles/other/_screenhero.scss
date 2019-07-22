@@ -1,0 +1,32 @@
+.sh_call_container {
+  color: $text !important;
+
+  &.sh_call_ended .msg_inline_room_preview_expander {
+    color: $textDim !important;;
+  }
+}
+
+.screenhero_attachment {
+  border: 1px solid $bgLight !important;
+  background: $bg !important;
+
+  &:hover {
+    a {
+      color: $primary !important;
+    }
+  }
+}
+
+.sh_call_ended .screenhero_attachment:hover {
+  border-color: $bgHover !important;
+}
+
+.screenhero_attachment {
+  .pipe_separator {
+    color: $textDim !important;
+  }
+
+  .call_subinfo {
+    color: $textDim !important;
+  }
+}

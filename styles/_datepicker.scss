@@ -66,3 +66,37 @@
     }
   }
 }
+
+.calendar {
+  table.mini {
+    td {
+      &.active a {
+        background: $primary !important;
+        color: $bg !important;
+
+        &:hover {
+          background: $primary !important;
+          color: $bg !important;
+        }
+      }
+
+      a:hover {
+        background: $textBright !important;
+      }
+
+      &.limited {
+        background-color: $bg2 !important;
+
+        a {
+          background-color: $bg2 !important;
+          color: $textDim !important;
+
+          &:hover {
+            background-color: $bg2 !important;
+            color: $textDim !important;
+          }
+        }
+      }
+    }
+  }
+}

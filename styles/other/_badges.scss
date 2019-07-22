@@ -1,0 +1,33 @@
+.dm_badge .dm_badge_meta,
+.mpdm_badge .dm_badge_meta {
+  color: $text !important;
+}
+
+.dm_badge .dm_badge_meta .member_team_name,
+.mpdm_badge .dm_badge_meta .member_team_name {
+  color: $textDim !important;;
+}
+
+.dm_badge .dm_badge:hover a.member_preview_link,
+.mpdm_badge .dm_badge:hover a.member_preview_link {
+  color: inherit !important;
+}
+
+.dm_badge .dm_badge:hover a,
+.mpdm_badge .dm_badge:hover a {
+  color: $primary !important;
+}
+
+.dm_badge .hint, .mpdm_badge .hint {
+  color: $textDim !important;
+}
+
+.external_team_badge {
+  box-shadow: 0 0 0 2px $bg !important;
+  background-color: $bg !important;
+
+  &.default {
+    background-color: $textDim !important;
+    color: $bg !important;
+  }
+}
