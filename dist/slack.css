@@ -579,3 +579,768 @@ a.label {
   .uneditable-textarea:focus {
     border-color: var(--active);
     border-width: 2px; }
+
+.c-deprecated-icon--danger {
+  color: var(--red); }
+
+.c-icon--filetype:before {
+  color: var(--accent); }
+
+.c-icon--filetype:after {
+  background-color: var(--accent); }
+
+.c-icon--filetype-small:before {
+  color: var(--accent); }
+
+.c-icon--filetype-small:after {
+  background-color: var(--accent); }
+
+.c-icon--filetype-tiny:before {
+  color: var(--accent); }
+
+.c-icon--filetype-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-spaces:before {
+  color: var(--green); }
+
+.c-icon--file-spaces:after {
+  background-color: var(--green); }
+
+.c-icon--file-spaces-small:before {
+  color: var(--green); }
+
+.c-icon--file-spaces-small:after {
+  background-color: var(--green); }
+
+.c-icon--file-spaces-tiny:before {
+  color: var(--green); }
+
+.c-icon--file-spaces-tiny:after {
+  background-color: var(--green); }
+
+.c-icon--file-image:before {
+  color: var(--accent); }
+
+.c-icon--file-image:after {
+  background-color: var(--accent); }
+
+.c-icon--file-image-small:before {
+  color: var(--accent); }
+
+.c-icon--file-image-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-image-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-image-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-pdf:before {
+  color: var(--red); }
+
+.c-icon--file-pdf:after {
+  background-color: var(--red); }
+
+.c-icon--file-pdf-small:before {
+  color: var(--red); }
+
+.c-icon--file-pdf-small:after {
+  background-color: var(--red); }
+
+.c-icon--file-pdf-tiny:before {
+  color: var(--red); }
+
+.c-icon--file-pdf-tiny:after {
+  background-color: var(--red); }
+
+.c-icon--file-audio:before {
+  color: var(--accent); }
+
+.c-icon--file-audio:after {
+  background-color: var(--accent); }
+
+.c-icon--file-audio-small:before {
+  color: var(--accent); }
+
+.c-icon--file-audio-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-audio-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-audio-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-video:before {
+  color: var(--accent); }
+
+.c-icon--file-video:after {
+  background-color: var(--accent); }
+
+.c-icon--file-video-small:before {
+  color: var(--accent); }
+
+.c-icon--file-video-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-video-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-video-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-presentation:before {
+  color: var(--accent); }
+
+.c-icon--file-presentation:after {
+  background-color: var(--accent); }
+
+.c-icon--file-presentation-small:before {
+  color: var(--accent); }
+
+.c-icon--file-presentation-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-presentation-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-presentation-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-email:before {
+  color: var(--accent); }
+
+.c-icon--file-email:after {
+  background-color: var(--accent); }
+
+.c-icon--file-email-small:before {
+  color: var(--accent); }
+
+.c-icon--file-email-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-email-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-email-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-vector:before {
+  color: var(--accent); }
+
+.c-icon--file-vector:after {
+  background-color: var(--accent); }
+
+.c-icon--file-vector-small:before {
+  color: var(--accent); }
+
+.c-icon--file-vector-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-vector-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-vector-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-spreadsheet:before {
+  color: var(--accent); }
+
+.c-icon--file-spreadsheet:after {
+  background-color: var(--accent); }
+
+.c-icon--file-spreadsheet-small:before {
+  color: var(--accent); }
+
+.c-icon--file-spreadsheet-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-spreadsheet-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-spreadsheet-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-media-archive:before {
+  color: var(--accent); }
+
+.c-icon--file-media-archive:after {
+  background-color: var(--accent); }
+
+.c-icon--file-media-archive-small:before {
+  color: var(--accent); }
+
+.c-icon--file-media-archive-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-media-archive-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-media-archive-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-archive:before {
+  color: var(--accent); }
+
+.c-icon--file-archive:after {
+  background-color: var(--accent); }
+
+.c-icon--file-archive-small:before {
+  color: var(--accent); }
+
+.c-icon--file-archive-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-archive-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-archive-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-executable:before {
+  color: var(--accent); }
+
+.c-icon--file-executable:after {
+  background-color: var(--accent); }
+
+.c-icon--file-executable-small:before {
+  color: var(--accent); }
+
+.c-icon--file-executable-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-executable-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-executable-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-disk-image:before {
+  color: var(--accent); }
+
+.c-icon--file-disk-image:after {
+  background-color: var(--accent); }
+
+.c-icon--file-disk-image-small:before {
+  color: var(--accent); }
+
+.c-icon--file-disk-image-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-disk-image-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-disk-image-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-cad:before {
+  color: var(--accent); }
+
+.c-icon--file-cad:after {
+  background-color: var(--accent); }
+
+.c-icon--file-cad-small:before {
+  color: var(--accent); }
+
+.c-icon--file-cad-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-cad-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-cad-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-3d-graphic:before {
+  color: var(--accent); }
+
+.c-icon--file-3d-graphic:after {
+  background-color: var(--accent); }
+
+.c-icon--file-3d-graphic-small:before {
+  color: var(--accent); }
+
+.c-icon--file-3d-graphic-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-3d-graphic-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-3d-graphic-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-database:before {
+  color: var(--accent); }
+
+.c-icon--file-database:after {
+  background-color: var(--accent); }
+
+.c-icon--file-database-small:before {
+  color: var(--accent); }
+
+.c-icon--file-database-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-database-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-database-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-binary:before {
+  color: var(--accent); }
+
+.c-icon--file-binary:after {
+  background-color: var(--accent); }
+
+.c-icon--file-binary-small:before {
+  color: var(--accent); }
+
+.c-icon--file-binary-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-binary-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-binary-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-markdown:before {
+  color: var(--accent); }
+
+.c-icon--file-markdown:after {
+  background-color: var(--accent); }
+
+.c-icon--file-markdown-small:before {
+  color: var(--accent); }
+
+.c-icon--file-markdown-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-markdown-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-markdown-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-text-post:before {
+  color: var(--green); }
+
+.c-icon--file-text-post:after {
+  background-color: var(--green); }
+
+.c-icon--file-text-post-small:before {
+  color: var(--green); }
+
+.c-icon--file-text-post-small:after {
+  background-color: var(--green); }
+
+.c-icon--file-text-post-tiny:before {
+  color: var(--green); }
+
+.c-icon--file-text-post-tiny:after {
+  background-color: var(--green); }
+
+.c-icon--file-html:before {
+  color: var(--accent); }
+
+.c-icon--file-html:after {
+  background-color: var(--accent); }
+
+.c-icon--file-html-small:before {
+  color: var(--accent); }
+
+.c-icon--file-html-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-html-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-html-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-code:before {
+  color: var(--accent); }
+
+.c-icon--file-code:after {
+  background-color: var(--accent); }
+
+.c-icon--file-code-small:before {
+  color: var(--accent); }
+
+.c-icon--file-code-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-code-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-code-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-css:before {
+  color: var(--accent); }
+
+.c-icon--file-css:after {
+  background-color: var(--accent); }
+
+.c-icon--file-css-small:before {
+  color: var(--accent); }
+
+.c-icon--file-css-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-css-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-css-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-php:before {
+  color: var(--accent); }
+
+.c-icon--file-php:after {
+  background-color: var(--accent); }
+
+.c-icon--file-php-small:before {
+  color: var(--accent); }
+
+.c-icon--file-php-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-php-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-php-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-snippet:before {
+  color: var(--purple); }
+
+.c-icon--file-snippet:after {
+  background-color: var(--purple); }
+
+.c-icon--file-snippet-small:before {
+  color: var(--purple); }
+
+.c-icon--file-snippet-small:after {
+  background-color: var(--purple); }
+
+.c-icon--file-snippet-tiny:before {
+  color: var(--purple); }
+
+.c-icon--file-snippet-tiny:after {
+  background-color: var(--purple); }
+
+.c-icon--file-word:before {
+  color: var(--blue); }
+
+.c-icon--file-word:after {
+  background-color: var(--blue); }
+
+.c-icon--file-word-small:before {
+  color: var(--blue); }
+
+.c-icon--file-word-small:after {
+  background-color: var(--blue); }
+
+.c-icon--file-word-tiny:before {
+  color: var(--blue); }
+
+.c-icon--file-word-tiny:after {
+  background-color: var(--blue); }
+
+.c-icon--file-excel:before {
+  color: var(--green); }
+
+.c-icon--file-excel:after {
+  background-color: var(--green); }
+
+.c-icon--file-excel-small:before {
+  color: var(--green); }
+
+.c-icon--file-excel-small:after {
+  background-color: var(--green); }
+
+.c-icon--file-excel-tiny:before {
+  color: var(--green); }
+
+.c-icon--file-excel-tiny:after {
+  background-color: var(--green); }
+
+.c-icon--file-powerpoint:before {
+  color: var(--orange); }
+
+.c-icon--file-powerpoint:after {
+  background-color: var(--orange); }
+
+.c-icon--file-powerpoint-small:before {
+  color: var(--orange); }
+
+.c-icon--file-powerpoint-small:after {
+  background-color: var(--orange); }
+
+.c-icon--file-powerpoint-tiny:before {
+  color: var(--orange); }
+
+.c-icon--file-powerpoint-tiny:after {
+  background-color: var(--orange); }
+
+.c-icon--file-illustrator:before {
+  color: var(--orange); }
+
+.c-icon--file-illustrator:after {
+  background-color: var(--orange); }
+
+.c-icon--file-illustrator-small:before {
+  color: var(--orange); }
+
+.c-icon--file-illustrator-small:after {
+  background-color: var(--orange); }
+
+.c-icon--file-illustrator-tiny:before {
+  color: var(--orange); }
+
+.c-icon--file-illustrator-tiny:after {
+  background-color: var(--orange); }
+
+.c-icon--file-photoshop:before {
+  color: var(--cyan); }
+
+.c-icon--file-photoshop:after {
+  background-color: var(--cyan); }
+
+.c-icon--file-photoshop-small:before {
+  color: var(--cyan); }
+
+.c-icon--file-photoshop-small:after {
+  background-color: var(--cyan); }
+
+.c-icon--file-photoshop-tiny:before {
+  color: var(--cyan); }
+
+.c-icon--file-photoshop-tiny:after {
+  background-color: var(--cyan); }
+
+.c-icon--file-indesign:before {
+  color: var(--red); }
+
+.c-icon--file-indesign:after {
+  background-color: var(--purple); }
+
+.c-icon--file-indesign-small:before {
+  color: var(--purple); }
+
+.c-icon--file-indesign-small:after {
+  background-color: var(--purple); }
+
+.c-icon--file-indesign-tiny:before {
+  color: var(--purple); }
+
+.c-icon--file-indesign-tiny:after {
+  background-color: var(--purple); }
+
+.c-icon--file-adobe-flash:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-flash:after {
+  background-color: var(--red2); }
+
+.c-icon--file-adobe-flash-small:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-flash-small:after {
+  background-color: var(--red2); }
+
+.c-icon--file-adobe-flash-tiny:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-flash-tiny:after {
+  background-color: var(--red2); }
+
+.c-icon--file-adobe-swf:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-swf:after {
+  background-color: var(--red2); }
+
+.c-icon--file-adobe-swf-small:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-swf-small:after {
+  background-color: var(--red2); }
+
+.c-icon--file-adobe-swf-tiny:before {
+  color: var(--red2); }
+
+.c-icon--file-adobe-swf-tiny:after {
+  background-color: var(--red2); }
+
+.c-icon--file-iphone-app:before {
+  color: var(--silver); }
+
+.c-icon--file-iphone-app:after {
+  background-color: var(--silver); }
+
+.c-icon--file-iphone-app-small:before {
+  color: var(--silver); }
+
+.c-icon--file-iphone-app-small:after {
+  background-color: var(--silver); }
+
+.c-icon--file-iphone-app-tiny:before {
+  color: var(--silver); }
+
+.c-icon--file-iphone-app-tiny:after {
+  background-color: var(--silver); }
+
+.c-icon--file-android-app:before {
+  color: var(--green); }
+
+.c-icon--file-android-app:after {
+  background-color: var(--green); }
+
+.c-icon--file-android-app-small:before {
+  color: var(--green); }
+
+.c-icon--file-android-app-small:after {
+  background-color: var(--green); }
+
+.c-icon--file-android-app-tiny:before {
+  color: var(--green); }
+
+.c-icon--file-android-app-tiny:after {
+  background-color: var(--green); }
+
+.c-icon--file-dropbox:before {
+  color: var(--blue); }
+
+.c-icon--file-dropbox:after {
+  background-color: var(--blue); }
+
+.c-icon--file-dropbox-small:before {
+  color: var(--blue); }
+
+.c-icon--file-dropbox-small:after {
+  background-color: var(--blue); }
+
+.c-icon--file-dropbox-tiny:before {
+  color: var(--blue); }
+
+.c-icon--file-dropbox-tiny:after {
+  background-color: var(--blue); }
+
+.c-icon--file-google-presentation:before {
+  color: var(--yellow); }
+
+.c-icon--file-google-presentation:after {
+  background-color: var(--yellow); }
+
+.c-icon--file-google-presentation-small:before {
+  color: var(--yellow); }
+
+.c-icon--file-google-presentation-small:after {
+  background-color: var(--yellow); }
+
+.c-icon--file-google-presentation-tiny:before {
+  color: var(--yellow); }
+
+.c-icon--file-google-presentation-tiny:after {
+  background-color: var(--yellow); }
+
+.c-icon--file-google-spreadsheet:before {
+  color: var(--green); }
+
+.c-icon--file-google-spreadsheet:after {
+  background-color: var(--green); }
+
+.c-icon--file-google-spreadsheet-small:before {
+  color: var(--green); }
+
+.c-icon--file-google-spreadsheet-small:after {
+  background-color: var(--green); }
+
+.c-icon--file-google-spreadsheet-tiny:before {
+  color: var(--green); }
+
+.c-icon--file-google-spreadsheet-tiny:after {
+  background-color: var(--green); }
+
+.c-icon--file-google-document:before {
+  color: var(--blue); }
+
+.c-icon--file-google-document:after {
+  background-color: var(--blue); }
+
+.c-icon--file-google-document-small:before {
+  color: var(--blue); }
+
+.c-icon--file-google-document-small:after {
+  background-color: var(--blue); }
+
+.c-icon--file-google-document-tiny:before {
+  color: var(--blue); }
+
+.c-icon--file-google-document-tiny:after {
+  background-color: var(--blue); }
+
+.c-icon--file-google-form:before {
+  color: var(--red); }
+
+.c-icon--file-google-form:after {
+  background-color: var(--red); }
+
+.c-icon--file-google-form-small:before {
+  color: var(--red); }
+
+.c-icon--file-google-form-small:after {
+  background-color: var(--red); }
+
+.c-icon--file-google-form-tiny:before {
+  color: var(--red); }
+
+.c-icon--file-google-form-tiny:after {
+  background-color: var(--red); }
+
+.c-icon--file-qtz:before {
+  color: var(--accent); }
+
+.c-icon--file-qtz:after {
+  background-color: var(--accent); }
+
+.c-icon--file-qtz-small:before {
+  color: var(--accent); }
+
+.c-icon--file-qtz-small:after {
+  background-color: var(--accent); }
+
+.c-icon--file-qtz-tiny:before {
+  color: var(--accent); }
+
+.c-icon--file-qtz-tiny:after {
+  background-color: var(--accent); }
+
+.c-icon--file-sketch:before {
+  color: var(--orange); }
+
+.c-icon--file-sketch:after {
+  background-color: var(--orange); }
+
+.c-icon--file-sketch-small:before {
+  color: var(--orange); }
+
+.c-icon--file-sketch-small:after {
+  background-color: var(--orange); }
+
+.c-icon--file-sketch-tiny:before {
+  color: var(--orange); }
+
+.c-icon--file-sketch-tiny:after {
+  background-color: var(--orange); }
+
+.c-icon--file-figma-tiny:before {
+  color: var(--fg); }
+
+.c-icon--file-figma-tiny:after {
+  background-color: var(--fg); }
