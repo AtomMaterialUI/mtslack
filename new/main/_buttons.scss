@@ -1,0 +1,168 @@
+.c-deprecated_button--link {
+  color: $primary;
+}
+
+.c-deprecated_button--disabled {
+  color: $disabled;
+}
+
+.c-deprecated_rounded_button {
+  background-color: $button;
+  color: $text;
+  &:link, &:visited {
+    color: $selectFg;
+  }
+}
+
+.c-deprecated_rounded_button--outline {
+  &:active, &:link, &:visited {
+    color: $text;
+  }
+}
+
+.c-deprecated_rounded_button {
+  &:hover {
+    color: $selectFg;
+    &:after {
+      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &:active:after {
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.c-deprecated_rounded_button--outline,
+.c-deprecated_rounded_button--transparent {
+  color: $text;
+  box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.3);
+}
+
+.c-deprecated_rounded_button--outline {
+  background-color: transparent;
+  &:active, &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.c-deprecated_rounded_button--danger {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.c-deprecated_rounded_button--disabled {
+  background: $button;
+  color: $disabled;
+}
+
+.c-link--button {
+  color: $primary;
+  &:active, &:hover {
+    color: $selectFg;
+  }
+}
+
+.c-link--focus-visible:focus {
+  color: $primary;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-link--disabled {
+  color: $disabled;
+  &:active, &:focus, &:hover {
+    color: $fg;
+  }
+}
+
+.c-button--primary {
+  background: $accent;
+  color: $selectFg;
+  &:link, &:visited {
+    color: $selectFg;
+  }
+  &:hover {
+    color: $selectFg;
+  }
+  &:active {
+    background: $accent;
+  }
+}
+
+.c-button--danger {
+  background: $red;
+  color: $selectFg;
+  &:link, &:visited {
+    color: $selectFg;
+  }
+  &:hover {
+    color: $selectFg;
+  }
+  &:active {
+    background: $red;
+  }
+}
+
+.c-button--outline {
+  background: transparent;
+  border: 1px solid $button;
+  color: $fg;
+  &:link, &:visited {
+    color: $fg;
+  }
+  &:active {
+    background: $hl;
+    border-color: $borderLight;
+  }
+  &.c-button--focus-visible:focus, &.focus-ring:focus:not(:hover) {
+    border: 1px solid $primary;
+  }
+  &:active {
+    background: $hl;
+  }
+}
+
+.c-button--outline-primary {
+  background: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+  &:link, &:visited {
+    color: $primary;
+  }
+  &:active {
+    background: $hl;
+    border-color: $primary;
+  }
+}
+
+.c-button--outline-danger {
+  background: transparent;
+  border: 1px solid $red;
+  color: $red;
+  &:link, &:visited {
+    color: $red;
+  }
+  &:active {
+    background: $hl;
+    border-color: $red;
+  }
+}
+
+
+.c-button--disabled {
+  background: $button;
+  color: $disabled;
+}
+
+.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-button.c-button--sonic-placeholder {
+  background: $button;
+  color: $text;
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}

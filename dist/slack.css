@@ -1344,3 +1344,127 @@ a.label {
 
 .c-icon--file-figma-tiny:after {
   background-color: var(--fg); }
+
+.c-deprecated_button--link {
+  color: var(--primary); }
+
+.c-deprecated_button--disabled {
+  color: var(--disabled); }
+
+.c-deprecated_rounded_button {
+  background-color: var(--button);
+  color: var(--text); }
+  .c-deprecated_rounded_button:link, .c-deprecated_rounded_button:visited {
+    color: var(--selectFg); }
+
+.c-deprecated_rounded_button--outline:active, .c-deprecated_rounded_button--outline:link, .c-deprecated_rounded_button--outline:visited {
+  color: var(--text); }
+
+.c-deprecated_rounded_button:hover {
+  color: var(--selectFg); }
+  .c-deprecated_rounded_button:hover:after {
+    box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25); }
+
+.c-deprecated_rounded_button:active:after {
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+.c-deprecated_rounded_button--outline,
+.c-deprecated_rounded_button--transparent {
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.3); }
+
+.c-deprecated_rounded_button--outline {
+  background-color: transparent; }
+  .c-deprecated_rounded_button--outline:active, .c-deprecated_rounded_button--outline:hover {
+    background-color: var(--hl);
+    color: var(--selectFg); }
+
+.c-deprecated_rounded_button--danger {
+  background-color: var(--red);
+  color: var(--selectFg); }
+
+.c-deprecated_rounded_button--disabled {
+  background: var(--button);
+  color: var(--disabled); }
+
+.c-link--button {
+  color: var(--primary); }
+  .c-link--button:active, .c-link--button:hover {
+    color: var(--selectFg); }
+
+.c-link--focus-visible:focus {
+  color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.c-link--disabled {
+  color: var(--disabled); }
+  .c-link--disabled:active, .c-link--disabled:focus, .c-link--disabled:hover {
+    color: var(--fg); }
+
+.c-button--primary {
+  background: var(--accent);
+  color: var(--selectFg); }
+  .c-button--primary:link, .c-button--primary:visited {
+    color: var(--selectFg); }
+  .c-button--primary:hover {
+    color: var(--selectFg); }
+  .c-button--primary:active {
+    background: var(--accent); }
+
+.c-button--danger {
+  background: var(--red);
+  color: var(--selectFg); }
+  .c-button--danger:link, .c-button--danger:visited {
+    color: var(--selectFg); }
+  .c-button--danger:hover {
+    color: var(--selectFg); }
+  .c-button--danger:active {
+    background: var(--red); }
+
+.c-button--outline {
+  background: transparent;
+  border: 1px solid var(--button);
+  color: var(--fg); }
+  .c-button--outline:link, .c-button--outline:visited {
+    color: var(--fg); }
+  .c-button--outline:active {
+    background: var(--hl);
+    border-color: var(--active); }
+  .c-button--outline.c-button--focus-visible:focus, .c-button--outline.focus-ring:focus:not(:hover) {
+    border: 1px solid var(--primary); }
+  .c-button--outline:active {
+    background: var(--hl); }
+
+.c-button--outline-primary {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary); }
+  .c-button--outline-primary:link, .c-button--outline-primary:visited {
+    color: var(--primary); }
+  .c-button--outline-primary:active {
+    background: var(--hl);
+    border-color: var(--primary); }
+
+.c-button--outline-danger {
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red); }
+  .c-button--outline-danger:link, .c-button--outline-danger:visited {
+    color: var(--red); }
+  .c-button--outline-danger:active {
+    background: var(--hl);
+    border-color: var(--red); }
+
+.c-button--disabled {
+  background: var(--button);
+  color: var(--disabled); }
+
+.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.c-button.c-button--sonic-placeholder {
+  background: var(--button);
+  color: var(--text); }
+  .c-button.c-button--sonic-placeholder:hover {
+    background: var(--hl);
+    color: var(--selectFg); }
