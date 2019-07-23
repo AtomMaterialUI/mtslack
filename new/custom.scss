@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Rajdhani');
+
+:root {
+  /* Modify these to change your theme colors: */
+  --primary: #E5C17C;
+  --primaryT: #E5C17C90;
+  --accent: #2979ff;
+  --accentT: #2979ff90;
+  --accent2: #C679DD;
+  --accent2T: #C679DD90;
+  --bg: #282C34;
+  --fg: #979FAD;
+  --text: #979FAD;
+  --selectBg: #3A3F4B;
+  --selectFg: #FFF;
+  --button: #3A3F4B;
+  --secondBg: #2F333D;
+  --disabled: #6B727D;
+  --contrast: #21252B;
+  --active: #383E49;
+  --border: #282C34;
+  --hl: #383D48;
+  --tree: #3A3F4B;
+  --notif: #282C34;
+  --excluded: #3c4150;
+
+  --yellow: #E5C17C;
+  --green: #98C379;
+  --cyan: #56B6C2;
+  --blue: #61AFEF;
+  --purple: #C679DD;
+  --red: #F07178;
+  --red2: #BE5046;
+  --orange: #D19A66;
+  --orange2: #E5707B;
+  --gray: #59626F;
+  --silver: #ABB2BF;
+  --black: #21252B;
+}
+
+$primary: var(--primary);
+$primaryT: var(--primaryT);
+$accent: var(--accent);
+$accentT: var(--accentT);
+$accent2: var(--accent2);
+$accent2T: var(--accent2T);
+$bg: var(--bg);
+$fg: var(--fg);
+$text: var(--text);
+$selectBg: var(--selectBg);
+$selectFg: var(--selectFg);
+$button: var(--button);
+$bg2: var(--secondBg);
+$disabled: var(--disabled);
+$contrast: var(--contrast);
+$active: var(--active);
+$border: var(--border);
+$borderLight: var(--active);
+$hl: var(--hl);
+$tree: var(--tree);
+$notif: var(--notif);
+$excluded: var(--excluded);
+
+$yellow: var(--yellow);
+$green: var(--green);
+$cyan: var(--cyan);
+$blue: var(--blue);
+$purple: var(--purple);
+$red: var(--red);
+$red2: var(--red2);
+$orange: var(--orange);
+$orange2: var(--orange2);
+$gray: var(--gray);
+$silver: var(--silver);
+$black: var(--black);
+
+@import "core/index";

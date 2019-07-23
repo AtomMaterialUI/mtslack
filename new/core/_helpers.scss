@@ -1,0 +1,97 @@
+.bordered {
+  border: 1px solid $border !important;
+}
+
+.border_top {
+  border-top: 1px solid $border !important;
+}
+
+.border_right {
+  border-right: 1px solid $border !important;
+}
+
+.border_bottom {
+  border-bottom: 1px solid $border !important;
+}
+
+.border_left {
+  border-left: 1px solid $border !important;
+}
+
+.top_border {
+  border-top: 1px solid $border !important;
+}
+
+.right_border {
+  border-right: 1px solid $border !important;
+}
+
+.bottom_border {
+  border-bottom: 1px solid $border !important;
+}
+
+.left_border {
+  border-left: 1px solid $border !important;
+}
+
+.bullet {
+  color: $primary;
+}
+
+.muted,
+a.muted {
+  color: $disabled;
+
+  &:focus, &:hover {
+    color: $fg;
+  }
+}
+
+.badge,
+.label,
+a.badge,
+a.label {
+  background: $accent;
+  color: $fg;
+
+  &:focus, &:hover {
+    color: $selectFg;
+  }
+}
+
+.btn_link {
+  color: $accent;
+}
+
+.table,
+.table-bordered {
+  background: $bg;
+
+  td, th {
+    border-color: $border;
+  }
+}
+
+.table-striped tr:nth-child(odd) {
+  td, th {
+    background: $contrast;
+  }
+}
+
+.table-hover tr:hover {
+  td, th {
+    background: $active;
+  }
+}
+
+.uneditable-input,
+.uneditable-textarea {
+  color: $disabled;
+  background: $button;
+  border: $button;
+
+  &:focus {
+    border-color: $borderLight;
+    border-width: 2px;
+  }
+}

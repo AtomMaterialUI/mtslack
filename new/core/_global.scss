@@ -1,0 +1,197 @@
+html {
+  background: $bg;
+}
+
+body {
+  background: $bg;
+  color: $fg;
+
+  input[readonly] {
+    background: $contrast;
+  }
+}
+
+header,
+footer {
+  background: $bg2;
+  color: $fg;
+  border-top-color: $border;
+
+  ul a,
+  ul a:link {
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+
+  label,
+  .label {
+    color: $fg;
+    background: transparent;
+
+    &:hover {
+      background: $hl;
+      color: $selectFg;
+    }
+  }
+}
+
+a {
+  color: $accent;
+}
+
+a:active, a:focus, a:hover {
+  color: $selectFg;
+}
+
+a:visited, a:link {
+  color: $accent2;
+}
+
+h1, h2, h3, h4 {
+  color: $fg;
+
+  a {
+    color: $fg;
+  }
+}
+
+code {
+  border: 1px solid $border;
+  background-color: $contrast;
+  color: $accent2;
+}
+
+pre {
+  border: 1px solid $border;
+  background: $contrast;
+}
+
+blockquote:before {
+  background: $bg2;
+}
+
+hr,
+.divider {
+  border-top: 1px solid $border;
+}
+
+textarea,
+input[type="text"] {
+  background-color: $contrast;
+  border-color: $border;
+  color: $fg;
+
+  &:focus {
+    border-color: $primary;
+  }
+}
+
+input {
+  &[type=url] {
+    &:active, &:focus {
+      border-color: $primary;
+    }
+  }
+
+  &[type=text] {
+    &:active, &:focus {
+      border-color: $primary;
+    }
+  }
+
+  &[type=number] {
+    &:active, &:focus {
+      border-color: $primary;
+    }
+  }
+
+  &[type=email] {
+    &:active, &:focus {
+      border-color: $primary;
+    }
+  }
+
+  &[type=password] {
+    &:active, &:focus {
+      border-color: $primary;
+    }
+  }
+}
+
+input {
+  &[type=url],
+  &[type=text],
+  &[type=tel],
+  &[type=number],
+  &[type=email],
+  &[type=password] {
+    border: 1px solid $borderLight;
+    color: $fg;
+    background: $contrast;
+  }
+}
+
+textarea {
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:active, &:focus {
+    border-color: $primary;
+  }
+}
+
+select {
+  background-color: $button;
+  color: $text;
+  border-color: $border;
+
+  &:active, &:focus {
+    border-color: $primary;
+  }
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::-moz-placeholder,
+::-ms-input-placeholder {
+  color: $disabled;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background: $button;
+  border-color: $borderLight;
+  color: $disabled;
+}
+
+abbr {
+  border-color: $border;
+}
+
+blockquote {
+  border-color: $border;
+
+  small {
+    color: $disabled;
+  }
+}
+
+legend {
+  color: $text;
+  border: none;
+
+  small {
+    color: $text;
+  }
+}
+
