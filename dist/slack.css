@@ -1702,3 +1702,273 @@ a.c-dialog__footer_link {
 
 .c-alert--nested_box {
   color: var(--fg); }
+
+.c-inline_alert {
+  color: var(--red); }
+
+.c-hint {
+  color: var(--text); }
+
+.c-label--disabled {
+  color: var(--disabled); }
+
+.c-label__subtext {
+  color: var(--text); }
+
+.c-label__optional_tag {
+  color: var(--text); }
+
+.c-input_textarea {
+  border: 1px solid var(--active); }
+  .c-input_textarea:focus {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+    .c-input_textarea:focus:-moz-placeholder, .c-input_textarea:focus:-ms-input-placeholder, .c-input_textarea:focus::-moz-placeholder, .c-input_textarea:focus::-webkit-input-placeholder {
+      color: var(--disabled); }
+  .c-input_textarea[disabled] {
+    background: var(--button);
+    border: 1px solid var(--button); }
+  .c-input_textarea::-webkit-input-placeholder, .c-input_textarea:-moz-placeholder, .c-input_textarea::-moz-placeholder, .c-input_textarea:-ms-input-placeholder, .c-input_textarea::-webkit-input-placeholder, .c-input_textarea::-moz-placeholder, .c-input_textarea::-ms-input-placeholder, .c-input_textarea::placeholder {
+    color: var(--disabled); }
+
+.c-input_textarea--with_default {
+  border: 1px solid var(--button); }
+  .c-input_textarea--with_default:focus {
+    box-shadow: 0 0 0 1px var(--border), 0 0 0 5px var(--border); }
+
+.c-input_textarea--with_info {
+  border: 1px solid var(--blue); }
+  .c-input_textarea--with_info:focus {
+    box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px var(--blue); }
+
+.c-input_textarea--with_success {
+  border: 1px solid var(--green); }
+  .c-input_textarea--with_success:focus {
+    box-shadow: 0 0 0 1px var(--green), 0 0 0 5px var(--green); }
+
+.c-input_textarea--with_warning {
+  border: 1px solid var(--orange); }
+  .c-input_textarea--with_warning:focus {
+    box-shadow: 0 0 0 1px var(--orange), 0 0 0 5px var(--orange); }
+
+.c-input_textarea--with_error {
+  border: 1px solid var(--red); }
+  .c-input_textarea--with_error:focus {
+    box-shadow: 0 0 0 1px var(--red), 0 0 0 5px var(--red); }
+
+textarea.c-input_textarea {
+  border: 1px solid var(--active); }
+  textarea.c-input_textarea:focus {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+    textarea.c-input_textarea:focus:-moz-placeholder, textarea.c-input_textarea:focus:-ms-input-placeholder, textarea.c-input_textarea:focus::-moz-placeholder, textarea.c-input_textarea:focus::-webkit-input-placeholder {
+      color: var(--disabled); }
+  textarea.c-input_textarea[disabled] {
+    background: var(--secondBg);
+    border: 1px solid var(--border); }
+  textarea.c-input_textarea::-webkit-input-placeholder, textarea.c-input_textarea:-moz-placeholder, textarea.c-input_textarea::-moz-placeholder, textarea.c-input_textarea:-ms-input-placeholder, textarea.c-input_textarea::-webkit-input-placeholder, textarea.c-input_textarea::-moz-placeholder, textarea.c-input_textarea::-ms-input-placeholder, textarea.c-input_textarea::placeholder {
+    color: var(--disabled); }
+
+textarea.c-input_textarea--with_default {
+  border: 1px solid var(--button); }
+  textarea.c-input_textarea--with_default:focus {
+    box-shadow: 0 0 0 1px var(--button), 0 0 0 5px var(--button); }
+
+textarea.c-input_textarea--with_info {
+  border: 1px solid var(--blue); }
+  textarea.c-input_textarea--with_info:focus {
+    box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px var(--blue); }
+
+textarea.c-input_textarea--with_success {
+  border: 1px solid var(--green); }
+  textarea.c-input_textarea--with_success:focus {
+    box-shadow: 0 0 0 1px var(--green), 0 0 0 5px var(--green); }
+
+textarea.c-input_textarea--with_warning {
+  border: 1px solid var(--orange); }
+  textarea.c-input_textarea--with_warning:focus {
+    box-shadow: 0 0 0 1px var(--orange), 0 0 0 5px var(--orange); }
+
+textarea.c-input_textarea--with_error {
+  border: 1px solid var(--red); }
+  textarea.c-input_textarea--with_error:focus {
+    box-shadow: 0 0 0 1px var(--red), 0 0 0 5px var(--red); }
+
+.c-input_text {
+  border: 1px solid var(--button); }
+  .c-input_text:focus {
+    box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px var(--blue); }
+    .c-input_text:focus:-moz-placeholder, .c-input_text:focus:-ms-input-placeholder, .c-input_text:focus::-moz-placeholder, .c-input_text:focus::-webkit-input-placeholder {
+      color: var(--disabled); }
+  .c-input_text[disabled] {
+    background: var(--secondBg);
+    border: 1px solid var(--button); }
+  .c-input_text::-webkit-input-placeholder, .c-input_text:-moz-placeholder, .c-input_text::-moz-placeholder, .c-input_text:-ms-input-placeholder, .c-input_text::-webkit-input-placeholder, .c-input_text::-moz-placeholder, .c-input_text::-ms-input-placeholder, .c-input_text::placeholder {
+    color: var(--disabled); }
+
+.c-input_text--with_default {
+  border: 1px solid var(--button); }
+  .c-input_text--with_default:focus {
+    box-shadow: 0 0 0 1px var(--active), 0 0 0 5px var(--active); }
+
+.c-input_text--with_info {
+  border: 1px solid var(--blue); }
+  .c-input_text--with_info:focus {
+    box-shadow: 0 0 0 1px var(--blue), 0 0 0 5px var(--blue); }
+
+.c-input_text--with_success {
+  border: 1px solid var(--green); }
+  .c-input_text--with_success:focus {
+    box-shadow: 0 0 0 1px var(--green), 0 0 0 5px var(--green); }
+
+.c-input_text--with_warning {
+  border: 1px solid var(--orange); }
+  .c-input_text--with_warning:focus {
+    box-shadow: 0 0 0 1px var(--orange), 0 0 0 5px var(--orange); }
+
+.c-input_text--with_error {
+  border: 1px solid var(--red); }
+  .c-input_text--with_error:focus {
+    box-shadow: 0 0 0 1px var(--red), 0 0 0 5px var(--red); }
+
+.c-input_character_count__characters-remaining {
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--accent); }
+
+.c-input_character_count--invalid .c-input_character_count__characters-remaining {
+  color: var(--red); }
+
+.p-oauth_scope_info__spacer_icon {
+  color: var(--accent2); }
+
+.p-oauth_scope_info__dangerous_scopes,
+.p-oauth_scope_info__safe_scopes {
+  border-bottom: 1px solid var(--secondBg); }
+
+.p-oauth_scope_info__dangerous_scopes {
+  border-left: 5px solid var(--accent2);
+  border-top: 1px solid var(--secondBg);
+  border-right: 1px solid var(--secondBg); }
+
+.p-oauth_scope_info__dangerous_scope:not(:first-child),
+.p-oauth_scope_info__safe_scope {
+  border-top: 1px solid var(--secondBg); }
+
+.c-presence--active {
+  color: var(--accent); }
+
+.c-presence--away {
+  color: var(--active); }
+
+.c-presence--inverted {
+  color: var(--selectFg); }
+
+.c-team_icon--default {
+  background-color: var(--active);
+  color: var(--fg); }
+
+.c-team_icon--pending {
+  border: 2px dashed var(--border);
+  color: var(--disabled); }
+
+.c-channel_name--archived {
+  color: var(--text); }
+
+.c-channel_name__team_name {
+  color: var(--text); }
+
+.p-app_permission_dialog .c-dialog__footer {
+  border-top: 1px solid var(--active); }
+
+.p-app_permission_dialog .c-dialog__cancel {
+  background: var(--secondBg); }
+  .p-app_permission_dialog .c-dialog__cancel:hover {
+    background: var(--selectBg); }
+
+.p-app_permission_dialog__app_icon--placeholder {
+  background: var(--secondBg); }
+
+.c-fullscreen_modal__breadcrumb_line {
+  background: var(--secondBg); }
+
+.c-fullscreen_modal__breadcrumb_circle_icon {
+  background: var(--bg);
+  color: var(--text); }
+
+.c-fullscreen_modal__breadcrumb_text {
+  color: var(--text); }
+
+.c-fullscreen_modal__title--small {
+  color: var(--fg); }
+
+.c-fullscreen_modal__breadcrumb_animated_step {
+  background: var(--primary); }
+
+@keyframes color_fade {
+  0% {
+    color: var(--text); }
+  to {
+    color: var(--primary); } }
+
+.c-fullscreen_modal__content {
+  background-color: var(--bg); }
+
+.c-fullscreen_modal__content--with_frameless_padding:before {
+  background-color: var(--bg);
+  box-shadow: 0 1px 0 0 var(--secondBg); }
+
+.c-fullscreen_modal__back, .c-fullscreen_modal__close {
+  color: var(--text); }
+
+.c-fullscreen_modal__back:hover, .c-fullscreen_modal__close:hover {
+  background-color: var(--secondBg);
+  color: var(--fg); }
+
+.c-fullscreen_modal__back:active, .c-fullscreen_modal__close:active {
+  background-color: var(--accent);
+  color: var(--bg); }
+
+.c-fullscreen_modal__back--with_header:active, .c-fullscreen_modal__close--with_header:active {
+  color: var(--primary); }
+
+.c-fullscreen_modal__cancel:focus, .c-fullscreen_modal__go:focus, .c-fullscreen_modal__secondary:focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.c-fullscreen_modal__header_image_wrapper:after {
+  border: 1px solid var(--border); }
+
+.c-fullscreen_modal__body {
+  color: var(--fg); }
+  .c-fullscreen_modal__body::-webkit-scrollbar-thumb {
+    color: var(--accent); }
+  .c-fullscreen_modal__body::-webkit-scrollbar-track {
+    color: var(--bg);
+    background: var(--secondBg); }
+  .c-fullscreen_modal__body::-webkit-scrollbar-thumb {
+    background: var(--accent); }
+  .c-fullscreen_modal__body::-webkit-scrollbar-corner {
+    background: var(--bg); }
+
+.c-fullscreen_modal__content--with_footer .c-fullscreen_modal__footer {
+  background-color: var(--secondBg); }
+
+.c-sk-modal_header {
+  background-color: var(--bg); }
+
+.c-scrollbar__bar {
+  background: var(--contrast); }
+
+.c-scrollbar--monkey .c-scrollbar__track {
+  background: var(--contrast); }
+
+.c-scrollbar--monkey .c-scrollbar__bar {
+  background: var(--accent);
+  box-shadow: 0 3px 0 var(--border), 0 -3px 0 var(--active); }
+
+.c-sk-modal_content {
+  background: var(--bg); }
+
+.c-sk-modal_content--indicateTop:after {
+  border-top: 1px solid var(--border); }
+
+.c-sk-modal_content--indicateBottom:after {
+  border-bottom: 1px solid var(--border); }

@@ -1,0 +1,13 @@
+.c-scrollbar__bar {
+  background: $contrast;
+}
+
+.c-scrollbar--monkey {
+  .c-scrollbar__track {
+    background: $contrast;
+  }
+  .c-scrollbar__bar {
+    background: $accent;
+    box-shadow: 0 3px 0 $border, 0 -3px 0 $borderLight;
+  }
+}

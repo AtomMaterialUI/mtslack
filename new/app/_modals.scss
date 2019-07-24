@@ -1,0 +1,12 @@
+
+.c-sk-modal_content {
+  background: $bg;
+}
+
+.c-sk-modal_content--indicateTop:after {
+  border-top: 1px solid $border;
+}
+
+.c-sk-modal_content--indicateBottom:after {
+  border-bottom: 1px solid $border;
+}

@@ -1,0 +1,17 @@
+.p-app_permission_dialog {
+  .c-dialog__footer {
+    border-top: 1px solid $borderLight;
+  }
+
+  .c-dialog__cancel {
+    background: $bg2;
+
+    &:hover {
+      background: $selectBg;
+    }
+  }
+}
+
+.p-app_permission_dialog__app_icon--placeholder {
+  background: $bg2;
+}

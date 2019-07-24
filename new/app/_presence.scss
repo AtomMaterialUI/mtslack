@@ -1,0 +1,29 @@
+.c-presence--active {
+  color: $accent;
+}
+
+.c-presence--away {
+  color: $active;
+}
+
+.c-presence--inverted {
+  color: $selectFg;
+}
+
+.c-team_icon--default {
+  background-color: $active;
+  color: $fg;
+}
+
+.c-team_icon--pending {
+  border: 2px dashed $border;
+  color: $disabled;
+}
+
+.c-channel_name--archived {
+  color: $text;
+}
+
+.c-channel_name__team_name {
+  color: $text;
+}
