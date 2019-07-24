@@ -1,0 +1,87 @@
+.c-dialog_speed_bump_overlay {
+  background: $disabled;
+}
+
+.c-dialog_speed_bump {
+  background-color: $bg;
+  border-top: 1px solid $borderLight;
+}
+
+.c-dialog__content {
+  background: $bg;
+}
+
+.c-dialog__cancel {
+  background: $bg;
+}
+
+.c-dialog__header {
+  background: $bg;
+}
+
+.c-dialog__header--overflow {
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-dialog__title {
+  color: $fg;
+}
+
+.c-dialog__body--slack_scrollbar {
+  &::-webkit-scrollbar-thumb {
+    color: $bg;
+  }
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+}
+
+.c-dialog__body--slack_scrollbar_with_padding {
+  &::-webkit-scrollbar-thumb {
+    color: $bg;
+  }
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background:$bg2
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $accent
+  }
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+    border-left: 4px solid $bg;
+    border-right: 4px solid $bg;
+  }
+}
+
+.c-dialog__footer {
+  background: $bg;
+}
+
+.c-dialog__footer--overflow {
+  border-top: 1px solid $borderLight;
+}
+
+.c-dialog__overflow_padding--scroll_border {
+  border-top: 1px solid $borderLight;
+}
+
+.c-dialog__footer_text {
+  color: $text;
+}
+
+a.c-dialog__footer_link {
+  color: $text;
+  &:hover {
+    color: $primary;
+  }
+}

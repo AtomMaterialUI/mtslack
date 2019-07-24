@@ -1468,3 +1468,237 @@ a.label {
   .c-button.c-button--sonic-placeholder:hover {
     background: var(--hl);
     color: var(--selectFg); }
+
+.c-infinite_spinner__bg {
+  stroke: var(--primary); }
+
+.c-infinite_spinner--button-white .c-infinite_spinner__bg, .c-infinite_spinner--button-white .c-infinite_spinner__path {
+  stroke: var(--bg); }
+
+.c-infinite_spinner--white .c-infinite_spinner__path {
+  stroke: var(--bg); }
+
+.c-infinite_spinner--blue .c-infinite_spinner__path {
+  stroke: var(--accent); }
+
+.c-toast {
+  background: var(--notif);
+  color: var(--fg); }
+
+.c-toast .c-link--button {
+  color: var(--fg); }
+  .c-toast .c-link--button:active, .c-toast .c-link--button:focus, .c-toast .c-link--button:hover {
+    color: var(--selectFg); }
+
+.c-toast a {
+  color: var(--primary); }
+  .c-toast a:active, .c-toast a:focus, .c-toast a:hover {
+    color: var(--selectFg); }
+
+.c-toast__close-button {
+  color: var(--fg); }
+
+.c-toast .c-button--focus-visible:focus, .c-toast .c-link--focus-visible:focus, .c-toast .focus-ring {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.c-icon_button__badge {
+  background: var(--contrast); }
+
+.c-icon_button--light .c-icon_button__badge {
+  background-color: var(--accent); }
+
+.c-icon_button--dark .c-icon_button__badge {
+  background-color: var(--accent); }
+
+.c-icon_button--light {
+  color: var(--selectFg); }
+  .c-icon_button--light.c-button-unstyled, .c-icon_button--light:link {
+    color: var(--text); }
+  .c-icon_button--light.c-button-unstyled:hover, .c-icon_button--light:hover, .c-icon_button--light:link:hover {
+    background: var(--hl);
+    color: var(--selectFg); }
+  .c-icon_button--light.c-button-unstyled:active, .c-icon_button--light:active, .c-icon_button--light:link:active {
+    background: var(--active); }
+
+.c-icon_button--dark {
+  color: var(--selectFg); }
+  .c-icon_button--dark.c-button-unstyled, .c-icon_button--dark:link {
+    color: var(--text); }
+  .c-icon_button--dark.c-button-unstyled:hover, .c-icon_button--dark:hover, .c-icon_button--dark:link:hover {
+    color: var(--selectFg);
+    background: var(--hl); }
+  .c-icon_button--dark.c-button-unstyled:active, .c-icon_button--dark:active, .c-icon_button--dark:link:active {
+    background: var(--active); }
+
+.c-tooltip__tip {
+  color: var(--fg);
+  background-color: var(--notif); }
+
+.c-tooltip__tip--left .c-tooltip__tip__arrow {
+  border-left-color: var(--border); }
+
+.c-tooltip__tip--right .c-tooltip__tip__arrow {
+  border-right-color: var(--border); }
+
+.c-tooltip__tip--top .c-tooltip__tip__arrow {
+  border-top-color: var(--border); }
+
+.c-tooltip__tip--top-left .c-tooltip__tip__arrow {
+  border-top-color: var(--border); }
+
+.c-tooltip__tip--top-right .c-tooltip__tip__arrow {
+  border-top-color: var(--border); }
+
+.c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+  border-bottom-color: var(--border); }
+
+.c-tooltip__tip--bottom-left .c-tooltip__tip__arrow {
+  border-bottom-color: var(--border); }
+
+.c-tooltip__tip--bottom-right .c-tooltip__tip__arrow {
+  border-bottom-color: var(--border); }
+
+.c-tooltip__tip--success {
+  background-color: var(--green); }
+  .c-tooltip__tip--success.c-tooltip__tip--left .c-tooltip__tip__arrow {
+    border-left-color: var(--green); }
+  .c-tooltip__tip--success.c-tooltip__tip--right .c-tooltip__tip__arrow {
+    border-right-color: var(--green); }
+  .c-tooltip__tip--success.c-tooltip__tip--top-left .c-tooltip__tip__arrow, .c-tooltip__tip--success.c-tooltip__tip--top-right .c-tooltip__tip__arrow, .c-tooltip__tip--success.c-tooltip__tip--top .c-tooltip__tip__arrow {
+    border-top-color: var(--green); }
+  .c-tooltip__tip--success.c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, .c-tooltip__tip--success.c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, .c-tooltip__tip--success.c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+    border-bottom-color: var(--green); }
+
+.c-tooltip__sonic_placeholder {
+  color: var(--disabled); }
+
+.c-dialog_speed_bump_overlay {
+  background: var(--disabled); }
+
+.c-dialog_speed_bump {
+  background-color: var(--bg);
+  border-top: 1px solid var(--active); }
+
+.c-dialog__content {
+  background: var(--bg); }
+
+.c-dialog__cancel {
+  background: var(--bg); }
+
+.c-dialog__header {
+  background: var(--bg); }
+
+.c-dialog__header--overflow {
+  border-bottom: 1px solid var(--active); }
+
+.c-dialog__title {
+  color: var(--fg); }
+
+.c-dialog__body--slack_scrollbar::-webkit-scrollbar-thumb {
+  color: var(--bg); }
+
+.c-dialog__body--slack_scrollbar::-webkit-scrollbar-track {
+  color: var(--bg);
+  background: var(--secondBg); }
+
+.c-dialog__body--slack_scrollbar::-webkit-scrollbar-thumb {
+  background: var(--accent); }
+
+.c-dialog__body--slack_scrollbar::-webkit-scrollbar-corner {
+  background: var(--bg); }
+
+.c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-thumb {
+  color: var(--bg); }
+
+.c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-track {
+  color: var(--bg);
+  background: var(--secondBg); }
+
+.c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-thumb {
+  background: var(--accent); }
+
+.c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-corner {
+  background: var(--bg); }
+
+.c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-thumb, .c-dialog__body--slack_scrollbar_with_padding::-webkit-scrollbar-track {
+  border-left: 4px solid var(--bg);
+  border-right: 4px solid var(--bg); }
+
+.c-dialog__footer {
+  background: var(--bg); }
+
+.c-dialog__footer--overflow {
+  border-top: 1px solid var(--active); }
+
+.c-dialog__overflow_padding--scroll_border {
+  border-top: 1px solid var(--active); }
+
+.c-dialog__footer_text {
+  color: var(--text); }
+
+a.c-dialog__footer_link {
+  color: var(--text); }
+  a.c-dialog__footer_link:hover {
+    color: var(--primary); }
+
+.c-new_locale_toast__close_button {
+  color: var(--fg);
+  background: var(--bg); }
+
+.c-new_locale_toast .c-link--button:hover,
+.c-new_locale_toast__close_button:hover {
+  color: var(--primary); }
+
+.c-sk-modal {
+  background-color: var(--bg); }
+
+.c-sk-modal__close_button--inverted {
+  background: var(--selectFg) !important; }
+
+.c-sk-modal_title_bar__text h3:nth-child(2) {
+  color: var(--text); }
+
+.c-sk-modal_title_bar__icon {
+  background-color: var(--bg); }
+
+.c-sk-modal_footer {
+  background-color: var(--bg); }
+
+.c-alert--level_default {
+  background-color: var(--notif);
+  border: 1px solid var(--active); }
+  .c-alert--level_default .c-alert__icon {
+    color: var(--fg); }
+
+.c-alert--level_info {
+  background-color: var(--blue);
+  border: 1px solid var(--blue); }
+  .c-alert--level_info .c-alert__icon {
+    color: var(--fg); }
+
+.c-alert--level_success {
+  background-color: var(--green);
+  border: 1px solid var(--green); }
+  .c-alert--level_success .c-alert__icon {
+    color: var(--fg); }
+
+.c-alert--level_warning {
+  background-color: var(--orange);
+  border: 1px solid var(--orange); }
+  .c-alert--level_warning .c-alert__icon {
+    color: var(--fg); }
+
+.c-alert--level_error {
+  background-color: var(--red);
+  border: 1px solid var(--red); }
+  .c-alert--level_error .c-alert__icon {
+    color: var(--fg); }
+
+.c-alert--boxed {
+  color: var(--fg); }
+
+.c-alert--inline {
+  color: var(--fg); }
+
+.c-alert--nested_box {
+  color: var(--fg); }

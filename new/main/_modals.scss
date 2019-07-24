@@ -1,0 +1,31 @@
+.c-new_locale_toast__close_button {
+  color: $fg;
+  background: $bg;
+}
+
+.c-new_locale_toast .c-link--button:hover,
+.c-new_locale_toast__close_button:hover {
+  color: $primary;
+}
+
+.c-sk-modal {
+  background-color: $bg;
+}
+
+.c-sk-modal__close_button--inverted {
+  background: $selectFg !important;
+}
+
+.c-sk-modal_title_bar__text {
+  h3:nth-child(2) {
+    color: $text;
+  }
+}
+
+.c-sk-modal_title_bar__icon {
+  background-color: $bg;
+}
+
+.c-sk-modal_footer {
+  background-color: $bg;
+}

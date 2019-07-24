@@ -1,0 +1,39 @@
+.c-icon_button__badge {
+  background: $contrast;
+}
+
+.c-icon_button--light .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button--dark .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button--light {
+  color: $selectFg;
+  &.c-button-unstyled, &:link {
+    color: $text;
+  }
+  &.c-button-unstyled:hover, &:hover, &:link:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+  &.c-button-unstyled:active, &:active, &:link:active {
+    background: $active;
+  }
+}
+
+.c-icon_button--dark {
+  color: $selectFg;
+  &.c-button-unstyled, &:link {
+    color: $text;
+  }
+  &.c-button-unstyled:hover, &:hover, &:link:hover {
+    color: $selectFg;
+    background: $hl;
+  }
+  &.c-button-unstyled:active, &:active, &:link:active {
+    background: $active;
+  }
+}

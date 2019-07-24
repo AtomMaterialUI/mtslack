@@ -1,0 +1,51 @@
+.c-alert--level_default {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+  .c-alert__icon {
+    color: $fg;
+  }
+}
+
+.c-alert--level_info {
+  background-color: $blue;
+  border: 1px solid $blue;
+  .c-alert__icon {
+    color: $fg;
+  }
+}
+
+.c-alert--level_success {
+  background-color: $green;
+  border: 1px solid $green;
+  .c-alert__icon {
+    color: $fg;
+  }
+}
+
+.c-alert--level_warning {
+  background-color: $orange;
+  border: 1px solid $orange;
+  .c-alert__icon {
+    color: $fg;
+  }
+}
+
+.c-alert--level_error {
+  background-color: $red;
+  border: 1px solid $red;
+  .c-alert__icon {
+    color: $fg;
+  }
+}
+
+.c-alert--boxed {
+  color: $fg;
+}
+
+.c-alert--inline {
+  color: $fg;
+}
+
+.c-alert--nested_box {
+  color: $fg;
+}
