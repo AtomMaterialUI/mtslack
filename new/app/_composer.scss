@@ -1,0 +1,57 @@
+.p-texty_length_warning__warning {
+  background: $red;
+  color: $selectFg;
+}
+
+.p-composer__body {
+  background: $contrast;
+}
+
+.p-composer__button {
+  background: $button;
+  &[disabled] {
+    color: $disabled;
+    &:hover {
+      background-color: $hl;
+    }
+  }
+  &:focus, &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+
+.p-composer__button--selected, .p-composer__button:active {
+  background-color: $active;
+  color: $fg;
+}
+
+.p-composer__button--selected:focus:not(:active) {
+  box-shadow: inset 0 0 1px $borderLight;
+}
+
+.p-composer__separator {
+  background: $borderLight;
+}
+
+.p-composer__link_form {
+  background: $contrast;
+  .p-composer__link_form_button {
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+  .p-composer__link_remove_button {
+    background: transparent;
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+}
+
+.p-composer__tip_subtitle {
+  color: $text;
+}

@@ -199,3 +199,17 @@ textarea {
 .no_touch textarea:hover {
   border-color: $hl;
 }
+
+.c-input_text_overlay {
+  &:before {
+    color: $disabled;
+  }
+  &:after {
+    color: $disabled;
+    background: $bg;
+  }
+}
+
+.c-input_text_icon__icon {
+  color: $fg;
+}

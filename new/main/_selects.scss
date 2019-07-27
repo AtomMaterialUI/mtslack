@@ -1,0 +1,106 @@
+.c-select_input::-webkit-input-placeholder,
+.c-select_input__content::-webkit-input-placeholder {
+  color: $disabled;
+}
+
+.c-select_input {
+  &:-moz-placeholder,
+  &::-moz-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-select_input__content {
+  &:-moz-placeholder,
+  &::-moz-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-select_input:-ms-input-placeholder,
+.c-select_input__content:-ms-input-placeholder,
+.c-select_input::-webkit-input-placeholder,
+.c-select_input__content::-webkit-input-placeholder,
+.c-select_input::-moz-placeholder,
+.c-select_input__content::-moz-placeholder,
+.c-select_input::-ms-input-placeholder,
+.c-select_input__content::-ms-input-placeholder,
+.c-select_input::placeholder,
+.c-select_input__content::placeholder {
+  color: $disabled;
+}
+
+.c-select_input {
+  border: 1px solid $button;
+  background: $button;
+  color: $fg;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    color: $disabled
+  }
+}
+
+.c-select_input--offscreen {
+  color: transparent;
+}
+
+.c-select_input__icon_container {
+  color: $fg;
+}
+
+.c-select_input--invalid {
+  border-color: $red;
+}
+
+.c-select_options_list__wrapper {
+  background-color: $bg2;
+  box-shadow: 0 0 0 1px rgba(29, 28, 29, 0.15), 0 5px 10px rgba(29, 28, 29, 0.12);
+}
+
+.c-select_options_list__option {
+  color: $fg;
+}
+
+.c-select_options_list__option--disabled {
+  color: $disabled;
+
+  &:hover {
+    background-color: $fg;
+  }
+}
+
+.c-select_options_list__option--selected {
+  color: $selectFg;
+}
+
+.c-select_options_list__option--active {
+  background-color: $tree;
+  color: $primary;
+
+  &.c-select_options_list__option--disabled {
+    background-color: $tree;
+    color: $disabled;
+  }
+}
+
+.c-select_options_list__clear_option {
+  color: $fg;
+
+  &.c-select_options_list__option--active {
+    color: $accent;
+  }
+}
+
+.c-select_options_list__group_header {
+  color: $fg;
+}

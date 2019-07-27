@@ -1,0 +1,154 @@
+.c-team__display-name,
+.c-unified_member__display-name,
+.c-usergroup__handle {
+  color: $fg;
+}
+
+.c-unified_member .presence.active,
+.c-unified_member__presence.active {
+  color: $accent;
+}
+
+
+.c-unified_member__current-status--legacy:before,
+.c-unified_member__secondary-name--large + .c-unified_member__current-status--large:before,
+.c-unified_member__secondary-name--medium + .c-unified_member__current-status--medium:before {
+  color: $text;
+}
+
+.c-unified_member .external_team_badge {
+  box-shadow: 0 0 0 2px $selectFg;
+  background-color: $selectBg;
+
+  &.default {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:after {
+    box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.08);
+  }
+}
+
+.c-team__name--small,
+.c-unified_member__name--small,
+.c-usergroup__name--small {
+  color: $text;
+}
+
+.c-unified_member--small {
+  .presence {
+    color: $text;
+  }
+}
+
+
+.c-unified_member--small .c-unified_member__draft_icon {
+  color: $text;
+}
+
+.c-unified_member--small {
+  .team_image {
+    &.icon_16 {
+      border: 1px solid $borderLight;
+    }
+
+    &.default {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+}
+
+
+.c-unified_member__context.c-unified_member__not-in-channel-context--small,
+.c-unified_member__label--small,
+.c-usergroup__context.c-usergroup__not-in-channel-context--small {
+  color: $disabled;
+}
+
+.c-unified_member--dark {
+  .c-presence {
+    color: $accent;
+  }
+
+  .c-unified_member__current-status {
+    color: $text;
+
+    &:before {
+      color: $text;
+    }
+  }
+
+  .c-unified_member__display-name,
+  .c-unified_member__label--small,
+  .c-unified_member__name,
+  .c-unified_member__not-in-channel-context--small,
+  .c-unified_member__secondary-name,
+  .presence {
+    color: $fg;
+  }
+
+}
+
+.c-unified_member--medium,
+.c-usergroup--medium {
+  color: $text;
+}
+
+
+.c-base_list_entity--small.c-base_list_entity--active {
+  .c-base_entity__subtext,
+  .c-unified_member__display-name,
+  .c-unified_member__presence,
+  .c-unified_member__secondary-name {
+    color: $fg;
+  }
+}
+
+.c-unified_member__secondary-name--medium {
+  color: $text;
+}
+
+.c-unified_member--medium {
+  .presence {
+    color: $accent;
+  }
+}
+
+.c-unified_member--large {
+  color: $fg;
+}
+
+
+.c-unified_member__display-name--large,
+.c-unified_member__title--large {
+  color: $fg;
+}
+
+.c-unified_member__other-names--large {
+  color: $text;
+}
+
+
+.c-usergroup--small .c-usergroup__icon {
+  background-color: $hl;
+  color: $fg;
+}
+
+.c-usergroup--medium .c-usergroup__icon {
+  background-color: $hl;
+  color: $fg;
+}
+
+.c-usergroup__name--medium {
+  color: $fg;
+}
+
+.c-usergroup__not-in-channel-context--small {
+  color: $disabled;
+}
+
+.c-usergroup--small_select__context {
+  color: $text;
+}
