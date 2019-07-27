@@ -1,0 +1,20 @@
+.c-virtual_list--slack_scrollbar {
+  &::-webkit-scrollbar-thumb {
+    color: $bg;
+  }
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+}
+
+
+.c-virtual_list__item--focus:focus:after {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}

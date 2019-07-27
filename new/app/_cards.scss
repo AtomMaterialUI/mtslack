@@ -1,0 +1,21 @@
+.c-card {
+  border: 1px solid $borderLight;
+}
+
+.c-card--info {
+  border-color: $accent;
+}
+
+.c-card--warning {
+  border-color: $orange;
+}
+
+.c-card__header {
+  background-color: $bg2;
+  border-bottom: 1px solid $borderLight;
+  color: $fg;
+}
+
+.c-card__section {
+  border-bottom: 1px solid $borderLight;
+}

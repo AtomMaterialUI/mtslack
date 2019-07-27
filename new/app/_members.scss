@@ -1,0 +1,24 @@
+.p-member_profile_card {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-member_profile_card__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-member_profile_card__picture_hint {
+  background: $accent2;
+  color: $selectFg;
+}
+
+.p-member_profile_card__special_text {
+  color: $text;
+}
+
+.p-member_profile_card__context_action {
+  color: $disabled;
+  &:focus, &:hover {
+    color: $fg;
+  }
+}

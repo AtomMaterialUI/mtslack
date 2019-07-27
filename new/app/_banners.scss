@@ -1,0 +1,42 @@
+.p-app_external_team_banner {
+  background: $contrast;
+}
+
+.p-app_external_team_banner__team_icon {
+  box-shadow: 0 0 0 2px $primary;
+}
+
+.c-banner {
+  display: flex;
+  font-weight: 700;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  min-height: 48px;
+}
+
+.c-banner--info {
+  background-color: $blue;
+  color: $selectFg;
+}
+
+.c-banner--success {
+  background-color: $green;
+  color: $selectFg;
+}
+
+.c-banner--warning {
+  background-color: $orange;
+  color: $selectFg;
+}
+
+.c-banner--urgent {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.c-banner--neutral {
+  background-color: $notif;
+  color: $fg;
+}

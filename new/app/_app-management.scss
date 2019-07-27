@@ -1,0 +1,31 @@
+.p-app_management_modal__channel_list_item {
+  &:not(:first-child) {
+    border-top: 1px solid $border;
+  }
+}
+
+
+.p-app_management_modal__member_list_item {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  &:hover {
+    background: $hl;
+  }
+}
+
+.c-virtual_list__item:not(:first-child) .p-app_management_modal__member_list_item {
+  border-top: 1px solid $border;
+}
+
+.app_management_modal__member_list_secondary_name {
+  color: $disabled;
+}
+
+.p-app_management_modal__member_list_scope_info {
+  color: $text;
+  &:focus, &:hover {
+    color: $selectFg;
+  }
+}

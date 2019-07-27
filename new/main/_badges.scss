@@ -1,0 +1,10 @@
+.c-app_badge, .c-app_label {
+  color: $selectFg;
+  background-color: $accent2;
+  padding: 2px;
+  height: auto;
+}
+
+.c-app_badge--inverse {
+  color: $bg;
+}

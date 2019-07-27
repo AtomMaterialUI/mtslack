@@ -192,3 +192,10 @@ textarea {
 .c-input_character_count--invalid .c-input_character_count__characters-remaining {
   color: $red;
 }
+
+.no_touch .plastic_select:hover,
+.no_touch input:hover,
+.no_touch select:hover,
+.no_touch textarea:hover {
+  border-color: $hl;
+}

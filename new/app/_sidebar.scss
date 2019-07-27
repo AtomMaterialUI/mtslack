@@ -1,0 +1,16 @@
+.c-sidebar_menu__list_item {
+  color: $fg;
+  &.is_active {
+    background: $tree;
+    border: 1px solid $tree;
+    color: $selectFg;
+  }
+  &:not(.is_active):hover {
+    color: inherit;
+    background-color: $selectBg;
+  }
+}
+
+a.c-sidebar_menu__list_item {
+  color: $primary;
+}

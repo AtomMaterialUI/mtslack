@@ -1,0 +1,66 @@
+.c-input_checkbox {
+  background: $bg;
+
+  &[disabled] {
+    background: $disabled;
+  }
+
+  &:focus {
+    outline-color: $primary;
+  }
+}
+
+input {
+  &.c-input_checkbox,
+  &[type=checkbox].c-input_checkbox {
+    background: $bg;
+  }
+
+  &.c-input_checkbox[disabled],
+  &[type=checkbox].c-input_checkbox[disabled] {
+    background: $disabled;
+    border-color: $disabled;
+  }
+
+  &.c-input_checkbox:focus,
+  &[type=checkbox].c-input_checkbox:focus {
+    outline-color: $primary;
+  }
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $accent;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 2em;
+  padding: 0 !important;
+  position: relative;
+
+  &:checked {
+    background: $accent;
+  }
+
+  &:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 1px !important;
+    top: 5px !important;
+    background: $bg !important;
+    width: 2px !important;
+    height: 2px !important;
+    box-shadow: 2px 0 0 $bg,
+    4px 0 0 $bg,
+    4px -2px 0 $bg,
+    4px -4px 0 $bg,
+    4px -6px 0 $bg,
+    4px -8px 0 $bg !important;
+    transform: rotate(45deg) !important;
+  }
+}
+
+.no_touch input[type=checkbox]:hover {
+  border-color: transparent;
+}

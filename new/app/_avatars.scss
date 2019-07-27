@@ -1,0 +1,38 @@
+.c-avatar--no_image {
+  background-color: $bg2;
+}
+
+.c-avatar__additional_overlay {
+  color: $bg;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.c-avatar .c-avatar__team_icon {
+  box-shadow: 0 0 0 2px $borderLight;
+}
+
+.c-avatar__badge--restricted {
+  background: $bg;
+  .c-avatar__badge_inner {
+    background: $disabled;
+  }
+}
+
+.c-avatar__badge--ultra_restricted {
+  &:before {
+    border-bottom: 16px solid $borderLight;
+  }
+  .c-avatar__badge_inner {
+    border-bottom: 11px solid $disabled;
+    &:before {
+      box-shadow: inset -1px 2px $borderLight;
+    }
+    &:after {
+      box-shadow: inset 2px -1px $borderLight;
+    }
+  }
+}
+
+.c-avatar__tooltip_detail {
+  color: $hl;
+}

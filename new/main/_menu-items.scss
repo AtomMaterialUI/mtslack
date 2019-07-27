@@ -1,0 +1,253 @@
+.c-menu_item__button {
+  color: $text;
+
+  &:link, &:visited {
+    color: $primary;
+  }
+}
+
+.c-menu_item__icon {
+  color: $fg;
+
+  img {
+    border: 1px solid $border;
+  }
+}
+
+.c-menu_item__link_icon,
+.c-menu_item__shortcut {
+  color: $text;
+}
+
+.c-menu_item__button--highlighted {
+  .c-menu_item__link_icon,
+  .c-menu_item__shortcut {
+    color: $selectFg;
+  }
+}
+
+.c-menu_item__glimmer {
+  color: $primary;
+}
+
+.c-menu_item__description {
+  color: $text;
+}
+
+.c-menu_item--standalone:hover {
+  background-color: $hl;
+  color: $selectFg;
+
+  &:link {
+    background-color: $hl;
+    color: $primary;
+  }
+
+  &:visited {
+    background-color: $hl;
+    color: $accent2;
+  }
+}
+
+.c-menu_item__button--highlighted {
+  background-color: $selectBg;
+  color: $selectFg;
+
+  &:link {
+    background-color: $selectBg;
+    color: $primary;
+  }
+
+  &:visited {
+    background-color: $selectBg;
+    color: $accent2;
+  }
+}
+
+.no_touch a.c-menu_item__button--highlighted {
+  background-color: $selectBg;
+  color: $selectFg;
+
+  &:link {
+    background-color: $selectBg;
+    color: $primary;
+  }
+
+  &:visited {
+    background-color: $selectBg;
+    color: $accent2;
+  }
+}
+
+.c-menu_item--standalone:hover {
+  .c-menu_item__description,
+  .c-menu_item__glimmer,
+  .c-menu_item__icon {
+    color: $fg;
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-menu_item__button--highlighted {
+  .c-menu_item__description,
+  .c-menu_item__glimmer,
+  .c-menu_item__icon {
+    color: $fg;
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+}
+
+.no_touch a.c-menu_item__button--highlighted {
+  .c-menu_item__description,
+  .c-menu_item__glimmer,
+  .c-menu_item__icon {
+    color: $fg;
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer,
+    .c-menu_item__icon {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-menu_item__button--danger {
+  color: $red;
+
+  .c-menu_item__description {
+    color: $red;
+  }
+
+  &:link, &:visited {
+    color: $red;
+
+    .c-menu_item__description {
+      color: $red;
+    }
+  }
+
+  &.c-menu_item__button--highlighted {
+    color: $selectFg;
+    background-color: $red;
+
+    &:link,
+    &:visited {
+      color: $selectFg;
+      background-color: $red;
+    }
+
+    .c-menu_item__description,
+    &:link .c-menu_item__description,
+    &:visited .c-menu_item__description {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-menu_item__button--disabled {
+  color: $disabled;
+
+  &.c-menu_item__button--danger {
+    color: $disabled;
+
+    &:link, &:visited {
+      color: $disabled;
+    }
+  }
+
+  &:link, &:visited {
+    color: $disabled;
+  }
+
+  &.c-menu_item__button--danger {
+    .c-menu_item__description,
+    &:link .c-menu_item__description,
+    &:visited .c-menu_item__description {
+      color: $disabled;
+    }
+  }
+
+  .c-menu_item__description,
+  &:link .c-menu_item__description,
+  &:visited .c-menu_item__description {
+    color: $disabled;
+  }
+}
+
+.c-menu_item__submenu-indicator:before {
+  color: $disabled;
+}
+
+.c-menu_item__button--highlighted .c-menu_item__submenu-indicator:before {
+  color: $fg;
+}
+
+.c-menu_item__new_label {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.c-menu_item__placeholder {
+  color: $disabled;
+}
+
+.c-menu_item__li--highlighted .c-menu_item__placeholder {
+  color: $disabled;
+}
+
+.c-menu_item_action_button--highlighted {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-menu_separator__separator {
+  border-top: 1px solid $border;
+}
+
+.c-menu {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.c-menu_item__header {
+  color: $fg;
+}

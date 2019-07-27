@@ -1,0 +1,25 @@
+.c-base_icon {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.c-icon-image-insert__secondary_faux_border {
+  background: $borderLight;
+}
+
+.c-base-icon--large_token,
+.c-base-icon--medium_token {
+  box-shadow: inset 0 0 0 1px $primaryT;
+}
+
+.c-icon-image-stacked__svg_stroke {
+  stroke: $fg;
+}
+
+.c-icon-image-stacked__image {
+  box-shadow: inset 0 0 0 1px $borderLight;
+}
+
+.c-icon-image-stacked__image--missing {
+  fill: $button;
+}

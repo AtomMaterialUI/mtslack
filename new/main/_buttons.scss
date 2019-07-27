@@ -104,21 +104,27 @@
 }
 
 .c-button--outline {
-  background: transparent;
-  border: 1px solid $button;
+  background: $button;
+  border: 1px solid $borderLight;
   color: $fg;
-  &:link, &:visited {
-    color: $fg;
+  &:link {
+    color: $primary;
+  }
+  &:visited {
+    color: $accent2;
   }
   &:active {
     background: $hl;
     border-color: $borderLight;
+    color: $selectFg;
   }
-  &.c-button--focus-visible:focus, &.focus-ring:focus:not(:hover) {
+  &.c-button--focus-visible:focus,
+  &.focus-ring:focus:not(:hover) {
     border: 1px solid $primary;
   }
-  &:active {
+  &:hover {
     background: $hl;
+    color: $selectFg;
   }
 }
 

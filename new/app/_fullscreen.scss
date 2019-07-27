@@ -29,6 +29,12 @@
   }
 }
 
+.c-fullscreen_modal__header {
+  background: $bg2;
+  box-shadow: 0 1px 4px $borderLight;
+  color: $fg;
+}
+
 .c-fullscreen_modal__content {
   background-color: $bg;
 }
@@ -40,25 +46,31 @@
   }
 }
 
-.c-fullscreen_modal__back, .c-fullscreen_modal__close {
+.c-fullscreen_modal__back,
+.c-fullscreen_modal__close {
   color: $text;
 }
 
-.c-fullscreen_modal__back:hover, .c-fullscreen_modal__close:hover {
-  background-color: $bg2;
-  color: $fg;
+.c-fullscreen_modal__back:hover,
+.c-fullscreen_modal__close:hover {
+  background-color: $accentT;
+  color: $selectFg;
 }
 
-.c-fullscreen_modal__back:active, .c-fullscreen_modal__close:active {
+.c-fullscreen_modal__back:active,
+.c-fullscreen_modal__close:active {
   background-color: $accent;
-  color: $bg;
+  color: $selectFg;
 }
 
-.c-fullscreen_modal__back--with_header:active, .c-fullscreen_modal__close--with_header:active {
-  color: $primary;
+.c-fullscreen_modal__back--with_header:active,
+.c-fullscreen_modal__close--with_header:active {
+  color: $selectFg;
 }
 
-.c-fullscreen_modal__cancel:focus, .c-fullscreen_modal__go:focus, .c-fullscreen_modal__secondary:focus {
+.c-fullscreen_modal__cancel:focus,
+.c-fullscreen_modal__go:focus,
+.c-fullscreen_modal__secondary:focus {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
@@ -93,8 +105,4 @@
   .c-fullscreen_modal__footer {
     background-color: $bg2;
   }
-}
-
-.c-sk-modal_header {
-  background-color: $bg;
 }
