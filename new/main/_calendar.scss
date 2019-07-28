@@ -1,0 +1,93 @@
+.c-calendar_view_header {
+  color: $fg;
+}
+
+
+.c-calendar_view_header__stepper_btn:hover,
+.c-calendar_view_header__title_btn:hover {
+  background-color: $hl;
+}
+
+.c-calendar_view_header__stepper_btn:active,
+.c-calendar_view_header__title_btn:active {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.c-calendar_view_header__stepper_btn:disabled,
+.c-calendar_view_header__title_btn:disabled {
+  color: $disabled;
+}
+
+.c-calendar_month__day_of_week_heading {
+  color: $text;
+}
+
+.c-date_picker_calendar__date {
+  border: 1px solid $borderLight;
+  &.c-date_picker_calendar__date--is_active:focus,
+  &:not(.c-date_picker_calendar__date--disabled):hover {
+    border-color: $primaryT;
+  }
+  &.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected),
+  &:not(.c-date_picker_calendar__date--disabled):not(.c-date_picker_calendar__date--is_selected):hover {
+    background-color: $primaryT;
+  }
+}
+
+.c-date_picker_calendar__date--is_today {
+  color: $primary;
+  &:after {
+    border: 1px solid $primary;
+  }
+  &.c-date_picker_calendar__date--is_selected:after {
+    border-color: $bg;
+  }
+}
+
+.c-date_picker_calendar__date--is_selected {
+  color: $primary;
+  background-color: $selectBg;
+  &:after {
+    border-color: $bg;
+  }
+}
+
+.c-date_picker_calendar__date--disabled,
+.c-mini_calendar__month_button:disabled {
+  color: $disabled;
+  background-color: $button;
+}
+
+.c-date_picker_calendar__date--disabled:hover,
+.c-mini_calendar__month_button:disabled:hover {
+  background-color: $button;
+}
+
+.c-mini_calendar__date {
+  border: 1px solid $borderLight;
+}
+
+.c-mini_calendar__month_button {
+  border: 1px solid $button;
+}
+
+
+.c-mini_calendar__month_button--is_active:focus,
+.c-mini_calendar__month_button:not(:disabled):hover {
+  border-color: $accent;
+}
+
+.c-mini_calendar__month_button--is_active:focus:not(.c-mini_calendar__month_button--is_selected),
+.c-mini_calendar__month_button:not(.c-mini_calendar__month_button--is_selected):not(:disabled):hover {
+  background-color: $accentT;
+}
+
+.c-mini_calendar__month_button--is_selected {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.c-date_picker__dropdown {
+  background-color: $bg;
+}

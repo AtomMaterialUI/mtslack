@@ -104,3 +104,46 @@
 .c-select_options_list__group_header {
   color: $fg;
 }
+
+.c-select_button {
+  border: 1px solid $button;
+  background-color: $button;
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+  &[disabled] {
+    background: $bg2;
+    border: 1px solid $button;
+  }
+}
+
+.c-select_button {
+  &:active .c-select_button__icon,
+  &:hover .c-select_button__icon {
+    color: $primary;
+  }
+  &:active {
+    background-color: $hl;
+  }
+}
+
+.c-select_button__icon, .c-select_button__placeholder {
+  color: $disabled;
+}
+
+
+.c-select_button--invalid {
+  border-color: $red;
+}
+
+.c-select_button--text-select {
+  &.c-select_button--disabled {
+    color: $disabled;
+    .c-select_button__icon {
+      color: $disabled;
+    }
+  }
+}

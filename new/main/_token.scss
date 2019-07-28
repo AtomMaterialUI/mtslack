@@ -1,0 +1,34 @@
+.c-token {
+  background: $active;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $selectBg;
+  }
+}
+
+.c-token--selected:not(.c-token--invalid):not(.c-token--disabled) {
+  background: $accent;
+  color: $selectFg;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $accent;
+  }
+}
+
+.c-token--invalid {
+  box-shadow: inset 0 0 0 1px $red;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $red;
+  }
+}
+
+.c-token--disabled {
+  background: $button;
+  color: $fg;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}

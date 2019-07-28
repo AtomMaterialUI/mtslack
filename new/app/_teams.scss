@@ -152,3 +152,49 @@
 .c-usergroup--small_select__context {
   color: $text;
 }
+
+
+.c-custom_status__expiration {
+  color: $disabled;
+}
+
+.c-base_entity--dim {
+  color: $disabled;
+}
+
+
+.c-base_entity__metadata, .c-base_entity__subtext {
+  color: $text;
+}
+
+
+.c-base_list_entity--dim {
+  color: $disabled;
+}
+
+.c-base_list_entity--highlight-dark {
+  color: $fg;
+  background-color: $hl;
+}
+
+.c-base_list_entity--highlight-dim {
+  color: $disabled;
+  background-color: $hl;
+}
+
+.c-base_list_entity--highlight-light {
+  background-color: $hl;
+}
+
+.c-base_list_entity--small {
+  &.c-base_list_entity--active {
+    color: $selectFg;
+    background-color: $selectBg;
+  }
+}
+
+.c-base_list_entity--medium {
+  &.c-base_list_entity--active {
+    background-color: $selectBg;
+  }
+}

@@ -1,0 +1,179 @@
+.ql-editor {
+  ul {
+    &[data-checked=false] > li:before {
+      color: $button;
+    }
+
+    &[data-checked=true] > li:before {
+      color: $button;
+    }
+  }
+
+  .ql-bg-black {
+    background-color: $silver;
+  }
+
+  .ql-bg-red {
+    background-color: $red;
+  }
+
+  .ql-bg-orange {
+    background-color: $orange;
+  }
+
+  .ql-bg-yellow {
+    background-color: $yellow;
+  }
+
+  .ql-bg-green {
+    background-color: $green;
+  }
+
+  .ql-bg-blue {
+    background-color: $blue;
+  }
+
+  .ql-bg-purple {
+    background-color: $purple;
+  }
+
+  .ql-color-white {
+    color: $bg;
+  }
+
+  .ql-color-red {
+    color: $red;
+  }
+
+  .ql-color-orange {
+    color: $orange;
+  }
+
+  .ql-color-yellow {
+    color: $yellow;
+  }
+
+  .ql-color-green {
+    color: $green;
+  }
+
+  .ql-color-blue {
+    color: $blue;
+  }
+
+  .ql-color-purple {
+    color: $purple;
+  }
+
+  &.ql-blank:before {
+    color: $text;
+  }
+}
+
+.c-texty_input {
+  border: 1px solid $button;
+}
+
+.c-texty_input {
+  &.focus {
+    border-color: $primary;
+
+    .c-texty_input__button {
+      color: $fg;
+    }
+  }
+
+  &.c-texty_input--use_focus_ring.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}
+
+.c-texty_input {
+  .ql-editor {
+    ul {
+      &[data-checked=false] > li:before {
+        color: $button;
+      }
+
+      &[data-checked=true] > li {
+        &:before {
+          color: $accent;
+        }
+
+        color: $bg;
+      }
+
+      &[data-checked=true] > li:before {
+        background: $accent;
+        color: $bg;
+      }
+    }
+  }
+
+  .ql-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-texty_input__button {
+  color: $fg;
+
+  &:hover {
+    .c-texty_input__button_icon--mention {
+      color: $primary;
+    }
+
+    .c-texty_input__button_icon--emoji_background {
+      color: $bg2;
+    }
+
+    .c-texty_input__button_icon--emoji_active {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-texty_workflow_token {
+  > button {
+    background: $button;
+    color: $fg;
+    border: 1px solid $button;
+
+    &:hover {
+      background: $hl;
+      color: $selectFg;
+    }
+  }
+
+  &.is-missing {
+    > button {
+      color: $red;
+      background: $button;
+      border: 1px solid $button;
+
+      &:hover {
+        cursor: text;
+        background: $hl;
+        border: 1px solid $hl;
+      }
+    }
+  }
+
+  .c-texty_workflow_token__property {
+    border-left: 1px solid $accent;
+    color: $text;
+  }
+}
+
+.c-texty_input.c-texty_input--invalid {
+  border-color: $red;
+
+  &.c-texty_input--use_focus_ring.focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+

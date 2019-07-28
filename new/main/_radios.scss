@@ -1,0 +1,21 @@
+.c-input_radio {
+}
+
+input {
+  &.c-input_radio, &[type=radio].c-input_radio {
+  }
+  &.c-input_radio[disabled], &[type=radio].c-input_radio[disabled] {
+  }
+  &.c-input_radio:focus, &[type=radio].c-input_radio:focus {
+  }
+}
+
+.c-legend {
+}
+
+.c-legend--disabled {
+  color: $disabled;
+}
+
+.c-radiogroup {
+}

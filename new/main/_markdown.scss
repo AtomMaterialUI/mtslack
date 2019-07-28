@@ -1,0 +1,35 @@
+.c-mrkdwn__user_group--link {
+  background: $active;
+  color: $primary;
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.c-mrkdwn__broadcast--mention {
+  background: $active;
+  color: $primary;
+  border-radius: 16px;
+  padding: 2px 4px;
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.c-mrkdwn__highlight {
+  background: $hl;
+  color: $primary;
+}
+
+.c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
+  background: $active;
+  &:hover {
+    background: $selectBg;
+  }
+}
+
+.c-mrkdwn__hex {
+  border: 1px solid $disabled;
+}

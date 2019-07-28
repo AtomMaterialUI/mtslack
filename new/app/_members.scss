@@ -18,7 +18,210 @@
 
 .p-member_profile_card__context_action {
   color: $disabled;
+
   &:focus, &:hover {
     color: $fg;
   }
+}
+
+.p-admin_member_table__page {
+  #page {
+    background-color: $bg;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .p-admin_member_table__page.widescreen:not(.nav_open) nav#site_nav {
+    background-color: $bg2;
+    border-right: 1px solid $border;
+  }
+}
+
+.p-admin_table-wrapper__header_background {
+  background-color: $bg2;
+  border-bottom: 2px solid $bg2;
+}
+
+.p-admin_member_table__search_input {
+  border: 1px solid $button;
+  &:active {
+    border: 1px solid $accent;
+  }
+}
+
+
+.p-admin_member_table__wrapper {
+  background: $active;
+}
+
+.p-admin_member_table__caption {
+  color: $text;
+}
+
+.p-admin_member_table__row_header--active {
+  &.c-table_view_header_item .c-deprecated-icon,
+  .c-table_view_header_item_value {
+    color: $primary;
+  }
+}
+
+
+.p-admin_member_table__row--deactivated {
+  background: $excluded;
+}
+
+.p-admin_member_table__row--deactivated--bounced {
+  background: $excluded;
+  .p-admin_member_table__row__email--address {
+    color: $red;
+  }
+  &:hover {
+    background: $hl !important;
+  }
+}
+
+.p-admin_member_table__row--active {
+  background: $selectBg;
+}
+
+
+.p-admin_member_table__row__name_divider:after {
+  background-color: $borderLight;
+}
+
+.p-admin_member_table__row__display_name_and_email {
+  color: $text;
+}
+
+
+.p_admin_member_table__guest_expiration {
+  color: $text;
+}
+
+.p-admin_member_table__member_type_icon {
+  background: $contrast;
+}
+
+.p-admin_member_table__member_type_icon--owner,
+.p-admin_member_table__member_type_icon--primary_owner {
+  background: $purple;
+}
+
+.p-admin_member_table__member_type_icon--admin {
+  background: $cyan;
+}
+
+.p-admin_member_table__member_type_icon--restricted,
+.p-admin_member_table__member_type_icon--ultra_restricted {
+  background: $yellow;
+}
+
+.p-admin_member_table__menu_button {
+  &.active {
+    color: $primary;
+  }
+  &.c-button-unstyled {
+    &.active, &:hover {
+      border: 1px solid $hl;
+    }
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .p-admin_member_table__menu_button.c-button-unstyled {
+    border: 1px solid $button;
+  }
+}
+
+.p-admin_member_table__menu_button--disabled.c-button-unstyled {
+  color: $fg;
+}
+
+.c-table_view_row_item.p-admin_member_table__filter_row {
+  border-bottom: 1px solid $button;
+}
+
+.p-admin_member_table__filter_row__item {
+  color: $text;
+}
+
+.p-admin_member_table__filter_row__avatar {
+  border: 1px solid $border;
+}
+
+.p-admin_member_table__filter_row__avatar_icon {
+  color: $text;
+}
+
+.c-button-unstyled.p-admin_member_table__filter_row__btn {
+  color: $primary;
+}
+
+.c-table_view_row_item.p-admin_member_table__search_row {
+  border-bottom: 1px solid $button;
+}
+
+button.p-admin_member_table__menu_item--disabled {
+  color: $disabled;
+}
+
+
+.p-admin_member_table__edit_channels {
+  .c-lazy_filter_select__input_container--active {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+
+.p-admin_member_table__edit_channels--error .c-lazy_filter_select__input_container {
+  border: 1px solid $red;
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.p-admin_member_unified_filter__menus {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.c-menu {
+  &.p-admin_member_unified_filter__account_type {
+    border-right: 1px solid $border;
+  }
+  &.p-admin_member_unified_filter__status {
+    border-right: 1px solid $border;
+  }
+}
+
+.p-admin_member_unified_filter__titles {
+  color: $text;
+}
+
+
+.p-admin_member_unified_filter__grid_deactivate {
+  color: $disabled;
+}
+
+.p-admin_member_table__date_picker_trigger {
+  &.c-button-unstyled {
+    border: 1px solid $button;
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+        color: $disabled;
+      }
+    }
+    &[disabled] {
+      background: $excluded;
+      border: 1px solid $button;
+    }
+  }
+  &.active .c-icon--calendar {
+    color: $primary;
+  }
+}
+
+.c-member__details {
+  color: $text;
 }

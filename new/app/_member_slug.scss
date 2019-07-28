@@ -1,0 +1,53 @@
+.c-member_slug--link {
+  background: $active;
+  color: $primary;
+  border-radius: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+
+  &:visited,
+  &:link {
+    color: $primary;
+  }
+}
+
+.c-member_slug--unverified {
+  border: 1px dotted $active;
+  border-radius: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    border: 1px dotted $active;
+  }
+
+  &:before, &:hover:before {
+    background: $primary;
+    color: $selectBg;
+  }
+
+
+  &:visited,
+  &:link {
+    color: $primary;
+  }
+}
+
+.c-member_slug--mention {
+  background: $active;
+  border-radius: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    background: $selectBg;
+  }
+
+
+  &:visited,
+  &:link {
+    color: $primary;
+  }
+}

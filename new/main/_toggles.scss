@@ -1,0 +1,52 @@
+.c-toggle__input {
+  border: 1px solid $border;
+  background-color: $bg;
+}
+
+.c-toggle__visual {
+  &:before {
+    color: $fg;
+  }
+
+  &:after {
+    background-color: $button;
+  }
+}
+
+.c-toggle__input {
+  &:checked {
+    background-color: $accent;
+
+    + .c-toggle__visual {
+      &:after {
+        background-color: $button;
+      }
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:disabled {
+    background-color: $button;
+
+    + .c-toggle__visual {
+      &:before {
+        color: $button;
+      }
+
+      &:after {
+        background-color: $button;
+      }
+    }
+  }
+}

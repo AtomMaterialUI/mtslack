@@ -1,0 +1,86 @@
+.p-invite_members_form__header_icon {
+  color: $accent2;
+}
+
+.p-invite_members_form__add_row_and_bulk_button {
+  color: $primary;
+}
+
+
+.p-invite_members_form__sent_invites_header_cell--successful {
+  border-bottom: 2px solid $green;
+}
+
+.p-invite_members_form__sent_invites_header_cell--unsuccessful,
+tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_cell--unsuccessful {
+  border-bottom: 2px solid $red;
+}
+
+.p-invite_members_form__pending_invites {
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-bulk_invite_emails__note {
+  color: $disabled;
+}
+
+.p-invites_channel_picker__note {
+  color: $disabled;
+  a {
+    color: $fg;
+  }
+}
+
+.p-invite_members_form__pricing_banner {
+  border: 1px solid $accent;
+  color: $selectFg;
+  background: $accent;
+}
+
+.p-invite_members_form__pricing_banner__icon {
+  color: $accent;
+}
+
+.p-invite_members_form__footer_message {
+  color: $disabled;
+}
+
+.p-invite_members_form__footer_link {
+  color: $disabled;
+  &:hover, &:visited {
+    color: $disabled;
+  }
+}
+
+
+.p-select_invite_type__link--subtitle {
+  color: $text;
+}
+
+.p-select_invite_type__header_icon {
+  color: $accent;
+}
+
+.p-select_invite_type__arrow_icon {
+  color: $accent;
+}
+
+.p-select_invite_type__link--learn {
+  color: $disabled;
+  &:hover, &:visited {
+    color: $disabled;
+  }
+}
+
+
+.p-select_invite_type__link--disabled {
+  .p-select_invite_type__link--subtitle, h2 {
+    color: $disabled;
+  }
+}
+
+.p-select_invite_type__pending {
+  color: $accent2;
+}

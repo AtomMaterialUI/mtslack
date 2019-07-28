@@ -1,0 +1,52 @@
+.c-multi_select_input {
+  border: 1px solid $button;
+  background-color: $button;
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $excluded;
+  }
+}
+
+.c-multi_select_input--disabled,
+.c-multi_select_input__input--disabled {
+  background: $excluded;
+}
+
+.c-multi_select_input--focused {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-multi_select_input--invalid {
+  border-color: $red;
+}
+
+.c-multi_select_input__input {
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+    color: $disabled;
+  }
+}
+
+.c-multi_select_token__remove {
+  color: $text;
+  &:hover {
+    color: $fg;
+    background-color: $bg2;
+  }
+}
+
+.c-token--selected .c-multi_select_token__remove {
+  color: $accent;
+  &:hover {
+    color: $selectFg;
+    background-color: $accent;
+  }
+}

@@ -1,0 +1,49 @@
+.c-texty_autocomplete {
+  background: $contrast;
+}
+
+.c-texty_autocomplete__help {
+  background: $bg2;
+  border-bottom: 1px solid $border;
+  color: $text;
+}
+
+
+.c-texty_autocomplete__result {
+  .c-team_icon {
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-texty_autocomplete__result_highlight {
+  background: $hl;
+  color: $primary;
+}
+
+.c-texty_autocomplete__result_highlight--selected {
+  background: $accent;
+  color: $selectFg;
+}
+
+.c-texty_autocomplete__result--selected {
+  background: $selectBg;
+  color: $selectFg;
+}
+
+.c-texty_autocomplete--commands {
+  .c-texty_autocomplete__result {
+    &:not(.c-texty_autocomplete__result--selected) .c-texty_autocomplete__result_description {
+      color: $text;
+    }
+  }
+  .c-texty_autocomplete__result_icon {
+    background: $excluded;
+  }
+  .c-texty_autocomplete__result--selected .c-texty_autocomplete__result_icon {
+    background: $accent;
+  }
+  .c-texty_autocomplete__group {
+    background: $bg;
+    color: $fg;
+  }
+}

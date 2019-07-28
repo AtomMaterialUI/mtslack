@@ -1,0 +1,23 @@
+.p-app_profile_card__header {
+  color: $fg;
+  background: linear-gradient(312.01deg, $bg, $contrast) !important;
+  background-color: $bg2 !important;
+}
+
+.p-app_profile_card__header--external {
+  color: $fg;
+  background: linear-gradient(312.01deg, $bg2, $contrast) !important;
+  background-color: $bg2 !important;
+}
+
+.p-app_profile_card__avatar {
+  background-color: $bg;
+}
+
+.p-app_profile_card__disabled_message.c-menu_item__li {
+  color: $disabled;
+}
+
+.p-app_profile_card__footer {
+  border-top: 1px solid $border;
+}

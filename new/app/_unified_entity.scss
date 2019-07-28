@@ -1,0 +1,39 @@
+.c-basic_unified_entity__avatar--unknown {
+  background: $bg2;
+}
+
+.c-basic_unified_entity__description {
+  color: $text;
+}
+
+.c-basic_unified_entity--inverted,
+.c-basic_unified_entity__description--inverted {
+  color: $fg;
+}
+
+
+.c-unified_channel--medium {
+  &.c-unified_channel--archived {
+    .c-unified_channel__name_text {
+      color: $text;
+    }
+    .c-unified_channel__prefix {
+      color: $text;
+    }
+  }
+}
+
+.c-unified_channel__team {
+  .c-channel_team {
+    color: $text;
+  }
+}
+
+.c-unified_channel__label .c-unified_channel__mentions {
+  background-color: $accent;
+}
+
+
+.c-unified_channel__inline_name_suffix {
+  color: $text;
+}

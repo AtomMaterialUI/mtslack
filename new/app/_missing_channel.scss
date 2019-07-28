@@ -1,0 +1,34 @@
+.c-missing_channel--medium_hash {
+  &:before {
+    color: $text
+  }
+}
+
+.c-missing_channel--unknown_inverted {
+  background-color: $active;
+  color: $primary;
+}
+
+.c-missing_channel--non_existent_inverted {
+  background: none;
+  border: 1px solid $active;
+}
+
+
+.c-missing_team--unknown {
+  background: $active;
+}
+
+.c-missing_team--nonexistent {
+  border: 1px solid $active;
+}
+
+.c-missing_text--unknown_inverted {
+  background-color: $active;
+  color: $primary;
+}
+
+.c-missing_text--non_existent_inverted {
+  background: none;
+  border: 1px solid $active;
+}
