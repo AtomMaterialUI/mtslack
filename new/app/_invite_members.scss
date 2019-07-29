@@ -28,6 +28,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-invites_channel_picker__note {
   color: $disabled;
+
   a {
     color: $fg;
   }
@@ -49,6 +50,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-invite_members_form__footer_link {
   color: $disabled;
+
   &:hover, &:visited {
     color: $disabled;
   }
@@ -69,6 +71,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-select_invite_type__link--learn {
   color: $disabled;
+
   &:hover, &:visited {
     color: $disabled;
   }
@@ -83,4 +86,34 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-select_invite_type__pending {
   color: $accent2;
+}
+
+.p-invite_users_input__label_title {
+  color: $text;
+
+  strong {
+    color: $fg;
+  }
+}
+
+.p-invite_users_input__label_error {
+  color: $orange;
+}
+
+
+.p-invite_users_input__input_subtext {
+  color: $text;
+}
+
+
+.p-shared_channel_invitation_message_editor__member {
+  background-color: $contrast;
+}
+
+.p-shared_channel_invitation_message_editor__team_name {
+  color: $fg;
+}
+
+.p-shared_channel_creation_modal__breadcrumbs {
+  color: $fg;
 }

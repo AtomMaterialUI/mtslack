@@ -213,3 +213,9 @@ textarea {
 .c-input_text_icon__icon {
   color: $fg;
 }
+
+.p-public_private_input__label {
+  &[disabled] {
+    color: $disabled
+  }
+}

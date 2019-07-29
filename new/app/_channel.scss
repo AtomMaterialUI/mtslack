@@ -1,3 +1,18 @@
 .c-channel_icon {
   background-color: $bg;
 }
+
+.p-channel_name_input__label_title {
+  color: $text;
+  strong {
+    color: $fg;
+  }
+}
+
+.p-channel_name_input__label_error {
+  color: $orange;
+}
+
+.p-channel_name_input__input_subtext {
+  color: $text;
+}

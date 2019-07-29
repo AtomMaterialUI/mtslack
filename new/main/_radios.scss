@@ -10,12 +10,80 @@ input {
   }
 }
 
-.c-legend {
+input[type="radio"] {
+  //opacity: 0 !important; // hide it
+  margin-right: 10px !important;
+  filter: none !important;
+  position: relative;
+
+  &:before {
+    position: relative !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+  }
+
+  // Box.
+  &:before {
+    position: relative;
+    content: '' !important;
+    display: inline-block !important;
+    vertical-align: text-top !important;
+    width: 18px !important;
+    height: 18px !important;
+    background: $bg !important;
+    border: 2px solid $accent !important;
+    border-radius: 50% !important;
+    left: -2px;
+    top: 0px;
+  }
+
+  // Box hover
+  &:hover:before {
+    background: $contrast !important;
+  }
+
+  // Box focus
+  &:focus:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  // Disabled state label.
+  &:disabled:before {
+    color: $disabled !important;
+    cursor: auto !important;
+  }
+
+  // Disabled box.
+  &:disabled:before {
+    box-shadow: none !important;
+    background: $disabled !important;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked:before {
+    content: '' !important;
+    position: absolute !important;
+    left: -2px !important;
+    top: 0px !important;
+    background: $bg !important;
+    width: 18px !important;
+    height: 18px !important;
+    border: 2px solid $accent !important;
+  }
+
+  &:checked:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0px !important;
+    top: 2px !important;
+    background: $accent !important;
+    width: 14px !important;
+    height: 14px !important;
+    transform: scale(0.6) !important;
+    border-radius: 50% !important;
+  }
 }
 
 .c-legend--disabled {
   color: $disabled;
-}
-
-.c-radiogroup {
 }
