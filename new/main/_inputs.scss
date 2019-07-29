@@ -219,3 +219,9 @@ textarea {
     color: $disabled
   }
 }
+
+input[type=text].c-input_text {
+  &.p-channel_name_input--input_with_warning {
+    background-color: $contrast;
+  }
+}

@@ -1,0 +1,74 @@
+.c-lazy_filter_select__input_container {
+  border: 1px solid $button;
+}
+
+.c-lazy_filter_select__token {
+  background: $accent;
+  border: 1px solid $accent;
+  color: $selectFg;
+  &:not(.c-lazy_filter_select__token--disabled):not(.c-lazy_filter_select__token--single):after {
+    color: $fg;
+    background-color: $accent;
+  }
+}
+
+.c-lazy_filter_select__token--highlighted {
+  background: $primary;
+  border-color: $primary;
+  &:not(.c-lazy_filter_select__token--disabled):not(.c-lazy_filter_select__token--single):after {
+    background-color: $primary;
+  }
+}
+
+.c-lazy_filter_select__list_container {
+  border: 1px solid $borderLight;
+  background: $bg2;
+}
+
+.c-lazy_filter_select__item {
+  border: 1px solid $borderLight;
+  color: $fg;
+}
+
+.c-lazy_filter_select__item--selected {
+  background-color: $selectBg;
+  border-color: $borderLight;
+  color: $selectFg;
+  &:after {
+    color: $fg;
+  }
+}
+
+.c-lazy_filter_select__item--active {
+  background-color: $active;
+  border-color: $active;
+  color: $primary;
+  &.c-lazy_filter_select__item--selected:after {
+    color: $primary;
+  }
+}
+
+.c-lazy_filter_select__item--group {
+  color: $fg;
+}
+
+.c-lazy_filter_select__item--disabled {
+  background-color: $excluded;
+  border-color: $border;
+}
+
+.c-lazy_filter_select__item--active.c-lazy_filter_select__item--disabled {
+  background-color: $excluded;
+  border-color: $excluded;
+  color: $primaryT;
+}
+
+.c-lazy_filter_select--single {
+  .c-lazy_filter_select__input_container--active:after {
+    color: $accent;
+  }
+}
+
+.c-lazy_filter_select--disabled {
+  background: $excluded;
+}

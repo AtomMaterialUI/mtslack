@@ -1,0 +1,24 @@
+.p-dm_browser_modal__controls_meta {
+  color: $text;
+}
+
+.p-dm_browser_modal__list_heading {
+  color: $fg;
+}
+
+.p-dm_browser_modal__option {
+  border-top: 1px solid $borderLight;
+}
+
+.p-dm_browser_modal__list_row--active {
+  background-color: $selectBg;
+}
+
+.p-dm_browser_modal__list_row_meta {
+  color: $text;
+}
+
+.p-dm_browser_modal__list_row_badge {
+  background: $accent2;
+  color: $selectFg;
+}

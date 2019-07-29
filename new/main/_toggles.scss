@@ -1,15 +1,16 @@
 .c-toggle__input {
-  border: 1px solid $border;
-  background-color: $bg;
+  border: 1px solid $button;
+  background-color: $button;
+  transition: background-color .4s ease-out;
 }
 
 .c-toggle__visual {
   &:before {
-    color: $fg;
+    color: $selectFg;
   }
 
   &:after {
-    background-color: $button;
+    background-color: $accent;
   }
 }
 
@@ -19,7 +20,7 @@
 
     + .c-toggle__visual {
       &:after {
-        background-color: $button;
+        background-color: $hl;
       }
     }
   }
@@ -41,11 +42,11 @@
 
     + .c-toggle__visual {
       &:before {
-        color: $button;
+        color: $fg;
       }
 
       &:after {
-        background-color: $button;
+        background-color: $accentT;
       }
     }
   }

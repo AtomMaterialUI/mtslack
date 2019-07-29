@@ -1,0 +1,20 @@
+.p-share_dialog_message_input {
+  border: 1px solid $borderLight;
+  color: $fg;
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-share_dialog_message_input {
+  &.ql-disabled {
+    background: $excluded;
+  }
+}

@@ -1,3 +1,27 @@
+
+.c-texty_input {
+  border: 1px solid $button;
+  background: $contrast;
+}
+
+.c-texty_input {
+  &.focus {
+    border-color: $primary;
+
+    .c-texty_input__button {
+      color: $fg;
+    }
+  }
+
+  &.c-texty_input--use_focus_ring.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}
+
 .c-texty_autocomplete {
   background: $contrast;
 }
@@ -36,12 +60,15 @@
       color: $text;
     }
   }
+
   .c-texty_autocomplete__result_icon {
     background: $excluded;
   }
+
   .c-texty_autocomplete__result--selected .c-texty_autocomplete__result_icon {
     background: $accent;
   }
+
   .c-texty_autocomplete__group {
     background: $bg;
     color: $fg;

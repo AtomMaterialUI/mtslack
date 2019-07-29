@@ -1,0 +1,171 @@
+.c-search_autocomplete__suggestion_item {
+  color: $fg;
+}
+
+.c-search_autocomplete__suggestion_item--selected {
+  background: $selectBg;
+  color: $selectFg;
+}
+
+.c-search_autocomplete__unread_count {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__unread_count {
+  background-color: $bg2;
+  color: $primary;
+}
+
+.c-search_autocomplete__channel {
+  .c-icon {
+    color: $text;
+  }
+
+  .c-deprecated-icon {
+    color: $disabled;
+  }
+}
+
+.c-search_autocomplete__channel-membership {
+  color: $text;
+}
+
+.c-search_autocomplete__suggestion_item--selected {
+  .c-search_autocomplete__channel-membership {
+    color: $accent;
+  }
+
+  .c-search_autocomplete__channel {
+    .c-channel_name__team_name,
+    .c-channel_name__text,
+    .c-deprecated-icon,
+    .c-icon,
+    .c-icon--shared-channels {
+      color: $accent;
+    }
+  }
+}
+
+.c-search_autocomplete__icon--file {
+  color: $text;
+}
+
+.c-search_autocomplete__filetype_description {
+  color: $text;
+}
+
+.c-search_autocomplete__suggestion_item--selected {
+  .c-search_autocomplete__filetype_description {
+    color: $accent;
+  }
+
+  .c-search_autocomplete__icon--file {
+    color: $accent;
+
+    &:before {
+      color: $accent;
+    }
+  }
+}
+
+.c-search_autocomplete__team {
+  .c-team_name__icon {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete__member {
+  .c-unified_member__name {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete__member--deleted {
+  .c-unified_member__display-name, .c-unified_member__name, .c-unified_member__secondary-name {
+    color: $disabled;
+  }
+
+  .c-unified_member__display-name:hover, .c-unified_member__name:hover, .c-unified_member__secondary-name:hover {
+    color: $fg;
+  }
+}
+
+.c-search_autocomplete__member {
+  .ts_icon_pencil {
+    color: $text;
+  }
+}
+
+.c-search_autocomplete__suggestion_item--selected {
+  .c-search_autocomplete__member .ts_icon_pencil {
+    color: $accent;
+  }
+
+  .c-unified_member {
+    .c-app_badge, .c-app_label, .c-icon, .c-presence, .presence, .ts_icon_deactivated_user {
+      color: $accent;
+    }
+  }
+
+  .c-unified_member__display-name, .c-unified_member__name, .c-unified_member__secondary-name {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete__view {
+  .c-view_name__icon {
+    color: $text;
+  }
+}
+
+.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__view {
+  .c-view_name__icon, .c-view_name__text {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete__icon--query {
+  color: $text;
+}
+
+.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__icon--query {
+  color: $accent;
+
+  &:before {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete__query_parts {
+  .token {
+    background-color: $hl;
+    color: $fg;
+  }
+}
+
+.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__query_parts .token {
+  color: $accent;
+  background-color: $selectBg;
+}
+
+.c-search_autocomplete__suggestion_item--selected {
+  .c-unified_member__label--small {
+    color: $accent;
+  }
+}
+
+.c-search_autocomplete {
+  header {
+    color: $fg;
+  }
+
+  footer {
+    background-color: $bg2;
+    color: $fg;
+
+    .c-search_autocomplete__footer_navigation_help_divider {
+      color: $border;
+    }
+  }
+}

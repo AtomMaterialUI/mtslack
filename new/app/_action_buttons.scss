@@ -1,0 +1,40 @@
+.c-action_buttons {
+  border: 1px solid $border;
+
+  &:hover {
+    border-color: $button;
+  }
+}
+
+.c-action_buttons__icon {
+  color: $fg;
+}
+
+.c-action_buttons__button {
+  border-right: 1px solid $border;
+  background-color: $button;
+
+  &:only-child {
+    border: 1px solid $borderLight;
+
+    &:hover {
+      border-color: $borderLight;
+    }
+  }
+
+  &:focus {
+    background-color: $hl;
+  }
+
+  &:hover {
+    background: $accent;
+
+    .c-action_buttons__icon {
+      color: $primary;
+    }
+  }
+
+  .c-icon--small-star-filled, &:hover .c-icon--small-star-filled {
+    color: $yellow;
+  }
+}

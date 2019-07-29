@@ -1,0 +1,11 @@
+.c-timestamp {
+  color: $text;
+
+  &:hover, &:link {
+    color: $fg;
+  }
+}
+
+.c-timestamp__label {
+  color: $text;
+}

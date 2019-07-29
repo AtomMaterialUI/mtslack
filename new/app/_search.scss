@@ -1,0 +1,29 @@
+.c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
+  background-color: $contrast;
+}
+
+.p-global_nav__top_search--primarysearch {
+  background-color: $contrast !important;
+}
+
+
+.c-search__input_box .c-search__input_box__input {
+  background: $contrast;
+}
+
+.c-search_modal .c-search__input_box__clear {
+  border-right: 1px solid $borderLight;
+}
+
+.c-search__input_box__icon {
+  color: $text;
+}
+
+.c-search__input_box__clear {
+  color: $text;
+}
+
+.c-search_message__tinyspeck_error_message {
+  background: $red;
+  color: $contrast;
+}

@@ -1,0 +1,159 @@
+.p-apps_browser_links {
+  color: $text;
+}
+
+.p-apps_browser_links__link {
+  color: $primary;
+
+  &:active, &:hover, &:link, &:visited {
+    color: $accent2;
+  }
+}
+
+
+.p-apps_browser__apps_list {
+  &::-webkit-scrollbar-thumb {
+    color: $bg;
+  }
+
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+}
+
+.p-apps_browser__apps_list--loading:before {
+  background-color: $bg;
+}
+
+.p-apps_browser__list_container--loading {
+  &:before {
+    background-color: $bg;
+  }
+}
+
+.p-apps_browser__spinner {
+  fill: $bg;
+}
+
+.p-apps_browser__category_section--tutorial {
+  .p-apps_browser__app {
+    border: 1px solid $borderLight;
+  }
+
+  .p-apps_browser__app--selected {
+    background: $tree;
+  }
+}
+
+.p-apps_browser__category_header {
+  padding: 2px;
+  background: $bg2;
+  color: $fg;
+}
+
+.p-apps_browser__app {
+  border-top-color: $borderLight;
+
+  &.p-apps_browser__app--tutorial {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-apps_browser__app--selected {
+  background: $tree;
+  border: 1px solid $borderLight;
+  color: $selectFg;
+}
+
+.p-apps_browser__enter_button {
+  color: $text;
+}
+
+.p-apps_browser__app_info {
+  color: $fg;
+}
+
+
+.p-apps_browser__app_description {
+  color: $text;
+}
+
+.p-apps_browser__app_limit_meter {
+  border: 1px solid $border;
+
+  b {
+    color: $fg;
+  }
+}
+
+
+.p-apps_browser__app_limit_meter__paragraph {
+  color: $text;
+}
+
+
+.p-apps_browser__app_limit_meter__blank_app_box {
+  background-color: $active;
+  border: 1.5px dashed $border;
+}
+
+.p-apps_browser__app_limit_meter__color_meter {
+  li {
+    background-color: $bg2;
+
+    &.meter_first_green {
+      background-color: #29a979;
+    }
+
+    &.meter_second_green {
+      background-color: #52b062;
+    }
+
+    &.meter_third_green {
+      background-color: #8cba41;
+    }
+
+    &.meter_fourth_green {
+      background-color: #bec225;
+    }
+
+    &.meter_yellow {
+      background-color: #fc0;
+    }
+
+    &.meter_orange {
+      background-color: #f58632;
+    }
+
+    &.meter_red {
+      background-color: #f33d5f;
+    }
+
+    &.first:before, &:first-child:before {
+      background-color: #29a979;
+      border: 2px solid $bg;
+    }
+
+    &:after {
+      background-color: $bg;
+      border: 1px solid $borderLight;
+    }
+
+    &.on:after {
+      border: 2px solid $border;
+    }
+
+    &.off:before {
+      background-color: $bg;
+    }
+  }
+}

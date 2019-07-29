@@ -28,7 +28,7 @@ input {
   }
 }
 
-input[type=checkbox] {
+input[type=checkbox]:not(.c-toggle__input) {
   -webkit-appearance: none;
   width: 16px;
   height: 16px;

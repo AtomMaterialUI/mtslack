@@ -1,0 +1,24 @@
+.p-channel_create_modal__label_title {
+  color: $fg;
+
+  strong {
+    color: $primary;
+  }
+}
+
+.p-channel_create_modal__label_error {
+  color: $red;
+}
+
+.p-channel_create_modal__input_subtext {
+  color: $text;
+}
+
+.p-channel_create_modal__private_toggle_copy_body {
+  color: $text;
+}
+
+.p-channel_create_modal__share {
+  color: $text;
+  background-color: $bg;
+}
