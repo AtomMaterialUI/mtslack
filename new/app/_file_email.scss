@@ -1,0 +1,39 @@
+.c-pillow_file__email__sender__address {
+  color: $text;
+}
+
+.c-pillow_file__email__meta__field {
+  color: $text;
+}
+
+.c-pillow_file__email--expanded .c-pillow_file__email__header {
+  border-bottom: 1px solid $border;
+}
+
+.c-pillow_file__email__attachments {
+  border-top: 1px solid $border;
+}
+
+.c-pillow_file__email__attachments__count {
+  color: $text;
+}
+
+.c-pillow_file__email__attachment {
+  border: 1px solid $borderLight;
+}
+
+
+.c-pillow_file__email__attachment__icon {
+  color: $selectFg;
+  background: $accent2;
+}
+
+.c-pillow_file__email__attachment__meta {
+  color: $text;
+}
+
+.c-pillow_file__email__content {
+  blockquote {
+    border-left: 2px solid $hl;
+  }
+}

@@ -1,0 +1,197 @@
+.CodeMirror {
+  color: $fg;
+}
+
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
+  background-color: $bg;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid $border;
+  background-color: $bg2;
+}
+
+.CodeMirror-linenumber {
+  color: $text;
+}
+
+.CodeMirror-guttermarker {
+  color: $fg;
+}
+
+.CodeMirror-guttermarker-subtle {
+  color: $disabled;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid $accent;
+}
+
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid $borderLight;
+}
+
+.cm-fat-cursor {
+  .CodeMirror-cursor {
+    background: $accent;
+  }
+}
+
+.cm-fat-cursor-mark {
+  background-color: $accentT;
+}
+
+.cm-animate-fat-cursor {
+  background-color: $accent;
+}
+
+.CodeMirror-ruler {
+  border-left: 1px solid $borderLight;
+}
+
+.cm-s-default {
+  .cm-header {
+    color: $blue;
+  }
+  .cm-quote {
+    color: $green;
+  }
+}
+
+.cm-negative {
+  color: $red;
+}
+
+.cm-positive {
+  color: $green;
+}
+
+.cm-s-default {
+  .cm-keyword {
+    color: $purple;
+  }
+  .cm-atom {
+    color: $blue;
+  }
+  .cm-number {
+    color: $orange;
+  }
+  .cm-def {
+    color: $blue;
+  }
+  .cm-variable-2 {
+    color: $red;
+  }
+  .cm-type, .cm-variable-3 {
+    color: $yellow;
+  }
+  .cm-comment {
+    color: $gray;
+  }
+  .cm-string {
+    color: $green;
+  }
+  .cm-string-2 {
+    color: $cyan;
+  }
+  .cm-meta, .cm-qualifier {
+    color: $purple;
+  }
+  .cm-builtin {
+    color: $blue;
+  }
+  .cm-bracket {
+    color: $fg;
+  }
+  .cm-tag {
+    color: $red;
+  }
+  .cm-attribute {
+    color: $yellow;
+  }
+  .cm-hr {
+    color: $borderLight;
+  }
+  .cm-link {
+    color: $accent;
+  }
+}
+
+.cm-invalidchar, .cm-s-default .cm-error {
+  color: $red;
+}
+
+div.CodeMirror span {
+  &.CodeMirror-matchingbracket {
+    color: $cyan;
+  }
+  &.CodeMirror-nonmatchingbracket {
+    color: $red;
+  }
+}
+
+.CodeMirror-matchingtag {
+  background: $orange;
+}
+
+.CodeMirror-activeline-background {
+  background: $tree;
+}
+
+.CodeMirror {
+  background: $contrast;
+}
+
+.CodeMirror-selected {
+  background: $selectBg;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: $selectBg;
+}
+
+.CodeMirror-line {
+  &::-moz-selection {
+    background: $tree;
+  }
+  > span {
+    &::-moz-selection, > span::-moz-selection {
+      background: $tree;
+    }
+  }
+  &::selection {
+    background: $tree;
+  }
+  > span {
+    &::selection, > span::selection {
+      background: $tree;
+    }
+  }
+  &::-moz-selection {
+    background: $tree;
+  }
+  > span {
+    &::-moz-selection, > span::-moz-selection {
+      background: $tree;
+    }
+  }
+}
+
+.cm-searching {
+  background-color: $accentT;
+}
+
+.CodeMirror {
+  border: 1px solid $borderLight;
+  color: $fg;
+  .CodeMirror-gutters {
+    background-color: $bg;
+    border-color: $border;
+  }
+  .CodeMirror-linenumber {
+    color: $text;
+  }
+  &:focus, &:hover {
+    border-color: $disabled;
+  }
+}

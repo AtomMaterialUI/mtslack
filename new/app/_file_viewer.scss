@@ -173,3 +173,10 @@
 .p-file_viewer__header__button:hover {
   color: $primary;
 }
+
+.p-file_image_thumbnail__wrapper {
+  background-color: $bg2;
+  &:after {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

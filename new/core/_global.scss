@@ -61,12 +61,13 @@ h1, h2, h3, h4 {
 code {
   border: 1px solid $border;
   background-color: $contrast;
-  color: $accent2;
+  color: $fg;
 }
 
 pre {
-  border: 1px solid $border;
+  border: 1px solid $borderLight;
   background: $contrast;
+  color: $fg;
 }
 
 blockquote:before {

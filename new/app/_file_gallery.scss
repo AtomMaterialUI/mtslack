@@ -1,0 +1,48 @@
+.c-files_container {
+  .c-message_kit__file__remove {
+    color: $text;
+  }
+}
+
+
+.p-file_list__option {
+  .c-icon {
+    color: $text;
+  }
+}
+
+.c-input_select_options_list__option--selected.p-file_list__option .c-icon {
+  color: $accent;
+}
+
+.p-file_list__select_wrapper {
+  .c-input_select_options_list__option--active {
+    background-color: $accent;
+    color: $selectFg;
+
+    .c-icon {
+      color: $selectFg;
+    }
+  }
+}
+
+
+.p-file_list__filters--global-nav {
+  background: $bg;
+}
+
+.p-file_list__file.c-pillow_file_container--full_width {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    border-color: $selectBg;
+  }
+}
+
+.p-file_list__loading {
+  color: $primary;
+}
+
+.p-file_list__empty {
+  color: $fg;
+}

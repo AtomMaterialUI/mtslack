@@ -1,7 +1,7 @@
 
 .c-input_select_options_list_container:not(.c-input_select_options_list_container--always-open) {
   border: 1px solid $borderLight;
-  background-color: $button;
+  background-color: $bg2;
   border-color: $borderLight;
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
@@ -20,12 +20,13 @@
 }
 
 .c-input_select_options_list__option--selected {
-  color: $primary;
+  color: $selectFg;
 }
 
 .c-input_select_options_list__option--active {
-  box-shadow: inset 0 0 0 1px $primaryT;
-  background-color: $primaryT;
+  box-shadow: inset 0 0 0 1px $selectBg;
+  background-color: $selectBg;
+  color: $primary;
 }
 
 .c-input_select_options_list__option_description {
@@ -126,6 +127,12 @@ input.c-input_select__filter_input {
 .c-input_select__selected_value--active,
 .c-input_select__selected_value--placeholder {
   color: $disabled;
+}
+
+.p-file_list__file_type_select {
+  .c-input_select__selected_value--placeholder {
+    color: $fg;
+  }
 }
 
 

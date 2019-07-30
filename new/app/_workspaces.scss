@@ -1,0 +1,54 @@
+.p-connected_workspaces__header_description {
+  color: $text;
+}
+
+.p-connected_workspaces__list {
+  &::-webkit-scrollbar-thumb {
+    color: $bg;
+  }
+
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+}
+
+.p-connected_workspaces__list--loading:before {
+  background-color: $bg;
+}
+
+.p-connected_workspaces__spinner {
+  fill: $bg;
+}
+
+.p-connected_workspaces_row {
+  border-bottom: 1px solid $borderLight;
+
+  &:not(.p-connected_workspaces_row--header):hover {
+    background-color: $bg2;
+  }
+}
+
+.p-connected_workspaces_row--header {
+  color: $text;
+}
+
+.p-connected_workspaces_row__workspace_domain {
+  color: $text;
+}
+
+.p-connected_workspaces_row__actions {
+  color: $fg;
+
+  .active, &:hover {
+    color: $primary;
+  }
+}

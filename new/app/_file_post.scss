@@ -1,0 +1,63 @@
+.c-pillow_file__post {
+  border-top: 1px solid $borderLight;
+}
+
+
+.c-pillow_file__post__content {
+  hr {
+    border-top: 1px solid $borderLight;
+  }
+
+  code, pre {
+    background: $contrast;
+    color: $fg;
+  }
+
+  blockquote {
+    &:before {
+      background-color: $bg2;
+    }
+  }
+
+  .c-pillow_file__post__unfurl, .message {
+    background-color: $bg2;
+  }
+
+  ul {
+
+    > li[data-checked]:before {
+      color: $fg;
+    }
+
+    > li {
+      &[data-checked=true] {
+        color: $disabled;
+      }
+
+      &[data-checked=true]:before {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.c-pillow_file__snippet__content {
+  .CodeMirror {
+    color: $fg;
+  }
+}
+
+.c-pillow_file__snippet__truncated {
+  border-top: 1px solid $borderLight;
+  color: $text;
+}
+
+.c-pillow_file__snippet__content .CodeMirror-code {
+  > div {
+    &:before {
+      border-right: 1px solid $border;
+      color: $fg;
+      background-color: $bg;
+    }
+  }
+}

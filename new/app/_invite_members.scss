@@ -117,3 +117,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-shared_channel_creation_modal__breadcrumbs {
   color: $fg;
 }
+
+.p-shared_channel_invitation_modal__subtitle {
+  color: $text;
+}

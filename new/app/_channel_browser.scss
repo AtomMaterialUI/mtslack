@@ -1,0 +1,40 @@
+.p-channel_browser_list_item {
+  &:not(.p-channel_browser_list_item--disabled):not(.p-channel_browser_list_item--disconnected) {
+    &:active, &:focus, &:hover {
+      box-shadow: 0 -1px 0 0 $bg2, inset 0 -1px 0 $hl;
+    }
+  }
+
+}
+
+.p-channel_browser_list_item--disconnected {
+  color: $text;
+}
+
+.p-channel_browser_list_item__create_info {
+  color: $text;
+}
+
+.p-channel_browser_list_item__member_count {
+  color: $fg;
+}
+
+.p-channel_browser_list_item__preview {
+  color: $text;
+}
+
+.p-channel_browser_list_item__divider {
+  color: $border;
+}
+
+.p-channel_browser_list_item__canceled_icon {
+  color: $red;
+}
+
+.p-channel_browser_section_header {
+  color: $fg;
+}
+
+.p-channel_browser__about_channels {
+  color: $text;
+}

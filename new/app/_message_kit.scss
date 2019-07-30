@@ -1,0 +1,19 @@
+
+.c-message_kit__file__remove {
+  color: $fg;
+}
+
+.c-message_kit__file__meta {
+  color: $text;
+}
+
+.c-message_kit__file__meta__attribution__link {
+  color: $fg;
+  &:active, &:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.c-message_kit__file__meta__separator {
+  color: $border;
+}
