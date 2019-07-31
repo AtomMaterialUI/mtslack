@@ -1,10 +1,12 @@
 .c-sidebar_menu__list_item {
   color: $fg;
+
   &.is_active {
     background: $tree;
     border: 1px solid $tree;
     color: $selectFg;
   }
+
   &:not(.is_active):hover {
     color: inherit;
     background-color: $selectBg;
@@ -13,4 +15,229 @@
 
 a.c-sidebar_menu__list_item {
   color: $primary;
+}
+
+
+.p-channel_sidebar--global_nav_layout:after {
+  background: $bg;
+}
+
+.p-channel_sidebar__empty_state {
+  color: $text;
+}
+
+.p-channel_sidebar__banner {
+  color: $fg;
+}
+
+.p-channel_sidebar__banner--mentions {
+  background: $red;
+}
+
+.p-channel_sidebar__banner--unreads {
+  background: $primary;
+}
+
+.p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name, .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-channel_sidebar {
+  background: $contrast !important;
+  color: $fg !important;
+}
+
+.p-channel_sidebar__channel,
+.p-channel_sidebar__link,
+.p-channel_sidebar__channel:link,
+.p-channel_sidebar__link:link,
+.p-channel_sidebar__channel:visited,
+.p-channel_sidebar__link:visited,
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__link:hover {
+  color: $selectFg;
+}
+
+.p-channel_sidebar__channel--selected,
+.p-channel_sidebar__link--selected,
+.p-channel_sidebar__channel--selected:link,
+.p-channel_sidebar__link--selected:link,
+.p-channel_sidebar__channel--selected:visited,
+.p-channel_sidebar__link--selected:visited,
+.p-channel_sidebar__channel--selected:hover,
+.p-channel_sidebar__link--selected:hover,
+.p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
+.p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+  color: $primary;
+}
+
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__link:hover,
+.p-channel_sidebar__close_container:hover {
+  background: $tree;
+}
+
+.p-channel_sidebar__header {
+  color: $fg;
+}
+
+/* Folders */
+
+input[type="text"].p-channel_sidebar__folder_heading_label_rename {
+  background: rgb(13, 25, 31);
+  color: $fg;
+}
+
+input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
+  background: rgb(3, 15, 21);
+  color: $fg;
+}
+
+/* Override presence icons */
+.p-channel_sidebar__channel--im .c-presence--active,
+.p-channel_sidebar__channel--im-slackbot:before {
+  color: $accent;
+}
+
+.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence,
+.p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected:before {
+  color: $fg;
+}
+
+.p-channel_sidebar__channel--im .c-presence--away {
+  color: $text;
+}
+
+.p-channel_sidebar__channel--selected,
+.p-channel_sidebar__channel--selected:hover,
+.p-channel_sidebar__link--selected,
+.p-channel_sidebar__link--selected:hover {
+  background: $selectBg;
+}
+
+.p-channel_sidebar__channel--selected:before,
+.p-channel_sidebar__channel--selected:hover:before,
+.p-channel_sidebar__link--selected:before,
+.p-channel_sidebar__link--selected:before,
+.p-channel_sidebar__channel--selected:after,
+.p-channel_sidebar__channel--selected:hover:after,
+.p-channel_sidebar__link--selected:after,
+.p-channel_sidebar__link--selected:after {
+  color: $selectFg;
+}
+
+.p-channel_sidebar__badge,
+.p-channel_sidebar__banner--mentions {
+  background: $accent;
+}
+
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+.p-channel_sidebar .c-scrollbar__bar {
+  background: $accent;
+}
+
+.client_channels_list_container.focusablesection:focus .sectionfocusindicator,
+.client_channels_list_container .focus-ring,
+.p-channel_sidebar.focusablesection:focus .sectionfocusindicator,
+#team_menu.focusablesection:focus .sectionfocusindicator {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.client_channels_list_container a:not(.c-link--focus-visible).focus-ring,
+.client_channels_list_container button:not(.c-button--focus-visible).focus-ring,
+.p-channel_sidebar__jumper.c-button--focus-visible:focus,
+.p-channel_sidebar__history_button.c-button--focus-visible:focus,
+.p-channel_sidebar__section_heading_label--clickable.c-button--focus-visible:focus,
+.p-channel_sidebar__section_heading_plus.c-button--focus-visible:focus,
+.p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
+.p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
+.p-channel_sidebar__close.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+/** `opacity: 1` color overrides */
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading_label--clickable:hover,
+.p-channel_sidebar__section_heading_label--unreads,
+.p-channel_sidebar__quickswitcher:hover {
+  color: $primary;
+}
+
+/** Navigation Bar **/
+.p-channel_sidebar__jumper {
+  background: $contrast;
+}
+
+.p-channel_sidebar__jumper:hover {
+  background: $bg;
+}
+
+.p-channel_sidebar__history_button {
+  background: $button;
+}
+
+.p-channel_sidebar__history_button:hover {
+  background: $hl;
+}
+
+.p-channel_sidebar__history_button--disabled:hover {
+  background: $excluded;
+}
+
+/** Global Nav (DEPRECATED BUT KEEP FOR SONIC) **/
+.p-global_nav__top {
+  background: $bg;
+  color: $fg;
+}
+
+.p-global_nav__top:after {
+  background: $bg;
+}
+
+.p-global_nav__sidebar {
+  background: $contrast;
+  color: $text;
+}
+
+.p-global_nav__top_user_presence {
+  background: $contrast;
+}
+
+.p-global_nav__top_user_presence.c-presence--active {
+  color: $accent;
+}
+
+.p-global_nav__top_user_presence.c-presence--away {
+  color: $text;
+}
+
+.p-global_nav__sidebar_jumper:hover,
+.p-global_nav__sidebar_button:hover {
+  color: $primary;
+}
+
+/** Classic Nav (WIP) **/
+.p-classic_nav__team_header {
+  background: $bg;
+  color: $fg;
+}
+
+.p-classic_nav__team_header:hover {
+  background: $selectBg;
+}
+
+.p-classic_nav__team_header__user__presence.c-presence--active {
+  color: $accent;
+}
+
+.p-classic_nav__team_header__user__presence.c-presence--away {
+  color: $text;
+}
+
+.p-classic_nav__team_header .c-link--focus-visible:focus,
+.p-classic_nav__team_header .c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }

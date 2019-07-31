@@ -1,0 +1,355 @@
+.p-message_pane {
+  .c-message_list {
+    &.c-virtual_list--scrollbar > .c-scrollbar__hider,
+    &:not(.c-virtual_list--scrollbar) {
+      background: $bg;
+      color: $fg;
+    }
+
+    &.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+    &:not(.c-virtual_list--scrollbar):before {
+      background: $bg;
+    }
+  }
+}
+
+.p-message_pane {
+  .p-message_pane__top_banners {
+    &:not(:empty) + div .c-message_list {
+      &.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+      &:not(.c-virtual_list--scrollbar):before {
+        border-bottom: 1px solid $borderLight;
+      }
+    }
+  }
+}
+
+.c-message__sender {
+  color: $fg;
+
+  a {
+    color: $fg;
+  }
+}
+
+
+.c-message__body {
+  color: $fg;
+}
+
+.c-message--light {
+  .c-message__sender .c-message__sender_link {
+    color: $selectFg;
+  }
+}
+
+.c-message--dense {
+  .c-message__content_header .c-custom_status {
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-message--focus-within:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+  background-color: $bg2;
+}
+
+
+@keyframes fade-background-highlight {
+  0% {
+    background: $hl;
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+
+.c-message--pinned,
+.c-message--sli_highlight:not(.c-message--sli_highlight_negative),
+.c-message--starred {
+  background: $active;
+}
+
+.c-message--ephemeral, .c-message--sli_highlight_negative {
+  background: $bg2;
+}
+
+.c-message--highlight, .c-message--highlight_yellow_bg {
+  background: $selectBg;
+}
+
+.c-message--custom_response {
+  background: $bg2;
+}
+
+.c-message__label {
+  color: $text;
+}
+
+.c-message--pinned .c-message__label__icon {
+  color: $accent2;
+}
+
+.c-message--custom_response .c-message__label__icon,
+.c-message--sli_highlight .c-message__label__icon {
+  color: $primary;
+}
+
+.c-message--starred .c-message__label__icon {
+  color: $accent2;
+}
+
+.c-message--sli_highlight .c-message__label {
+  .c-mrkdwn__channel.internal_channel_link,
+  .c-mrkdwn__member--link {
+    color: $text;
+  }
+}
+
+.c-message--sli_highlight_negative .c-message__label {
+  background-color: $bg2;
+}
+
+.c-message__label__highlight_title {
+  color: $primary;
+}
+
+.c-message__label__highlight_negative,
+.c-message__label__highlight_positive {
+  color: $disabled;
+}
+
+.c-message__label__highlight_negative--active,
+.c-message__label__highlight_positive--active {
+  color: $primary;
+}
+
+
+.c-message__sender .c-emoji__text_mode_icon {
+  color: $text;
+}
+
+
+.c-message__body--unknown {
+  background: $bg2;
+}
+
+.c-message__body--automated {
+  color: $disabled;
+}
+
+.c-message__body--tombstone {
+  color: $disabled;
+}
+
+.c-message--resend .c-message__body {
+  color: $disabled;
+}
+
+.c-message__resend_controls {
+  color: $disabled;
+}
+
+.c-message__resend_column {
+  background-color: $bg2;
+}
+
+.c-message__cancel,
+.c-message__resend {
+  color: $primary;
+}
+
+
+.c-message__edited_label {
+  color: $text;
+}
+
+.c-message__tombstone_icon {
+  background: $bg2;
+  color: $text;
+}
+
+
+.c-message__editor__emoji_menu {
+  &:hover {
+    .c-message__editor__emoji_circle_icon {
+      color: $yellow;
+    }
+
+    .c-message__editor__emoji_happy_icon {
+      color: $yellow;
+    }
+  }
+}
+
+.c-message__editor__emoji_circle_icon,
+.c-message__editor__emoji_happy_icon,
+.c-message__editor__emoji_smile_icon {
+  color: $bg;
+}
+
+.c-message__editor__input--legacy {
+  background: $contrast;
+  border: 1px solid $borderLight;
+  color: $fg;
+}
+
+.c-message__editor__input--legacy.focus {
+  border-color: $primary;
+  box-shadow: 0 0 7px $primaryT;
+}
+
+.c-message__editor__input {
+  background: $contrast;
+  border-color: $borderLight;
+
+  &.focus {
+    border-color: $primary;
+  }
+}
+
+
+.c-message__editor__warning {
+  color: $red;
+}
+
+.c-message__reply_bar--focus,
+.c-message__reply_bar:hover {
+  background-color: $contrast;
+  border-color: $primaryT;
+}
+
+.c-message__reply_bar--focus .c-message__reply_bar_arrow,
+.c-message__reply_bar:hover .c-message__reply_bar_arrow {
+  color: $text;
+}
+
+.c-message__reply_bar--focus .c-message__reply_bar_view_thread {
+  background-color: $contrast;
+}
+
+.c-message__reply_bar {
+  &:hover .c-message__reply_bar_view_thread {
+    background-color: $contrast;
+  }
+}
+
+.c-message__reply_bar_description {
+  color: $text;
+}
+
+.c-message__broadcast_preamble,
+.c-message__broadcast_preamble_outer {
+  color: $text;
+}
+
+.c-message__file_meta {
+  color: $text;
+}
+
+.c-message__file_meta.c-message__file_meta--file_threads {
+  color: $text;
+
+  .c-message__file_meta_seperator {
+    color: $border;
+  }
+}
+
+.c-message__comment {
+  &:before {
+    color: $text;
+  }
+}
+
+
+.c-message__file_remove_icon {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.c-message__image_container {
+  background: $bg2;
+}
+
+.c-message--deleting {
+  background: $red;
+}
+
+.c-message__call_attachment {
+  border: 1px solid $borderLight;
+  background: $bg;
+}
+
+.c-message__call_icon {
+  color: $green;
+}
+
+.c-message__call--ended .c-message__call_icon {
+  color: $text;
+}
+
+.c-message__call_info {
+  color: $fg;
+}
+
+a.c-message__call_name--linked {
+  color: $fg;
+}
+
+.c-message__call_name + .c-message__call_description {
+  &:before {
+    color: $text;
+  }
+}
+
+.c-message__call_sub {
+  color: $text;
+}
+
+.c-message--standalone {
+  border: 1px solid $borderLight;
+}
+
+.c-message_kit__background--labels--sli_highlight {
+  background: $button;
+}
+
+.c-message_kit__background--labels--custom_response {
+  background: $notif;
+}
+
+.c-message_kit__background--editing {
+  background: $hl;
+}
+
+.c-message_kit__background--highlight {
+  animation: highlight 3s forwards;
+}
+
+@keyframes highlight {
+  20% {
+    background: $hl;
+  }
+
+  60% {
+    background: $bg2;
+  }
+}
+
+
+.c-message_kit__background--deleting {
+  background: $red;
+}
+
+.c-message_kit__pillow {
+  background: $bg;
+  border: 1px solid $border;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}

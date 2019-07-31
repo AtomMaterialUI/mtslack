@@ -1,0 +1,18 @@
+.p-message_pane__unread_banner {
+  background: $accent2;
+  color: $primary;
+}
+
+.p-message_pane__unread_banner__banner {
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-message_pane__unread_banner__close {
+  text-shadow: 0 1px $borderLight;
+  &:hover {
+    background: $accent;
+  }
+}

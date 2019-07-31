@@ -33,7 +33,7 @@
 
 .c-search_autocomplete__suggestion_item--selected {
   .c-search_autocomplete__channel-membership {
-    color: $accent;
+    color: $primary;
   }
 
   .c-search_autocomplete__channel {
@@ -42,7 +42,7 @@
     .c-deprecated-icon,
     .c-icon,
     .c-icon--shared-channels {
-      color: $accent;
+      color: $primary;
     }
   }
 }
@@ -57,27 +57,27 @@
 
 .c-search_autocomplete__suggestion_item--selected {
   .c-search_autocomplete__filetype_description {
-    color: $accent;
+    color: $primary;
   }
 
   .c-search_autocomplete__icon--file {
-    color: $accent;
+    color: $primary;
 
     &:before {
-      color: $accent;
+      color: $primary;
     }
   }
 }
 
 .c-search_autocomplete__team {
   .c-team_name__icon {
-    color: $accent;
+    color: $primary;
   }
 }
 
 .c-search_autocomplete__member {
   .c-unified_member__name {
-    color: $accent;
+    color: $primary;
   }
 }
 
@@ -99,17 +99,17 @@
 
 .c-search_autocomplete__suggestion_item--selected {
   .c-search_autocomplete__member .ts_icon_pencil {
-    color: $accent;
+    color: $primary;
   }
 
   .c-unified_member {
     .c-app_badge, .c-app_label, .c-icon, .c-presence, .presence, .ts_icon_deactivated_user {
-      color: $accent;
+      color: $primary;
     }
   }
 
   .c-unified_member__display-name, .c-unified_member__name, .c-unified_member__secondary-name {
-    color: $accent;
+    color: $primary;
   }
 }
 
@@ -121,7 +121,7 @@
 
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__view {
   .c-view_name__icon, .c-view_name__text {
-    color: $accent;
+    color: $primary;
   }
 }
 
@@ -130,10 +130,10 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__icon--query {
-  color: $accent;
+  color: $primary;
 
   &:before {
-    color: $accent;
+    color: $primary;
   }
 }
 
@@ -145,13 +145,13 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__query_parts .token {
-  color: $accent;
+  color: $primary;
   background-color: $selectBg;
 }
 
 .c-search_autocomplete__suggestion_item--selected {
   .c-unified_member__label--small {
-    color: $accent;
+    color: $primary;
   }
 }
 
@@ -168,4 +168,9 @@
       color: $border;
     }
   }
+}
+
+.c-search_autocomplete__suggestion_list {
+  background: $bg2;
+  color: $fg;
 }

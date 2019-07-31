@@ -1,0 +1,125 @@
+.c-message_attachment {
+  color: $fg;
+}
+
+.c-message_attachment__border {
+  background-color: $borderLight;
+}
+
+.c-message_attachment__delete {
+  color: $text;
+
+  &:focus, &:hover {
+    color: $accent;
+  }
+}
+
+.c-message_attachment__pretext {
+  color: $fg;
+}
+
+.c-message_attachment__over_limit_button {
+  color: $primary;
+}
+
+.c-message_attachment__author_subname,
+.c-message_attachment__part {
+  color: $text;
+}
+
+.c-message_attachment__author {
+  color: $text;
+}
+
+.c-message_attachment__author_link + .c-message_attachment__author_link {
+  color: $accent2;
+}
+
+.c-message_attachment__author_name {
+  color: $fg;
+
+  &.c-link--button {
+    color: $fg;
+
+    &:active, &:focus, &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-message_attachment__footer {
+  color: $bg2;
+}
+
+
+.c-message_attachment__video_html {
+  background-color: $contrast;
+}
+
+.c-message_attachment__video_link {
+
+  &:link, &:visited {
+    color: $accent2;
+  }
+
+  &.c-link--focus-visible:focus, &.focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.c-message_attachment__video_play {
+  &.c-button--focus-visible:focus, &.focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.c-message_attachment__video_link, .c-message_attachment__video_play {
+  color: $fg;
+}
+
+.c-message_attachment__video_link {
+  &:focus, &:hover {
+    color: $selectFg;
+  }
+}
+
+.c-message_attachment__video_play {
+  &:focus, &:hover {
+    color: $selectFg;
+  }
+}
+
+.c-message_attachment__media_trigger {
+  .c-expandable_trigger {
+    color: $primary;
+  }
+}
+
+.c-message_attachment__media_trigger--too_large {
+  color: $disabled;
+}
+
+
+.c-input_select.c-message_attachment__select {
+  border: 1px solid $border;
+
+  &:active, &:hover {
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-message_attachment__file--image {
+  background: $bg2;
+}
+
+
+.c-message_attachment_v2__delete {
+  color: $fg;
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.c-message_attachment_v2__attribution {
+  color: $text;
+}

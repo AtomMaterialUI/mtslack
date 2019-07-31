@@ -1,0 +1,100 @@
+.c-slider__input {
+  &::-webkit-slider-thumb {
+    background: $accent;
+  }
+
+  &::-moz-range-thumb, &::-ms-thumb {
+    background: $accent;
+  }
+
+  &::-webkit-slider-runnable-track {
+    background: $borderLight;
+  }
+
+  &::-moz-range-track, &::-ms-track {
+    background: $borderLight;
+  }
+}
+
+.c-slider__input--focus-visible:focus {
+  &::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &::-moz-range-thumb {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &::-ms-thumb {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}
+
+.c-color_picker__container {
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $borderLight;
+  }
+
+  &.c-color_picker__container--focus-within {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}
+
+.c-color_picker__color_block {
+  border: 1px solid $borderLight;
+  background: $border;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-color_picker__container--focus-within .c-color_picker__color_block {
+  border-color: $primary;
+}
+
+.c-color_picker__input[type=text] {
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+    color: $disabled;
+  }
+}
+
+.c-color_picker__popover {
+  background: $bg;
+}

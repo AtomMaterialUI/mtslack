@@ -38,3 +38,30 @@
     color: $yellow;
   }
 }
+
+
+.c-message_actions__container {
+  background: $bg;
+  border: 0.0625rem solid $border;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.c-message_actions__button {
+  color: $text;
+  border-right: 1px solid $border;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    background: $bg2;
+  }
+
+  .c-icon--small-star-filled {
+    color: $yellow;
+  }
+}

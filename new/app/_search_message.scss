@@ -1,0 +1,45 @@
+.c-search_message__sender {
+  color: $fg;
+
+  a {
+    color: $fg;
+  }
+}
+
+.c-search_message__body {
+  color: $fg;
+}
+
+
+.c-search_message--light {
+  .c-search_message__sender .c-search_message__sender_link {
+    color: $fg;
+  }
+}
+
+.c-search_message--dense {
+  .c-search_message__content_header .c-custom_status {
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-search_message__reactions {
+  color: $text;
+}
+
+
+.c-search__input_and_close {
+  background: $contrast;
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-search__input_and_close__close {
+  color: $text;
+  padding: 10px;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+    border-radius: 50%;
+  }
+}

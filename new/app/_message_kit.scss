@@ -9,6 +9,7 @@
 
 .c-message_kit__file__meta__attribution__link {
   color: $fg;
+
   &:active, &:focus, &:hover {
     color: $primary;
   }
@@ -16,4 +17,26 @@
 
 .c-message_kit__file__meta__separator {
   color: $border;
+}
+
+
+.c-message_kit__tombstone__icon {
+  background: $tree;
+  color: $disabled;
+}
+
+.c-message_kit__tombstone__text {
+  color: $fg;
+}
+
+.c-message_kit__inline_channel_context {
+  color: $text;
+}
+
+.c-message_kit__footer {
+  color: $fg;
+}
+
+.c-message_kit__footer_spacer:before {
+  color: $hl;
 }

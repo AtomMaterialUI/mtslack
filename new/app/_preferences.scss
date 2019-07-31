@@ -1,0 +1,51 @@
+.p-prefs_modal__radiogroup {
+  label {
+    border: 1px solid $border;
+
+    &.p-prefs_modal__radiogroup--selected {
+      background: $selectBg;
+      border-color: $accent;
+    }
+  }
+
+  .p-prefs_modal__radio_decorator {
+    background: $bg;
+  }
+}
+
+.p-prefs_modal__notification_example {
+  &.p-prefs_modal__notification_example--mac {
+    background: $notif;
+  }
+
+  &.p-prefs_modal__notification_example--linux {
+    background: $notif;
+    color: $fg;
+  }
+
+  &.p-prefs_modal__notification_example--windows {
+    background: $notif;
+    color: $fg;
+  }
+}
+
+.p-prefs_modal__channel_overrides_row {
+  border-top: 1px solid $borderLight;
+
+  &:hover {
+    background: $selectBg;
+    border: 1px solid $accent;
+  }
+}
+
+.p-prefs_modal__channel_overrides_row--last {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-prefs_modal__channel_overrides_row__name--muted {
+  color: $text;
+}
+
+.p-prefs_modal__channel_overrides_row__setting {
+  color: $disabled;
+}

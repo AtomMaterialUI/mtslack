@@ -1,0 +1,79 @@
+.c-reaction {
+  background: transparent;
+
+  &.c-button--focus-visible:focus, &.focus-ring {
+    background: $bg;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $borderLight;
+    background: $bg;
+  }
+}
+
+.c-reaction--reacted {
+  box-shadow: inset 0 0 0 1px $accent2;
+  background: $bg2;
+
+  &:hover {
+    background: $bg2;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi) {
+  .c-reaction--reacted {
+    box-shadow: inset 0 0 0 1.5px $primary;
+  }
+}
+
+.c-reaction__count {
+  color: $fg;
+}
+
+.c-reaction--reacted .c-reaction__count {
+  color: $primary;
+}
+
+.c-reaction_add {
+  background: transparent;
+
+  &.c-button--focus-visible:focus, &.focus-ring {
+    background: $bg;
+  }
+
+  &:hover {
+    background: $bg;
+  }
+}
+
+.c-reaction_add__icon--fg {
+  z-index: 1;
+  color: $fg;
+}
+
+.c-reaction_add {
+  &:focus .c-reaction_add__icon--fg,
+  &:hover .c-reaction_add__icon--fg {
+    color: $primary;
+  }
+
+  &:focus .c-reaction_add__icon--bg,
+  &:hover .c-reaction_add__icon--bg {
+    color: $accent;
+  }
+}
+
+.c-reaction__tip_subtitle {
+  color: $text;
+}
+
+
+.c-message_kit__reaction_condensed {
+  color: $disabled;
+}
+
+.c-message_kit__replies_count {
+  color: $text;
+}
