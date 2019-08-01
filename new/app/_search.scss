@@ -32,3 +32,144 @@
   border: 1px solid $border;
 }
 
+.c-react_search_input {
+  &:active {
+    .icon_search_wrapper *, .search_input_wrapper * {
+      color: $accent !important;
+    }
+  }
+
+  &:focus {
+    .icon_search_wrapper *, .search_input_wrapper * {
+      color: $accent !important;
+    }
+  }
+
+  &:hover {
+    .icon_search_wrapper *, .search_input_wrapper * {
+      color: $accent !important;
+    }
+  }
+
+  .ts_icon_times_small {
+    color: $disabled;
+
+    &:active, &:focus, &:hover {
+      color: $fg;
+    }
+  }
+}
+
+.c-search_modal__tip {
+  color: $bg;
+  background: $fg;
+}
+
+.c-search_modal .popover > div {
+  background-color: $bg;
+}
+
+.c-search {
+  background-color: $contrast;
+}
+
+
+.c-search__debug_json {
+  background-color: $bg;
+}
+
+
+.c-search__view .p-search_file {
+  border: 1px solid $border;
+}
+
+.c-search__match {
+  background-color: $hl;
+}
+
+.c-search__ellipsis {
+  color: $disabled;
+}
+
+.c-message_group--hover-expand .c-search__ellipsis {
+  color: $primary;
+}
+
+.c-search__ellipsis {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.c-search__expand {
+  color: $disabled;
+}
+
+.c-message_group--hover-expand .c-search__expand, .c-search__expand:hover {
+  color: $primary;
+}
+
+.c-search__section_header {
+  color: $text;
+}
+
+
+.c-search__tabs {
+  background-color: $contrast;
+}
+
+;
+
+.c-search__tab_new {
+  background-color: $bg2;
+  color: $primary;
+}
+
+.c-search__tabs {
+  &.c-search__tabs--primary_search_legacy {
+    box-shadow: inset 1px 0 0 0 $bg2;
+  }
+
+  &.c-search__tabs--primary_search_sonic {
+    box-shadow: inset 1px 0 0 0 $bg2, inset 0 -1px 0 0 $bg2;
+  }
+}
+
+.c-search__tab.c-tabs__tab.c-tabs__tab--active {
+  box-shadow: inset 0 -2px 0 0 $accent;
+
+  &:active, &:focus {
+    box-shadow: inset 0 -2px 0 0 $accent;
+  }
+}
+
+.c-search__toggle {
+  border: 1px solid $borderLight;
+}
+
+.c-search__toggle_item {
+  color: $disabled;
+
+  &:not(:last-child) {
+    border-right: 1px solid $bg2;
+  }
+}
+
+.c-search__toggle_item--selected {
+  color: $primary;
+  background-color: $hl;
+}
+
+
+.c-search__pager__details {
+  color: $text;
+}
+
+.c-search__pager_feedback {
+  color: $text;
+  border-left: 1px solid $borderLight;
+}
+
+.c-search__feedback_small {
+  color: $text;
+}

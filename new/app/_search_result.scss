@@ -1,0 +1,59 @@
+.c-channel_search_result__channel {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.c-channel_search_result__channel {
+  .c-medium_channel_entity__inline_name_suffix,
+  .c-unified_channel__inline_name_suffix {
+    color: $text;
+  }
+}
+
+.c-channel_search_result__metadata {
+  color: $text;
+}
+
+.c-channel_search_result__justification_icon {
+  color: $orange;
+}
+
+.c-channel_search_result__vline {
+  border-left: thin solid $border;
+}
+
+.c-channel_search_result__inaction_label {
+  color: $text;
+}
+
+.p-people_search_result__person {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+
+.p-people_search_result__person--deactivated .p-people_search_result__name {
+  color: $text;
+}
+
+.p-people_search_result__person--deactivated .p-people_search_result__title {
+  color: $fg;
+}
+
+.p-people_search_result__rows {
+  color: $text;
+}
+
+.p-people_search_result__primary_action {
+  color: $fg;
+}
+
+.p-people_search_result__top_terms {
+  display: block;
+  margin-top: 8px;
+  color: $text;
+}
+
+.p-people_search_result__top_terms_sparkles {
+  color: $accent2;
+}

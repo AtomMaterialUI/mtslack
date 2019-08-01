@@ -1,0 +1,68 @@
+.c-search_filter_section__title {
+  color: $text;
+
+  &:after {
+    border-bottom: thin solid $borderLight;
+  }
+}
+
+.p-search_filter__option--active .p-search_filter__in_channel > .c-presence {
+  color: $fg;
+}
+
+.c-search_filter_section .p-file_list__file_type_select {
+  border-color: $bg2;
+}
+
+.c-select_options_list__option--active .c-channel_name .c-channel_name__team_name {
+  color: $fg;
+}
+
+.p-search_filter__close {
+  color: $disabled;
+}
+
+
+.p-search_filter__checkbox_label--disabled {
+  color: $disabled;
+}
+
+.p-search_filter__dates {
+  border-radius: 4px;
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-search_filter__date {
+  color: $text;
+
+  &:first-child {
+    border-bottom: 1px solid $bg2;
+  }
+}
+
+.p-search_filter__datepicker_trigger {
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+
+.p-search_filter__date_readout {
+  color: $fg;
+}
+
+.p-search_filter__date_close:hover {
+  color: $fg;
+}
+
+
+.p-search_filter__placeholder_avatar {
+  background-color: $contrast;
+}
+
+.p-search_filter__placeholder_name {
+  background-color: $contrast;
+}
+

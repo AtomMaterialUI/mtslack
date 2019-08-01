@@ -1,0 +1,14 @@
+
+.p-message_limit_banner {
+  color: $text;
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-message_limit_banner__graphic {
+  background-color: $contrast;
+
+  .c-icon--eye-closed {
+    color: $fg;
+  }
+}

@@ -64,7 +64,15 @@
 @import "call";
 @import "reactions";
 @import "search_message";
+@import "message_group";
+@import "search_filter";
+@import "message_limit";
+@import "search_result";
+@import "channel_filter";
+@import "custom_status";
 
+@import "classic_nav";
 @import "message";
 @import "unreads";
+@import "workspace";
 //@import "../../scss/general/client";

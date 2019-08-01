@@ -1,0 +1,65 @@
+.c-message_group {
+  border: 1px solid $border;
+  background-color: $bg;
+
+  .c-message_group__header:focus, &:hover .c-message_group__header {
+    color: $primary;
+  }
+
+  .c-message_group__header:focus a, &:hover .c-message_group__header a {
+    color: inherit;
+  }
+
+  .c-message_group__header:focus {
+    .c-channel_name,
+    .c-channel_name__team_name,
+    .c-message_group__header_date {
+      color: $primary;
+    }
+  }
+
+  &:hover .c-message_group__header {
+    .c-channel_name,
+    .c-channel_name__team_name,
+    .c-message_group__header_date {
+      color: $primary;
+    }
+  }
+
+  &:not(:hover) .c-channel_name__team_name {
+    color: $text;
+  }
+
+  &:hover {
+    border-color: $border;
+  }
+}
+
+.c-message_group__header {
+  color: $text;
+
+  a {
+    color: $fg;
+  }
+}
+
+.c-focus_manage_list__item--focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-message_group {
+  .c-channel_name {
+    color: $text;
+  }
+
+}
+
+.c-message_group__header_view_label {
+  color: $text;
+}
+
+
+.c-message_group__divider_text {
+  background-color: $bg;
+  color: $text;
+}

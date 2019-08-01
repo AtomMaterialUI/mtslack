@@ -1,0 +1,130 @@
+//.p-classic_nav {
+//  background: $bg2;
+//  color: $fg;
+//}
+
+.p-classic_nav__team_messages_progress_bar_background {
+  stroke: $border;
+}
+
+.p-classic_nav__team_messages_progress_bar_progress {
+  stroke: $accent;
+}
+
+.c-menu_item__li--highlighted .p-classic_nav__team_messages_progress_bar_text {
+  fill: $bg;
+}
+
+
+.p-classic_nav__team_menu__blurb__sub {
+  color: $text;
+}
+
+.p-classic_nav__channel_header__subtitle {
+  color: $text;
+}
+
+
+.p-classic_nav__model__title__name--dim {
+  color: $text;
+}
+
+.p-classic_nav__model__title__name__status--im {
+  color: $text;
+}
+
+
+.p-classic_nav__model__title__name__unmute {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $red;
+  }
+}
+
+.p-classic_nav__model__title__is_you {
+  color: $fg;
+}
+
+.p-classic_nav__model__title__info {
+  color: $fg;
+}
+
+.p-classic_nav__model__title__info__star--starred {
+  color: $yellow;
+}
+
+.p-classic_nav__model__title__info__star {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $yellow;
+  }
+}
+
+.p-classic_nav__model__title__info__members {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.p-classic_nav__model__title__info__pins {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.p-classic_nav__model__title__info__shared_teams {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $primary;
+  }
+}
+
+
+.p-classic_nav__model__title__info__topic__edit {
+  color: $primary;
+}
+
+
+.p-classic_nav__model__title__info__topic--focus-within .p-classic_nav__model__title__info__topic__text:before, .p-classic_nav__model__title__info__topic:hover .p-classic_nav__model__title__info__topic__text:before {
+  background: $bg;
+  box-shadow: inset 0 0 0 1px $border, 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+.p-classic_nav__model__button {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  color: $text;
+  border-radius: 4px;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-classic_nav__model__button--active {
+  background: $border;
+  color: $fg;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-classic_nav__model__button--disabled {
+  color: $border;
+
+  &:hover {
+    color: $border;
+  }
+}
+
+.p-classic_nav__model__menu__jump {
+  color: $fg;
+}
+
+.p-classic_nav__model__menu__jump__back {
+  border-top: 1px solid $border;
+
+  &:focus, &:hover {
+    color: $primary;
+  }
+}

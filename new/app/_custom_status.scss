@@ -1,0 +1,93 @@
+
+.p-custom_status_input--for_team_site {
+  .p-custom_status_input__duration_picker_select .c-input_select__selected_value--placeholder {
+    color: $fg;
+  }
+}
+
+.p-custom_status_input__clear_icon {
+  color: $text;
+}
+
+.p-custom_status_input__emoji_picker {
+  border-right: 1px solid $borderLight;
+}
+
+.p-custom_status_input__empty_emoji {
+  color: $disabled;
+}
+
+.p-custom_status_input__emoji_picker:hover {
+  .p-custom_status_input__emoji_circle_icon {
+    color: $orange;
+  }
+
+  .p-custom_status_input__emoji_happy_icon {
+    color: $fg;
+  }
+}
+
+.p-custom_status_input__duration_picker_select {
+  .c-input_select__chevron, .c-input_select__filter_input::-webkit-input-placeholder, .c-input_select__selected_value--placeholder, .c-input_select__chevron, .c-input_select__filter_input::-moz-placeholder, .c-input_select__selected_value--placeholder, .c-input_select__chevron, .c-input_select__filter_input::-ms-input-placeholder, .c-input_select__selected_value--placeholder, .c-input_select__chevron, .c-input_select__filter_input::placeholder, .c-input_select__selected_value--placeholder {
+    color: $disabled;
+  }
+}
+
+.p-custom_status_input__custom_expiration_picker {
+  color: $disabled;
+
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-webkit-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-custom_status_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-moz-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-custom_status_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-ms-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-custom_status_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-custom_status_input__chevron_down {
+    color: $text;
+  }
+}
+
+.p-custom_status_input--for_modern_user_menu .p-custom_status_input__presets, .p-custom_status_input--for_team_menu .p-custom_status_input__presets {
+  border-top: 1px solid $borderLight;
+}
+
+.p-custom_status_input__presets_section_header {
+  color: $text;
+}
+
+
+.p-custom_status_input__dialog .p-custom_status_input__preset_option {
+  &:focus {
+    background-color: $primary;
+    color: $bg;
+
+    &:link, &:visited {
+      background-color: $primary;
+      color: $bg;
+    }
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $bg;
+
+    &:link, &:visited {
+      background-color: $primary;
+      color: $bg;
+    }
+  }
+
+  &:focus .p-custom_status_input__preset_option_duration,
+  &:hover .p-custom_status_input__preset_option_duration {
+    color: $bg;
+  }
+}

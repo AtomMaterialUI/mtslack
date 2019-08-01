@@ -1,0 +1,69 @@
+.p-workspace__sidebar {
+  &:after {
+    background: $contrast;
+  }
+}
+
+.p-workspace__primary_view_body {
+  box-shadow: inset 1px 0 $borderLight;
+}
+
+.p-workspace__primary_view_footer {
+  box-shadow: inset 1px 0 $bg2;
+  background: $bg;
+}
+
+.p-workspace__input {
+  &.p-message_input--focus-visible .p-message_input_field.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  .p-message_input_file_button {
+    color: $text;
+
+    &.p-message_input_file_button--active, &:hover {
+      color: $selectFg;
+      background: $green;
+    }
+  }
+
+  .p-message_input_field {
+    background: $contrast;
+    border-color: $button;
+
+    &.focus {
+      border-color: $primary;
+    }
+
+    &.focus {
+      border-color: $borderLight;
+
+      ~ .p-message_input_file_button:not(:hover) {
+        border-color: $button;
+        color: $disabled;
+      }
+    }
+  }
+}
+
+.p-workspace__secondary_view {
+  border-left: 1px solid $border;
+}
+
+.p-workspace__boot_failure {
+  background: $bg2;
+
+  pre {
+    background: $bg;
+  }
+}
+
+.p-workspace__boot_failure_icon {
+  &:before {
+    color: $text;
+  }
+}
+
+.p-workspace__boot_failure_description {
+  background-color: $bg;
+}
