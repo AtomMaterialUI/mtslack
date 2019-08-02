@@ -1,0 +1,19 @@
+.p-pinned_items__remove_item {
+  color: $text;
+
+  &.c-button--focus-visible:focus, &:hover {
+    color: $fg;
+  }
+}
+
+.p-channel_details__pinned_items_section .p-channel_details_section__icon {
+  color: $accent2;
+}
+
+.p-pinned_items__empty_list {
+  color: $disabled;
+
+  .p-pinned_items__empty_list_action {
+    color: $fg;
+  }
+}

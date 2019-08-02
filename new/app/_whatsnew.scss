@@ -1,0 +1,13 @@
+.p-whats_new__item {
+  &:not(.p-whats_new__item_last) {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-whats_new__date {
+  color: $text;
+}
+
+.p-whats_new__blue_dot {
+  color: $accent;
+}

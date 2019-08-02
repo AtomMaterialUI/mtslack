@@ -1,0 +1,76 @@
+.p-file_details__name {
+  color: $fg;
+}
+
+.p-file_details__user_meta {
+  color: $text;
+}
+
+.p-file_details__user_link {
+  color: $fg;
+
+  &:link, &:visited {
+    color: $accent2;
+  }
+}
+
+.p-file_details__meta_container {
+  .c-file__action_button {
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+    }
+
+  }
+
+  .active .c-file__action_button {
+    color: $primary;
+  }
+}
+
+.p-file_details__share_divider {
+  span {
+    color: $disabled;
+  }
+
+  hr {
+    border-color: $borderLight;
+  }
+}
+
+.p-file_details__share_channel {
+  color: $fg;
+}
+
+.p-file_details__share_metadata {
+  color: $text;
+}
+
+.p-file_details__share_metadata_reply_count {
+  color: $text;
+}
+
+
+.p-file_details__tombstone {
+  color: $disabled;
+}
+
+.p-file_details__tombstone_icon {
+  color: $disabled;
+}
+
+
+.p-file_details__comment_separator {
+  color: $border;
+}
+
+.p-file_flexpane--list {
+  background: $bg2;
+}
+
+.p-file_flexpane__storage-warning-container {
+  color: $fg;
+  background-color: $bg;
+  border-bottom: 1px solid $borderLight;
+}

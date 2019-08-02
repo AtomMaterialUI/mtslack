@@ -44,6 +44,7 @@
 
 .p-admin_member_table__search_input {
   border: 1px solid $button;
+
   &:active {
     border: 1px solid $accent;
   }
@@ -72,9 +73,11 @@
 
 .p-admin_member_table__row--deactivated--bounced {
   background: $excluded;
+
   .p-admin_member_table__row__email--address {
     color: $red;
   }
+
   &:hover {
     background: $hl !important;
   }
@@ -120,6 +123,7 @@
   &.active {
     color: $primary;
   }
+
   &.c-button-unstyled {
     &.active, &:hover {
       border: 1px solid $hl;
@@ -175,6 +179,7 @@ button.p-admin_member_table__menu_item--disabled {
 
 .p-admin_member_table__edit_channels--error .c-lazy_filter_select__input_container {
   border: 1px solid $red;
+
   &:focus {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
@@ -189,6 +194,7 @@ button.p-admin_member_table__menu_item--disabled {
   &.p-admin_member_unified_filter__account_type {
     border-right: 1px solid $border;
   }
+
   &.p-admin_member_unified_filter__status {
     border-right: 1px solid $border;
   }
@@ -206,17 +212,21 @@ button.p-admin_member_table__menu_item--disabled {
 .p-admin_member_table__date_picker_trigger {
   &.c-button-unstyled {
     border: 1px solid $button;
+
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
       &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
         color: $disabled;
       }
     }
+
     &[disabled] {
       background: $excluded;
       border: 1px solid $button;
     }
   }
+
   &.active .c-icon--calendar {
     color: $primary;
   }
@@ -224,4 +234,25 @@ button.p-admin_member_table__menu_item--disabled {
 
 .c-member__details {
   color: $text;
+}
+
+.p-member_directory__member_row {
+  background-color: $bg;
+  border-bottom: 1px solid $borderLight;
+
+  &:focus, &:focus-within, &:hover {
+    background-color: $bg2;
+  }
+}
+
+.p-member-directory__loading {
+  color: $fg;
+}
+
+.p-member_directory__search_filter_container {
+  box-shadow: 0 1px 0 0 $border;
+}
+
+.p-member_profile_flexpane .p-member_profile_field {
+  border-top: 1px solid $border;
 }

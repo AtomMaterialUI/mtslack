@@ -30,3 +30,89 @@
 .p-user_group_member_management__row_container--active .p-user_group_member_management__row_button {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
+
+
+.p-user_group_details__handle {
+  color: $text;
+}
+
+.p-user_group_details__description {
+  color: $fg;
+}
+
+.p-user_group_details__list_item {
+  &:not(.p-user_group_base_row__entity) {
+    background-color: $bg;
+    border-bottom: 1px solid $borderLight;
+
+    &:hover {
+      background-color: $active;
+    }
+  }
+}
+
+.p-user_group_details__channel_purpose {
+  color: $text;
+}
+
+.p-user_group_base_row__list_item {
+  background-color: $bg;
+  border-bottom: 1px solid $borderLight;
+
+  &:focus, &:focus-within, &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-user_group_base_row__list_btn {
+  background-color: $button;
+
+  &.active {
+    color: $primary;
+  }
+}
+
+.p-user_group_create_form .c-lazy_filter_select__input_container.focus-ring {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-user_group_row {
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-user_group_row--inactive {
+  &:hover {
+    background-color: $excluded;
+  }
+}
+
+.p-user_group_row__handle {
+  color: $text;
+}
+
+.p-user_group_row__count {
+  color: $text;
+}
+
+
+.p-user_group_list__search {
+  border-bottom: 1px solid $button;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.p-user_group_list__context-menu-button:hover {
+  color: $accent;
+}
+
+.p-user_group_list__loading {
+  color: $fg;
+}
+
+.p-user_group_list__empty {
+  color: $disabled;
+}

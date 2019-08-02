@@ -126,3 +126,35 @@
   }
 }
 
+.p-threads_flexpane__header {
+  .p-threads_flexpane__header_back {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-threads_flexpane__header_permalink {
+  &:focus, &:hover {
+    color: $accent2;
+  }
+}
+
+.p-threads_flexpane__header_channel_name {
+  color: $fg;
+}
+
+.p-threads_flexpane__separator_count {
+  color: $text;
+}
+
+.p-threads_flexpane__separator_line {
+  border-top-color: $border;
+}
+
+.p-threads_flexpane__loading {
+  color: $text;
+}
+

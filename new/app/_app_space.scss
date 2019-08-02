@@ -1,0 +1,42 @@
+.p-app_space {
+  background: $bg2;
+}
+
+.p-app_space__subheader__helper {
+  color: $text;
+}
+
+.p-app_space_profile__info {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-app_space_profile__side__avatar {
+  img {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-app_space_profile__slash_commands {
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-app_space_profile__slash_command {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-app_space_profile__slash_command_desc {
+  color: $text;
+}
+
+.p-app_space_profile__screenshots {
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  background: $button;
+}
+
+.p-app_space_profile__youtube_play_button {
+  .c-icon {
+    color: $button;
+  }
+}

@@ -1,0 +1,148 @@
+.c-virtual_list__item--focus .p-download_item {
+  border-color: $borderLight;
+}
+
+.p-download_item {
+  &.p-download_item--focus-within, &:hover {
+    border-color: $borderLight;
+  }
+}
+
+@keyframes highlighter {
+  0% {
+    background: transparent;
+  }
+
+  10% {
+    background: $hl;
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+
+.p-download_item__action_icon {
+  background: $accent;
+  box-shadow: 0 0 0 3px $bg;
+  color: $selectFg;
+
+  &.snippet {
+    background: $accent2;
+  }
+
+  &.post, &.space {
+    background: $green;
+  }
+
+  &.doc, &.docx {
+    background: $blue;
+  }
+
+  &.xls, &.xlsm, &.xlsx, &.xltx {
+    background: $green;
+  }
+
+  &.ppt, &.pptx {
+    background: $yellow;
+  }
+
+  &.ai, &.sketch {
+    background: $red;
+  }
+
+  &.psd {
+    background: $cyan;
+  }
+
+  &.indd {
+    background: $purple;
+  }
+
+  &.fla, &.swf {
+    background: $red;
+  }
+
+  &.ipa {
+    background: $gray;
+  }
+
+  &.apk {
+    background: $green;
+  }
+
+  &.dropbox {
+    background: $primary;
+  }
+
+  &.gpres {
+    background: $orange;
+  }
+
+  &.gsheet {
+    background: $green;
+  }
+
+  &.gdoc {
+    background: $cyan;
+  }
+
+  &.gdraw, &.gform, &.pdf {
+    background: $red;
+  }
+}
+
+.p-download_item__image {
+  border: 1px solid $borderLight;
+}
+
+.p-download_item__container {
+  .p-download_item__name_row {
+    color: $disabled;
+  }
+}
+
+.p-download_item__link--cancel,
+.p-download_item__link--pause,
+.p-download_item__link--resume {
+  color: $text;
+}
+
+.p-download_item__link--remove {
+  &:focus, &:hover {
+    color: $red;
+  }
+}
+
+.p-download_item__size_row {
+  color: $text;
+}
+
+
+.p-download_item__actions {
+  background: $bg;
+}
+
+.p-download_item__link--open,
+.p-download_item__link--retry,
+.p-download_item__link--show {
+  color: $text;
+}
+
+.p-download_item__progress_row {
+  opacity: 1;
+  background-color: $bg2;
+}
+
+.p-download_item__progress {
+  background-color: $accent;
+}
+
+.p-downloads__clear_all {
+  border-right: 1px solid $borderLight;
+
+  &:hover {
+    color: $primary;
+  }
+}

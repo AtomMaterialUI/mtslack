@@ -65,3 +65,80 @@
 .p-channel_details__member_count {
   color: $text;
 }
+
+.p-channel_details_section {
+  border-bottom: 1px solid $border;
+}
+
+.p-channel_details_section__caret_icon {
+  color: $text;
+}
+
+.p-channel_details__highlights_section .p-channel_details_section__icon {
+  color: $accent;
+}
+
+
+.p-highlights_section__group_title_line {
+  border-top: 1px solid $borderLight;
+}
+
+.p-highlights_section__group_title_label {
+  background-color: $bg;
+}
+
+.p-channel_details__members_list_section {
+  .p-channel_details_section__icon {
+    color: $accent;
+  }
+}
+
+.p-channel_details__member_list__guests {
+  color: $text;
+}
+
+.p-channel_details__members_dialog__list--indicate-top {
+  border-top: 1px solid $borderLight;
+}
+
+.p-channel_details__apps_section {
+  .p-channel_details_section__icon {
+    color: $accent2;
+  }
+}
+
+.p-channel_details__shared_files_section .p-channel_details_section__icon {
+  color: $red;
+}
+
+.p-channel_details__shared_files__empty {
+  color: $text;
+}
+
+.p-channel_details__notification_prefs_section .p-channel_details_section__icon {
+  color: $red;
+}
+
+.p-channel_details__notification_prefs_section__pref_label {
+  color: $text;
+}
+
+.p-channel_details__notification_prefs_section__notification_warning {
+  background: $yellow;
+}
+
+.p-channel_details__dm_section {
+  border-bottom: 1px solid $border;
+}
+
+.p-channel_details__dm_section__tz_section {
+  border-bottom: 1px solid $border;
+}
+
+.p-channel_details__dm_section__tz_label {
+  color: $text;
+}
+
+.p-channel_details__subtitle {
+  color: $text;
+}

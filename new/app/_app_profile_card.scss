@@ -21,3 +21,66 @@
 .p-app_profile_card__footer {
   border-top: 1px solid $border;
 }
+
+
+.p-app_profile_flexpane_header {
+  background: linear-gradient(136.53deg, $bg2, $hl), linear-gradient(312.01deg, $fg, $text);
+  background-color: $bg2;
+}
+
+.p-app_profile_flexpane_header--external {
+  background: linear-gradient(136.53deg, $bg2, $hl), linear-gradient(312.01deg, $fg, $text);
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-app_profile_flexpane_header__icon--emoji {
+  background-color: $bg;
+}
+
+.p-app_profile_flexpane_header__row {
+  color: $fg;
+}
+
+.p-app_profile_flexpane_header__app_label {
+  background-color: $tree;
+}
+
+.p-app_profile_flexpane_header__tagline {
+  color: $fg;
+}
+
+.p-app_profile_flexpane_header__button {
+  color: $fg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-app_profile_flexpane__description__fade {
+  background: linear-gradient(180deg, $bg, $bg2);
+}
+
+.p-app_profile_flexpane__description__button {
+  color: $selectFg;
+  background: $accent;
+}
+
+.p-app_profile_flexpane__slash_command {
+  border: 1px solid $border;
+
+  &:hover {
+    background: $primary;
+    color: $bg;
+
+    .p-app_profile_flexpane__slash_command__description {
+      color: $text;
+    }
+  }
+}
+
+.p-app_profile_flexpane__slash_command__description {
+  color: $text;
+}

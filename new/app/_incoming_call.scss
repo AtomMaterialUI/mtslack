@@ -1,0 +1,32 @@
+.p-incoming_call {
+  color: $fg;
+}
+
+.p-incoming_call__external_team_banner {
+  background-color: $bg2;
+}
+
+.p-incoming_call__external_team_icon {
+  border: 2px solid $border;
+}
+
+.p-incoming_call__member_name_wrapper {
+  color: $fg;
+}
+
+.p-incoming_call__user_caption {
+  color: $text;
+}
+
+.p-incoming_call__button {
+  width: 84px;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-browser_incoming_call {
+  background: $contrast;
+  box-shadow: 0 7px 40px $borderLight;
+}

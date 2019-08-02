@@ -1,0 +1,12 @@
+.p-starred_item {
+  border: none;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-starred_item__file {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $bg2;
+  }
+}

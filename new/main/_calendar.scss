@@ -25,10 +25,12 @@
 
 .c-date_picker_calendar__date {
   border: 1px solid $borderLight;
+
   &.c-date_picker_calendar__date--is_active:focus,
   &:not(.c-date_picker_calendar__date--disabled):hover {
     border-color: $primaryT;
   }
+
   &.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected),
   &:not(.c-date_picker_calendar__date--disabled):not(.c-date_picker_calendar__date--is_selected):hover {
     background-color: $primaryT;
@@ -37,9 +39,11 @@
 
 .c-date_picker_calendar__date--is_today {
   color: $primary;
+
   &:after {
     border: 1px solid $primary;
   }
+
   &.c-date_picker_calendar__date--is_selected:after {
     border-color: $bg;
   }
@@ -48,6 +52,7 @@
 .c-date_picker_calendar__date--is_selected {
   color: $primary;
   background-color: $selectBg;
+
   &:after {
     border-color: $bg;
   }
@@ -90,4 +95,9 @@
 
 .c-date_picker__dropdown {
   background-color: $bg;
+}
+
+
+.p-calendar_flexpane__loading {
+  color: $fg;
 }

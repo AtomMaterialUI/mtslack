@@ -52,3 +52,32 @@
 .p-shortcuts_dialog__option--active:first-child {
   border-color: $borderLight;
 }
+
+.p-shortcuts_flexpane__shortcut {
+  border-color: $borderLight;
+}
+
+.p-shortcuts_flexpane__shortcut_title {
+  color: $fg;
+}
+
+.p-shortcuts_flexpane__tip {
+  color: $text;
+}
+
+.p-shortcuts_flexpane__shortcut_hoverable .p-shortcuts_flexpane__shortcut_title {
+  color: $primary;
+}
+
+.p-shortcuts_flexpane__list .c-virtual_list__scroll_container {
+  margin: 16px 0 32px 0;
+}
+
+.p-shortcuts_flexpane__shortcut_heading {
+  border-color: $borderLight;
+  color: $fg;
+}
+
+.p-shortcuts_flexpane__shortcut_sub_heading:not(.block) {
+  color: $text;
+}

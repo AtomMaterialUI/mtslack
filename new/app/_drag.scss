@@ -1,0 +1,44 @@
+@keyframes messagePaneDragOverlayOverlayTransition {
+  0% {
+    background: hsla(0, 0%, 100%, 0);
+    opacity: 0;
+  }
+
+  to {
+    background: $bg;
+    opacity: 1;
+  }
+}
+
+
+.p-message_pane_drag_overlay {
+  background: $bg;
+  animation: messagePaneDragOverlayOverlayTransition .12s;
+}
+
+.p-message_pane_drag_overlay__subtitle {
+  color: $text;
+}
+
+
+.p-message_pane_drag_overlay__anim_readonly {
+
+  &:before {
+    color: $disabled;
+  }
+}
+
+.p-thread_drag_overlay {
+  background: $bg;
+}
+
+.p-thread_drag_overlay__anim_readonly {
+  &:before {
+    color: $disabled;
+  }
+}
+
+
+.p-thread_drag_overlay__subtitle {
+  color: $text;
+}
