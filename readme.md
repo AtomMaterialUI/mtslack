@@ -55,114 +55,81 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 - ??????
 - PROFIT!!!!!!
 
-### For Slack < 4.0
-Find your Slack's application directory.
-
-* Windows: `%homepath%\AppData\Local\slack\`
-* Mac: `/Applications/Slack.app/Contents/`
-* Linux: `/usr/lib/slack/` (Debian-based)
-
-
-Open up the most recent version (e.g. `app-2.5.1`) then open
-`resources\app.asar.unpacked\src\static\ssb-interop.js`
-
-At the very bottom, add
-
-```js
-// First make sure the wrapper app is loaded
-document.addEventListener("DOMContentLoaded", function() {
-
-   // Then get its webviews
-   let webviews = document.querySelectorAll(".TeamView webview");
-
-   // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://raw.githubusercontent.com/mallowigi/slack-one-dark-theme/master/custom.css';
-   let cssPromise = fetch(cssPath).then(response => response.text());
-
-   let customCustomCSS = `
-   :root {
-      /* Modify these to change your theme colors: */
-     --primary: #E5C17C;
-     --accent: #568AF2;
-     --text: #ABB2BF;
-     --background: #282C34;
-     --background-elevated: #3B4048;
-
-     /* These should be less important: */
-     --background-hover: lighten(#3B4048, 10%);
-     --background-light: #AAA;
-     --background-bright: #FFF;
-
-     --border-dim: #666;
-     --border-bright: var(--primary);
-
-     --text-bright: #FFF;
-     --text-dim: #555c69;
-     --text-special: var(--primary);
-     --text-accent: var(--text-bright);
-
-     --scrollbar-background: #000;
-     --scrollbar-border: var(--primary);
-
-     --yellow: #fc0;
-     --green: #98C379;
-     --cyan: #56B6C2;
-     --blue: #61AFEF;
-     --purple: #C678DD;
-     --red: #E06C75;
-     --red2: #BE5046;
-     --orange: #D19A66;
-     --orange2: #E5707B;
-     --gray: #3E4451;
-     --silver: #9da5b4;
-     --black: #21252b;
-      }
-   `
-
-   // Insert a style tag into the wrapper view
-   cssPromise.then(css => {
-      let s = document.createElement('style');
-      s.type = 'text/css';
-      s.innerHTML = css + customCustomCSS;
-      document.head.appendChild(s);
-   });
-
-   // Wait for each webview to load
-   webviews.forEach(webview => {
-      webview.addEventListener('ipc-message', message => {
-         if (message.channel == 'didFinishLoading')
-            // Finally add the CSS into the webview
-            cssPromise.then(css => {
-               let script = `
-                     let s = document.createElement('style');
-                     s.type = 'text/css';
-                     s.id = 'slack-custom-css';
-                     s.innerHTML = \`${css + customCustomCSS}\`;
-                     document.head.appendChild(s);
-                     `
-               webview.executeJavaScript(script);
-            })
-      });
-   });
-});
-```
-
-Notice that you can edit any of the theme colors using the custom CSS (for
-the already-custom theme.) Also, you can put any CSS URL you want here,
-so you don't necessarily need to create an entire fork to change some small styles.
-
-That's it! Restart Slack and see how well it works.
-
-NB: You'll have to do this every time Slack updates.
-
 # Development
 
-## Inspect
+## Building styles
+
+This project consists in two parts:
+- The CLI, used for applying the styles
+- The Styles, written with Sass (Node-sass)
+
+The cli is found in the `lib` directory while the styles are found in the `styles` directory.
+
+Then run `npm run styles` or `npm run debugStyles` to compile the scss files in `dist/slack.min.css` or `dist/slack.css`
+
+## Apply the styles
+
+### Using the WebApp
 
 Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
 
 To test your CSS, install a Stylish-like extension (https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) then create
 a new style for slack and paste the CSS inside and save.
+
+You should already see all your styles applied. Please note that there are some differences between the web app and the native app.
+
+### Using the Electron app
+
+First of all install and run a web server
+
+```
+npm i -g http-server
+http-server .
+```
+
+You can now have access to the current project directory. Particularly the `dist/slack.css` where the magic happens.
+
+Then changes the url in `lib/consts.js` to point to `http://localhost:8080/dist/slack.css` to use your local styles.
+
+----
+Instead of launching Slack normally, you'll need to enable developer mode to be able to inspect things.
+
+* Mac: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
+
+* Linux: (todo)
+
+* Windows: (todo)
+
+#### Live Reload
+
+In addition to running the required modifications, you will likely want to add auto-reloading:
+
+```js
+const cssPath = 'http://localhost:8080/dist/slack.css';
+
+window.reloadCss = function() {
+   const webviews = document.querySelectorAll(".TeamView webview");
+   fetch(cssPath + '?zz=' + Date.now(), {cache: "no-store"}) // qs hack to prevent cache
+      .then(response => response.text())
+      .then(css => {
+         console.log(css.slice(0,50));
+         webviews.forEach(webview =>
+            webview.executeJavaScript(`
+               (function() {
+                  let styleElement = document.querySelector('style#slack-custom-css');
+                  styleElement.innerHTML = \`${css}\`;
+               })();
+            `)
+         )
+      });
+};
+
+fs.watchFile(cssPath, reloadCss);
+```
+
+# License
+
+Apache 2.0
 
 # Acknowledgements
 
