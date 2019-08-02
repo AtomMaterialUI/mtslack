@@ -3232,6 +3232,16 @@ button.p-admin_member_table__menu_item--disabled {
 a.c-sidebar_menu__list_item {
   color: var(--primary); }
 
+.p-team_sidebar__shortcut_hint {
+  background: var(--fg);
+  color: var(--bg); }
+
+.p-team_sidebar__mentions_badge {
+  color: var(--secondBg); }
+
+.p-team_sidebar__signed_out_badge {
+  color: var(--accent2); }
+
 .p-channel_sidebar--global_nav_layout:after {
   background: var(--bg); }
 
@@ -5781,13 +5791,19 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--bg); }
 
 .p-classic_nav__team_messages_progress_bar_background {
-  stroke: var(--border); }
+  stroke: var(--border) !important; }
 
 .p-classic_nav__team_messages_progress_bar_progress {
-  stroke: var(--accent); }
+  stroke: var(--accent) !important; }
+
+.p-classic_nav__team_messages_progress_bar_text {
+  fill: var(--fg) !important; }
 
 .c-menu_item__li--highlighted .p-classic_nav__team_messages_progress_bar_text {
-  fill: var(--bg); }
+  fill: var(--primary) !important; }
+
+.p-classic_nav__team_messages_limit_meter {
+  color: var(--fg); }
 
 .p-classic_nav__team_menu__blurb__sub {
   color: var(--text); }
@@ -5859,6 +5875,10 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   border-top: 1px solid var(--border); }
   .p-classic_nav__model__menu__jump__back:focus, .p-classic_nav__model__menu__jump__back:hover {
     color: var(--primary); }
+
+.p-shared_channels_team_menu_item__label--new {
+  background-color: var(--accent2);
+  color: var(--primary); }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
   background: var(--bg);

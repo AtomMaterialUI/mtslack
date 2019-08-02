@@ -17,6 +17,19 @@ a.c-sidebar_menu__list_item {
   color: $primary;
 }
 
+.p-team_sidebar__shortcut_hint {
+  background: $fg;
+  color: $bg;
+}
+
+.p-team_sidebar__mentions_badge {
+  color: $bg2;
+}
+
+.p-team_sidebar__signed_out_badge {
+  color: $accent2;
+}
+
 
 .p-channel_sidebar--global_nav_layout:after {
   background: $bg;
@@ -241,3 +254,4 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-classic_nav__team_header .c-button--focus-visible:focus {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
+

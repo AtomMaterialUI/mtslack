@@ -4,15 +4,23 @@
 //}
 
 .p-classic_nav__team_messages_progress_bar_background {
-  stroke: $border;
+  stroke: $border !important;
 }
 
 .p-classic_nav__team_messages_progress_bar_progress {
-  stroke: $accent;
+  stroke: $accent !important;
+}
+
+.p-classic_nav__team_messages_progress_bar_text {
+  fill: $fg !important;
 }
 
 .c-menu_item__li--highlighted .p-classic_nav__team_messages_progress_bar_text {
-  fill: $bg;
+  fill: $primary !important;
+}
+
+.p-classic_nav__team_messages_limit_meter {
+  color: $fg;
 }
 
 
@@ -127,4 +135,10 @@
   &:focus, &:hover {
     color: $primary;
   }
+}
+
+
+.p-shared_channels_team_menu_item__label--new {
+  background-color: $accent2;
+  color: $selectFg;
 }
