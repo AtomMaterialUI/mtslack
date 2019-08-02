@@ -118,10 +118,10 @@
 }
 
 .p-classic_nav__model__button--disabled {
-  color: $border;
+  color: $disabled;
 
   &:hover {
-    color: $border;
+    color: $disabled;
   }
 }
 

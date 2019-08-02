@@ -238,6 +238,10 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   color: $fg !important;
 }
 
+.p-classic_nav__team_header__team__dnd:hover {
+  color: $primary !important;
+}
+
 .p-classic_nav__team_header:hover {
   background: $selectBg !important;
 }
@@ -262,10 +266,12 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-team_sidebar__item {
-  color: $selectFg !important;
+  color: $fg !important;
 }
 
-.p-team_sidebar__add_button,
+.p-team_sidebar__add_button {
+  color: $fg !important;
+}
 .p-team_sidebar__add_button:hover,
 .p-team_sidebar__add_button:focus,
 .p-team_sidebar__add_button:active {
@@ -282,12 +288,12 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-team_sidebar__add_button:active {
   border-color: $primary !important;
   background: $hl !important;
-  box-shadow: 0 0 0 3px $accent, 0 0 0 6px $accentT !important;
+  box-shadow: 0 0 0 3px $button, 0 0 0 6px $hl !important;
 }
 
 .p-team_sidebar__unread_dot,
 .p-team_sidebar__mentions_badge {
-  border-color: $accent !important;
+  border-color: $bg !important;
 }
 
 .p-team_sidebar__mentions_badge {
@@ -295,7 +301,7 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-team_sidebar__unread_dot {
-  background: $primary !important;
+  background: $accent !important;
 }
 
 .p-team_sidebar__item.c-button--focus-visible:focus,
@@ -313,10 +319,10 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-team_sidebar__icon:hover {
-  box-shadow: 0 0 0 3px $accent, 0 0 0 6px $accentT !important;
+  box-shadow: 0 0 0 3px $button, 0 0 0 6px $hl !important;
 }
 
 .p-team_sidebar__icon--active,
 .p-team_sidebar__icon--active:hover {
-  box-shadow: 0 0 0 3px $primaryT, 0 0 0 6px $primary !important;
+  box-shadow: 0 0 0 3px $bg, 0 0 0 6px $primary !important;
 }
