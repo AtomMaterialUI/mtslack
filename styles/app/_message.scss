@@ -2,7 +2,7 @@
   .c-message_list {
     &.c-virtual_list--scrollbar > .c-scrollbar__hider,
     &:not(.c-virtual_list--scrollbar) {
-      background: transparent;
+      background: $bg;
       color: $fg;
     }
 
@@ -19,6 +19,7 @@
       &.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
       &:not(.c-virtual_list--scrollbar):before {
         border-bottom: 1px solid $borderLight;
+        background: $bg2;
       }
     }
   }

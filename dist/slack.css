@@ -6297,7 +6297,9 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--selectFg); }
 
 .p-classic_nav__right__search {
-  border: 1px solid var(--button); }
+  border: 1px solid var(--button);
+  background: var(--contrast);
+  color: var(--fg); }
   .p-classic_nav__right__search:hover {
     border-color: var(--active); }
 
@@ -6371,14 +6373,15 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     background: var(--button); }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
-  background: transparent;
+  background: var(--bg);
   color: var(--fg); }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
   background: var(--bg); }
 
 .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before {
-  border-bottom: 1px solid var(--active); }
+  border-bottom: 1px solid var(--active);
+  background: var(--secondBg); }
 
 .c-message__sender {
   color: var(--fg); }
