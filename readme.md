@@ -1,32 +1,22 @@
-# One Dark Theme for Slack
+# Slack Theme Collection
 
-Atom One Dark Theme for Slack!
+Customize your Slack with one of the provided themes.
 
-# IMPORTANT NOTICE!!!!!!!!!!!!
+Theme List:
+- Atom One Dark
 
->
-> This repository is now archived since Slack changed the way they work. Until a workaround, if exists, is found, there is no > way to change the theme again.
-
-> If you still own a previous version though, here is how to apply it:
-> 
-
-
-
-
-
-
-
-
-
+More to come!
 
 ----------------------------
 # Preview
 
-![Screenshot](preview.png)
+TODO
 
 # Pledge
 
 If you like this plugin, you can buy me a beer (or a coffee, or something else) using [PayPal](https://paypal.me/mallowigi?locale.x=en_US)
+
+You can also support this theme by subscribing to the Material Theme OpenCollective. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]
 
 ## Backers
 
@@ -164,46 +154,6 @@ so you don't necessarily need to create an entire fork to change some small styl
 That's it! Restart Slack and see how well it works.
 
 NB: You'll have to do this every time Slack updates.
-
-# Color Schemes
-
-Here's some example color variations you might like.
-
-## Default
-![Default](https://cloud.githubusercontent.com/assets/7691630/24120350/4cbb643e-0d82-11e7-8353-5d4eb65dfd6a.png)
-```
---primary: #09F;
---text: #CCC;
---background: #080808;
---background-elevated: #222;
-```
-
-## One Dark
-![One Dark](https://user-images.githubusercontent.com/806101/27455546-826b3d88-5752-11e7-8a6b-87285b90eb3e.png)
-```
---primary: #61AFEF;
---text: #ABB2BF;
---background: #282C34;
---background-elevated: #3B4048;
-```
-
-## Low Contrast
-![Low Contrast](https://cloud.githubusercontent.com/assets/7691630/24120352/4ccdedf2-0d82-11e7-8ff7-c88e48b8e917.png)
-```
---primary: #CCC;
---text: #999;
---background: #222;
---background-elevated: #444;
-```
-
-## Navy
-![Navy](https://cloud.githubusercontent.com/assets/7691630/24120353/4cd08c4c-0d82-11e7-851a-4c62340456ad.png)
-```
---primary: #FFF;
---text: #CCC;
---background: #225;
---background-elevated: #114;
-```
 
 # Development
 

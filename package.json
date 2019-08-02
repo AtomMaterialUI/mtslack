@@ -1,7 +1,7 @@
 {
-  "name": "slack-one-dark-theme",
+  "name": "slack-themes",
   "version": "1.0.0",
-  "description": "Atom One Dark Theme for Slack!",
+  "description": "Slack themes for slack",
   "main": "index.js",
   "scripts": {
     "apply": "sudo npx ./main.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mallowigi/slack-one-dark-theme.git"
+    "url": "git+https://github.com/mallowigi/slack-themes.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mallowigi/slack-one-dark-theme/issues"
+    "url": "https://github.com/mallowigi/slack-themes/issues"
   },
-  "homepage": "https://github.com/mallowigi/slack-one-dark-theme#readme",
+  "homepage": "https://github.com/mallowigi/slack-themes#readme",
   "devDependencies": {
     "asar": "^2.0.1",
     "chalk": "^2.4.2",
