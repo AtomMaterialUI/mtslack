@@ -3489,6 +3489,9 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   background: var(--bg) !important;
   color: var(--fg) !important; }
 
+.p-classic_nav__team_header__team__dnd:hover {
+  color: var(--primary) !important; }
+
 .p-classic_nav__team_header:hover {
   background: var(--selectBg) !important; }
 
@@ -3507,9 +3510,11 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   background: var(--bg) !important; }
 
 .p-team_sidebar__item {
-  color: var(--selectFg) !important; }
+  color: var(--fg) !important; }
 
-.p-team_sidebar__add_button,
+.p-team_sidebar__add_button {
+  color: var(--fg) !important; }
+
 .p-team_sidebar__add_button:hover,
 .p-team_sidebar__add_button:focus,
 .p-team_sidebar__add_button:active {
@@ -3524,17 +3529,17 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-team_sidebar__add_button:active {
   border-color: var(--primary) !important;
   background: var(--hl) !important;
-  box-shadow: 0 0 0 3px var(--accent), 0 0 0 6px var(--accentT) !important; }
+  box-shadow: 0 0 0 3px var(--button), 0 0 0 6px var(--hl) !important; }
 
 .p-team_sidebar__unread_dot,
 .p-team_sidebar__mentions_badge {
-  border-color: var(--accent) !important; }
+  border-color: var(--bg) !important; }
 
 .p-team_sidebar__mentions_badge {
   background: var(--accent2) !important; }
 
 .p-team_sidebar__unread_dot {
-  background: var(--primary) !important; }
+  background: var(--accent) !important; }
 
 .p-team_sidebar__item.c-button--focus-visible:focus,
 .p-team_sidebar__add_button.c-link--focus-visible:focus {
@@ -3548,11 +3553,11 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   color: var(--accent) !important; }
 
 .p-team_sidebar__icon:hover {
-  box-shadow: 0 0 0 3px var(--accent), 0 0 0 6px var(--accentT) !important; }
+  box-shadow: 0 0 0 3px var(--button), 0 0 0 6px var(--hl) !important; }
 
 .p-team_sidebar__icon--active,
 .p-team_sidebar__icon--active:hover {
-  box-shadow: 0 0 0 3px var(--primaryT), 0 0 0 6px var(--primary) !important; }
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 6px var(--primary) !important; }
 
 .c-card {
   border: 1px solid var(--active); }
@@ -6275,9 +6280,9 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     color: var(--fg); }
 
 .p-classic_nav__model__button--disabled {
-  color: var(--border); }
+  color: var(--disabled); }
   .p-classic_nav__model__button--disabled:hover {
-    color: var(--border); }
+    color: var(--disabled); }
 
 .p-classic_nav__model__menu__jump {
   color: var(--fg); }
@@ -6366,7 +6371,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     background: var(--button); }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
-  background: var(--bg);
+  background: transparent;
   color: var(--fg); }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
