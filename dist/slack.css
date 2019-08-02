@@ -411,12 +411,12 @@ h1, h2, h3, h4 {
 
 code {
   border: 1px solid var(--border);
-  background-color: var(--contrast);
+  background-color: var(--hl);
   color: var(--fg); }
 
 pre {
   border: 1px solid var(--active);
-  background: var(--contrast);
+  background: var(--hl);
   color: var(--fg); }
 
 blockquote:before {
@@ -1486,6 +1486,9 @@ a.label {
 .c-infinite_spinner--blue .c-infinite_spinner__path {
   stroke: var(--accent); }
 
+.c-message_list__spinner {
+  color: var(--hl); }
+
 .c-toast {
   background: var(--notif);
   color: var(--fg); }
@@ -1877,6 +1880,19 @@ textarea.c-input_textarea--with_error {
 
 input[type=text].c-input_text.p-channel_name_input--input_with_warning {
   background-color: var(--contrast); }
+
+.p-message_pane_input__disabled {
+  background-color: var(--excluded);
+  color: var(--disabled); }
+
+.p-message_pane_input__preview {
+  background-color: var(--contrast); }
+
+.p-message_pane_input__preview_subtitle {
+  color: var(--fg); }
+
+.p-message_pane_input__preview_metadata {
+  color: var(--text); }
 
 .c-menu_item__button {
   color: var(--fg); }
@@ -2869,6 +2885,13 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   background-color: var(--bg); }
 
 .p-message_container_loading__msg {
+  color: var(--disabled); }
+
+.p-degraded_list__loading {
+  color: var(--disabled);
+  background: var(--excluded); }
+
+.p-degraded_list__loading--offline {
   color: var(--disabled); }
 
 .p-oauth_scope_info__spacer_icon {
@@ -3980,6 +4003,10 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
 .c-base_list_entity--medium.c-base_list_entity--active {
   background-color: var(--selectBg); }
 
+.c-team_entity__icon--default {
+  background-color: var(--button);
+  color: var(--fg); }
+
 .ql-editor ul[data-checked=false] > li:before {
   color: var(--button); }
 
@@ -4257,6 +4284,29 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
   border: 1px solid var(--red);
   background-color: var(--secondBg); }
 
+.p-channel_details__channel_details_section .p-channel_details_section__icon {
+  color: var(--text); }
+
+.p-channel_details__heading {
+  color: var(--text); }
+
+.p-channel_details__created_link {
+  color: var(--accent2); }
+  .p-channel_details__created_link:hover {
+    color: var(--primary); }
+
+.p-channel_details__workspaces_row_member_count {
+  color: var(--text); }
+
+.p-channel_details__similar_channels_channel :hover {
+  color: var(--fg); }
+
+.p-channel_details__similar_channels_channel_link {
+  color: var(--accent2); }
+
+.p-channel_details__member_count {
+  color: var(--text); }
+
 .p-invite_members_form__header_icon {
   color: var(--accent2); }
 
@@ -4357,6 +4407,24 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--fg);
   background-color: var(--excluded); }
 
+.p-user_group_member_management__dialog_body {
+  border-bottom: 1px solid var(--active); }
+
+.p-user_group_member_management__search {
+  border-bottom: 1px solid var(--button); }
+
+.p-user_group_member_management__search--no_list_title {
+  border-bottom: 1px solid var(--active); }
+
+.p-user_group_member_management__row_container--active {
+  background-color: var(--active); }
+
+.p-user_group_member_management__row {
+  border-bottom: 1px solid var(--active); }
+
+.p-user_group_member_management__row_container--active .p-user_group_member_management__row_button {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
 .c-coachmark {
   background: var(--bg); }
 
@@ -4402,6 +4470,33 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-shared_channels_coachmark_subtitle {
   color: var(--fg); }
+
+.p-coachmark {
+  color: var(--selectFg);
+  background-color: var(--accent); }
+
+.p-coachmark__callout {
+  background-color: var(--accent); }
+
+.p-coachmark__close_btn {
+  color: var(--selectFg); }
+
+.p-coachmark__skip_link_button {
+  color: var(--fg); }
+
+.p-coachmark__skip_button {
+  color: var(--fg);
+  box-shadow: inset 0 0 0 1px var(--active); }
+  .p-coachmark__skip_button:hover {
+    color: var(--primary); }
+
+.p-coachmark__continue_button {
+  color: var(--accent);
+  background-color: var(--button); }
+  .p-coachmark__continue_button:hover {
+    color: var(--accent);
+    background-color: var(--button);
+    box-shadow: inset 0 0 0 1px var(--button); }
 
 .p-shared_channel_introduction_modal__bullet .c-icon--check-small-bold {
   color: var(--fg);
@@ -5019,6 +5114,15 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   .p-file_image_thumbnail__wrapper:after {
     border: 1px solid rgba(0, 0, 0, 0.1); }
 
+.p-new_file_menu__gdoc_icon {
+  color: var(--blue); }
+
+.p-new_file_menu__gsheet_icon {
+  color: var(--green); }
+
+.p-new_file_menu__gpres_icon {
+  color: var(--yellow); }
+
 .p-share_dialog_message_input {
   border: 1px solid var(--active);
   color: var(--fg); }
@@ -5217,6 +5321,21 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .c-message_kit__footer_spacer:before {
   color: var(--hl); }
+
+.c-message_kit__resend--with_buttons {
+  color: var(--text); }
+
+.c-message_kit__resend__footer__border {
+  background: var(--border); }
+
+.c-message_kit__resend__separator {
+  color: var(--border); }
+
+@keyframes to-grey {
+  0% {
+    color: inherit; }
+  to {
+    color: var(--text); } }
 
 .c-files_container .c-message_kit__file__remove {
   color: var(--text); }
@@ -5467,6 +5586,15 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-channel_notification_prefs__table th {
   border-bottom: 1px solid var(--fg); }
+
+.p-notification_bar__section {
+  color: var(--text); }
+
+.p-notification_bar__offline {
+  color: var(--fg); }
+
+.p-notification_bar__offline_icon {
+  color: var(--disabled); }
 
 .p-prefs_modal__radiogroup label {
   border: 1px solid var(--border); }
@@ -6219,6 +6347,10 @@ a.c-message__call_name--linked {
   .c-message_kit__pillow:hover {
     border-color: var(--active); }
 
+.p-message_pane__search_tip_banner_content {
+  background-color: var(--bg);
+  border: 1px solid var(--active); }
+
 .p-message_pane__unread_banner {
   background: var(--accent2);
   color: var(--primary); }
@@ -6262,6 +6394,10 @@ a.c-message__call_name--linked {
 
 .p-unreads_view__top_banners:not(:empty):before {
   background: var(--secondBg); }
+
+.p-message_pane__unread_banner__close--detached {
+  background: var(--accent);
+  border-left: 1px solid var(--accent); }
 
 .p-workspace__sidebar:after {
   background: var(--contrast); }
@@ -6480,6 +6616,24 @@ a.p-sonic_deluxe_toast__link {
 
 .p-app_actions_dialog__option--active:first-child {
   border-color: var(--active); }
+
+.p-app_action_picker_item__text--secondary {
+  color: var(--text); }
+
+.p-app_action_picker_item--active .p-app_action_picker_item__text--secondary {
+  color: var(--active); }
+
+.p-app_action_picker {
+  background-color: var(--bg); }
+
+.p-app_action_picker_trigger_button:hover i {
+  color: var(--primary); }
+
+.p-app_action_picker_trigger_button.active, .p-app_action_picker_trigger_button:active {
+  color: var(--primary); }
+
+.p-app_action_picker_trigger_button--highlight i {
+  color: var(--primary); }
 
 .p-gallery_scroller__arrow_fill {
   font-size: 40px;
@@ -7022,3 +7176,169 @@ a.p-global_nav__flex_btn--link {
 
 .p-shortcuts_dialog__option--active:first-child {
   border-color: var(--active); }
+
+.p-quick_switcher__input {
+  border-bottom: 1px solid var(--button); }
+  .p-quick_switcher__input:focus {
+    border-bottom: 1px solid var(--primary); }
+
+.p-quick_switcher__searcher_result--selected {
+  background-color: var(--accent); }
+
+.p-quick_switcher__show_deactivated {
+  color: var(--disabled); }
+  .p-quick_switcher__show_deactivated:hover {
+    color: var(--fg); }
+
+.p-quick_switcher .c-dialog__footer {
+  background-color: var(--secondBg); }
+
+.c-message_list__day_divider__label {
+  color: var(--fg); }
+
+.p-message_pane--global-nav .c-message_list__day_divider__label {
+  color: var(--text); }
+
+.c-message_list__day_divider__label__pill {
+  background: var(--button); }
+
+.c-message_list__day_divider__line {
+  border-top: 1px solid var(--active); }
+
+.c-message_list__unread_divider__separator {
+  border-color: var(--accent2); }
+
+.c-message_list__unread_divider__label {
+  background: var(--excluded);
+  color: var(--accent2); }
+
+.p-unavailable_channel {
+  background-color: var(--bg);
+  border: 1px solid var(--bg); }
+
+.p-unavailable_channel_content {
+  color: var(--text); }
+
+.p-archives_banner {
+  color: var(--text);
+  background: var(--secondBg); }
+
+.p-message_pane__foreword__description {
+  color: var(--fg); }
+
+.p-message_pane__limited_history_alert {
+  color: var(--fg); }
+
+.p-message_pane__foreword__notification_warning {
+  background: var(--notif); }
+
+.p-message_pane__newxp_foreword {
+  color: var(--fg); }
+
+.p-message_pane__newxp_foreword__pre_skip {
+  color: var(--disabled); }
+
+.p-message_pane__limited_history_foreword {
+  color: var(--fg);
+  background-color: var(--notif); }
+
+.p-message_pane__limited_history_alert {
+  background-color: var(--notif); }
+
+.p-context_bar {
+  color: var(--text);
+  background: var(--bg); }
+
+.p-message_input_announce_only_roadblock {
+  color: var(--disabled); }
+
+.p-message_input_announce_only_roadblock--border {
+  border-top: 1px solid var(--border); }
+
+.p-threads_footer__input.p-message_input--focus-visible .p-message_input_field.focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.p-threads_footer__input .p-message_input_file_button {
+  color: var(--fg); }
+  .p-threads_footer__input .p-message_input_file_button.p-message_input_file_button--active, .p-threads_footer__input .p-message_input_file_button:hover {
+    color: var(--primary);
+    background: var(--accent); }
+
+.p-threads_footer__input .p-message_input_field {
+  background: var(--contrast);
+  border-color: var(--button); }
+  .p-threads_footer__input .p-message_input_field.focus {
+    border-color: var(--primary); }
+  .p-threads_footer__input .p-message_input_field.focus ~ .p-message_input_file_button:not(:hover) {
+    border-color: var(--disabled);
+    color: var(--disabled); }
+
+.p-threads_footer__input--legacy .p-message_input_file_button {
+  border: 1px solid var(--button);
+  background: var(--button); }
+  .p-threads_footer__input--legacy .p-message_input_file_button.p-message_input_file_button--active, .p-threads_footer__input--legacy .p-message_input_file_button:hover {
+    color: var(--selectFg);
+    background: var(--hl);
+    border-color: var(--disabled); }
+
+.p-threads_footer__input--legacy .p-message_input_field {
+  border-color: var(--button); }
+
+.p-threads_footer__info_tooltip {
+  color: var(--text); }
+
+.p-threads_view {
+  background: var(--secondBg); }
+
+.p-threads_view_root {
+  border: 1px solid var(--active); }
+
+.p-threads_view_reply {
+  border: 1px solid var(--active); }
+
+.p-threads_view_reply--new_reply {
+  background: var(--hl); }
+
+.p-threads_view_header__permalink {
+  font-weight: 700;
+  color: var(--fg) !important; }
+  .p-threads_view_header__permalink:active, .p-threads_view_header__permalink:focus, .p-threads_view_header__permalink:hover {
+    color: var(--primary); }
+
+.p-threads_view_header__participant_list {
+  color: var(--text); }
+
+.p_threads_view_load_newer_button,
+.p_threads_view_load_older_button {
+  background: var(--button);
+  border-left: 1px solid var(--active);
+  border-right: 1px solid var(--active); }
+
+.p_threads_view_load_newer_button:hover, .p_threads_view_load_older_button:hover {
+  background: var(--hl); }
+
+.p_threads_view_load_newer_button__blue_dot {
+  color: var(--accent); }
+
+.p-threads_view__divider_line {
+  border-top: 1px solid var(--active); }
+
+.p-threads_view__divider_label {
+  background: var(--secondBg);
+  color: var(--text); }
+
+.p-threads_view__default_background {
+  background: var(--bg); }
+
+.p-threads_view__footer {
+  border: 1px solid var(--active); }
+
+.p-threads_view .p-threads_view__top_banners:not(:empty):before {
+  background: var(--secondBg); }
+
+.p-new_threads_banner {
+  background: var(--accentT);
+  color: var(--fg); }
+  .p-new_threads_banner:hover {
+    background: var(--accent);
+    color: var(--selectFg); }

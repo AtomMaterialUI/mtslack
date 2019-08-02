@@ -1,0 +1,25 @@
+.p-quick_switcher__input {
+  border-bottom: 1px solid $button;
+
+  &:focus {
+    border-bottom: 1px solid $primary;
+  }
+}
+
+.p-quick_switcher__searcher_result--selected {
+  background-color: $accent;
+}
+
+.p-quick_switcher__show_deactivated {
+  color: $disabled;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+
+.p-quick_switcher .c-dialog__footer {
+  background-color: $bg2;
+}
+

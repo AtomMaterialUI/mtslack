@@ -353,3 +353,8 @@ a.c-message__call_name--linked {
     border-color: $borderLight;
   }
 }
+
+.p-message_pane__search_tip_banner_content {
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}

@@ -4,6 +4,7 @@
 
 .p-channel_name_input__label_title {
   color: $text;
+
   strong {
     color: $fg;
   }
@@ -29,4 +30,38 @@
 .p-channel_name_input--alert {
   border: 1px solid $red;
   background-color: $bg2;
+}
+
+.p-channel_details__channel_details_section .p-channel_details_section__icon {
+  color: $text;
+}
+
+.p-channel_details__heading {
+  color: $text;
+}
+
+.p-channel_details__created_link {
+  color: $accent2;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-channel_details__workspaces_row_member_count {
+  color: $text;
+}
+
+.p-channel_details__similar_channels_channel {
+  :hover {
+    color: $fg;
+  }
+}
+
+.p-channel_details__similar_channels_channel_link {
+  color: $accent2;
+}
+
+.p-channel_details__member_count {
+  color: $text;
 }

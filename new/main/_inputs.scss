@@ -225,3 +225,21 @@ input[type=text].c-input_text {
     background-color: $contrast;
   }
 }
+
+
+.p-message_pane_input__disabled {
+  background-color: $excluded;
+  color: $disabled;
+}
+
+.p-message_pane_input__preview {
+  background-color: $contrast;
+}
+
+.p-message_pane_input__preview_subtitle {
+  color: $fg;
+}
+
+.p-message_pane_input__preview_metadata {
+  color: $text;
+}

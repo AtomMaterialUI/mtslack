@@ -1,0 +1,24 @@
+.c-message_list__day_divider__label {
+  color: $fg;
+}
+
+.p-message_pane--global-nav .c-message_list__day_divider__label {
+  color: $text;
+}
+
+.c-message_list__day_divider__label__pill {
+  background: $button;
+}
+
+.c-message_list__day_divider__line {
+  border-top: 1px solid $borderLight;
+}
+
+.c-message_list__unread_divider__separator {
+  border-color: $accent2;
+}
+
+.c-message_list__unread_divider__label {
+  background: $excluded;
+  color: $accent2;
+}

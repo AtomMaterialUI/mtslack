@@ -40,3 +40,25 @@
 .c-message_kit__footer_spacer:before {
   color: $hl;
 }
+
+.c-message_kit__resend--with_buttons {
+  color: $text;
+}
+
+.c-message_kit__resend__footer__border {
+  background: $border;
+}
+
+.c-message_kit__resend__separator {
+  color: $border;
+}
+
+@keyframes to-grey {
+  0% {
+    color: inherit;
+  }
+
+  to {
+    color: $text;
+  }
+}

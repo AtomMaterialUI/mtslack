@@ -6,6 +6,7 @@
   &:after {
     border-top-color: $bg2;
   }
+
   &:before {
     border-top-color: $borderLight;
   }
@@ -15,6 +16,7 @@
   &:after {
     border-bottom-color: $bg2;
   }
+
   &:before {
     border-bottom-color: $borderLight;
   }
@@ -24,6 +26,7 @@
   &:after {
     border-left-color: $bg2;
   }
+
   &:before {
     border-left-color: $borderLight;
   }
@@ -33,6 +36,7 @@
   &:after {
     border-right-color: $bg2;
   }
+
   &:before {
     border-right-color: $borderLight;
   }
@@ -44,13 +48,16 @@
 
 .p-shared_channels_coachmark_div {
   background: $bg;
+
   .coachmark_interior, .p-coachmark__skip_button {
     color: #000;
   }
+
   .p-coachmark__continue_button {
     background-color: $accent;
     color: $bg;
   }
+
   .p-coachmark__callout {
     background-color: $bg;
   }
@@ -62,4 +69,42 @@
 
 .p-shared_channels_coachmark_subtitle {
   color: $fg;
+}
+
+
+.p-coachmark {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-coachmark__callout {
+  background-color: $accent;
+}
+
+.p-coachmark__close_btn {
+  color: $selectFg;
+}
+
+.p-coachmark__skip_link_button {
+  color: $fg;
+}
+
+.p-coachmark__skip_button {
+  color: $fg;
+  box-shadow: inset 0 0 0 1px $borderLight;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-coachmark__continue_button {
+  color: $accent;
+  background-color: $button;
+
+  &:hover {
+    color: $accent;
+    background-color: $button;
+    box-shadow: inset 0 0 0 1px $button;
+  }
 }

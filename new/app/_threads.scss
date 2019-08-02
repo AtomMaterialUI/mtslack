@@ -1,0 +1,128 @@
+.p-threads_footer__input {
+  &.p-message_input--focus-visible .p-message_input_field.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  .p-message_input_file_button {
+    color: $fg;
+
+    &.p-message_input_file_button--active, &:hover {
+      color: $primary;
+      background: $accent;
+    }
+  }
+
+  .p-message_input_field {
+    background: $contrast;
+    border-color: $button;
+
+    &.focus {
+      border-color: $primary;
+    }
+
+    &.focus {
+      ~ .p-message_input_file_button:not(:hover) {
+        border-color: $disabled;
+        color: $disabled;
+      }
+    }
+  }
+}
+
+.p-threads_footer__input--legacy {
+  .p-message_input_file_button {
+    border: 1px solid $button;
+    background: $button;
+
+    &.p-message_input_file_button--active, &:hover {
+      color: $selectFg;
+      background: $hl;
+      border-color: $disabled;
+    }
+  }
+
+  .p-message_input_field {
+    border-color: $button;
+  }
+}
+
+.p-threads_footer__info_tooltip {
+  color: $text;
+}
+
+.p-threads_view {
+  background: $bg2;
+}
+
+.p-threads_view_root {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view_reply {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view_reply--new_reply {
+  background: $hl;
+}
+
+.p-threads_view_header__permalink {
+  font-weight: 700;
+  color: $fg !important;
+
+  &:active, &:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.p-threads_view_header__participant_list {
+  color: $text;
+}
+
+.p_threads_view_load_newer_button,
+.p_threads_view_load_older_button {
+  background: $button;
+  border-left: 1px solid $borderLight;
+  border-right: 1px solid $borderLight;
+}
+
+.p_threads_view_load_newer_button:hover, .p_threads_view_load_older_button:hover {
+  background: $hl;
+}
+
+.p_threads_view_load_newer_button__blue_dot {
+  color: $accent;
+}
+
+.p-threads_view__divider_line {
+  border-top: 1px solid $borderLight;
+}
+
+.p-threads_view__divider_label {
+  background: $bg2;
+  color: $text;
+}
+
+
+.p-threads_view__default_background {
+  background: $bg;
+}
+
+.p-threads_view__footer {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view .p-threads_view__top_banners:not(:empty):before {
+  background: $bg2;
+}
+
+.p-new_threads_banner {
+  background: $accentT;
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+

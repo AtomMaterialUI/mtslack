@@ -6,3 +6,15 @@
     border-bottom: 1px solid $fg;
   }
 }
+
+.p-notification_bar__section {
+  color: $text;
+}
+
+.p-notification_bar__offline {
+  color: $fg;
+}
+
+.p-notification_bar__offline_icon {
+  color: $disabled;
+}

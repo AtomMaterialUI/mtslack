@@ -63,3 +63,8 @@
     background: $bg2;
   }
 }
+
+.p-message_pane__unread_banner__close--detached {
+  background: $accent;
+  border-left: 1px solid $accent;
+}

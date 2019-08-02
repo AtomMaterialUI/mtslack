@@ -1,0 +1,25 @@
+.p-app_action_picker_item__text--secondary {
+  color: $text;
+}
+
+.p-app_action_picker_item--active .p-app_action_picker_item__text--secondary {
+  color: $active;
+}
+
+.p-app_action_picker {
+  background-color: $bg;
+}
+
+.p-app_action_picker_trigger_button {
+  &:hover i {
+    color: $primary;
+  }
+
+  &.active, &:active {
+    color: $primary;
+  }
+}
+
+.p-app_action_picker_trigger_button--highlight i {
+  color: $primary;
+}
