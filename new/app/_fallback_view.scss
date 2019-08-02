@@ -1,0 +1,16 @@
+.p-fallback_view {
+  background: $bg2;
+  pre {
+    background: $contrast;
+  }
+}
+
+.p-fallback_view__icon {
+  &:before {
+    color: $text;
+  }
+}
+
+.p-fallback_view__description {
+  background-color: $bg;
+}

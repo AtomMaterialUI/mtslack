@@ -1,0 +1,75 @@
+.p-workspace_search_options_list_item__secondary_content {
+  color: $text;
+}
+
+.p-workspace_search_options_list_item__secondary_content_item {
+  border-right: 1px solid $borderLight;
+}
+
+.p-workspace_search_options_list_item__alternate_content--highlight {
+  color: $selectFg;
+}
+
+.p-workspace_search__option--active, .p-workspace_search__option--selected {
+  background-color: $primary;
+}
+
+.p-workspace_search__option--active {
+  .p-workspace_search_options_list_item__alternate_content,
+  .p-workspace_search_options_list_item__alternate_content--highlight,
+  .p-workspace_search_options_list_item__primary_content,
+  .p-workspace_search_options_list_item__secondary_content {
+    color: $active;
+  }
+}
+
+.p-workspace_search__option--selected {
+  .p-workspace_search_options_list_item__alternate_content,
+  .p-workspace_search_options_list_item__alternate_content--highlight,
+  .p-workspace_search_options_list_item__primary_content,
+  .p-workspace_search_options_list_item__secondary_content {
+    color: $selectBg;
+  }
+}
+
+.p-workspace_search__option--active:after,
+.p-workspace_search__option--selected:after {
+  color: $selectFg;
+}
+
+
+.p-workspace_search_container--grouped {
+  .p-workspace_search__option_group_label {
+    color: $text;
+
+    &:after {
+      border-bottom: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-workspace_search {
+  &:before {
+    color: $fg;
+  }
+}
+
+.p-workspace_search__selected_value--placeholder {
+  color: $disabled;
+}
+
+.p-workspace_search__no-results-message {
+  color: $disabled;
+}
+
+.p-workspace_search__clear-button {
+
+  &:after {
+    color: $disabled;
+  }
+}
+
+.p-workspace_search__search_icon_wrapper {
+  background-color: $bg2;
+  color: $text;
+}

@@ -1,0 +1,46 @@
+.p-multi_file_upload__add_file_btn {
+  color: $primary;
+}
+
+.p-multi_file_upload__file_count {
+  color: $text;
+}
+
+.p-multi_file_upload__remove_btn_circle {
+  color: $text;
+}
+
+.p-multi_file_upload__remove_btn_times {
+  color: $button;
+}
+
+.p-multi_file_upload__file_container:hover .p-multi_file_upload__remove_btn:hover .p-multi_file_upload__remove_btn_circle, .p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
+  color: $selectFg;
+}
+
+
+.p-file_upload_dialog__preview {
+  background-color: $bg2;
+  border: 1px solid $borderLight;
+}
+
+
+.p-file-upload_dialog__preview_file_name {
+  color: $text;
+}
+
+
+.c-dialog__footer .p-file_upload_dialog__footer_share_inputs {
+  color: $fg;
+}
+
+.p-file_upload_dialog__section--retention_duration {
+  font-size: 13px;
+  color: $text;
+}
+
+.p-file_upload_dialog__thread_label {
+  .p-thread_participant_list {
+    color: $disabled;
+  }
+}

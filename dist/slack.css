@@ -6093,3 +6093,60 @@ a.c-message__call_name--linked {
 
 .p-workspace__boot_failure_description {
   background-color: var(--bg); }
+
+.c-missing_app--unknown {
+  background: var(--excluded); }
+
+.c-missing_app--non_existent {
+  border: 1px solid var(--excluded); }
+
+.c-missing_app--unknown_inverted {
+  background-color: var(--bg);
+  color: var(--primary); }
+
+.c-missing_app--non_existent_inverted {
+  border: 1px solid var(--bg); }
+
+.p-app_dialog_elements {
+  color: var(--fg); }
+
+.p-app_dialog__title_text {
+  color: var(--fg); }
+
+.p-sonic_deluxe_toast {
+  background: var(--notif);
+  color: var(--fg); }
+  .p-sonic_deluxe_toast .c-button--focus-visible:focus, .p-sonic_deluxe_toast .c-link--focus-visible:focus, .p-sonic_deluxe_toast .focus-ring {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+
+.p-sonic_deluxe_toast__close {
+  background: var(--notif);
+  color: var(--fg); }
+  .p-sonic_deluxe_toast__close:active, .p-sonic_deluxe_toast__close:hover {
+    color: var(--primary); }
+
+button:focus > .p-sonic_deluxe_toast__close {
+  color: var(--primary); }
+
+a.p-sonic_deluxe_toast__link {
+  color: var(--fg); }
+  a.p-sonic_deluxe_toast__link:active, a.p-sonic_deluxe_toast__link:focus, a.p-sonic_deluxe_toast__link:hover {
+    color: var(--primary); }
+
+.c-tabs__tab_menu {
+  box-shadow: inset 0 -1px 0 0 var(--active); }
+
+.c-tabs__tab {
+  color: var(--text); }
+  .c-tabs__tab:hover {
+    color: var(--fg); }
+  .c-tabs__tab.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  .c-tabs__tab.c-tabs__tab--active, .c-tabs__tab:active {
+    color: var(--fg);
+    box-shadow: inset 0 -2px 0 0 var(--accent); }
+  .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT), inset 0 -2px 0 0 var(--accent); }
+
+.c-tabs__tab_count {
+  background-color: var(--secondBg); }

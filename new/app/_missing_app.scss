@@ -1,0 +1,17 @@
+
+.c-missing_app--unknown {
+  background: $excluded;
+}
+
+.c-missing_app--non_existent {
+  border: 1px solid $excluded;
+}
+
+.c-missing_app--unknown_inverted {
+  background-color: $bg;
+  color: $primary;
+}
+
+.c-missing_app--non_existent_inverted {
+  border: 1px solid $bg;
+}

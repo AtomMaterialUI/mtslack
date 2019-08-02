@@ -1,0 +1,30 @@
+.p-app_actions_pillow__sender {
+  color: $fg;
+
+  a {
+    color: $primary;
+  }
+}
+
+.p-app_actions_pillow--light {
+  .p-app_actions_pillow__sender .p-app_actions_pillow__sender_link {
+    color: $accent2;
+  }
+
+}
+
+.p-app_actions_pillow--dense {
+  .p-app_actions_pillow__content_header .c-custom_status {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-app_actions_pillow {
+  border: 1px solid $borderLight;
+  background-color: $bg2;
+}
+
+
+.p-app_actions_pillow--gradient:after {
+  background: linear-gradient(180deg, $bg2, $bg);
+}

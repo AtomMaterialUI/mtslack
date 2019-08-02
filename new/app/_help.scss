@@ -1,0 +1,59 @@
+.p-help_search__popular_topics {
+  color: $text;
+}
+
+.p-help_search__list__item {
+  border-top: 1px solid $borderLight;
+
+  &:focus, &:hover {
+    background-color: $hl;
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-help_search__list__item__focus {
+  background-color: $hl;
+  border: 1px solid $primary;
+}
+
+.p-help_search__list__icon {
+  color: $accent;
+}
+
+.p-help_modal__browse {
+  color: $fg;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-help_modal__footer {
+  background-color: $bg2;
+}
+
+.p-help_modal__requests:hover {
+  .p-help_modal__requests__message {
+    color: $accent;
+  }
+}
+
+.p-help_modal__requests__message {
+  color: $primary;
+
+  &.read {
+    color: $accent2;
+  }
+}
+
+.p-help_modal__requests_badge {
+  color: $bg2;
+
+  &.read {
+    background-color: $accent2;
+  }
+
+  &.unread {
+    background-color: $excluded;
+  }
+}

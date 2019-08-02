@@ -1,0 +1,48 @@
+.p-migration_blocker_page__wrapper {
+  background: $bg2;
+}
+
+.p-migration_blocker_page {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-migration_blocker_page--large {
+  border: 1px solid $border;
+
+  .p-migration_blocker_text {
+    .p-migration_blocker_page__description {
+      color: $fg;
+    }
+  }
+}
+
+.p-migration_blocker_page__button {
+  background: $button;
+  border-top: 1px solid $border;
+  color: $fg;
+
+  &:active, &:hover, &:link, &:visited {
+    color: $primary;
+  }
+
+  .p-migration_blocker_page__button_icon {
+    color: $text;
+  }
+
+  .p-migration_blocker_page__button__text {
+    .p-migration_blocker_page__button__subtitle {
+      color: $text;
+    }
+  }
+
+  &:hover {
+    .p-migration_blocker_page__button_icon {
+      color: $fg;
+    }
+
+    .p-migration_blocker_page__button__subtitle {
+      color: $fg;
+    }
+  }
+}

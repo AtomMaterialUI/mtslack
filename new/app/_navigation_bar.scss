@@ -1,0 +1,14 @@
+.p-navigation_bar {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+}
+
+.p-navigation_bar__heading {
+  &:before {
+    border-left: 1px solid $borderLight;
+  }
+}
+
+.p-navigation_bar__title {
+  color: $text;
+}

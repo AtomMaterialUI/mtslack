@@ -1,0 +1,75 @@
+.p-workspace_directory_card {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-workspace_directory_card--large {
+  border: 1px solid $border;
+
+  .p-workspace_directory_card__subtitle {
+    color: $text;
+  }
+
+  .p-workspace_directory_card__description {
+    color: $text;
+  }
+
+  .p-workspace_directory_card__status {
+    color: $fg;
+  }
+}
+
+
+.p-workspace_directory_card--small {
+
+  .p-workspace_directory_card__subtitle {
+    color: $text;
+  }
+
+  .p-workspace_directory_card__description {
+    color: $text;
+  }
+
+  .p-workspace_directory_card__status {
+    color: $fg;
+  }
+
+}
+
+
+.p-workspace_directory_dialog {
+  .c-dialog__header {
+    background: linear-gradient(46.57deg, $accent, $accent2), $fg;
+  }
+}
+
+.p-workspace_directory_dialog--focus_ring {
+  a.focus-ring, button.focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-workspace_directory_dialog__name {
+  color: $fg;
+}
+
+.p-workspace_directory_dialog__domain {
+  color: $fg;
+}
+
+.p-workspace_directory_dialog__caption {
+  color: $fg;
+}
+
+.p-workspace_directory_dialog__leave {
+  color: $red;
+}
+
+
+.p-workspace_directory_dialog__header--mobile {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: linear-gradient(46.57deg, $accent, $accent2), $fg;
+}
+

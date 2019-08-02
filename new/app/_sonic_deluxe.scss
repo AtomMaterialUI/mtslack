@@ -1,0 +1,29 @@
+.p-sonic_deluxe_toast {
+  background: $notif;
+  color: $fg;
+
+  .c-button--focus-visible:focus, .c-link--focus-visible:focus, .focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-sonic_deluxe_toast__close {
+  background: $notif;
+  color: $fg;
+
+  &:active, &:hover {
+    color: $primary;
+  }
+}
+
+button:focus > .p-sonic_deluxe_toast__close {
+  color: $primary;
+}
+
+a.p-sonic_deluxe_toast__link {
+  color: $fg;
+
+  &:active, &:focus, &:hover {
+    color: $primary;
+  }
+}

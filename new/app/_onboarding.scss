@@ -1,0 +1,42 @@
+.p-grid_onboarding {
+  background: $bg2;
+}
+
+.p-grid_onboarding__pane {
+  background: $bg;
+}
+
+.p-grid_onboarding__footer {
+  color: $fg;
+}
+
+.p-grid_onboarding__footer_link {
+  color: $text;
+
+  &:link, &:visited {
+    color: $accent2;
+  }
+}
+
+
+.p-grid_onboarding__header {
+  color: $fg;
+}
+
+.p-grid_onboarding__subheader {
+  color: $text;
+
+  strong {
+    color: $fg;
+  }
+}
+
+
+.p-grid_onboarding__results_heading {
+  color: $fg;
+}
+
+.p-grid_onboarding__results_subheading {
+  color: $text;
+}
+

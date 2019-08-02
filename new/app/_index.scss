@@ -42,6 +42,7 @@
 @import "suggestions";
 @import "search_autocomplete";
 @import "search";
+
 @import "timestamp";
 @import "file_viewer";
 @import "share";
@@ -75,4 +76,25 @@
 @import "message";
 @import "unreads";
 @import "workspace";
+@import "missing_app";
+@import "app_dialog";
+@import "sonic_deluxe";
+@import "tabs";
+@import "pricing";
+@import "fallback_view";
+@import "block_kit";
+@import "app_actions_pillow";
+@import "app_actions_dialog";
+@import "gallery_scroller";
+@import "pending";
+@import "file_upload";
+@import "migration";
+@import "member_profile";
+@import "help";
+
+@import "launch_workflow";
+@import "workspace_search";
+@import "workspace_directory";
+@import "onboarding";
+@import "navigation_bar";
 //@import "../../scss/general/client";
