@@ -3502,6 +3502,58 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-classic_nav__team_header .c-button--focus-visible:focus {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT) !important; }
 
+.p-team_sidebar,
+.p-team_sidebar--frameless::before {
+  background: var(--bg) !important; }
+
+.p-team_sidebar__item {
+  color: var(--selectFg) !important; }
+
+.p-team_sidebar__add_button,
+.p-team_sidebar__add_button:hover,
+.p-team_sidebar__add_button:focus,
+.p-team_sidebar__add_button:active {
+  color: var(--primary) !important; }
+
+.p-team_sidebar__add_button {
+  background: var(--button) !important;
+  border-color: var(--active) !important; }
+
+.p-team_sidebar__add_button:hover,
+.p-team_sidebar__add_button:focus,
+.p-team_sidebar__add_button:active {
+  border-color: var(--primary) !important;
+  background: var(--hl) !important;
+  box-shadow: 0 0 0 3px var(--accent), 0 0 0 6px var(--accentT) !important; }
+
+.p-team_sidebar__unread_dot,
+.p-team_sidebar__mentions_badge {
+  border-color: var(--accent) !important; }
+
+.p-team_sidebar__mentions_badge {
+  background: var(--accent2) !important; }
+
+.p-team_sidebar__unread_dot {
+  background: var(--primary) !important; }
+
+.p-team_sidebar__item.c-button--focus-visible:focus,
+.p-team_sidebar__add_button.c-link--focus-visible:focus {
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--accent), 0 0 0 6px var(--accentT) !important; }
+
+.c-button--focus-visible:focus .p-team_sidebar__icon--active {
+  box-shadow: none !important; }
+
+.p-team_sidebar__signed_out_badge__stroke {
+  -webkit-text-stroke: 6px var(--accent) !important;
+  color: var(--accent) !important; }
+
+.p-team_sidebar__icon:hover {
+  box-shadow: 0 0 0 3px var(--accent), 0 0 0 6px var(--accentT) !important; }
+
+.p-team_sidebar__icon--active,
+.p-team_sidebar__icon--active:hover {
+  box-shadow: 0 0 0 3px var(--primaryT), 0 0 0 6px var(--primary) !important; }
+
 .c-card {
   border: 1px solid var(--active); }
 
