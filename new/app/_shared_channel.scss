@@ -1,0 +1,30 @@
+.p-shared_channel_invitation_message_editor__member {
+  background-color: $bg;
+}
+
+.p-shared_channel_invitation_message_editor__team_name {
+  color: $text;
+}
+
+.p-channel_name_input__label_title {
+  color: $text;
+
+  strong {
+    color: $fg;
+  }
+}
+
+.p-channel_name_input__label_error {
+  color: $red;
+}
+
+.p-channel_name_input__input_subtext {
+  color: $text;
+}
+
+
+.p-public_private_input__label {
+  &[disabled] {
+    color: $disabled;
+  }
+}

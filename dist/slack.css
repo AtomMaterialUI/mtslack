@@ -3248,6 +3248,9 @@ button.p-admin_member_table__menu_item--disabled {
   text-align: center;
   z-index: 1;
   min-height: 48px; }
+  .c-banner .c-button--focus-visible:focus, .c-banner .c-link--focus-visible:focus {
+    color: var(--selectFg);
+    box-shadow: 0 0 0 1px var(--selectBg), 0 0 0 5px var(--selectBg); }
 
 .c-banner--info {
   background-color: var(--blue);
@@ -4028,6 +4031,9 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
   background-color: var(--button);
   color: var(--fg); }
 
+.p-error_boundary__error_code {
+  color: var(--text); }
+
 .ql-editor ul[data-checked=false] > li:before {
   color: var(--button); }
 
@@ -4493,7 +4499,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     color: var(--fg); }
 
 .p-invite_users_input__label_error {
-  color: var(--orange); }
+  color: var(--red); }
 
 .p-invite_users_input__input_subtext {
   color: var(--text); }
@@ -5155,6 +5161,26 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .c-search__feedback_small {
   color: var(--text); }
+
+.p-shared_channel_invitation_message_editor__member {
+  background-color: var(--bg); }
+
+.p-shared_channel_invitation_message_editor__team_name {
+  color: var(--text); }
+
+.p-channel_name_input__label_title {
+  color: var(--text); }
+  .p-channel_name_input__label_title strong {
+    color: var(--fg); }
+
+.p-channel_name_input__label_error {
+  color: var(--red); }
+
+.p-channel_name_input__input_subtext {
+  color: var(--text); }
+
+.p-public_private_input__label[disabled] {
+  color: var(--disabled); }
 
 .c-timestamp {
   color: var(--text); }
