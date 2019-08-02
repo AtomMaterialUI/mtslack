@@ -3297,45 +3297,45 @@ button.p-admin_member_table__menu_item--disabled {
   color: var(--text); }
 
 .c-sidebar_menu__list_item {
-  color: var(--fg); }
+  color: var(--fg) !important; }
   .c-sidebar_menu__list_item.is_active {
-    background: var(--tree);
-    border: 1px solid var(--tree);
-    color: var(--selectFg); }
+    background: var(--tree) !important;
+    border: 1px solid var(--tree) !important;
+    color: var(--selectFg) !important; }
   .c-sidebar_menu__list_item:not(.is_active):hover {
-    color: inherit;
-    background-color: var(--selectBg); }
+    color: inherit !important;
+    background-color: var(--selectBg) !important; }
 
 a.c-sidebar_menu__list_item {
-  color: var(--primary); }
+  color: var(--primary) !important; }
 
 .p-team_sidebar__shortcut_hint {
-  background: var(--fg);
-  color: var(--bg); }
+  background: var(--fg) !important;
+  color: var(--bg) !important; }
 
 .p-team_sidebar__mentions_badge {
-  color: var(--secondBg); }
+  color: var(--secondBg) !important; }
 
 .p-team_sidebar__signed_out_badge {
-  color: var(--accent2); }
+  color: var(--accent2) !important; }
 
 .p-channel_sidebar--global_nav_layout:after {
-  background: var(--bg); }
+  background: var(--bg) !important; }
 
 .p-channel_sidebar__empty_state {
-  color: var(--text); }
+  color: var(--text) !important; }
 
 .p-channel_sidebar__banner {
-  color: var(--fg); }
+  color: var(--fg) !important; }
 
 .p-channel_sidebar__banner--mentions {
-  background: var(--red); }
+  background: var(--red) !important; }
 
 .p-channel_sidebar__banner--unreads {
-  background: var(--primary); }
+  background: var(--primary) !important; }
 
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name, .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name {
-  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT) !important; }
 
 .p-channel_sidebar {
   background: var(--contrast) !important;
@@ -3349,7 +3349,7 @@ a.c-sidebar_menu__list_item {
 .p-channel_sidebar__link:visited,
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover {
-  color: var(--selectFg); }
+  color: var(--selectFg) !important; }
 
 .p-channel_sidebar__channel--selected,
 .p-channel_sidebar__link--selected,
@@ -3361,42 +3361,42 @@ a.c-sidebar_menu__list_item {
 .p-channel_sidebar__link--selected:hover,
 .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
 .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
-  color: var(--primary); }
+  color: var(--primary) !important; }
 
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover,
 .p-channel_sidebar__close_container:hover {
-  background: var(--tree); }
+  background: var(--tree) !important; }
 
 .p-channel_sidebar__header {
-  color: var(--fg); }
+  color: var(--fg) !important; }
 
 /* Folders */
 input[type="text"].p-channel_sidebar__folder_heading_label_rename {
-  background: #0d191f;
-  color: var(--fg); }
+  background: #0d191f !important;
+  color: var(--fg) !important; }
 
 input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
-  background: #030f15;
-  color: var(--fg); }
+  background: #030f15 !important;
+  color: var(--fg) !important; }
 
 /* Override presence icons */
 .p-channel_sidebar__channel--im .c-presence--active,
 .p-channel_sidebar__channel--im-slackbot:before {
-  color: var(--accent); }
+  color: var(--accent) !important; }
 
 .p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence,
 .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected:before {
-  color: var(--fg); }
+  color: var(--fg) !important; }
 
 .p-channel_sidebar__channel--im .c-presence--away {
-  color: var(--text); }
+  color: var(--text) !important; }
 
 .p-channel_sidebar__channel--selected,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected,
 .p-channel_sidebar__link--selected:hover {
-  background: var(--selectBg); }
+  background: var(--selectBg) !important; }
 
 .p-channel_sidebar__channel--selected:before,
 .p-channel_sidebar__channel--selected:hover:before,
@@ -3406,21 +3406,21 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel--selected:hover:after,
 .p-channel_sidebar__link--selected:after,
 .p-channel_sidebar__link--selected:after {
-  color: var(--selectFg); }
+  color: var(--selectFg) !important; }
 
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
-  background: var(--accent); }
+  background: var(--accent) !important; }
 
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
 .p-channel_sidebar .c-scrollbar__bar {
-  background: var(--accent); }
+  background: var(--accent) !important; }
 
 .client_channels_list_container.focusablesection:focus .sectionfocusindicator,
 .client_channels_list_container .focus-ring,
 .p-channel_sidebar.focusablesection:focus .sectionfocusindicator,
 #team_menu.focusablesection:focus .sectionfocusindicator {
-  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT) !important; }
 
 .client_channels_list_container a:not(.c-link--focus-visible).focus-ring,
 .client_channels_list_container button:not(.c-button--focus-visible).focus-ring,
@@ -3431,7 +3431,7 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__close.c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT) !important; }
 
 /** `opacity: 1` color overrides */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
@@ -3441,66 +3441,66 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__section_heading_label--unreads,
 .p-channel_sidebar__quickswitcher:hover {
-  color: var(--primary); }
+  color: var(--primary) !important; }
 
 /** Navigation Bar **/
 .p-channel_sidebar__jumper {
-  background: var(--contrast); }
+  background: var(--contrast) !important; }
 
 .p-channel_sidebar__jumper:hover {
-  background: var(--bg); }
+  background: var(--bg) !important; }
 
 .p-channel_sidebar__history_button {
-  background: var(--button); }
+  background: var(--button) !important; }
 
 .p-channel_sidebar__history_button:hover {
-  background: var(--hl); }
+  background: var(--hl) !important; }
 
 .p-channel_sidebar__history_button--disabled:hover {
-  background: var(--excluded); }
+  background: var(--excluded) !important; }
 
 /** Global Nav (DEPRECATED BUT KEEP FOR SONIC) **/
 .p-global_nav__top {
-  background: var(--bg);
-  color: var(--fg); }
+  background: var(--bg) !important;
+  color: var(--fg) !important; }
 
 .p-global_nav__top:after {
-  background: var(--bg); }
+  background: var(--bg) !important; }
 
 .p-global_nav__sidebar {
-  background: var(--contrast);
-  color: var(--text); }
+  background: var(--contrast) !important;
+  color: var(--text) !important; }
 
 .p-global_nav__top_user_presence {
-  background: var(--contrast); }
+  background: var(--contrast) !important; }
 
 .p-global_nav__top_user_presence.c-presence--active {
-  color: var(--accent); }
+  color: var(--accent) !important; }
 
 .p-global_nav__top_user_presence.c-presence--away {
-  color: var(--text); }
+  color: var(--text) !important; }
 
 .p-global_nav__sidebar_jumper:hover,
 .p-global_nav__sidebar_button:hover {
-  color: var(--primary); }
+  color: var(--primary) !important; }
 
 /** Classic Nav (WIP) **/
 .p-classic_nav__team_header {
-  background: var(--bg);
-  color: var(--fg); }
+  background: var(--bg) !important;
+  color: var(--fg) !important; }
 
 .p-classic_nav__team_header:hover {
-  background: var(--selectBg); }
+  background: var(--selectBg) !important; }
 
 .p-classic_nav__team_header__user__presence.c-presence--active {
-  color: var(--accent); }
+  color: var(--accent) !important; }
 
 .p-classic_nav__team_header__user__presence.c-presence--away {
-  color: var(--text); }
+  color: var(--text) !important; }
 
 .p-classic_nav__team_header .c-link--focus-visible:focus,
 .p-classic_nav__team_header .c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT) !important; }
 
 .c-card {
   border: 1px solid var(--active); }
