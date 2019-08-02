@@ -146,6 +146,8 @@
 
 .p-classic_nav__right__search {
   border: 1px solid $button;
+  background: $contrast;
+  color: $fg;
 
   &:hover {
     border-color: $borderLight;
