@@ -40,3 +40,13 @@
   color: $text;
 }
 
+
+.p-team_creator_onboarding_dialog--complete {
+  .c-dialog__header {
+    background: $bg2;
+  }
+
+  .p-onboarding__step__header {
+    background: $bg2;
+  }
+}

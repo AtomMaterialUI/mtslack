@@ -1,0 +1,54 @@
+.p-shortcuts_dialog {
+  .c-dialog__footer {
+    background: $bg2;
+    border-top: 1px solid $borderLight;
+  }
+
+  a.c-dialog__footer_link {
+    color: $fg;
+  }
+}
+
+.p-shortcuts_dialog__message {
+  background: $bg2;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-shortcuts_dialog_options_list {
+
+  &::-webkit-scrollbar-thumb {
+    color: $accent;
+  }
+
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+
+}
+
+.p-shortcuts_dialog__option {
+  border-top: 1px solid $borderLight;
+}
+
+.p-shortcuts_dialog__option--active {
+  border: 1px solid $borderLight;
+  background-color: $bg2;
+
+  .c-menu_item__description {
+    color: $text;
+  }
+}
+
+.p-shortcuts_dialog__option--active:first-child {
+  border-color: $borderLight;
+}

@@ -44,3 +44,19 @@
     color: $disabled;
   }
 }
+
+.p-file_upload_banner {
+  color: $bg;
+}
+
+.p-file_upload_banner__progress--complete {
+  background: $green;
+}
+
+.p-file_upload_banner__progress--canceled {
+  background: $red;
+}
+
+.p-file_upload_banner__cancel {
+  color: $fg;
+}

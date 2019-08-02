@@ -2,3 +2,27 @@
   background-color: $button;
   color: $primary;
 }
+
+.c-workflow-item-card {
+  border-color: $accent;
+  background-color: $bg;
+
+  button {
+    background: $button;
+    border: 1px solid $accent2;
+    color: $accent2;
+  }
+
+  &.complete {
+    background-color: $hl;
+    border-color: $green;
+
+    button {
+      background-color: $button;
+    }
+  }
+}
+
+.c-workflow-item-container {
+  border-left: 4px solid $borderLight;
+}

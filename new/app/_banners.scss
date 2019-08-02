@@ -40,3 +40,37 @@
   background-color: $notif;
   color: $fg;
 }
+
+.p-message_pane__degraded_banner {
+  background: $bg2;
+  color: $text;
+}
+
+.p-message_pane__degraded_banner__reload_cta {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-message_pane_banner {
+  background-color: $bg;
+
+  &:before {
+    background-color: $bg;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-message_pane_banner__header {
+  color: $fg;
+}
+
+.p-message_pane_banner__body {
+  color: $fg;
+}
+
+.p-message_pane_banner__close_icon {
+  color: $text;
+}

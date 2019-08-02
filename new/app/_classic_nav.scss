@@ -142,3 +142,113 @@
   background-color: $accent2;
   color: $selectFg;
 }
+
+
+.p-classic_nav__right__search {
+  border: 1px solid $button;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.p-classic_nav__right__search--is_highlighted {
+  background-color: $contrast;
+  color: $primary;
+  border-color: $primary;
+}
+
+.p-classic_nav__right__search__icon {
+  color: $text;
+}
+
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__icon {
+  color: $primary;
+}
+
+.p-classic_nav__right__search__placeholder {
+  color: $disabled;
+}
+
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__placeholder {
+  color: $fg;
+}
+
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__text {
+  color: $primary;
+}
+
+.p-classic_nav__right__search__clear {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-classic_nav__right__button {
+  color: $text;
+}
+
+.p-classic_nav__right__button--activity:hover {
+  color: $red;
+}
+
+.p-classic_nav__right__button--stars:hover {
+  color: $yellow;
+}
+
+.p-classic_nav__right__button--shortcuts:hover {
+  color: $accent2;
+}
+
+.p-classic_nav__right__button--flexpanes {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-classic_nav__right__button--active {
+  color: $primary;
+
+  &:hover {
+    color: $selectFg;
+  }
+
+  &:before {
+    background: $active;
+  }
+}
+
+.p-classic_nav__right__help_count {
+  background-color: $accent;
+  color: $selectFg;
+  border: 2px solid $accent;
+}
+
+
+.p-classic_nav__tip_shortcut, .p-classic_nav__tip_sub {
+  color: $text;
+}
+
+.p-classic_nav__right__whats_new {
+  background-color: $accent2;
+  color: $selectFg;
+}
+
+
+.p-classic_nav__search_small_divider {
+  background: $border;
+}
+
+.p-classic_nav__right__button--search_small_highlighted {
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:before {
+    background: $button;
+  }
+}
