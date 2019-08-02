@@ -5,3 +5,59 @@
 .p-dnd_preferences__notifs_disabled {
   color: $text;
 }
+
+
+.p-dnd_menu_question_button {
+  color: $text;
+}
+
+.p-dnd_menu__snooze_header {
+  background-image: linear-gradient($accent, $accent2);
+}
+
+.p-dnd_menu__schedule_header {
+  background-image: linear-gradient($accent, $accent2);
+}
+
+.p-dnd_menu__header_status {
+  color: $bg;
+}
+
+.p-dnd_menu__new_pill {
+  background-color: $button;
+  color: $primary;
+}
+
+.p-dnd_dialog__date_picker_trigger {
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $borderLight
+  }
+}
+
+.p-dnd_header {
+  color: $bg;
+}
+
+.p-dnd_header__snooze_background {
+  background-image: linear-gradient($accent, $accent2);
+}
+
+.p-dnd_header__schedule_background {
+  background-image: linear-gradient($accent, $accent2);
+}
+
+
+.p-dnd_header__sub_text {
+  color: $text;
+}

@@ -73,3 +73,66 @@
   background: linear-gradient(46.57deg, $accent, $accent2), $fg;
 }
 
+
+.p-workspace_directory_banner {
+  background-color: $bg;
+}
+
+.p-workspace_directory_banner__description {
+  font-size: 15px;
+  line-height: 1.46668;
+  font-weight: 400;
+  color: $text;
+}
+
+.p-workspace_directory_banner__close_btn {
+  color: $text;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-workspace_directory__page {
+  background-color: $bg2;
+}
+
+.p-workspace_directory__wrapper {
+  .p-workspace_directory_card.focus-ring, a.focus-ring, button.focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-workspace_directory__spinner--fs {
+  background-color: $bg2;
+}
+
+
+.p-workspace_directory__title {
+  color: $fg;
+}
+
+
+.p-workspace_directory__list_empty_state_text {
+  color: $text;
+}
+
+.p-workspace_directory_empty_state {
+  background-color: $bg;
+}
+
+.p-workspace_directory_empty_state__body {
+  color: $disabled;
+}
+
+.p-workspace_directory_empty_state__footer {
+  color: $disabled;
+
+  &:link, &:visited {
+    color: $disabled;
+  }
+}
+
+.p-workspace_directory__modal {
+  background-color: $bg2;
+}
