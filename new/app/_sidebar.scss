@@ -1,58 +1,58 @@
 .c-sidebar_menu__list_item {
-  color: $fg;
+  color: $fg !important;
 
   &.is_active {
-    background: $tree;
-    border: 1px solid $tree;
-    color: $selectFg;
+    background: $tree !important;
+    border: 1px solid $tree !important;
+    color: $selectFg !important;
   }
 
   &:not(.is_active):hover {
-    color: inherit;
-    background-color: $selectBg;
+    color: inherit !important;
+    background-color: $selectBg !important;
   }
 }
 
 a.c-sidebar_menu__list_item {
-  color: $primary;
+  color: $primary !important;
 }
 
 .p-team_sidebar__shortcut_hint {
-  background: $fg;
-  color: $bg;
+  background: $fg !important;
+  color: $bg !important;
 }
 
 .p-team_sidebar__mentions_badge {
-  color: $bg2;
+  color: $bg2 !important;
 }
 
 .p-team_sidebar__signed_out_badge {
-  color: $accent2;
+  color: $accent2 !important;
 }
 
 
 .p-channel_sidebar--global_nav_layout:after {
-  background: $bg;
+  background: $bg !important;
 }
 
 .p-channel_sidebar__empty_state {
-  color: $text;
+  color: $text !important;
 }
 
 .p-channel_sidebar__banner {
-  color: $fg;
+  color: $fg !important;
 }
 
 .p-channel_sidebar__banner--mentions {
-  background: $red;
+  background: $red !important;
 }
 
 .p-channel_sidebar__banner--unreads {
-  background: $primary;
+  background: $primary !important;
 }
 
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name, .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
 .p-channel_sidebar {
@@ -68,7 +68,7 @@ a.c-sidebar_menu__list_item {
 .p-channel_sidebar__link:visited,
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover {
-  color: $selectFg;
+  color: $selectFg !important;
 }
 
 .p-channel_sidebar__channel--selected,
@@ -81,51 +81,51 @@ a.c-sidebar_menu__list_item {
 .p-channel_sidebar__link--selected:hover,
 .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
 .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
-  color: $primary;
+  color: $primary !important;
 }
 
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover,
 .p-channel_sidebar__close_container:hover {
-  background: $tree;
+  background: $tree !important;
 }
 
 .p-channel_sidebar__header {
-  color: $fg;
+  color: $fg !important;
 }
 
 /* Folders */
 
 input[type="text"].p-channel_sidebar__folder_heading_label_rename {
-  background: rgb(13, 25, 31);
-  color: $fg;
+  background: rgb(13, 25, 31) !important;
+  color: $fg !important;
 }
 
 input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
-  background: rgb(3, 15, 21);
-  color: $fg;
+  background: rgb(3, 15, 21) !important;
+  color: $fg !important;
 }
 
 /* Override presence icons */
 .p-channel_sidebar__channel--im .c-presence--active,
 .p-channel_sidebar__channel--im-slackbot:before {
-  color: $accent;
+  color: $accent !important;
 }
 
 .p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence,
 .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected:before {
-  color: $fg;
+  color: $fg !important;
 }
 
 .p-channel_sidebar__channel--im .c-presence--away {
-  color: $text;
+  color: $text !important;
 }
 
 .p-channel_sidebar__channel--selected,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected,
 .p-channel_sidebar__link--selected:hover {
-  background: $selectBg;
+  background: $selectBg !important;
 }
 
 .p-channel_sidebar__channel--selected:before,
@@ -136,24 +136,24 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel--selected:hover:after,
 .p-channel_sidebar__link--selected:after,
 .p-channel_sidebar__link--selected:after {
-  color: $selectFg;
+  color: $selectFg !important;
 }
 
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
-  background: $accent;
+  background: $accent !important;
 }
 
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
 .p-channel_sidebar .c-scrollbar__bar {
-  background: $accent;
+  background: $accent !important;
 }
 
 .client_channels_list_container.focusablesection:focus .sectionfocusindicator,
 .client_channels_list_container .focus-ring,
 .p-channel_sidebar.focusablesection:focus .sectionfocusindicator,
 #team_menu.focusablesection:focus .sectionfocusindicator {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
 .client_channels_list_container a:not(.c-link--focus-visible).focus-ring,
@@ -165,7 +165,7 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__close.c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
 /** `opacity: 1` color overrides */
@@ -176,82 +176,82 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__section_heading_label--unreads,
 .p-channel_sidebar__quickswitcher:hover {
-  color: $primary;
+  color: $primary !important;
 }
 
 /** Navigation Bar **/
 .p-channel_sidebar__jumper {
-  background: $contrast;
+  background: $contrast !important;
 }
 
 .p-channel_sidebar__jumper:hover {
-  background: $bg;
+  background: $bg !important;
 }
 
 .p-channel_sidebar__history_button {
-  background: $button;
+  background: $button !important;
 }
 
 .p-channel_sidebar__history_button:hover {
-  background: $hl;
+  background: $hl !important;
 }
 
 .p-channel_sidebar__history_button--disabled:hover {
-  background: $excluded;
+  background: $excluded !important;
 }
 
 /** Global Nav (DEPRECATED BUT KEEP FOR SONIC) **/
 .p-global_nav__top {
-  background: $bg;
-  color: $fg;
+  background: $bg !important;
+  color: $fg !important;
 }
 
 .p-global_nav__top:after {
-  background: $bg;
+  background: $bg !important;
 }
 
 .p-global_nav__sidebar {
-  background: $contrast;
-  color: $text;
+  background: $contrast !important;
+  color: $text !important;
 }
 
 .p-global_nav__top_user_presence {
-  background: $contrast;
+  background: $contrast !important;
 }
 
 .p-global_nav__top_user_presence.c-presence--active {
-  color: $accent;
+  color: $accent !important;
 }
 
 .p-global_nav__top_user_presence.c-presence--away {
-  color: $text;
+  color: $text !important;
 }
 
 .p-global_nav__sidebar_jumper:hover,
 .p-global_nav__sidebar_button:hover {
-  color: $primary;
+  color: $primary !important;
 }
 
 /** Classic Nav (WIP) **/
 .p-classic_nav__team_header {
-  background: $bg;
-  color: $fg;
+  background: $bg !important;
+  color: $fg !important;
 }
 
 .p-classic_nav__team_header:hover {
-  background: $selectBg;
+  background: $selectBg !important;
 }
 
 .p-classic_nav__team_header__user__presence.c-presence--active {
-  color: $accent;
+  color: $accent !important;
 }
 
 .p-classic_nav__team_header__user__presence.c-presence--away {
-  color: $text;
+  color: $text !important;
 }
 
 .p-classic_nav__team_header .c-link--focus-visible:focus,
 .p-classic_nav__team_header .c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
