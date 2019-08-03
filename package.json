@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mallowigi/slack-themes#readme",
   "devDependencies": {
+    "js-yaml": "^3.13.1",
     "asar": "^2.0.1",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",

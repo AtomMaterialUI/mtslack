@@ -1,0 +1,541 @@
+material:
+  - oceanic:
+    name: Material Oceanic
+    name2: Material Oceanic Contrast
+    className: oceanic
+    desc: An oceanic blue flat theme
+    dark: true
+    scheme: Material Oceanic
+    background: '#263238'
+    foreground: '#B0BEC5'
+    text: '#607D8B'
+    selectBg: '#546E7A'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#2E3C43'
+    second: '#32424A'
+    disabled: '#415967'
+    contrast: '#1E272C'
+    table: '#314549'
+    misc1: '#2A373E'
+    misc2: '#425B67'
+    tree: '#546E7A70'
+    notif: '#1E272C'
+    accent: '#009688'
+    excluded: '#2E3C43'
+    comments: '#546e7a'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
+  - darker:
+    name: Material Darker
+    name2: Material Darker Contrast
+    className: darker
+    desc: A pitch-black flat theme
+    dark: true
+    scheme: Material Darker
+    background: '#212121'
+    foreground: '#B0BEC5'
+    text: '#727272'
+    selectBg: '#353535'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#2A2A2A'
+    second: '#292929'
+    disabled: '#474747'
+    contrast: '#1A1A1A'
+    table: '#323232'
+    misc1: '#292929'
+    misc2: '#3F3F3F'
+    tree: '#32323270'
+    notif: '#1A1A1A'
+    accent: '#FF9800'
+    excluded: '#323232'
+    comments: '#616161'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
+  - lighter:
+    name: Material Lighter
+    name2: Material Lighter Contrast
+    className: lighter
+    desc: A bright light flat theme
+    dark: false
+    scheme: Material Lighter
+    background: '#FAFAFA'
+    foreground: '#546E7A'
+    text: '#94A7B0'
+    selectBg: '#80CBC4'
+    selectFg: '#546e7a'
+    selectFg2: '#546e7a'
+    button: '#F3F4F5'
+    second: '#eae8e8'
+    disabled: '#D2D4D5'
+    contrast: '#F4F4F4'
+    table: '#E7E7E8'
+    misc1: '#d3e1e8'
+    misc2: '#E7E7E8'
+    tree: '#80CBC480'
+    notif: '#eae8e8'
+    accent: '#00BCD4'
+    excluded: '#eae8e8'
+    comments: '#AABFC9'
+    vars: '#272727'
+    links: '#39ADB5'
+    functions: '#6182B8'
+    keywords: '#7C4DFF'
+    tags: '#E53935'
+    strings: '#91B859'
+    operators: '#39ADB5'
+    attributes: '#F6A434'
+    numbers: '#F76D47'
+    parameters: '#F76D47'
+
+  - palenight:
+    name: Material Palenight
+    name2: Material Palenight Contrast
+    className: palenight
+    desc: A purplish flat theme
+    dark: true
+    scheme: Material Palenight
+    background: '#292D3E'
+    foreground: '#A6ACCD'
+    text: '#676E95'
+    selectBg: '#3C435E'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#303348'
+    second: '#34324a'
+    disabled: '#515772'
+    contrast: '#202331'
+    table: '#414863'
+    misc1: '#2b2a3e'
+    misc2: '#444267'
+    tree: '#676E9570'
+    notif: '#202331'
+    accent: '#ab47bc'
+    excluded: '#2f2e43'
+    comments: '#676E95'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
+  - deepocean:
+    name: Material Deep Ocean
+    name2: Material Deep Ocean Contrast
+    className: deepocean
+    desc: A deep sea black flat theme
+    dark: true
+    scheme: Material Deep Ocean
+    background: '#0F111A'
+    foreground: '#8F93A2'
+    text: '#4B526D'
+    selectBg: '#232632'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#191A21'
+    second: '#181A1F'
+    disabled: '#464B5D'
+    contrast: '#090B10'
+    table: '#1A1C25'
+    misc1: '#0F111A'
+    misc2: '#1F2233'
+    tree: '#717CB416'
+    notif: '#090B10'
+    accent: '#84ffff'
+    excluded: '#292D3E'
+    comments: '#717CB4'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#F59762'
+
+other:
+  - monokai:
+    name: Monokai Pro
+    name2: Monokai Pro Contrast
+    className: monokai
+    desc: Theme based on the Monokai Pro Theme
+    dark: true
+    scheme: Monokai Pro
+    background: '#2D2A2E'
+    foreground: '#fcfcfa'
+    text: '#939293'
+    selectBg: '#5B595C'
+    selectFg: '#FFFFFF'
+    selectFg2: '#ffd866'
+    button: '#403E41'
+    second: '#403E41'
+    disabled: '#727072'
+    contrast: '#221F22'
+    table: '#4A474B'
+    misc1: '#2d2a2e'
+    misc2: '#5b595c'
+    tree: '#403E41'
+    notif: '#363437'
+    accent: '#ffd866'
+    excluded: '#3a3a3c'
+    comments: '#727072'
+    vars: '#FCFCFA'
+    links: '#78DCE8'
+    functions: '#A9DC76'
+    keywords: '#FF6188'
+    tags: '#FF6188'
+    strings: '#FFD866'
+    operators: '#FF6188'
+    attributes: '#78DCE8'
+    numbers: '#AB9DF2'
+    parameters: '#F59762'
+
+  - dracula:
+    name: Dracula
+    name2: Dracula Contrast
+    className: dracula
+    desc: Theme based on the Dracula Theme
+    dark: true
+    scheme: Dracula
+    background: '#282A36'
+    foreground: '#F8F8F2'
+    text: '#6272A4'
+    selectBg: '#44475A'
+    selectFg: '#8BE9FD'
+    selectFg2: '#8BE9FD'
+    button: '#393C4B'
+    second: '#282A36'
+    disabled: '#6272A4'
+    contrast: '#191A21'
+    table: '#44475A'
+    misc1: '#21222C'
+    misc2: '#6272A4'
+    tree: '#44475A'
+    notif: '#1D2228'
+    accent: '#FF79C5'
+    excluded: '#34353D'
+    comments: '#6272A4'
+    vars: '#F8F8F2'
+    links: '#F1FA8C'
+    functions: '#50FA78'
+    keywords: '#FF79C6'
+    tags: '#FF79C6'
+    strings: '#F1FA8C'
+    operators: '#FF79C6'
+    attributes: '#50FA7B'
+    numbers: '#BD93F9'
+    parameters: '#FFB86C'
+
+  - arcdark:
+    name: Arc Dark
+    name2: Arc Dark Contrast
+    className: arcdark
+    desc: Theme based on the Arc Dark GTK Theme
+    dark: true
+    scheme: Arc Dark
+    background: '#2f343f'
+    foreground: '#D3DAE3'
+    text: '#8b9eb5'
+    selectBg: '#8888FF'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#383C4A'
+    second: '#393f4c'
+    disabled: '#D3DAE3'
+    contrast: '#262b33'
+    table: '#41416A'
+    misc1: '#404552'
+    misc2: '#3F3F46'
+    tree: '#08507C'
+    notif: '#262a33'
+    accent: '#42A5F5'
+    excluded: '#474B57'
+    comments: '#747C84'
+    vars: '#CF6A4C'
+    links: '#7587A6'
+    functions: '#7587A6'
+    keywords: '#9B859D'
+    tags: '#CF6A4C'
+    strings: '#8F9D6A'
+    operators: '#A7A7A7'
+    attributes: '#F9EE98'
+    numbers: '#CDA869'
+    parameters: '#CDA869'
+
+  - onedark:
+    name: Atom One Dark
+    name2: Atom One Dark Contrast
+    className: onedark
+    desc: Theme based on the Atom One Dark theme
+    dark: true
+    scheme: Atom One Dark
+    background: '#282C34'
+    foreground: '#979FAD'
+    text: '#979FAD'
+    selectBg: '#3A3F4B'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#3A3F4B'
+    second: '#2F333D'
+    disabled: '#6B727D'
+    contrast: '#21252B'
+    table: '#383E49'
+    misc1: '#282C34'
+    misc2: '#383D48'
+    tree: '#3A3F4B'
+    notif: '#282C34'
+    accent: '#2979ff'
+    excluded: '#3c4150'
+    comments: '#59626F'
+    vars: '#D19A66'
+    links: '#56B6C2'
+    functions: '#61AEEF'
+    keywords: '#C679DD'
+    tags: '#F07178'
+    strings: '#98C379'
+    operators: '#61AFEF'
+    attributes: '#E5C17C'
+    numbers: '#D19A66'
+    parameters: '#ABB2BF'
+
+  - onelight:
+    name: Atom One Light
+    name2: Atom One Light
+    className: onelight
+    desc: Theme based on the Atom One Light theme
+    dark: false
+    scheme: Atom One Light
+    background: '#FAFAFA'
+    foreground: '#232324'
+    text: '#9D9D9F'
+    selectBg: '#DBDBDC'
+    selectFg: '#232324'
+    selectFg2: '#232324'
+    button: '#DBDBDC'
+    second: '#EAEAEB'
+    disabled: '#424243'
+    contrast: '#FFFFFF'
+    table: '#DBDBDC'
+    misc1: '#DBDBDC'
+    misc2: '#EAEAEB'
+    tree: '#DBDBDC80'
+    notif: '#F2F2F2'
+    accent: '#2979ff'
+    excluded: '#DBDBDC'
+    comments: '#A0A1A7'
+    vars: '#986801'
+    links: '#0184BC'
+    functions: '#4078F2'
+    keywords: '#A626A4'
+    tags: '#E4564A'
+    strings: '#50A14E'
+    operators: '#4078F2'
+    attributes: '#C18401'
+    numbers: '#986801'
+    parameters: '#383A42'
+
+  - solardark:
+    name: Solarized Dark
+    name2: Material Solarized Dark Contrast
+    className: solardark
+    desc: Solarized Dark Theme
+    dark: true
+    scheme: Solarized Dark
+    background: '#002B36'
+    foreground: '#839496'
+    text: '#586e75'
+    selectBg: '#2E4C52'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#073642'
+    second: '#003745'
+    disabled: '#2E5861'
+    contrast: '#00252E'
+    table: '#11353F'
+    misc1: '#0D3640'
+    misc2: '#11353F'
+    tree: '#2E4C52'
+    notif: '#2E4C52'
+    accent: '#d33682'
+    excluded: '#083F4D'
+    comments: '#657B83'
+    vars: '#268BD2'
+    links: '#268BD2'
+    functions: '#B58900'
+    keywords: '#859900'
+    tags: '#268BD2'
+    strings: '#2AA198'
+    operators: '#93A1A1'
+    attributes: '#B58900'
+    numbers: '#D33682'
+    parameters: '#93A1A1'
+
+  - solarlight:
+    name: Solarized Light
+    name2: Material Solarized Light Contrast
+    className: solarlight
+    desc: Solarized Light Theme
+    dark: false
+    scheme: Solarized Light
+    background: '#fdf6e3'
+    foreground: '#586e75'
+    text: '#93a1a1'
+    selectBg: '#93a1a1'
+    selectFg: '#002b36'
+    selectFg2: '#002b36'
+    button: '#FEFBF1'
+    second: '#F6F0DE'
+    disabled: '#C9CCC3'
+    contrast: '#eee8d5'
+    table: '#F6F0DE'
+    misc1: '#edead9'
+    misc2: '#F6F0DE'
+    tree: '#93a1a1'
+    notif: '#EDE8D4'
+    accent: '#d33682'
+    excluded: '#E3DCC9'
+    comments: '#93A1A1'
+    vars: '#268BD2'
+    links: '#268BD2'
+    functions: '#B58900'
+    keywords: '#859900'
+    tags: '#268BD2'
+    strings: '#2AA198'
+    operators: '#657B83'
+    attributes: '#657B83'
+    numbers: '#D33682'
+    parameters: '#657B83'
+
+  - github:
+    name: GitHub
+    name2: GitHub Contrast
+    className: github
+    desc: GitHub Theme
+    dark: false
+    scheme: GitHub (Material)
+    background: '#F7F8FA'
+    foreground: '#5B6168'
+    text: '#292D31'
+    selectBg: '#3A66D1'
+    selectFg: '#FFFFFF'
+    selectFg2: '#111111'
+    button: '#F1F3F6'
+    second: '#F7F8FA'
+    disabled: '#6C737C'
+    contrast: '#FFFFFF'
+    table: '#cce5ff'
+    misc1: '#DFE1E4'
+    misc2: '#CCE5FF'
+    tree: '#3A66D1'
+    notif: '#DFECFE'
+    accent: '#79CB60'
+    excluded: '#FDFDFD'
+    comments: '#6A737D'
+    vars: '#24292E'
+    links: '#005CC5'
+    functions: '#6F42C1'
+    keywords: '#D73A49'
+    tags: '#22863A'
+    strings: '#032F62'
+    operators: '#D73A49'
+    attributes: '#6F42C1'
+    numbers: '#005CC5'
+    parameters: '#E36209'
+
+  - nightowl:
+    name: Night Owl
+    name2: Night Owl Contrast
+    className: nightowl
+    desc: Night Owl Theme
+    dark: true
+    scheme: Night Owl
+    background: '#011627'
+    foreground: '#b0bec5'
+    text: '#607d8b'
+    selectBg: '#152C3B'
+    selectFg: '#ffffff'
+    selectFg2: '#ffffff'
+    button: '#2e3c43'
+    second: '#011627'
+    disabled: '#2e3c42'
+    contrast: '#001424'
+    table: '#152C3B'
+    misc1: '#2a373e'
+    misc2: '#152C3B'
+    tree: '#152C3B'
+    notif: '#152C3B'
+    accent: '#7e57c2'
+    excluded: '#0B253A'
+    comments: '#637777'
+    vars: '#addb67'
+    links: '#80CBC4'
+    functions: '#82AAFF'
+    keywords: '#c792ea'
+    tags: '#7fdbca'
+    strings: '#ecc48d'
+    operators: '#c792ea'
+    attributes: '#FAD430'
+    numbers: '#f78c6c'
+    parameters: '#d9f5dd'
+
+  - lightowl:
+    name: Light Owl
+    name2: Light Owl Contrast
+    className: lightowl
+    desc: Light Owl Theme
+    dark: false
+    scheme: Light Owl
+    background: '#FAFAFA'
+    foreground: '#546e7a'
+    text: '#403F53'
+    selectBg: '#999e9e'
+    selectFg: '#403f53'
+    selectFg2: '#333333'
+    button: '#FAFAFA'
+    second: '#f2f5f7'
+    disabled: '#dddddd'
+    contrast: '#FAFAFA'
+    table: '#FAFAFA'
+    misc1: '#efefef'
+    misc2: '#E0E7EA'
+    tree: '#E0E7EA'
+    notif: '#F0F0F0'
+    accent: '#269386'
+    excluded: '#82AAFF'
+    comments: '#637777'
+    vars: '#0C969B'
+    links: '#994cc3'
+    functions: '#4876d6'
+    keywords: '#994cc3'
+    tags: '#994cc3'
+    strings: '#c96765'
+    operators: '#7d818b'
+    attributes: '#4876d6'
+    numbers: '#aa0982'
+    parameters: '#f78c6c'
