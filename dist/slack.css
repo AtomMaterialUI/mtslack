@@ -5313,7 +5313,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
 
 .c-pillow_file__content--collapsed:after {
-  background: var(--secondBg); }
+  background: linear-gradient(0deg, var(--bg), rgba(255, 255, 255, 0) 40px); }
 
 .c-pillow_file__expandable_pill__button {
   background: var(--accent);

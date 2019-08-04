@@ -1,6 +1,7 @@
 .p-file_list {
   background: $bg2;
 }
+
 .p-file_viewer__empty {
   color: $disabled;
 }
@@ -91,6 +92,7 @@
 
 .c-pillow_file_container--full_width {
   border-color: $borderLight;
+
   &.c-pillow_file_container--focus-within, &:hover {
     background: $tree;
   }
@@ -149,7 +151,7 @@
 .c-pillow_file__content--collapsed {
 
   &:after {
-    background: $bg2;
+    background: linear-gradient(0deg, $bg, hsla(0, 0%, 100%, 0) 40px)
   }
 }
 
@@ -176,6 +178,7 @@
 
 .p-file_image_thumbnail__wrapper {
   background-color: $bg2;
+
   &:after {
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
