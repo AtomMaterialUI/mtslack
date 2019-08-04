@@ -6579,8 +6579,8 @@ a.c-message__call_name--linked {
   border: 1px solid var(--active); }
 
 .p-message_pane__unread_banner {
-  background: var(--accent2);
-  color: var(--primary); }
+  background: var(--accent);
+  color: var(--selectFg); }
 
 .p-message_pane__unread_banner__banner:hover {
   background: var(--accent);
