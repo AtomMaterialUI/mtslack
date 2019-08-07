@@ -3,26 +3,26 @@
 Beautify your Slack application from a list of popular themes!!!
 
 **Theme List**:
-- Material Oceanic
-- Material Darker
-- Material Palenight
-- Material Lighter
-- Material DeepOcean
-- Monokai Pro
-- Arc Dark
-- Dracula
-- GitHub
-- Atom One Dark
-- Atom One Light
-- Solarized Dark
-- Solarized Light
-- Night Owl
-- Light Owl
+- Material Oceanic ![oceanic.png](doc/oceanic.png)
+- Material Darker ![darker.png](doc/darker.png)
+- Material Palenight ![palenight.png](doc/palenight.png)
+- Material Lighter ![lighter.png](doc/lighter.png)
+- Material DeepOcean ![deepocean.png](doc/deepocean.png)
+- Monokai Pro ![monokai.png](doc/monokai.png)
+- Arc Dark ![arcdark.png](doc/arcdark.png)
+- Dracula ![dracula.png](doc/dracula.png)
+- GitHub ![github.png](doc/github.png)
+- Atom One Dark ![onedark.png](doc/onedark.png)
+- Atom One Light ![onelight.png](doc/onelight.png)
+- Solarized Dark ![solardark.png](doc/solardark.png)
+- Solarized Light ![solarlight.png](doc/solarlight.png)
+- Night Owl ![nightowl.png](doc/nightowl.png)
+- Light Owl ![lightowl.png](doc/lightowl.png)
 
 ----------------------------
 # Preview
 
-TODO
+
 
 # Pledge
 
@@ -62,31 +62,32 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ### From the self-executable
 
-You can find in this repository a self-executable `main`. Simply download it on your machine and run it via the terminal:
+- Clone this repository
+- Make sure you have nodejs installed
+- Run the self-executable:
 
 ```
 ./main
 ```
 
-You will be prompted with a menu with two options:
-- Apply Theme
-- Remove Theme
+- You will be prompted with a menu with two options:
+  - Apply Theme
+  - Remove Theme
 
-Select *Apply Theme* to be prompted with a list of themes to choose with.
+- Select *Apply Theme* to be prompted with a list of themes to choose with.
+- Open or Restart (with Cmd-Q) Slack
+- ?????
+- PROFIT!!!!!!!
 
-If everything goes well, simply open or quit (with Cmd-Q) and reopen Slack.
 
-Enjoy!!!
-
-
-### From this repository
+### From npm
 
 - Clone this repository
 - Install NodeJS if you didn't do it yet (<https://nodejs.org/en/download/>)
 - Run `npm install`
 - Run `npm run apply`
 - Select **Apply** in the menu, then select a theme from the predefined themes.
-- Open or Restart Slack
+- Open or Restart (with Cmd-Q) Slack
 - ??????
 - PROFIT!!!!!!
 

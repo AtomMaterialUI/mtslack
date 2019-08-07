@@ -443,7 +443,7 @@ other:
     foreground: '#5B6168'
     text: '#292D31'
     selectBg: '#3A66D1'
-    selectFg: '#FFFFFF'
+    selectFg: '#111111'
     selectFg2: '#111111'
     button: '#F1F3F6'
     second: '#F7F8FA'
