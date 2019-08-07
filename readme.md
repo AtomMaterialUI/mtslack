@@ -1,11 +1,23 @@
 # Slack Theme Collection
 
-Customize your Slack with one of the provided themes.
+Beautify your Slack application from a list of popular themes!!!
 
-Theme List:
+**Theme List**:
+- Material Oceanic
+- Material Darker
+- Material Palenight
+- Material Lighter
+- Material DeepOcean
+- Monokai Pro
+- Arc Dark
+- Dracula
+- GitHub
 - Atom One Dark
-
-More to come!
+- Atom One Light
+- Solarized Dark
+- Solarized Light
+- Night Owl
+- Light Owl
 
 ----------------------------
 # Preview
@@ -24,7 +36,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/material-theme-jetbrains#backers" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/backers.svg?width=890"></a>
 
-Check also : http://www.material-theme.com/docs/support-us/
+Check also : <http://www.material-theme.com/docs/support-us/>
 
 ## Sponsors
 
@@ -42,19 +54,49 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/material-theme-jetbrains/sponsor/9/website" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/sponsor/9/avatar.svg"></a>
 
 
-# Installing into Slack
+# Installation
 
-### For Slack > 4.0
+**IMPORTANT NOTE**
+
+> This application tampers with the installed Slack application. Therefore, it is **HEAVILY RECOMMENDED** to do a backup copy of Slack before running the app.
+
+### From the self-executable
+
+You can find in this repository a self-executable `main`. Simply download it on your machine and run it via the terminal:
+
+```
+./main
+```
+
+You will be prompted with a menu with two options:
+- Apply Theme
+- Remove Theme
+
+Select *Apply Theme* to be prompted with a list of themes to choose with.
+
+If everything goes well, simply open or quit (with Cmd-Q) and reopen Slack.
+
+Enjoy!!!
+
+
+### From this repository
 
 - Clone this repository
-- Install NodeJS if you didn't do it yet (<>https://nodejs.org/en/download/</>)
+- Install NodeJS if you didn't do it yet (<https://nodejs.org/en/download/>)
 - Run `npm install`
 - Run `npm run apply`
-- Select **Apply** in the menu
+- Select **Apply** in the menu, then select a theme from the predefined themes.
 - Open or Restart Slack
 - ??????
 - PROFIT!!!!!!
 
+### Revert to the default theme
+
+The best way to revert to the default theme would be to use the backup copy you made and overwrite the patched Slack.app
+
+There is also a `Remove Theme` option in the menu but it is less robust.
+
+----
 # Development
 
 ## Building styles
@@ -73,7 +115,7 @@ Then run `npm run styles` or `npm run debugStyles` to compile the scss files in 
 
 Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
 
-To test your CSS, install a Stylish-like extension (https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) then create
+To test your CSS, install a Stylish-like extension (<https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>) then create
 a new style for slack and paste the CSS inside and save.
 
 You should already see all your styles applied. Please note that there are some differences between the web app and the native app.
@@ -133,7 +175,7 @@ Apache 2.0
 
 # Acknowledgements
 
-Thanks to https://github.com/widget-/slack-black-theme for the idea!
+Thanks to <https://github.com/widget-/slack-black-theme> for the idea!
 
 # License
 
