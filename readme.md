@@ -2,6 +2,8 @@
 
 Beautify your Slack application from a list of popular themes!!!
 
+Currently works only for Mac OSx
+
 **Theme List**:
 - Material Oceanic ![oceanic.png](doc/oceanic.png)
 - Material Darker ![darker.png](doc/darker.png)
@@ -20,9 +22,6 @@ Beautify your Slack application from a list of popular themes!!!
 - Light Owl ![lightowl.png](doc/lightowl.png)
 
 ----------------------------
-# Preview
-
-
 
 # Pledge
 
