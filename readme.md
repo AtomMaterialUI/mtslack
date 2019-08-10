@@ -69,6 +69,16 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 ./main
 ```
 
+If you encounter an error, such as this one,
+```
+operation not permitted, copyfile '/Applications/Slack.app/Contents/Resources/app.asar'
+```
+try running the self-executable in sudo mode.
+
+```
+sudo ./main
+```
+
 - You will be prompted with a menu with two options:
   - Apply Theme
   - Remove Theme
