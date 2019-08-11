@@ -1,0 +1,25 @@
+.p-about_tab__pile__count {
+  color: $text;
+}
+
+.p-about_tab__pile__add {
+  color: $fg;
+  border: 1px dashed $borderLight;
+
+  &:hover {
+    border-color: $primary;
+    color: $selectFg;
+  }
+}
+
+.p-about_tab__purpose {
+  background: $bg2;
+}
+
+.p-about_tab__purpose__footer {
+  color: $bg2;
+}
+
+.p-about_tab__purpose__footer__separator {
+  color: $border;
+}

@@ -51,8 +51,15 @@ a.c-sidebar_menu__list_item {
   background: $primary !important;
 }
 
-.p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name, .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name {
+.p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
+}
+
+.p-channel_sidebar__link {
+  &.c-button--focus-visible:focus .p-channel_sidebar__name,
+  &.c-link--focus-visible:focus .p-channel_sidebar__name {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
+  }
 }
 
 .p-channel_sidebar {

@@ -7,14 +7,6 @@
 }
 
 .c-banner {
-  display: flex;
-  font-weight: 700;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1;
-  min-height: 48px;
-
   .c-button--focus-visible:focus, .c-link--focus-visible:focus {
     color: $selectFg;
     box-shadow: 0 0 0 1px $selectBg, 0 0 0 5px $selectBg;

@@ -1,0 +1,24 @@
+.p-inbox__day {
+
+  h4 {
+    color: $text;
+  }
+}
+
+.p-inbox__item {
+  border: 1px solid $borderLight;
+
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-inbox__item_rationale {
+  .p-inbox__item_rationale_pill {
+    background: $button;
+  }
+}
+
+.p-inbox__item_timestamp {
+  color: $text;
+}

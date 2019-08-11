@@ -54,6 +54,24 @@
   color: $text;
 }
 
+.p-people_search_result__top_terms_term {
+  background: $bg2;
+}
+
 .p-people_search_result__top_terms_sparkles {
   color: $accent2;
+}
+
+.p-people_search_result--unknown .p-people_search_result__avatar_placeholder {
+  background-color: $contrast;
+}
+
+.p-people_search_result--non_existent .p-people_search_result__avatar_placeholder {
+  border: 1px solid $border;
+}
+
+.p-people_search_result__avatar {
+  .c-avatar__image {
+    background-color: $contrast;
+  }
 }

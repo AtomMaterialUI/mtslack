@@ -3,12 +3,15 @@
   border: 1px solid $borderLight;
   background-color: $bg2;
   border-color: $borderLight;
+
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
     &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
+
   &[disabled] {
     background: $button;
     border: 1px solid $button;
@@ -63,12 +66,15 @@
 .c-input_select {
   border: 1px solid $borderLight;
   background: $button;
+
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
     &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
+
   &[disabled] {
     background: $button;
     border: 1px solid $borderLight;
@@ -77,6 +83,7 @@
 
 .c-input_select--with_default {
   border: 1px solid $disabled;
+
   &:focus {
     box-shadow: 0 0 0 1px $disabled, 0 0 0 5px $bg;
     border-radius: 4px;
@@ -85,6 +92,7 @@
 
 .c-input_select--with_info {
   border: 1px solid $blue;
+
   &:focus {
     box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
   }
@@ -92,6 +100,7 @@
 
 .c-input_select--with_success {
   border: 1px solid $green;
+
   &:focus {
     box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
   }
@@ -99,6 +108,7 @@
 
 .c-input_select--with_warning {
   border: 1px solid $orange;
+
   &:focus {
     box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
   }
@@ -106,6 +116,7 @@
 
 .c-input_select--with_error {
   border: 1px solid $red;
+
   &:focus {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
@@ -113,6 +124,7 @@
 
 .c-input_select--active {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
   &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
     color: $disabled;
   }
@@ -140,12 +152,15 @@ input.c-input_select__filter_input {
   border: 1px solid $borderLight;
   background-color: $button;
   border-color: $borderLight;
+
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
     &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
+
   &[disabled] {
     background: $button;
     border: 1px solid $borderLight;
