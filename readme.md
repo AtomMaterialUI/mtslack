@@ -59,6 +59,14 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 > This application tampers with the installed Slack application. Therefore, it is **HEAVILY RECOMMENDED** to do a backup copy of Slack before running the app.
 
+#### For MacOS
+
+Go to your Applications folder, find the `Slack.app`, then copy and paste to create the backup. To restore, simply delete the `Slack.app` and copy back from the backup (or simply redownload it).
+
+#### For Linux
+
+The Slack folder is located in `/usr/lib/slack` (at least in Ubuntu). Copy this folder and create a copy in your home directory. To restore, either do `sudo mv /home/slack /usr/lib` or redownload it.
+
 ### From the self-executable
 
 - Clone this repository
