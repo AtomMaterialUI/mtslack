@@ -5598,6 +5598,10 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   border-top: 1px solid var(--active);
   color: var(--text); }
 
+.c-pillow_file__snippet__content .CodeMirror {
+  background: var(--contrast);
+  color: var(--fg); }
+
 .c-pillow_file__snippet__content .CodeMirror-code > div:before {
   border-right: 1px solid var(--border);
   color: var(--fg);

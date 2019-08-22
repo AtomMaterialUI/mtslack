@@ -52,6 +52,11 @@
   color: $text;
 }
 
+.c-pillow_file__snippet__content .CodeMirror {
+  background: $contrast;
+  color: $fg;
+}
+
 .c-pillow_file__snippet__content .CodeMirror-code {
   > div {
     &:before {
