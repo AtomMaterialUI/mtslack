@@ -10,6 +10,7 @@
     &:not(.c-virtual_list--scrollbar):before {
       background: $bg;
       box-shadow: 0 32px $bg;
+      height: 0;
     }
   }
 }
