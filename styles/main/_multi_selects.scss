@@ -30,6 +30,9 @@
 }
 
 .c-multi_select_input__input {
+  background: $button;
+  color: $fg;
+
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
     color: $disabled;
   }

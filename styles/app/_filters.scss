@@ -31,6 +31,11 @@
   &::placeholder {
     color: $disabled;
   }
+
+  &[placeholder] {
+    color: $disabled;
+  }
+
 }
 
 .c-filter_input__reset_button {

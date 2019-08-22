@@ -16,7 +16,17 @@
   background: $bg2;
 
   &:hover {
-    background: $bg2;
+    background: $active;
+    color: $selectFg;
+  }
+
+  &.c-reaction--dark {
+    background-color: $bg2;
+    border-color: $bg2;
+
+    .c-reaction__count {
+      color: $fg;
+    }
   }
 }
 
@@ -44,7 +54,19 @@ only screen and (min-resolution: 192dpi) {
   }
 
   &:hover {
-    background: $bg;
+    background: $active;
+  }
+
+  &.c-reaction_add--dark {
+    &:focus .c-icon--small-reaction-bg,
+    &:hover .c-icon--small-reaction-bg {
+      color: $primary;
+    }
+
+    &:focus .c-icon--small-reaction,
+    &:hover .c-icon--small-reaction {
+      color: $selectFg;
+    }
   }
 }
 

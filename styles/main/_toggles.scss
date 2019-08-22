@@ -19,6 +19,8 @@
     background-color: $accent;
 
     + .c-toggle__visual {
+      color: $selectFg;
+
       &:after {
         background-color: $hl;
       }

@@ -38,6 +38,7 @@
 
 .c-member_slug--mention {
   background: $active;
+  color: $text;
   border-radius: 16px;
   padding: 2px 4px;
 
@@ -50,4 +51,8 @@
   &:link {
     color: $primary;
   }
+}
+
+.sk-client-theme--dark .c-member_slug--mention {
+  color: $text;
 }

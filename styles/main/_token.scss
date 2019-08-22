@@ -6,7 +6,7 @@
   }
 }
 
-.c-token--selected:not(.c-token--invalid):not(.c-token--disabled) {
+.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled) {
   background: $accent;
   color: $selectFg;
 
@@ -30,5 +30,26 @@
   &:hover {
     background: $selectBg;
     color: $selectFg;
+  }
+}
+
+.c-token--loading {
+  background: rgba($bg, 0.04);
+
+  .c-token__loading_icon_container {
+    background: rgba($bg, 0.04);
+  }
+
+  &:hover {
+    background: rgba($bg, 0.13);
+  }
+
+  &.c-token--selected {
+    background: rgba($bg, 0.7);
+    color: $fg;
+
+    .c-token__loading_icon_container {
+      background: $text;
+    }
   }
 }

@@ -9,4 +9,10 @@
 
 .c-base_inline_entity--highlight-dim {
   color: $text;
+  background: $button;
+}
+
+.c-base_inline_entity--highlight-light {
+  background: $button;
+  color: $text;
 }

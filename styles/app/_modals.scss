@@ -15,3 +15,7 @@
 .c-sk-modal_header {
   background-color: $bg;
 }
+
+.c-sk-modal_content--faded:after {
+  background: rgba($bg, 0.7);
+}

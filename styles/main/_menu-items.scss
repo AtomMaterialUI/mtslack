@@ -9,6 +9,10 @@
 .c-menu_item__icon {
   color: $fg;
 
+  .c-icon:before {
+    color: $fg;
+  }
+
   img {
     border: 1px solid $border;
   }
@@ -38,9 +42,33 @@
   background-color: $hl;
   color: $selectFg;
 
+  .c-menu_item__description, .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
   &:link {
     background-color: $hl;
     color: $primary;
+
+    .c-menu_item__description, .c-menu_item__glimmer {
+      color: $primary;
+    }
+
+    .c-menu_item__icon {
+      color: $primary;
+
+      .c-icon:before {
+        color: $primary;
+      }
+    }
   }
 
   &:visited {
@@ -53,14 +81,50 @@
   background-color: $selectBg;
   color: $selectFg;
 
+  .c-menu_item__description, .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
   &:link {
     background-color: $selectBg;
     color: $primary;
+
+    .c-menu_item__description, .c-menu_item__glimmer {
+      color: $primary;
+    }
+
+    .c-menu_item__icon {
+      color: $primary;
+
+      .c-icon:before {
+        color: $primary;
+      }
+    }
   }
 
   &:visited {
     background-color: $selectBg;
     color: $accent2;
+
+    .c-menu_item__description, .c-menu_item__glimmer {
+      color: $accent2;
+    }
+
+    .c-menu_item__icon {
+      color: $accent2;
+
+      .c-icon:before {
+        color: $accent2;
+      }
+    }
   }
 }
 
@@ -68,14 +132,50 @@
   background-color: $selectBg;
   color: $selectFg;
 
+  .c-menu_item__description, .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
   &:link {
     background-color: $selectBg;
     color: $primary;
+
+    .c-menu_item__description, .c-menu_item__glimmer {
+      color: $primary;
+    }
+
+    .c-menu_item__icon {
+      color: $primary;
+
+      .c-icon:before {
+        color: $primary;
+      }
+    }
   }
 
   &:visited {
     background-color: $selectBg;
     color: $accent2;
+
+    .c-menu_item__description, .c-menu_item__glimmer {
+      color: $accent2;
+    }
+
+    .c-menu_item__icon {
+      color: $accent2;
+
+      .c-icon:before {
+        color: $accent2;
+      }
+    }
   }
 }
 

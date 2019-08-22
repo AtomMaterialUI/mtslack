@@ -1,0 +1,49 @@
+.p-omnipicker_dialog__menu {
+  .c-menu {
+
+    .c-menu_item__button--highlighted {
+      background-color: $tree;
+      border: 1px solid $tree;
+      color: $fg;
+
+      .c-menu_item__icon {
+        color: $fg;
+      }
+    }
+  }
+}
+
+.p-omnipicker_dialog__file.c-pillow_file_container--full_width {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-omnipicker_dialog__list--loading {
+  color: $fg;
+}
+
+.p-omnipicker_dialog__list--empty {
+  color: $fg;
+}
+
+.p-omnipicker_dialog__storage-warning-container {
+  background-color: $bg;
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-menu_item__button__selected {
+  background-color: $primary;
+  color: $selectFg;
+
+  .c-menu_item__icon {
+    color: $selectFg;
+  }
+}
+
+.c-menu_item__browsefiles:hover,
+.c-menu_item__button--highlighted .c-menu_item__browsefiles {
+  background-color: $hl;
+}
+
+.c-missing_menu_item__button--loading {
+  background: rgba($button, .7);
+}

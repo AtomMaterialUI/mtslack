@@ -4,6 +4,13 @@
   }
 }
 
+.p-pending_request {
+  border-bottom: 1px solid $borderLight;
+
+  &:first-child {
+    border-top: 1px solid $borderLight;
+  }
+}
 
 .p-multi_file_upload__container {
   min-width: 100%;

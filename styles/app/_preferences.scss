@@ -1,3 +1,37 @@
+.p-prefs_modal__theme_thumb {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.p-prefs_modal__theme {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--light {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--dark {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--dark .p-prefs_modal__theme_placeholder {
+  background-color: $bg2;
+}
+
+.p-prefs_modal__theme_placeholder {
+  &:first-child {
+    background-color: $accent;
+  }
+
+  &:nth-child(2) {
+    background-color: $accent2;
+  }
+
+  &:nth-child(3) {
+    background-color: $primary;
+  }
+}
+
 .p-prefs_modal__radiogroup {
   label {
     border: 1px solid $border;
@@ -10,22 +44,43 @@
 
   .p-prefs_modal__radio_decorator {
     background: $bg;
+
+    &.p-prefs_modal__radio_decorator--light {
+      background-color: $bg;
+    }
+
+    &.p-prefs_modal__radio_decorator--dark {
+      background-color: $bg;
+    }
   }
 }
 
 .p-prefs_modal__notification_example {
   &.p-prefs_modal__notification_example--mac {
     background: $notif;
+    color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
   }
 
   &.p-prefs_modal__notification_example--linux {
     background: $notif;
     color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
   }
 
   &.p-prefs_modal__notification_example--windows {
     background: $notif;
     color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
   }
 }
 
@@ -48,4 +103,19 @@
 
 .p-prefs_modal__channel_overrides_row__setting {
   color: $disabled;
+}
+
+.p-prefs_modal__message_example {
+
+  &.p-prefs_modal__message_example--light {
+    .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
+      color: $bg2;
+    }
+  }
+
+  &.p-prefs_modal__message_example--dark {
+    .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
+      color: $bg2;
+    }
+  }
 }

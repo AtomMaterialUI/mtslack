@@ -15,6 +15,18 @@
 
 a.c-sidebar_menu__list_item {
   color: $primary !important;
+
+  &.is_active {
+    background: $accent;
+    border: 1px solid $accent;
+    color: $selectFg;
+  }
+
+  &:not(.is_active):hover {
+    color: $selectFg;
+    background-color: $active;
+    border-color: $active;
+  }
 }
 
 .p-team_sidebar__shortcut_hint {

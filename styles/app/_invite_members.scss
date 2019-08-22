@@ -45,14 +45,14 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 }
 
 .p-invite_members_form__footer_message {
-  color: $disabled;
+  color: $text;
 }
 
 .p-invite_members_form__footer_link {
-  color: $disabled;
+  color: $text;
 
   &:hover, &:visited {
-    color: $disabled;
+    color: $fg;
   }
 }
 

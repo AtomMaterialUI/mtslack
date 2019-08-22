@@ -33,3 +33,7 @@
 .c-mrkdwn__hex {
   border: 1px solid $disabled;
 }
+
+.c-mrkdwn__code.c-mrkdwn__code--dark {
+  color: $accent2;
+}

@@ -23,3 +23,22 @@
 .p-app_action_picker_trigger_button--highlight i {
   color: $primary;
 }
+
+.p-app_action_picker_trigger_button {
+  border: 1px solid $button;
+  background: $button;
+
+  i {
+    color: $fg;
+  }
+
+  &:hover i {
+    color: $primary;
+  }
+
+  &.active, &:active {
+    border-color: $active;
+    background: $active;
+    color: $primary;
+  }
+}

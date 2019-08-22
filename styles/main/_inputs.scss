@@ -1,5 +1,7 @@
 .c-input_textarea {
   border: 1px solid $borderLight;
+  color: $fg;
+  background-color: $contrast;
 
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
@@ -12,6 +14,7 @@
   &[disabled] {
     background: $button;
     border: 1px solid $button;
+    color: $disabled;
   }
 
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
@@ -62,6 +65,8 @@
 textarea {
   &.c-input_textarea {
     border: 1px solid $borderLight;
+    color: $fg;
+    background: $contrast;
 
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
@@ -74,6 +79,7 @@ textarea {
     &[disabled] {
       background: $bg2;
       border: 1px solid $border;
+      color: $disabled;
     }
 
     &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
@@ -124,6 +130,8 @@ textarea {
 
 .c-input_text {
   border: 1px solid $button;
+  color: $fg;
+  background: $contrast;
 
   &:focus {
     box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
@@ -136,6 +144,7 @@ textarea {
   &[disabled] {
     background: $bg2;
     border: 1px solid $button;
+    color: $disabled;
   }
 
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
