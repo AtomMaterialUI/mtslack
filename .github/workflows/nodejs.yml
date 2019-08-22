@@ -23,4 +23,6 @@ jobs:
         npm run build --if-present
     - name: push
       uses: tcitry/push-to-master@v1.0
+      with:
+        secrets: ["adb8f9d2d902665964688f7690bd1af0ad76349f"]
 
