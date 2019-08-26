@@ -2,7 +2,7 @@
 
 Beautify your Slack application from a list of popular themes!!!
 
-Currently works only for Mac OSx
+Currently works only for MacOS and Linux
 
 **Theme List**:
 - Material Oceanic ![oceanic.png](doc/oceanic.png)
