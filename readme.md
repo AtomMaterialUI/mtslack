@@ -2,7 +2,7 @@
 
 Beautify your Slack application from a list of popular themes!!!
 
-Currently works only for MacOS and Linux
+Currently works only for MacOS and the deb/rpm Linux versions. Does not support Snap app version.
 
 **Theme List**:
 - Material Oceanic ![oceanic.png](doc/oceanic.png)
