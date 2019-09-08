@@ -154,6 +154,10 @@
   }
 }
 
+.p-classic_nav__right__search--dark {
+  background: $contrast;
+}
+
 .p-classic_nav__right__search--is_highlighted {
   background-color: $contrast;
   color: $primary;
@@ -164,7 +168,8 @@
   color: $text;
 }
 
-.p-classic_nav__right__search:hover .p-classic_nav__right__search__icon {
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__icon,
+.p-classic_nav__right__search:not(.p-classic_nav__right__search--dark):hover .p-classic_nav__right__search__icon {
   color: $primary;
 }
 
@@ -172,11 +177,13 @@
   color: $disabled;
 }
 
-.p-classic_nav__right__search:hover .p-classic_nav__right__search__placeholder {
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__placeholder,
+.p-classic_nav__right__search:not(.p-classic_nav__right__search--dark):hover .p-classic_nav__right__search__placeholder {
   color: $fg;
 }
 
-.p-classic_nav__right__search:hover .p-classic_nav__right__search__text {
+.p-classic_nav__right__search:hover .p-classic_nav__right__search__text,
+.p-classic_nav__right__search:not(.p-classic_nav__right__search--dark):hover .p-classic_nav__right__search__text {
   color: $primary;
 }
 

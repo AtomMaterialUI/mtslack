@@ -131,7 +131,16 @@
 }
 
 input.c-input_select__filter_input {
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+  color: $fg;
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
     color: $disabled;
   }
 }
@@ -146,7 +155,6 @@ input.c-input_select__filter_input {
     color: $fg;
   }
 }
-
 
 .c-input_select--open_panel {
   border: 1px solid $borderLight;
@@ -170,7 +178,6 @@ input.c-input_select__filter_input {
 .c-input_select__icon:before {
   color: $text;
 }
-
 
 .c-input_select__secondary_member_name {
   color: $text;

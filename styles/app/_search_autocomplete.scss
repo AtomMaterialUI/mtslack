@@ -144,6 +144,11 @@
   }
 }
 
+.c-search_autocomplete__query_parts--dark .token {
+  background-color: $selectBg;
+  color: $primary;
+}
+
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__query_parts .token {
   color: $primary;
   background-color: $selectBg;

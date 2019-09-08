@@ -49,12 +49,27 @@
   border-top: 1px solid $borderLight;
 }
 
+.p-add_custom_emoji_dialog__upload_preview {
+  background: $bg;
+}
+
+.p-add_custom_emoji_dialog__upload_preview--dark {
+  background: $bg;
+}
 
 .p-add_custom_emoji_dialog__icon:before {
   color: $fg;
 }
 
+.p-add_custom_emoji_dialog__upload_preview--dark .p-add_custom_emoji_dialog__icon:before {
+  color: $fg;
+}
+
 .p-add_custom_emoji_dialog__icon_broken:before {
+  color: $disabled;
+}
+
+.p-add_custom_emoji_dialog__upload_preview--dark .p-add_custom_emoji_dialog__icon_broken:before {
   color: $disabled;
 }
 

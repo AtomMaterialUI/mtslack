@@ -71,6 +71,19 @@
 }
 
 .c-texty_input {
+  &.c-texty_input--sticky_composer {
+
+    &.c-texty_input--has_content .c-texty_input__button_composer--active,
+    &.focus .c-texty_input__button_composer--active {
+      background-color: $active;
+    }
+
+    ::-moz-selection, ::selection {
+      background-color: $selectBg;
+      color: $selectFg;
+    }
+  }
+
   .ql-editor {
     ul {
       &[data-checked=false] > li:before {
@@ -113,6 +126,26 @@
       color: $selectFg;
     }
   }
+}
+
+.c-texty_input__button_emoji,
+.c-texty_input__button_mention {
+  color: $fg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--mention,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--mention {
+  color: $selectFg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_background,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_background {
+  color: $selectFg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_active,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_active {
+  color: $primary;
 }
 
 .c-texty_workflow_token {

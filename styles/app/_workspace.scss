@@ -44,6 +44,21 @@
       }
     }
   }
+
+  &.p-message_input--dark {
+    .p-message_input_field {
+      border-color: $button;
+      background: $contrast;
+
+      &.focus {
+        border-color: $primaryT;
+      }
+    }
+
+    ::-moz-selection, ::selection, ::-moz-selection {
+      background-color: $selectBg;
+    }
+  }
 }
 
 .p-workspace__secondary_view {

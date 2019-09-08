@@ -1,6 +1,7 @@
 .c-mrkdwn__user_group--link {
   background: $active;
   color: $primary;
+
   &:hover {
     background: $selectBg;
     color: $selectFg;
@@ -12,6 +13,7 @@
   color: $primary;
   border-radius: 16px;
   padding: 2px 4px;
+
   &:hover {
     background: $selectBg;
     color: $selectFg;
@@ -25,9 +27,14 @@
 
 .c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
   background: $active;
+
   &:hover {
     background: $selectBg;
   }
+}
+
+.sk-client-theme--dark .c-mrkdwn__user_group--mention {
+  color: $fg;
 }
 
 .c-mrkdwn__hex {

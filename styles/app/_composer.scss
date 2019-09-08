@@ -7,18 +7,55 @@
   background: $contrast;
 }
 
-.p-composer__button {
-  background: $button;
+.p-composer__body--sticky {
+  background: $contrast;
+  color: $fg;
+
   &[disabled] {
     color: $disabled;
+
+    &:hover {
+      background-color: $bg;
+    }
+  }
+
+  &:focus, &:hover {
+    color: $fg;
+    background-color: $contrast;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+
+  &.p-composer__button--selected, &:active {
+    color: $primary;
+    background-color: $active;
+  }
+
+  &.p-composer__button--selected {
+    &:focus, &:hover {
+      background-color: $active;
+    }
+  }
+}
+
+.p-composer__button {
+  background: $button;
+
+  &[disabled] {
+    color: $disabled;
+
     &:hover {
       background-color: $hl;
     }
   }
+
   &:focus, &:hover {
     background-color: $hl;
     color: $selectFg;
   }
+
   &:focus {
     border: 1px solid $primary;
   }
@@ -39,13 +76,16 @@
 
 .p-composer__link_form {
   background: $contrast;
+
   .p-composer__link_form_button {
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
     }
   }
+
   .p-composer__link_remove_button {
     background: transparent;
+
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
     }
@@ -54,4 +94,57 @@
 
 .p-composer__tip_subtitle {
   color: $text;
+}
+
+.p-composer__body--floating {
+  background: $bg2;
+}
+
+.p-composer__button--floating {
+  background: $button;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      color: $fg;
+    }
+  }
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-composer__button--floating--selected {
+  background-color: $primary;
+  color: $selectFg;
+
+  &:focus, &:hover {
+    background-color: $primary;
+    color: $selectFg;
+  }
+}
+
+.p-composer__button--floating:active {
+  background-color: $primary;
+  color: $selectFg;
+}
+
+.p-composer__separator--floating {
+  background: $borderLight;
+}
+
+.p-composer_page {
+  background: $bg;
+}
+
+.p-cp_composer {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-cp_composer__header {
+  border-bottom: 1px solid $borderLight;
 }

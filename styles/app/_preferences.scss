@@ -53,6 +53,11 @@
       background-color: $bg;
     }
   }
+
+  &:disabled .p-prefs_modal__radiogroup--selected {
+    background: $button;
+    border-color: $primaryT;
+  }
 }
 
 .p-prefs_modal__notification_example {

@@ -1,5 +1,23 @@
+.p-block_kit_button_element {
+  border-color: $button;
+}
+
+.p-block_kit_overflow_element__button {
+  border-color: $button;
+}
+
 .p-block_kit_error_message {
   color: $selectFg;
+}
+
+.p-block_kit_input_block--invalid {
+  .c-input_text, .c-multi_select_input, .c-select_input, .p-block_kit_date_picker_button {
+    border-color: $red;
+  }
+}
+
+.p-block_kit_input_block__hint_text {
+  color: $text;
 }
 
 .p-block_kit_select_element {
@@ -49,7 +67,6 @@
 .p-image_block_container {
   color: $text;
 }
-
 
 .p-divider_block {
   border-bottom: 1px solid $borderLight;

@@ -1,3 +1,7 @@
+.p-inbox {
+  background: $bg;
+}
+
 .p-inbox__day {
 
   h4 {
@@ -6,10 +10,12 @@
 }
 
 .p-inbox__item {
+  background: $bg;
   border: 1px solid $borderLight;
 
   &:hover {
     background: $tree;
+    border-color: $borderLight;
   }
 }
 
@@ -21,4 +27,18 @@
 
 .p-inbox__item_timestamp {
   color: $text;
+}
+
+.p-inbox__item_actions {
+  background: $bg2;
+}
+
+.p-inbox__item_actions--archive.c-icon_button--light.c-button-unstyled:hover {
+  color: $primary;
+  background-color: $green;
+}
+
+.p-inbox__item_actions--mark-as-read.c-icon_button--light.c-button-unstyled:hover {
+  color: $primary;
+  background-color: $blue;
 }

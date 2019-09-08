@@ -23,6 +23,31 @@
   }
 }
 
+.c-token--error {
+  background: $button;
+  border-color: $red;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+
+  &.c-token--selected {
+    color: $selectFg;
+    background: $red;
+
+    .c-token__error_icon_container {
+      color: $selectFg;
+      background: $button;
+    }
+  }
+}
+
+.c-token__error_icon_container {
+  color: $red;
+  background: $hl;
+}
+
 .c-token--disabled {
   background: $button;
   color: $fg;
@@ -52,4 +77,8 @@
       background: $text;
     }
   }
+}
+
+.p-border {
+  border-bottom: 1px solid $borderLight;
 }

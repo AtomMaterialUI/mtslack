@@ -27,6 +27,21 @@
       }
     }
   }
+
+  &.p-message_input--dark {
+    .p-message_input_field {
+      border-color: $button;
+      background: $contrast;
+
+      &.focus {
+        border-color: $primaryT;
+      }
+    }
+
+    ::-moz-selection, ::selection, ::-moz-selection {
+      background-color: $selectBg;
+    }
+  }
 }
 
 .p-threads_footer__input--legacy {
@@ -102,7 +117,6 @@
   background: $bg2;
   color: $text;
 }
-
 
 .p-threads_view__default_background {
   background: $bg;

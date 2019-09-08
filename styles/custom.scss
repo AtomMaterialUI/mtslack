@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Rajdhani');
 
-//:root {
-//  /* Modify these to change your theme colors: */
-//  --primary: #E5C17C;
-//  --primaryT: #E5C17C90;
-//  --accent: #2979ff;
-//  --accentT: #2979ff90;
-//  --accent2: #C679DD;
-//  --accent2T: #C679DD90;
-//  --bg: #282C34;
-//  --fg: #979FAD;
-//  --text: #767d8c;
-//  --selectBg: #3A3F4B;
-//  --selectFg: #FFF;
-//  --button: #3A3F4B;
-//  --secondBg: #2F333D;
-//  --disabled: #6B727D;
-//  --contrast: #21252B;
-//  --active: #383E49;
-//  --border: #282C34;
-//  --hl: #383D48;
-//  --tree: #3A3F4B70;
-//  --notif: #282C34;
-//  --excluded: #2f3240;
-//
-//  --yellow: #E5C17C;
-//  --green: #98C379;
-//  --cyan: #56B6C2;
-//  --blue: #61AFEF;
-//  --purple: #C679DD;
-//  --red: #F07178;
-//  --red2: #BE5046;
-//  --orange: #D19A66;
-//  --orange2: #E5707B;
-//  --gray: #59626F;
-//  --silver: #ABB2BF;
-//  --black: #21252B;
-//}
+:root {
+  /* Modify these to change your theme colors: */
+  --primary: #E5C17C;
+  --primaryT: #E5C17C90;
+  --accent: #2979ff;
+  --accentT: #2979ff90;
+  --accent2: #C679DD;
+  --accent2T: #C679DD90;
+  --bg: #282C34;
+  --fg: #979FAD;
+  --text: #767d8c;
+  --selectBg: #3A3F4B;
+  --selectFg: #FFF;
+  --button: #3A3F4B;
+  --secondBg: #2F333D;
+  --disabled: #6B727D;
+  --contrast: #21252B;
+  --active: #383E49;
+  --border: #282C34;
+  --hl: #383D48;
+  --tree: #3A3F4B70;
+  --notif: #282C34;
+  --excluded: #2f3240;
+
+  --yellow: #E5C17C;
+  --green: #98C379;
+  --cyan: #56B6C2;
+  --blue: #61AFEF;
+  --purple: #C679DD;
+  --red: #F07178;
+  --red2: #BE5046;
+  --orange: #D19A66;
+  --orange2: #E5707B;
+  --gray: #59626F;
+  --silver: #ABB2BF;
+  --black: #21252B;
+}
 
 $primary: var(--primary);
 $primaryT: var(--primaryT);

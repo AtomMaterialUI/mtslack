@@ -12,12 +12,15 @@
 
 .channel_option_item {
   border-top: 1px solid $borderLight;
+
   .title {
     color: $fg;
   }
+
   .channel_option_open {
     color: $text;
   }
+
   &:hover {
     background: $selectBg;
     color: $selectFg;
@@ -28,6 +31,7 @@
   .title {
     color: $disabled;
   }
+
   &:hover {
     background: $excluded;
   }
@@ -43,18 +47,22 @@
   background-color: $bg;
 }
 
-
 .p-channel_options--retention_duration_add_on {
   background-color: $bg2;
   border: 1px solid $borderLight;
 }
 
+.p-channel_options--retention_duration_unit {
+  color: $primary;
+}
 
 .p-channel-options--workspace_access_heading {
   border-top: 1px solid $borderLight;
+
   .ts_icon_org_shared_channel {
     color: $green;
   }
+
   .ts_icon_warning {
     color: $orange;
   }
