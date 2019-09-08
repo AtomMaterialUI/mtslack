@@ -332,7 +332,7 @@ body {
 
 header,
 footer {
-  background: var(--secondBg);
+  background: var(--bg);
   color: var(--fg);
   border-top-color: var(--border); }
   header ul a,
@@ -5487,7 +5487,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--fg); }
 
 .c-search_autocomplete footer {
-  background-color: var(--bg);
+  background-color: var(--secondBg);
   color: var(--fg); }
   .c-search_autocomplete footer .c-search_autocomplete__footer_navigation_help_divider {
     color: var(--border); }
