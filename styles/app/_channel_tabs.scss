@@ -1,0 +1,17 @@
+.p-channel_tabs__header {
+  background: $bg2;
+
+  .p-classic_nav__model__title__info__tab {
+    color: $text;
+  }
+
+  .p-classic_nav__model__title__info__tab--active {
+    color: $primary;
+  }
+}
+
+.p-workspace--channel-tabs-header {
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+    background: $bg;
+  }
+}
