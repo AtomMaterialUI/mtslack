@@ -114,13 +114,13 @@
 
   &.p-prefs_modal__message_example--light {
     .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
-      color: $bg2;
+      color: $text;
     }
   }
 
   &.p-prefs_modal__message_example--dark {
     .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
-      color: $bg2;
+      color: $text;
     }
   }
 }

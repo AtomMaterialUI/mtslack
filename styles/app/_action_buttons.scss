@@ -52,6 +52,7 @@
 .c-message_actions__button {
   color: $text;
   border-right: 1px solid $border;
+  background: $button;
 
   &:hover {
     color: $primary;

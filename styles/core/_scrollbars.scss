@@ -1,0 +1,16 @@
+::-webkit-scrollbar-thumb {
+  color: $accent;
+}
+
+::-webkit-scrollbar-track {
+  color: $bg;
+  background: $bg2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent;
+}
+
+::-webkit-scrollbar-corner {
+  background: $bg;
+}
