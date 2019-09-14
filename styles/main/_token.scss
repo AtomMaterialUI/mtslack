@@ -1,12 +1,30 @@
 .c-token {
   background: $active;
+  color: $selectFg;
 
   &:hover {
     box-shadow: inset 0 0 0 1px $selectBg;
   }
 }
 
-.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled) {
+.c-token--dark {
+  background: $active;
+  color: $selectFg;
+
+  &:hover {
+    .c-token__unknown_icon_container {
+      color: $selectFg;
+      background: $primary;
+    }
+
+    &.c-token--unknown {
+      background: $button;
+      border-left: 1px solid $primary;
+    }
+  }
+}
+
+.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
   background: $accent;
   color: $selectFg;
 
@@ -77,6 +95,33 @@
       background: $text;
     }
   }
+}
+
+
+.c-token--unknown {
+  background: $bg;
+  border: 1px dashed $accent2;
+  box-shadow: none;
+
+  &:hover {
+    background: $hl;
+  }
+
+  &.c-token--selected {
+    color: $selectFg;
+    background: $primary;
+    border: 1px solid $primary;
+
+    .c-token__unknown_icon_container {
+      color: $selectFg;
+      background: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+}
+
+.c-token__unknown_icon_container {
+  color: $primary;
+  background: $button;
 }
 
 .p-border {

@@ -84,6 +84,16 @@
     }
   }
 
+  &.focus {
+    .c-texty_input__button_composer--active {
+      background-color: $button;
+    }
+
+    .p-composer__body--sticky {
+      background: $bg;
+    }
+  }
+
   .ql-editor {
     ul {
       &[data-checked=false] > li:before {
@@ -146,6 +156,14 @@
 .c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_active,
 .c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_active {
   color: $primary;
+}
+
+.c-icon_button.c-texty_input__button--emoji:hover {
+  color: $selectFg;
+
+  .c-icon {
+    background: $button;
+  }
 }
 
 .c-texty_workflow_token {

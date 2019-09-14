@@ -117,6 +117,44 @@
   }
 }
 
+.p-composer__button--floating.c-icon_button {
+  background: $button;
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $hl;
+      color: $fg;
+    }
+  }
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  &.p-composer__button--selected {
+    background-color: $primary;
+    color: $selectFg;
+
+    &:focus, &:hover {
+      background-color: $primary;
+      color: $selectFg;
+    }
+  }
+
+  &:active {
+    background-color: $primary;
+    color: $selectFg;
+  }
+}
+
 .p-composer__button--floating--selected {
   background-color: $primary;
   color: $selectFg;

@@ -345,3 +345,8 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-team_sidebar__icon--active:hover {
   box-shadow: 0 0 0 3px $bg, 0 0 0 6px $primary !important;
 }
+
+
+.p-channel_sidebar__compose_button {
+  box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight
+}

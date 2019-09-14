@@ -36,6 +36,28 @@
   }
 }
 
+.p-block_kit_date_picker {
+  color: $text;
+}
+
+.p-block_kit_date_picker__datepicker_trigger {
+  border-color: $borderLight;
+}
+
+.p-block_kit_date_picker__date_readout {
+  color: $fg;
+}
+
+.p-block_kit_date_picker__calendar_icon {
+  color: $text;
+}
+
+.p-block_kit_date_picker__date_close {
+  &:hover {
+    color: $fg;
+  }
+}
+
 .p-block_kit_date_picker_button {
   border-color: $button;
 }

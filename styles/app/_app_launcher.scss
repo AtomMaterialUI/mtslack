@@ -1,7 +1,26 @@
+.p-app-launcher {
+
+  .c-filter_input {
+    border-color: $borderLight;
+  }
+}
+
+.p-app-launcher__link {
+  color: $primary;
+
+  &:active, &:hover, &:link, &:visited {
+    color: $accent2;
+  }
+}
+
 .p-app-launcher__result--icon {
   box-shadow: 0 0 0 1px $borderLight, 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
 .p-app-launcher__result--card {
   box-shadow: 0 0 0 1px $borderLight, 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-app-launcher__footer {
+  background-color: $bg2;
 }

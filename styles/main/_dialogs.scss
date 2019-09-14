@@ -29,15 +29,18 @@
 
 .c-dialog__body--slack_scrollbar {
   &::-webkit-scrollbar-thumb {
-    color: $bg;
+    color: $accent;
   }
+
   &::-webkit-scrollbar-track {
     color: $bg;
     background: $bg2;
   }
+
   &::-webkit-scrollbar-thumb {
     background: $accent;
   }
+
   &::-webkit-scrollbar-corner {
     background: $bg;
   }
@@ -45,21 +48,25 @@
 
 .c-dialog__body--slack_scrollbar_with_padding {
   &::-webkit-scrollbar-thumb {
-    color: $bg;
+    color: $accent;
   }
+
   &::-webkit-scrollbar-track {
     color: $bg;
-    background:$bg2
+    background: $bg2;
   }
+
   &::-webkit-scrollbar-thumb {
     background: $accent
   }
+
   &::-webkit-scrollbar-corner {
     background: $bg;
   }
+
   &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
-    border-left: 4px solid $bg;
-    border-right: 4px solid $bg;
+    border-left: 4px solid $borderLight;
+    border-right: 4px solid $borderLight;
   }
 }
 
@@ -81,6 +88,7 @@
 
 a.c-dialog__footer_link {
   color: $text;
+
   &:hover {
     color: $primary;
   }

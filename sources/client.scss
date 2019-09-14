@@ -51,10 +51,11 @@
 
 @font-face {
   font-family: Slack v2;
-  src: url(https://a.slack-edge.com/bv1-6-9322842/slack-icons-v2-fad752a.cache-gantry-1567814910.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-6-9322842/slack-icons-v2-1b726b9.cache-gantry-1567814910.woff) format("woff");
+  src: url(https://a.slack-edge.com/bv1-6-5f618a4/slack-icons-v2-fad752a.woff2) format("woff2"), url(https://a.slack-edge.com/bv1-6-5f618a4/slack-icons-v2-1b726b9.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
+
 
 .c-icon {
   position: relative;
@@ -117,6 +118,7 @@
     transform: rotate(1turn);
   }
 }
+
 
 .c-icon--star-o:before {
   content: "";
@@ -1403,7 +1405,7 @@
 }
 
 .c-icon--angle-arrow-up-left-alt:before {
-  content: "";
+  content: "�945";
 }
 
 .c-icon--angle-arrow-down-left-alt:before {
@@ -3954,6 +3956,74 @@
   }
 }
 
+.sk-client-theme--dark {
+  .c-button--outline-primary {
+    transition: all 80ms linear;
+    background: #007a5a;
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 4px;
+    }
+
+    &:link, &:visited {
+      color: #ffffff;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background: #148567;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      background: #006e51;
+      box-shadow: none;
+    }
+  }
+
+  .c-button--outline-danger {
+    transition: all 80ms linear;
+    background: #e01e5a;
+    color: #ffffff;
+    font-weight: 900;
+    box-shadow: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 4px;
+    }
+
+    &:link, &:visited {
+      color: #ffffff;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background: #e23067;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      background: #ca1b51;
+      box-shadow: none;
+    }
+  }
+}
+
 .c-button--small {
   font-size: 13px;
   height: 28px;
@@ -4139,6 +4209,7 @@
     transform: rotate(1turn);
   }
 }
+
 
 .c-infinite_spinner__tail {
   animation: 1.2s cubic-bezier(0.41, 0.24, 0.64, 0.69) 0s infinite normal none c-infinite_spinner__spin;
@@ -4326,6 +4397,7 @@
   }
 }
 
+
 @keyframes c-toast-fade-out {
   0% {
     transform: translateY(0);
@@ -4337,6 +4409,7 @@
     opacity: 0;
   }
 }
+
 
 .c-icon_button {
   align-items: center;
@@ -4446,6 +4519,7 @@ body.p-client_desktop--frameless .c-popover {
   }
 }
 
+
 .c-popover--no-pointer {
   pointer-events: none;
 }
@@ -4484,10 +4558,9 @@ body.p-client_desktop--frameless .c-popover {
 
 .c-tooltip__tip__arrow {
   position: absolute;
-  width: 0;
-  height: 0;
-  margin: -6px;
-  border: 6px solid transparent;
+  width: 8.48528137px;
+  height: 8.48528137px;
+  background: #000000;
 }
 
 .c-tooltip__tip--left {
@@ -4497,6 +4570,8 @@ body.p-client_desktop--frameless .c-popover {
     border-left-color: #000000;
     right: -6px;
     top: 50%;
+    transform-origin: top right;
+    transform: rotate(45deg);
   }
 }
 
@@ -4507,6 +4582,8 @@ body.p-client_desktop--frameless .c-popover {
     border-right-color: #000000;
     left: -6px;
     top: 50%;
+    transform-origin: top left;
+    transform: rotate(-45deg);
   }
 }
 
@@ -4517,6 +4594,8 @@ body.p-client_desktop--frameless .c-popover {
     border-top-color: #000000;
     bottom: -6px;
     left: 50%;
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
   }
 }
 
@@ -4528,6 +4607,8 @@ body.p-client_desktop--frameless .c-popover {
     bottom: -6px;
     left: 50%;
     left: 25%;
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
   }
 }
 
@@ -4538,8 +4619,12 @@ body.p-client_desktop--frameless .c-popover {
     border-top-color: #000000;
     bottom: -6px;
     left: 50%;
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
     left: auto;
     right: 25%;
+    transform-origin: bottom right;
+    transform: rotate(45deg);
   }
 }
 
@@ -4550,6 +4635,8 @@ body.p-client_desktop--frameless .c-popover {
     border-bottom-color: #000000;
     top: -6px;
     left: 50%;
+    transform-origin: top left;
+    transform: rotate(45deg);
   }
 }
 
@@ -4560,6 +4647,8 @@ body.p-client_desktop--frameless .c-popover {
     border-bottom-color: #000000;
     top: -6px;
     left: 50%;
+    transform-origin: top left;
+    transform: rotate(45deg);
     left: 25%;
   }
 }
@@ -4571,30 +4660,47 @@ body.p-client_desktop--frameless .c-popover {
     border-bottom-color: #000000;
     top: -6px;
     left: 50%;
+    transform-origin: top left;
+    transform: rotate(45deg);
     left: auto;
     right: 25%;
+    transform-origin: top right;
+    transform: rotate(-45deg);
   }
 }
 
 .sk-client-theme--dark {
   .c-tooltip__tip {
-    background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    background-color: #000000;
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0);
   }
 
-  .c-tooltip__tip--left .c-tooltip__tip__arrow {
-    border-left-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  .c-tooltip__tip__arrow {
+    background-color: #000000;
+    background-clip: content-box;
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 1px solid var(--saf-0);
   }
 
-  .c-tooltip__tip--right .c-tooltip__tip__arrow {
-    border-right-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  .c-tooltip__tip--top-left .c-tooltip__tip__arrow, .c-tooltip__tip--top .c-tooltip__tip__arrow {
+    border-top: none;
+    border-right: none;
   }
 
-  .c-tooltip__tip--top-left .c-tooltip__tip__arrow, .c-tooltip__tip--top-right .c-tooltip__tip__arrow, .c-tooltip__tip--top .c-tooltip__tip__arrow {
-    border-top-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  .c-tooltip__tip--top-right .c-tooltip__tip__arrow {
+    border-top: none;
+    border-left: none;
   }
 
-  .c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, .c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, .c-tooltip__tip--bottom .c-tooltip__tip__arrow {
-    border-bottom-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  .c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, .c-tooltip__tip--bottom .c-tooltip__tip__arrow, .c-tooltip__tip--right .c-tooltip__tip__arrow {
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, .c-tooltip__tip--left .c-tooltip__tip__arrow {
+    border-bottom: none;
+    border-left: none;
   }
 }
 
@@ -6387,7 +6493,8 @@ body.p-client_desktop--frameless .c-sk-overlay {
 }
 
 .c-sk-modal__close_button--inverted {
-  background: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7) !important;
+  color: #ffffff;
+  background: rgba(29, 28, 29, 0.7) !important;
 }
 
 .c-sk-modal_title_bar {
@@ -6839,6 +6946,7 @@ body.p-client_desktop--frameless .c-sk-overlay {
   }
 }
 
+
 @keyframes breadcrumb_step {
   0% {
     transform: translateX(-165px);
@@ -6855,6 +6963,7 @@ body.p-client_desktop--frameless .c-sk-overlay {
   }
 }
 
+
 @keyframes breadcrumb_step_reverse {
   0% {
     transform: translateX(165px);
@@ -6870,6 +6979,7 @@ body.p-client_desktop--frameless .c-sk-overlay {
     width: 0;
   }
 }
+
 
 @media screen and (max-width: 1024px) {
   .c-fullscreen_modal__breadcrumb_animated_step, .c-fullscreen_modal__breadcrumb_line, .c-fullscreen_modal__breadcrumb_text {
@@ -10810,6 +10920,96 @@ input.p-admin_member_table__edit_profile_input {
   width: 100%;
 }
 
+.c-select_options_list__virtual_list--slack_scrollbar {
+  border-right: .25rem solid transparent;
+  border-right: none;
+
+  &::-webkit-scrollbar {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box !important;
+    border-radius: 3px;
+    color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-clip: padding-box !important;
+    border-radius: 3px;
+    color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    box-shadow: inset 0 -4px 0 0, inset 0 4px 0 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.52);
+    box-shadow: inset 0 -2px, inset 0 -3px, inset 0 2px, inset 0 3px;
+    min-height: 36px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+    border-left: 4px solid rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border-right: 4px solid rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border-radius: 6px / 4px;
+  }
+}
+
+.c-select_options_list__wrapper--nightshade_elevation .c-select_options_list__virtual_list--slack_scrollbar {
+  border-right: .25rem solid transparent;
+  border-right: none;
+
+  &::-webkit-scrollbar {
+    position: absolute;
+    -webkit-appearance: none;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box !important;
+    border-radius: 3px;
+    color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-clip: padding-box !important;
+    border-radius: 3px;
+    color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    box-shadow: inset 0 -4px 0 0, inset 0 4px 0 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.52);
+    box-shadow: inset 0 -2px, inset 0 -3px, inset 0 2px, inset 0 3px;
+    min-height: 36px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+    border-left: 4px solid rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    border-right: 4px solid rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    border-radius: 6px / 4px;
+  }
+}
+
 .c-select_options_list__option {
   .c-base_list_entity--medium, .c-base_list_entity--small {
     padding-left: 0;
@@ -10899,6 +11099,22 @@ input.p-admin_member_table__edit_profile_input {
   }
 }
 
+.c-token--dark {
+  color: #ffffff;
+
+  &:hover {
+    .c-token__unknown_icon_container {
+      color: #ffffff;
+      background: #1d9bd1;
+    }
+
+    &.c-token--unknown {
+      background: rgba(29, 155, 209, 0.2);
+      border-left: 1px solid #1d9bd1;
+    }
+  }
+}
+
 .c-token--medium {
   font-size: 18px;
   height: 26px;
@@ -10914,12 +11130,12 @@ input.p-admin_member_table__edit_profile_input {
   }
 
   .c-token_content__inner {
-    &.c-token_content__inner--error, &.c-token_content__inner--loading, &.c-token_content__inner--member, &.c-token_content__inner--team {
+    &.c-token_content__inner--error, &.c-token_content__inner--loading, &.c-token_content__inner--member, &.c-token_content__inner--team, &.c-token_content__inner--unknown {
       padding-left: 6px;
     }
   }
 
-  .c-token__error_icon_container, .c-token__loading_icon_container {
+  .c-token__error_icon_container, .c-token__loading_icon_container, .c-token__unknown_icon_container {
     width: 26px;
     height: 26px;
   }
@@ -10945,7 +11161,7 @@ input.p-admin_member_table__edit_profile_input {
     }
   }
 
-  .c-token__error_icon_container, .c-token__loading_icon_container {
+  .c-token__error_icon_container, .c-token__loading_icon_container, .c-token__unknown_icon_container {
     width: 32px;
     height: 32px;
   }
@@ -10955,7 +11171,7 @@ input.p-admin_member_table__edit_profile_input {
   }
 }
 
-.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error) {
+.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
   background: #1264a3;
   color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
 
@@ -11035,6 +11251,38 @@ input.p-admin_member_table__edit_profile_input {
   justify-content: center;
 }
 
+.c-token--unknown {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 1px dashed #1d9bd1;
+  box-shadow: none;
+
+  &:hover {
+    background: rgba(29, 155, 209, 0.1);
+  }
+
+  &.c-token--selected {
+    color: #ffffff;
+    background: #1264a3;
+    border: 1px solid #1264a3;
+
+    .c-token__unknown_icon_container {
+      color: #ffffff;
+      background: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+}
+
+.c-token__unknown_icon_container {
+  color: #1d9bd1;
+  background: rgba(29, 155, 209, 0.1);
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .c-token--disabled {
   background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   box-shadow: none;
@@ -11082,7 +11330,7 @@ input.p-admin_member_table__edit_profile_input {
 
 .c-multi_select_input--large {
   min-height: 44px;
-  padding-right: 28px;
+  padding-right: 27px;
 }
 
 .c-multi_select_input:hover {
@@ -11120,7 +11368,6 @@ input.p-admin_member_table__edit_profile_input {
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
   border: none;
   width: 0;
-  height: 34px;
   padding: 6px 12px;
   float: left;
 
@@ -11134,8 +11381,7 @@ input.p-admin_member_table__edit_profile_input {
 }
 
 .c-multi_select_input__input--large {
-  height: 42px;
-  padding: 10px 12px;
+  padding: 9px 12px;
   font-size: 18px;
   line-height: 1.33334;
   font-weight: 900;
@@ -12881,7 +13127,7 @@ input[type=text].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__update_overlay_image_container {
   height: 126px;
-  background-image: url(https://a.slack-edge.com/22a3f/img/emoji_2017_12_06/google_emoji_update_overlay_smileys.png);
+  background-image: url(https://a.slack-edge.com/80588/img/emoji_2017_12_06/google_emoji_update_overlay_smileys.png);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
@@ -12889,17 +13135,17 @@ input[type=text].c-input_text.p-emoji_picker__input {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-emoji_picker__update_overlay_image_container {
-    background-image: url(https://a.slack-edge.com/22a3f/img/emoji_2017_12_06/google_emoji_update_overlay_smileys@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/emoji_2017_12_06/google_emoji_update_overlay_smileys@2x.png);
   }
 }
 
 .p-emoji_picker__update_overlay--apple .p-emoji_picker__update_overlay_image_container {
-  background-image: url(https://a.slack-edge.com/e75cb/img/emoji_2017_12_06/apple_emoji_update_overlay_smileys.png);
+  background-image: url(https://a.slack-edge.com/80588/img/emoji_2017_12_06/apple_emoji_update_overlay_smileys.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-emoji_picker__update_overlay--apple .p-emoji_picker__update_overlay_image_container {
-    background-image: url(https://a.slack-edge.com/e75cb/img/emoji_2017_12_06/apple_emoji_update_overlay_smileys@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/emoji_2017_12_06/apple_emoji_update_overlay_smileys@2x.png);
   }
 }
 
@@ -12915,10 +13161,6 @@ input[type=text].c-input_text.p-emoji_picker__input {
 
 .ql-composer {
   position: absolute;
-}
-
-.ql-composer-sticky-transition-out {
-  height: 0 !important;
 }
 
 .p-composer__body {
@@ -13019,8 +13261,11 @@ input[type=text].c-input_text.p-emoji_picker__input {
   }
 }
 
-.p-composer__button--floating {
+.p-composer__button--floating.c-icon_button {
   background: #000000;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
 
   &.c-button--medium {
     height: 30px;
@@ -13051,21 +13296,21 @@ input[type=text].c-input_text.p-emoji_picker__input {
     border-radius: 4px;
     z-index: 1;
   }
-}
 
-.p-composer__button--floating--selected {
-  background-color: #ffffff;
-  color: #000000;
+  &.p-composer__button--selected {
+    background-color: #ffffff;
+    color: #000000;
 
-  &:focus, &:hover {
+    &:focus, &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+  &:active {
     background-color: #ffffff;
     color: #000000;
   }
-}
-
-.p-composer__button--floating:active {
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .p-composer__separator--floating {
@@ -13097,24 +13342,41 @@ input[type=text].c-input_text.p-emoji_picker__input {
   }
 }
 
-.ql-composer-sticky, .ql-composer-sticky-transition-in {
-  transition: height .2s;
-  height: 40px;
+
+.ql-composer-sticky {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 42px;
   width: 100%;
   overflow: hidden;
 }
 
+.ql-composer-sticky-no-height {
+  height: 0 !important;
+}
+
+.ql-composer-sticky-unmounted {
+  display: none;
+}
+
 .p-composer__body--sticky {
   width: 100%;
-  padding: 6px;
+  padding: 5px 4px 3px 4px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background-color: transparent;
+  transition: background-color 0.2s;
 }
 
 .p-composer__button--sticky {
   background: transparent;
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  transition: opacity .2s;
+  opacity: .2;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
 
   &[disabled] {
     color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
@@ -13639,7 +13901,6 @@ input[type=text].c-input_text.p-emoji_picker__input {
   border-radius: 4px;
   padding: 8px 2px 8px 8px;
   position: relative;
-  transition: padding-bottom 0.2s;
 }
 
 [lang] .c-texty_input {
@@ -13651,47 +13912,42 @@ input[type=text].c-input_text.p-emoji_picker__input {
 }
 
 .c-texty_input {
+  &.c-texty_input--with_transition {
+    transition: padding-bottom 0.2s;
+
+    .ql-composer-sticky {
+      transition: height 0.2s;
+    }
+  }
+
   &.c-texty_input--sticky_composer {
+    padding-bottom: 50px !important;
+
     .ql-composer {
       overflow: hidden;
     }
 
-    .ql-composer-sticky {
-      transition: height .2s;
-      height: 0;
-    }
-
-    &.c-texty_input--has_content, &.focus {
-      padding-bottom: 48px !important;
-    }
-
-    &.c-texty_input--has_content .c-texty_input__button_composer--active, &.focus .c-texty_input__button_composer--active {
-      background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    }
-
-    &.c-texty_input--has_content {
-      .ql-composer-sticky, .ql-composer-sticky-transition-in {
-        height: 40px;
-      }
+    .ql-editor, .ql-placeholder {
+      width: calc(100% - 9px) !important;
+      padding-right: 9px !important;
     }
 
     &.focus {
-      .ql-composer-sticky, .ql-composer-sticky-transition-in {
-        height: 40px;
+      .c-texty_input__button_composer--active {
+        background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
       }
-    }
 
-    &.c-texty_input--has_content {
-      .ql-editor, .ql-placeholder {
-        width: 100%;
-        padding-right: 0;
+      .ql-composer-sticky {
+        height: 42px;
       }
-    }
 
-    &.focus {
-      .ql-editor, .ql-placeholder {
-        width: 100%;
-        padding-right: 0;
+      .p-composer__body--sticky {
+        background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+      }
+
+      .p-composer__button--sticky {
+        pointer-events: all;
+        opacity: 1;
       }
     }
   }
@@ -13704,8 +13960,17 @@ input[type=text].c-input_text.p-emoji_picker__input {
   &.focus {
     border-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
 
+    .c-texty_input__button_composer {
+      opacity: 1;
+      pointer-events: all;
+    }
+
     .c-texty_input__button {
       color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    }
+
+    .c-texty_input__button--send {
+      color: #ffffff;
     }
   }
 
@@ -13731,29 +13996,29 @@ input[type=text].c-input_text.p-emoji_picker__input {
 
   &[data-buttons="1"] {
     .ql-editor, .ql-placeholder {
-      width: calc(100% - 36px);
-      padding-right: 36px;
+      width: calc(100% - 42px);
+      padding-right: 42px;
     }
   }
 
   &[data-buttons="2"] {
     .ql-editor, .ql-placeholder {
-      width: calc(100% - 64px);
-      padding-right: 64px;
+      width: calc(100% - 80px);
+      padding-right: 80px;
     }
   }
 
   &[data-buttons="3"] {
     .ql-editor, .ql-placeholder {
-      width: calc(100% - 92px);
-      padding-right: 92px;
+      width: calc(100% - 118px);
+      padding-right: 118px;
     }
   }
 
   &[data-buttons="4"] {
     .ql-editor, .ql-placeholder {
-      width: calc(100% - 120px);
-      padding-right: 120px;
+      width: calc(100% - 156px);
+      padding-right: 156px;
     }
   }
 
@@ -14141,9 +14406,9 @@ input[type=text].c-input_text.p-emoji_picker__input {
 
   .ql-buttons {
     bottom: 9px;
-    height: 20px;
+    height: 34px;
     position: absolute;
-    right: 10px;
+    right: 3px;
   }
 
   .ql-warning {
@@ -14174,65 +14439,56 @@ input[type=text].c-input_text.p-emoji_picker__input {
 }
 
 .c-texty_input__button {
+  width: 34px;
+  height: 34px;
+  border-radius: 2px;
   position: absolute;
+  right: 0;
+  top: 7px;
 
   + .c-texty_input__button {
-    right: 28px;
+    right: 38px;
 
     + .c-texty_input__button {
-      right: 56px;
+      right: 76px;
+
+      + .c-texty_input__button {
+        right: 114px;
+      }
     }
   }
 }
 
-.c-texty_input__button_emoji, .c-texty_input__button_mention {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
-  height: 20px;
-  right: 0;
-  width: 20px;
-}
+.c-icon_button {
+  &.c-texty_input__button {
+    color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  }
 
-.c-texty_input__button_emoji + .c-texty_input__button + .c-texty_input__button + .c-texty_input__button, .c-texty_input__button_mention + .c-texty_input__button + .c-texty_input__button + .c-texty_input__button {
-  right: 84px;
-}
+  &.c-texty_input__button--send {
+    background: #007a5a;
+    color: #ffffff;
 
-.c-texty_input__button_emoji:hover .c-texty_input__button_icon, .c-texty_input__button_mention:hover .c-texty_input__button_icon {
-  transform: scale(1.25);
-}
-
-.c-texty_input__button_emoji:hover .c-texty_input__button_icon--mention, .c-texty_input__button_mention:hover .c-texty_input__button_icon--mention {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
-}
-
-.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_background, .c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_background {
-  opacity: 1;
-  color: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
-}
-
-.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_active, .c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_active {
-  opacity: 1;
-  color: #1d1c1d;
-}
-
-.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_passive, .c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_passive {
-  opacity: 0;
+    &:hover {
+      color: #ffffff;
+      background: #148567;
+    }
+  }
 }
 
 .c-texty_input__button_composer {
-  top: -4px;
-  width: 28px;
-  height: 28px;
+  opacity: .2;
+  pointer-events: none;
 }
 
-.c-texty_input__button_icon {
-  position: absolute;
-  top: 0;
-  transform: scale(1);
-  transition: all 50ms ease-out;
-}
+.c-icon_button.c-texty_input__button--emoji:hover {
+  color: #1d1c1d;
 
-.c-texty_input__button_icon--emoji_active, .c-texty_input__button_icon--emoji_background {
-  opacity: 0;
+  .c-icon {
+    background: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .c-texty_input--multi_line {
@@ -15149,7 +15405,7 @@ textarea.p-shared_channel_invitation_message_editor__textarea {
 }
 
 .c-select_options_list__option--active .p-channel_name_input__prefix_description {
-  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  color: #ffffff;
 }
 
 .p-channel_name_input__select_input_wrapper {
@@ -15825,10 +16081,6 @@ input {
 }
 
 .p-dm_browser_modal__centered_content {
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 18px;
   margin: 8px auto 0 auto;
   max-width: 80%;
@@ -15880,12 +16132,12 @@ input {
 .p-shared_channel_invite_image {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://a.slack-edge.com/f5574/img/shared_channels/share_illustration_transparent@1x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/shared_channels/share_illustration_transparent@1x.png);
 }
 
 .p-button {
   display: flex;
-  transition: margin-right 0.8s ease;
+  transition: margin-right 0.2s ease;
 
   &:hover {
     margin-right: 10px;
@@ -16028,12 +16280,12 @@ input {
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: 160px;
-  background-image: url(https://a.slack-edge.com/66f9/img/roosty.png);
+  background-image: url(https://a.slack-edge.com/80588/img/roosty.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-message_pane_input_broadcast_warning {
-    background-image: url(https://a.slack-edge.com/66f9/img/roosty@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/roosty@2x.png);
   }
 }
 
@@ -17138,153 +17390,77 @@ input[type=text].c-lazy_filter_select__input.c-input_text {
   margin-bottom: 20px;
 }
 
-.c-date_picker__input {
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
-  border: 1px solid var(--saf-0);
-  padding: 8px;
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-  font-size: 14px;
-  transition: none;
-}
+.c-date_picker_input--small {
+  font-size: 13px;
+  line-height: 1.38463;
+  font-weight: 400;
+  height: 28px;
 
-.c-date_picker__input--with_default {
-  --saf-0: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-  border: 1px solid var(--saf-0);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
+  input.c-input_text {
+    font-size: 13px;
+    line-height: 1.38463;
+    font-weight: 400;
+    height: 28px;
+  }
 
-  &:focus {
-    --saf-0: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-    --saf-1: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 0.3);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px var(--saf-1);
-    border-radius: 4px;
+  .emoji-sizer, input.c-input_text .emoji-sizer {
+    font-size: 15px;
+    line-height: 1.46668;
+    font-weight: 400;
+  }
+
+  .c-input_text_icon__icon, input.c-input_text .c-input_text_icon__icon {
+    font-size: 13px;
+    line-height: 1.38463;
+    font-weight: 400;
+    height: 28px;
+    margin-left: 6px;
   }
 }
 
-.c-date_picker__input--with_info {
-  border: 1px solid #1d9bd1;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
+.c-date_picker_input--medium {
+  font-size: 15px;
+  line-height: 1.46668;
+  font-weight: 400;
+  height: 36px;
 
-  &:focus {
-    box-shadow: 0 0 0 1px #1d9bd1, 0 0 0 5px rgba(29, 155, 209, 0.3);
-    border-radius: 4px;
+  input.c-input_text {
+    font-size: 15px;
+    line-height: 1.46668;
+    font-weight: 400;
+    height: 36px;
+  }
+
+  .c-input_text--with_icon, input.c-input_text .c-input_text--with_icon {
+    padding-left: 32px;
   }
 }
 
-.c-date_picker__input--with_success {
-  border: 1px solid #007a5a;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
-
-  &:focus {
-    box-shadow: 0 0 0 1px #007a5a, 0 0 0 5px rgba(0, 122, 90, 0.3);
-    border-radius: 4px;
-  }
-}
-
-.c-date_picker__input--with_warning {
-  border: 1px solid #e8912d;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
-
-  &:focus {
-    box-shadow: 0 0 0 1px #e8912d, 0 0 0 5px rgba(232, 145, 45, 0.3);
-    border-radius: 4px;
-  }
-}
-
-.c-date_picker__input--with_error {
-  border: 1px solid #e01e5a;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
-
-  &:focus {
-    box-shadow: 0 0 0 1px #e01e5a, 0 0 0 5px rgba(224, 30, 90, 0.3);
-    border-radius: 4px;
-  }
-}
-
-.c-date_picker__input--with_inline_alert {
-  border-bottom-left-radius: 4px !important;
-  border-bottom-right-radius: 4px !important;
-
-  &.c-date_picker__input--with_error {
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
-  }
-}
-
-.c-date_picker__input {
-  &:hover {
-    border-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-  }
-
-  &.c-date_picker__input--active {
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
-    border-radius: 4px;
-  }
-}
-
-.c-date_picker__input--large {
-  padding: 12px;
-  height: 48px;
-  padding-top: 11px;
-  padding-bottom: 13px;
-}
-
-.c-date_picker__input--disabled {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-}
-
-.c-date_picker__input__input {
-  &[disabled] {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-  }
-
-  &[type=text] {
-    flex-grow: 1;
-    margin: 0;
-    padding: 0 8px;
-    border: 0 none !important;
-    font-size: inherit;
-    text-align: left;
-
-    &:active, &:focus {
-      outline: none;
-    }
-
-    &[placeholder] {
-      text-overflow: ellipsis;
-    }
-
-    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
-      color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-    }
-  }
-}
-
-.c-date_picker__input__input--large[type=text] {
+.c-date_picker_input--large {
   font-size: 18px;
-  line-height: 1.33333;
-}
+  line-height: 1.33334;
+  font-weight: 900;
+  font-weight: 400;
+  height: 44px;
 
-.c-date_picker__input__input[type=button] {
-  cursor: pointer;
+  input.c-input_text {
+    font-size: 18px;
+    line-height: 1.33334;
+    font-weight: 900;
+    font-weight: 400;
+    height: 44px;
+  }
 
-  &[disabled] {
-    cursor: default;
+  .c-input_text_icon__icon, input.c-input_text .c-input_text_icon__icon {
+    font-size: 18px;
+    line-height: 1.33334;
+    font-weight: 900;
+    height: 44px;
+    margin-left: 10px;
+  }
+
+  .c-input_text--with_icon, input.c-input_text .c-input_text--with_icon {
+    padding-left: 34px;
   }
 }
 
@@ -17329,24 +17505,26 @@ input[type=text].c-lazy_filter_select__input.c-input_text {
 }
 
 .c-date_range_picker_inputs__input_label {
-  margin-top: 10px;
   font-weight: 700;
+  display: block;
+  padding-bottom: 8px;
 }
 
-.c-date_range_picker_inputs__start_input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
+.c-input_text {
+  &.c-date_range_picker_inputs__input.c-date_range_picker_inputs__start_input, &:focus.c-date_range_picker_inputs__input.c-date_range_picker_inputs__start_input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-.c-date_range_picker_inputs__end_input {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: -1px;
+  &.c-date_range_picker_inputs__input.c-date_range_picker_inputs__end_input, &:focus.c-date_range_picker_inputs__input.c-date_range_picker_inputs__end_input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
 }
 
 .c-date_range_picker_inputs__input {
   position: relative;
-  margin-top: 10px;
 
   &:focus, &:hover {
     z-index: 1;
@@ -17354,8 +17532,13 @@ input[type=text].c-lazy_filter_select__input.c-input_text {
 }
 
 .c-date_range_picker_calendar {
-  width: 650px;
+  width: 674px;
   position: relative;
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border-radius: 6px;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 5px 10px rgba(0, 0, 0, 0.12);
+  padding: 16px;
 
   .c-calendar_month {
     width: 301px;
@@ -17365,6 +17548,7 @@ input[type=text].c-lazy_filter_select__input.c-input_text {
     position: absolute;
     width: 32px;
     border-radius: 4px;
+    top: 16px;
   }
 
   .c-calendar_view_header__right_stepper_btn {
@@ -18536,6 +18720,35 @@ a.c-sidebar_menu__list_item {
   max-width: 330px;
 }
 
+.p-shared_channel_invitation_message {
+  margin: 8px 0 20px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+
+  .c-avatar--interactive {
+    cursor: default;
+  }
+}
+
+.p-shared_channel_invitation_message__message {
+  margin-top: 8px;
+}
+
+.p-shared_channel_invitation_modal__title {
+  margin: 20px 0;
+}
+
+.p-shared_channel_invitation_modal__title--details {
+  margin-bottom: 8px;
+}
+
+.p-shared_channel_invitation_modal__subtitle {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
 .p-pending__empty {
   display: flex;
   justify-content: center;
@@ -18563,7 +18776,7 @@ a.c-sidebar_menu__list_item {
   margin-left: 8px;
 }
 
-.p-pending_request__check {
+.p-pending_request__icon {
   margin-left: -8px;
 }
 
@@ -18759,35 +18972,6 @@ a.c-sidebar_menu__list_item {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
-}
-
-.p-shared_channel_invitation_message {
-  margin: 8px 0 20px 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-
-  .c-avatar--interactive {
-    cursor: default;
-  }
-}
-
-.p-shared_channel_invitation_message__message {
-  margin-top: 8px;
-}
-
-.p-shared_channel_invitation_modal__title {
-  margin: 20px 0;
-}
-
-.p-shared_channel_invitation_modal__title--details {
-  margin-bottom: 8px;
-}
-
-.p-shared_channel_invitation_modal__subtitle {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }
 
 .p-channel_browser_list_item {
@@ -19722,7 +19906,7 @@ input[type=text].p-prefs_modal__custom_theme_input {
     position: absolute;
     top: 12px;
     left: 12px;
-    background-image: url(https://a.slack-edge.com/4f28/img/icons/app-64.png);
+    background-image: url(https://a.slack-edge.com/80588/img/icons/app-64_vogue.png);
     background-size: 32px;
     height: 32px;
     width: 32px;
@@ -19757,7 +19941,7 @@ input[type=text].p-prefs_modal__custom_theme_input {
     .p-prefs_modal__notification_example__slack_app_icon {
       top: 14px;
       left: 10px;
-      background-image: url(https://a.slack-edge.com/4f28/img/icons/app-72.png);
+      background-image: url(https://a.slack-edge.com/80588/img/icons/app-72_vogue.png);
       background-size: 36px;
       border-radius: 36px;
       height: 36px;
@@ -20445,16 +20629,16 @@ input[type=text].p-prefs_modal__email_forwarding_address_input {
 }
 
 .c-file__action_button--dark {
-  background-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 0.9);
+  background-color: rgba(97, 96, 97, 0.9);
   color: #ffffff;
 
   &:active, &:hover {
-    background-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 0.9);
+    background-color: rgba(97, 96, 97, 0.9);
     color: #ffffff;
   }
 
   &:after {
-    border-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 0.9);
+    border-color: rgba(97, 96, 97, 0.9);
   }
 }
 
@@ -20643,7 +20827,7 @@ input[type=text].p-prefs_modal__email_forwarding_address_input {
   content: "";
 }
 
-.c-pillow_file__icon--hidden, .c-pillow_file__icon--tombstone {
+.c-pillow_file__icon--hidden, .c-pillow_file__icon--tombstone, .c-pillow_file__icon--unknown {
   border-radius: 3px;
   background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
 }
@@ -20751,6 +20935,11 @@ input[type=text].p-prefs_modal__email_forwarding_address_input {
   width: 100%;
 }
 
+.sk-client-theme--dark .c-pillow_file__audio {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
 .c-pillow_file__content {
   position: relative;
 
@@ -20815,9 +21004,9 @@ input[type=text].p-prefs_modal__email_forwarding_address_input {
   height: 24px;
   line-height: 24px;
   font-size: 13px;
-  background: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  background: #616061;
   pointer-events: auto;
-  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  color: #ffffff;
   border-radius: 12px;
 
   &.c-button--focus-visible {
@@ -21094,7 +21283,7 @@ body.p-client_desktop--frameless .p-file_viewer__header {
 
 .p-pdf_viewer__error {
   background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-  background-image: url(https://a.slack-edge.com/0a044/img/files/broken_image.png);
+  background-image: url(https://a.slack-edge.com/80588/img/files/broken_image.png);
   background-position: 50%;
   background-repeat: no-repeat;
 }
@@ -21177,7 +21366,7 @@ body.p-client_desktop--frameless .p-file_viewer__header {
 }
 
 .p-file_image_thumbnail__wrapper--broken {
-  background-image: url(https://a.slack-edge.com/0a044/img/files/broken_image.png);
+  background-image: url(https://a.slack-edge.com/80588/img/files/broken_image.png);
   background-repeat: no-repeat;
   background-position: 50%;
 
@@ -21188,7 +21377,7 @@ body.p-client_desktop--frameless .p-file_viewer__header {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-file_image_thumbnail__wrapper--broken {
-    background-image: url(https://a.slack-edge.com/0a044/img/files/broken_image@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/files/broken_image@2x.png);
   }
 }
 
@@ -21994,6 +22183,7 @@ body.p-client_desktop--frameless .p-file_viewer__header {
     background-color: transparent;
   }
 }
+
 
 .cm-tab {
   display: inline-block;
@@ -23686,7 +23876,7 @@ span.CodeMirror-selectedtext {
 }
 
 .p-shared_channels_coachmark_image_without_animation {
-  background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/modal_image_@1x.jpg);
+  background-image: url(https://a.slack-edge.com/80588/img/shared_channels/modal_image_@1x.jpg);
 }
 
 .p-shared_channels_coachmark_image, .p-shared_channels_coachmark_image_without_animation {
@@ -23698,21 +23888,25 @@ span.CodeMirror-selectedtext {
 }
 
 .p-shared_channels_coachmark_image {
-  background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/coachmark_animation_@1x.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/shared_channels/coachmark_animation_@1x.gif);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-shared_channels_coachmark_image {
-    background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/coachmark_animation_@2x.gif);
+    background-image: url(https://a.slack-edge.com/80588/img/shared_channels/coachmark_animation_@2x.gif);
   }
   .p-shared_channels_coachmark_image-shared_channels_coachmark_image_without_animation {
-    background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/modal_image_@2x.jpg);
+    background-image: url(https://a.slack-edge.com/80588/img/shared_channels/modal_image_@2x.jpg);
   }
 }
 
 .p-shared_channel_introduction_modal__content_section {
   margin: 0 auto;
   max-width: 560px;
+}
+
+.p-shared_channel_introduction_modal__content_section--ga {
+  max-width: 750px;
 }
 
 .p-shared_channel_introduction_modal__header {
@@ -23731,12 +23925,28 @@ span.CodeMirror-selectedtext {
   padding-bottom: 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/modal_image_@1x.jpg);
+  background-image: url(https://a.slack-edge.com/80588/img/shared_channels/modal_image_@1x.jpg);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-shared_channel_introduction_modal__image {
-    background-image: url(https://a.slack-edge.com/2a5e/img/shared_channels/modal_image_@2x.jpg);
+    background-image: url(https://a.slack-edge.com/80588/img/shared_channels/modal_image_@2x.jpg);
+  }
+}
+
+.p-shared_channel_introduction_modal__image__ga {
+  width: 100%;
+  padding-bottom: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://a.slack-edge.com/01257/img/shared_channels/modal_image_ga_@1x.png);
+  background-position: 50%;
+  margin-bottom: 24px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  .p-shared_channel_introduction_modal__image__ga {
+    background-image: url(https://a.slack-edge.com/01257/img/shared_channels/modal_image_ga_@2x.png);
   }
 }
 
@@ -24539,6 +24749,7 @@ span.CodeMirror-selectedtext {
   }
 }
 
+
 .c-message_kit__text {
   &:after {
     content: "";
@@ -25068,6 +25279,39 @@ span.CodeMirror-selectedtext {
   margin: 14px 0;
 }
 
+.p-block_kit_date_picker {
+  display: flex;
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-block_kit_date_picker__datepicker_trigger {
+  border-color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  font-weight: 400;
+  justify-content: start;
+
+  &:hover {
+    box-shadow: none;
+    background: none;
+  }
+}
+
+.p-block_kit_date_picker__date_readout {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-block_kit_date_picker__calendar_icon {
+  margin-left: auto;
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-block_kit_date_picker__date_close {
+  margin-left: -26px;
+
+  &:hover {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
 .p-block_kit_date_picker_button {
   float: right;
   border-color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
@@ -25119,7 +25363,7 @@ span.CodeMirror-selectedtext {
   }
 }
 
-.p-block_kit_radio_buttons_element {
+.p-block_kit_checkboxes_element, .p-block_kit_radio_buttons_element {
   display: flex;
   min-height: 24px;
 }
@@ -25244,7 +25488,11 @@ span.CodeMirror-selectedtext {
   }
 
   .p-action_block__icons--small {
-    right: -20px;
+    right: -18px;
+
+    .c-icon {
+      width: 12px;
+    }
   }
 
   .p-actions_block__action {
@@ -25382,9 +25630,21 @@ span.CodeMirror-selectedtext {
   .p-section_block__accessory {
     margin: 0 0 0 12px;
 
-    .c-button, .c-multi-select, .c-search-select {
+    .c-button, .c-multi-select, .c-search-select, .p-block_kit_date_picker {
       min-width: 120px;
     }
+  }
+
+  .p-section_block__icons--small {
+    right: -18px;
+
+    .c-icon {
+      width: 12px;
+    }
+  }
+
+  .p-block_kit_date_picker__datepicker_trigger {
+    padding-right: 8px;
   }
 
   .p-section_block--stack-accessory-wrapper .p-section_block_text_content {
@@ -25557,6 +25817,7 @@ span.CodeMirror-selectedtext {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  text-align: left;
 }
 
 [lang] .p-rich_text_block {
@@ -25886,7 +26147,7 @@ span.CodeMirror-selectedtext {
     min-height: 90px;
 
     &.c-dialog__body--slack_scrollbar {
-      padding: 0 20px 0 24px;
+      padding: 0 20px 10px 24px;
     }
   }
 
@@ -26589,6 +26850,7 @@ a.p-sonic_deluxe_toast__link {
   }
 }
 
+
 .c-message--last {
   margin-bottom: 16px;
 }
@@ -26929,14 +27191,14 @@ a.c-message__label_link {
 
 .c-message__editor__input {
   background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  border-radius: 6px;
+  border-radius: 4px;
   border-width: 1px;
   border-color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
-  min-height: 36px;
+  min-height: 42px;
   min-width: 1px;
-  padding-left: 7px;
+  padding-left: 10px;
   padding-top: 0;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin: 0;
 
   &.focus {
@@ -26949,25 +27211,25 @@ a.c-message__label_link {
     padding-bottom: 0;
 
     .ql-editor {
-      padding-top: 2px;
+      padding-top: 7px;
 
       img.emoji {
-        top: -1px;
+        top: -3px;
       }
     }
   }
 
   .ql-editor {
-    padding-top: 6px;
+    padding-top: 9px;
   }
 
   .ql-placeholder {
-    left: 7px;
-    top: 6px;
+    left: 10px;
+    top: 9px;
   }
 
   .ql-buttons {
-    bottom: 7px;
+    bottom: 10px;
   }
 }
 
@@ -27343,14 +27605,8 @@ a.c-message__broadcast_repliers_link {
   transition: padding-top 40ms 0.16s, padding-bottom 0.16s;
 }
 
-.c-message__call {
-  .c-message__body {
-    margin-top: 0;
-  }
-
-  .c-expandable_trigger {
-    vertical-align: baseline;
-  }
+.c-message__call .c-expandable_trigger {
+  vertical-align: baseline;
 }
 
 .c-message__call_attachment {
@@ -27644,6 +27900,7 @@ a.c-message__call_name--linked {
     background: rgba(242, 199, 68, 0.1);
   }
 }
+
 
 .c-message_kit__background--deleting {
   background: rgba(224, 30, 90, 0.6);
@@ -28926,184 +29183,6 @@ input.c-input_checkbox.p-file_upload_dialog__broadcast_checkbox {
   border: 0;
 }
 
-.p-coachmark {
-  color: #ffffff;
-  padding: 20px 24px 24px;
-  position: relative;
-  width: 400px;
-  border-radius: 10px;
-  background-color: #1d9bd1;
-}
-
-.p-coachmark__callout {
-  position: absolute;
-  width: 33.9411255px;
-  height: 33.9411255px;
-  transform: rotate(45deg);
-  transform-origin: 0 0;
-  background-color: #1d9bd1;
-}
-
-.p-coachmark__close_btn {
-  right: 8px;
-  top: 8px;
-  position: absolute;
-  text-align: center;
-  cursor: pointer;
-  color: #ffffff;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.p-coachmark__title {
-  color: inherit;
-  margin-bottom: 12px;
-}
-
-.p-coachmark__content {
-  margin-bottom: 20px;
-}
-
-.p-coachmark__footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.p-coachmark__skip_link {
-  flex: 1 1 auto;
-  margin-right: 8px;
-}
-
-.p-coachmark__skip_link_button {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.p-coachmark__skip_button {
-  background-color: transparent;
-  color: #ffffff;
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.5);
-
-  &:hover {
-    color: #ffffff;
-  }
-}
-
-.p-coachmark__continue_button {
-  color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-
-  &:hover {
-    color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
-    background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    box-shadow: inset 0 0 0 1px #ffffff;
-  }
-}
-
-.p-coachmark--left {
-  right: 24px;
-
-  .p-coachmark__callout {
-    right: -33.9411255px;
-    top: 50%;
-    transform: translateY(-24px) rotate(45deg);
-    border-radius: 0 3px 0 0;
-  }
-}
-
-.p-coachmark--right {
-  left: 24px;
-
-  .p-coachmark__callout {
-    left: 0;
-    top: 50%;
-    transform: translateY(-24px) rotate(45deg);
-    border-radius: 0 0 0 3px;
-  }
-}
-
-.p-coachmark--right-bottom {
-  left: 24px;
-  top: -24px;
-
-  .p-coachmark__callout {
-    left: 0;
-    top: 24px;
-    border-radius: 0 0 0 3px;
-  }
-}
-
-.p-coachmark--top {
-  bottom: 24px;
-
-  .p-coachmark__callout {
-    bottom: -9.9411255px;
-    left: 50%;
-    border-radius: 0 0 3px 0;
-  }
-}
-
-.p-coachmark--bottom {
-  margin-top: 24px;
-
-  .p-coachmark__callout {
-    top: -24px;
-    left: 50%;
-    border-radius: 3px 0 0 0;
-  }
-}
-
-.p-coachmark--top-left {
-  bottom: 24px;
-
-  .p-coachmark__callout {
-    bottom: -9.9411255px;
-    left: 50%;
-    left: 25%;
-    border-radius: 0 0 3px 0;
-  }
-}
-
-.p-coachmark--top-right {
-  bottom: 24px;
-
-  .p-coachmark__callout {
-    bottom: -9.9411255px;
-    left: 50%;
-    left: auto;
-    right: 25%;
-    transform: translateX(24px) rotate(45deg);
-    border-radius: 0 0 3px 0;
-  }
-}
-
-.p-coachmark--bottom-left {
-  margin-top: 24px;
-
-  .p-coachmark__callout {
-    top: -24px;
-    left: 50%;
-    left: 25%;
-    border-radius: 3px 0 0 0;
-  }
-}
-
-.p-coachmark--bottom-right {
-  margin-top: 24px;
-
-  .p-coachmark__callout {
-    top: -24px;
-    left: 50%;
-    left: auto;
-    right: 25%;
-    transform: translateX(24px) rotate(45deg);
-    border-radius: 3px 0 0 0;
-  }
-}
-
 .c-message_kit__indent {
   padding-left: 8px;
 }
@@ -29247,7 +29326,7 @@ body {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 440px 200px;
-  background-image: url(https://a.slack-edge.com/8bb26/img/enterprise/mig-blocker-asset.png);
+  background-image: url(https://a.slack-edge.com/80588/img/enterprise/mig-blocker-asset.png);
   width: 440px;
   height: 200px;
   margin-bottom: 20px;
@@ -29255,7 +29334,7 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-migration_blocker_icon {
-    background-image: url(https://a.slack-edge.com/8bb26/img/enterprise/mig-blocker-asset@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/mig-blocker-asset@2x.png);
   }
 }
 
@@ -29350,6 +29429,18 @@ body {
 
 .p-member_profile_card__context_action_channel_name {
   cursor: pointer;
+}
+
+.p-collaborators_dialog__overlay {
+  z-index: 1053;
+}
+
+.p-workflow_profile_card--body {
+  font-size: 15px;
+  line-height: 1.46668;
+  font-weight: 400;
+  display: flex;
+  margin: 4px 16px 8px;
 }
 
 .p-app_external_team_banner {
@@ -30951,7 +31042,7 @@ body {
   background-position: 50% 90%;
   background-repeat: no-repeat;
   background-size: 380px;
-  background-image: url(https://a.slack-edge.com/13d65/img/enterprise/onboarding-illo.png);
+  background-image: url(https://a.slack-edge.com/80588/img/enterprise/onboarding-illo.png);
   transition: margin-top .25s ease-in;
   transition-delay: .2s;
   margin-top: 0;
@@ -30973,7 +31064,7 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-grid_onboarding__pane {
-    background-image: url(https://a.slack-edge.com/13d65/img/enterprise/onboarding-illo@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/onboarding-illo@2x.png);
   }
 }
 
@@ -31666,12 +31757,12 @@ body {
   background-position: 78%;
   background-repeat: no-repeat;
   background-size: 368px;
-  background-image: url(https://a.slack-edge.com/e1b255/img/enterprise/onboarding-banner-illo.png);
+  background-image: url(https://a.slack-edge.com/80588/img/enterprise/onboarding-banner-illo.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-workspace_directory__banner--onboarding {
-    background-image: url(https://a.slack-edge.com/e1b255/img/enterprise/onboarding-banner-illo@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/onboarding-banner-illo@2x.png);
   }
 }
 
@@ -31680,7 +31771,7 @@ body {
     background-position: 92%;
     background-repeat: no-repeat;
     background-size: 264px;
-    background-image: url(https://a.slack-edge.com/e1b255/img/enterprise/onboarding-banner-illo.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/onboarding-banner-illo.png);
   }
 }
 
@@ -31695,12 +31786,12 @@ body {
   background-position: 80% -20%;
   background-repeat: no-repeat;
   background-size: 230px;
-  background-image: url(https://a.slack-edge.com/5dccb/img/enterprise/nwr-banner-illo.png);
+  background-image: url(https://a.slack-edge.com/80588/img/enterprise/nwr-banner-illo.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-workspace_directory__banner--workspace_request {
-    background-image: url(https://a.slack-edge.com/5dccb/img/enterprise/nwr-banner-illo@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/nwr-banner-illo@2x.png);
   }
 }
 
@@ -31709,7 +31800,7 @@ body {
     background-position: 92% -20%;
     background-repeat: no-repeat;
     background-size: 230px;
-    background-image: url(https://a.slack-edge.com/5dccb/img/enterprise/nwr-banner-illo.png);
+    background-image: url(https://a.slack-edge.com/80588/img/enterprise/nwr-banner-illo.png);
   }
 }
 
@@ -32095,7 +32186,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(https://a.slack-edge.com/4f28/img/loading_hash_animation_@2x.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/loading_hash_animation_@2x_vogue.gif);
   background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -32103,7 +32194,7 @@ body {
 }
 
 .p-apps_browser__list_container--loading:before {
-  background-image: url(https://a.slack-edge.com/4f28/img/loading_hash_animation_@2x.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/loading_hash_animation_@2x_vogue.gif);
   background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -32114,7 +32205,7 @@ body {
 }
 
 .p-apps_browser__apps_list--loading--dark:before, .p-apps_browser__list_container--loading--dark:before {
-  background-image: url(https://a.slack-edge.com/c67eb/img/loading_hash_animation_@2x_vogue_dark.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/loading_hash_animation_@2x_vogue_dark.gif);
 }
 
 .p-apps_browser__list_container--loading * {
@@ -35362,6 +35453,7 @@ a.c-search_message__replies_count {
   }
 }
 
+
 @keyframes p-global_nav__toast_fade {
   0% {
     opacity: 1;
@@ -35383,6 +35475,7 @@ a.c-search_message__replies_count {
     transform: scale(1);
   }
 }
+
 
 .p-global_nav__top_activity {
   position: relative;
@@ -36480,22 +36573,22 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-classic_nav__team_menu__blurb_plan--has_local_discount_india:before {
-  background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-india.png);
+  background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-india.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-classic_nav__team_menu__blurb_plan--has_local_discount_india:before {
-    background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-india@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-india@2x.png);
   }
 }
 
 .p-classic_nav__team_menu__blurb_plan--has_local_discount_brazil:before {
-  background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-brazil.png);
+  background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-brazil.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-classic_nav__team_menu__blurb_plan--has_local_discount_brazil:before {
-    background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-brazil@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-brazil@2x.png);
   }
 }
 
@@ -36643,6 +36736,18 @@ a.p-global_nav__flex_btn--link {
   }
 }
 
+.p-channel_action_menu_item {
+  height: 36px;
+}
+
+.p-channel_action_menu__empty_state {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  white-space: normal;
+  font-size: 15px;
+  line-height: 1.46668;
+  font-weight: 400;
+}
+
 .p-app_menu--loading {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -36664,28 +36769,16 @@ a.p-global_nav__flex_btn--link {
 
 .welcome-row {
   max-width: 970px;
-
-  .newxp3100_v1_a h3 {
-    font-size: 15px;
-    line-height: 1.46668;
-    font-weight: 400;
-
-    &:not(.reset) {
-      font-size: 22px;
-      line-height: 1.36365;
-      font-weight: 900;
-    }
-  }
 }
 
 .c-workflow-item-card {
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   margin-left: -4px;
   margin-bottom: 8px;
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
   border: 2px solid var(--saf-0);
 
@@ -36703,6 +36796,18 @@ a.p-global_nav__flex_btn--link {
     margin: 0 0 5px 0;
   }
 
+  .c-workflow-item-card__section {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 100%;
+    }
+  }
+
   &.complete {
     background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
     pointer-events: none;
@@ -36717,43 +36822,6 @@ a.p-global_nav__flex_btn--link {
       font-weight: 700;
       color: #616061;
       text-align: center;
-    }
-  }
-
-  &.newxp3100_v1_a {
-    padding: 0;
-
-    .c-workflow-item-card__section {
-      padding: 0;
-
-      &:first-of-type {
-        flex: 2;
-        padding-right: 0;
-      }
-
-      &:last-of-type {
-        flex: 1;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px 20px 20px 0;
-        margin-left: 20px;
-      }
-    }
-
-    .c-workflow-item-card__illustration {
-      height: 200px;
-      width: 100%;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      padding: 8px;
-      margin: 8px;
-      margin-top: 0;
-      background-image: url(https://a.slack-edge.com/5a9fe/img/pages/welcome-place/say-hello.png);
-      background-size: cover;
-      background-position: 20%;
-      background-repeat: no-repeat;
     }
   }
 }
@@ -36814,44 +36882,6 @@ a.p-global_nav__flex_btn--link {
   }
 }
 
-@media screen and (min-width: 744px) {
-  .c-workflow-item-card.newxp3100_v1_a:not(.flexpaneOpen) .c-workflow-item-card__illustration {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 0;
-    background-position: 50%;
-    margin-top: 8px;
-  }
-}
-
-@media screen and (min-width: 944px) {
-  .c-workflow-item-card.newxp3100_v1_a.flexpaneOpen .c-workflow-item-card__illustration {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 0;
-    background-position: 50%;
-    margin-top: 8px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
-  .c-workflow-item-card.newxp3100_v1_a .c-workflow-item-card__illustration {
-    background-image: url(https://a.slack-edge.com/5a9fe/img/pages/welcome-place/say-hello@2x.png);
-  }
-}
-
-.c-workflow-item-card__section {
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: 20px;
-  flex-direction: column;
-  align-items: center;
-
-  button {
-    width: 100%;
-  }
-}
-
 .welcome-card {
   &.default {
     background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
@@ -36869,109 +36899,51 @@ a.p-global_nav__flex_btn--link {
   width: 100%;
   display: flex;
 
-  &.newxp3100_v1_a {
+  .video-player__content {
     flex-direction: column;
-    height: auto;
-
-    .video-player__container {
-      order: 1;
-      flex: 1;
-      height: 194px;
-    }
-
-    .video-player__copy {
-      order: 2;
-      flex: 1;
-      padding: 24px 0;
-    }
-
-    .video-player__title-card {
-      cursor: pointer;
-      border-radius: .5rem;
-      background-image: url(https://a.slack-edge.com/c3bd3/img/pages/welcome-place/1.1_video-bg.png);
-    }
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
-  .video-player.newxp3100_v1_a .video-player__title-card {
-    background-image: url(https://a.slack-edge.com/c3bd3/img/pages/welcome-place/1.1_video-bg@2x.png);
-  }
-}
-
-@media screen and (min-width: 744px) {
-  .video-player.newxp3100_v1_a:not(.flexpaneOpen) {
-    height: 194px;
-    flex-direction: row;
-
-    .video-player__container {
-      flex: 3;
-    }
-
-    .video-player__copy {
-      flex: 1;
-      padding: 0 24px 24px 24px;
-    }
-  }
-}
-
-@media screen and (min-width: 944px) {
-  .video-player.newxp3100_v1_a.flexpaneOpen {
-    height: 194px;
-    flex-direction: row;
-
-    .video-player__container {
-      flex: 3;
-    }
-
-    .video-player__copy {
-      flex: 1;
-      padding: 0 24px 24px 24px;
-    }
-  }
-}
-
-.video-player__content {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.video-player__container {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.video-player__iframe__container {
-  display: none;
-
-  iframe {
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
   }
+
+  .video-player__container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-player__iframe__container {
+    display: none;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .video-player__title-card {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
 }
 
-.video-player__title-card {
+.p-welcome-place:not(.newxp3100_v1_a) .video-player .video-player__title-card {
   display: flex;
   padding: 24px;
-  background-image: url(https://a.slack-edge.com/f41d7/img/pages/welcome-place/video-background@2x.png);
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/video-background.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
-  .video-player__title-card {
-    background-image: url(https://a.slack-edge.com/f41d7/img/pages/welcome-place/video-background@2x.png);
+  .p-welcome-place:not(.newxp3100_v1_a) .video-player .video-player__title-card {
+    background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/video-background@2x.png);
   }
 }
 
 .player-is-active {
   &.video-player__title-card {
-    display: none;
+    display: none !important;
   }
 
   &.video-player__iframe__container {
@@ -37065,6 +37037,214 @@ a.p-global_nav__flex_btn--link {
   width: 100%;
 }
 
+body {
+  &:not(.sk-client-theme--dark) .p-welcome-place {
+    .video-player .video-player__title-card {
+      background-color: #4a154b;
+    }
+
+    .c-workflow-item-container {
+      svg * {
+        stroke: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+        fill: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+      }
+
+      .c-workflow-item-card.completed {
+        color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+      }
+    }
+  }
+
+  &.sk-client-theme--dark .p-welcome-place {
+    .video-player .video-player__title-card {
+      background-color: #3e1a40;
+    }
+
+    .c-workflow-item-container {
+      svg * {
+        stroke: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+        fill: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+      }
+
+      .c-workflow-item-card {
+        color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+        background-color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+        border-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+
+        &.complete {
+          color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+          background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+          border-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+        }
+
+        .c-button:not(.c-button--primary) {
+          color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+          --saf-0: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+          border: 1px solid var(--saf-0);
+          background-color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+        }
+      }
+    }
+  }
+}
+
+.p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card {
+  padding: 0;
+
+  .c-workflow-item-card__section {
+    padding: 0;
+
+    &:first-of-type {
+      flex: 2;
+      padding-right: 0;
+    }
+
+    &:last-of-type {
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 20px 20px 0;
+      margin-left: 20px;
+    }
+  }
+
+  .c-workflow-item-card__illustration {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px;
+    margin: 8px;
+    margin-top: 0;
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+  }
+}
+
+body {
+  &:not(.sk-client-theme--dark) .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card .c-workflow-item-card__illustration {
+    background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/say-hello.png);
+  }
+
+  &.sk-client-theme--dark .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card .c-workflow-item-card__illustration {
+    background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/say-hello-dark.png);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  body:not(.sk-client-theme--dark) .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card .c-workflow-item-card__illustration {
+    background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/say-hello@2x.png);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  body.sk-client-theme--dark .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card .c-workflow-item-card__illustration {
+    background-image: url(https://a.slack-edge.com/6749b/img/pages/welcome-place/say-hello-dark@2x.png);
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card:not(.flexpaneOpen) .c-workflow-item-card__illustration {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    background-position: 50%;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 944px) {
+  .p-welcome-place.newxp3100_v1_a .sendMessageVariantStyle.c-workflow-item-card.flexpaneOpen .c-workflow-item-card__illustration {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    background-position: 50%;
+    margin-top: 8px;
+  }
+}
+
+.p-welcome-place.newxp3100_v1_a {
+  .sendMessageVariantStyle.c-workflow-item-card .c-button {
+    background-color: #007a5a;
+  }
+
+  .video-player {
+    flex-direction: column;
+    height: auto;
+
+    .video-player__container {
+      order: 1;
+      flex: 1;
+      height: 194px;
+    }
+
+    .video-player__copy {
+      order: 2;
+      flex: 1;
+      padding: 24px 0;
+    }
+
+    .video-player__title-card {
+      cursor: pointer;
+      border-radius: .5rem;
+      background-image: url(https://a.slack-edge.com/80588/img/pages/welcome-place/1.1_video-bg.png);
+    }
+  }
+
+  .welcome-row h3 {
+    font-size: 15px;
+    line-height: 1.46668;
+    font-weight: 400;
+
+    &:not(.reset) {
+      font-size: 22px;
+      line-height: 1.36365;
+      font-weight: 900;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  .p-welcome-place.newxp3100_v1_a .video-player .video-player__title-card {
+    background-image: url(https://a.slack-edge.com/80588/img/pages/welcome-place/1.1_video-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .p-welcome-place.newxp3100_v1_a .video-player:not(.flexpaneOpen) {
+    height: 194px;
+    flex-direction: row;
+
+    .video-player__container {
+      flex: 3;
+    }
+
+    .video-player__copy {
+      flex: 1;
+      padding: 0 24px 24px 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 944px) {
+  .p-welcome-place.newxp3100_v1_a .video-player.flexpaneOpen {
+    height: 194px;
+    flex-direction: row;
+
+    .video-player__container {
+      flex: 3;
+    }
+
+    .video-player__copy {
+      flex: 1;
+      padding: 0 24px 24px 24px;
+    }
+  }
+}
+
 .p-file_upload_banner {
   position: relative;
   flex: 1 0 auto;
@@ -37106,12 +37286,12 @@ a.p-global_nav__flex_btn--link {
   background-position: 50%;
   background-repeat: repeat-x;
   background-size: 36px 36px;
-  background-image: url(https://a.slack-edge.com/bfaba/img/progress_bar_pattern.png);
+  background-image: url(https://a.slack-edge.com/80588/img/progress_bar_pattern.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-file_upload_banner__progress_inner {
-    background-image: url(https://a.slack-edge.com/bfaba/img/progress_bar_pattern@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/progress_bar_pattern@2x.png);
   }
 }
 
@@ -37129,6 +37309,7 @@ a.p-global_nav__flex_btn--link {
     background-position: -36px 0;
   }
 }
+
 
 .p-file_upload_banner__text {
   position: absolute;
@@ -37189,7 +37370,7 @@ a.p-global_nav__flex_btn--link {
 
 .p-message_container_loading {
   background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  background-image: url(https://a.slack-edge.com/d5d4a/img/unread/uv-loader@2x.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/unread/uv-loader@2x.gif);
   background-size: 200px 200px;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -37205,7 +37386,7 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-message_container_loading--dark {
-  background-image: url(https://a.slack-edge.com/c67eb/img/unread/uv-loader-dark@2x.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/unread/uv-loader-dark@2x.gif);
 }
 
 .p-message_container_loading__msg {
@@ -37240,7 +37421,7 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-message_pane_banner {
-  top: 8px;
+  top: 0;
   padding: 24px 16px;
   margin: 0 -16px 0 0;
   text-align: center;
@@ -37263,6 +37444,10 @@ a.p-global_nav__flex_btn--link {
     right: 0;
     border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
   }
+}
+
+.p-message_pane--classic-nav .p-message_pane_banner {
+  top: 8px;
 }
 
 .p-message_pane_banner__header {
@@ -37299,22 +37484,22 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-message_pane_banner__header_icon--brazil {
-  background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-brazil.png);
+  background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-brazil.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-message_pane_banner__header_icon--brazil {
-    background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-brazil@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-brazil@2x.png);
   }
 }
 
 .p-message_pane_banner__header_icon--india {
-  background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-india.png);
+  background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-india.png);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-message_pane_banner__header_icon--india {
-    background-image: url(https://a.slack-edge.com/ed4b0/img/pricing/local_pricing/flag-india@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/pricing/local_pricing/flag-india@2x.png);
   }
 }
 
@@ -37404,13 +37589,13 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-team_creator_onboarding--in_progress {
-  #banner, .p-channel_sidebar__link--add-channel, .p-channel_sidebar__link--all-threads, .p-channel_sidebar__link--invites, .p-channel_sidebar__static_list div[role=presentation], .p-message_pane__foreword, .p-workspace__banner {
+  #banner, .p-channel_sidebar__link--add-channel, .p-channel_sidebar__link--all-threads, .p-channel_sidebar__link--invites, .p-channel_sidebar__static_list div[role=presentation], .p-workspace__banner {
     display: none !important;
   }
 }
 
 .p-workspace--in-creator-onboarding {
-  #banner, .p-channel_sidebar__link--add-channel, .p-channel_sidebar__link--all-threads, .p-channel_sidebar__link--invites, .p-channel_sidebar__static_list div[role=presentation], .p-message_pane__foreword, .p-workspace__banner {
+  #banner, .p-channel_sidebar__link--add-channel, .p-channel_sidebar__link--all-threads, .p-channel_sidebar__link--invites, .p-channel_sidebar__static_list div[role=presentation], .p-workspace__banner {
     display: none !important;
   }
 }
@@ -38059,13 +38244,12 @@ a.p-global_nav__flex_btn--link {
 }
 
 .p-app-launcher {
-  padding: 16px;
+  padding: 24px;
   overflow: auto;
-}
 
-.p-app-launcher__page-header {
-  flex-direction: column;
-  min-width: 0;
+  .c-filter_input {
+    border-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
 }
 
 .p-app-launcher__title {
@@ -38081,105 +38265,139 @@ a.p-global_nav__flex_btn--link {
   font-weight: 400;
 }
 
-.p-app-launcher__top-nav {
-  margin-bottom: 16px;
-  padding: 12px;
+.p-app-launcher__heading {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-app-launcher__link {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  &:active, &:hover, &:link, &:visited {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
 }
 
 .p-app-launcher__filter {
-  flex: 1;
-
-  .c-filter_input {
-    border: none;
-  }
-
-  .c-filter_input--active {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-.p-app-launcher__nav-links {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.p-app-launcher__nav-links--link {
-  padding: 0 12px;
-
-  &:active, &:hover, &:link, &:visited {
-    color: inherit;
-    cursor: pointer;
-  }
-
-  &:focus, &:hover {
-    text-decoration: underline;
-  }
-}
-
-.p-app-launcher__nav-links--link-button {
-  margin-left: 8px;
+  grid-column: 1/span 2;
+  margin-bottom: 8px;
 }
 
 .p-app-launcher-search-results {
-  display: flex;
-  flex-wrap: wrap;
-
-  .apps_browser__category_header, .p-apps_browser__app_limit_meter__container {
-    width: 100%;
-  }
+  max-width: 1700px;
 }
 
-.p-app-launcher__result--icon {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 126px;
-  height: 126px;
-  border-radius: 4px;
-  margin: 10px;
-  padding: 8px;
-
-  .p-app-launcher__icon {
-    margin-bottom: 12px;
-    height: 48px;
-    width: 48px;
-  }
-}
-
-.p-app-launcher__result--card {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+.p-app-card {
+  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 transparent;
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   padding: 16px;
-  margin: 8px;
-  width: 230px;
-  height: 124px;
+  width: 100%;
+  height: 88px;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 
-  .p-app-launcher__icon {
-    height: 40px;
-    width: 40px;
-    flex-shrink: 0;
-    margin-right: 8px;
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
   }
 
-  .p-app-launcher__card-header {
+  .p-app-card__icon {
+    height: 56px;
+    width: 56px;
+    flex-shrink: 0;
+    margin-right: 16px;
+    border-radius: 3px;
+  }
+
+  .p-app-card__title {
+    font-size: 15px;
+    line-height: 1.46668;
+    font-weight: 400;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    overflow: hidden !important;
+    font-weight: 900;
+    padding-right: 16px;
+    word-break: break-all;
+  }
+
+  .p-app-card__button {
+    margin-left: auto;
+  }
+
+  .p-app-card-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
   }
 
-  .p-app-launcher__text {
-    height: 40px;
-    display: block;
+  .p-app-card__text {
+    font-size: 13px;
+    line-height: 1.38463;
+    font-weight: 400;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
   }
+
+  .p-app-card__plus {
+    color: #007a5a;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.p-app-launcher__grid {
+  display: grid;
+  justify-items: stretch;
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1700px;
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 930px) {
+  .p-app-launcher__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1295px) {
+  .p-app-launcher__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1297px) {
+  .p-workspace--context-pane-expanded .p-app-launcher__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1662px) {
+  .p-workspace--context-pane-expanded .p-app-launcher__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.p-app-launcher__installed + .p-app-launcher__directory {
+  margin-top: 40px;
+}
+
+.p-app-launcher__footer {
+  background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  margin: 0 -24px -24px -24px;
+  padding: 24px;
 }
 
 .p-classic_nav__channel_header__title {
@@ -38221,6 +38439,34 @@ a.p-global_nav__flex_btn--link {
   display: inline-flex;
   max-width: 100%;
   align-items: baseline;
+}
+
+.p-classic_nav__model__title__name__tabs__workspace {
+  align-self: flex-start;
+  z-index: 202;
+  position: absolute;
+  bottom: 0;
+  position: relative;
+  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  width: 100%;
+
+  .c-tabs__tab {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .c-tabs__tab_menu {
+    padding-left: 16px;
+  }
+}
+
+.p-classic_nav_name_star {
+  display: flex;
+  margin: auto;
+}
+
+.p-classic_nav_member_name {
+  margin: 8px;
 }
 
 .p-classic_nav__channel_header.p-classic_nav__model__title__name__unavailable__channel {
@@ -38926,6 +39172,7 @@ a.p-global_nav__flex_btn--link {
   }
 }
 
+
 @keyframes p-classic_nav__toast_fade {
   0% {
     opacity: 1;
@@ -38947,6 +39194,7 @@ a.p-global_nav__flex_btn--link {
     transform: scale(1);
   }
 }
+
 
 .p-classic_nav__right__activity__container {
   position: relative;
@@ -39252,11 +39500,190 @@ a.p-global_nav__flex_btn--link {
   margin-right: 8px;
 }
 
+.p-coachmark {
+  color: #ffffff;
+  padding: 20px 24px 24px;
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #1d9bd1;
+}
+
+.p-coachmark__callout {
+  position: absolute;
+  width: 33.9411255px;
+  height: 33.9411255px;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  background-color: #1d9bd1;
+}
+
+.p-coachmark__close_btn {
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.p-coachmark__title {
+  color: inherit;
+  margin-bottom: 12px;
+}
+
+.p-coachmark__content {
+  margin-bottom: 20px;
+}
+
+.p-coachmark__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.p-coachmark__skip_link {
+  flex: 1 1 auto;
+  margin-right: 8px;
+}
+
+.p-coachmark__skip_link_button {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.p-coachmark__skip_button {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.5);
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.p-coachmark__continue_button {
+  color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  &:hover {
+    color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+    background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    box-shadow: inset 0 0 0 1px #ffffff;
+  }
+}
+
+.p-coachmark--left {
+  right: 24px;
+
+  .p-coachmark__callout {
+    right: -33.9411255px;
+    top: 50%;
+    transform: translateY(-24px) rotate(45deg);
+    border-radius: 0 3px 0 0;
+  }
+}
+
+.p-coachmark--right {
+  left: 24px;
+
+  .p-coachmark__callout {
+    left: 0;
+    top: 50%;
+    transform: translateY(-24px) rotate(45deg);
+    border-radius: 0 0 0 3px;
+  }
+}
+
+.p-coachmark--right-bottom {
+  left: 24px;
+  top: -24px;
+
+  .p-coachmark__callout {
+    left: 0;
+    top: 24px;
+    border-radius: 0 0 0 3px;
+  }
+}
+
+.p-coachmark--top {
+  bottom: 24px;
+
+  .p-coachmark__callout {
+    bottom: -9.9411255px;
+    left: 50%;
+    border-radius: 0 0 3px 0;
+  }
+}
+
+.p-coachmark--bottom {
+  margin-top: 24px;
+
+  .p-coachmark__callout {
+    top: -24px;
+    left: 50%;
+    border-radius: 3px 0 0 0;
+  }
+}
+
+.p-coachmark--top-left {
+  bottom: 24px;
+
+  .p-coachmark__callout {
+    bottom: -9.9411255px;
+    left: 50%;
+    left: 25%;
+    border-radius: 0 0 3px 0;
+  }
+}
+
+.p-coachmark--top-right {
+  bottom: 24px;
+
+  .p-coachmark__callout {
+    bottom: -9.9411255px;
+    left: 50%;
+    left: auto;
+    right: 25%;
+    transform: translateX(24px) rotate(45deg);
+    border-radius: 0 0 3px 0;
+  }
+}
+
+.p-coachmark--bottom-left {
+  margin-top: 24px;
+
+  .p-coachmark__callout {
+    top: -24px;
+    left: 50%;
+    left: 25%;
+    border-radius: 3px 0 0 0;
+  }
+}
+
+.p-coachmark--bottom-right {
+  margin-top: 24px;
+
+  .p-coachmark__callout {
+    top: -24px;
+    left: 50%;
+    left: auto;
+    right: 25%;
+    transform: translateX(24px) rotate(45deg);
+    border-radius: 3px 0 0 0;
+  }
+}
+
 @font-face {
   font-family: appleLogo;
   src: local("Lucida Grande");
   unicode-range: U+f8ff;
 }
+
 
 .p-channel_sidebar {
   width: 220px;
@@ -39684,6 +40111,15 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   flex-shrink: 0;
 }
 
+.p-channel_sidebar__channel--composer_draft:before {
+  content: "\E400";
+  font-size: 14px;
+  font-weight: 900;
+  margin: 1px -2px 0 -1px;
+  flex-basis: 20px;
+  flex-shrink: 0;
+}
+
 .p-channel_sidebar__channel--archived:before {
   content: "";
 }
@@ -39694,13 +40130,14 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-channel_sidebar__channel--typing:before {
   display: block;
   content: "";
   width: 11px;
   height: 3px;
   flex-basis: 11px;
-  background-image: url(https://a.slack-edge.com/bfaba/img/typing-sprite.png);
+  background-image: url(https://a.slack-edge.com/80588/img/typing-sprite.png);
   background-repeat: no-repeat;
   animation: 1s steps(15) 0s infinite normal none typing-sprite;
   margin: 0 5px 0 1px;
@@ -39710,7 +40147,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
   .p-channel_sidebar__channel--typing:before {
     background-size: cover;
-    background-image: url(https://a.slack-edge.com/bfaba/img/typing-sprite@2x.png);
+    background-image: url(https://a.slack-edge.com/80588/img/typing-sprite@2x.png);
   }
 }
 
@@ -39946,6 +40383,24 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   margin-left: 8px;
 }
 
+.p-channel_sidebar__compose_button {
+  width: 196px;
+  margin: 0 0 20px 12px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-channel_sidebar__compose_button_icon {
+  position: relative;
+  top: 1px;
+}
+
 .p-channel_sidebar__channel.c-link--focus-visible:focus {
   box-shadow: none;
   border-radius: 0;
@@ -40138,6 +40593,10 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   top: 1rem;
   position: relative;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 [lang] .c-message_list__day_divider__label {
@@ -40236,6 +40695,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
     opacity: 1;
   }
 }
+
 
 .c-virtual_list__item--focus:focus .c-message__actions {
   display: block;
@@ -40669,7 +41129,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-message_pane__newxp_foreword__welcome_text {
-  background: url(https://a.slack-edge.com/9c217/img/welcome_wave.gif) 0 no-repeat;
+  background: url(https://a.slack-edge.com/80588/img/welcome_wave.gif) 0 no-repeat;
   font-weight: 300;
   font-size: 72px;
   line-height: 88px;
@@ -40677,7 +41137,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-message_pane__newxp_foreword__welcome_text--dark {
-  background-image: url(https://a.slack-edge.com/c67eb/img/welcome-wave-dark.gif);
+  background-image: url(https://a.slack-edge.com/80588/img/welcome-wave-dark.gif);
 }
 
 .p-message_pane__newxp_foreword__welcome_message {
@@ -40711,14 +41171,14 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   text-align: center;
   padding: 24px 24px 32px 24px;
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  background-image: url(https://a.slack-edge.com/436da/img/wave.jpg);
+  background-image: url(https://a.slack-edge.com/80588/img/wave.jpg);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-color: #f7f7f7;
 }
 
 .p-message_pane__limited_history_foreword--dark {
-  background-image: url(https://a.slack-edge.com/b21c/img/wave-dark.png);
+  background-image: url(https://a.slack-edge.com/80588/img/wave-dark.png);
   background-color: #212428;
 }
 
@@ -40741,14 +41201,14 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 
 .p-message_pane__limited_history_alert {
   padding: 30px 80px 30px 96px;
-  background-image: url(https://a.slack-edge.com/436da/img/wave.jpg), url(https://a.slack-edge.com/436da/img/wave_top.jpg);
+  background-image: url(https://a.slack-edge.com/80588/img/wave.jpg), url(https://a.slack-edge.com/80588/img/wave_top.jpg);
   background-position: 0 100%, 0 0;
   background-repeat: repeat-x;
   background-color: #f7f7f7;
 }
 
 .p-message_pane__limited_history_alert--dark {
-  background-image: url(https://a.slack-edge.com/b21c/img/wave-dark.png), url(https://a.slack-edge.com/436da/img/wave_top.jpg);
+  background-image: url(https://a.slack-edge.com/80588/img/wave-dark.png), url(https://a.slack-edge.com/80588/img/wave_top.jpg);
   background-color: #212428;
 }
 
@@ -40963,148 +41423,6 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
-.p-app_action_picker_item__icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 4px;
-  flex-shrink: 0;
-
-  &:before {
-    font-size: 20px;
-  }
-}
-
-.p-app_action_picker_item {
-  color: inherit !important;
-  background: transparent !important;
-}
-
-.p-app_action_picker_item__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.p-app_action_picker_item__text--secondary {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-}
-
-.p-app_action_picker_item--active .p-app_action_picker_item__text--secondary {
-  color: #ffffff;
-}
-
-.p-app_action_picker {
-  align-items: center;
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  overflow: hidden;
-  height: 364px;
-  width: 512px;
-  transition: opacity 80ms linear;
-  opacity: 0;
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
-
-  .c-select_options_list__wrapper {
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .c-select_options_list__group_option, .c-select_options_list__option {
-    padding: 0 16px;
-  }
-
-  .c-select_options_list__divider {
-    padding: 0;
-
-    .c-select_options__divider {
-      border: 0;
-      margin: 0;
-    }
-  }
-}
-
-.p-app_action_picker--mask-off {
-  opacity: 1;
-}
-
-.p-app_action_picker--nightshade-elevation {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-}
-
-.p-app_action_picker__input_wrapper {
-  align-items: flex-end;
-  display: flex;
-  padding: 16px 16px 0;
-  min-width: 512px;
-  width: 100%;
-}
-
-.p-app_action_picker__input {
-  flex: 1 1 auto;
-  min-width: 0;
-  z-index: 1013;
-}
-
-.p-app_action_picker__run_button {
-  flex-shrink: 0;
-  margin-left: 10px;
-  height: 40px;
-  min-width: 0;
-  z-index: 1013;
-}
-
-.p-app_action_picker__heading {
-  font-size: 13px;
-  line-height: 1.38463;
-  font-weight: 400;
-}
-
-.p-app_action_picker__empty {
-  word-wrap: break-word;
-  text-align: center;
-  padding-top: 12px;
-  width: 100%;
-}
-
-.p-app_action_picker_trigger_button {
-  align-self: flex-end;
-  --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
-  border: 1px solid var(--saf-0);
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: 42px;
-  margin: 0 0 0 8px;
-  position: relative;
-  width: 42px;
-
-  i {
-    transition: color 80ms linear;
-    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
-  }
-
-  &:hover i {
-    color: #1264a3;
-  }
-
-  &.active, &:active {
-    border-color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-    color: #1264a3;
-  }
-}
-
-.p-app_action_picker_trigger_button--on_left {
-  margin: 0 8px 0 0;
-}
-
-.p-app_action_picker_trigger_button.p-app_action_picker_trigger_button--in_message_pane {
-  margin-bottom: 22px;
-}
-
 .p-message_pane_input__disabled {
   display: flex;
   justify-content: center;
@@ -41282,6 +41600,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
     color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
   }
 }
+
 
 .p-threads_footer__input_container {
   margin-top: 12px;
@@ -41782,7 +42101,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   height: 26px;
   background: #1264a3;
   border-radius: 6px;
-  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  color: #ffffff;
   z-index: 200;
   text-align: center;
   font-weight: 700;
@@ -41808,6 +42127,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
     opacity: 1;
   }
 }
+
 
 .p-message_pane_drag_overlay {
   z-index: 200;
@@ -41867,6 +42187,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-message_pane_drag_overlay__anim_circle {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.01);
@@ -41896,8 +42217,9 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-message_pane_drag_overlay__anim_card_03 {
-  background-image: url(https://a.slack-edge.com/be529/img/dragdrop_sprites@2x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/dragdrop_sprites@2x.png);
   background-size: 100px 358px;
   background-repeat: no-repeat;
   background-position: 0 -189px;
@@ -41919,8 +42241,9 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-message_pane_drag_overlay__anim_card_02 {
-  background-image: url(https://a.slack-edge.com/be529/img/dragdrop_sprites@2x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/dragdrop_sprites@2x.png);
   background-size: 100px 358px;
   background-repeat: no-repeat;
   background-position: 0 -273px;
@@ -41942,6 +42265,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-message_pane_drag_overlay__anim_card_01 {
   background-position: 0 0;
   width: 100px;
@@ -41953,7 +42277,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-message_pane_drag_overlay--night .p-message_pane_drag_overlay__anim_card_01, .p-message_pane_drag_overlay__anim_card_01 {
-  background-image: url(https://a.slack-edge.com/be529/img/dragdrop_sprites@2x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/dragdrop_sprites@2x.png);
   background-size: 100px 358px;
   background-repeat: no-repeat;
 }
@@ -41974,6 +42298,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 @keyframes threadCard1Anim {
   0% {
     opacity: 0;
@@ -41985,6 +42310,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
     transform: scale(1) rotate(0deg) translateY(10px);
   }
 }
+
 
 .p-thread_drag_overlay {
   z-index: 200;
@@ -42032,6 +42358,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   }
 }
 
+
 .p-thread_drag_overlay__anim_circle {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.01);
@@ -42059,7 +42386,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-thread_drag_overlay__anim_card_01, .p-thread_drag_overlay__anim_text_01 {
-  background-image: url(https://a.slack-edge.com/a7c8f/img/dragdrop_threads_sprites@2x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/dragdrop_threads_sprites@2x.png);
   background-size: 110px 203px;
   background-repeat: no-repeat;
   width: 110px;
@@ -42075,7 +42402,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-thread_drag_overlay__anim_text_02 {
-  background-image: url(https://a.slack-edge.com/a7c8f/img/dragdrop_threads_sprites@2x.png);
+  background-image: url(https://a.slack-edge.com/80588/img/dragdrop_threads_sprites@2x.png);
   background-size: 110px 203px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -42112,199 +42439,6 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   position: relative;
 }
 
-.p-about_tab {
-  padding: 12px 20px;
-  flex: 1 1 0;
-  overflow-y: auto;
-}
-
-.p-about_tab__header {
-  display: flex;
-}
-
-.p-about_tab__pile:not(:last-child) {
-  margin-right: 32px;
-}
-
-.p-about_tab__pile__count {
-  font-size: 13px;
-  line-height: 1.38463;
-  font-weight: 400;
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  margin-bottom: 8px;
-}
-
-.p-about_tab__pile__pile {
-  display: flex;
-}
-
-.p-about_tab__pile__avatar:not(:last-child) {
-  margin-right: 4px;
-}
-
-.p-about_tab__pile__add {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
-  border: 1px dashed var(--saf-0);
-  border-radius: 3px;
-
-  &:hover {
-    border-color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  }
-}
-
-.p-about_tab__purpose {
-  margin-top: 16px;
-  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-  padding: 48px 56px;
-  border-radius: 8px;
-}
-
-.p-about_tab__purpose__text {
-  display: block;
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.33334;
-  font-weight: 900;
-  word-break: break-word;
-}
-
-.p-about_tab__purpose__footer {
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  line-height: 1.38463;
-  font-weight: 400;
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  margin-top: 16px;
-
-  &:empty {
-    display: none;
-  }
-}
-
-.p-about_tab__purpose__footer__modified {
-  margin-left: 8px;
-}
-
-.p-about_tab__purpose__footer__separator {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.2);
-  margin: 0 12px;
-
-  &:before {
-    content: "|";
-  }
-
-  &:first-child {
-    display: none;
-  }
-}
-
-.p-about_tab__pins {
-  margin-top: 24px;
-}
-
-.p-about_tab__pins__item {
-  margin-top: 12px;
-}
-
-.p-about_tab__files {
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-.p-about_tab__files__heading {
-  margin-bottom: 12px;
-}
-
-.p-about_tab__files .c-pillow_file_container, .p-about_tab__pins .c-pillow_file_container {
-  max-width: 100%;
-}
-
-.p-space_tab {
-  padding: 12px 20px;
-  flex: 1 1 0;
-  overflow-y: auto;
-}
-
-.p-embed_tab__frame {
-  border: none;
-  flex: 1;
-}
-
-.p-app_home {
-  height: 100%;
-}
-
-.p-app_home__header {
-  font-size: 18px;
-  line-height: 1.33334;
-  font-weight: 900;
-}
-
-.p-app_home__sub_header {
-  font-size: 16px;
-  line-height: 1.33334;
-  font-weight: 900;
-}
-
-.p-app_home__info {
-  width: 100%;
-  padding: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  display: flex;
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-}
-
-.p-app_home__info_icon {
-  flex: 1;
-  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  height: 100px;
-  max-width: 100px;
-}
-
-.p-app_home__info_description {
-  padding-left: 16px;
-  padding-right: 16px;
-  flex: 2;
-}
-
-.p-app_home__info_dismiss {
-  flex: 1;
-  height: 100px;
-  max-width: 100px;
-}
-
-.p-app_home__shortcuts {
-  padding: 16px;
-}
-
-.p-app_home__shortcuts_card_container {
-  display: flex;
-}
-
-.p-app_home__shortcuts_card {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  max-width: 300px;
-  box-shadow: inset 0 -1px 0 0 var(--saf-0);
-  padding: 8px;
-  flex: 1;
-  margin-top: 10px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.p-app_home__blockkit {
-  padding: 16px;
-}
-
 .p-app_space {
   background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
   width: 100%;
@@ -42333,6 +42467,12 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   line-height: 1.38463;
   font-weight: 400;
   color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-app_space_profile {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .p-app_space_profile__info {
@@ -42500,6 +42640,86 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
   color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
 }
 
+.p-app_home {
+  display: flex;
+  height: 100%;
+}
+
+.p-app_home__header {
+  font-size: 18px;
+  line-height: 1.33334;
+  font-weight: 900;
+}
+
+.p-app_home__sub_header {
+  font-size: 16px;
+  line-height: 1.33334;
+  font-weight: 900;
+}
+
+.p-app_home__info {
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-app_home_spinner {
+  align-self: center;
+}
+
+.p-app_home__blockkit_loading_error {
+  align-self: center;
+  padding: 0 80px 80px;
+}
+
+.p-app_home__info_icon {
+  flex: 1;
+  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  height: 100px;
+  max-width: 100px;
+}
+
+.p-app_home__info_description {
+  padding-left: 16px;
+  padding-right: 16px;
+  flex: 2;
+}
+
+.p-app_home__info_dismiss {
+  flex: 1;
+  height: 100px;
+  max-width: 100px;
+}
+
+.p-app_home__shortcuts {
+  padding: 16px;
+}
+
+.p-app_home__shortcuts_card_container {
+  display: flex;
+}
+
+.p-app_home__shortcuts_card {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  max-width: 300px;
+  box-shadow: inset 0 -1px 0 0 var(--saf-0);
+  padding: 8px;
+  flex: 1;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.p-app_home__blockkit {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 16px;
+}
+
 .p-app_settings {
   height: 100%;
   background: #ffffff;
@@ -42523,6 +42743,132 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
 }
 
 .p-app_settings_button {
+  flex: 1;
+}
+
+.p-about_tab {
+  padding: 12px 20px;
+  flex: 1 1 0;
+  overflow-y: auto;
+}
+
+.p-about_tab__header {
+  display: flex;
+}
+
+.p-about_tab__pile:not(:last-child) {
+  margin-right: 32px;
+}
+
+.p-about_tab__pile__count {
+  font-size: 13px;
+  line-height: 1.38463;
+  font-weight: 400;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  margin-bottom: 8px;
+}
+
+.p-about_tab__pile__pile {
+  display: flex;
+}
+
+.p-about_tab__pile__avatar:not(:last-child) {
+  margin-right: 4px;
+}
+
+.p-about_tab__pile__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  border: 1px dashed var(--saf-0);
+  border-radius: 3px;
+
+  &:hover {
+    border-color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-about_tab__purpose {
+  margin-top: 16px;
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  padding: 48px 56px;
+  border-radius: 8px;
+}
+
+.p-about_tab__purpose__text {
+  display: block;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.33334;
+  font-weight: 900;
+  word-break: break-word;
+}
+
+.p-about_tab__purpose__footer {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 1.38463;
+  font-weight: 400;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  margin-top: 16px;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.p-about_tab__purpose__footer__modified {
+  margin-left: 8px;
+}
+
+.p-about_tab__purpose__footer__separator {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.2);
+  margin: 0 12px;
+
+  &:before {
+    content: "|";
+  }
+
+  &:first-child {
+    display: none;
+  }
+}
+
+.p-about_tab__pins {
+  margin-top: 24px;
+}
+
+.p-about_tab__pins__item {
+  margin-top: 12px;
+}
+
+.p-about_tab__files {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.p-about_tab__files__heading {
+  margin-bottom: 12px;
+}
+
+.p-about_tab__files .c-pillow_file_container, .p-about_tab__pins .c-pillow_file_container {
+  max-width: 100%;
+}
+
+.p-space_tab {
+  padding: 12px 20px;
+  flex: 1 1 0;
+  overflow-y: auto;
+}
+
+.p-embed_tab__frame {
+  border: none;
   flex: 1;
 }
 
@@ -44668,6 +45014,7 @@ input[type=text].p-channel_sidebar__folder_heading_label_rename {
     background: transparent;
   }
 }
+
 
 .p-download_item__icon_container {
   margin: 8px 0 8px;

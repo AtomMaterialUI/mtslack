@@ -132,7 +132,7 @@
 
 .supports_custom_scrollbar .p-emoji_picker__list_scroller {
   &::-webkit-scrollbar-thumb {
-    color: $bg;
+    color: $accent;
   }
   &::-webkit-scrollbar-track {
     color: $bg;

@@ -1,6 +1,17 @@
+.c-tooltip__tip__arrow {
+  background: $bg;
+  border-color: $border;
+}
+
+
 .sk-client-theme--dark {
   .c-tooltip__tip {
     background-color: $notif;
+
+    .c-tooltip__tip__arrow {
+      background-color: $bg;
+      border: 1px solid $border;
+    }
   }
 
   .c-tooltip__tip--left .c-tooltip__tip__arrow {

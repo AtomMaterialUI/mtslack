@@ -1,3 +1,19 @@
+.c-icon_button {
+  &.c-texty_input__button {
+    color: $fg;
+  }
+
+  &.c-texty_input__button--send {
+    background: $hl;
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+      background: $primary;
+    }
+  }
+}
+
 .c-icon_button__badge {
   background: $contrast;
 }
@@ -12,13 +28,16 @@
 
 .c-icon_button--light {
   color: $selectFg;
+
   &.c-button-unstyled, &:link {
     color: $text;
   }
+
   &.c-button-unstyled:hover, &:hover, &:link:hover {
     background: $hl;
     color: $selectFg;
   }
+
   &.c-button-unstyled:active, &:active, &:link:active {
     background: $active;
   }
@@ -26,13 +45,16 @@
 
 .c-icon_button--dark {
   color: $selectFg;
+
   &.c-button-unstyled, &:link {
     color: $text;
   }
+
   &.c-button-unstyled:hover, &:hover, &:link:hover {
     color: $selectFg;
     background: $hl;
   }
+
   &.c-button-unstyled:active, &:active, &:link:active {
     background: $active;
   }

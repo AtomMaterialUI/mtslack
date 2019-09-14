@@ -13,7 +13,8 @@
 }
 
 .c-sk-modal__close_button--inverted {
-  background: $selectFg !important;
+  background: $primary !important;
+  color: $selectFg;
 }
 
 .c-sk-modal_title_bar__text {

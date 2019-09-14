@@ -4,3 +4,60 @@
     color: $fg;
   }
 }
+
+body {
+  &:not(.sk-client-theme--dark) .p-welcome-place {
+    .video-player .video-player__title-card {
+      background-color: $bg2;
+    }
+
+    .c-workflow-item-container {
+      svg * {
+        stroke: $fg;
+        fill: $fg;
+      }
+
+      .c-workflow-item-card.completed {
+        color: $accent2;
+      }
+    }
+  }
+
+  &.sk-client-theme--dark .p-welcome-place {
+    .video-player .video-player__title-card {
+      background-color: $bg2;
+    }
+
+    .c-workflow-item-container {
+      svg * {
+        stroke: $fg;
+        fill: $fg;
+      }
+
+      .c-workflow-item-card {
+        color: $fg;
+        background-color: $bg;
+        border-color: $borderLight;
+
+        &.complete {
+          color: $accent2;
+          background-color: $bg;
+          border-color: $borderLight;
+        }
+
+        .c-button:not(.c-button--primary) {
+          color: $fg;
+          border: 1px solid $borderLight;
+          background-color: $bg;
+        }
+      }
+    }
+  }
+}
+
+.p-welcome-place.newxp3100_v1_a {
+  .sendMessageVariantStyle.c-workflow-item-card .c-button {
+    background-color: $primary;
+    color: $selectFg;
+  }
+}
