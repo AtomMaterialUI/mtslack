@@ -1,0 +1,39 @@
+.p-global_actions_button {
+  background-color: $selectFg;
+  color: $accent2;
+}
+
+.c-menu_item__li .p-global_actions_menu__item.p-global_actions_menu__item_primary {
+
+  .p-global_actions_menu__icon {
+    color: $primary;
+  }
+}
+
+.p-global_actions_menu__icon_message {
+  background-color: $blue;
+}
+
+.p-global_actions_menu__icon_channel {
+  background-color: $green;
+}
+
+.p-global_actions_menu__icon_reminder {
+  background: $orange;
+}
+
+.p-global_actions_menu__icon_calendar,
+.p-global_actions_menu__icon_giphy,
+.p-global_actions_menu__icon_zoom {
+  background-color: $blue;
+}
+
+.p-global_actions_menu__icon_asana {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.p-global_actions_menu__icon_bitmoji {
+  background-color: $green;
+  color: $selectFg;
+}

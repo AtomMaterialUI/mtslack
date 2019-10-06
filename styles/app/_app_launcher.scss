@@ -24,3 +24,40 @@
 .p-app-launcher__footer {
   background-color: $bg2;
 }
+
+.p-app_launcher__app_card {
+  background-color: $bg2;
+
+  &:hover {
+    .p-app_launcher__app_card__pseudobutton {
+      background: $button;
+    }
+  }
+
+  &:active .p-app_launcher__app_card__pseudobutton {
+    background: $button;
+    border-color: $button;
+  }
+}
+
+.p-app_launcher__app_card__text {
+  color: $text;
+}
+
+.p-app_launcher__category_header__link {
+  color: $primary;
+
+  &:active, &:hover, &:link, &:visited {
+    color: $selectFg;
+  }
+}
+
+.p-app_launcher__empty_state {
+  color: $text;
+}
+
+.p-app_launcher__list_container--loading {
+  &:before {
+    background-color: $bg;
+  }
+}

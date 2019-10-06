@@ -1,3 +1,7 @@
+.p-pending__empty {
+  background-color: rgba($fg, 0.04);
+}
+
 .p-pending_image_file {
   &.p-pending_image_file__thumbnail_container {
     box-shadow: inset 0 0 0 1px $borderLight;

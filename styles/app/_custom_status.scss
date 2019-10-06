@@ -69,6 +69,11 @@
   color: $text;
 }
 
+.p-custom_status_input__dialog {
+  .p-custom_status_input__preset_option_duration {
+    color: $text;
+  }
+}
 
 .p-custom_status_input__dialog .p-custom_status_input__preset_option {
   &:focus {

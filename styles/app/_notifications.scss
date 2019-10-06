@@ -18,3 +18,21 @@
 .p-notification_bar__offline_icon {
   color: $disabled;
 }
+
+.p-channel_notification_prefs_new {
+  .c-sk-modal_content {
+    border-top: 1px solid $border;
+  }
+
+  .p-channel_notification_prefs_new__mentions {
+    background: $bg2;
+  }
+}
+
+.p-channel_notification_prefs_new__icon-chevron {
+  color: $text;
+}
+
+.p-channel_notification_prefs_new__platform_icon {
+  color: $fg;
+}

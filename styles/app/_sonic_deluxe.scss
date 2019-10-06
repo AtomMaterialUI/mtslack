@@ -27,3 +27,37 @@ a.p-sonic_deluxe_toast__link {
     color: $primary;
   }
 }
+
+.p-workflow_builder_deluxe_toast {
+  background: $notif;
+  color: $fg;
+}
+
+.p-workflow_builder_deluxe_toast__close {
+  background: $notif;
+  color: $fg;
+
+  &:active, &:hover {
+    color: $selectFg;
+  }
+}
+
+button:focus > .p-workflow_builder_deluxe_toast__close {
+  color: $accent;
+}
+
+.c-button--focus-visible:focus .p-workflow_builder_deluxe_toast__close {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-workflow_builder_deluxe_toast__img {
+  background-color: $accent2;
+}
+
+a.p-workflow_builder_deluxe_toast__link {
+  color: $primary;
+
+  &:active, &:focus, &:hover {
+    color: $selectFg;
+  }
+}

@@ -30,3 +30,7 @@
 .c-sk-modal_footer {
   background-color: $bg;
 }
+
+.c-new_locale_toast .c-link--button:hover, .c-new_locale_toast__close_button:hover {
+  color: $primary;
+}

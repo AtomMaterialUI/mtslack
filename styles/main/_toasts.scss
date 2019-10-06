@@ -6,12 +6,15 @@
 .c-toast {
   .c-link--button {
     color: $fg;
+
     &:active, &:focus, &:hover {
       color: $selectFg;
     }
   }
+
   a {
     color: $primary;
+
     &:active, &:focus, &:hover {
       color: $selectFg;
     }

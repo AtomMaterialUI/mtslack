@@ -318,6 +318,18 @@ a.c-message__call_name--linked {
   border: 1px solid $borderLight;
 }
 
+.c-message_kit__background--hovered {
+  background: rgba($fg, 0.04);
+}
+
+.c-message_kit__background--labels {
+  background: rgba($text, 0.1);
+}
+
+.c-message_kit__background--labels--ephemeral {
+  background: rgba($fg, 0.04);
+}
+
 .c-message_kit__background--labels--sli_highlight {
   background: $button;
 }

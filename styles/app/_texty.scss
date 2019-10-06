@@ -30,6 +30,10 @@
   background: $hl;
 }
 
+.c-texty_autocomplete__result_context {
+  color: $text;
+}
+
 
 .c-texty_autocomplete__help {
   background: $bg2;
@@ -54,6 +58,8 @@
   color: $selectFg;
 }
 
+.c-texty_autocomplete--commands .c-texty_autocomplete__result--selected,
+.c-texty_autocomplete--emoji .c-texty_autocomplete__result--selected,
 .c-texty_autocomplete__result--selected {
   background: $selectBg;
   color: $selectFg;
@@ -76,6 +82,59 @@
 
   .c-texty_autocomplete__group {
     background: $bg;
+    color: $fg;
+  }
+}
+
+.c-icon_button {
+  &.c-texty_input__button {
+    background: $button;
+    color: $text;
+  }
+
+  &.c-texty_input__button--send {
+    background: $accentT;
+    color: $selectFg;
+
+    &:hover {
+      color: $selectFg;
+      background: $accent;
+    }
+
+    &.c-texty_input__button--disabled {
+      background: $button;
+      color: $disabled;
+    }
+  }
+}
+
+.c-texty_workflow_token {
+
+  > button {
+    background: $accentT;
+    border: solid 1px $accentT;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  &.is-missing {
+    > button {
+      color: $red;
+      background: rgba(224, 30, 90, 0.1);
+      border: 1px solid rgba(224, 30, 90, 0.15);
+
+      &:hover {
+        background: rgba(224, 30, 90, 0.1);
+        border: 1px solid rgba(224, 30, 90, 0.15);
+      }
+    }
+
+  }
+
+  .c-texty_workflow_token__property {
+    border-left: solid 1px $accentT;
     color: $fg;
   }
 }

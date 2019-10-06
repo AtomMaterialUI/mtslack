@@ -11,7 +11,15 @@
   background: $active;
   color: $selectFg;
 
+  &.c-token--loading {
+    background: rgba($active, 0.2);
+  }
+
   &:hover {
+    &.c-token--loading {
+      background: rgba($active, 0.3);
+    }
+
     .c-token__unknown_icon_container {
       color: $selectFg;
       background: $primary;
@@ -21,6 +29,17 @@
       background: $button;
       border-left: 1px solid $primary;
     }
+  }
+}
+
+.c-token--medium {
+  .c-base_entity__text-contents::-moz-selection,
+  .c-basic_unified_entity__label::-moz-selection,
+  .c-token_content__label::-moz-selection,
+  .c-base_entity__text-contents::selection,
+  .c-basic_unified_entity__label::selection,
+  .c-token_content__label::selection {
+    background-color: rgba($bg, 0);
   }
 }
 

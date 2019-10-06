@@ -7,6 +7,42 @@
   background: $contrast;
 }
 
+.p-composer__body--overflow {
+  background: $bg;
+}
+
+.p-composer__button--sticky {
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $fg;
+    }
+  }
+
+  &:focus, &:hover {
+    color: $selectFg;
+    background-color: $hl;
+  }
+
+  &:focus {
+    border: 1px solid $borderLight;
+  }
+
+  &.p-composer__button--selected, &:active {
+    color: $primary;
+    background-color: $active;
+  }
+
+  &.p-composer__button--selected {
+    &:focus, &:hover {
+      background-color: $hl;
+    }
+  }
+}
+
 .p-composer__body--sticky {
   background: $contrast;
   color: $fg;
@@ -185,4 +221,61 @@
 
 .p-cp_composer__header {
   border-bottom: 1px solid $borderLight;
+}
+
+.p-cp_composer__body,
+.p-cp_composer__header {
+  background: $bg;
+}
+
+.p-cp_composer__body {
+  border-bottom: $borderLight;
+  border-left: $borderLight;
+  border-right: $borderLight;
+}
+
+.p-cp_composer__footer {
+  color: $fg;
+}
+
+.p-cp_composer__destination_text {
+  border: 1px solid $border;
+}
+
+.p-cp_composer__destination_text--invalid {
+  border-color: $red;
+
+  .p-cp_composer__destination_recipients_names {
+    color: $red;
+  }
+}
+
+.p-cp_composer__destination_recipients_wrapper {
+  color: $text;
+}
+
+.p-cp_composer__destination_recipients {
+  color: $primary;
+}
+
+.p-cp_composer__destination_controls {
+}
+
+.p-cp_composer__destination_control {
+  color: $fg;
+}
+
+.p-cp_composer__destination_subtext {
+  background: linear-gradient($bg 38px, transparent);
+}
+
+.p-cp_composer__destination_subtext--error {
+  color: $red;
+}
+
+.p-cp_composer__message_input {
+
+  .ql-placeholder {
+    color: $disabled;
+  }
 }

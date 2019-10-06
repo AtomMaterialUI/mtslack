@@ -1,0 +1,17 @@
+.p-drafts_page {
+  background: $bg2;
+}
+
+.p-drafts_page__draft {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-drafts_page__draft_header {
+  color: $text;
+}
+
+.p-drafts_page__draft_badge {
+  background: $accent;
+  color: $selectFg;
+}

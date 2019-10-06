@@ -11,11 +11,20 @@
 
 .p-inbox__item {
   background: $bg;
-  border: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+
+  &:last-child {
+    border-color: $borderLight;
+    border-bottom: 1px solid $borderLight;
+  }
 
   &:hover {
     background: $tree;
     border-color: $borderLight;
+  }
+
+  &:last-child {
+    border: 1px solid $borderLight;
   }
 }
 
@@ -41,4 +50,37 @@
 .p-inbox__item_actions--mark-as-read.c-icon_button--light.c-button-unstyled:hover {
   color: $primary;
   background-color: $blue;
+}
+
+.p-inbox__item--expanded {
+  display: block;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+
+  .p-inbox__item_actions {
+    background: rgba(29, 155, 209, 0.1);
+  }
+}
+
+.p-inbox__item--read {
+  background: $disabled;
+}
+
+.p-inbox__item--archived {
+  background: $text;
+}
+
+.p-inbox__item--read .p-inbox__item_actions {
+  background: $bg2;
+}
+
+.p-inbox__item--archived .p-inbox__item_actions {
+  background: $bg;
+}
+
+.p-inbox__item_header {
+  background: $bg2;
+}
+
+.p-inbox__item_message {
+  background: $bg;
 }

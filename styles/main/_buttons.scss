@@ -81,6 +81,14 @@
   }
 }
 
+.c-link--invert {
+  color: $primary;
+
+  &:active, &:hover, &:visited {
+    color: $fg;
+  }
+}
+
 .c-button--primary {
   background: $accent;
   color: $selectFg;

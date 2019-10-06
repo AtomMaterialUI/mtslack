@@ -1,5 +1,16 @@
 .c-search_autocomplete__suggestion_item {
   color: $fg;
+
+  .c-base_list_entity--highlight-dim {
+    .c-base_entity--dim {
+      color: $selectFg;
+    }
+
+    .c-small_mpim_entity__count {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
 }
 
 .c-search_autocomplete__suggestion_item--selected {
@@ -32,7 +43,7 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected {
-  .c-search_autocomplete__channel-membership {
+  .c-icon, .c-search_autocomplete__channel-membership {
     color: $primary;
   }
 
@@ -40,7 +51,6 @@
     .c-channel_name__team_name,
     .c-channel_name__text,
     .c-deprecated-icon,
-    .c-icon,
     .c-icon--shared-channels {
       color: $primary;
     }

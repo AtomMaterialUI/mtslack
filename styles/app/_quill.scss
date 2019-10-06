@@ -112,6 +112,25 @@
         background: $accent;
         color: $bg;
       }
+
+      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+        color: $button;
+      }
+
+      &[data-checked=false] > li > .slack-list-item-checkbox:focus:before {
+        color: $hl;
+      }
+
+      &[data-checked=true] > li > .slack-list-item-checkbox {
+        &:focus:before {
+          box-shadow: 0 0 0 5px $primary;
+          color: $hl;
+        }
+
+        &:before {
+          color: $hl;
+        }
+      }
     }
   }
 
@@ -206,3 +225,6 @@
   }
 }
 
+.sk-client-theme--dark .c-texty_input code {
+  color: $fg;
+}
