@@ -4416,7 +4416,6 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
       background-color: var(--hl); }
 
 .p-composer__body--sticky {
-  background: var(--contrast);
   color: var(--fg); }
   .p-composer__body--sticky[disabled] {
     color: var(--disabled); }
@@ -7838,6 +7837,9 @@ a.c-message__call_name--linked {
   background: var(--contrast); }
   .p-workspace__input.p-message_input--dark .p-message_input_field.focus {
     border-color: var(--primaryT); }
+    .p-workspace__input.p-message_input--dark .p-message_input_field.focus .ql-composer-sticky {
+      background: var(--bg);
+      border-color: var(--primary); }
 
 .p-workspace__input.p-message_input--dark ::-moz-selection, .p-workspace__input.p-message_input--dark ::selection, .p-workspace__input.p-message_input--dark ::-moz-selection {
   background-color: var(--selectBg); }

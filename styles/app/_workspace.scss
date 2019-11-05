@@ -52,6 +52,11 @@
 
       &.focus {
         border-color: $primaryT;
+
+        .ql-composer-sticky {
+          background: $bg;
+          border-color: $primary;
+        }
       }
     }
 
