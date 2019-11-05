@@ -6,3 +6,46 @@
   border-top: 1px solid $borderLight;
 }
 
+.p-ia__user_menu__blurb__status {
+  color: $text;
+}
+
+.p-ia__nav__search {
+  border: 1px solid $borderLight;
+}
+
+.p-ia__nav__history, .p-ia__nav__search {
+  background: $bg;
+  color: $fg;
+}
+
+.p-ia__nav__history {
+  border: 1px solid $borderLight;
+}
+
+.p-ia__nav__user__presence--stroke {
+  color: $bg;
+  -webkit-text-stroke: 4px $bg;
+}
+
+.p-ia__view_header {
+  border-bottom: 1px solid $text;
+}
+
+.p-ia__view_header__info {
+  .p-classic_nav__model__title__info__topic {
+    color: $fg;
+  }
+}
+
+.p-ia__view_header__more, .p-ia__view_header__tab {
+  color: $text;
+}
+
+.p-ia__view_header__more:hover, .p-ia__view_header__tab--active, .p-ia__view_header__tab:hover {
+  color: $selectFg;
+}
+
+.p-ia__view_header__tab--active:after {
+  background: $active;
+}
