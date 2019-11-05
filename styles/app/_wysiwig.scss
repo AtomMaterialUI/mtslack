@@ -1,0 +1,21 @@
+.p-wysiwyg_deluxe_toast {
+  background: $bg;
+  color: $fg;
+
+  .c-button--focus-visible:focus, .c-link--focus-visible:focus, .focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-wysiwyg_deluxe_toast__close {
+  background: $bg;
+  color: $fg;
+
+  &:active, &:hover {
+    color: $selectFg;
+  }
+}
+
+button:focus > .p-wysiwyg_deluxe_toast__close {
+  color: $selectFg;
+}

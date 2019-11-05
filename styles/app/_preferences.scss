@@ -98,6 +98,21 @@
   }
 }
 
+.p-prefs_modal__channel_overrides_row--isDm {
+
+  &:hover {
+    border-top: $borderLight;
+
+    &.p-prefs_modal__channel_overrides_row--last {
+      border-bottom: $borderLight;
+    }
+
+    + .p-prefs_modal__channel_overrides_row {
+      border-top: $borderLight;
+    }
+  }
+}
+
 .p-prefs_modal__channel_overrides_row--last {
   border-bottom: 1px solid $borderLight;
 }

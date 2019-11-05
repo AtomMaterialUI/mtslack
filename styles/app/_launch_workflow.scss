@@ -23,10 +23,23 @@
 
     .cta--complete {
       color: $text;
+
+      .c-workflow-item-card__number {
+        background-color: $bg2;
+      }
     }
+  }
+
+  &:not(:last-child) {
+    border-bottom: $borderLight;
   }
 }
 
 .c-workflow-item-container {
   border-left: 4px solid $borderLight;
+}
+
+.c-workflow-item-card__number {
+  background-color: $primary;
+  color: $selectFg;
 }

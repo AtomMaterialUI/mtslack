@@ -22,9 +22,44 @@
   color: $text;
 }
 
+.p-channel_share_channel_modal__header {
+  border-bottom: $border;
+}
+
+.p-channel_share_channel_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_modal__learn {
+  color: $text;
+}
 
 .p-public_private_input__label {
   &[disabled] {
     color: $disabled;
   }
+}
+
+.p-channel_invite_form__input_subtext {
+  color: $text;
+}
+
+.p-channel_invite_modal__header {
+  border-bottom: $border;
+}
+
+.p-channel_invite_modal_coachmark {
+  background-color: rgba($accent, 0.1);
+}
+
+.sk-client-theme--dark .p-channel_invite_modal_coachmark {
+  background-color: $accent;
+}
+
+.p-channel_invite_modal_coachmark__caret {
+  border-top: 12px solid $border;
+}
+
+.sk-client-theme--dark .p-channel_invite_modal_coachmark__caret {
+  border-top-color: $accent;
 }

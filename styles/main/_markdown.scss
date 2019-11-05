@@ -1,3 +1,7 @@
+.sk-client-theme--dark .c-mrkdwn__quote:before {
+  background: $fg;
+}
+
 .c-mrkdwn__user_group--link {
   background: $active;
   color: $primary;

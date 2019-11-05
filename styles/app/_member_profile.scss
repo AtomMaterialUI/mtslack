@@ -10,6 +10,10 @@
 
 .p-member_profile_name__link {
   color: $accent2;
+
+  &:focus {
+    color: $selectFg;
+  }
 }
 
 .p-member_profile_field__label {
@@ -20,6 +24,23 @@
   color: $text;
 }
 
+.p-member_profile_field__secondary {
+  background: $bg2;
+}
+
 .member-card__top-link {
   color: $fg !important;
+}
+
+.p-profile_page__header {
+  border-bottom: 1px solid $border;
+}
+
+.p-profile_page__header__info__status, .p-profile_page__header__info__title {
+  color: $text;
+}
+
+.p-profile_page__section {
+  background: $bg;
+  border-bottom: 1px solid $border;
 }

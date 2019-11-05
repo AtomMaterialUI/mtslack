@@ -44,7 +44,7 @@
 @import "search_autocomplete";
 @import "search";
 @import "shared_channel";
-
+@import "wysiwig";
 @import "timestamp";
 @import "file_viewer";
 @import "share";
@@ -133,3 +133,6 @@
 @import "app_settings";
 @import "channel_tabs";
 @import "client";
+@import "accordion";
+@import "settings";
+@import "ia_browse_channels";

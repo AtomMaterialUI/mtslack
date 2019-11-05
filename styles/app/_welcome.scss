@@ -11,6 +11,10 @@ body {
       background-color: $bg2;
     }
 
+    .c-workflow-item-container .c-workflow-item-card.completed {
+      color: $primary;
+    }
+
     .c-workflow-item-container {
       svg * {
         stroke: $fg;
@@ -26,6 +30,22 @@ body {
   &.sk-client-theme--dark .p-welcome-place {
     .video-player .video-player__title-card {
       background-color: $bg2;
+    }
+
+    .c-workflow-item-container .c-workflow-item-card {
+      color: $fg;
+      border-color: $borderLight;
+
+      &.complete {
+        color: $fg;
+        border-color: $borderLight;
+      }
+
+      .c-button:not(.c-button--primary) {
+        color: $fg;
+        border: 1px solid $borderLight;
+        background-color: $bg;
+      }
     }
 
     .c-workflow-item-container {
@@ -60,4 +80,83 @@ body {
     background-color: $primary;
     color: $selectFg;
   }
+}
+
+.message-suggestion-button {
+  background: $button;
+  color: $fg;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+
+  &:active {
+    color: $primary;
+    background: $active;
+    box-shadow: none;
+  }
+}
+
+.welcome-message {
+  &:hover {
+    background-color: $bg2;
+  }
+}
+
+.welcome-place-send-message-pane {
+  background: $bg2;
+}
+
+.welcome-place-message-input {
+  background-color: $contrast;
+}
+
+.welcome-place-send-message-card {
+  border: 1px solid $border;
+}
+
+
+.supports_custom_scrollbar .welcome-place-channel-preview {
+  &:hover {
+    border-right: 0.25rem solid transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}
+
+.welcome-place-channel-description {
+  color: $text;
+}
+
+.welcome-place-header__text__arrow {
+  color: $primary;
+}
+
+.sk-client-theme--dark {
+  .welcome-place-header__text, .welcome-place-header__text__arrow {
+    color: $selectFg;
+  }
+}
+
+.welcome-place-header-gradient {
+  background-image: $bg2;
+}
+
+.sk-client-theme--dark .welcome-place-header-gradient {
+  background-image: $bg2;
+}
+
+.p-welcome-place__sidebar_content__link_progress {
+  background-color: $bg2;
+}
+
+.p-welcome-place__sidebar_content__link_progress_inner {
+  background-color: $contrast;
+}
+
+.p-welcome-place__sidebar_content__gradient {
+  background-image: linear-gradient(180deg, $bg, transparent);
 }

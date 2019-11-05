@@ -256,3 +256,9 @@ button.p-admin_member_table__menu_item--disabled {
 .p-member_profile_flexpane .p-member_profile_field {
   border-top: 1px solid $border;
 }
+
+.p-directory_page__actions {
+  background: $bg;
+  border-bottom: 1px solid $borderLight;
+  color: $fg;
+}

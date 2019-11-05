@@ -11,3 +11,11 @@
     box-shadow: 0 3px 0 $border, 0 -3px 0 $borderLight;
   }
 }
+
+.supports_custom_scrollbar .p-composer_page__message_input .p-message_input_field .ql-editor {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}

@@ -71,3 +71,11 @@
 .p-message_pane_banner__close_icon {
   color: $text;
 }
+
+.p-message_pane_banner--persistent {
+  background-color: $bg2;
+}
+
+.p-message_pane_banner__body_icon {
+  color: $primary;
+}

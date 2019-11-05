@@ -36,3 +36,22 @@
 .p-channel_notification_prefs_new__platform_icon {
   color: $fg;
 }
+
+.p-channel_notification_prefs_new__note {
+  color: $text;
+}
+
+.p-channel_notification_prefs_new__prompt__icon {
+  color: $accent;
+}
+
+.p-channel_notification_prefs_new__prompt__muted {
+
+  .p-channel_notification_prefs_new__prompt__icon {
+    color: $accent2
+  }
+}
+
+.p-channel_notification_prefs_new__prompt__footer {
+  border-top: 1px solid $border;
+}

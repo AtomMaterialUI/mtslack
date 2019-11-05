@@ -91,6 +91,10 @@ only screen and (min-resolution: 192dpi) {
   color: $text;
 }
 
+.c-reaction_add__note {
+  background: $bg2;
+  color: $primary;
+}
 
 .c-message_kit__reaction_condensed {
   color: $disabled;

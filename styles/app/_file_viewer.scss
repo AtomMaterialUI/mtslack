@@ -124,7 +124,7 @@
   color: $fg;
 }
 
-.c-pillow_file__icon--hidden, .c-pillow_file__icon--tombstone {
+.c-pillow_file__icon--hidden, .c-pillow_file__icon--not_found, .c-pillow_file__icon--tombstone {
   background: $excluded;
 }
 

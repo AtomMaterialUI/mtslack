@@ -12,6 +12,11 @@
   }
 }
 
+.p-select_invite_type__option--disabled {
+  color: $disabled;
+}
+
+
 .p-select_invite_type__chevron {
   color: $text;
 }

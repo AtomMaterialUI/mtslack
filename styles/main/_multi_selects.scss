@@ -16,6 +16,14 @@
   }
 }
 
+.c-multi_select_helper_text__icon_container--error {
+  color: $red;
+}
+
+.c-multi_select_helper_text__icon_container--unknown {
+  color: $primary;
+}
+
 .c-multi_select_input--disabled,
 .c-multi_select_input__input--disabled {
   background: $excluded;

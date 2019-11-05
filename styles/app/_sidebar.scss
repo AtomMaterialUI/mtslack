@@ -350,3 +350,23 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__compose_button {
   box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight
 }
+
+@keyframes p-welcome-place__sidebar_animation {
+  0% {
+    font-weight: 900;
+  }
+
+  50% {
+    font-weight: 900;
+    color: $bg;
+  }
+
+  to {
+    font-weight: 900;
+    color: inherit;
+  }
+}
+
+div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}

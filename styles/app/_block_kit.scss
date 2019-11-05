@@ -11,7 +11,7 @@
 }
 
 .p-block_kit_input_block--invalid {
-  .c-input_text, .c-multi_select_input, .c-select_input, .p-block_kit_date_picker_button {
+  .c-input_text, .c-input_textarea, .c-multi_select_input, .c-select_input, .p-block_kit_date_picker_button, .p-block_kit_date_picker__datepicker_trigger {
     border-color: $red;
   }
 }

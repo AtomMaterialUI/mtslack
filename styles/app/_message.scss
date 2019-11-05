@@ -318,6 +318,10 @@ a.c-message__call_name--linked {
   border: 1px solid $borderLight;
 }
 
+.c-message_kit__background {
+  background: $bg;
+}
+
 .c-message_kit__background--hovered {
   background: rgba($fg, 0.04);
 }

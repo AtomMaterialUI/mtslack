@@ -5,6 +5,11 @@
 
 
 .sk-client-theme--dark {
+  ::-moz-selection, ::selection {
+    background-color: $selectBg;
+    color: $selectFg;
+  }
+
   .c-tooltip__tip {
     background-color: $notif;
 
@@ -34,6 +39,10 @@
 .c-tooltip__tip {
   color: $fg;
   background-color: $notif;
+}
+
+.c-tooltip__tip_shortcut {
+  color: $text;
 }
 
 .c-tooltip__tip--left {
