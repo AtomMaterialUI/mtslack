@@ -1,12 +1,14 @@
+* {
+  transition: background-color 1s ease, color 1s ease;
+}
+
 html {
   background: $bg;
-  transition: all 1s ease-out;
 }
 
 body {
   background: $bg;
   color: $fg;
-  transition: all 1s ease-out;
 
   input[readonly] {
     background: $contrast;
@@ -18,7 +20,6 @@ footer {
   background: $bg;
   border-top-color: $border;
   color: $fg;
-  transition: all 1s ease-out;
 
   ul a,
   ul a:link {
@@ -33,7 +34,6 @@ footer {
   .label {
     background: transparent;
     color: $fg;
-    transition: all 1s ease-out;
 
     &:hover {
       background: $hl;
@@ -44,7 +44,6 @@ footer {
 
 a {
   color: $accent;
-  transition: all 1s ease-out;
 }
 
 a:active, a:focus, a:hover {
