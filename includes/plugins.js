@@ -1,81 +1,24 @@
-const slackPlugins = {
-  // Prebundled themes
-  themes: [
-    'oceanic',
-    'darker',
-    'lighter',
-    'palenight',
-    'deepocean',
-    'monokai',
-    'arcdark',
-    'onedark',
-    'onelight',
-    'solardark',
-    'solarlight',
-    'dracula',
-    'github',
-    'nightowl',
-    'lightowl',
-  ],
-  // Current theme
-  currentTheme: 0,
-
+const slackPluginsAPI = {
   // Loaded plugins
   plugins: {
     main: {
       name: 'main',
       desc: 'Enable custom plugins',
       enabled: true,
-    },
-    sidebar: {
-      name: 'sidebar',
-      desc: 'Toggle Sidebar',
-      descLong: 'Show or hide the sidebar',
-      enabled: true,
-      callback: function () {this.togglePlugin('$sideBarBtn', 'sidebar');},
-    },
-    nextTheme: {
-      name: 'nextTheme',
-      desc: 'Loop over installed themes',
-      descLong: 'Add a button in the toolbar to loop over installed themes',
-      enabled: true,
-      callback: function () {this.togglePlugin('$nextThemeBtn', 'nextTheme');},
+      callback: () => {},
     },
   },
 
-  togglePlugin(componentName, pluginName) {
-    debugger;
-    this.toggleDisplay(this[componentName], pluginName);
-  },
-
-  // Toggle Sidebar
-  toggleSidebar() {
-    const sidebar = document.querySelector('.p-channel_sidebar');
-    if (sidebar.style.display !== 'none') {
-      sidebar.style.display = 'none';
-      this.sidebarEnabled = true;
-    } else {
-      sidebar.style.display = 'flex';
-      this.sidebarEnabled = false;
-    }
-  },
-
-  // go fetch the next theme
-  nextTheme() {
-    this.currentTheme = (this.currentTheme + 1) % this.themes.length;
-
-    document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: window.themePresets[this.themes[this.currentTheme]],
-    }));
-  },
-
-  insertPluginSection() {
+  /**
+   * Create the plugin section in the sidebar
+   */
+  _insertPluginSection() {
     const $pluginsSection = document.createElement('div');
     $pluginsSection.id = 'pluginsSection';
     $pluginsSection.style.height = 26;
     $pluginsSection.attributes.role = 'listitem';
     $pluginsSection.addEventListener('click', () => {
-      this.showPluginsUI();
+      this._showPluginsUI();
     });
 
     const $pluginsLinkBtn = document.createElement('button');
@@ -88,14 +31,21 @@ const slackPlugins = {
     this.$sideBar.append($pluginsSection);
   },
 
-  showPluginsUI() {
+  /**
+   * Display the plugins settings modal
+   */
+  _showPluginsUI() {
     if (!this.pluginsUI) {
-      this.pluginsUI = this.createPluginsUI();
+      this.pluginsUI = this._createPluginsUI();
     }
     document.body.append(this.pluginsUI);
   },
 
-  createPluginsUI() {
+  /**
+   * Generate the plugin settings UI.
+   * TODO EXTRACT MAGIC STRINGS
+   */
+  _createPluginsUI() {
     // Modal
     const $reactModal = document.createElement('div');
     $reactModal.className = 'ReactModalPortal';
@@ -117,13 +67,11 @@ const slackPlugins = {
     // Close the modal
     $closeBtn.addEventListener('keydown', ({ keyCode }) => {
       if (keyCode === 13) {
-        $wrapper.className += 'ReactModal__Content--before-close';
-        $reactModal.remove();
+        requestAnimationFrame(() => $reactModal.remove());
       }
     });
     $closeBtn.addEventListener('click', () => {
-      $wrapper.className += 'ReactModal__Content--before-close';
-      $reactModal.remove();
+      requestAnimationFrame(() => $reactModal.remove());
     });
 
     // Header
@@ -135,7 +83,7 @@ const slackPlugins = {
 </div>`;
 
     // Finally the settings
-    const $settings = this.createSettings();
+    const $settings = this._createSettings();
 
     $wrapper.append($closeBtn);
     $wrapper.append($header);
@@ -147,7 +95,10 @@ const slackPlugins = {
     return $reactModal;
   },
 
-  createSettings() {
+  /**
+   * Create the modal inner part
+   */
+  _createSettings() {
     // Contents
     const $settings = document.createElement('div');
     $settings.className = 'c-sk-modal_content c-sk-modal_content--indicateBottom';
@@ -191,13 +142,13 @@ const slackPlugins = {
     $pluginList.append($pluginListHeader);
 
     // Now load the plugins
-    this.addPlugins($pluginListInner);
+    this._addPlugins($pluginListInner);
 
     return $settings;
   },
 
   // Add plugins to the UI
-  addPlugins($container) {
+  _addPlugins($container) {
     for (let [pluginName, plugin] of Object.entries(this.plugins)) {
       if (!plugin) {
         continue;
@@ -206,10 +157,7 @@ const slackPlugins = {
       const $divWrapper = document.createElement('div');
 
       // Toggle checkbox
-      const $checkbox = this.createOptionCheckbox({
-        pluginName: plugin.name,
-        pluginDesc: plugin.desc,
-      });
+      const $checkbox = this._createOptionCheckbox(plugin);
       $divWrapper.append($checkbox);
 
       // Explanation
@@ -224,79 +172,76 @@ const slackPlugins = {
     }
   },
 
-  createOptionCheckbox({ pluginName, pluginDesc }) {
+  /**
+   * Generate an option checkbox
+   */
+  _createOptionCheckbox(plugin) {
     // Label
     const $label = document.createElement('label');
     $label.className = 'c-label c-label--inline c-label--pointer';
-    $label.innerHTML = `<span class="c-label__text" data-qa-label-text="true">${pluginDesc}</span>`;
-    $label.htmlFor = pluginName;
-    $label.title = pluginDesc;
+    $label.innerHTML = `<span class="c-label__text" data-qa-label-text="true">${plugin.desc}</span>`;
+    $label.htmlFor = plugin.name;
+    $label.title = plugin.desc;
 
     // Checkbox
     const $cb = document.createElement('input');
     $cb.className = 'c-input_checkbox';
     $cb.type = 'checkbox';
-    $cb.id = pluginName;
-    $cb.name = pluginName;
-    $cb.checked = this.isPluginEnabled(pluginName);
+    $cb.id = plugin.name;
+    $cb.name = plugin.name;
+    $cb.checked = plugin.enabled;
     $label.append($cb);
 
     // Listen to events
     $cb.addEventListener('change', (event) => {
       const name = event.target.id;
       const enabled = !!event.target.checked;
-      this.setPluginState(name, enabled);
+      // this.setPluginState(name, enabled);
+      plugin.enabled = enabled;
 
       // Execute plugin
-      this.executePlugin(name, enabled);
+      // this.executePlugin(name, enabled);
+      plugin.callback(enabled);
     });
 
     return $label;
   },
 
-  // Toggle plugin state
-  setPluginState(name, enabled) {
-    if (!this.plugins[name]) {
-      throw Error('Unknown plugin ' + name);
-    }
+  _createTooltip(plugin) {
+    // Modal
+    const $reactModal = document.createElement('div');
+    $reactModal.className = 'ReactModalPortal';
 
-    this.plugins[name].enabled = enabled;
-    localStorage.setItem('slack_plugins', JSON.stringify(this.plugins));
-  },
+    // Overlay
+    const $reactOverlay = document.createElement('div');
+    $reactOverlay.className =
+      'ReactModal__Overlay ReactModal__Overlay--after-open c-popover c-popover--no-pointer c-popover--z_menu c-popover--fade';
+    $reactModal.appendChild($reactOverlay);
 
-  // Whether a plugin is enabled
-  isPluginEnabled(name) {
-    if (!this.plugins[name]) {
-      return false;
-    }
+    // Contents
+    const $wrapper = document.createElement('div');
+    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover';
+    $wrapper.style.position = 'absolute';
+    $wrapper.style.left = plugin.$el.offsetTop + plugin.$el.offsetHeight;
+    $wrapper.style.top = plugin.$el.offsetLeft + plugin.$el.offsetWidth;
+    $reactOverlay.appendChild($wrapper);
 
-    return this.plugins[name].enabled;
-  },
+    // Header
+    const $popover = document.createElement('div');
+    $popover.innerHTML = `<div role="presentation">
+<div id="slack-kit-tooltip" role="tooltip" class="c-tooltip__tip c-tooltip__tip--bottom-right" data-qa="tooltip-tip">
+${plugin.desc}
+<div class="c-tooltip__tip_shortcut">${plugin.shortcut}</div>
+<div class="c-tooltip__tip__arrow" style="right: 18px;"></div>
+</div>
+</div>`;
 
-  // Execute
-  executePlugin(name, enabled) {
-    const plugin = this.plugins[name];
-    if (!plugin) {
-      throw Error('Unknown plugin ' + name);
-    }
+    $wrapper.append($popover);
 
-    if (plugin.callback) {
-      plugin.callback.apply(this);
-    }
-  },
+    // animatsia!
+    requestAnimationFrame(() => $wrapper.className += ' ReactModal__Content--after-open');
 
-  // Show/hide a toolbar button
-  toggleDisplay(button, name) {
-    const plugin = this.plugins[name];
-    if (!plugin) {
-      throw Error('Unknown plugin ' + name);
-    }
-
-    if (plugin.enabled) {
-      button.style.display = 'flex';
-    } else {
-      button.style.display = 'none';
-    }
+    return $reactModal;
   },
 
   init() {
@@ -305,30 +250,30 @@ const slackPlugins = {
     //   this.plugins = Object.assign({}, this.plugins, JSON.parse(savedSettings));
     // }
 
-    this.initSettings();
+    this._initSettings();
 
     // Add a keybinding to reinit
     document.addEventListener('keydown', ({ keyCode, metaKey }) => {
       if (keyCode === 68 && metaKey) {
-        this.initSettings();
+        this._initSettings();
       }
     });
   },
 
   // Init settings dialog
-  initSettings() {
-    const prefsDialogInitializedIntervalMaxTries = 100;
-    let prefsDialogInitializedIntervalCounter = 0;
+  _initSettings() {
+    const maxTries = 100;
+    let counter = 0;
 
     if (document.querySelector('#pluginsSection')) {
       // Already added
       return;
     }
 
-    this.prefsDialogInitializedInterval = setInterval(() => {
-      prefsDialogInitializedIntervalCounter++;
-      if (prefsDialogInitializedIntervalCounter > prefsDialogInitializedIntervalMaxTries) {
-        clearInterval(this.prefsDialogInitializedInterval);
+    this.interval = setInterval(() => {
+      counter++;
+      if (counter > maxTries) {
+        clearInterval(this.interval);
         return;
       }
 
@@ -336,42 +281,25 @@ const slackPlugins = {
 
       if (this.sidebarLoaded) {
         this.$sideBar = document.querySelector('.p-channel_sidebar__static_list');
-        this.insertPluginSection();
-        this.initToolbarButtons();
-        clearInterval(this.prefsDialogInitializedInterval);
+        this._insertPluginSection();
+        this.initPlugins();
+        clearInterval(this.interval);
       }
 
     }, 1000);
   },
 
-  initToolbarButtons() {
-
-    // Toggle Sidebar
-    const $sidebarBtn = document.createElement('button');
-    this.$sideBarBtn = $sidebarBtn;
-    $sidebarBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $sidebarBtn.innerHTML = `<i class="c-icon c-icon--side-panel" type="side-panel" aria-hidden="true"></i>`;
-    $sidebarBtn.addEventListener('click', this.toggleSidebar.bind(this));
-    this.toggleDisplay($sidebarBtn, 'sidebar');
-
-    // Next Theme
-    const $nextThemeBtn = document.createElement('button');
-    this.$nextThemeBtn = $nextThemeBtn;
-    $nextThemeBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $nextThemeBtn.innerHTML = `<i class="c-icon c-icon--magic" type="magic" aria-hidden="true"></i>`;
-    $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
-    this.toggleDisplay($nextThemeBtn, 'nextTheme');
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($sidebarBtn);
-      $header.appendChild($nextThemeBtn);
-    }
+  // Call plugins's init
+  initPlugins() {
+    Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
+      plugin.init && plugin.init();
+    });
   },
 };
 
-window.slackPlugins = slackPlugins;
-window.slackPlugins.init();
+window.slackPluginsAPI = slackPluginsAPI;
+
+//= include themes.js
+//= include sidebar.js
+
+window.slackPluginsAPI.init();
