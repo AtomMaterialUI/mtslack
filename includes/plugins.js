@@ -222,8 +222,8 @@ const slackPluginsAPI = {
     const $wrapper = document.createElement('div');
     $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover';
     $wrapper.style.position = 'absolute';
-    $wrapper.style.left = plugin.$el.offsetTop + plugin.$el.offsetHeight;
-    $wrapper.style.top = plugin.$el.offsetLeft + plugin.$el.offsetWidth;
+    $wrapper.style.top = plugin.$el.offsetTop + plugin.$el.offsetHeight + 'px';
+    $wrapper.style.left = plugin.$el.offsetLeft - (plugin.$el.offsetWidth * 2) + 'px';
     $reactOverlay.appendChild($wrapper);
 
     // Header
@@ -242,6 +242,24 @@ ${plugin.desc}
     requestAnimationFrame(() => $wrapper.className += ' ReactModal__Content--after-open');
 
     return $reactModal;
+  },
+
+  /**
+   * Create the plugin tooltip
+   * @param plugin
+   */
+  addTooltip(plugin) {
+    plugin.$el.addEventListener('mouseover', () => {
+      if (plugin.$tooltip) {
+        return;
+      }
+      plugin.$tooltip = this._createTooltip(plugin);
+      document.body.append(plugin.$tooltip);
+    });
+    plugin.$el.addEventListener('mouseout', () => {
+      plugin.$tooltip && plugin.$tooltip.remove();
+      plugin.$tooltip = null;
+    });
   },
 
   init() {

@@ -7,7 +7,7 @@ window.slackPluginsAPI.plugins.nextTheme = {
   desc: 'Loop over installed themes',
   descLong: 'Add a button in the toolbar to loop over installed themes',
   enabled: true,
-  shortcut: '⌘⇧S',
+  shortcut: '',
   callback: function () {
     this.toggle();
   },
@@ -50,20 +50,10 @@ window.slackPluginsAPI.plugins.nextTheme = {
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
     $nextThemeBtn.innerHTML = `<i class="c-icon c-icon--magic" type="magic" aria-hidden="true"></i>`;
     $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
-    $nextThemeBtn.addEventListener('mouseover', () => {
-      if (this.$tooltip) {
-        return;
-      }
-      this.$el.className;
-      this.$tooltip = window.slackPluginsAPI._createTooltip(this);
-      document.body.append(this.$tooltip);
-    });
-    $nextThemeBtn.addEventListener('mouseout', () => {
-      this.$tooltip && this.$tooltip.remove();
-      this.$tooltip = null;
-    });
+    // Add tooltip
+    window.slackPluginsAPI.addTooltip(this);
 
-    this.toggleDisplay($nextThemeBtn, 'nextTheme');
+    // this.toggleDisplay($nextThemeBtn, 'nextTheme');
 
     let $header = document.querySelector('.p-classic_nav__right_header');
     if ($header) {

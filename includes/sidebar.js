@@ -7,32 +7,39 @@ window.slackPluginsAPI.plugins.sidebar = {
   desc: 'Toggle Sidebar',
   descLong: 'Show or hide the sidebar',
   enabled: true,
+  shortcut: '',
+
+  sidebarEnabled: true,
+
   callback: function () {
-    // window.slackPluginsAPI.togglePlugin('$nextThemeBtn', 'nextTheme');
     this.toggle();
   },
 
   // Toggle Sidebar
   toggleSidebar() {
-    const sidebar = document.querySelector('.p-channel_sidebar');
-    if (sidebar.style.display !== 'none') {
-      sidebar.style.display = 'none';
-      this.sidebarEnabled = true;
-    } else {
-      sidebar.style.display = 'flex';
+    const sidebar = document.querySelector('.p-workspace');
+    if (this.sidebarEnabled) {
+      sidebar.style.gridTemplateColumns = '0px auto';
       this.sidebarEnabled = false;
+    } else {
+      sidebar.style.gridTemplateColumns = '220px auto';
+      this.sidebarEnabled = true;
     }
   },
 
   init() {
     // Toggle Sidebar
     const $sidebarBtn = document.createElement('button');
-    this.$sideBarBtn = $sidebarBtn;
+    this.$el = $sidebarBtn;
+
     $sidebarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
     $sidebarBtn.innerHTML = `<i class="c-icon c-icon--side-panel" type="side-panel" aria-hidden="true"></i>`;
     $sidebarBtn.addEventListener('click', this.toggleSidebar.bind(this));
-    this.toggleDisplay($sidebarBtn, 'sidebar');
+    // Add tooltip
+    window.slackPluginsAPI.addTooltip(this);
+
+    // this.toggleDisplay($sidebarBtn, 'sidebar');
 
     let $header = document.querySelector('.p-classic_nav__right_header');
     if ($header) {
@@ -42,7 +49,7 @@ window.slackPluginsAPI.plugins.sidebar = {
   },
 
   toggle() {
-    this.toggleDisplay(this.$sideBarBtn);
+    this.toggleDisplay(this.$el);
   },
 
   // Show/hide a toolbar button
