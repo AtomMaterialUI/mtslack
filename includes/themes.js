@@ -74,4 +74,9 @@ window.slackPluginsAPI.plugins.nextTheme = {
       button.style.display = 'none';
     }
   },
+
+  switch(enabled) {
+    this.enabled = enabled;
+    this.toggleDisplay();
+  },
 };

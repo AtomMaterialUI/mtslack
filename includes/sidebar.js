@@ -60,4 +60,9 @@ window.slackPluginsAPI.plugins.sidebar = {
       button.style.display = 'none';
     }
   },
+
+  switch(enabled) {
+    this.enabled = enabled;
+    this.toggleDisplay();
+  },
 };

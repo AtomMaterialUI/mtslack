@@ -1,12 +1,22 @@
 const slackPluginsAPI = {
+  pluginsEnabled: true,
   // Loaded plugins
   plugins: {
     main: {
       name: 'main',
       desc: 'Enable custom plugins',
       enabled: true,
-      callback: () => {},
+      callback: () => {
+        this.toggle();
+      },
     },
+  },
+
+  toggle() {
+    this.pluginsEnabled = !this.pluginsEnabled;
+    Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
+      plugin.switch && plugin.switch(this.pluginsEnabled);
+    });
   },
 
   /**
@@ -28,7 +38,7 @@ const slackPluginsAPI = {
 <span class="p-channel_sidebar__name">Plugins</span>`;
 
     $pluginsSection.appendChild($pluginsLinkBtn);
-    this.$sideBar.append($pluginsSection);
+    this.$sideBar.prepend($pluginsSection);
   },
 
   /**
