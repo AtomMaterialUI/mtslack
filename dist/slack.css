@@ -9515,7 +9515,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 .p-prefs_modal__theme_section h3 {
   text-decoration: line-through; }
 
-.c-plugins-disabled {
+.c-plugins--disabled {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none; }
