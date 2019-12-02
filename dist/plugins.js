@@ -312,8 +312,8 @@ ${plugin.desc}
     this._initSettings();
 
     // Add a keybinding to reinit
-    document.addEventListener('keydown', ({ keyCode, metaKey }) => {
-      if (keyCode === 68 && metaKey) {
+    document.addEventListener('keydown', ({ keyCode, altKey, metaKey }) => {
+      if (keyCode === 68 && (metaKey || altKey)) {
         this._initSettings();
       }
     });
