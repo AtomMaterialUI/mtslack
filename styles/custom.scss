@@ -76,10 +76,3 @@ $black: var(--black);
 @import "main/index";
 @import "app/index";
 @import "settings/index";
-
-// Plugins
-.c-plugins--disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
-}
