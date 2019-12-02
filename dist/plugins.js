@@ -46,7 +46,7 @@ const slackPluginsAPI = {
     $pluginsLinkBtn.className = 'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
     $pluginsLinkBtn.innerHTML = `
 <i class="c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit" type="list" aria-hidden="true"></i>
-<span class="p-channel_sidebar__name">Plugins</span>`;
+<span class="p-channel_sidebar__name">Slack Tweaks</span>`;
 
     // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
