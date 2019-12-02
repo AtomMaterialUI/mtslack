@@ -6,16 +6,26 @@ const slackPluginsAPI = {
       name: 'main',
       desc: 'Enable custom plugins',
       enabled: true,
-      callback: () => {
-        this.toggle();
+      callback() {
+        window.slackPluginsAPI.togglePlugins();
       },
     },
   },
 
-  toggle() {
+  togglePlugins() {
     this.pluginsEnabled = !this.pluginsEnabled;
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
+      // Activate/Disable the plugin
       plugin.switch && plugin.switch(this.pluginsEnabled);
+
+      // Disable options
+      if (plugin.$settingEl) {
+        if (this.pluginsEnabled) {
+          plugin.$settingEl.classList.remove('c-plugins--disabled');
+        } else {
+          plugin.$settingEl.classList.add('c-plugins--disabled');
+        }
+      }
     });
   },
 
@@ -23,20 +33,22 @@ const slackPluginsAPI = {
    * Create the plugin section in the sidebar
    */
   _insertPluginSection() {
+    // Plugins menu in the sidebar
     const $pluginsSection = document.createElement('div');
     $pluginsSection.id = 'pluginsSection';
-    $pluginsSection.style.height = 26;
-    $pluginsSection.attributes.role = 'listitem';
+    $pluginsSection.style.fontStyle = 'italic';
     $pluginsSection.addEventListener('click', () => {
       this._showPluginsUI();
     });
 
+    // Menu item
     const $pluginsLinkBtn = document.createElement('button');
     $pluginsLinkBtn.className = 'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
     $pluginsLinkBtn.innerHTML = `
-<i class="c-icon p-channel_sidebar__link__icon c-icon--list c-icon--inherit" type="list" aria-hidden="true"></i>
+<i class="c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit" type="list" aria-hidden="true"></i>
 <span class="p-channel_sidebar__name">Plugins</span>`;
 
+    // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
     this.$sideBar.prepend($pluginsSection);
   },
@@ -165,17 +177,23 @@ const slackPluginsAPI = {
       }
 
       const $divWrapper = document.createElement('div');
+      $divWrapper.className = 'padding_bottom_75';
 
       // Toggle checkbox
       const $checkbox = this._createOptionCheckbox(plugin);
       $divWrapper.append($checkbox);
 
       // Explanation
-      if (plugin.descLong) {
+      if (plugin.longDescription) {
         const $fullDescRow = document.createElement('span');
-        $fullDescRow.className = 'sk_foreground_high';
-        $fullDescRow.innerText = plugin.descLong;
+        $fullDescRow.className = 'p-admin_member_table__caption';
+        $fullDescRow.innerText = plugin.longDescription;
         $divWrapper.append($fullDescRow);
+      }
+
+      // Save the element to the plugin
+      if (pluginName !== 'main') {
+        plugin.$settingEl = $divWrapper;
       }
 
       $container.append($divWrapper);
@@ -186,12 +204,16 @@ const slackPluginsAPI = {
    * Generate an option checkbox
    */
   _createOptionCheckbox(plugin) {
+    const $wrapper = document.createElement('div');
+    // $wrapper.className = 'padding_bottom_75';
+
     // Label
     const $label = document.createElement('label');
     $label.className = 'c-label c-label--inline c-label--pointer';
     $label.innerHTML = `<span class="c-label__text" data-qa-label-text="true">${plugin.desc}</span>`;
     $label.htmlFor = plugin.name;
     $label.title = plugin.desc;
+    $wrapper.append($label);
 
     // Checkbox
     const $cb = document.createElement('input');
@@ -214,9 +236,15 @@ const slackPluginsAPI = {
       plugin.callback(enabled);
     });
 
-    return $label;
+    return $wrapper;
   },
 
+  /**
+   * Create a tooltip for a plugin in the toolbar
+   * @param plugin
+   * @returns {HTMLDivElement}
+   * @private
+   */
   _createTooltip(plugin) {
     // Modal
     const $reactModal = document.createElement('div');
@@ -272,6 +300,9 @@ ${plugin.desc}
     });
   },
 
+  /**
+   * Main
+   */
   init() {
     // let savedSettings = localStorage.getItem('slack_plugins');
     // if (savedSettings) {
@@ -327,7 +358,12 @@ ${plugin.desc}
 
 window.slackPluginsAPI = slackPluginsAPI;
 
+/** DO NOT TOUCH THIS PART **/
+// Here are files included in the end bundle
+
 //= include themes.js
 //= include sidebar.js
+
+/** END DO NOT TOUCH THIS PART */
 
 window.slackPluginsAPI.init();

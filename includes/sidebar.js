@@ -5,7 +5,7 @@ window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 window.slackPluginsAPI.plugins.sidebar = {
   name: 'sidebar',
   desc: 'Toggle Sidebar',
-  descLong: 'Show or hide the sidebar',
+  longDescription: 'Show or hide the sidebar',
   enabled: true,
   shortcut: '',
 
@@ -63,6 +63,6 @@ window.slackPluginsAPI.plugins.sidebar = {
 
   switch(enabled) {
     this.enabled = enabled;
-    this.toggleDisplay();
+    this.toggle();
   },
 };

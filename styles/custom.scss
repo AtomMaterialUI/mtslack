@@ -78,7 +78,7 @@ $black: var(--black);
 @import "settings/index";
 
 // Plugins
-.c-plugins-disabled {
+.c-plugins--disabled {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;

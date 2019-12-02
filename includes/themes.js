@@ -5,7 +5,7 @@ window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 window.slackPluginsAPI.plugins.nextTheme = {
   name: 'nextTheme',
   desc: 'Loop over installed themes',
-  descLong: 'Add a button in the toolbar to loop over installed themes',
+  longDescription: 'Add a button in the toolbar to loop over installed themes',
   enabled: true,
   shortcut: '',
   callback: function () {
@@ -77,6 +77,6 @@ window.slackPluginsAPI.plugins.nextTheme = {
 
   switch(enabled) {
     this.enabled = enabled;
-    this.toggleDisplay();
+    this.toggle();
   },
 };
