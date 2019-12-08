@@ -23,7 +23,6 @@
   color: $fg;
 }
 
-
 .p-classic_nav__team_menu__blurb__sub {
   color: $text;
 }
@@ -32,7 +31,6 @@
   color: $text;
 }
 
-
 .p-classic_nav__model__title__name--dim {
   color: $text;
 }
@@ -40,7 +38,6 @@
 .p-classic_nav__model__title__name__status--im {
   color: $text;
 }
-
 
 .p-classic_nav__model__title__name__unmute {
   &.c-button--focus-visible:focus, &:hover {
@@ -84,24 +81,21 @@
   }
 }
 
-
 .p-classic_nav__model__title__info__topic__edit {
   color: $primary;
 }
-
 
 .p-classic_nav__model__title__info__topic--focus-within .p-classic_nav__model__title__info__topic__text:before, .p-classic_nav__model__title__info__topic:hover .p-classic_nav__model__title__info__topic__text:before {
   background: $bg;
   box-shadow: inset 0 0 0 1px $border, 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
 
-
 .p-classic_nav__model__button {
-  width: 32px;
+  border-radius: 4px;
+  color: $text;
   height: 32px;
   justify-content: center;
-  color: $text;
-  border-radius: 4px;
+  width: 32px;
 
   &:hover {
     color: $primary;
@@ -137,16 +131,14 @@
   }
 }
 
-
 .p-shared_channels_team_menu_item__label--new {
   background-color: $accent2;
   color: $selectFg;
 }
 
-
 .p-classic_nav__right__search {
-  border: 1px solid $button;
   background: $contrast;
+  border: 1px solid $button;
   color: $fg;
 
   &:hover {
@@ -160,8 +152,8 @@
 
 .p-classic_nav__right__search--is_highlighted {
   background-color: $contrast;
-  color: $primary;
   border-color: $primary;
+  color: $primary;
 }
 
 .p-classic_nav__right__search__icon {
@@ -197,6 +189,10 @@
 
 .p-classic_nav__right__button {
   color: $text;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 .p-classic_nav__right__button--activity:hover {
@@ -231,10 +227,9 @@
 
 .p-classic_nav__right__help_count {
   background-color: $accent;
-  color: $selectFg;
   border: 2px solid $accent;
+  color: $selectFg;
 }
-
 
 .p-classic_nav__tip_shortcut, .p-classic_nav__tip_sub {
   color: $text;
@@ -244,7 +239,6 @@
   background-color: $accent2;
   color: $selectFg;
 }
-
 
 .p-classic_nav__search_small_divider {
   background: $border;

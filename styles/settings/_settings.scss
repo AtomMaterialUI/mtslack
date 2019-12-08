@@ -1,20 +1,27 @@
 .p-prefs_modal__theme_section {
   > * {
-    opacity: 0.25;
     cursor: not-allowed;
+    opacity: 0.25;
     pointer-events: none;
   }
 
   &::before {
     content: ' (disabled: the Custom Themes override these settings ;))';
-    text-align: center;
     font-size: 30px;
     margin: 1em auto;
     opacity: 1;
+    text-align: center;
   }
 
   h2,
   h3 {
     text-decoration: line-through;
   }
+}
+
+// Plugins
+.c-plugins--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
 }

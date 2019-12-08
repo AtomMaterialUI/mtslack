@@ -1,6 +1,6 @@
 {
   "name": "slack-themes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Slack themes for slack",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/mallowigi/slack-themes#readme",
   "devDependencies": {
-    "js-yaml": "^3.13.1",
     "asar": "^2.0.1",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
@@ -28,12 +27,19 @@
     "configstore": "^5.0.0",
     "figlet": "^1.2.3",
     "gulp": "^4.0.2",
+    "gulp-browser-js-include": "0.0.7",
+    "gulp-butternut": "^1.0.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-file-include2": "^2.0.1",
     "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "inquirer": "^6.5.0",
+    "js-yaml": "^3.13.1",
     "minimist": "^1.2.0",
     "npx": "^10.2.0",
     "rimraf": "latest"
-  }
+  },
+  "dependencies": {}
 }

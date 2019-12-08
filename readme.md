@@ -115,6 +115,28 @@ The best way to revert to the default theme would be to use the backup copy you 
 There is also a `Remove Theme` option in the menu but it is less robust.
 
 ----
+### Slack Tweaks (Beta)
+
+Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable.
+
+![Slack Tweaks](doc/tweaks.png)
+
+Enabling these tweaks create a new icon in the Slack Toolbar to toggle the desired tweaks.
+
+More will come later!
+
+**Note**
+Currently switching between Slack Workspaces would restore the default behavior, e.g. the tweaks not showing in the app.
+
+You can forcibly relaunch them by pressing Cmd+D (Alt-D on Windows/Linux).
+
+**Note**:
+
+These tweaks are currently in a very early release. It can causes some problems, especially every time Slack updates their application.
+
+
+
+----
 # Development
 
 ## Building styles
