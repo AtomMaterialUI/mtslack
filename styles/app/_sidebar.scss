@@ -211,6 +211,16 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   background: $button !important;
 }
 
+.p-channel_sidebar__history_button:not(.p-channel_sidebar__history_button--disabled) {
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
 .p-channel_sidebar__history_button:hover {
   background: $hl !important;
 }
@@ -291,6 +301,7 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-team_sidebar__add_button {
   color: $fg !important;
 }
+
 .p-team_sidebar__add_button:hover,
 .p-team_sidebar__add_button:focus,
 .p-team_sidebar__add_button:active {

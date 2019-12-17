@@ -11,3 +11,7 @@
 .p-whats_new__blue_dot {
   color: $accent;
 }
+
+.p-whats_new_dialog__content:after {
+  border-top: 1px solid $border;
+}

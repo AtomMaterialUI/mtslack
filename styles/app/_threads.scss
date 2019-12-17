@@ -16,8 +16,16 @@
     background: $contrast;
     border-color: $button;
 
+    .ql-composer-sticky {
+      border-color: $borderLight;
+    }
+
     &.focus {
       border-color: $primary;
+
+      .ql-composer-sticky {
+        border-color: $borderLight;
+      }
     }
 
     &.focus {

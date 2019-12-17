@@ -382,3 +382,11 @@ a.c-message__call_name--linked {
   background-color: $bg;
   border: 1px solid $borderLight;
 }
+
+.p-message_pane__search_tip_banner_action {
+  color: $text;
+
+  &:focus, &:hover {
+    background: $selectFg;
+  }
+}

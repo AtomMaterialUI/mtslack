@@ -6,9 +6,22 @@
   border-top: 1px solid $borderLight;
 }
 
+.p-ia__main_menu__user__name_container {
+  background: $bg2;
+}
+
 .p-ia__user_menu__blurb__status {
   color: $text;
 }
+
+.p-ia__main_menu__user__status {
+  color: $text;
+}
+
+.p-ia__main_menu__user__status_alt {
+  color: $text;
+}
+
 
 .p-ia__nav__search {
   border: 1px solid $borderLight;
@@ -48,4 +61,41 @@
 
 .p-ia__view_header__tab--active:after {
   background: $active;
+}
+
+.p-classic_nav__model__title__info__actions {
+  &.c-button--focus-visible:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.p-ia__view_header__metadata, .p-ia__view_header__subtitle {
+  color: $text;
+}
+
+.p-ia__view_header__metadata_divider {
+  color: $borderLight;
+}
+
+.p-ia__view_header__details {
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+}
+
+.p-channel_details_section__header--iap1 {
+  .p-channel_details_section__count {
+    color: $text;
+  }
+
+  .c-icon--inline.p-channel_details_section__icon {
+    color: $text;
+  }
+
+  .p-channel_details_section__caret_icon {
+    color: $fg;
+  }
 }

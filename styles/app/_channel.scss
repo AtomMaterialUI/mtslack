@@ -144,3 +144,84 @@
 .p-channel_action_menu__empty_state {
   color: $fg;
 }
+
+.p-channel_actions_section_item__list_entity {
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-channel_actions_section {
+  .p-channel_details_section__icon {
+    color: $primary;
+  }
+}
+
+.p-ia__channel_details__about {
+  background-color: $tree;
+}
+
+.p-ia__channel_details__about_title {
+  color: $text;
+}
+
+.p-ia__channel_details__about_edit {
+  color: $primary;
+}
+
+.p-ia__channel_details__prefs {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia__channel_details__prefs_title {
+  color: $text;
+}
+
+.p-ia__channel_details__prefs_control {
+  background-color: $tree;
+}
+
+.p-ia__channel_details__prefs_control__content {
+  color: $fg;
+}
+
+.p-ia__channel_details__actions {
+  background-color: $button;
+}
+
+.p-ia__channel_details__action {
+  &.active .p-ia__channel_details__action_icon {
+    background-color: $active;
+    color: $selectFg;
+  }
+}
+
+.p-ia__channel_details__action_icon {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
+.p-ia__channel_details__action_label {
+  color: $text;
+}
+
+.p-ia__channel_details__action {
+  &.p-ia__channel_details__action--muted .p-ia__channel_details__action_icon,
+  &.p-ia__channel_details__action--starred .p-ia__channel_details__action_icon {
+    color: $fg;
+    background-color: $button;
+  }
+}
+
+.p-ia__channel_details__created {
+  background-color: $tree;
+}
