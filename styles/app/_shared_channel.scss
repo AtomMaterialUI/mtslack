@@ -30,14 +30,20 @@
   color: $text;
 }
 
-.p-channel_share_channel_modal__learn {
+.sk-client-theme--dark .p-channel_share_channel_modal__copy {
   color: $text;
 }
 
-.p-public_private_input__label {
-  &[disabled] {
-    color: $disabled;
-  }
+.p-channel_share_channel_modal__color {
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-channel_share_channel_modal__color {
+  color: $fg;
+}
+
+.p-channel_share_channel_modal__learn {
+  color: $text;
 }
 
 .p-channel_invite_form__input_subtext {
@@ -62,4 +68,12 @@
 
 .sk-client-theme--dark .p-channel_invite_modal_coachmark__caret {
   border-top-color: $accent;
+}
+
+.p-channel_invite_modal__link {
+  color: $accent2;
+}
+
+.p-message_pane_input_warning__header {
+  background: $bg2;
 }

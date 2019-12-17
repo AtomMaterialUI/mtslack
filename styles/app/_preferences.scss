@@ -139,3 +139,21 @@
     }
   }
 }
+
+.p-prefs_dialog__content:after {
+  border-top: 1px solid $border;
+}
+
+.p-prefs_dialog__section {
+  &:hover {
+    background: $bg;
+  }
+}
+
+.p-prefs_dialog__section__emoji {
+  border: 1px solid $border;
+}
+
+.p-prefs_dialog__section__description {
+  color: $text;
+}

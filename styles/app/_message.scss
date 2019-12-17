@@ -102,6 +102,10 @@
 
 .c-message--starred .c-message__label__icon {
   color: $accent2;
+
+  &.c-icon--bookmark-filled {
+    color: $accent2;
+  }
 }
 
 .c-message--sli_highlight .c-message__label {
@@ -218,18 +222,18 @@
   color: $red;
 }
 
-.c-message__reply_bar--focus,
+.c-message__reply_bar--focus-within,
 .c-message__reply_bar:hover {
   background-color: $contrast;
   border-color: $primaryT;
 }
 
-.c-message__reply_bar--focus .c-message__reply_bar_arrow,
+.c-message__reply_bar--focus-within .c-message__reply_bar_arrow,
 .c-message__reply_bar:hover .c-message__reply_bar_arrow {
   color: $text;
 }
 
-.c-message__reply_bar--focus .c-message__reply_bar_view_thread {
+.c-message__reply_bar--focus-within .c-message__reply_bar_view_thread {
   background-color: $contrast;
 }
 

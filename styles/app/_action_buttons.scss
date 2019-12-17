@@ -37,6 +37,10 @@
   .c-icon--small-star-filled, &:hover .c-icon--small-star-filled {
     color: $yellow;
   }
+
+  .c-icon--bookmark-filled, &:hover .c-icon--bookmark-filled {
+    color: $accent2;
+  }
 }
 
 

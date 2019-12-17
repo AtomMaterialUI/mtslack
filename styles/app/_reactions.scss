@@ -46,8 +46,9 @@ only screen and (min-resolution: 192dpi) {
   color: $primary;
 }
 
-.c-reaction_add {
-  background: transparent;
+.c-reaction_add,
+.c-reaction_expand {
+  background: $button;
 
   &.c-button--focus-visible:focus, &.focus-ring {
     background: $bg;
@@ -84,6 +85,15 @@ only screen and (min-resolution: 192dpi) {
   &:focus .c-reaction_add__icon--bg,
   &:hover .c-reaction_add__icon--bg {
     color: $accent;
+  }
+}
+
+.c-reaction_expand--reacted {
+  background: $active;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $primaryT;
+    background: $hl;
   }
 }
 

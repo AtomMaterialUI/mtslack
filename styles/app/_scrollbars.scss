@@ -19,3 +19,29 @@
     }
   }
 }
+
+.supports_custom_scrollbar .p-dm_browser_dialog__contents .c-select_options_list__virtual_list--slack_scrollbar {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      color: $accent;
+    }
+
+    &::-webkit-scrollbar-track {
+      color: $bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: $bg;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-track {
+      border-left: 4px solid $bg;
+      border-right: 4px solid $bg;
+    }
+  }
+}

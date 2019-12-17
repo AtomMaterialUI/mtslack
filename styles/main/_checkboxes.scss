@@ -64,3 +64,7 @@ input[type=checkbox]:not(.c-toggle__input) {
 .no_touch input[type=checkbox]:hover {
   border-color: transparent;
 }
+
+.c-input_checkbox--focus-visible:focus {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}

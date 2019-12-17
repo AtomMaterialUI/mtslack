@@ -2,11 +2,13 @@
   background-color: $bg;
 }
 
-.p-connected_workspaces__header_description {
+.p-connected_workspaces__header_description,
+.p-manage_shared_channels__header_description {
   color: $text;
 }
 
-.p-connected_workspaces__list {
+.p-connected_workspaces__list,
+.p-manage_shared_channels__list {
   &::-webkit-scrollbar-thumb {
     color: $accent;
   }
@@ -33,23 +35,28 @@
   fill: $bg;
 }
 
-.p-connected_workspaces_row {
+.p-connected_workspaces_row,
+.p-manage_shared_channels_row {
   border-bottom: 1px solid $borderLight;
 
-  &:not(.p-connected_workspaces_row--header):hover {
+  &:not(.p-connected_workspaces_row--header):hover,
+  &:not(.p-manage_shared_channels_row--header):hover {
     background-color: $bg2;
   }
 }
 
-.p-connected_workspaces_row--header {
+.p-connected_workspaces_row--header,
+.p-manage_shared_channels_row--header {
   color: $text;
 }
 
-.p-connected_workspaces_row__workspace_domain {
+.p-connected_workspaces_row__workspace_domain,
+.p-manage_shared_channels_row__workspace_domain {
   color: $text;
 }
 
-.p-connected_workspaces_row__actions {
+.p-connected_workspaces_row__actions,
+.p-manage_shared_channels_row__actions {
   color: $fg;
 
   .active, &:hover {

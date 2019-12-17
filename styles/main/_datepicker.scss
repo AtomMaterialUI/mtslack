@@ -77,6 +77,22 @@
   }
 }
 
+.c-date_range_picker_input__button {
+  border: 1px solid $borderLight;
+  background-color: $bg2;
+
+  &:focus {
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $disabled;
+    border: 1px solid $borderLight;
+  }
+}
+
 .c-date_range_picker_calendar {
   background-color: $bg;
 }
@@ -84,8 +100,9 @@
 .c-date_range_picker_calendar__date {
   border: 1px solid $borderLight;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $tree;
+    color: $selectFg;
   }
 }
 
@@ -107,13 +124,14 @@
 .c-date_range_picker_calendar__date--select_range_end:hover,
 .c-date_range_picker_calendar__date--select_range_start:hover {
   background-color: $primary;
+  color: $selectFg;
 }
 
 .c-date_range_picker_calendar__date--in_selected_range {
   background-color: $accentT;
   border-color: $accentT;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $accent;
   }
 }

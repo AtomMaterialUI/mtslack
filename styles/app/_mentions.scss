@@ -1,6 +1,6 @@
 .c-mention_badge {
-  background: $fg;
-  color: $bg;
+  background: $accent;
+  color: $selectFg;
 }
 
 .c-mention_badge--red {
@@ -9,6 +9,11 @@
 }
 
 .c-mention_badge--white {
+  background: $bg;
+  color: $primary;
+}
+
+.c-mention_badge--black {
   background: $bg;
   color: $primary;
 }

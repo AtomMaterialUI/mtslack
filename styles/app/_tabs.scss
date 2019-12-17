@@ -26,3 +26,23 @@
 .c-tabs__tab_count {
   background-color: $bg2;
 }
+
+.c-tabs__tab_count_placeholder,
+.c-tabs__tab_placeholder {
+  background-color: $bg;
+}
+
+.p-external_directory_item {
+  &:hover {
+    background-color: $active;
+  }
+}
+
+.p-external_directory_item_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-external_directory_item_details_email {
+  color: $text;
+}

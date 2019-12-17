@@ -74,7 +74,7 @@
   color: $disabled;
 }
 
-.p-block-kit-element__error {
+.p-block_kit_element__error {
   color: $text;
 }
 
@@ -106,7 +106,8 @@
   border-bottom: 1px solid $borderLight;
 }
 
-.p-block_kit_renderer_error {
+.p-block_kit_renderer_error,
+.p-top_level_error_element {
   background: $bg2;
   color: $red;
 }
