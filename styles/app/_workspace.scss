@@ -50,6 +50,10 @@
       border-color: $button;
       background: $contrast;
 
+      .ql-composer-sticky {
+        border-color: $borderLight;
+      }
+
       &.focus {
         border-color: $primaryT;
 
@@ -73,6 +77,7 @@
 
 .p-workspace__secondary_view {
   border-left: 1px solid $border;
+  background: $bg;
 }
 
 .p-workspace__boot_failure {

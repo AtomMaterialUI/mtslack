@@ -1,0 +1,19 @@
+.p-recent_page {
+  background: $bg;
+}
+
+.p-recent_page__item {
+  background: $bg;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-recent_page__timestamp {
+  color: $text;
+}
+
+.p-recent_page__conversation__sender {
+  color: $text;
+}

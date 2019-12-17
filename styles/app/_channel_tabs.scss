@@ -15,3 +15,22 @@
     background: $bg;
   }
 }
+
+.p-workspace--feature_message_actions_refresh .c-message_actions__container {
+  background-color: $bg;
+}
+
+.p-workspace--feature_message_actions_refresh .c-message_actions__button {
+  &:active, &:focus {
+    color: $selectFg;
+  }
+
+  &:hover {
+    color: $fg;
+    background: $hl;
+  }
+
+  &:active {
+    background: $active;
+  }
+}

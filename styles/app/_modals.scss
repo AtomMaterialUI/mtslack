@@ -19,3 +19,116 @@
 .c-sk-modal_content--faded:after {
   background: rgba($bg, 0.7);
 }
+
+.p-channel_section_modal_input__clear_icon {
+  color: $text;
+}
+
+.p-channel_section_modal_input__emoji_picker {
+  border-right: 1px solid $borderLight;
+
+  .p-channel_section_modal_input__emoji_circle_icon {
+    color: $yellow;
+  }
+
+  .p-channel_section_modal_input__emoji_happy_icon {
+    color: $fg;
+  }
+}
+
+.p-channel_section_modal_input__empty_emoji {
+  color: $disabled;
+}
+
+.p-channel_section_modal_input__duration_picker--focus-visible {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-channel_section_modal_input__duration_picker_select {
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-webkit-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-moz-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-ms-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::placeholder,
+  .c-input_select__selected_value--placeholder {
+    color: $disabled;
+  }
+}
+
+.p-channel_section_modal_input__custom_expiration_picker {
+  color: $text;
+
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-webkit-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-channel_section_modal_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-moz-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-channel_section_modal_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::-ms-input-placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-channel_section_modal_input__chevron_down,
+  .c-input_select__chevron,
+  .c-input_select__filter_input::placeholder,
+  .c-input_select__selected_value--placeholder,
+  .p-channel_section_modal_input__chevron_down {
+    color: $disabled;
+  }
+}
+
+.p-channel_section_modal_input--for_modern_user_menu .p-channel_section_modal_input__presets,
+.p-channel_section_modal_input--for_team_menu .p-channel_section_modal_input__presets {
+  border-top: 1px solid $borderLight;
+}
+
+.p-channel_section_modal_input__presets_section_header {
+  color: $text;
+}
+
+.p-channel_section_modal_input__dialog {
+  .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+    color: $text;
+  }
+}
+
+.p-channel_section_modal_input__dialog .p-channel_section_modal_input__preset_option {
+  &:focus {
+    background-color: $accent;
+    color: $selectFg;
+
+    &:link, &:visited {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+
+    &:link, &:visited {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+
+  &:focus {
+    .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+      color: $selectFg;
+    }
+  }
+
+  &:hover {
+    .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+      color: $selectFg;
+    }
+  }
+}

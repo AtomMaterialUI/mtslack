@@ -70,3 +70,12 @@
     color: $yellow;
   }
 }
+
+.c-message_actions__button .c-icon--small-star-filled,
+.p-workspace--feature_message_actions_refresh .c-message_actions__button .c-icon--star {
+  color: $yellow;
+}
+
+.c-message_actions__button .c-icon--bookmark-filled {
+  color: $accent;
+}

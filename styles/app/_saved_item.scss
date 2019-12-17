@@ -1,0 +1,43 @@
+.p-saved_item {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-saved_item__file {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $active;
+  }
+}
+
+.p-saved_item_header__permalink {
+  color: $accent2;
+}
+
+.p-saved_page {
+  background: $bg2;
+
+  .c-pillow_file_container {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-stars_page {
+  background: $bg2;
+
+  .c-pillow_file_container {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-files_page__container {
+  background: $bg2;
+}
+
+.p-files_page__filetype {
+  color: $text;
+}
+
+.p-files_page__controls {
+  background: $bg2;
+}

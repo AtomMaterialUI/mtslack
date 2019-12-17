@@ -61,3 +61,30 @@
     background-color: $bg;
   }
 }
+
+.p-app_launcher_banner {
+  &.p-app_launcher_banner--focused, &:hover {
+    background-color: $bg;
+  }
+}
+
+.p-app_launcher_banner__post_script {
+  border-top: 1px solid $border;
+}
+
+.p-app_launcher_filter_trigger {
+  &.active {
+    color: $fg;
+    background: $active;
+  }
+}
+
+.p-app_launcher {
+  .c-filter_input:not(.c-filter_input--active) {
+    border-color: $borderLight;
+  }
+}
+
+.p-activity_page {
+  background: $bg2;
+}

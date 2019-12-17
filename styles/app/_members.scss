@@ -257,8 +257,64 @@ button.p-admin_member_table__menu_item--disabled {
   border-top: 1px solid $border;
 }
 
+.p-directory_page {
+  background: $bg;
+}
+
 .p-directory_page__actions {
   background: $bg;
   border-bottom: 1px solid $borderLight;
   color: $fg;
+}
+
+.p-directory_page__member {
+  background: $bg;
+}
+
+.p-browse_people_page__member {
+  background: $bg;
+}
+
+.p-browse_people_page__member__title {
+  color: $primary;
+}
+
+.p-ia__browse_channels_page {
+  background: $bg2;
+
+  .p-channel_browser__controls {
+    .c-select_button--medium {
+      color: $fg;
+    }
+  }
+
+  .p-channel_browser_list_item {
+    background: $bg;
+    border: 1px solid $borderLight;
+
+    &:not(.p-channel_browser_list_item--disabled):not(.p-channel_browser_list_item--disconnected) {
+      &:active, &:focus, &:hover {
+        border-color: $primary;
+        background: $hl;
+      }
+    }
+  }
+
+  .p-channel_browser_section_header {
+    padding-bottom: 8px;
+  }
+}
+
+.p-ia__browse_dms_page {
+  background: $bg;
+
+  .p-dm_browser_modal__controls_container {
+    background: $button;
+    border-bottom: $border;
+  }
+
+  .p-dm_browser_modal__option {
+    border: 1px solid $border;
+    background: $bg2;
+  }
 }

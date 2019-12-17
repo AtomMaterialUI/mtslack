@@ -109,16 +109,18 @@
   color: $primary;
 }
 
-.c-search__section_header {
+.c-search__section_header, .c-search__section_header--virtualized {
   color: $text;
+}
+
+.c-search__section_header--compact {
+  color: $fg;
 }
 
 
 .c-search__tabs {
   background-color: $contrast;
 }
-
-;
 
 .c-search__tab_new {
   background-color: $bg2;

@@ -19,3 +19,15 @@
 .p-drafts_page__draft_thread_participants {
   color: $text;
 }
+
+.p-drafts_page__draft--focused {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-drafts_page__draft_badge--text {
+  color: $accent2;
+}
+
+.p-drafts_page__draft_badge--icon {
+  color: $fg;
+}

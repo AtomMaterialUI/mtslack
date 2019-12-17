@@ -45,3 +45,19 @@
     }
   }
 }
+
+.supports_custom_scrollbar .p-welcome-place {
+  &::-webkit-scrollbar-thumb {
+    color: $accent;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      color: $accent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}

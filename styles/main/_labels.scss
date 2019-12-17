@@ -22,6 +22,10 @@
 
 .c-message_kit__labels--starred .c-message_kit__labels__icon {
   color: $yellow;
+
+  .c-icon--bookmark-filled {
+    color: $accent2;
+  }
 }
 
 .c-message_kit__labels--broadcast .c-message_kit__labels__icon,

@@ -1,0 +1,129 @@
+.c-message_stats__title_time {
+  color: $text;
+}
+
+.c-message_stats__message_snippet_engagement {
+  color: $fg;
+}
+
+.c-message_stats__legend_icon--viewed {
+  background-color: $purple;
+}
+
+.c-message_stats__legend_icon--clicked {
+  background-color: $primary;
+}
+
+.c-message_stats__legend_icon--reacted {
+  background-color: $green;
+}
+
+.c-message_stats__legend_value--viewed {
+  color: $purple;
+}
+
+.c-message_stats__legend_value--clicked {
+  color: $primary;
+}
+
+.c-message_stats__legend_value--reacted {
+  color: $green;
+}
+
+.c-message_stats__funnel_stats_jumbo_stat_title, .c-message_stats__legend_title {
+  color: $text;
+}
+
+.c-message_stats__activity_bar {
+  background: $bg2;
+}
+
+.c-message_stats__activity_item {
+  color: $fg;
+}
+
+.c-message_stats__activity_item:not(:last-child) {
+  border-right: 1px solid $borderLight;
+}
+
+.c-message_stats__activity_time_series_chart {
+  text {
+    fill: $bg2;
+  }
+
+  .c3-axis path {
+    stroke: $fg;
+  }
+
+  .c3-axis-x-label, .c3-axis-y-label {
+    fill: $accent;
+  }
+
+  .c3-grid line {
+    stroke: $fg;
+  }
+
+  .c3-xgrid-focus line {
+    stroke: $primary;
+  }
+
+  .c3-circles-VIEWS > circle {
+    fill: $purple !important;
+  }
+
+  .c3-lines-VIEWS > path {
+    stroke: $purple !important;
+  }
+
+  .c3-circles-CLICKS > circle {
+    fill: $primary !important;
+  }
+
+  .c3-lines-CLICKS > path {
+    stroke: $primary !important;
+  }
+
+  .c3-circles-REACTIONS > circle {
+    fill: $green !important;
+  }
+
+  .c3-lines-REACTIONS > path {
+    stroke: $green !important;
+  }
+
+  .c3-tooltip {
+    border: 0.5px solid $borderLight;
+
+    td, th, tr {
+      color: $fg;
+      background-color: $bg;
+    }
+
+    th {
+      border-bottom: $borderLight;
+      color: $fg;
+    }
+
+  }
+}
+
+.c-message_stats__viewers_by_department_chart {
+  text {
+    fill: $text;
+    color: $text;
+  }
+}
+
+.c-message_stats__viewers_by_department_chart {
+  .c3-bar {
+    fill: $purple !important;
+  }
+
+  .c3-chart-text .c3-text {
+    fill: $selectFg !important;
+  }
+
+  .c3-grid line {
+    stroke: $fg;
+  }
+}

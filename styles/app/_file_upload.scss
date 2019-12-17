@@ -14,7 +14,8 @@
   color: $button;
 }
 
-.p-multi_file_upload__file_container:hover .p-multi_file_upload__remove_btn:hover .p-multi_file_upload__remove_btn_circle, .p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
+.p-multi_file_upload__file_container:hover .p-multi_file_upload__remove_btn:hover .p-multi_file_upload__remove_btn_circle,
+.p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
   color: $selectFg;
 }
 
@@ -49,6 +50,10 @@
   color: $bg;
 }
 
+.p-file_upload_banner__progress {
+  background: $hl;
+}
+
 .p-file_upload_banner__progress--complete {
   background: $green;
 }
@@ -59,4 +64,54 @@
 
 .p-file_upload_banner__cancel {
   color: $fg;
+}
+
+.p-multi_file_upload__add_file_btn {
+  color: $primary;
+}
+
+.p-multi_file_upload__file_count {
+  color: $fg;
+}
+
+.p-multi_file_upload__file_status_btn {
+  background: $button;
+}
+
+.p-multi_file_upload__file_status_icon--error {
+  color: $red;
+}
+
+.p-multi_file_upload__file_status_icon--remove {
+  color: $text;
+}
+
+.p-email_reply_modal .p-reply_to_email_input,
+.p-multi_file_upload__file_status_icon--remove:hover {
+  color: $selectFg;
+}
+
+.p-email_reply_modal .p-reply_to_email_input {
+  border: 1px solid $hl;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $disabled;
+  }
+}
+
+.p-email_reply_modal {
+  .p-reply_to_email_input {
+    &.ql-disabled {
+      background: rgba($bg, 0.13);
+    }
+  }
+
 }

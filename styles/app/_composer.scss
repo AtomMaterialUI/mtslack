@@ -237,6 +237,12 @@
   background: $bg;
 }
 
+.p-composer_page__subheader {
+  background: $bg;
+  border-bottom: $borderLight;
+}
+
+
 .p-composer_page__header {
   background: $bg;
 }
@@ -343,6 +349,15 @@
 
   .c-message_list__placeholders, .p-composer_page__context_list_divider {
     background-color: $bg;
+  }
+
+
+  .p-composer_page__context_item--top {
+    border-top: 1px solid $borderLight;
+  }
+
+  .p-composer_page__context_item--bottom {
+    border-bottom: 1px solid $borderLight;
   }
 
   .c-virtual_list__item {
