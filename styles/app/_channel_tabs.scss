@@ -11,7 +11,8 @@
 }
 
 .p-workspace--channel-tabs-header {
-  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before {
     background: $bg;
   }
 }

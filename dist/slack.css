@@ -3158,7 +3158,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--accent2);
   background-color: var(--secondBg); }
 
-.c-keyboard_key {
+.c-keyboard_key,
+.c-keyboard_key--dark {
   background: var(--button);
   color: var(--fg);
   border: 1px solid var(--active);
@@ -3370,10 +3371,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   border: 2px dashed var(--border);
   color: var(--disabled); }
 
-.c-channel_name--archived {
+.p-deprecated_channel_name--archived {
   color: var(--text); }
 
-.c-channel_name__team_name {
+.p-deprecated_channel_name__team_name {
   color: var(--text); }
 
 .p-app_permission_dialog .c-dialog__footer {
@@ -3498,6 +3499,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: var(--accent); }
 
 .supports_custom_scrollbar .p-welcome-place:hover::-webkit-scrollbar-thumb {
+  background: var(--accent); }
+
+.c-scrollbar2__thumb {
   background: var(--accent); }
 
 .c-sk-modal_content {
@@ -3824,6 +3828,16 @@ button.p-admin_member_table__menu_item--disabled {
   .p-ia__browse_dms_page .p-dm_browser_modal__option {
     border: 1px solid var(--border);
     background: var(--secondBg); }
+
+.p-browse_page_channel {
+  border-top: 1px solid var(--active); }
+  .p-browse_page_channel:last-child {
+    border-bottom: 1px solid var(--active); }
+  .p-browse_page_channel:not(.p-browse_page_channel--disconnected):active, .p-browse_page_channel:not(.p-browse_page_channel--disconnected):focus, .p-browse_page_channel:not(.p-browse_page_channel--disconnected):hover {
+    background: var(--primary); }
+
+.p-browse_page_channel__justification_icon {
+  color: var(--primary); }
 
 .p-app_external_team_banner {
   background: var(--contrast); }
@@ -4695,6 +4709,9 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
   background: var(--bg);
   border-bottom: var(--active); }
 
+.p-composer_page__subheader--focused {
+  box-shadow: 0 1px 0 0 var(--active), 0 4px 12px -2px rgba(0, 0, 0, 0.08); }
+
 .p-composer_page__header {
   background: var(--bg); }
 
@@ -4783,8 +4800,8 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
 .p-composer_page__context .c-virtual_list__item:nth-last-child(2) .c-message_kit__message, .p-composer_page__context .c-virtual_list__item:nth-last-child(2) .c-message_list__placeholders, .p-composer_page__context .c-virtual_list__item:nth-last-child(2) .p-composer_page__context_list_divider {
   border-bottom: 1px solid var(--active); }
 
-.p-composer_page__context_list_meta {
-  color: var(--text); }
+.p-composer_page--noncontextual {
+  background: var(--secondBg); }
 
 .p-composer_page__message_input.p-message_input--focus-visible .p-message_input_field.focus {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
@@ -5048,6 +5065,10 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
 
 .c-message_stats__viewers_by_department_chart .c3-grid line {
   stroke: var(--fg); }
+
+.c-message_stats__viewers_by_department_chart c3-text.c-message_stats__viewers_by_department_chart__short_text {
+  color: var(--accent) !important;
+  fill: var(--accent) !important; }
 
 .welcome-trial-info__content {
   border: var(--primary);
@@ -5602,6 +5623,15 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
 .p-channel_actions_section .p-channel_details_section__icon {
   color: var(--primary); }
 
+.p-ia__channel_details__header_created {
+  color: var(--fg); }
+
+.p-ia__channel_details__blurb {
+  background-color: var(--bg); }
+
+.p-ia__channel_details__blurb_edit {
+  color: var(--primary); }
+
 .p-ia__channel_details__about {
   background-color: var(--tree); }
 
@@ -5724,6 +5754,9 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--fg); }
 
 .p-shared_channel_invitation_modal__subtitle {
+  color: var(--text); }
+
+.p-shared_channel_orgs_list__org_row_member_count {
   color: var(--text); }
 
 .p-invite_members_form__request_members_reason {
@@ -6203,7 +6236,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .c-search_autocomplete__suggestion_item--selected .c-icon, .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel-membership {
   color: var(--primary); }
 
-.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel .c-channel_name__team_name,
+.c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel .p-deprecated_channel_name__team_name,
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel .c-channel_name__text,
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel .c-deprecated-icon,
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__channel .c-icon--shared-channels {
@@ -6464,7 +6497,10 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-channel_invite_modal__link {
   color: var(--accent2); }
 
-.p-message_pane_input_warning__header {
+.p-message_pane_modal_rooster__header {
+  background: var(--secondBg); }
+
+.p-message_pane_modal_rooster__header--dark {
   background: var(--secondBg); }
 
 .p-wysiwyg_deluxe_toast {
@@ -7400,14 +7436,14 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
   .c-message_group .c-message_group__header:focus a, .c-message_group:hover .c-message_group__header a {
     color: inherit; }
   .c-message_group .c-message_group__header:focus .c-channel_name,
-  .c-message_group .c-message_group__header:focus .c-channel_name__team_name,
+  .c-message_group .c-message_group__header:focus .p-deprecated_channel_name__team_name,
   .c-message_group .c-message_group__header:focus .c-message_group__header_date {
     color: var(--primary); }
   .c-message_group:hover .c-message_group__header .c-channel_name,
-  .c-message_group:hover .c-message_group__header .c-channel_name__team_name,
+  .c-message_group:hover .c-message_group__header .p-deprecated_channel_name__team_name,
   .c-message_group:hover .c-message_group__header .c-message_group__header_date {
     color: var(--primary); }
-  .c-message_group:not(:hover) .c-channel_name__team_name {
+  .c-message_group:not(:hover) .p-deprecated_channel_name__team_name {
     color: var(--text); }
   .c-message_group:hover {
     border-color: var(--border); }
@@ -7441,7 +7477,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .c-search_filter_section .p-file_list__file_type_select {
   border-color: var(--secondBg); }
 
-.c-select_options_list__option--active .c-channel_name .c-channel_name__team_name {
+.c-select_options_list__option--active .c-channel_name .p-deprecated_channel_name__team_name {
   color: var(--fg); }
 
 .p-search_filter__close {
@@ -7943,16 +7979,19 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
   .p-classic_nav__model__title__info__tab--active:after {
     background: var(--accent); }
 
-.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider,
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
   background: var(--bg);
   color: var(--fg); }
 
-.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before {
   background: var(--bg);
   box-shadow: 0 32px var(--bg);
   height: 0; }
 
-.p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before {
+.p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+.p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before {
   border-bottom: 1px solid var(--active);
   background: var(--secondBg);
   box-shadow: 0 32px var(--bg); }
@@ -8618,7 +8657,7 @@ a.p-workflow_builder_deluxe_toast__link {
 
 .p-multi_file_upload__container {
   min-width: 100%; }
-  .p-multi_file_upload__container .p-galler_scroller__wrapper {
+  .p-multi_file_upload__container .p-gallery_scroller__wrapper {
     background: var(--secondBg);
     border: 1px solid var(--secondBg);
     border-radius: 4px; }
@@ -9996,7 +10035,8 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   .p-channel_tabs__header .p-classic_nav__model__title__info__tab--active {
     color: var(--primary); }
 
-.p-workspace--channel-tabs-header .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+.p-workspace--channel-tabs-header .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+.p-workspace--channel-tabs-header .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before {
   background: var(--bg); }
 
 .p-workspace--feature_message_actions_refresh .c-message_actions__container {
@@ -10014,6 +10054,9 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 
 .p-client {
   background: var(--secondBg); }
+
+.p-client_desktop--ia-top-nav .p-prefs_dialog--peek_sidebar:after {
+  background: linear-gradient(180deg, var(--secondBg) 0, var(--secondBg) 39px, transparent 40px); }
 
 .p-page_accordion__button {
   border-bottom: 1px solid var(--border); }
@@ -10080,9 +10123,6 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 
 .p-ia__view_header__metadata, .p-ia__view_header__subtitle {
   color: var(--text); }
-
-.p-ia__view_header__metadata_divider {
-  color: var(--active); }
 
 .p-ia__view_header__details {
   color: var(--text); }

@@ -1,12 +1,14 @@
 .p-message_pane {
   .c-message_list {
     &.c-virtual_list--scrollbar > .c-scrollbar__hider,
+    &.c-virtual_list--scrollbar > .c-scrollbar2__hider,
     &:not(.c-virtual_list--scrollbar) {
       background: $bg;
       color: $fg;
     }
 
     &.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+    &.c-virtual_list--scrollbar > .c-scrollbar2__hider:before,
     &:not(.c-virtual_list--scrollbar):before {
       background: $bg;
       box-shadow: 0 32px $bg;
@@ -19,6 +21,7 @@
   .p-message_pane__top_banners {
     &:not(:empty) + div .c-message_list {
       &.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+      &.c-virtual_list--scrollbar > .c-scrollbar2__hider:before,
       &:not(.c-virtual_list--scrollbar):before {
         border-bottom: 1px solid $borderLight;
         background: $bg2;

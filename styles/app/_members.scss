@@ -318,3 +318,21 @@ button.p-admin_member_table__menu_item--disabled {
     background: $bg2;
   }
 }
+
+.p-browse_page_channel {
+  border-top: 1px solid $borderLight;
+
+  &:last-child {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  &:not(.p-browse_page_channel--disconnected) {
+    &:active, &:focus, &:hover {
+      background: $primary;
+    }
+  }
+}
+
+.p-browse_page_channel__justification_icon {
+  color: $primary;
+}

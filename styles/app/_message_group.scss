@@ -12,7 +12,7 @@
 
   .c-message_group__header:focus {
     .c-channel_name,
-    .c-channel_name__team_name,
+    .p-deprecated_channel_name__team_name,
     .c-message_group__header_date {
       color: $primary;
     }
@@ -20,13 +20,13 @@
 
   &:hover .c-message_group__header {
     .c-channel_name,
-    .c-channel_name__team_name,
+    .p-deprecated_channel_name__team_name,
     .c-message_group__header_date {
       color: $primary;
     }
   }
 
-  &:not(:hover) .c-channel_name__team_name {
+  &:not(:hover) .p-deprecated_channel_name__team_name {
     color: $text;
   }
 

@@ -1,3 +1,10 @@
 .p-client {
   background: $bg2;
 }
+
+.p-client_desktop--ia-top-nav .p-prefs_dialog--peek_sidebar {
+  &:after {
+    background: linear-gradient(180deg, $bg2 0, $bg2 39px, transparent 40px);
+  }
+
+}

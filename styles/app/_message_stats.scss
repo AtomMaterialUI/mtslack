@@ -126,4 +126,9 @@
   .c3-grid line {
     stroke: $fg;
   }
+
+  c3-text.c-message_stats__viewers_by_department_chart__short_text {
+    color: $accent !important;
+    fill: $accent !important;
+  }
 }
