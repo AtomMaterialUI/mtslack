@@ -27,6 +27,13 @@
     "material",
     "themes"
   ],
+  "files": [
+    "/bin",
+    "/plugins/*.js",
+    "/includes/*.js",
+    "/dist/*",
+    "/lib/*"
+  ],
   "bugs": {
     "url": "https://github.com/mallowigi/slack-themes/issues"
   },
