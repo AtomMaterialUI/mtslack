@@ -55,37 +55,11 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 # Installation
 
-**IMPORTANT NOTE**
+### Global installation (works anywhere)
 
-> This application tampers with the installed Slack application. Therefore, it is **HEAVILY RECOMMENDED** to do a backup copy of Slack before running the app.
-
-#### For MacOS
-
-Go to your Applications folder, find the `Slack.app`, then copy and paste to create the backup. To restore, simply delete the `Slack.app` and copy back from the backup (or simply redownload it).
-
-#### For Linux
-
-The Slack folder is located in `/usr/lib/slack` (at least in Ubuntu). Copy this folder and create a copy in your home directory. To restore, either do `sudo mv /home/slack /usr/lib` or redownload it.
-
-### From the self-executable
-
-- Clone this repository
-- Make sure you have nodejs installed
-- Run the self-executable:
-
-```
-./main
-```
-
-If you encounter an error, such as this one,
-```
-operation not permitted, copyfile '/Applications/Slack.app/Contents/Resources/app.asar'
-```
-try running the self-executable in sudo mode.
-
-```
-sudo ./main
-```
+1. Run `npm install -g @mallowigi/slack-themes` in a terminal
+2. Run the command `mtslack`
+3. PROFIT!!!
 
 - You will be prompted with a menu with two options:
   - Apply Theme
