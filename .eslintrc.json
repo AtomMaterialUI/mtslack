@@ -1,0 +1,51 @@
+{
+  "plugins": ["node", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-process-exit": 0
+  },
+  "overrides": [
+    {
+      "files": "**/*.test.js",
+      "rules": {
+        "node/no-unpublished-require": 0,
+        "node/no-missing-require": 0
+      }
+    },
+    {
+      "files": "src/functions-templates/**/*.js",
+      "rules": {
+        "node/no-unsupported-features/es-syntax": 0,
+        "node/no-unsupported-features/es-builtins": 0,
+        "node/no-unsupported-features/node-builtins": 0,
+        "node/no-missing-require": 0,
+        "node/shebang": 0
+      }
+    }
+  ]
+}

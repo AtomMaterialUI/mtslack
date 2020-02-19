@@ -1,31 +1,58 @@
 {
-  "name": "slack-themes",
+  "name": "@mallowigi/slack-themes",
   "version": "2.0.0",
   "description": "Slack themes for slack",
-  "main": "index.js",
+  "main": "main.js",
+  "bin": {
+    "mtslack": "./main.js"
+  },
   "scripts": {
+    "start": "node ./bin/mtslack",
     "apply": "sudo npx ./main.js",
     "windows": "npx ./main.js",
     "build": "gulp styles",
     "debug": "gulp debugStyles"
   },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mallowigi/slack-themes.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Elior (Mallowigi) Boukhobza",
+  "license": "Apache License 2.0",
+  "keywords": [
+    "slack",
+    "material",
+    "themes"
+  ],
   "bugs": {
     "url": "https://github.com/mallowigi/slack-themes/issues"
   },
   "homepage": "https://github.com/mallowigi/slack-themes#readme",
-  "devDependencies": {
+  "dependencies": {
     "asar": "^2.0.1",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "configstore": "^5.0.0",
     "figlet": "^1.2.3",
+    "inquirer": "^6.5.0",
+    "js-yaml": "^3.13.1",
+    "minimist": "^1.2.0",
+    "rimraf": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "gulp": "^4.0.2",
     "gulp-browser-js-include": "0.0.7",
     "gulp-butternut": "^1.0.0",
@@ -35,11 +62,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "inquirer": "^6.5.0",
-    "js-yaml": "^3.13.1",
-    "minimist": "^1.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
     "npx": "^10.2.0",
-    "rimraf": "latest"
-  },
-  "dependencies": {}
+    "prettier": "^1.19.1"
+  }
 }
