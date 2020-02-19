@@ -8,6 +8,8 @@
   },
   "scripts": {
     "start": "node ./bin/mtslack",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
     "apply": "sudo npx ./main.js",
     "windows": "npx ./main.js",
     "build": "gulp styles",

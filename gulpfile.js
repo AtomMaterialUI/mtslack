@@ -2,8 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
-const butternut = require('gulp-butternut');
-const replace = require('gulp-replace');
 const fileInclude = require('gulp-browser-js-include');
 
 const paths = {
