@@ -227,7 +227,7 @@ other:
     foreground: '#F8F8F2'
     text: '#6272A4'
     selectBg: '#44475A'
-    selectFg: '#8BE9FD'
+    selectFg: '#FFFFFF'
     selectFg2: '#8BE9FD'
     button: '#393C4B'
     second: '#282A36'
