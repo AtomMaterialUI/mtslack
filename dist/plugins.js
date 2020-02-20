@@ -339,7 +339,7 @@ ${plugin.desc}
       this.sidebarLoaded = !!document.querySelector('.p-channel_sidebar__static_list');
 
       if (this.sidebarLoaded) {
-        this.$sideBar = document.querySelector('.p-channel_sidebar__static_list');
+        this.$sideBar = document.querySelector('.p-channel_sidebar__static_list .c-scrollbar__hider');
         this._insertPluginSection();
         this.initPlugins();
         clearInterval(this.interval);
