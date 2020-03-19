@@ -95,3 +95,35 @@ a.label {
     border-width: 2px;
   }
 }
+
+.sk_highlight {
+  color: $selectFg;
+}
+
+.sk_highlight_bg {
+  background: $hl;
+}
+
+.sk_highlight_hover {
+  color: $primary;
+}
+
+.sk_highlight_hover_bg {
+  background-color: $selectBg;
+}
+
+.sk_highlight_accent {
+  color: $accent;
+}
+
+.sk_highlight_accent_bg {
+  background-color: $selectBg;
+}
+
+.sk_secondary_highlight {
+  color: $selectFg;
+}
+
+.sk_secondary_highlight_bg {
+  background-color: $hl;
+}

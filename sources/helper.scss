@@ -127,11 +127,13 @@
 
 .clearfix {
   *zoom: 1;
+
   &:after, &:before {
     display: table;
     line-height: 0;
     content: "";
   }
+
   &:after {
     clear: both;
   }
@@ -861,23 +863,24 @@
 }
 
 .bordered {
-  border: 1px solid #ddd;
+  --saf-0:rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
 }
 
 .border_top {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .border_right {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .border_bottom {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .border_left {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .inner_shadow {
@@ -1070,25 +1073,27 @@
 
 @keyframes c-highlight {
   0% {
-    background: #fcf4da;
+    background: rgba(242, 199, 68, 0.1);
   }
 
   to {
-    background: #fff;
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   }
 }
 
-
 .elevation_1 {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  --saf-0:rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .elevation_2 {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  --saf-0:rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
 }
 
 .elevation_3 {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 18px 48px 0 rgba(0, 0, 0, 0.08);
+  --saf-0:rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 18px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .transparent {
@@ -1100,51 +1105,51 @@
 }
 
 .sk_black, .sk_primary_foreground {
-  color: #1d1c1d;
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }
 
 .sk_black_bg, .sk_inverted_background {
-  background-color: #1d1c1d;
+  background-color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
 }
 
 .sk_dark_gray, .sk_dark_grey, .sk_foreground_max_solid {
-  color: #616061;
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
 }
 
 .sk_dark_gray_bg, .sk_dark_grey_bg .sk_foreground_max_solid_bg {
-  background-color: #616061;
+  background-color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
 }
 
 .sk_foreground_high_solid, .sk_light_gray, .sk_light_grey {
-  color: #868686;
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
 }
 
 .sk_foreground_high_solid_bg, .sk_light_gray_bg, .sk_light_grey_bg {
-  background-color: #868686;
+  background-color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
 }
 
 .sk_foreground_low_solid, .sk_soft_gray, .sk_soft_grey {
-  color: #ddd;
+  color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
 }
 
 .sk_foreground_low_solid_bg, .sk_soft_gray_bg, .sk_soft_grey_bg {
-  background-color: #ddd;
+  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
 }
 
 .sk_foreground_min_solid, .sk_off_white {
-  color: #f8f8f8;
+  color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
 }
 
 .sk_foreground_min_solid_bg, .sk_off_white_bg {
-  background-color: #f8f8f8;
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
 }
 
 .sk_inverted_foreground, .sk_white {
-  color: #fff;
+  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
 }
 
 .sk_primary_background, .sk_white_bg {
-  background-color: #fff;
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
 }
 
 .sk_white_always {
@@ -1172,35 +1177,35 @@
 }
 
 .sk_highlight {
-  color: #1264a3;
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }
 
 .sk_highlight_bg {
-  background-color: #1264a3;
+  background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }
 
 .sk_highlight_hover {
-  color: #0b4c8c;
+  color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
 }
 
 .sk_highlight_hover_bg {
-  background-color: #0b4c8c;
+  background-color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
 }
 
 .sk_highlight_accent {
-  color: #1d9bd1;
+  color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
 }
 
 .sk_highlight_accent_bg {
-  background-color: #1d9bd1;
+  background-color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
 }
 
 .sk_secondary_highlight {
-  color: #f2c744;
+  color: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
 }
 
 .sk_secondary_highlight_bg {
-  background-color: #f2c744;
+  background-color: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
 }
 
 .sk_aubergine {
@@ -1225,6 +1230,14 @@
 
 .sk_reddish_orange_bg {
   background-color: #de4e2b;
+}
+
+.sk_sapphire_blue {
+  color: #1264a3;
+}
+
+.sk_sapphire_blue_bg {
+  background-color: #1264a3;
 }
 
 .sk_indigo {
@@ -1283,84 +1296,8 @@
   background-color: #007a5a;
 }
 
-.sk_link_blue {
-  color: #1264a3;
-}
-
-.sk_link_blue_bg {
-  background-color: #1264a3;
-}
-
-.sk_hover_blue {
-  color: #0b4c8c;
-}
-
-.sk_hover_blue_bg {
-  background-color: #0b4c8c;
-}
-
-.sk_fill_blue {
-  color: #1d9bd1;
-}
-
-.sk_fill_blue_bg {
-  background-color: #1d9bd1;
-}
-
-.sk_sapphire_blue {
-  color: #1264a3;
-}
-
-.sk_sapphire_blue_bg {
-  background-color: #1264a3;
-}
-
-.sk_pale_blue {
-  color: #e8f5fa;
-}
-
-.sk_pale_blue_bg {
-  background-color: #e8f5fa;
-}
-
-.sk_seafoam_green {
-  color: #007a5a;
-}
-
-.sk_seafoam_green_bg {
-  background-color: #007a5a;
-}
-
 .sk_warning_red {
   color: #e01e5a;
-}
-
-.sk_warning_red_bg {
-  background-color: #e01e5a;
-}
-
-.sk_pin_orange {
-  color: #e8912d;
-}
-
-.sk_pin_orange_bg {
-  background-color: #e8912d;
-}
-
-.sk_colonel_mustard {
-  color: #de4e2b;
-}
-
-.sk_colonel_mustard_bg {
-  background-color: #de4e2b;
-}
-
-.sk_star_yellow {
-  color: #f2c744;
-}
-
-.sk_star_yellow_bg {
-  background-color: #f2c744;
 }
 
 .i18n_wordwrap {
@@ -1368,19 +1305,19 @@
 }
 
 .top_border {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .right_border {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .bottom_border {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .left_border {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
 }
 
 .no_margin {
