@@ -4,7 +4,7 @@
   "description": "Slack themes for slack",
   "main": "main.js",
   "bin": {
-    "mtslack": "./main.js"
+    "mtslack": "sudo ./main.js"
   },
   "scripts": {
     "start": "node ./bin/mtslack",
