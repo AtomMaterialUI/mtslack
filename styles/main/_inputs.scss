@@ -192,6 +192,14 @@ textarea {
   }
 }
 
+.c-input_text--with_inline_alert {
+  border-color: $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
 .c-input_character_count__characters-remaining {
   color: $text;
   background: $bg;

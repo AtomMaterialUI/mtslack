@@ -68,3 +68,36 @@
 .p-draft_image_file {
   background-color: $bg;
 }
+
+
+.p-pending_requests_v2_channel_card {
+  border: 1px solid $borderLight;
+}
+
+.p-pending_requests_v2_header {
+  background-color: $bg2;
+}
+
+.p-pending_requests_v2_footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-pending_requests_v2_request_date {
+  color: $text;
+}
+
+.p-pending_requests_v2_acted_on_state {
+  border-top: 1px solid $borderLight;
+}
+
+.p-pending_requests_v2_acted_on_subtext {
+  color: $text;
+}
+
+.p-pending_requests_v2_accept_icon {
+  color: $accent2;
+}
+
+.p-pending_requests_v2_decline_icon {
+  color: $red;
+}

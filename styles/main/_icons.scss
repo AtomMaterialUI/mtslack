@@ -12,6 +12,18 @@
   }
 }
 
+.c-icon--filetype-large {
+  width: 60px;
+
+  &:before {
+    color: $accent;
+  }
+
+  &:after {
+    background-color: $accent;
+  }
+}
+
 .c-icon--filetype-small {
   &:before {
     color: $accent;

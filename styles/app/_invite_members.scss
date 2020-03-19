@@ -6,7 +6,6 @@
   color: $primary;
 }
 
-
 .p-invite_members_form__sent_invites_header_cell--successful {
   border-bottom: 2px solid $green;
 }
@@ -56,6 +55,13 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   }
 }
 
+.p-invite_members_form__google_directory_group {
+  background-color: $bg2;
+}
+
+.p-invite_members_form__add_row_and_bulk_button_disabled {
+  color: $disabled;
+}
 
 .p-select_invite_type__link--subtitle {
   color: $text;
@@ -76,7 +82,6 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     color: $disabled;
   }
 }
-
 
 .p-select_invite_type__link--disabled {
   .p-select_invite_type__link--subtitle, h2 {
@@ -99,7 +104,6 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-invite_users_input__label_error {
   color: $red;
 }
-
 
 .p-invite_users_input__input_subtext {
   color: $text;

@@ -141,6 +141,10 @@
 
 .c-select_button--invalid {
   border-color: $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red;, 0 0 0 5px $red;
+  }
 }
 
 .c-select_button--text-select {

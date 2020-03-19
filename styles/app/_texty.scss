@@ -20,6 +20,10 @@
       color: $disabled;
     }
   }
+
+  &.c-texty_input--double_decker.focus:after, &.c-texty_input--expanded.focus:after {
+    background-color: $primary;
+  }
 }
 
 .c-texty_autocomplete {
@@ -108,6 +112,19 @@
   }
 }
 
+.sk-client-scheme--purple .c-icon_button.c-texty_input__button--send {
+  background: $accentT;
+
+  &:hover {
+    background: $accent;
+  }
+
+  &.c-texty_input__button--disabled {
+    background: $button;
+    color: $disabled;
+  }
+}
+
 .c-texty_workflow_token {
 
   > button {
@@ -122,12 +139,12 @@
   &.is-missing {
     > button {
       color: $red;
-      background: rgba(224, 30, 90, 0.1);
-      border: 1px solid rgba(224, 30, 90, 0.15);
+      background: $button;
+      border: 1px solid $button;
 
       &:hover {
-        background: rgba(224, 30, 90, 0.1);
-        border: 1px solid rgba(224, 30, 90, 0.15);
+        background: $active;
+        border: 1px solid $active;
       }
     }
 
@@ -138,3 +155,5 @@
     color: $fg;
   }
 }
+
+

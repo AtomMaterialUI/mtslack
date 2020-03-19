@@ -89,6 +89,7 @@
   }
 }
 
+.sk-client-scheme--purple .c-button--primary,
 .c-button--primary {
   background: $accent;
   color: $selectFg;
@@ -104,6 +105,18 @@
 
   &:active {
     background: $accent;
+  }
+
+  &.c-button--disabled {
+    background: $bg;
+    color: $disabled;
+    border-color: $disabled;
+
+    &:active, &:hover {
+      background: $active;
+      color: $fg;
+      border-color: $active;
+    }
   }
 }
 
@@ -155,6 +168,7 @@
   }
 }
 
+.sk-client-scheme--purple .c-button--outline-primary,
 .sk-client-theme--dark .c-button--outline-primary,
 .c-button--outline-primary {
   background: transparent;
@@ -193,6 +207,18 @@
   &:hover {
     background: $red;
     color: $selectFg;
+  }
+
+  &.c-button--disabled {
+    background: $bg;
+    color: $red2;
+    border-color: $red2;
+
+    &:active, &:hover {
+      background: $active;
+      color: $fg;
+      border-color: $active;
+    }
   }
 }
 

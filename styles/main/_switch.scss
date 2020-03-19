@@ -1,0 +1,56 @@
+.c-switch__input {
+  border: 1px solid $button;
+  background-color: $contrast;
+}
+
+.c-switch__visual {
+  &:after {
+    background-color: $bg;
+  }
+}
+
+.c-switch__input:checked {
+  background-color: $accent;
+
+  + .c-switch__visual {
+    &:before {
+      color: $selectFg;
+    }
+
+    &:after {
+      background-color: $selectFg;
+    }
+  }
+}
+
+.sk-client-scheme--purple .c-switch__input:checked {
+  background-color: $accent2;
+}
+
+.c-switch__input {
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &:hover {
+    border-color: $hl;
+  }
+
+  &:disabled {
+    background-color: $bg;
+
+    + .c-switch__visual {
+      &:before {
+        color: $disabled;
+      }
+
+      &:after {
+        background-color: $fg;
+      }
+    }
+  }
+}

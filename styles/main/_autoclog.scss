@@ -1,0 +1,33 @@
+.autoclog__viewer_icon {
+  &:before {
+    border: 2px solid $primary;
+    background-color: $bg2;
+  }
+}
+
+.autoclog__viewer_details {
+  background: $button;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.autoclog_send_viewer__clog {
+  background: $button;
+  color: $primary;
+}
+
+.autoclog_send_viewer {
+  .c-toggle__input {
+    background: $button;
+
+    &:checked {
+      background: $primary;
+    }
+  }
+}
+
+@keyframes clog {
+  0% {
+    box-shadow: 0 0 15px 5px $active;
+  }
+}

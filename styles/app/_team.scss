@@ -1,0 +1,13 @@
+.p-team_row--actionable {
+  &.p-team_row--active, &:active, &:focus, &:hover {
+    background-color: $active;
+  }
+}
+
+.p-team_row__additional_info {
+  color: $text;
+}
+
+.p-team_row__disconnect_button {
+  background-color: $button;
+}

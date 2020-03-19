@@ -82,3 +82,15 @@
   background: $bg2;
 }
 
+
+.p-channel_share_channel_paywall_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_paywall_modal__learn_more {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+  }
+}

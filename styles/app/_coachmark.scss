@@ -22,6 +22,16 @@
   }
 }
 
+.c-coachmark--bottom-left {
+  &:after {
+    border-bottom-color: $bg2;
+  }
+
+  &:before {
+    border-bottom-color: $borderLight;
+  }
+}
+
 .c-coachmark--left {
   &:after {
     border-left-color: $bg2;

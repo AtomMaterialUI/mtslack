@@ -195,6 +195,8 @@
   }
 }
 
+.sk-client-scheme--purple .p-emoji_picker__group_tab--active,
+.sk-client-theme--dark.sk-client-scheme--purple .p-emoji_picker__group_tab--active,
 .p-emoji_picker__group_tab--active {
   background: $active;
   border-bottom: 3px solid $accent;

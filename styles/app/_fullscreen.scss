@@ -19,7 +19,7 @@
   background: $primary;
 }
 
-@keyframes color_fade {
+@keyframes c-fullscreen_modal_breadcrumb_header--color_fade {
   0% {
     color: $text;
   }
@@ -39,7 +39,7 @@
   background-color: $bg;
 }
 
-.c-fullscreen_modal__content--with_frameless_padding {
+body:not(.p-client_desktop--ia-top-nav) .c-fullscreen_modal__content--with_frameless_padding {
   &:before {
     background-color: $bg;
     box-shadow: 0 1px 0 0 $bg2;

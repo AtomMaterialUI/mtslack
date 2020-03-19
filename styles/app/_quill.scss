@@ -78,6 +78,12 @@
       background-color: $active;
     }
 
+    &.focus {
+      .ql-attachments, .ql-files {
+        box-shadow: 0 -1px 0 0 $borderLight;
+      }
+    }
+
     ::-moz-selection, ::selection {
       background-color: $selectBg;
       color: $selectFg;
@@ -95,6 +101,25 @@
   }
 
   .ql-editor {
+    .ql-code-block {
+      border-left: 1px solid $borderLight;
+      border-right: 1px solid $borderLight;
+      background: $contrast;
+
+      &:after {
+        background: $contrast;
+        border-bottom: 1px solid $borderLight;
+        border-left: 1px solid $borderLight;
+        border-right: 1px solid $borderLight;
+      }
+    }
+
+    > {
+      .ql-code-block:first-child, :not(.ql-code-block) + .ql-code-block {
+        border-top: 1px solid $borderLight;
+      }
+    }
+
     ul {
       &[data-checked=false] > li:before {
         color: $button;
@@ -185,6 +210,10 @@
   }
 }
 
+.sk-client-theme--dark .c-icon_button.c-texty_input__button--emoji:hover .c-icon {
+  color: $selectFg;
+}
+
 .c-texty_workflow_token {
   > button {
     background: $button;
@@ -219,6 +248,10 @@
 
 .c-texty_input.c-texty_input--invalid {
   border-color: $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
 
   &.c-texty_input--use_focus_ring.focus {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;

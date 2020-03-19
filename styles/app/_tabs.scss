@@ -2,6 +2,8 @@
   box-shadow: inset 0 -1px 0 0 $borderLight;
 }
 
+.sk-client-theme--dark.sk-client-scheme--purple .c-tabs__tab,
+.sk-client-scheme--purple .c-tabs__tab,
 .c-tabs__tab {
   color: $text;
 
@@ -45,4 +47,13 @@
 
 .p-external_directory_item_details_email {
   color: $text;
+}
+
+
+.p-external_directory_footer_link {
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+  }
 }
