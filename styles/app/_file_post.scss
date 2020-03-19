@@ -3,6 +3,10 @@
 }
 
 
+.sk-client-theme--dark .c-pillow_file__post__content code {
+  color: $orange;
+}
+
 .c-pillow_file__post__content {
   hr {
     border-top: 1px solid $borderLight;

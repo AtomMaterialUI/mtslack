@@ -99,6 +99,22 @@
 
 }
 
+.c-pillow_file_container--active_download {
+  background-color: $accent2;
+
+  .c-pillow_file__description, .c-pillow_file__title {
+    color: $primary;
+  }
+}
+
+.c-pillow_file_container--download .c-pillow_file__slide {
+  background: $bg;
+}
+
+.c-pillow_file--active_download .c-pillow_file__slide {
+  background: $accent2;
+}
+
 .c-pillow_file__header {
   &:link {
     &:focus, &:hover {

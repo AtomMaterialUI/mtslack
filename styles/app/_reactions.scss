@@ -113,3 +113,80 @@ only screen and (min-resolution: 192dpi) {
 .c-message_kit__replies_count {
   color: $text;
 }
+
+.c-reaction_reactji-pulse {
+  &:before {
+    background: $yellow;
+  }
+
+  &:after {
+    box-shadow: 0 0 4px 2px $yellow;
+  }
+}
+
+.c-reaction_reactji-pulse .c-reaction_pulse {
+  background: $fg;
+}
+
+@keyframes c-reaction-pulse {
+  0% {
+    box-shadow: none;
+  }
+
+  5% {
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  10%,
+  50% {
+    background: $bg2;
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  95%,
+  to {
+    box-shadow: none;
+  }
+}
+
+.c-reaction_bar--dark {
+  .c-reaction_add__note {
+    background: $bg2;
+    color: $orange;
+
+    &:focus, &:hover {
+      box-shadow: inset 0 0 0 1px $orange;
+    }
+  }
+
+  .c-reaction_reactji-pulse {
+    &:before {
+      background: $bg2;
+    }
+
+    &:after {
+      box-shadow: 0 0 4px 2px $bg2;
+    }
+  }
+}
+
+@keyframes c-reaction-pulse-dark {
+  0% {
+    box-shadow: none;
+  }
+
+  5% {
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  10%,
+  50% {
+    background: $bg2;
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  95%,
+  to {
+    box-shadow: none;
+  }
+}

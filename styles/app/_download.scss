@@ -8,7 +8,7 @@
   }
 }
 
-@keyframes highlighter {
+@keyframes p-download_item--highlighter {
   0% {
     background: transparent;
   }
@@ -145,4 +145,17 @@
   &:hover {
     color: $primary;
   }
+}
+
+.p-downloads_modal__title__clear:after {
+  background: $active;
+}
+
+
+.p-download_toast__progress_outer {
+  background: $button;
+}
+
+.p-download_toast__progress_inner {
+  background: $accent;
 }

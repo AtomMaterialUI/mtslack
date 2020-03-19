@@ -42,7 +42,6 @@ a.c-sidebar_menu__list_item {
   color: $accent2 !important;
 }
 
-
 .p-channel_sidebar--global_nav_layout:after {
   background: $bg !important;
 }
@@ -77,6 +76,14 @@ a.c-sidebar_menu__list_item {
 .p-channel_sidebar {
   background: $contrast !important;
   color: $fg !important;
+}
+
+.p-channel_sidebar__channel_section_select_menu--checked {
+  color: $primary;
+
+  .c-menu_item__icon {
+    color: $primary;
+  }
 }
 
 .p-channel_sidebar__channel,
@@ -288,7 +295,6 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
-
 .p-team_sidebar,
 .p-team_sidebar--frameless::before {
   background: $bg !important;
@@ -357,7 +363,6 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
   box-shadow: 0 0 0 3px $bg, 0 0 0 6px $primary !important;
 }
 
-
 .p-channel_sidebar__compose_button {
   box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight
 }
@@ -381,3 +386,25 @@ input[type="text"].p-channel_sidebar__folder_heading_label_rename:hover {
 div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
+
+.p-channel_sidebar__invite_prompt__container {
+  background-color: $hl;
+}
+
+.p-channel_sidebar__custom_sections_alert {
+  border: 1px solid $borderLight;
+}
+
+.p-channel_sidebar__custom_sections_copy_container {
+
+  .p-channel_sidebar__custom_sections_copy_container__description {
+    color: $text;
+  }
+}
+
+
+.p-channel_sidebar__custom_sections_copy_header__heading__badge {
+  color: $selectFg;
+  background-color: $accent;
+}
+

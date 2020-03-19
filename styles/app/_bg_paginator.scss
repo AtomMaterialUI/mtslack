@@ -1,0 +1,26 @@
+.p-bp__paginator__arrow_btn {
+  &:disabled {
+    color: $disabled;
+
+    &:active, &:hover {
+      background: none;
+      color: $fg;
+    }
+  }
+}
+
+.p-bp__paginator__page_btn {
+  color: $fg;
+
+  &:not(.p-bp__paginator__page_btn--active) {
+    &:active, &:focus, &:hover {
+      color: $selectFg;
+      background-color: $accent;
+    }
+  }
+}
+
+.p-bp__paginator__page_btn--active {
+  color: $selectFg;
+  background-color: $accent;
+}

@@ -2,6 +2,12 @@
   color: $text;
 }
 
+.c-message_stats__message_snippet_text--collapsed {
+  &:after {
+    background: $bg;
+  }
+}
+
 .c-message_stats__message_snippet_engagement {
   color: $fg;
 }
@@ -34,7 +40,20 @@
   color: $text;
 }
 
-.c-message_stats__activity_bar {
+.c-message_stats__funnel_counts {
+  color: $text;
+}
+
+.c-message_stats__funnel_counts_jumbo_stat {
+  border-right: 1px solid $borderLight;
+}
+
+.c-message_stats__funnel_counts_jumbo_stat_value {
+  color: $accent;
+}
+
+.c-message_stats__activity_bar,
+.c-message_stats__client_summary_bar {
   background: $bg2;
 }
 
@@ -42,11 +61,17 @@
   color: $fg;
 }
 
+.c-message_stats__activity_item:not(:last-child),
+.c-message_stats__client_summary_item:not(:last-child) {
+  border-right: 1px solid $primary;
+}
+
 .c-message_stats__activity_item:not(:last-child) {
   border-right: 1px solid $borderLight;
 }
 
-.c-message_stats__activity_time_series_chart {
+.c-message_stats__activity_time_series_chart,
+.c-message_stats__activity_time_series_chart_legacy {
   text {
     fill: $bg2;
   }
@@ -105,6 +130,15 @@
     }
 
   }
+
+  .c-message_stats__activity_time_series__tooltip {
+    color: $selectFg;
+    background-color: $contrast;
+
+    span {
+      color: $text;
+    }
+  }
 }
 
 .c-message_stats__viewers_by_department_chart {
@@ -130,5 +164,30 @@
   c3-text.c-message_stats__viewers_by_department_chart__short_text {
     color: $accent !important;
     fill: $accent !important;
+  }
+}
+
+.c-message_stats__activity_range_option {
+  color: $text;
+
+  &:visited {
+    color: $accent2;
+  }
+
+}
+
+.c-message_stats__activity_range_option--selected {
+  color: $selectFg;
+  border-bottom: 1px solid $accent;
+}
+
+.c-message_stats__activity_time_series_chart__y_label {
+  background: $bg;
+  color: $fg;
+}
+
+.c-message_stats__activity_time_series_chart {
+  text {
+    fill: $primary;
   }
 }

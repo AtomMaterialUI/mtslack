@@ -22,7 +22,6 @@
   border-top: 1px solid $border;
 }
 
-
 .p-app_profile_flexpane_header {
   background: linear-gradient(136.53deg, $bg2, $hl), linear-gradient(312.01deg, $fg, $text);
   background-color: $bg2;
@@ -83,4 +82,9 @@
 
 .p-app_profile_flexpane__slash_command__description {
   color: $text;
+}
+
+.profile__card__container {
+  background-color: $bg;
+  border: 1px solid $borderLight;
 }

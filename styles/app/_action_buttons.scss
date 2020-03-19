@@ -53,6 +53,10 @@
   }
 }
 
+.c-message_actions__button-hover--text {
+  color: $text;
+}
+
 .c-message_actions__button {
   color: $text;
   border-right: 1px solid $border;

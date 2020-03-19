@@ -140,6 +140,12 @@
   }
 }
 
+.p-prefs_dialog {
+  .p-prefs_dialog__message_example_label {
+    color: $text;
+  }
+}
+
 .p-prefs_dialog__content:after {
   border-top: 1px solid $border;
 }
@@ -150,10 +156,22 @@
   }
 }
 
+.p-prefs_dialog__section:not(.is_active) .p-prefs_dialog__section__icon {
+  color: $primary;
+}
+
 .p-prefs_dialog__section__emoji {
   border: 1px solid $border;
 }
 
 .p-prefs_dialog__section__description {
   color: $text;
+}
+
+.p-prefs_dialog__layout {
+  border-top: 1px solid $borderLight;
+}
+
+.p-prefs_dialog__menu {
+  border-right: 1px solid $borderLight;
 }

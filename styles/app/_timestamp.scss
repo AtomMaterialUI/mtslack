@@ -9,3 +9,13 @@
 .c-timestamp__label {
   color: $text;
 }
+
+.c-time_picker__selected-option-wrapper {
+  .c-time_picker__option-icon {
+    color: $primary;
+  }
+}
+
+.c-time_picker__timezone-caption {
+  color: $primary;
+}

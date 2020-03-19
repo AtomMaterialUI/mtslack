@@ -53,7 +53,7 @@
   color: $border;
 }
 
-@keyframes to-grey {
+@keyframes c-message--to-grey {
   0% {
     color: inherit;
   }
@@ -63,3 +63,16 @@
   }
 }
 
+.p-message_file__email_draft {
+  border: 1px solid $borderLight;
+  background: $bg;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.p-message_file__email_draft_prefix {
+  color: $primary;
+  background: $accent;
+}

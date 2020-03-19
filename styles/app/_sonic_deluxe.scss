@@ -61,3 +61,21 @@ a.p-workflow_builder_deluxe_toast__link {
     color: $selectFg;
   }
 }
+
+
+.p-workflowtoken__channel {
+  .c-link--button {
+    color: $primary;
+  }
+}
+
+.p-workflowtoken__user {
+  .c-link--button {
+    color: $primary;
+  }
+}
+
+.p-workflowtoken__missing {
+  color: $red;
+  background: $bg2;
+}

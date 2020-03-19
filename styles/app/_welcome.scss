@@ -98,6 +98,21 @@ body {
   }
 }
 
+.welcome-message-workflow-card__dialog-box {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:after {
+    border: 8px solid $borderLight;
+    border-color: transparent transparent $primary $primary;
+  }
+}
+
+.joiner-welcome-message__contents {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
 .welcome-message {
   &:hover {
     background-color: $bg2;
@@ -186,4 +201,13 @@ body {
   &:before {
     border-left-color: $borderLight;
   }
+}
+
+.welcome-message-option {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.welcome-message-option--custom {
+  color: $text;
 }

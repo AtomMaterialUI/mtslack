@@ -20,6 +20,11 @@
   color: $text;
 }
 
+.p-file_upload_dialog__section .p-multi_file_upload__container .p-gallery_scroller__wrapper {
+  background: $bg2;
+  border: 1px solid $borderLight;
+}
+
 .p-multi_file_upload__container {
   min-width: 100%;
 
@@ -50,7 +55,6 @@
   border-color: $border;
 }
 
-
 .p-pending_image_file__thumbnail {
   &:after {
     box-shadow: inset 0 0 0 1px $border;
@@ -68,7 +72,6 @@
 .p-draft_image_file {
   background-color: $bg;
 }
-
 
 .p-pending_requests_v2_channel_card {
   border: 1px solid $borderLight;

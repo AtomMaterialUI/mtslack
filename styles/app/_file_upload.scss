@@ -19,17 +19,14 @@
   color: $selectFg;
 }
 
-
 .p-file_upload_dialog__preview {
   background-color: $bg2;
   border: 1px solid $borderLight;
 }
 
-
 .p-file-upload_dialog__preview_file_name {
   color: $text;
 }
-
 
 .c-dialog__footer .p-file_upload_dialog__footer_share_inputs {
   color: $fg;
@@ -114,4 +111,68 @@
     }
   }
 
+  .p-email_reply_modal__quote_toggle {
+    color: $text;
+  }
+
+  .p-email_reply_modal__quote_container {
+    color: $text;
+  }
+
+  .p-email_reply_modal__discard_draft_btn {
+    color: $text;
+
+    &:focus, &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.p-reply_to_email_quick_reply__recipients {
+  background: $bg;
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-reply_to_email_quick_reply__recipients--focus {
+  border-color: $text;
+}
+
+.p-reply_to_email_quick_reply_input {
+  border-color: $borderLight;
+  background: $bg;
+
+  &.focus {
+    border-color: $accent;
+  }
+
+  &.ql-disabled {
+    background: $button;
+
+    .ql-composer-sticky {
+      background: $button;
+    }
+  }
+
+}
+
+.p-workflowtoken__channel {
+  .c-link--button {
+    color: $accent2;
+  }
+}
+
+.p-workflowtoken__user {
+  .c-link--button {
+    color: $accent2;
+  }
+}
+
+.p-workflowtoken__missing {
+  color: $red;
+  background: $bg;
 }

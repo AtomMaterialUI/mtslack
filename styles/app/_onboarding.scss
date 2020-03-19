@@ -50,3 +50,10 @@
     background: $bg2;
   }
 }
+
+
+@media only screen and (max-height: 900px) {
+  .p-onboarding__step__header {
+    background-color: $bg2;
+  }
+}

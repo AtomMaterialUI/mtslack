@@ -218,6 +218,14 @@
   &.focus {
     border-color: $primary;
   }
+
+  &.ql-disabled {
+    background: $bg2 !important;
+
+    .ql-composer-sticky {
+      background: $bg2 !important;
+    }
+  }
 }
 
 

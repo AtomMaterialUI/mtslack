@@ -31,3 +31,41 @@
 .p-drafts_page__draft_badge--icon {
   color: $fg;
 }
+
+.p-draft_unfurls__unfurl {
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-draft_unfurls__unfurl--graphic {
+  &:after {
+    box-shadow: inset 0 0 0 1px $borderLight;
+  }
+}
+
+.p-draft_unfurls__unfurl_name {
+  color: $fg;
+}
+
+.p-draft_unfurls__unfurl_subheader {
+  border-left: 1px solid $borderLight;
+  color: $text;
+}
+
+.p-draft_unfurls__unfurl_title + .p-draft_unfurls__unfurl_description:not(:empty) {
+  border-left: 1px solid $borderLight;
+  color: $text;
+}
+
+.p-draft_unfurls__remove_btn_circle {
+  color: $text;
+}
+
+.p-draft_unfurls__remove_btn_times {
+  color: $selectFg;
+}
+
+.p-draft_unfurls__remove_btn:focus:hover .p-draft_unfurls__remove_btn_circle,
+.p-draft_unfurls__unfurl:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle {
+  color: $fg;
+}
