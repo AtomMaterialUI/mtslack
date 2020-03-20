@@ -171,6 +171,7 @@ body {
   background-image: $bg2;
 }
 
+.p-welcome-place--iap1__sidebar_content__link_progress,
 .p-welcome-place__sidebar_content__link_progress {
   background-color: $bg2;
 }
@@ -210,4 +211,16 @@ body {
 
 .welcome-message-option--custom {
   color: $text;
+}
+
+.welcome-remote-banner__subtitle {
+  color: $text;
+
+  .c-link {
+    color: $primary;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
 }

@@ -30,3 +30,14 @@
 .p-flexpane__body--empty {
   background-color: $bg;
 }
+
+
+@keyframes p-flexpane--highlight {
+  20% {
+    background: $excluded;
+  }
+
+  60% {
+    background: $excluded;
+  }
+}

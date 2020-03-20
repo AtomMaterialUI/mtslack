@@ -60,6 +60,10 @@
   }
 }
 
+.p-global_banner {
+  background-color: $bg2;
+}
+
 .p-message_pane_banner__header {
   color: $fg;
 }
@@ -78,4 +82,50 @@
 
 .p-message_pane_banner__body_icon {
   color: $primary;
+}
+
+.supports_custom_scrollbar .p-global_banner__container {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}
+
+.p-global_banner--ephemeral {
+  border: 1px $borderLight;
+}
+
+.p-global_banner--persistent {
+  border-bottom: 1px solid $borderLight;
+
+  &:before {
+    border-bottom: 1px solid $borderLight;
+    background-color: $bg;
+  }
+}
+
+.p-global_banner__heading {
+  color: $fg;
+}
+
+.p-global_banner__close_icon {
+  color: $fg;
+}
+
+.p-message_pane_banner__spacer, .p-message_pane_banner_common {
+  background-color: $bg;
+}
+
+.p-message_pane_banner__spacer {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-message_pane_banner--persistent {
+  box-shadow: 0 1px 0 $primaryT;
+  background-color: $notif;
+}
+
+.p-message_pane_banner_small {
+  background-color: $notif;
 }

@@ -50,7 +50,6 @@
   }
 }
 
-
 .p-admin_member_table__wrapper {
   background: $active;
 }
@@ -65,7 +64,6 @@
     color: $primary;
   }
 }
-
 
 .p-admin_member_table__row--deactivated {
   background: $excluded;
@@ -87,7 +85,6 @@
   background: $selectBg;
 }
 
-
 .p-admin_member_table__row__name_divider:after {
   background-color: $borderLight;
 }
@@ -95,7 +92,6 @@
 .p-admin_member_table__row__display_name_and_email {
   color: $text;
 }
-
 
 .p_admin_member_table__guest_expiration {
   color: $text;
@@ -169,13 +165,11 @@ button.p-admin_member_table__menu_item--disabled {
   color: $disabled;
 }
 
-
 .p-admin_member_table__edit_channels {
   .c-lazy_filter_select__input_container--active {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
-
 
 .p-admin_member_table__edit_channels--error .c-lazy_filter_select__input_container {
   border: 1px solid $red;
@@ -203,7 +197,6 @@ button.p-admin_member_table__menu_item--disabled {
 .p-admin_member_unified_filter__titles {
   color: $text;
 }
-
 
 .p-admin_member_unified_filter__grid_deactivate {
   color: $disabled;
@@ -319,6 +312,11 @@ button.p-admin_member_table__menu_item--disabled {
   }
 }
 
+.p-browse_page_channel__subtext {
+  color: $text;
+}
+
+.c-virtual_list__item:last-child .p-browse_page_channel,
 .p-browse_page_channel {
   border-top: 1px solid $borderLight;
 
@@ -335,4 +333,124 @@ button.p-admin_member_table__menu_item--disabled {
 
 .p-browse_page_channel__justification_icon {
   color: $primary;
+}
+
+.p-browse_page_controls__total {
+  color: $fg;
+}
+
+.p-browse_page_controls__total--placeholder {
+  background-color: $disabled;
+}
+
+.p-browse_page_controls__button {
+  color: $fg;
+
+  &:hover {
+    background-color: $selectFg;
+  }
+}
+
+.p-browse_page_controls__button__pill {
+  color: $fg;
+  background-color: $button;
+}
+
+.p-browse_page_controls__divider {
+  border-right: 1px solid $border;
+}
+
+.p-browser_education_banner {
+  background-color: $notif;
+}
+
+.p-bp__grid_cell--focus:after {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-browse_page_member_card_entity {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primary;
+
+  &:active, &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+  }
+}
+
+.p-browse_page_member_card_entity--dim {
+  color: $disabled;
+}
+
+.p-browse_page_member_card_entity__guest_badge {
+  color: $accent;
+}
+
+.p-browse_page_member_card_entity__secondary {
+  color: $accent2;
+}
+
+.p-browse_page_member__top_terms_term {
+  background: $active;
+}
+
+.p-browse_page_member__sparkles {
+  color: $yellow;
+}
+
+.p-browse_page_channel__purpose--tooltip {
+  .c-mrkdwn__broadcast--mention {
+    background-color: $accent;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  .c-mrkdwn__highlight {
+    background-color: $accent;
+  }
+
+  .c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
+    background-color: $accent;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+
+.p-browse_page_channel--disconnected {
+  color: $disabled;
+  background-color: $bg;
+}
+
+.p-browse_page_user_group_entity__subtext {
+  color: $text;
+}
+
+.p-browse_page_user_group {
+  border-top: 1px solid $borderLight;
+
+  &:active, &:hover {
+    background-color: $hl;
+  }
+}
+
+.c-virtual_list__item:last-child .p-browse_page_user_group {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_edu_modal__step_counter {
+  color: $primary;
+}
+
+.p-ia_edu_cta {
+  color: $selectFg;
+  background: $accent;
+}
+
+
+.p-top_nav__help__badge {
+  background: $accent;
+  color: $selectFg;
 }

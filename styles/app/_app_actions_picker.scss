@@ -8,8 +8,13 @@
 
 .p-app_action_picker {
   background-color: $bg;
+
+  .c-input_text {
+    background-color: $contrast;
+  }
 }
 
+.p-app_action_picker_trigger_button--dark.p-app_action_picker_trigger_button,
 .p-app_action_picker_trigger_button {
   &:hover i {
     color: $primary;
@@ -18,6 +23,19 @@
   &.active, &:active {
     color: $primary;
   }
+
+  &:active, &:hover {
+    background: $hl !important;
+    color: $primary !important;
+  }
+}
+
+.p-app_action_picker_trigger_button--highlighted {
+  color: $primary;
+}
+
+.p-app_action_picker_trigger_button_container {
+  border-right: 1px solid $borderLight;
 }
 
 .p-app_action_picker_trigger_button--highlight i {
@@ -45,4 +63,24 @@
 
 .p-app_action_picker--nightshade-elevation {
   background-color: $hl;
+}
+
+.p-app_action_picker_add_app_shortcut_section__add-app-section {
+  border-bottom: 1px solid $borderLight;
+
+  .p-app_action_picker_add_app_shortcut_section__app-link {
+    color: $primary;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-app_action_picker_add_shortcut_modal__add-channel-action-title {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-app_action_picker_add_shortcut_modal__add-channel-action-section {
+  border-bottom: 1px solid $borderLight;
 }

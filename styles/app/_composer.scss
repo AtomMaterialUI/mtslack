@@ -254,6 +254,26 @@
   color: $red;
 }
 
+.p-composer_page__destination_prefix {
+  color: $primary;
+}
+
+.p-composer_page__destination_text--emphasized {
+  color: $primary;
+
+  .c-channel_team {
+    color: $fg;
+  }
+}
+
+.p-composer_page__destination_text--disabled {
+  color: $disabled;
+}
+
+.p-composer_page__destination_text--invalid {
+  color: $accent;
+}
+
 .p-composer_page__destination_recipients_wrapper {
   color: $text;
 }
@@ -354,7 +374,6 @@
     background-color: $bg;
   }
 
-
   .p-composer_page__context_item--top {
     border-top: 1px solid $borderLight;
   }
@@ -381,9 +400,40 @@
 
 .p-composer_page--noncontextual {
   background: $bg2;
+
+  .p-context_bar {
+    background: $notif;
+  }
 }
 
 .p-composer_page__message_input {
+  .ql-attachments, .ql-files {
+    background: $bg2;
+    box-shadow: 0 -1px 0 0 $primaryT;
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky, &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+    background: $bg2;
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments, .ql-files {
+      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+    }
+  }
+
+  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments, .ql-files {
+      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+    }
+  }
+
+  .ql-attachments {
+    .p-composer_attachments__separator {
+      border-left: 1px solid $borderLight;
+    }
+  }
+
   &.p-message_input--focus-visible .p-message_input_field.focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
@@ -394,6 +444,12 @@
     &.p-message_input_file_button--active, &:hover {
       color: $selectFg;
       background: $primary;
+    }
+
+    &.p-message_input_file_button--disabled {
+      &:hover {
+        color: $selectFg;
+      }
     }
   }
 
@@ -428,5 +484,24 @@
         color: $primary;
       }
     }
+
+    &.ql-disabled {
+      background: $bg2 !important;
+
+      .ql-composer-sticky {
+        background: $bg2 !important;
+      }
+    }
   }
+}
+
+.p-composer_page--context_bar_showing {
+  .p-composer_page__context_bar {
+    background-color: $bg;
+  }
+}
+
+.p-browse_page_education_card {
+  background-color: $bg2;
+  color: $fg;
 }

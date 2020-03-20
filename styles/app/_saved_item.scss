@@ -22,6 +22,45 @@
   }
 }
 
+.p-saved_page__item {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primaryT;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
+  }
+}
+
+.c-virtual_list__item--focus .p-saved_page__item {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
+}
+
+.p-saved_page__item--docked {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.c-virtual_list__item--focus .p-saved_page__item--docked {
+  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+}
+
+.p-saved_page__item--file {
+  .c-pillow_file_container--full_width:hover {
+    background: $hl;
+  }
+
+  .c-icon--bookmark-filled {
+    color: $accent;
+  }
+}
+
+.p-saved_page__item__header {
+  color: $primary;
+}
+
 .p-stars_page {
   background: $bg2;
 
@@ -41,3 +80,45 @@
 .p-files_page__controls {
   background: $bg2;
 }
+
+.p-activity_page__item {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primaryT;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
+  }
+}
+
+.c-virtual_list__item--focus .p-activity_page__item {
+  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+}
+
+.p-activity_page__item--docked {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.c-virtual_list__item--focus .p-activity_page__item--docked {
+  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+}
+
+.p-activity_page__item__header {
+  color: $primary;
+}
+
+.p-activity_page__floating_loader {
+  background: $bg;
+}
+
+.p-activity_page__top_anchor_hack_item {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-activity_page__top_anchor_hack_item--docked {
+  border-bottom: 1px solid $borderLight;
+}
+

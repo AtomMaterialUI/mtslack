@@ -7,10 +7,21 @@
   border: 1px solid $borderLight;
 }
 
+.p-drafts_page__title_icon {
+  color: $accent;
+}
+
+.p-drafts_page__list--bordered:before {
+  background: $bg2;
+  border-bottom: 1px solid $borderLight;
+}
+
 .p-drafts_page__draft_header {
   color: $text;
 }
 
+.p-drafts_page__draft--sending .p-drafts_page__draft_badge,
+.sk-client-theme--dark .p-drafts_page__draft_badge,
 .p-drafts_page__draft_badge {
   background: $accent;
   color: $selectFg;
@@ -68,4 +79,16 @@
 .p-draft_unfurls__remove_btn:focus:hover .p-draft_unfurls__remove_btn_circle,
 .p-draft_unfurls__unfurl:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle {
   color: $fg;
+}
+
+.p-drafts_page__draft_destination {
+  color: $fg;
+}
+
+.p-drafts_page__draft_body--empty, .p-drafts_page__draft_destination--empty {
+  color: $text;
+}
+
+.p-drafts_page--empty {
+  background: $bg;
 }

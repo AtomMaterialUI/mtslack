@@ -176,3 +176,32 @@
   color: $red;
   background: $bg;
 }
+
+.p-file_card {
+  box-shadow: 0 0 0 1px $primaryT;
+
+  &:active, &:hover {
+    box-shadow: 0 0 0 1px $primary;
+  }
+
+}
+
+.p-file_card__preview {
+  background-color: $bg2;
+}
+
+.p-file_card__content {
+  border-top: 1px solid $borderLight;
+}
+
+.p-file_card__name--empty {
+  color: $disabled;
+}
+
+.p-file_card__info {
+  color: $text;
+}
+
+.p-file_card__justification_icon {
+  color: $yellow;
+}

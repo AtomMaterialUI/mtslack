@@ -44,6 +44,10 @@
   color: $text;
 }
 
+.p-app_launcher__category_header__link, .p-app_launcher__category_header__title {
+  color: $primary;
+}
+
 .p-app_launcher__category_header__link {
   color: $primary;
 
@@ -85,6 +89,14 @@
   }
 }
 
+.p-app_launcher--non_ia .c-filter_input:not(.c-filter_input--active) {
+  border-color: $borderLight;
+}
+
 .p-activity_page {
   background: $bg2;
+}
+
+.p-app_launcher_actions__button_link:hover {
+  color: $selectFg;
 }

@@ -1,0 +1,32 @@
+
+.invites-carousel__card_name_tooltip {
+  border: 1px solid $border;
+  background-color: $notif;
+}
+
+.invites-carousel__card_subtext {
+  color: $text;
+}
+
+.invites-carousel__arrow_button {
+  background-color: $button;
+}
+
+
+.invites-carousel__placeholders_container__overlay {
+  box-shadow: inset -48px 0 19px -28px $borderLight;
+}
+
+.invites-carousel__card {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+}
+
+.invites-carousel__card--placeholder {
+  background-color: $active;
+}
+
+.sk-client-theme--dark .invites-carousel__card--placeholder {
+  background-color: $active;
+}
+
