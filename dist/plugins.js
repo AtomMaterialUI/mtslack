@@ -368,7 +368,7 @@ ${plugin.desc}
         this.$sideBar = document.querySelector('.p-channel_sidebar__static_list .c-scrollbar__hider');
         this._insertPluginSection();
         this.initPlugins();
-        clearInterval(this.interval);
+        // clearInterval(this.interval);
       }
 
     }, 1000);
