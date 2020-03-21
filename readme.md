@@ -57,7 +57,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ### Global installation (works anywhere)
 
-1. Run `npm install -g @mallowigi/slack-themes` in a terminal
+1. Run `npm install -g mtslack` in a terminal
 2. Run the command `mtslack`
 3. PROFIT!!!
 

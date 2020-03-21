@@ -2,6 +2,7 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
+const isRoot = require('is-root');
 const cli = require('./lib/cli');
 const {execute} = require('./lib/command');
 
@@ -14,6 +15,12 @@ async function main() {
   console.log('');
   console.log(chalk.red('Please note that this is still experimental and can ruin your Slack application! In the case of a problem, please reinstall Slack.'));
   console.log('');
+
+  if (!isRoot()){
+    console.log(chalk.red('You must be root to execute this command. Run with "sudo mtslack"'));
+    process.exit(1);
+  }
+
   const {ask: answer} = await cli.ask();
 
   execute(answer);
