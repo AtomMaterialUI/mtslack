@@ -8,9 +8,9 @@ const {execute} = require('./lib/command');
 
 // Start
 async function main() {
+  clear();
   checkForUpdates();
 
-  clear();
   console.log(chalk.yellow(figlet.textSync('Slack Theme Applier')));
 
   console.log(chalk.cyan('Welcome to the Slack Theme Applier CLI!'));
@@ -35,9 +35,14 @@ function checkForUpdates(){
   let pkg = require('./package.json');
 
   const update = new AutoUpdate(pkg);
+  console.log(chalk.bold('Checking for updates...'));
 
-  update.on('update', () => console.log('started update'));
-  update.on('finish', () => console.log('finished updating'));
+  update.on('update', () => {
+    console.log(chalk.bold('A new update is available! Starting autoupdate...'));
+  });
+  update.on('finish', () => {
+    console.log(chalk.green('finished updating!'));
+  });
 }
 
 main();
