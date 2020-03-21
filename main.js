@@ -5,9 +5,11 @@ const figlet = require('figlet');
 const isRoot = require('is-root');
 const cli = require('./lib/cli');
 const {execute} = require('./lib/command');
+const pkg = require('./package.json');
 
 async function run() {
   console.log(chalk.yellow(figlet.textSync('Slack Theme Applier')));
+  console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
   console.log(chalk.cyan('Welcome to the Slack Theme Applier CLI!'));
   console.log('');
@@ -30,11 +32,10 @@ async function main() {
   checkForUpdates();
 }
 
-async function checkForUpdates(){
+async function checkForUpdates() {
   const AutoUpdate = require('cli-autoupdate');
 
   // load package.json of the package you wish to update
-  let pkg = require('./package.json');
 
   const update = new AutoUpdate(pkg);
   console.log(chalk.bold('Checking for updates...'));
