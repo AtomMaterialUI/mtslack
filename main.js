@@ -6,7 +6,7 @@ const isRoot = require('is-root');
 const cli = require('./lib/cli');
 const {execute} = require('./lib/command');
 
-async function afterUpdate() {
+async function run() {
   console.log(chalk.yellow(figlet.textSync('Slack Theme Applier')));
 
   console.log(chalk.cyan('Welcome to the Slack Theme Applier CLI!'));
@@ -30,7 +30,7 @@ async function main() {
   checkForUpdates();
 }
 
-function checkForUpdates(){
+async function checkForUpdates(){
   const AutoUpdate = require('cli-autoupdate');
 
   // load package.json of the package you wish to update
@@ -42,9 +42,9 @@ function checkForUpdates(){
   update.on('update', () => {
     console.log(chalk.bold('A new update is available! Starting autoupdate...'));
   });
-  update.on('finish', () => {
-    console.log(chalk.green('finished updating!'));
-    afterUpdate();
+  update.on('finish', async () => {
+    console.log(chalk.bold('Finished checking for updates!'));
+    await run();
   });
 }
 
