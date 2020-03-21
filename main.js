@@ -8,6 +8,8 @@ const {execute} = require('./lib/command');
 
 // Start
 async function main() {
+  checkForUpdates();
+
   clear();
   console.log(chalk.yellow(figlet.textSync('Slack Theme Applier')));
 
@@ -24,6 +26,18 @@ async function main() {
   const {ask: answer} = await cli.ask();
 
   execute(answer);
+}
+
+function checkForUpdates(){
+  const AutoUpdate = require('cli-autoupdate');
+
+  // load package.json of the package you wish to update
+  let pkg = require('./package.json');
+
+  const update = new AutoUpdate(pkg);
+
+  update.on('update', () => console.log('started update'));
+  update.on('finish', () => console.log('finished updating'));
 }
 
 main();

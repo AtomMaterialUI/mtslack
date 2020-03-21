@@ -47,6 +47,7 @@
     "asar": "^2.0.1",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
+    "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
     "configstore": "^5.0.0",
     "figlet": "^1.2.3",
