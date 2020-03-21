@@ -23,6 +23,10 @@
   color: $fg;
 }
 
+.p-classic_nav__team_messages_limit_meter__separator {
+  border-top: 2px $borderLight solid;
+}
+
 .p-classic_nav__team_menu__blurb__sub {
   color: $text;
 }
@@ -271,4 +275,8 @@
   &:after {
     background: $accent;
   }
+}
+
+.p-ia__view_header .p-classic_nav__model__title__info__sep {
+  color: $text;
 }

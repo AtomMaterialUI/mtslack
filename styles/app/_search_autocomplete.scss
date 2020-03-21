@@ -16,6 +16,33 @@
 .c-search_autocomplete__suggestion_item--selected {
   background: $selectBg;
   color: $selectFg;
+
+  .c-file_entity__icon:before, .c-icon, .c-search_autocomplete__channel-membership {
+    color: $selectFg;
+  }
+
+  .c-search_autocomplete__channel {
+    .c-deprecated-icon, .c-icon--shared-channels, .p-deprecated_channel_name__team_name, .p-deprecated_channel_name__text {
+      color: $selectFg;
+    }
+  }
+
+  .c-small_mpim_entity__member {
+    color: $selectFg;
+  }
+
+  .c-search_autocomplete__icon--query {
+    color: $selectFg;
+
+    &:before {
+      color: $selectFg;
+    }
+  }
+
+  .c-search_autocomplete__query_parts .token, .c-search_query_entity__token {
+    color: $selectFg;
+    background-color: $excluded;
+  }
 }
 
 .c-search_autocomplete__unread_count {

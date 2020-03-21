@@ -2,3 +2,14 @@
   color: $text;
   background: $bg2;
 }
+
+.p-client_desktop--ia-top-nav {
+  .p-archives_banner {
+    background: $accent;
+    color: $selectFg;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+}

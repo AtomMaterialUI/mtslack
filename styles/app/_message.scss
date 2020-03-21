@@ -39,7 +39,6 @@
   }
 }
 
-
 .c-message__body {
   color: $fg;
 }
@@ -60,7 +59,6 @@
   background-color: $bg2;
 }
 
-
 @keyframes fade-background-highlight {
   0% {
     background: $hl;
@@ -70,7 +68,6 @@
     background: transparent;
   }
 }
-
 
 .c-message--pinned,
 .c-message--sli_highlight:not(.c-message--sli_highlight_negative),
@@ -136,11 +133,9 @@
   color: $primary;
 }
 
-
 .c-message__sender .c-emoji__text_mode_icon {
   color: $text;
 }
-
 
 .c-message__body--unknown {
   background: $bg2;
@@ -171,7 +166,6 @@
   color: $primary;
 }
 
-
 .c-message__edited_label {
   color: $text;
 }
@@ -180,7 +174,6 @@
   background: $bg2;
   color: $text;
 }
-
 
 .c-message__editor__emoji_menu {
   &:hover {
@@ -227,7 +220,6 @@
     }
   }
 }
-
 
 .c-message__editor__warning {
   color: $red;
@@ -280,7 +272,6 @@
     color: $text;
   }
 }
-
 
 .c-message__file_remove_icon {
   color: $text;
@@ -375,7 +366,6 @@ a.c-message__call_name--linked {
   }
 }
 
-
 .c-message_kit__background--deleting {
   background: $red;
 }
@@ -400,4 +390,12 @@ a.c-message__call_name--linked {
   &:focus, &:hover {
     background: $selectFg;
   }
+}
+
+.c-message_kit__thread-message--new_reply {
+  background: $hl;
+}
+
+.p-channel_details__external_orgs_section .p-channel_details_section__icon {
+  color: $accent;
 }

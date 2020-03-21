@@ -1,0 +1,24 @@
+.p-apps_in_channel_dialog__list_item {
+  &:hover {
+    background-color: $active;
+  }
+}
+
+.p-apps_in_channel_dialog__list {
+  border-bottom: $borderLight;
+}
+
+.p-apps_in_channel_dialog__list--indicate-top {
+  border-top: $borderLight;
+}
+
+.p-apps_in_channel_dialog__loading {
+  color: $accent;
+}
+
+
+.p-pages_list__list_item--focus-visible {
+  &:after {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  }
+}

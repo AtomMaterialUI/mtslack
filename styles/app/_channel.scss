@@ -76,7 +76,6 @@
   color: $accent;
 }
 
-
 .p-highlights_section__group_title_line {
   border-top: 1px solid $borderLight;
 }
@@ -239,5 +238,64 @@
 }
 
 .p-channel_card h3 {
+  color: $text;
+}
+
+.p-channel_details__members_dialog__loading {
+  color: $accent;
+}
+
+.p-channel_details_about__blurb {
+  background-color: $bg2;
+}
+
+button.p-channel_details_about__blurb {
+  &:hover {
+    background-color: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.p-channel_details_about__blurb_edit {
+  color: $primary;
+}
+
+.p-channel_details_about__empty {
+  color: $text;
+}
+
+.p-channel_details_about__about_title {
+  color: $text;
+}
+
+.p-channel_details_about__heading {
+  color: $text;
+}
+
+.p-channel_details_about__created {
+  .c-link--button {
+    color: $text;
+  }
+}
+
+.p-ia__channel_details__details {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-channel_details__subtitle {
+  color: $text;
+}
+
+.p-channel_details__header {
+  .p-member_profile_picture {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .c-custom_status {
+    color: $text;
+  }
+}
+
+.p-channel_details__header__created {
   color: $text;
 }

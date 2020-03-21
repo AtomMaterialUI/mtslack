@@ -1,4 +1,8 @@
 .p-threads_footer__input {
+  .ql-attachments, .ql-files {
+    background: $bg2;
+  }
+
   &.p-message_input--focus-visible .p-message_input_field.focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
@@ -9,6 +13,12 @@
     &.p-message_input_file_button--active, &:hover {
       color: $primary;
       background: $accent;
+    }
+
+    &.p-message_input_file_button--disabled {
+      &:hover {
+        color: $disabled;
+      }
     }
   }
 
@@ -34,6 +44,14 @@
         color: $disabled;
       }
     }
+
+    &.ql-disabled {
+      background: $excluded !important;
+
+      .ql-composer-sticky {
+        background: $excluded !important;
+      }
+    }
   }
 
   &.p-message_input--dark {
@@ -48,6 +66,29 @@
 
     ::-moz-selection, ::selection, ::-moz-selection {
       background-color: $selectBg;
+    }
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
+  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+    background: $active;
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments, .ql-files {
+      box-shadow: 0 1px 0 0 $bg, 0 -1px 0 0 $bg;
+    }
+  }
+
+  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments, .ql-files {
+      box-shadow: 0 1px 0 0 $bg, 0 -1px 0 0 $bg;
+    }
+  }
+
+  .ql-attachments {
+    .p-composer_attachments__separator {
+      border-left: 1px solid $borderLight;
     }
   }
 }
@@ -179,4 +220,5 @@
 .p-threads_flexpane__loading {
   color: $text;
 }
+
 

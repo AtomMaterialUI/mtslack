@@ -124,3 +124,9 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-invite_members_form__request_members_reason {
   color: $text;
 }
+
+.p-members_dialog_item {
+  &:hover {
+    background-color: $active;
+  }
+}

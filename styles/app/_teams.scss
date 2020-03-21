@@ -203,3 +203,13 @@
   background-color: $button;
   color: $fg;
 }
+
+
+.c-base_list_entity--highlight-dark .c-file_entity__icon:before {
+  color: $bg;
+}
+
+.c-base_list_entity--dim .c-file_entity__icon:before {
+  color: $text;
+}
+

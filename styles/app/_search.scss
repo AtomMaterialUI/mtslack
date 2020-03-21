@@ -6,7 +6,6 @@
   background-color: $contrast !important;
 }
 
-
 .c-search__input_box .c-search__input_box__input {
   background: $contrast;
 }
@@ -73,11 +72,9 @@
   background-color: $contrast;
 }
 
-
 .c-search__debug_json {
   background-color: $bg;
 }
-
 
 .c-search__view .p-search_file {
   border: 1px solid $border;
@@ -116,7 +113,6 @@
 .c-search__section_header--compact {
   color: $fg;
 }
-
 
 .c-search__tabs {
   background-color: $contrast;
@@ -163,7 +159,6 @@
   background-color: $hl;
 }
 
-
 .c-search__pager__details {
   color: $text;
 }
@@ -175,4 +170,28 @@
 
 .c-search__feedback_small {
   color: $text;
+}
+
+.c-search_query_entity__token {
+  background-color: $excluded;
+  color: $fg;
+}
+
+.c-search_query_entity__text--dark .c-search_query_entity__token {
+  background-color: $excluded;
+}
+
+.c-base_list_entity--highlight-dark {
+  .c-search_query_entity__token {
+    color: $selectFg;
+    background-color: $excluded;
+  }
+}
+
+.c-search__input_box__mode {
+  background-color: $contrast;
+}
+
+.c-search__input_box__mode--dark {
+  background-color: $contrast;
 }

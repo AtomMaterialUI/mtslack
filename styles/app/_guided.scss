@@ -1,0 +1,15 @@
+.p-guided_channel_setup_modal__footer {
+  color: $text;
+}
+
+.p-guided_channel_setup_modal__footer_button {
+  color: $primary;
+}
+
+.p-guided_channel_setup_modal {
+  border: 1px solid $accent;
+}
+
+.p-guided_channel_setup_modal__overlay:before {
+  background: $bg;
+}

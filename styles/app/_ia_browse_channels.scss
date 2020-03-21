@@ -22,7 +22,6 @@
   color: $text;
 }
 
-
 .p-ia__nav__search {
   border: 1px solid $borderLight;
 }
@@ -93,5 +92,66 @@
 
   .p-channel_details_section__caret_icon {
     color: $fg;
+  }
+}
+
+.p-ia__main_menu__open_slack_app_icon {
+  background: $bg;
+}
+
+.p-ia__view_header__button {
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+
+  &:active {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-ia__view_header__button--open {
+  background-color: $button;
+  color: $fg;
+
+  &:focus, &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+}
+
+
+.p-ia__view_header .p-classic_nav__model__button--calls {
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+
+  &:active {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-user_group_base_row--active {
+  animation: p-user_group_base_row--highlighter 1s ease-out;
+}
+
+@keyframes p-user_group_base_row--highlighter {
+  0% {
+    background: transparent;
+  }
+
+  10% {
+    background: $excluded;
+  }
+
+  to {
+    background: transparent;
   }
 }
