@@ -8,8 +8,8 @@ const slackPluginsAPI = {
       enabled: true,
       callback() {
         window.slackPluginsAPI.togglePlugins();
-      },
-    },
+      }
+    }
   },
 
   togglePlugins() {
@@ -22,7 +22,8 @@ const slackPluginsAPI = {
       if (plugin.$settingEl) {
         if (this.pluginsEnabled) {
           plugin.$settingEl.classList.remove('c-plugins--disabled');
-        } else {
+        }
+        else {
           plugin.$settingEl.classList.add('c-plugins--disabled');
         }
       }
@@ -87,7 +88,7 @@ const slackPluginsAPI = {
     $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-sk-modal__close_button';
     $closeBtn.innerHTML = `<i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>`;
     // Close the modal
-    $closeBtn.addEventListener('keydown', ({ keyCode }) => {
+    $closeBtn.addEventListener('keydown', ({keyCode}) => {
       if (keyCode === 13) {
         requestAnimationFrame(() => $reactModal.remove());
       }
@@ -129,7 +130,7 @@ const slackPluginsAPI = {
     const $settingsWrapper = document.createElement('div');
     $settingsWrapper.className = 'c-scrollbar c-scrollbar--inherit_size';
     $settingsWrapper.innerHTML = `<div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
-    <div role="presentation" class="c-scrollbar__child" style="width: 654px;">
+    <div role="presentation" class="c-scrollbar__child" style="width: 492px;">
         <div class="c-sk-modal__content__inner">
             <div data-qa="invite_modal_form" class="c-sk-modal_content_section"></div>
         </div>
@@ -143,7 +144,7 @@ const slackPluginsAPI = {
     // Plugins List
     const $pluginList = document.createElement('div');
     $pluginList.className = 'c-virtual_list c-virtual_list--scrollbar c-scrollbar';
-    $pluginList.innerHTML = `<div role="list" class="c-virtual_list c-virtual_list--scrollbar c-scrollbar" style="width: 640px; height: 481px;">
+    $pluginList.innerHTML = `<div role="list" class="c-virtual_list c-virtual_list--scrollbar c-scrollbar" style="width: 440px; height: 481px;">
     <div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
         <div role="presentation" class="c-scrollbar__child">
             <div data-qa="slack_kit_list" class="c-virtual_list__scroll_container c-plugins_list" role="presentation">
@@ -191,6 +192,20 @@ const slackPluginsAPI = {
         $divWrapper.append($fullDescRow);
       }
 
+      if (plugin.extraContentId && plugin.extraContent) {
+        const $extraContent = document.createElement('div');
+        $extraContent.id = plugin.extraContentId;
+        $extraContent.innerHTML = plugin.extraContent();
+
+        if (plugin.extraContentOnClick) {
+          for (const button of $extraContent.getElementsByTagName('button')) {
+            button.addEventListener('click', plugin.extraContentOnClick.bind(plugin));
+          }
+        }
+
+        $divWrapper.append($extraContent);
+      }
+
       // Save the element to the plugin
       if (pluginName !== 'main') {
         plugin.$settingEl = $divWrapper;
@@ -226,7 +241,6 @@ const slackPluginsAPI = {
 
     // Listen to events
     $cb.addEventListener('change', (event) => {
-      const name = event.target.id;
       const enabled = !!event.target.checked;
       // this.setPluginState(name, enabled);
       plugin.enabled = enabled;
@@ -234,6 +248,18 @@ const slackPluginsAPI = {
       // Execute plugin
       // this.executePlugin(name, enabled);
       plugin.callback(enabled);
+
+      if (plugin.extraContentId) {
+        const $extraContent = document.getElementById(plugin.extraContentId);
+        for (const child of $extraContent.children) {
+          if (plugin.enabled) {
+            child.removeAttribute('disabled');
+          }
+          else {
+            child.setAttribute('disabled', true);
+          }
+        }
+      }
     });
 
     return $wrapper;
@@ -312,7 +338,7 @@ ${plugin.desc}
     this._initSettings();
 
     // Add a keybinding to reinit
-    document.addEventListener('keydown', ({ keyCode, altKey, metaKey }) => {
+    document.addEventListener('keydown', ({keyCode, altKey, metaKey}) => {
       if (keyCode === 68 && (metaKey || altKey)) {
         this._initSettings();
       }
@@ -353,7 +379,7 @@ ${plugin.desc}
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
       plugin.init && plugin.init();
     });
-  },
+  }
 };
 
 window.slackPluginsAPI = slackPluginsAPI;
@@ -371,6 +397,8 @@ window.slackPluginsAPI.plugins.nextTheme = {
   longDescription: 'Add a button in the toolbar to loop over installed themes',
   enabled: true,
   shortcut: '',
+  icon: 'magic',
+
   callback: function () {
     this.toggle();
   },
@@ -411,7 +439,7 @@ window.slackPluginsAPI.plugins.nextTheme = {
 
     $nextThemeBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $nextThemeBtn.innerHTML = `<i class="c-icon c-icon--magic" type="magic" aria-hidden="true"></i>`;
+    this.addIcon($nextThemeBtn);
     $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
@@ -442,6 +470,10 @@ window.slackPluginsAPI.plugins.nextTheme = {
     this.enabled = enabled;
     this.toggle();
   },
+
+  addIcon(button) {
+    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
 };
 
 // Sidebar.js
@@ -454,6 +486,7 @@ window.slackPluginsAPI.plugins.sidebar = {
   longDescription: 'Show or hide the sidebar',
   enabled: true,
   shortcut: '',
+  icon: 'side-panel',
 
   sidebarEnabled: true,
 
@@ -480,7 +513,7 @@ window.slackPluginsAPI.plugins.sidebar = {
 
     $sidebarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $sidebarBtn.innerHTML = `<i class="c-icon c-icon--side-panel" type="side-panel" aria-hidden="true"></i>`;
+    this.addIcon($sidebarBtn);
     $sidebarBtn.addEventListener('click', this.toggleSidebar.bind(this));
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
@@ -511,6 +544,105 @@ window.slackPluginsAPI.plugins.sidebar = {
     this.enabled = enabled;
     this.toggle();
   },
+
+  addIcon(button) {
+    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
+};
+
+// Fonts.js
+window.slackPluginsAPI = window.slackPluginsAPI || {};
+window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
+
+window.slackPluginsAPI.plugins.fonts = {
+  name: 'fonts',
+  desc: 'Custom Fonts',
+  longDescription: 'Enter the custom fonts, separated by commas',
+  enabled: true,
+  shortcut: '',
+  icon: 'format',
+
+  DEFAULT_CUSTOM: 'Roboto, Slack-Lato, appleLogo, sans-serif',
+  DEFAULT: 'Slack-Lato, appleLogo, sans-serif',
+
+  fontFamily: 'Roboto, Slack-Lato, appleLogo, sans-serif',
+  fontsEnabled: false,
+
+  extraContentId: 'customFonts',
+
+  extraContent() {
+    return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter fonts, separated by commas" id="fontFamily" name="fontFamily" type="text" value="${this.fontFamily}">
+<button id="customFontsButton" name="customFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
+  },
+
+  callback: function () {
+    this.toggle();
+  },
+
+  extraContentOnClick() {
+    const ff = document.getElementById('fontFamily').value;
+    if (ff) {
+      this.fontFamily = ff;
+      this.applyFonts();
+    }
+  },
+
+  // Toggle Fonts
+  toggleFonts() {
+    this.fontsEnabled = !this.fontsEnabled;
+    this.applyFonts();
+  },
+
+  applyFonts() {
+    if (this.fontsEnabled) {
+      document.querySelector('body').style.fontFamily = this.fontFamily;
+    }
+    else {
+      document.querySelector('body').style.fontFamily = 'Slack-Lato,appleLogo,sans-serif';
+    }
+  },
+
+  init() {
+    // Toggle Fonts
+    const $fontsToggleBtn = document.createElement('button');
+    this.$el = $fontsToggleBtn;
+
+    $fontsToggleBtn.className =
+      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
+    this.addIcon($fontsToggleBtn);
+    $fontsToggleBtn.addEventListener('click', this.toggleFonts.bind(this));
+    // Add tooltip
+    window.slackPluginsAPI.addTooltip(this);
+
+    let $header = document.querySelector('.p-classic_nav__right_header');
+    if ($header) {
+      // Add buttons
+      $header.appendChild($fontsToggleBtn);
+    }
+  },
+
+  toggle() {
+    this.toggleDisplay(this.$el);
+  },
+
+  // Show/hide a toolbar button
+  toggleDisplay(button) {
+    if (this.enabled) {
+      button.style.display = 'flex';
+    }
+    else {
+      button.style.display = 'none';
+    }
+  },
+
+  switch(enabled) {
+    this.enabled = enabled;
+    this.toggle();
+  },
+
+  addIcon(button) {
+    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
 };
 
 

@@ -8,6 +8,8 @@ window.slackPluginsAPI.plugins.nextTheme = {
   longDescription: 'Add a button in the toolbar to loop over installed themes',
   enabled: true,
   shortcut: '',
+  icon: 'magic',
+
   callback: function () {
     this.toggle();
   },
@@ -48,7 +50,7 @@ window.slackPluginsAPI.plugins.nextTheme = {
 
     $nextThemeBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $nextThemeBtn.innerHTML = `<i class="c-icon c-icon--magic" type="magic" aria-hidden="true"></i>`;
+    this.addIcon($nextThemeBtn);
     $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
@@ -79,4 +81,8 @@ window.slackPluginsAPI.plugins.nextTheme = {
     this.enabled = enabled;
     this.toggle();
   },
+
+  addIcon(button) {
+    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
 };

@@ -13,7 +13,10 @@
     "apply": "sudo npx ./main.js",
     "windows": "npx ./main.js",
     "build": "gulp styles",
-    "debug": "gulp debugStyles"
+    "debugStyles": "gulp debugStyles",
+    "scripts": "gulp scripts",
+    "watchScripts": "gulp watchScripts",
+    "debug": "export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"
   },
   "engines": {
     "node": ">=10.0.0"

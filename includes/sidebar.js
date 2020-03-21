@@ -8,6 +8,7 @@ window.slackPluginsAPI.plugins.sidebar = {
   longDescription: 'Show or hide the sidebar',
   enabled: true,
   shortcut: '',
+  icon: 'side-panel',
 
   sidebarEnabled: true,
 
@@ -34,7 +35,7 @@ window.slackPluginsAPI.plugins.sidebar = {
 
     $sidebarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    $sidebarBtn.innerHTML = `<i class="c-icon c-icon--side-panel" type="side-panel" aria-hidden="true"></i>`;
+    this.addIcon($sidebarBtn);
     $sidebarBtn.addEventListener('click', this.toggleSidebar.bind(this));
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
@@ -65,4 +66,8 @@ window.slackPluginsAPI.plugins.sidebar = {
     this.enabled = enabled;
     this.toggle();
   },
+
+  addIcon(button) {
+    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
 };
