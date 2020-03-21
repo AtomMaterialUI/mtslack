@@ -350,13 +350,13 @@ ${plugin.desc}
     const maxTries = 100;
     let counter = 0;
 
-    if (document.querySelector('#pluginsSection')) {
-      // Already added
-      return;
-    }
-
     this.interval = setInterval(() => {
       counter++;
+      if (document.getElementById('pluginsSection')) {
+        // Already added
+        return;
+      }
+
       if (counter > maxTries) {
         clearInterval(this.interval);
         return;
