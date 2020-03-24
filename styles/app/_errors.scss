@@ -1,3 +1,7 @@
+.p-error_boundary {
+  background: $excluded;
+}
+
 .p-error_boundary__error_code {
   color: $text;
   border: 1px solid $borderLight;
