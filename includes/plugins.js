@@ -411,6 +411,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 //= include themes.js
 //= include sidebar.js
 //= include fonts.js
+//= include accent.js
 
 /** END DO NOT TOUCH THIS PART */
 
