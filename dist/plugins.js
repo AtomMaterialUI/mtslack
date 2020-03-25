@@ -1,4 +1,5 @@
 const slackPluginsAPI = {
+  LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
   // Loaded plugins
   plugins: {
@@ -326,15 +327,42 @@ ${plugin.desc}
     });
   },
 
+  loadSettings() {
+    try {
+      let savedSettings = localStorage.getItem(this.LOCAL_STORAGE);
+      if (savedSettings) {
+        savedSettings = JSON.parse(savedSettings);
+
+        Object.keys(this.plugins).forEach(key => {
+          if (this.plugins[key] && this.plugins[key].loadSettings && savedSettings[key]) {
+            this.plugins[key].loadSettings(savedSettings[key]);
+          }
+        });
+      }
+    } catch (e) {
+      ;
+    }
+  },
+
+  saveSettings() {
+    const settings = {};
+    settings.main = {
+      pluginsEnabled: this.pluginsEnabled
+    }
+
+    Object.keys(this.plugins).forEach(key => {
+      if (this.plugins[key] && this.plugins[key].saveSettings) {
+        settings[key] = this.plugins[key].saveSettings();
+      }
+    });
+
+    localStorage.setItem(this.LOCAL_STORAGE, JSON.stringify(settings));
+  },
+
   /**
    * Main
    */
   init() {
-    // let savedSettings = localStorage.getItem('slack_plugins');
-    // if (savedSettings) {
-    //   this.plugins = Object.assign({}, this.plugins, JSON.parse(savedSettings));
-    // }
-
     this._initSettings();
 
     // Add a keybinding to reinit
@@ -347,18 +375,9 @@ ${plugin.desc}
 
   // Init settings dialog
   _initSettings() {
-    const maxTries = 100;
-    let counter = 0;
-
     this.interval = setInterval(() => {
-      counter++;
       if (document.getElementById('pluginsSection')) {
         // Already added
-        return;
-      }
-      
-      if (counter > maxTries) {
-        clearInterval(this.interval);
         return;
       }
 
@@ -367,6 +386,7 @@ ${plugin.desc}
       if (this.sidebarLoaded) {
         this.$sideBar = document.querySelector('.p-channel_sidebar__static_list .c-scrollbar__hider');
         this._insertPluginSection();
+        this.loadSettings();
         this.initPlugins();
         // clearInterval(this.interval);
       }
@@ -418,7 +438,7 @@ window.slackPluginsAPI.plugins.nextTheme = {
     'dracula',
     'github',
     'nightowl',
-    'lightowl',
+    'lightowl'
   ],
   // Current theme
   currentTheme: 0,
@@ -427,9 +447,14 @@ window.slackPluginsAPI.plugins.nextTheme = {
   nextTheme() {
     this.currentTheme = (this.currentTheme + 1) % this.themes.length;
 
+    this.applyTheme();
+  },
+
+  applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: window.themePresets[this.themes[this.currentTheme]],
+      detail: window.themePresets[this.themes[this.currentTheme]]
     }));
+    window.slackPluginsAPI.saveSettings();
   },
 
   init() {
@@ -451,17 +476,33 @@ window.slackPluginsAPI.plugins.nextTheme = {
       // Add buttons
       $header.appendChild($nextThemeBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applyTheme();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      currentTheme: this.currentTheme
+    }
   },
 
   // Show/hide a toolbar button
   toggleDisplay(button) {
     if (this.enabled) {
       button.style.display = 'flex';
-    } else {
+    }
+    else {
       button.style.display = 'none';
     }
   },
@@ -496,13 +537,19 @@ window.slackPluginsAPI.plugins.sidebar = {
 
   // Toggle Sidebar
   toggleSidebar() {
+    this.sidebarEnabled = !this.sidebarEnabled;
+    this.applySidebar();
+
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  applySidebar() {
     const sidebar = document.querySelector('.p-workspace');
     if (this.sidebarEnabled) {
       sidebar.style.gridTemplateColumns = '0px auto';
-      this.sidebarEnabled = false;
-    } else {
+    }
+    else {
       sidebar.style.gridTemplateColumns = '220px auto';
-      this.sidebarEnabled = true;
     }
   },
 
@@ -525,17 +572,33 @@ window.slackPluginsAPI.plugins.sidebar = {
       // Add buttons
       $header.appendChild($sidebarBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applySidebar();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      sidebarEnabled: this.sidebarEnabled
+    };
   },
 
   // Show/hide a toolbar button
   toggleDisplay(button) {
     if (this.enabled) {
       button.style.display = 'flex';
-    } else {
+    }
+    else {
       button.style.display = 'none';
     }
   },
@@ -600,6 +663,7 @@ window.slackPluginsAPI.plugins.fonts = {
     else {
       document.querySelector('body').style.fontFamily = 'Slack-Lato,appleLogo,sans-serif';
     }
+    window.slackPluginsAPI.saveSettings();
   },
 
   init() {
@@ -619,10 +683,26 @@ window.slackPluginsAPI.plugins.fonts = {
       // Add buttons
       $header.appendChild($fontsToggleBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applyFonts();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      fontFamily: this.fontFamily,
+      fontsEnabled: this.fontsEnabled
+    };
   },
 
   // Show/hide a toolbar button

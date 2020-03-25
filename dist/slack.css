@@ -8914,7 +8914,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before {
   border-bottom: 1px solid var(--active);
   background: var(--secondBg);
-  box-shadow: 0 32px var(--bg); }
+  box-shadow: 0 32px var(--bg) !important; }
 
 .c-message__sender {
   color: var(--fg); }

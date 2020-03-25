@@ -12,8 +12,9 @@
     "major": "npm version major && npm publish",
     "apply": "sudo npx ./main.js",
     "windows": "npx ./main.js",
-    "build": "gulp styles",
+    "styles": "gulp styles",
     "debugStyles": "gulp debugStyles",
+    "watchStyles": "gulp watchStyles",
     "scripts": "gulp scripts",
     "watchScripts": "gulp watchScripts",
     "debug": "export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"

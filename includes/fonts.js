@@ -48,6 +48,7 @@ window.slackPluginsAPI.plugins.fonts = {
     else {
       document.querySelector('body').style.fontFamily = 'Slack-Lato,appleLogo,sans-serif';
     }
+    window.slackPluginsAPI.saveSettings();
   },
 
   init() {
@@ -67,10 +68,26 @@ window.slackPluginsAPI.plugins.fonts = {
       // Add buttons
       $header.appendChild($fontsToggleBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applyFonts();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      fontFamily: this.fontFamily,
+      fontsEnabled: this.fontsEnabled
+    };
   },
 
   // Show/hide a toolbar button

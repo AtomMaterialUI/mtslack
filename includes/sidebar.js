@@ -18,13 +18,19 @@ window.slackPluginsAPI.plugins.sidebar = {
 
   // Toggle Sidebar
   toggleSidebar() {
+    this.sidebarEnabled = !this.sidebarEnabled;
+    this.applySidebar();
+
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  applySidebar() {
     const sidebar = document.querySelector('.p-workspace');
     if (this.sidebarEnabled) {
       sidebar.style.gridTemplateColumns = '0px auto';
-      this.sidebarEnabled = false;
-    } else {
+    }
+    else {
       sidebar.style.gridTemplateColumns = '220px auto';
-      this.sidebarEnabled = true;
     }
   },
 
@@ -47,17 +53,33 @@ window.slackPluginsAPI.plugins.sidebar = {
       // Add buttons
       $header.appendChild($sidebarBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applySidebar();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      sidebarEnabled: this.sidebarEnabled
+    };
   },
 
   // Show/hide a toolbar button
   toggleDisplay(button) {
     if (this.enabled) {
       button.style.display = 'flex';
-    } else {
+    }
+    else {
       button.style.display = 'none';
     }
   },

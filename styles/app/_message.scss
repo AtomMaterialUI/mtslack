@@ -25,7 +25,7 @@
       &:not(.c-virtual_list--scrollbar):before {
         border-bottom: 1px solid $borderLight;
         background: $bg2;
-        box-shadow: 0 32px $bg;
+        box-shadow: 0 32px $bg !important;
       }
     }
   }

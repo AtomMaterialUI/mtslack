@@ -29,7 +29,7 @@ window.slackPluginsAPI.plugins.nextTheme = {
     'dracula',
     'github',
     'nightowl',
-    'lightowl',
+    'lightowl'
   ],
   // Current theme
   currentTheme: 0,
@@ -38,9 +38,14 @@ window.slackPluginsAPI.plugins.nextTheme = {
   nextTheme() {
     this.currentTheme = (this.currentTheme + 1) % this.themes.length;
 
+    this.applyTheme();
+  },
+
+  applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: window.themePresets[this.themes[this.currentTheme]],
+      detail: window.themePresets[this.themes[this.currentTheme]]
     }));
+    window.slackPluginsAPI.saveSettings();
   },
 
   init() {
@@ -62,17 +67,33 @@ window.slackPluginsAPI.plugins.nextTheme = {
       // Add buttons
       $header.appendChild($nextThemeBtn);
     }
+
+    this.toggleDisplay(this.$el);
+    this.applyTheme();
   },
 
   toggle() {
     this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  },
+
+  loadSettings(settings) {
+    Object.assign(this, settings);
+  },
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      currentTheme: this.currentTheme
+    }
   },
 
   // Show/hide a toolbar button
   toggleDisplay(button) {
     if (this.enabled) {
       button.style.display = 'flex';
-    } else {
+    }
+    else {
       button.style.display = 'none';
     }
   },

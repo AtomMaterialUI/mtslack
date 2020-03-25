@@ -1,4 +1,5 @@
 const slackPluginsAPI = {
+  LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
   // Loaded plugins
   plugins: {
@@ -326,15 +327,42 @@ ${plugin.desc}
     });
   },
 
+  loadSettings() {
+    try {
+      let savedSettings = localStorage.getItem(this.LOCAL_STORAGE);
+      if (savedSettings) {
+        savedSettings = JSON.parse(savedSettings);
+
+        Object.keys(this.plugins).forEach(key => {
+          if (this.plugins[key] && this.plugins[key].loadSettings && savedSettings[key]) {
+            this.plugins[key].loadSettings(savedSettings[key]);
+          }
+        });
+      }
+    } catch (e) {
+      ;
+    }
+  },
+
+  saveSettings() {
+    const settings = {};
+    settings.main = {
+      pluginsEnabled: this.pluginsEnabled
+    }
+
+    Object.keys(this.plugins).forEach(key => {
+      if (this.plugins[key] && this.plugins[key].saveSettings) {
+        settings[key] = this.plugins[key].saveSettings();
+      }
+    });
+
+    localStorage.setItem(this.LOCAL_STORAGE, JSON.stringify(settings));
+  },
+
   /**
    * Main
    */
   init() {
-    // let savedSettings = localStorage.getItem('slack_plugins');
-    // if (savedSettings) {
-    //   this.plugins = Object.assign({}, this.plugins, JSON.parse(savedSettings));
-    // }
-
     this._initSettings();
 
     // Add a keybinding to reinit
@@ -347,18 +375,9 @@ ${plugin.desc}
 
   // Init settings dialog
   _initSettings() {
-    const maxTries = 100;
-    let counter = 0;
-
     this.interval = setInterval(() => {
-      counter++;
       if (document.getElementById('pluginsSection')) {
         // Already added
-        return;
-      }
-
-      if (counter > maxTries) {
-        clearInterval(this.interval);
         return;
       }
 
@@ -367,6 +386,7 @@ ${plugin.desc}
       if (this.sidebarLoaded) {
         this.$sideBar = document.querySelector('.p-channel_sidebar__static_list .c-scrollbar__hider');
         this._insertPluginSection();
+        this.loadSettings();
         this.initPlugins();
         // clearInterval(this.interval);
       }
