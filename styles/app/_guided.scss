@@ -13,3 +13,37 @@
 .p-guided_channel_setup_modal__overlay:before {
   background: $bg;
 }
+
+.p-guided_channel_modal__suggestion_button {
+  background: $button;
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+    background: $hl;
+  }
+
+  &:active {
+    color: $selectFg;
+    background: $active;
+  }
+}
+
+.p-guided_channel_setup_modal__message_input {
+  background-color: $contrast;
+}
+
+.p-guided_channel_setup_modal__send_prompt {
+  .p-guided_channel_setup_modal__keyboard_key {
+    background: $bg2;
+  }
+
+}
+
+.p-guided_channel_setup_modal__primary_button {
+  background: $primaryT;
+
+  &:focus, &:hover {
+    background: $primary;
+  }
+}

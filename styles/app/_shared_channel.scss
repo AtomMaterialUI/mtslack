@@ -82,7 +82,6 @@
   background: $bg2;
 }
 
-
 .p-channel_share_channel_paywall_modal__copy {
   color: $text;
 }
@@ -93,4 +92,12 @@
   &:hover {
     color: $selectFg;
   }
+}
+
+.p-shared_channel_introduction_modal__sub_header {
+  color: $text;
+}
+
+.p-shared_channel_introduction_modal__divider {
+  border: 0.5px solid $borderLight;
 }

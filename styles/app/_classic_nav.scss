@@ -48,6 +48,10 @@
   color: $text;
 }
 
+.p-ia__view_header .p-classic_nav__model__title__name__unmute {
+  color: $text;
+}
+
 .p-classic_nav__model__title__name__unmute {
   &.c-button--focus-visible:focus, &:hover {
     color: $red;

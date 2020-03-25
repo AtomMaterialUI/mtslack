@@ -22,7 +22,6 @@
   }
 }
 
-
 .p-download_item__action_icon {
   background: $accent;
   box-shadow: 0 0 0 3px $bg;
@@ -119,7 +118,6 @@
   color: $text;
 }
 
-
 .p-download_item__actions {
   background: $bg;
 }
@@ -151,11 +149,14 @@
   background: $active;
 }
 
-
 .p-download_toast__progress_outer {
   background: $button;
 }
 
 .p-download_toast__progress_inner {
   background: $accent;
+}
+
+.p-download_toast__progress_inner--complete {
+  background: $primary;
 }
