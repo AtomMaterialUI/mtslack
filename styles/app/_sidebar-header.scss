@@ -1,0 +1,33 @@
+.p-ia__sidebar_header {
+  background: $contrast;
+  color: $fg;
+
+  &:hover {
+    background: $bg;
+    color: $selectFg;
+  }
+}
+.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
+.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
+  border-bottom: 1px solid $border;
+}
+
+.p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__button:hover,
+.p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__mode:hover {
+  border-color: $borderLight;
+}
+
+.p-channel_sidebar__compose_button--iap1 {
+  background: $button;
+  color: $fg;
+  box-shadow: none;
+
+  &:hover {
+    background: $hl;
+    color: $primary;
+  }
+}
+
+.p-channel_sidebar--iap1 .p-channel_sidebar__divider {
+  border-bottom-color: $border;
+}

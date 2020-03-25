@@ -1,0 +1,47 @@
+.p-top_nav {
+  background: $bg2;
+}
+
+.p-top_nav__button {
+  color: $fg;
+  border-radius: 50%;
+}
+
+.p-top_nav__button:hover {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-top_nav__sidebar .p-channel_sidebar__history_button {
+  color: $fg;
+}
+
+.p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-top_nav__search {
+  color: $fg;
+  background: $contrast;
+  box-shadow: inset 0 0 0 1px $borderLight;
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px $primary;
+  }
+
+  &:hover {
+    background: $contrast;
+    color: $primary;
+    box-shadow: inset 0 0 0 1px $primary;
+  }
+}
+
+.p-top_nav__help__badge {
+  background: $accent;
+  box-shadow: 0 0 0 2px $bg;
+}
+
+.p-top_nav__ia_edu_throbber circle {
+  fill: $primary;
+}
