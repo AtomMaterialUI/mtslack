@@ -407,142 +407,269 @@ window.slackPluginsAPI = slackPluginsAPI;
 /** DO NOT TOUCH THIS PART **/
 // Here are files included in the end bundle
 
+// Base.js
+window.slackPluginsAPI = window.slackPluginsAPI || {};
+window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
+
+class PluginBase {
+  constructor() {
+    // Mandatory parameters
+    this.name = 'pluginBase';
+    this.desc = 'A plugin description';
+    this.longDescription = 'Description to show in the settings';
+    this.enabled = true; //Whether the plugin is enabled
+    this.shortcut = ''; // Assign a shortcut key
+    this.icon = ''; // Icon to put on the toolbar
+
+    // Toolbar button
+    this.$el = null;
+
+    // Extra content for settings
+    this.extraContentId = null;
+  }
+
+  /**
+   * Action to run when clicking on the toolbar button
+   */
+  callback() {
+    this.toggle();
+  }
+
+  /**
+   * Action to run upon initialization
+   */
+  init() {
+    // Next Theme
+    const $toolbarBtn = document.createElement('button');
+    this.$el = $toolbarBtn;
+
+    $toolbarBtn.className =
+      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
+    this.addIcon($toolbarBtn);
+    $toolbarBtn.addEventListener('click', () => this.onToolbarClick());
+    // Add tooltip
+    window.slackPluginsAPI.addTooltip(this);
+
+    let $header = document.querySelector('.p-classic_nav__right_header');
+    if ($header) {
+      // Add buttons
+      $header.appendChild($toolbarBtn);
+    }
+
+    // Show or hide the toolbar button according to settings
+    this.toggleDisplay($toolbarBtn);
+
+    // Apply preferences
+    this.apply();
+  }
+
+  /**
+   * What to do on toolbar click
+   * @abstract
+   */
+  onToolbarClick() {
+    // to be implemented
+  }
+
+  /**
+   * Toggle this plugin
+   */
+  toggle() {
+    this.toggleDisplay(this.$el);
+    window.slackPluginsAPI.saveSettings();
+  }
+
+  /**
+   * Show or hide the toolbar button
+   * @param button
+   */
+  toggleDisplay() {
+    if (this.enabled) {
+      this.$el.style.display = 'flex';
+    }
+    else {
+      this.$el.style.display = 'none';
+    }
+  }
+
+  /**
+   * Load settings for this plugin
+   * @param settings
+   */
+  loadSettings(settings = {}) {
+    Object.assign(this, settings);
+  }
+
+  /**
+   * Return settings to save
+   * @abstract
+   */
+  saveSettings() {
+    throw Error('To be implemented');
+  }
+
+  /**
+   * Change the enabled state
+   * @param enabled
+   */
+  switch(enabled) {
+    this.enabled = enabled;
+    this.toggle();
+  }
+
+  /**
+   * Add icon to the toolbar button
+   * @param button
+   */
+  addIcon() {
+    this.$el.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+  }
+
+  /**
+   * Apply the plugin
+   * @abstract
+   */
+  apply() {
+    throw Error('to be implemented');
+  }
+
+  /**
+   * Return the html code for the extra content
+   */
+  extraContent() {
+    return '';
+  }
+
+  /**
+   * Action executed on clicking apply
+   */
+  extraContentOnClick() {
+// to be implemented
+  }
+}
+
+window.slackPluginsAPI.pluginBase = PluginBase;
+
 // Themes.js
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-window.slackPluginsAPI.plugins.nextTheme = {
-  name: 'nextTheme',
-  desc: 'Loop over installed themes',
-  longDescription: 'Add a button in the toolbar to loop over installed themes',
-  enabled: true,
-  shortcut: '',
-  icon: 'magic',
+class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'nextTheme';
+    this.desc = 'Loop over installed themes';
+    this.longDescription = 'Add a button in the toolbar to loop over installed themes';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'magic';
 
-  callback: function () {
-    this.toggle();
-  },
-  // Theme list
-  themes: [
-    'oceanic',
-    'darker',
-    'lighter',
-    'palenight',
-    'deepocean',
-    'monokai',
-    'arcdark',
-    'onedark',
-    'onelight',
-    'solardark',
-    'solarlight',
-    'dracula',
-    'github',
-    'nightowl',
-    'lightowl'
-  ],
-  // Current theme
-  currentTheme: 0,
+    // Specific
+    // Theme list
+    this.themes = [
+      'oceanic',
+      'darker',
+      'lighter',
+      'palenight',
+      'deepocean',
+      'monokai',
+      'arcdark',
+      'onedark',
+      'onelight',
+      'solardark',
+      'solarlight',
+      'dracula',
+      'github',
+      'nightowl',
+      'lightowl'
+    ];
+    // Current theme
+    this.currentTheme = 0;
+  }
 
-  // Loop over themes
+  apply() {
+    this.applyTheme();
+  }
+
+  onToolbarClick() {
+    this.nextTheme();
+  }
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      currentTheme: this.currentTheme
+    };
+  }
+
+  /**
+   * Loop over themes
+   */
   nextTheme() {
     this.currentTheme = (this.currentTheme + 1) % this.themes.length;
 
     this.applyTheme();
-  },
+  }
 
   applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
       detail: window.themePresets[this.themes[this.currentTheme]]
     }));
     window.slackPluginsAPI.saveSettings();
-  },
-
-  init() {
-    // Next Theme
-    const $nextThemeBtn = document.createElement('button');
-    this.$el = $nextThemeBtn;
-
-    $nextThemeBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($nextThemeBtn);
-    $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
-    // Add tooltip
-    window.slackPluginsAPI.addTooltip(this);
-
-    // this.toggleDisplay($nextThemeBtn, 'nextTheme');
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($nextThemeBtn);
-    }
-
-    this.toggleDisplay(this.$el);
-    this.applyTheme();
-  },
-
-  toggle() {
-    this.toggleDisplay(this.$el);
-    window.slackPluginsAPI.saveSettings();
-  },
-
-  loadSettings(settings) {
-    Object.assign(this, settings);
-  },
-
-  saveSettings() {
-    return {
-      enabled: this.enabled,
-      currentTheme: this.currentTheme
-    }
-  },
-
-  // Show/hide a toolbar button
-  toggleDisplay(button) {
-    if (this.enabled) {
-      button.style.display = 'flex';
-    }
-    else {
-      button.style.display = 'none';
-    }
-  },
-
-  switch(enabled) {
-    this.enabled = enabled;
-    this.toggle();
-  },
-
-  addIcon(button) {
-    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
-};
+}
+
+window.slackPluginsAPI.plugins.nextTheme = new NextThemePlugin();
 
 // Sidebar.js
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-window.slackPluginsAPI.plugins.sidebar = {
-  name: 'sidebar',
-  desc: 'Toggle Sidebar',
-  longDescription: 'Show or hide the sidebar',
-  enabled: true,
-  shortcut: '',
-  icon: 'side-panel',
+class SidebarPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'sidebar';
+    this.desc = 'Toggle Sidebar';
+    this.longDescription = 'Show or hide the sidebar';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'side-panel';
 
-  sidebarEnabled: true,
+    // Specific
+    this.sidebarEnabled = true;
 
-  callback: function () {
-    this.toggle();
-  },
+  }
 
-  // Toggle Sidebar
+  apply() {
+    this.applySidebar();
+  }
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      sidebarEnabled: this.sidebarEnabled
+    };
+  }
+
+  onToolbarClick() {
+    this.toggleSidebar();
+  }
+
+  /**
+   * Toggle Sidebar
+   */
   toggleSidebar() {
     this.sidebarEnabled = !this.sidebarEnabled;
     this.applySidebar();
 
     window.slackPluginsAPI.saveSettings();
-  },
+  }
 
+  /**
+   * Apply
+   */
   applySidebar() {
     const sidebar = document.querySelector('.p-workspace');
     if (this.sidebarEnabled) {
@@ -551,96 +678,40 @@ window.slackPluginsAPI.plugins.sidebar = {
     else {
       sidebar.style.gridTemplateColumns = '220px auto';
     }
-  },
-
-  init() {
-    // Toggle Sidebar
-    const $sidebarBtn = document.createElement('button');
-    this.$el = $sidebarBtn;
-
-    $sidebarBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($sidebarBtn);
-    $sidebarBtn.addEventListener('click', this.toggleSidebar.bind(this));
-    // Add tooltip
-    window.slackPluginsAPI.addTooltip(this);
-
-    // this.toggleDisplay($sidebarBtn, 'sidebar');
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($sidebarBtn);
-    }
-
-    this.toggleDisplay(this.$el);
-    this.applySidebar();
-  },
-
-  toggle() {
-    this.toggleDisplay(this.$el);
-    window.slackPluginsAPI.saveSettings();
-  },
-
-  loadSettings(settings) {
-    Object.assign(this, settings);
-  },
-
-  saveSettings() {
-    return {
-      enabled: this.enabled,
-      sidebarEnabled: this.sidebarEnabled
-    };
-  },
-
-  // Show/hide a toolbar button
-  toggleDisplay(button) {
-    if (this.enabled) {
-      button.style.display = 'flex';
-    }
-    else {
-      button.style.display = 'none';
-    }
-  },
-
-  switch(enabled) {
-    this.enabled = enabled;
-    this.toggle();
-  },
-
-  addIcon(button) {
-    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
-};
+}
+
+window.slackPluginsAPI.plugins.sidebar = new SidebarPlugin();
 
 // Fonts.js
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-window.slackPluginsAPI.plugins.fonts = {
-  name: 'fonts',
-  desc: 'Custom Fonts',
-  longDescription: 'Enter the custom fonts, separated by commas',
-  enabled: true,
-  shortcut: '',
-  icon: 'format',
+class FontsPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'fonts';
+    this.desc = 'Custom Fonts';
+    this.longDescription = 'Enter the custom fonts, separated by commas';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'format';
 
-  DEFAULT_CUSTOM: 'Roboto, Slack-Lato, appleLogo, sans-serif',
-  DEFAULT: 'Slack-Lato, appleLogo, sans-serif',
+    // Specific
+    this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, appleLogo, sans-serif';
+    this.DEFAULT = 'Slack-Lato, appleLogo, sans-serif';
 
-  fontFamily: 'Roboto, Slack-Lato, appleLogo, sans-serif',
-  fontsEnabled: false,
+    this.fontFamily = 'Roboto, Slack-Lato, appleLogo, sans-serif';
+    this.fontsEnabled = false;
 
-  extraContentId: 'customFonts',
+    this.extraContentId = 'customFonts';
+  }
 
   extraContent() {
     return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter fonts, separated by commas" id="fontFamily" name="fontFamily" type="text" value="${this.fontFamily}">
 <button id="customFontsButton" name="customFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
-  },
-
-  callback: function () {
-    this.toggle();
-  },
+  }
 
   extraContentOnClick() {
     const ff = document.getElementById('fontFamily').value;
@@ -648,82 +719,55 @@ window.slackPluginsAPI.plugins.fonts = {
       this.fontFamily = ff;
       this.applyFonts();
     }
-  },
+  }
 
-  // Toggle Fonts
+  onToolbarClick() {
+    this.toggleFonts();
+  }
+
+  /**
+   * Toggle the setting
+   */
   toggleFonts() {
     this.fontsEnabled = !this.fontsEnabled;
     this.applyFonts();
-  },
+  }
 
+  /**
+   * Apply fonts
+   */
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
     }
     else {
-      document.querySelector('body').style.fontFamily = 'Slack-Lato,appleLogo,sans-serif';
+      document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
-  },
+  }
 
-  init() {
-    // Toggle Fonts
-    const $fontsToggleBtn = document.createElement('button');
-    this.$el = $fontsToggleBtn;
-
-    $fontsToggleBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($fontsToggleBtn);
-    $fontsToggleBtn.addEventListener('click', this.toggleFonts.bind(this));
-    // Add tooltip
-    window.slackPluginsAPI.addTooltip(this);
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($fontsToggleBtn);
-    }
-
-    this.toggleDisplay(this.$el);
+  /**
+   * Apply
+   */
+  apply() {
     this.applyFonts();
-  },
+  }
 
-  toggle() {
-    this.toggleDisplay(this.$el);
-    window.slackPluginsAPI.saveSettings();
-  },
-
-  loadSettings(settings) {
-    Object.assign(this, settings);
-  },
-
+  /**
+   * Save Settings
+   * @returns {{fontFamily: string, fontsEnabled: boolean, enabled: boolean}}
+   */
   saveSettings() {
     return {
       enabled: this.enabled,
       fontFamily: this.fontFamily,
       fontsEnabled: this.fontsEnabled
     };
-  },
-
-  // Show/hide a toolbar button
-  toggleDisplay(button) {
-    if (this.enabled) {
-      button.style.display = 'flex';
-    }
-    else {
-      button.style.display = 'none';
-    }
-  },
-
-  switch(enabled) {
-    this.enabled = enabled;
-    this.toggle();
-  },
-
-  addIcon(button) {
-    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
-};
+
+}
+
+window.slackPluginsAPI.plugins.fonts = new FontsPlugin();
 
 
 /** END DO NOT TOUCH THIS PART */

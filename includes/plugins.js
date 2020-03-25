@@ -407,6 +407,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 /** DO NOT TOUCH THIS PART **/
 // Here are files included in the end bundle
 
+//= include base.js
 //= include themes.js
 //= include sidebar.js
 //= include fonts.js

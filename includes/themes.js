@@ -2,108 +2,70 @@
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-window.slackPluginsAPI.plugins.nextTheme = {
-  name: 'nextTheme',
-  desc: 'Loop over installed themes',
-  longDescription: 'Add a button in the toolbar to loop over installed themes',
-  enabled: true,
-  shortcut: '',
-  icon: 'magic',
+class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'nextTheme';
+    this.desc = 'Loop over installed themes';
+    this.longDescription = 'Add a button in the toolbar to loop over installed themes';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'magic';
 
-  callback: function () {
-    this.toggle();
-  },
-  // Theme list
-  themes: [
-    'oceanic',
-    'darker',
-    'lighter',
-    'palenight',
-    'deepocean',
-    'monokai',
-    'arcdark',
-    'onedark',
-    'onelight',
-    'solardark',
-    'solarlight',
-    'dracula',
-    'github',
-    'nightowl',
-    'lightowl'
-  ],
-  // Current theme
-  currentTheme: 0,
+    // Specific
+    // Theme list
+    this.themes = [
+      'oceanic',
+      'darker',
+      'lighter',
+      'palenight',
+      'deepocean',
+      'monokai',
+      'arcdark',
+      'onedark',
+      'onelight',
+      'solardark',
+      'solarlight',
+      'dracula',
+      'github',
+      'nightowl',
+      'lightowl'
+    ];
+    // Current theme
+    this.currentTheme = 0;
+  }
 
-  // Loop over themes
+  apply() {
+    this.applyTheme();
+  }
+
+  onToolbarClick() {
+    this.nextTheme();
+  }
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      currentTheme: this.currentTheme
+    };
+  }
+
+  /**
+   * Loop over themes
+   */
   nextTheme() {
     this.currentTheme = (this.currentTheme + 1) % this.themes.length;
 
     this.applyTheme();
-  },
+  }
 
   applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
       detail: window.themePresets[this.themes[this.currentTheme]]
     }));
     window.slackPluginsAPI.saveSettings();
-  },
-
-  init() {
-    // Next Theme
-    const $nextThemeBtn = document.createElement('button');
-    this.$el = $nextThemeBtn;
-
-    $nextThemeBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($nextThemeBtn);
-    $nextThemeBtn.addEventListener('click', this.nextTheme.bind(this));
-    // Add tooltip
-    window.slackPluginsAPI.addTooltip(this);
-
-    // this.toggleDisplay($nextThemeBtn, 'nextTheme');
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($nextThemeBtn);
-    }
-
-    this.toggleDisplay(this.$el);
-    this.applyTheme();
-  },
-
-  toggle() {
-    this.toggleDisplay(this.$el);
-    window.slackPluginsAPI.saveSettings();
-  },
-
-  loadSettings(settings) {
-    Object.assign(this, settings);
-  },
-
-  saveSettings() {
-    return {
-      enabled: this.enabled,
-      currentTheme: this.currentTheme
-    }
-  },
-
-  // Show/hide a toolbar button
-  toggleDisplay(button) {
-    if (this.enabled) {
-      button.style.display = 'flex';
-    }
-    else {
-      button.style.display = 'none';
-    }
-  },
-
-  switch(enabled) {
-    this.enabled = enabled;
-    this.toggle();
-  },
-
-  addIcon(button) {
-    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
-};
+}
+
+window.slackPluginsAPI.plugins.nextTheme = new NextThemePlugin();

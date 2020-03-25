@@ -2,30 +2,31 @@
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-window.slackPluginsAPI.plugins.fonts = {
-  name: 'fonts',
-  desc: 'Custom Fonts',
-  longDescription: 'Enter the custom fonts, separated by commas',
-  enabled: true,
-  shortcut: '',
-  icon: 'format',
+class FontsPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'fonts';
+    this.desc = 'Custom Fonts';
+    this.longDescription = 'Enter the custom fonts, separated by commas';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'format';
 
-  DEFAULT_CUSTOM: 'Roboto, Slack-Lato, appleLogo, sans-serif',
-  DEFAULT: 'Slack-Lato, appleLogo, sans-serif',
+    // Specific
+    this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, appleLogo, sans-serif';
+    this.DEFAULT = 'Slack-Lato, appleLogo, sans-serif';
 
-  fontFamily: 'Roboto, Slack-Lato, appleLogo, sans-serif',
-  fontsEnabled: false,
+    this.fontFamily = 'Roboto, Slack-Lato, appleLogo, sans-serif';
+    this.fontsEnabled = false;
 
-  extraContentId: 'customFonts',
+    this.extraContentId = 'customFonts';
+  }
 
   extraContent() {
     return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter fonts, separated by commas" id="fontFamily" name="fontFamily" type="text" value="${this.fontFamily}">
 <button id="customFontsButton" name="customFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
-  },
-
-  callback: function () {
-    this.toggle();
-  },
+  }
 
   extraContentOnClick() {
     const ff = document.getElementById('fontFamily').value;
@@ -33,79 +34,52 @@ window.slackPluginsAPI.plugins.fonts = {
       this.fontFamily = ff;
       this.applyFonts();
     }
-  },
+  }
 
-  // Toggle Fonts
+  onToolbarClick() {
+    this.toggleFonts();
+  }
+
+  /**
+   * Toggle the setting
+   */
   toggleFonts() {
     this.fontsEnabled = !this.fontsEnabled;
     this.applyFonts();
-  },
+  }
 
+  /**
+   * Apply fonts
+   */
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
     }
     else {
-      document.querySelector('body').style.fontFamily = 'Slack-Lato,appleLogo,sans-serif';
+      document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
-  },
+  }
 
-  init() {
-    // Toggle Fonts
-    const $fontsToggleBtn = document.createElement('button');
-    this.$el = $fontsToggleBtn;
-
-    $fontsToggleBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($fontsToggleBtn);
-    $fontsToggleBtn.addEventListener('click', this.toggleFonts.bind(this));
-    // Add tooltip
-    window.slackPluginsAPI.addTooltip(this);
-
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    if ($header) {
-      // Add buttons
-      $header.appendChild($fontsToggleBtn);
-    }
-
-    this.toggleDisplay(this.$el);
+  /**
+   * Apply
+   */
+  apply() {
     this.applyFonts();
-  },
+  }
 
-  toggle() {
-    this.toggleDisplay(this.$el);
-    window.slackPluginsAPI.saveSettings();
-  },
-
-  loadSettings(settings) {
-    Object.assign(this, settings);
-  },
-
+  /**
+   * Save Settings
+   * @returns {{fontFamily: string, fontsEnabled: boolean, enabled: boolean}}
+   */
   saveSettings() {
     return {
       enabled: this.enabled,
       fontFamily: this.fontFamily,
       fontsEnabled: this.fontsEnabled
     };
-  },
-
-  // Show/hide a toolbar button
-  toggleDisplay(button) {
-    if (this.enabled) {
-      button.style.display = 'flex';
-    }
-    else {
-      button.style.display = 'none';
-    }
-  },
-
-  switch(enabled) {
-    this.enabled = enabled;
-    this.toggle();
-  },
-
-  addIcon(button) {
-    button.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
-};
+
+}
+
+window.slackPluginsAPI.plugins.fonts = new FontsPlugin();
