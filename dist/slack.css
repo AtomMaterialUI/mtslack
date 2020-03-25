@@ -10955,6 +10955,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 .p-comment_list__toggle_container {
   color: var(--text); }
 
+.p-flexpane--iap1 .p-flexpane_header,
 .p-flexpane_header {
   background: var(--secondBg);
   border-bottom: 1px solid var(--secondBg); }
