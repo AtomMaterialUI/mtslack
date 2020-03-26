@@ -1,0 +1,26 @@
+.p-client_container_placeholder {
+  border-right: 1px solid $borderLight;
+}
+
+.p-client_container_placeholder--with-team-switcher:after {
+  background: $border;
+}
+
+.p-client_container_placeholder .p-view_header_placeholder {
+  border-bottom: 1px solid $borderLight
+}
+
+.p-client_container_placeholder .p-message_input_placeholder {
+  border: 1px solid $borderLight;
+}
+
+.p-client_container_placeholder p-client_container_placeholder--with-team-switcher p-client_container_placeholder--iap1 {
+  background: $bg2 !important;
+  color: $fg !important;
+  border-color: $border !important;
+}
+
+.p-client_container_placeholder--iap1 .p-client_container_placeholder__nav {
+  background: $contrast !important;
+  color: $fg !important;
+}
