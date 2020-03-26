@@ -11392,18 +11392,6 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   to {
     background: transparent; } }
 
-.p-prefs_modal__theme_section > * {
-  cursor: not-allowed;
-  opacity: 0.25;
-  pointer-events: none; }
-
-.p-prefs_modal__theme_section::before {
-  content: ' (disabled: the Custom Themes override these settings ;))';
-  font-size: 30px;
-  margin: 1em auto;
-  opacity: 1;
-  text-align: center; }
-
 .p-prefs_modal__theme_section h2,
 .p-prefs_modal__theme_section h3 {
   text-decoration: line-through; }
