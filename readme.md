@@ -156,33 +156,6 @@ Instead of launching Slack normally, you'll need to enable developer mode to be 
 
 * Windows: (todo)
 
-#### Live Reload
-
-In addition to running the required modifications, you will likely want to add auto-reloading:
-
-```js
-const cssPath = 'http://localhost:8080/dist/slack.css';
-
-window.reloadCss = function() {
-   const webviews = document.querySelectorAll(".TeamView webview");
-   fetch(cssPath + '?zz=' + Date.now(), {cache: "no-store"}) // qs hack to prevent cache
-      .then(response => response.text())
-      .then(css => {
-         console.log(css.slice(0,50));
-         webviews.forEach(webview =>
-            webview.executeJavaScript(`
-               (function() {
-                  let styleElement = document.querySelector('style#slack-custom-css');
-                  styleElement.innerHTML = \`${css}\`;
-               })();
-            `)
-         )
-      });
-};
-
-fs.watchFile(cssPath, reloadCss);
-```
-
 # License
 
 Apache 2.0

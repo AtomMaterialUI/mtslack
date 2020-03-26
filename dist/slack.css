@@ -3467,40 +3467,40 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
     border-color: var(--disabled); }
 
 .p-top_nav {
-  background: var(--secondBg); }
+  background: var(--secondBg) !important; }
 
 .p-top_nav__button {
-  color: var(--fg);
-  border-radius: 50%; }
+  color: var(--fg) !important;
+  border-radius: 50% !important; }
 
 .p-top_nav__button:hover {
-  background: var(--accent);
-  color: var(--selectFg); }
+  background: var(--accent) !important;
+  color: var(--selectFg) !important; }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button {
-  color: var(--fg); }
+  color: var(--fg) !important; }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
-  background: var(--accent);
-  color: var(--selectFg); }
+  background: var(--accent) !important;
+  color: var(--selectFg) !important; }
 
 .p-top_nav__search {
-  color: var(--fg);
-  background: var(--contrast);
-  box-shadow: inset 0 0 0 1px var(--active); }
+  color: var(--fg) !important;
+  background: var(--contrast) !important;
+  box-shadow: inset 0 0 0 1px var(--active) !important; }
   .p-top_nav__search:focus {
-    box-shadow: inset 0 0 0 1px var(--primary); }
+    box-shadow: inset 0 0 0 1px var(--primary) !important; }
   .p-top_nav__search:hover {
-    background: var(--contrast);
-    color: var(--primary);
-    box-shadow: inset 0 0 0 1px var(--primary); }
+    background: var(--contrast) !important;
+    color: var(--primary) !important;
+    box-shadow: inset 0 0 0 1px var(--primary) !important; }
 
 .p-top_nav__help__badge {
-  background: var(--accent);
-  box-shadow: 0 0 0 2px var(--bg); }
+  background: var(--accent) !important;
+  box-shadow: 0 0 0 2px var(--bg) !important; }
 
 .p-top_nav__ia_edu_throbber circle {
-  fill: var(--primary); }
+  fill: var(--primary) !important; }
 
 .p-ia__sidebar_header {
   background: var(--contrast);
@@ -11391,6 +11391,18 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
     background: var(--excluded); }
   to {
     background: transparent; } }
+
+.p-prefs_modal__theme_section > * {
+  cursor: not-allowed;
+  opacity: 0.25;
+  pointer-events: none; }
+
+.p-prefs_modal__theme_section::before {
+  content: ' (disabled: the Custom Themes override these settings ;))';
+  font-size: 30px;
+  margin: 1em auto;
+  opacity: 1;
+  text-align: center; }
 
 .p-prefs_modal__theme_section h2,
 .p-prefs_modal__theme_section h3 {

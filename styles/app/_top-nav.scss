@@ -1,47 +1,47 @@
 .p-top_nav {
-  background: $bg2;
+  background: $bg2 !important;
 }
 
 .p-top_nav__button {
-  color: $fg;
-  border-radius: 50%;
+  color: $fg !important;
+  border-radius: 50% !important;
 }
 
 .p-top_nav__button:hover {
-  background: $accent;
-  color: $selectFg;
+  background: $accent !important;
+  color: $selectFg !important;
 }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button {
-  color: $fg;
+  color: $fg !important;
 }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
-  background: $accent;
-  color: $selectFg;
+  background: $accent !important;
+  color: $selectFg !important;
 }
 
 .p-top_nav__search {
-  color: $fg;
-  background: $contrast;
-  box-shadow: inset 0 0 0 1px $borderLight;
+  color: $fg !important;
+  background: $contrast !important;
+  box-shadow: inset 0 0 0 1px $borderLight !important;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px $primary;
+    box-shadow: inset 0 0 0 1px $primary !important;
   }
 
   &:hover {
-    background: $contrast;
-    color: $primary;
-    box-shadow: inset 0 0 0 1px $primary;
+    background: $contrast !important;
+    color: $primary !important;
+    box-shadow: inset 0 0 0 1px $primary !important;
   }
 }
 
 .p-top_nav__help__badge {
-  background: $accent;
-  box-shadow: 0 0 0 2px $bg;
+  background: $accent !important;
+  box-shadow: 0 0 0 2px $bg !important;
 }
 
 .p-top_nav__ia_edu_throbber circle {
-  fill: $primary;
+  fill: $primary !important;
 }

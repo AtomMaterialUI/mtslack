@@ -17,6 +17,8 @@
     "watchStyles": "gulp watchStyles",
     "scripts": "gulp scripts",
     "watchScripts": "gulp watchScripts",
+    "httpServer": "http-server --cors &",
+    "liveServer": "npm run httpServer && npm run watchStyles",
     "debug": "export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"
   },
   "engines": {
@@ -77,6 +79,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
+    "http-server": "^0.12.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.7",
     "npx": "^10.2.0",
