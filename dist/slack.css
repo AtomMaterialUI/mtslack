@@ -3466,6 +3466,27 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   .cm-s-yonce .CodeMirror:focus, .cm-s-yonce .CodeMirror:hover {
     border-color: var(--disabled); }
 
+.p-client_container_placeholder {
+  border-right: 1px solid var(--active) !important; }
+
+.p-client_container_placeholder--with-team-switcher:after {
+  background: var(--border) !important; }
+
+.p-client_container_placeholder .p-view_header_placeholder {
+  border-bottom: 1px solid var(--active) !important; }
+
+.p-client_container_placeholder .p-message_input_placeholder {
+  border: 1px solid var(--active) !important; }
+
+.p-client_container_placeholder p-client_container_placeholder--with-team-switcher p-client_container_placeholder--iap1 {
+  background: var(--secondBg) !important;
+  color: var(--fg) !important;
+  border-color: var(--border) !important; }
+
+.p-client_container_placeholder--iap1 .p-client_container_placeholder__nav {
+  background: var(--contrast) !important;
+  color: var(--fg) !important; }
+
 .p-top_nav {
   background: var(--secondBg) !important; }
 

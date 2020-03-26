@@ -1,17 +1,17 @@
 .p-client_container_placeholder {
-  border-right: 1px solid $borderLight;
+  border-right: 1px solid $borderLight !important;
 }
 
 .p-client_container_placeholder--with-team-switcher:after {
-  background: $border;
+  background: $border !important;
 }
 
 .p-client_container_placeholder .p-view_header_placeholder {
-  border-bottom: 1px solid $borderLight
+  border-bottom: 1px solid $borderLight !important;
 }
 
 .p-client_container_placeholder .p-message_input_placeholder {
-  border: 1px solid $borderLight;
+  border: 1px solid $borderLight !important;
 }
 
 .p-client_container_placeholder p-client_container_placeholder--with-team-switcher p-client_container_placeholder--iap1 {
