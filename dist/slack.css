@@ -9336,6 +9336,14 @@ a.c-message__call_name--linked {
 .p-workspace__boot_failure_description {
   background-color: var(--bg); }
 
+.p-workspace--context-pane-collapsed {
+  grid-template-columns: 220px auto !important;
+  grid-template-areas: "p-workspace__banner p-workspace__banner" "p-workspace__top_nav p-workspace__top_nav" "p-workspace__sidebar p-workspace__primary_view" !important; }
+
+.p-workspace--context-pane-expanded {
+  grid-template-columns: 220px auto 312px !important;
+  grid-template-areas: "p-workspace__banner p-workspace__banner p-workspace__banner" "p-workspace__top_nav p-workspace__top_nav p-workspace__top_nav" "p-workspace__sidebar p-workspace__primary_view p-workspace__secondary_view" !important; }
+
 .c-missing_app--unknown {
   background: var(--excluded); }
 
