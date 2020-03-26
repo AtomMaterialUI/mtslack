@@ -79,4 +79,4 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.nextTheme = new AccentPlugin();
+window.slackPluginsAPI.plugins.accent = new AccentPlugin();

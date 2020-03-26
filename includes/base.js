@@ -42,9 +42,14 @@ class PluginBase {
     window.slackPluginsAPI.addTooltip(this);
 
     let $header = document.querySelector('.p-classic_nav__right_header');
+    let $newHeader = document.querySelector('.p-top_nav__right');
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
+    }
+    if ($newHeader) {
+      // Add buttons
+      $newHeader.appendChild($toolbarBtn);
     }
 
     // Show or hide the toolbar button according to settings

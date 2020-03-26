@@ -285,7 +285,7 @@ const slackPluginsAPI = {
 
     // Contents
     const $wrapper = document.createElement('div');
-    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover';
+    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover c-popover__content';
     $wrapper.style.position = 'absolute';
     $wrapper.style.top = plugin.$el.offsetTop + plugin.$el.offsetHeight + 'px';
     $wrapper.style.left = plugin.$el.offsetLeft - (plugin.$el.offsetWidth * 2) + 'px';
@@ -451,9 +451,14 @@ class PluginBase {
     window.slackPluginsAPI.addTooltip(this);
 
     let $header = document.querySelector('.p-classic_nav__right_header');
+    let $newHeader = document.querySelector('.p-top_nav__right');
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
+    }
+    if ($newHeader) {
+      // Add buttons
+      $newHeader.appendChild($toolbarBtn);
     }
 
     // Show or hide the toolbar button according to settings
@@ -850,7 +855,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.nextTheme = new AccentPlugin();
+window.slackPluginsAPI.plugins.accent = new AccentPlugin();
 
 
 /** END DO NOT TOUCH THIS PART */

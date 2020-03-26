@@ -285,7 +285,7 @@ const slackPluginsAPI = {
 
     // Contents
     const $wrapper = document.createElement('div');
-    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover';
+    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover c-popover__content';
     $wrapper.style.position = 'absolute';
     $wrapper.style.top = plugin.$el.offsetTop + plugin.$el.offsetHeight + 'px';
     $wrapper.style.left = plugin.$el.offsetLeft - (plugin.$el.offsetWidth * 2) + 'px';
