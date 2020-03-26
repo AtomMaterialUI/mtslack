@@ -140,6 +140,6 @@
 }
 
 .p-workspace--context-pane-expanded {
-  grid-template-columns: 220px auto 312px !important;
+  grid-template-columns: 220px auto 512px !important;
   grid-template-areas: "p-workspace__banner p-workspace__banner p-workspace__banner" "p-workspace__top_nav p-workspace__top_nav p-workspace__top_nav" "p-workspace__sidebar p-workspace__primary_view p-workspace__secondary_view" !important;
 }
