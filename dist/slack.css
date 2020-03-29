@@ -2233,10 +2233,10 @@ input[type=text].c-input_text.p-channel_name_input--input_with_warning {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
 
 .c-menu_separator__separator {
-  border-top: 1px solid var(--border); }
+  border-top: 1px solid var(--active); }
 
 .c-menu {
-  background-color: var(--secondBg);
+  background-color: var(--notif);
   color: var(--fg); }
 
 .c-menu_item__header {
@@ -2473,6 +2473,7 @@ input[type=checkbox]:not(.c-toggle__input) {
 .c-mrkdwn__hex {
   border: 1px solid var(--disabled); }
 
+.sk-client-theme--dark .c-mrkdwn__code,
 .c-mrkdwn__code.c-mrkdwn__code--dark {
   color: var(--accent2); }
 
@@ -4578,6 +4579,10 @@ div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
 .p-channel_sidebar__custom_sections_copy_header__heading__badge {
   color: var(--selectFg);
   background-color: var(--accent); }
+
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
+  background: var(--button);
+  color: var(--text); }
 
 .c-card {
   border: 1px solid var(--active); }
@@ -10670,7 +10675,8 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 
 .c-message_list__unread_divider__label {
   background: var(--excluded);
-  color: var(--accent2); }
+  color: var(--accent2);
+  padding: 0 6px; }
 
 .p-unavailable_channel {
   background-color: var(--bg);
@@ -11319,7 +11325,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   border-top: 1px solid var(--active); }
 
 .p-ia__main_menu__user__name_container {
-  background: var(--secondBg); }
+  background: var(--notif); }
 
 .p-ia__user_menu__blurb__status {
   color: var(--text); }

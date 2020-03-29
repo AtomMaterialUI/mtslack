@@ -408,3 +408,7 @@ div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
   background-color: $accent;
 }
 
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
+  background: $button;
+  color: $text;
+}
