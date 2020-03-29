@@ -4581,8 +4581,8 @@ div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
   background-color: var(--accent); }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
-  background: var(--button);
-  color: var(--text); }
+  background: var(--button) !important;
+  color: var(--text) !important; }
 
 .c-card {
   border: 1px solid var(--active); }

@@ -409,6 +409,6 @@ div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
-  background: $button;
-  color: $text;
+  background: $button !important;
+  color: $text !important;
 }
