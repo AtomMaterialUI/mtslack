@@ -4581,7 +4581,7 @@ div[aria-selected=true].p-channel_sidebar__static_list__item:focus:after {
   background-color: var(--accent); }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
-  background: var(--button) !important;
+  background: var(--secondBg) !important;
   color: var(--text) !important; }
 
 .c-card {
@@ -7520,7 +7520,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     color: var(--accent2); }
 
 .c-message_actions__container {
-  background: var(--bg);
+  background: var(--button);
   border: 0.0625rem solid var(--border); }
   .c-message_actions__container:hover {
     border-color: var(--active); }
