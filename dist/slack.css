@@ -11351,7 +11351,8 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   -webkit-text-stroke: 4px var(--bg); }
 
 .p-ia__view_header {
-  border-bottom: 1px solid var(--text); }
+  border-bottom: 1px solid var(--text);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55), 0 0 0 5px rgba(0, 0, 0, 0.11); }
 
 .p-ia__view_header__info .p-classic_nav__model__title__info__topic {
   color: var(--fg); }
