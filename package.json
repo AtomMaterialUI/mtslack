@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/mallowigi/slack-themes#readme",
   "dependencies": {
-    "asar": "^2.0.1",
+    "asar": "git@github.com:mallowigi/asar.git",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
