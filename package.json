@@ -57,6 +57,7 @@
     "inquirer": "^6.5.0",
     "is-root": "^2.1.0",
     "js-yaml": "^3.13.1",
+    "is-elevated": "^3.0.0",
     "minimist": "^1.2.0",
     "rimraf": "latest"
   },
