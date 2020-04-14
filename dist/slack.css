@@ -5832,6 +5832,9 @@ input[type=text].c-input_text.p-emoji_picker__input:focus {
 .c-texty_input.c-texty_input--sticky_composer.focus .ql-attachments, .c-texty_input.c-texty_input--sticky_composer.focus .ql-files {
   box-shadow: 0 -1px 0 0 var(--active); }
 
+.c-texty_input.c-texty_input--sticky_composer.focus .ql-composer-sticky {
+  background: var(--secondBg); }
+
 .c-texty_input.c-texty_input--sticky_composer ::-moz-selection, .c-texty_input.c-texty_input--sticky_composer ::selection {
   background-color: var(--selectBg);
   color: var(--selectFg); }

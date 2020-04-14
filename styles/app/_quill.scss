@@ -82,6 +82,10 @@
       .ql-attachments, .ql-files {
         box-shadow: 0 -1px 0 0 $borderLight;
       }
+
+      .ql-composer-sticky {
+        background: $bg2;
+      }
     }
 
     ::-moz-selection, ::selection {
