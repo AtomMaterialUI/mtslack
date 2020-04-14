@@ -136,16 +136,7 @@ You should already see all your styles applied. Please note that there are some 
 
 ### Using the Electron app
 
-First of all install and run a web server
-
-```
-npm i -g http-server
-http-server .
-```
-
-You can now have access to the current project directory. Particularly the `dist/slack.css` where the magic happens.
-
-Then changes the url in `lib/consts.js` to point to `http://localhost:8080/dist/slack.css` to use your local styles.
+TODO
 
 ----
 Instead of launching Slack normally, you'll need to enable developer mode to be able to inspect things.
@@ -154,7 +145,7 @@ Instead of launching Slack normally, you'll need to enable developer mode to be 
 
 * Linux: (todo)
 
-* Windows: (todo)
+* Windows: `export SLACK_DEVELOPER_MENU=true;  ~/AppData/Local/slack.exe`
 
 # License
 
