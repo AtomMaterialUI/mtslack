@@ -52,7 +52,7 @@ class SidebarPlugin extends window.slackPluginsAPI.pluginBase {
       sidebar.style.gridTemplateColumns = '0px auto';
     }
     else {
-      sidebar.style.gridTemplateColumns = '220px auto';
+      sidebar.style.gridTemplateColumns = '260px auto';
     }
   }
 }
