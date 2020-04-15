@@ -3542,10 +3542,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .p-channel_sidebar__compose_button--iap1 {
   background: var(--button) !important;
   color: var(--fg) !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  fill: var(--fg) !important; }
   .p-channel_sidebar__compose_button--iap1:hover {
     background: var(--hl) !important;
-    color: var(--primary) !important; }
+    color: var(--primary) !important;
+    fill: var(--primary) !important; }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__divider {
   border-bottom-color: var(--border) !important; }

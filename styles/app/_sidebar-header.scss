@@ -21,10 +21,12 @@
   background: $button !important;
   color: $fg !important;
   box-shadow: none !important;
+  fill: $fg !important;
 
   &:hover {
     background: $hl !important;
     color: $primary !important;
+    fill: $primary !important;
   }
 }
 
