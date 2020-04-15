@@ -9349,10 +9349,10 @@ a.c-message__call_name--linked {
   background-color: var(--bg); }
 
 .p-workspace--context-pane-collapsed {
-  grid-template-columns: 220px auto !important; }
+  grid-template-columns: 260px auto !important; }
 
 .p-workspace--context-pane-expanded {
-  grid-template-columns: 220px auto 512px !important; }
+  grid-template-columns: 260px auto 512px !important; }
 
 .c-missing_app--unknown {
   background: var(--excluded); }
