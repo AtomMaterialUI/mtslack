@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/mallowigi/slack-themes#readme",
   "dependencies": {
-    "asar": "git@github.com:mallowigi/asar.git",
+    "@mallowigi/asar": "^1.0.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
@@ -55,9 +55,9 @@
     "configstore": "^5.0.0",
     "figlet": "^1.2.3",
     "inquirer": "^6.5.0",
+    "is-elevated": "^3.0.0",
     "is-root": "^2.1.0",
     "js-yaml": "^3.13.1",
-    "is-elevated": "^3.0.0",
     "minimist": "^1.2.0",
     "rimraf": "latest"
   },
