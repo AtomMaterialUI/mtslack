@@ -91,24 +91,39 @@ There is also a `Remove Theme` option in the menu but it is less robust.
 ----
 ### Slack Tweaks (Beta)
 
-Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable.
+Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can find a button to open the Slack Tweaks on the channels sidebar.
+
+#### Slack Tweak Control Panel
 
 ![Slack Tweaks](doc/tweaks.png)
 
-Enabling these tweaks create a new icon in the Slack Toolbar to toggle the desired tweaks.
+This panel controls which tweak toggles are available. **This doesn't actually toggle the tweaks themselves!**.
 
-More will come later!
+Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will activate the tweak.
 
-**Note**
-Currently switching between Slack Workspaces would restore the default behavior, e.g. the tweaks not showing in the app.
+![Tweaks](doc/tweakbar.png)
 
-You can forcibly relaunch them by pressing Cmd+D (Alt-D on Windows/Linux).
+These settings are saved in the application's Local Storage.
 
-**Note**:
+#### Loop Over selected themes
 
-These tweaks are currently in a very early release. It can causes some problems, especially every time Slack updates their application.
+This button will loop over the available themes, allowing you to choose a theme in realtime.
 
+#### Toggle Sidebar
 
+Shows/Hides the channel sidebar
+
+#### Toggle Custom Font
+
+Switch the fonts used in the app with the font you've defined in the Slack Tweak Settings.
+
+#### Toggle Accent Color
+
+Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
+
+### Important Note! 
+
+Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would break those tweaks. In this case please report to the repository, thanks!
 
 ----
 # Development
