@@ -21,6 +21,7 @@ async function run() {
     process.exit(1);
   }
 
+  // noinspection JSDeclarationsAtScopeStart
   const {ask: answer} = await cli.ask();
 
   execute(answer);
@@ -29,23 +30,30 @@ async function run() {
 // Start
 async function main() {
   clear();
-  checkForUpdates();
+  await checkForUpdates();
 }
 
 async function checkForUpdates() {
+  // noinspection LocalVariableNamingConventionJS
   const AutoUpdate = require('cli-autoupdate');
-
-  // load package.json of the package you wish to update
+  let shouldUpdate = false;
 
   const update = new AutoUpdate(pkg);
   console.log(chalk.bold('Checking for updates...'));
 
   update.on('update', () => {
     console.log(chalk.bold('A new update is available! Starting autoupdate...'));
+    shouldUpdate = true;
   });
   update.on('finish', async () => {
     console.log(chalk.bold('Finished checking for updates!'));
-    await run();
+    if (shouldUpdate) {
+      console.log('Update finished. Please rerun the command.');
+      process.exit(0);
+    }
+    else {
+      await run();
+    }
   });
 }
 
