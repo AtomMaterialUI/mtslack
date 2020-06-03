@@ -84,6 +84,7 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.0.7",
     "npx": "^10.2.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "stylelint-prettier": "^1.1.2"
   }
 }
