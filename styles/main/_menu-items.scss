@@ -1,7 +1,8 @@
 .c-menu_item__button {
   color: $fg;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $primary;
   }
 }
@@ -42,7 +43,8 @@
   background-color: $hl;
   color: $selectFg;
 
-  .c-menu_item__description, .c-menu_item__glimmer {
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
     color: $selectFg;
   }
 
@@ -58,7 +60,8 @@
     background-color: $hl;
     color: $primary;
 
-    .c-menu_item__description, .c-menu_item__glimmer {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
       color: $primary;
     }
 
@@ -81,7 +84,8 @@
   background-color: $selectBg;
   color: $selectFg;
 
-  .c-menu_item__description, .c-menu_item__glimmer {
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
     color: $selectFg;
   }
 
@@ -97,7 +101,8 @@
     background-color: $selectBg;
     color: $primary;
 
-    .c-menu_item__description, .c-menu_item__glimmer {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
       color: $primary;
     }
 
@@ -114,7 +119,8 @@
     background-color: $selectBg;
     color: $accent2;
 
-    .c-menu_item__description, .c-menu_item__glimmer {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
       color: $accent2;
     }
 
@@ -132,7 +138,8 @@
   background-color: $selectBg;
   color: $selectFg;
 
-  .c-menu_item__description, .c-menu_item__glimmer {
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
     color: $selectFg;
   }
 
@@ -148,7 +155,8 @@
     background-color: $selectBg;
     color: $primary;
 
-    .c-menu_item__description, .c-menu_item__glimmer {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
       color: $primary;
     }
 
@@ -165,7 +173,8 @@
     background-color: $selectBg;
     color: $accent2;
 
-    .c-menu_item__description, .c-menu_item__glimmer {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
       color: $accent2;
     }
 
@@ -258,7 +267,8 @@
     color: $red;
   }
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $red;
 
     .c-menu_item__description {
@@ -290,12 +300,14 @@
   &.c-menu_item__button--danger {
     color: $disabled;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
       color: $disabled;
     }
   }
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $disabled;
   }
 
@@ -354,4 +366,16 @@
 
 .c-menu--nightshade_elevation {
   background: $bg2;
+}
+
+.c-menu_item__button--checked {
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &.c-menu_item__button--highlighted {
+    color: $selectFg;
+  }
 }

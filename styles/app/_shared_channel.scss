@@ -101,3 +101,61 @@
 .p-shared_channel_introduction_modal__divider {
   border: 0.5px solid $borderLight;
 }
+
+.p-channel_share_channel_by_email_modal__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-channel_share_channel_by_email_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_by_email_modal__copy_link {
+  color: $accent2;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-channel_share_channel_by_email_modal__success_icon {
+  color: $green;
+  background-color: $button;
+}
+
+.p-channel_share_channel_by_email_modal__toast_icon {
+  color: $primary;
+}
+
+.p-channel_share_channel_by_email_modal__success_caption {
+  color: $fg;
+}
+
+.p-channel_share_channel_by_email_modal__success_subtitle {
+  color: $fg;
+}
+
+.p-channel_share_channel_by_email_modal__success_copy {
+  color: $primary;
+}
+
+.p-channel_share_channel_education_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_education_modal__learn_more {
+  font-weight: 400;
+  color: $accent2;
+
+  &:hover {
+    color: $accent2;
+  }
+}
+
+.p-channel_invite_form__default_channel_fieldset {
+  border: 1px solid $primary;
+
+  .p-channel_invite_form__default_channel_fieldset_legend {
+    color: $primary;
+  }
+}

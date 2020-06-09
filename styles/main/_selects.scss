@@ -47,7 +47,7 @@
   }
 
   &[disabled] {
-    color: $disabled
+    color: $disabled;
   }
 }
 
@@ -101,6 +101,10 @@
   }
 }
 
+.sk-client-theme--dark .c-select_options_list__clear_option.c-select_options_list__option--active {
+  color: $primary;
+}
+
 .c-select_options_list__group_header {
   color: $fg;
 }
@@ -112,7 +116,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -134,10 +141,10 @@
   }
 }
 
-.c-select_button__icon, .c-select_button__placeholder {
+.c-select_button__icon,
+.c-select_button__placeholder {
   color: $disabled;
 }
-
 
 .c-select_button--invalid {
   border-color: $red;
@@ -145,6 +152,12 @@
   &:focus {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
+}
+
+.c-select_button--disabled {
+  background: $button;
+  border-color: $button;
+  color: $disabled;
 }
 
 .c-select_button--text-select {
@@ -162,7 +175,6 @@
 }
 
 .c-select_options_list__virtual_list--slack_scrollbar {
-
   &::-webkit-scrollbar-thumb {
     color: $accent;
   }
@@ -180,7 +192,8 @@
     background: $bg;
   }
 
-  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
     border-left: 4px solid $border;
     border-right: 4px solid $border;
   }
@@ -204,7 +217,8 @@
     background: $bg;
   }
 
-  &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
     border-left: 4px solid $border;
     border-right: 4px solid $border;
   }

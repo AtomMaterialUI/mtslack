@@ -1,0 +1,11 @@
+.c-callout {
+  color: $primary;
+  background-color: $notif;
+}
+
+.c-menu_item__li--highlighted .c-callout,
+.sk-client-theme--dark .c-callout {
+  color: $primary;
+  background-color: $notif;
+  box-shadow: inset 0 0 0 1px $notif;
+}

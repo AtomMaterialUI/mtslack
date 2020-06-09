@@ -1,0 +1,25 @@
+.p-sever_team_modal__subtext {
+  color: $text;
+}
+
+.p-sever_team_modal__channel_list {
+  li:first-of-type {
+    border-top: 1px solid $borderLight;
+  }
+}
+
+.p-sever_team_modal__channel_list_item {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-sever_team_modal__public_channel_list_item {
+  color: $text;
+}
+
+.p-sever_team_modal__learn_more {
+  color: $text;
+
+  .p-sever_team_modal__learn_more_link {
+    color: $text;
+  }
+}

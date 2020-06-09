@@ -95,7 +95,6 @@
   color: $accent2;
 }
 
-
 .p-customize_emoji_wrapper__reset_icon {
   cursor: pointer;
   color: $text;
@@ -125,7 +124,6 @@
   color: $fg;
 }
 
-
 .p-emoji_picker__list_container {
   background: $bg2;
 }
@@ -151,39 +149,46 @@
 }
 
 .p-emoji_picker__list_item {
-  &[data-color-index="0"] {
-    &.key_selection, &:hover {
+  &[data-color-index='0'] {
+    &.key_selection,
+    &:hover {
       background: $green;
     }
   }
-  &[data-color-index="1"] {
-    &.key_selection, &:hover {
+  &[data-color-index='1'] {
+    &.key_selection,
+    &:hover {
       background: $yellow;
     }
   }
-  &[data-color-index="2"] {
-    &.key_selection, &:hover {
+  &[data-color-index='2'] {
+    &.key_selection,
+    &:hover {
       background: $blue;
     }
   }
-  &[data-color-index="3"] {
-    &.key_selection, &:hover {
+  &[data-color-index='3'] {
+    &.key_selection,
+    &:hover {
       background: $purple;
     }
   }
-  &[data-color-index="4"] {
-    &.key_selection, &:hover {
+  &[data-color-index='4'] {
+    &.key_selection,
+    &:hover {
       background: $orange;
     }
   }
-  &[data-color-index="5"] {
-    &.key_selection, &:hover {
+  &[data-color-index='5'] {
+    &.key_selection,
+    &:hover {
       background: $red;
     }
   }
 }
 
 .p-emoji_picker__group_tabs {
+  background: $bg;
   border-bottom: 1px solid $border;
 }
 
@@ -202,11 +207,16 @@
   border-bottom: 3px solid $accent;
 }
 
+.p-emoji_picker__group_tab--active {
+  color: $selectFg;
+  border-bottom: 3px solid $accent;
+}
+
 .p-emoji_picker__heading {
   background: $bg2;
 }
 
-input[type=text].c-input_text.p-emoji_picker__input {
+input[type='text'].c-input_text.p-emoji_picker__input {
   &:focus {
     box-shadow: inset 0 0 0 $primaryT;
     border-color: $primary;
@@ -236,33 +246,33 @@ input[type=text].c-input_text.p-emoji_picker__input {
   color: $text;
 }
 
-.p-emoji_picker[data-using-keyboard=true] .p-emoji_picker__list_item {
-  &[data-color-index="0"] {
+.p-emoji_picker[data-using-keyboard='true'] .p-emoji_picker__list_item {
+  &[data-color-index='0'] {
     &.key_selection {
       background: $green;
     }
   }
-  &[data-color-index="1"] {
+  &[data-color-index='1'] {
     &.key_selection {
       background: $cyan;
     }
   }
-  &[data-color-index="2"] {
+  &[data-color-index='2'] {
     &.key_selection {
       background: $yellow;
     }
   }
-  &[data-color-index="3"] {
+  &[data-color-index='3'] {
     &.key_selection {
       background: $purple;
     }
   }
-  &[data-color-index="4"] {
+  &[data-color-index='4'] {
     &.key_selection {
       background: $orange;
     }
   }
-  &[data-color-index="5"] {
+  &[data-color-index='5'] {
     &.key_selection {
       background: $red;
     }
@@ -283,7 +293,6 @@ input[type=text].c-input_text.p-emoji_picker__input {
   color: $text;
 }
 
-
 .p-emoji_picker__skintone_btn_container,
 .p-emoji_picker__skintone_options,
 .p-emoji_picker__skintone_tip {
@@ -303,7 +312,7 @@ input[type=text].c-input_text.p-emoji_picker__input {
 .p-emoji_picker__skintone_options {
   background: $active;
   .p-emoji_picker__skintone_choice {
-    &[data-preferred=true] {
+    &[data-preferred='true'] {
       background: $accent;
     }
   }
@@ -314,4 +323,128 @@ input[type=text].c-input_text.p-emoji_picker__input {
   p {
     color: $text;
   }
+}
+
+.p-emoji_pack_card {
+  border: 1px solid $borderLight;
+}
+
+.p-emoji_pack_card__header {
+  color: $text;
+}
+
+.p-emoji_pack_card__subheader {
+  color: $text;
+}
+
+.p-emoji_pack_card__checkmark {
+  color: $accent;
+}
+
+.p-emoji_pack_coming_soon {
+  background: $bg;
+}
+
+.p-emoji_pack_coming_soon__pill {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-emoji_pack__header {
+  color: $text;
+}
+
+.p-emoji_pack__pill {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-emoji_pack__help {
+  color: $text;
+  border-top: $border;
+}
+
+.p-emoji_pack_details__subtitle_author {
+  color: $text;
+
+  &:after {
+    color: $borderLight;
+  }
+}
+
+.p-emoji_pack_details__tip {
+  color: $text;
+}
+
+.p-emoji_pack_details__button {
+  &[data-color-index='0'] {
+    &.key_selection,
+    &:hover {
+      background: $green;
+    }
+  }
+
+  &[data-color-index='1'] {
+    &.key_selection,
+    &:hover {
+      background: $blue;
+    }
+  }
+
+  &[data-color-index='2'] {
+    &.key_selection,
+    &:hover {
+      background: $yellow;
+    }
+  }
+
+  &[data-color-index='3'] {
+    &.key_selection,
+    &:hover {
+      background: $purple;
+    }
+  }
+
+  &[data-color-index='4'] {
+    &.key_selection,
+    &:hover {
+      background: $orange;
+    }
+  }
+
+  &[data-color-index='5'] {
+    &.key_selection,
+    &:hover {
+      background: $cyan;
+    }
+  }
+}
+
+.p-emoji_picker_skintone {
+  color: $primary;
+}
+
+.p-emoji_picker__content:hover .p-emoji_picker_skintone__toggle_btn {
+  border: 1px solid $borderLight;
+  background: $button;
+}
+
+.p-emoji_picker_skintone__radio_buttons {
+  background: $button;
+}
+
+.p-emoji_picker_skintone__radio_button_container--focus-visible img {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-emoji_picker__pack_cta_wrapper {
+  background: $bg;
+}
+
+.p-emoji_picker__pack_cta {
+  background: $bg2;
+}
+
+.p-emoji_picker__pack_cta_link {
+  color: $primary;
 }

@@ -16,7 +16,6 @@
 }
 
 .p-shortcuts_dialog_options_list {
-
   &::-webkit-scrollbar-thumb {
     color: $accent;
   }
@@ -33,7 +32,6 @@
   &::-webkit-scrollbar-corner {
     background: $bg;
   }
-
 }
 
 .p-shortcuts_dialog__option {
@@ -80,4 +78,33 @@
 
 .p-shortcuts_flexpane__shortcut_sub_heading:not(.block) {
   color: $text;
+}
+
+.p-shortcuts_menu_item__text--secondary {
+  color: $text;
+}
+
+.p-shortcuts_menu_item--active .p-shortcuts_menu_item__text--secondary {
+  color: $primary;
+
+  .c-icon:before {
+    color: $primary;
+  }
+}
+
+.p-shortcuts_menu_heading {
+  color: $text;
+}
+
+.p-shortcuts_menu_heading__icon--highlighted {
+  color: $primary !important;
+}
+
+.p-shortcuts_menu_heading__icon--app {
+  border: 1px solid $borderLight;
+}
+
+.c-texty_autocomplete.p-shortcuts_menu_autocomplete_commands {
+  background: $bg;
+  border: 1px solid $borderLight;
 }

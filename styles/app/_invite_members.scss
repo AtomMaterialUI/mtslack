@@ -50,7 +50,8 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-invite_members_form__footer_link {
   color: $text;
 
-  &:hover, &:visited {
+  &:hover,
+  &:visited {
     color: $fg;
   }
 }
@@ -78,13 +79,15 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-select_invite_type__link--learn {
   color: $disabled;
 
-  &:hover, &:visited {
+  &:hover,
+  &:visited {
     color: $disabled;
   }
 }
 
 .p-select_invite_type__link--disabled {
-  .p-select_invite_type__link--subtitle, h2 {
+  .p-select_invite_type__link--subtitle,
+  h2 {
     color: $disabled;
   }
 }
@@ -128,5 +131,24 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-members_dialog_item {
   &:hover {
     background-color: $active;
+  }
+}
+
+.p-invite_members_form__invite_row_field--optional {
+  color: $text;
+}
+
+.p-invite_members_form__add_to_team_button {
+  background-color: $button;
+  border: 1px solid $button;
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+  }
+
+  &:active,
+  &:hover {
+    color: $selectFg;
   }
 }

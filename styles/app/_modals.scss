@@ -1,3 +1,6 @@
+.c-sk-modal--faded:after {
+  background: rgba($primary, 0.1);
+}
 
 .c-sk-modal_content {
   background: $bg;
@@ -13,10 +16,6 @@
 
 .c-sk-modal_header {
   background-color: $bg;
-}
-
-.c-sk-modal_content--faded:after {
-  background: rgba($bg, 0.7);
 }
 
 .p-channel_section_modal_input__clear_icon {
@@ -93,7 +92,8 @@
 }
 
 .p-channel_section_modal_input__dialog {
-  .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+  .p-channel_section_modal_input__preset_option_description,
+  .p-channel_section_modal_input__preset_option_duration {
     color: $text;
   }
 }
@@ -103,7 +103,8 @@
     background-color: $accent;
     color: $selectFg;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
       background-color: $accent;
       color: $selectFg;
     }
@@ -113,27 +114,29 @@
     background-color: $accent;
     color: $selectFg;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
       background-color: $accent;
       color: $selectFg;
     }
   }
 
   &:focus {
-    .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+    .p-channel_section_modal_input__preset_option_description,
+    .p-channel_section_modal_input__preset_option_duration {
       color: $selectFg;
     }
   }
 
   &:hover {
-    .p-channel_section_modal_input__preset_option_description, .p-channel_section_modal_input__preset_option_duration {
+    .p-channel_section_modal_input__preset_option_description,
+    .p-channel_section_modal_input__preset_option_duration {
       color: $selectFg;
     }
   }
 }
 
 .p-channel_section_selector--has_standard_channel_section {
-
   &.p-channel_section_selector--has_dropdown_focus,
   &.p-channel_section_selector--has_star_focus,
   &.p-channel_section_selector--is_dropdown_open,
@@ -146,11 +149,13 @@
   }
 }
 
-.p-channel_section_selector__dropdown, .p-channel_section_selector__star {
+.p-channel_section_selector__dropdown,
+.p-channel_section_selector__star {
   color: $text;
 }
 
-.p-channel_section_selector--has_star_focus .p-channel_section_selector__star, .p-channel_section_selector__star:hover {
+.p-channel_section_selector--has_star_focus .p-channel_section_selector__star,
+.p-channel_section_selector__star:hover {
   background-color: $active;
 }
 
@@ -169,4 +174,8 @@
 
 .p-channel_section_selector__star--active {
   color: $active;
+}
+
+.c-sk-modal_footer--speedbump {
+  background-color: $bg;
 }

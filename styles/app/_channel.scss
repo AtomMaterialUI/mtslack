@@ -299,3 +299,18 @@ button.p-channel_details_about__blurb {
 .p-channel_details__header__created {
   color: $text;
 }
+
+.p-channel_card_team-disconnected,
+.p-channel_card_team-pending {
+  color: $disabled;
+}
+
+@keyframes highlight-pinned-invite {
+  10% {
+    background: $bg;
+  }
+
+  to {
+    background: transparent;
+  }
+}

@@ -19,7 +19,8 @@
 .p-member_profile_card__context_action {
   color: $disabled;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $fg;
   }
 }
@@ -121,7 +122,8 @@
   }
 
   &.c-button-unstyled {
-    &.active, &:hover {
+    &.active,
+    &:hover {
       border: 1px solid $hl;
     }
   }
@@ -209,7 +211,10 @@ button.p-admin_member_table__menu_item--disabled {
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-      &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      &:-moz-placeholder,
+      &:-ms-input-placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
         color: $disabled;
       }
     }
@@ -233,7 +238,9 @@ button.p-admin_member_table__menu_item--disabled {
   background-color: $bg;
   border-bottom: 1px solid $borderLight;
 
-  &:focus, &:focus-within, &:hover {
+  &:focus,
+  &:focus-within,
+  &:hover {
     background-color: $bg2;
   }
 }
@@ -286,15 +293,13 @@ button.p-admin_member_table__menu_item--disabled {
     border: 1px solid $borderLight;
 
     &:not(.p-channel_browser_list_item--disabled):not(.p-channel_browser_list_item--disconnected) {
-      &:active, &:focus, &:hover {
+      &:active,
+      &:focus,
+      &:hover {
         border-color: $primary;
         background: $hl;
       }
     }
-  }
-
-  .p-channel_browser_section_header {
-    padding-bottom: 8px;
   }
 }
 
@@ -325,7 +330,9 @@ button.p-admin_member_table__menu_item--disabled {
   }
 
   &:not(.p-browse_page_channel--disconnected) {
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background: $primary;
     }
   }
@@ -372,7 +379,8 @@ button.p-admin_member_table__menu_item--disabled {
   background: $bg;
   box-shadow: 0 0 0 1px $primary;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
   }
 }
@@ -410,7 +418,8 @@ button.p-admin_member_table__menu_item--disabled {
     background-color: $accent;
   }
 
-  .c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
+  .c-mrkdwn__mention,
+  .c-mrkdwn__user_group--mention {
     background-color: $accent;
 
     &:hover {
@@ -431,7 +440,8 @@ button.p-admin_member_table__menu_item--disabled {
 .p-browse_page_user_group {
   border-top: 1px solid $borderLight;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: $hl;
   }
 }
@@ -448,7 +458,6 @@ button.p-admin_member_table__menu_item--disabled {
   color: $selectFg;
   background: $accent;
 }
-
 
 .p-top_nav__help__badge {
   background: $accent;

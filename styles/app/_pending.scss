@@ -104,3 +104,23 @@
 .p-pending_requests_v2_decline_icon {
   color: $red;
 }
+
+.p-pending_requests_v2_header_copy_color {
+  color: $text;
+}
+
+.p-connection_info_icon__icon + .p-connection_info_icon__icon {
+  margin-left: -6px;
+  box-shadow: -2px 0 0 $primary, (-2px) 1px 0 $primary, (-2px) -1px 0 $primary;
+}
+
+.p-connection_info {
+  color: $text;
+}
+
+.p-connection_info--link {
+  &:active,
+  &:hover {
+    color: $text;
+  }
+}

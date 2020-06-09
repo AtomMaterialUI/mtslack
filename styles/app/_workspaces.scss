@@ -59,7 +59,12 @@
 .p-manage_shared_channels_row__actions {
   color: $fg;
 
-  .active, &:hover {
+  .active,
+  &:hover {
     color: $primary;
   }
+}
+
+.p-manage_shared_channels__empty {
+  background-color: $bg;
 }

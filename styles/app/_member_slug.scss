@@ -24,11 +24,11 @@
     border: 1px dotted $active;
   }
 
-  &:before, &:hover:before {
+  &:before,
+  &:hover:before {
     background: $primary;
     color: $selectBg;
   }
-
 
   &:visited,
   &:link {
@@ -46,7 +46,6 @@
     background: $selectBg;
   }
 
-
   &:visited,
   &:link {
     color: $primary;
@@ -54,5 +53,11 @@
 }
 
 .sk-client-theme--dark .c-member_slug--mention {
+  background: $active;
   color: $text;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
 }

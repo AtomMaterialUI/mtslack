@@ -2,6 +2,7 @@
   background: $bg;
 }
 
+.c-coachmark--top-left,
 .c-coachmark--top {
   &:after {
     border-top-color: $bg2;
@@ -59,7 +60,8 @@
 .p-shared_channels_coachmark_div {
   background: $bg;
 
-  .coachmark_interior, .p-coachmark__skip_button {
+  .coachmark_interior,
+  .p-coachmark__skip_button {
     color: #000;
   }
 
@@ -80,7 +82,6 @@
 .p-shared_channels_coachmark_subtitle {
   color: $fg;
 }
-
 
 .p-coachmark {
   color: $selectFg;

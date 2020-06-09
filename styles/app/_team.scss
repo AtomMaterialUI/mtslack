@@ -1,5 +1,8 @@
 .p-team_row--actionable {
-  &.p-team_row--active, &:active, &:focus, &:hover {
+  &.p-team_row--active,
+  &:active,
+  &:focus,
+  &:hover {
     background-color: $active;
   }
 }
@@ -10,4 +13,8 @@
 
 .p-team_row__disconnect_button {
   background-color: $button;
+}
+
+.p-team_row--muted {
+  color: $text;
 }
