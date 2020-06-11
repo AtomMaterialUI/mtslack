@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "7.6.0",
+  "version": "8.0.0",
   "description": "Slack themes for slack",
   "main": "main.js",
   "bin": {
