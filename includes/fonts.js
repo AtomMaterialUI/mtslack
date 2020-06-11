@@ -11,7 +11,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.longDescription = 'Enter the custom fonts, separated by commas';
     this.enabled = true;
     this.shortcut = '';
-    this.icon = 'format';
+    this.icon = 'text';
 
     // Specific
     this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, appleLogo, sans-serif';
@@ -54,8 +54,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
-    }
-    else {
+    } else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
@@ -79,7 +78,6 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
       fontsEnabled: this.fontsEnabled
     };
   }
-
 }
 
 window.slackPluginsAPI.plugins.fonts = new FontsPlugin();
