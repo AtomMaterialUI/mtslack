@@ -14,7 +14,8 @@
 }
 
 .p-workspace__input {
-  .ql-attachments, .ql-files {
+  .ql-attachments,
+  .ql-files {
     background: $bg2;
     box-shadow: 0 -1px 0 0 $primaryT;
   }
@@ -26,7 +27,8 @@
   .p-message_input_file_button {
     color: $text;
 
-    &.p-message_input_file_button--active, &:hover {
+    &.p-message_input_file_button--active,
+    &:hover {
       color: $selectFg;
       background: $green;
     }
@@ -69,24 +71,32 @@
       }
     }
 
-    ::-moz-selection, ::selection, ::-moz-selection {
+    ::-moz-selection,
+    ::selection,
+    ::-moz-selection {
       background-color: $selectBg;
     }
   }
 
-  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
-  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+  &.p-message_input--attachments-visible
+    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky,
+  &.p-message_input--files-visible
+    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky {
     background: $contrast;
   }
 
   &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
-    .ql-attachments, .ql-files {
+    .ql-attachments,
+    .ql-files {
       box-shadow: 0 1px 0 0 $accent, 0 -1px 0 0 $accentT;
     }
   }
 
   &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
-    .ql-attachments, .ql-files {
+    .ql-attachments,
+    .ql-files {
       box-shadow: 0 1px 0 0 $accent, 0 -1px 0 0 $accentT;
     }
   }
@@ -132,7 +142,6 @@
 .p-workspace__boot_failure_description {
   background-color: $bg;
 }
-
 
 .p-workspace--context-pane-collapsed {
   grid-template-columns: 260px auto !important;

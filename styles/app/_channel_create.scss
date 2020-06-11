@@ -23,3 +23,19 @@
   color: $text;
   background-color: $bg;
 }
+
+.p-channel_create_modal__footer_copy {
+  color: $text;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-channel_create_modal__footer_info_icon {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}

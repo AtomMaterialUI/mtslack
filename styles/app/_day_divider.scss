@@ -8,6 +8,10 @@
 
 .c-message_list__day_divider__label__pill {
   background: $button;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  }
 }
 
 .c-message_list__day_divider__line {
@@ -15,11 +19,22 @@
 }
 
 .c-message_list__unread_divider__separator {
-  border-color: $accent2;
+  background-image: linear-gradient(90deg, $accent 0, $accent);
+  border-color: $accent;
 }
 
 .c-message_list__unread_divider__label {
   background: $excluded;
-  color: $accent2;
+  color: $accent;
   padding: 0 6px;
+}
+
+.c-message_list__unread_divider__separator--is-unread-enter-active .c-message_list__unread_divider__separator {
+  box-shadow: 0 0 5px 0 $accent;
+}
+
+.c-message_list--dark
+  .c-message_list__unread_divider__separator--is-unread-enter-active
+  .c-message_list__unread_divider__separator {
+  box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT;
 }

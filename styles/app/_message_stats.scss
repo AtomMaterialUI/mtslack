@@ -2,6 +2,14 @@
   color: $text;
 }
 
+.c-message_stats__message_snippet_text {
+  background: $bg;
+}
+
+.c-message_stats__message_snippet_text:after {
+  background: $bg;
+}
+
 .c-message_stats__message_snippet_text--collapsed {
   &:after {
     background: $bg;
@@ -36,7 +44,8 @@
   color: $green;
 }
 
-.c-message_stats__funnel_stats_jumbo_stat_title, .c-message_stats__legend_title {
+.c-message_stats__funnel_stats_jumbo_stat_title,
+.c-message_stats__legend_title {
   color: $text;
 }
 
@@ -80,7 +89,8 @@
     stroke: $fg;
   }
 
-  .c3-axis-x-label, .c3-axis-y-label {
+  .c3-axis-x-label,
+  .c3-axis-y-label {
     fill: $accent;
   }
 
@@ -119,7 +129,9 @@
   .c3-tooltip {
     border: 0.5px solid $borderLight;
 
-    td, th, tr {
+    td,
+    th,
+    tr {
       color: $fg;
       background-color: $bg;
     }
@@ -128,7 +140,6 @@
       border-bottom: $borderLight;
       color: $fg;
     }
-
   }
 
   .c-message_stats__activity_time_series__tooltip {
@@ -173,7 +184,6 @@
   &:visited {
     color: $accent2;
   }
-
 }
 
 .c-message_stats__activity_range_option--selected {

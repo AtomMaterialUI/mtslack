@@ -6,7 +6,6 @@
   &:after {
     background: linear-gradient(180deg, $bg2 0, $bg2 39px, transparent 40px);
   }
-
 }
 
 .p-client_container_placeholder .p-view_header_placeholder {
@@ -17,9 +16,12 @@
   border: 1px solid $border;
 }
 
-
 .p-client_desktop--ia-top-nav {
   .c-message_list__day_divider__label__pill {
-    box-shadow: 0 0 0 1px $accent, 0 1px 3px 0 $accentT;
+    box-shadow: 0 0 0 1px $bg2, 0 1px 3px 0 $tree;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+    }
   }
 }

@@ -399,6 +399,12 @@ button.p-admin_member_table__menu_item--disabled {
 
 .p-browse_page_member__top_terms_term {
   background: $active;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-browse_page_member__top_terms_term {
+  background: $active;
+  color: $fg;
 }
 
 .p-browse_page_member__sparkles {
@@ -462,4 +468,15 @@ button.p-admin_member_table__menu_item--disabled {
 .p-top_nav__help__badge {
   background: $accent;
   color: $selectFg;
+}
+
+.p-browse_page_member_card_entity__edit_btn {
+  &:hover {
+    background: $accent;
+  }
+}
+
+.p-browse_files_page__empty_div {
+  border: 2px dashed $borderLight;
+  background: $bg;
 }

@@ -1,0 +1,37 @@
+.c-inline_search {
+  background: $contrast;
+  border: 1px solid $borderLight;
+}
+
+.c-inline_search__controls--input_focused {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-inline_search__count {
+  color: $accent2;
+}
+
+.c-inline_search__divider {
+  background: $border;
+}
+
+.c-inline_search__hints {
+  border-top: 1px solid $borderLight;
+}
+
+.c-inline_search__hint_btn {
+  color: $accent;
+}
+
+.c-inline_search__highlight {
+  background: $accentT;
+}
+
+.sk-client-theme--dark .c-inline_search__highlight {
+  background: $accentT;
+  color: $selectFg;
+}
+
+.c-inline_search__highlight--focused {
+  background: $accent;
+}

@@ -1,0 +1,23 @@
+.p-channel_sidebar__activity__toast__tip_sub {
+  background: $notif;
+  color: $primary;
+}
+
+.p-channel_sidebar__setup_channel_container {
+  &:after {
+    background: $bg;
+  }
+}
+
+.c-input_text.p-channel_sidebar__channel {
+  &.p-channel_sidebar__setup_channel_input--v-with-error {
+    &:active,
+    &:focus {
+      background-color: $tree;
+    }
+  }
+}
+
+.setup-caret-right {
+  border-right: 14px solid $borderLight;
+}

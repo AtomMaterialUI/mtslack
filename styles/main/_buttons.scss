@@ -10,13 +10,16 @@
   background-color: $button;
   color: $text;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $selectFg;
   }
 }
 
 .c-deprecated_rounded_button--outline {
-  &:active, &:link, &:visited {
+  &:active,
+  &:link,
+  &:visited {
     color: $text;
   }
 }
@@ -44,7 +47,8 @@
 .c-deprecated_rounded_button--outline {
   background-color: transparent;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: $hl;
     color: $selectFg;
   }
@@ -63,7 +67,8 @@
 .c-link--button {
   color: $primary;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     color: $selectFg;
   }
 }
@@ -76,7 +81,9 @@
 .c-link--disabled {
   color: $disabled;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $fg;
   }
 }
@@ -84,7 +91,9 @@
 .c-link--invert {
   color: $primary;
 
-  &:active, &:hover, &:visited {
+  &:active,
+  &:hover,
+  &:visited {
     color: $fg;
   }
 }
@@ -94,7 +103,8 @@
   background: $accent;
   color: $selectFg;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $selectFg;
   }
 
@@ -112,7 +122,8 @@
     color: $disabled;
     border-color: $disabled;
 
-    &:active, &:hover {
+    &:active,
+    &:hover {
       background: $active;
       color: $fg;
       border-color: $active;
@@ -121,10 +132,11 @@
 }
 
 .c-button--danger {
-  background: rgba($red, .8);
+  background: rgba($red, 0.8);
   color: $selectFg;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $selectFg;
   }
 
@@ -175,7 +187,8 @@
   border: 1px solid $primary;
   color: $primary;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $primary;
   }
 
@@ -195,7 +208,8 @@
   border: 1px solid $red;
   color: $red;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $red;
   }
 
@@ -214,7 +228,8 @@
     color: $red2;
     border-color: $red2;
 
-    &:active, &:hover {
+    &:active,
+    &:hover {
       background: $active;
       color: $fg;
       border-color: $active;

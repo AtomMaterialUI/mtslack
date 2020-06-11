@@ -99,7 +99,6 @@
 }
 
 .p-prefs_modal__channel_overrides_row--isDm {
-
   &:hover {
     border-top: $borderLight;
 
@@ -126,15 +125,20 @@
 }
 
 .p-prefs_modal__message_example {
-
   &.p-prefs_modal__message_example--light {
-    .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
+    .c-message__sender,
+    .c-timestamp,
+    .p-prefs_modal__message_example__message_body,
+    .p-prefs_modal__message_example__message_content {
       color: $text;
     }
   }
 
   &.p-prefs_modal__message_example--dark {
-    .c-message__sender, .c-timestamp, .p-prefs_modal__message_example__message_body, .p-prefs_modal__message_example__message_content {
+    .c-message__sender,
+    .c-timestamp,
+    .p-prefs_modal__message_example__message_body,
+    .p-prefs_modal__message_example__message_content {
       color: $text;
     }
   }
@@ -142,6 +146,10 @@
 
 .p-prefs_dialog {
   .p-prefs_dialog__message_example_label {
+    color: $text;
+  }
+
+  .p-prefs_dialog__spellcheck_system_prefs_hint {
     color: $text;
   }
 }

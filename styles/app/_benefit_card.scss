@@ -21,3 +21,19 @@
 .p-paid_benefits_header__subtitle {
   color: $text;
 }
+
+.p-benefit_card__image {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-paid_benefits_view {
+  background-color: $bg2;
+}
+
+.p-paid_benefits_view__heading {
+  color: $fg;
+}
+
+.p-paid_benefits_view__fine_print {
+  border-bottom: 1px solid $border;
+}

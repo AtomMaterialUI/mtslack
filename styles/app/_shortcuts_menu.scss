@@ -1,0 +1,54 @@
+.p-shortcuts_menu {
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+  background-color: $contrast;
+
+  .c-input_text {
+    background-color: $contrast;
+  }
+}
+
+.p-shortcuts_menu_speedbump__animation__container {
+  background-color: $bg;
+}
+
+.p-shortcuts_menu_speedbump__content {
+  background-color: $bg2;
+}
+
+.p-shortcuts_menu_speedbump {
+  &[data-animation-enabled='true'] {
+    .p-shortcuts_menu_speedbump__avatar {
+      &.c-icon {
+        color: $primary;
+        background-color: $accent;
+      }
+    }
+  }
+}
+
+.p-shortcuts_menu_search_input_wrapper {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-shortcuts_menu_trigger_button_container {
+  border-right: 1px solid $border;
+}
+
+.p-shortcuts_menu_trigger_button {
+  &:active,
+  &:hover {
+    background: $button;
+    color: $text !important;
+  }
+}
+
+.p-shortcuts_menu_trigger_button--dark.p-shortcuts_menu_trigger_button {
+  &:active,
+  &:hover {
+    background: $accent !important;
+  }
+}
+
+.p-shortcuts_menu_trigger_button--highlighted {
+  color: $primary !important;
+}

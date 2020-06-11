@@ -31,7 +31,6 @@
   border: 1px solid $border;
 }
 
-
 .p-people_search_result__person--deactivated .p-people_search_result__name {
   color: $text;
 }
@@ -54,6 +53,7 @@
   color: $text;
 }
 
+.sk-client-theme--dark .p-people_search_result__top_terms_term,
 .p-people_search_result__top_terms_term {
   background: $bg2;
 }
@@ -74,4 +74,8 @@
   .c-avatar__image {
     background-color: $contrast;
   }
+}
+
+.c-channel_search_result__action_join:hover {
+  background: $tree;
 }

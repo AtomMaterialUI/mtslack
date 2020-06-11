@@ -159,3 +159,11 @@
     color: $primary;
   }
 }
+
+.p-channel_type_button {
+  border: 1px solid $borderLight;
+
+  &.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  }
+}

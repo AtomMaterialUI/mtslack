@@ -1,5 +1,4 @@
 .p-app-launcher {
-
   .c-filter_input {
     border-color: $borderLight;
   }
@@ -8,7 +7,10 @@
 .p-app-launcher__link {
   color: $primary;
 
-  &:active, &:hover, &:link, &:visited {
+  &:active,
+  &:hover,
+  &:link,
+  &:visited {
     color: $accent2;
   }
 }
@@ -28,6 +30,10 @@
 .p-app_launcher__app_card {
   background-color: $bg2;
 
+  &:active {
+    box-shadow: 0 0 0 1px $accent, 0 1px 3px 0 $accentT;
+  }
+
   &:hover {
     .p-app_launcher__app_card__pseudobutton {
       background: $button;
@@ -44,14 +50,18 @@
   color: $text;
 }
 
-.p-app_launcher__category_header__link, .p-app_launcher__category_header__title {
+.p-app_launcher__category_header__link,
+.p-app_launcher__category_header__title {
   color: $primary;
 }
 
 .p-app_launcher__category_header__link {
   color: $primary;
 
-  &:active, &:hover, &:link, &:visited {
+  &:active,
+  &:hover,
+  &:link,
+  &:visited {
     color: $selectFg;
   }
 }
@@ -67,7 +77,8 @@
 }
 
 .p-app_launcher_banner {
-  &.p-app_launcher_banner--focused, &:hover {
+  &.p-app_launcher_banner--focused,
+  &:hover {
     background-color: $bg;
   }
 }
@@ -99,4 +110,8 @@
 
 .p-app_launcher_actions__button_link:hover {
   color: $selectFg;
+}
+
+.c-virtual_list__item--focus .p-activity_page__education {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }

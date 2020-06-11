@@ -64,8 +64,15 @@
     background: $excluded;
   }
 
-  &[type=text] {
-    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+  &[type='text'] {
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
       color: $disabled;
     }
   }
@@ -82,7 +89,10 @@
   background-color: $bg2;
 
   &:focus {
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -100,7 +110,8 @@
 .c-date_range_picker_calendar__date {
   border: 1px solid $borderLight;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $tree;
     color: $selectFg;
   }
@@ -131,7 +142,8 @@
   background-color: $accentT;
   border-color: $accentT;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $accent;
   }
 }
@@ -152,4 +164,45 @@
   &:hover {
     background-color: $red;
   }
+}
+
+.c-date_picker__select_btn {
+  color: $primary;
+}
+
+.c-date_picker__clear_selection_container {
+  border-top: 1px solid $borderLight;
+}
+
+.c-date_picker__clear_selection_btn {
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+}
+
+.c-date-time_picker__date_picker_button {
+  border: 1px solid $borderLight;
+  background: $button;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $button;
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-date-time_picker__calendar_icon,
+.c-date-time_picker__caret_icon {
+  color: $text;
 }

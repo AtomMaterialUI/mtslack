@@ -85,10 +85,19 @@
   color: $fg;
 }
 
-.p-drafts_page__draft_body--empty, .p-drafts_page__draft_destination--empty {
+.p-drafts_page__draft_body--empty,
+.p-drafts_page__draft_destination--empty {
   color: $text;
 }
 
 .p-drafts_page--empty {
   background: $bg;
+}
+
+.p-drafts_page__older_drafts_label {
+  color: $text;
+
+  &:after {
+    color: $borderLight;
+  }
 }

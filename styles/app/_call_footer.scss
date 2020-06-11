@@ -1,0 +1,38 @@
+.p-call_footer_blurb__alert {
+  .p-call_footer_blurb__link {
+    color: $accent2;
+  }
+}
+
+.p-call_footer_blurb__caret {
+  fill: $accent;
+}
+
+.p-call_subtype {
+  border: 1px solid $borderLight;
+  background-color: $bg2;
+}
+
+.p-call_subtype__icon {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-call_subtype__icon--ended {
+  background-color: $excluded;
+}
+
+.p-call_subtype__body,
+.p-call_subtype__footer {
+  border-top: 1px solid $borderLight;
+  background-color: $bg2;
+}
+
+.p-call_subtype__status,
+.p-call_subtype__title {
+  color: $fg;
+}
+
+.p-call_subtype__description {
+  color: $text;
+}

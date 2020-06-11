@@ -22,6 +22,10 @@
   }
 }
 
+.p-saved_page__title_icon {
+  color: $accent;
+}
+
 .p-saved_page__item {
   background: $bg;
   box-shadow: 0 0 0 1px $primaryT;
@@ -122,3 +126,10 @@
   border-bottom: 1px solid $borderLight;
 }
 
+.p-activity_page__title_icon {
+  color: $accent;
+}
+
+.c-virtual_list__item--focus .p-saved_page__item--education {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}

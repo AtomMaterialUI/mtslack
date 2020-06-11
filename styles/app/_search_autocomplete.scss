@@ -17,12 +17,17 @@
   background: $selectBg;
   color: $selectFg;
 
-  .c-file_entity__icon:before, .c-icon, .c-search_autocomplete__channel-membership {
+  .c-file_entity__icon:before,
+  .c-icon,
+  .c-search_autocomplete__channel-membership {
     color: $selectFg;
   }
 
   .c-search_autocomplete__channel {
-    .c-deprecated-icon, .c-icon--shared-channels, .p-deprecated_channel_name__team_name, .p-deprecated_channel_name__text {
+    .c-deprecated-icon,
+    .c-icon--shared-channels,
+    .p-deprecated_channel_name__team_name,
+    .p-deprecated_channel_name__text {
       color: $selectFg;
     }
   }
@@ -39,7 +44,8 @@
     }
   }
 
-  .c-search_autocomplete__query_parts .token, .c-search_query_entity__token {
+  .c-search_autocomplete__query_parts .token,
+  .c-search_query_entity__token {
     color: $selectFg;
     background-color: $excluded;
   }
@@ -70,7 +76,8 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected {
-  .c-icon, .c-search_autocomplete__channel-membership {
+  .c-icon,
+  .c-search_autocomplete__channel-membership {
     color: $primary;
   }
 
@@ -119,11 +126,15 @@
 }
 
 .c-search_autocomplete__member--deleted {
-  .c-unified_member__display-name, .c-unified_member__name, .c-unified_member__secondary-name {
+  .c-unified_member__display-name,
+  .c-unified_member__name,
+  .c-unified_member__secondary-name {
     color: $disabled;
   }
 
-  .c-unified_member__display-name:hover, .c-unified_member__name:hover, .c-unified_member__secondary-name:hover {
+  .c-unified_member__display-name:hover,
+  .c-unified_member__name:hover,
+  .c-unified_member__secondary-name:hover {
     color: $fg;
   }
 }
@@ -140,12 +151,19 @@
   }
 
   .c-unified_member {
-    .c-app_badge, .c-app_label, .c-icon, .c-presence, .presence, .ts_icon_deactivated_user {
+    .c-app_badge,
+    .c-app_label,
+    .c-icon,
+    .c-presence,
+    .presence,
+    .ts_icon_deactivated_user {
       color: $primary;
     }
   }
 
-  .c-unified_member__display-name, .c-unified_member__name, .c-unified_member__secondary-name {
+  .c-unified_member__display-name,
+  .c-unified_member__name,
+  .c-unified_member__secondary-name {
     color: $primary;
   }
 }
@@ -157,7 +175,8 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected .c-search_autocomplete__view {
-  .c-view_name__icon, .c-view_name__text {
+  .c-view_name__icon,
+  .c-view_name__text {
     color: $primary;
   }
 }
@@ -215,4 +234,25 @@
 .c-search_autocomplete__suggestion_list {
   background: $bg2;
   color: $fg;
+}
+
+.c-search_autocomplete__icon--create-channel {
+  color: $primary;
+}
+
+.c-search_autocomplete__icon--refinement {
+  color: $primary;
+}
+
+.c-search_autocomplete_section_header {
+  color: $fg;
+}
+
+.c-search_autocomplete footer {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
+  background-color: $contrast;
 }

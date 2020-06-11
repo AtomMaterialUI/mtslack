@@ -26,7 +26,8 @@
   border: 1px solid $borderLight;
 }
 
-.p-ia__nav__history, .p-ia__nav__search {
+.p-ia__nav__history,
+.p-ia__nav__search {
   background: $bg;
   color: $fg;
 }
@@ -42,7 +43,7 @@
 
 .p-ia__view_header {
   border-bottom: 1px solid $text;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .55), 0 0 0 5px rgba(0, 0, 0, .11);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55), 0 0 0 5px rgba(0, 0, 0, 0.11);
 }
 
 .p-ia__view_header__info {
@@ -51,11 +52,14 @@
   }
 }
 
-.p-ia__view_header__more, .p-ia__view_header__tab {
+.p-ia__view_header__more,
+.p-ia__view_header__tab {
   color: $text;
 }
 
-.p-ia__view_header__more:hover, .p-ia__view_header__tab--active, .p-ia__view_header__tab:hover {
+.p-ia__view_header__more:hover,
+.p-ia__view_header__tab--active,
+.p-ia__view_header__tab:hover {
   color: $selectFg;
 }
 
@@ -64,12 +68,14 @@
 }
 
 .p-classic_nav__model__title__info__actions {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $primary;
   }
 }
 
-.p-ia__view_header__metadata, .p-ia__view_header__subtitle {
+.p-ia__view_header__metadata,
+.p-ia__view_header__subtitle {
   color: $text;
 }
 
@@ -118,12 +124,12 @@
   background-color: $button;
   color: $fg;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $active;
     color: $selectFg;
   }
 }
-
 
 .p-ia__view_header .p-classic_nav__model__button--calls {
   color: $text;
@@ -155,4 +161,60 @@
   to {
     background: transparent;
   }
+}
+
+.p-ia__main_menu__user__presence {
+  color: $text;
+}
+
+.p-top_nav--iap2 .p-ia__nav__user__presence--stroke.c-presence--away {
+  background: $bg;
+}
+
+.p-ia__main_menu__user__availability-toggle:hover .c-presence {
+  color: $primary;
+}
+
+.p-ia__sidebar_header__mode__find_button {
+  background-color: $bg;
+}
+
+.p-top_nav--iap2 {
+  .p-ia__nav__user__presence--stroke {
+    -webkit-text-stroke: 3px $bg2;
+  }
+}
+
+.p-ia__view_header__sidebar_toggle_button {
+  color: $text;
+
+  &:hover {
+    background: $active;
+    color: $fg;
+
+    .p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+      border-color: $accent;
+    }
+  }
+
+  &:active {
+    background: $active;
+
+    .p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+      border-color: $accent;
+    }
+  }
+}
+
+.p-ia__view_header__sidebar_toggle_badge {
+  background: $accent;
+}
+
+.p-ia__view_header__sidebar_toggle_badge.p-team_sidebar__mentions_badge {
+  border-color: $borderLight;
+}
+
+.p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+  background: $accent;
+  border-color: $borderLight;
 }

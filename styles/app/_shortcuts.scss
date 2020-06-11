@@ -108,3 +108,39 @@
   background: $bg;
   border: 1px solid $borderLight;
 }
+
+.p-shortcuts_menu_add_app_shortcut_section__add-app-section {
+  .p-shortcuts_menu_add_app_shortcut_section__app-link {
+    color: $accent2;
+
+    &:hover {
+      color: $selectFg;
+    }
+
+    .p-shortcuts_menu_add_app_shortcut_section__app-description {
+      color: $text;
+    }
+
+    .p-shortcuts_menu_add_app_shortcut_section__app-icon {
+      border: 1px solid $button;
+    }
+  }
+}
+
+.p-shortcuts_menu_add_shortcut_modal__add-channel-action-section,
+.p-shortcuts_menu_add_shortcut_modal__add-channel-action-title {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-shortcuts_menu_add_shortcut_modal__footer {
+  background: $bg2;
+  border-top: 1px solid $border;
+}
+
+.p-shortcuts_menu_add_shortcut_modal__footer_link {
+  color: $accent2;
+}
+
+.p-shortcuts_menu_add_shortcut_modal__footer a.p-shortcuts_menu_add_shortcut_modal__footer_link {
+  color: $accent2;
+}

@@ -152,3 +152,8 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     color: $selectFg;
   }
 }
+
+.p-shared_channel_org_list__current_connections_header,
+.p-shared_channel_org_list__previous_connections_header {
+  color: $text;
+}

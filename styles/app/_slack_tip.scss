@@ -1,0 +1,24 @@
+.p-slack_tip__header {
+  color: $fg;
+}
+
+.p-slack_tip__body {
+  color: $fg;
+}
+
+.p-setup_tip__header {
+  background: $bg2;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-setup_tip__suggestons_header {
+  color: $primary;
+}
+
+.p-setup_tip__suggestion_icon {
+  background: $excluded;
+}
+
+.p-setup_tip__suggestion_link {
+  color: $accent2;
+}

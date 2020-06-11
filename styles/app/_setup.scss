@@ -1,0 +1,126 @@
+.p-setup_page__content_button {
+  background-color: $accentT;
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.p-setup_page__content_link {
+  color: $accent2;
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-setup_suggest_message__btn--primary {
+  &:after {
+    border-top-color: $primary;
+  }
+
+  &:before {
+    border-top-color: $primaryT;
+  }
+}
+
+.p-setup_suggest_message__btn {
+  &:active:after,
+  &:hover:after {
+    border-top-color: $accent;
+  }
+
+  &:active:before,
+  &:hover:before {
+    border-top-color: $accentT;
+  }
+}
+
+.p-setup_suggest_message__hint_text {
+  color: $accent2;
+}
+
+.p-setup_channel_banner__hidden_button--hover {
+  background-color: $hl;
+  border-color: $tree;
+}
+
+.p-setup_channel_banner--welcome {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--announcements {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--ideas {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--generic,
+.p-setup_channel_banner--project {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--team {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--dm,
+.p-setup_channel_banner--page {
+  background: $contrast;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-setup_channel_banner__text--button {
+  &:hover {
+    background-color: $button;
+    border-color: $button;
+  }
+}
+
+.p-setup_channel_banner__text_edit {
+  color: $text;
+}
+
+.p-setup_channel_banner__heading--dm-invited {
+  color: $disabled;
+}
+
+.p-setup_channel_banner__heading_edit_text {
+  color: $text;
+}
+
+.p-setup_channel_banner__heading--with-button:hover {
+  .p-setup_channel_banner__heading_button {
+    background-color: $button;
+    border-color: $button;
+  }
+}
+
+.p-setup_channel_banner__cta_text {
+  color: $disabled;
+}
+
+.p-setup_channel_banner__btn {
+  &:hover {
+    background: $active;
+    border: 1px solid $active;
+  }
+}
+
+.p-setup_channel_banner__btn--completed {
+  border: 1px solid transparent;
+  background: $accent;
+}
+
+.p-setup_channel_banner__close_icon {
+  color: $fg;
+}
+
+.p-setup_channel_banner__tooltip {
+  background: $notif;
+  border: 0.5px solid $border;
+  color: $fg;
+}

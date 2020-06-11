@@ -26,7 +26,13 @@
 
   .p-channel_notification_prefs_new__mentions {
     background: $bg2;
+    color: $primary;
   }
+}
+
+.sk-client-theme--dark .p-channel_notification_prefs_new__mentions {
+  background: $bg2;
+  color: $primary;
 }
 
 .p-channel_notification_prefs_new__icon-chevron {
@@ -46,9 +52,8 @@
 }
 
 .p-channel_notification_prefs_new__prompt__muted {
-
   .p-channel_notification_prefs_new__prompt__icon {
-    color: $accent2
+    color: $accent2;
   }
 }
 

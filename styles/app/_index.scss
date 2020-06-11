@@ -9,6 +9,8 @@
 @import 'modals';
 @import 'mentions';
 @import 'callout';
+@import 'inline_search';
+@import 'call_footer';
 @import 'sever';
 @import 'members';
 @import 'banners';
@@ -149,3 +151,13 @@
 @import 'accordion';
 @import 'settings';
 @import 'ia_browse_channels';
+@import 'channel_activity';
+@import 'create_event';
+@import 'shortcuts_menu';
+@import 'slack_tip';
+@import 'setup';
+@import 'case_study';
+@import 'upgrade';
+@import 'mention_tip';
+@import 'resizer';
+@import 'member_status';

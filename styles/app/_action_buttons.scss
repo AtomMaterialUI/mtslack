@@ -34,15 +34,16 @@
     }
   }
 
-  .c-icon--small-star-filled, &:hover .c-icon--small-star-filled {
+  .c-icon--small-star-filled,
+  &:hover .c-icon--small-star-filled {
     color: $yellow;
   }
 
-  .c-icon--bookmark-filled, &:hover .c-icon--bookmark-filled {
+  .c-icon--bookmark-filled,
+  &:hover .c-icon--bookmark-filled {
     color: $accent2;
   }
 }
-
 
 .c-message_actions__container {
   background: $button;
@@ -82,4 +83,14 @@
 
 .c-message_actions__button .c-icon--bookmark-filled {
   color: $accent;
+}
+
+.c-message_actions__button--dividers:not(.c-message_actions__emoji_button):not(.c-message_actions__button--no-divider):not(:hover):after {
+  border-left: 1px solid $border;
+}
+
+.c-message_actions__emoji_button {
+  &:hover {
+    background: $active;
+  }
 }

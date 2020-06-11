@@ -3,7 +3,8 @@
 }
 
 .p-download_item {
-  &.p-download_item--focus-within, &:hover {
+  &.p-download_item--focus-within,
+  &:hover {
     border-color: $borderLight;
   }
 }
@@ -31,23 +32,30 @@
     background: $accent2;
   }
 
-  &.post, &.space {
+  &.post,
+  &.space {
     background: $green;
   }
 
-  &.doc, &.docx {
+  &.doc,
+  &.docx {
     background: $blue;
   }
 
-  &.xls, &.xlsm, &.xlsx, &.xltx {
+  &.xls,
+  &.xlsm,
+  &.xlsx,
+  &.xltx {
     background: $green;
   }
 
-  &.ppt, &.pptx {
+  &.ppt,
+  &.pptx {
     background: $yellow;
   }
 
-  &.ai, &.sketch {
+  &.ai,
+  &.sketch {
     background: $red;
   }
 
@@ -59,7 +67,8 @@
     background: $purple;
   }
 
-  &.fla, &.swf {
+  &.fla,
+  &.swf {
     background: $red;
   }
 
@@ -87,7 +96,9 @@
     background: $cyan;
   }
 
-  &.gdraw, &.gform, &.pdf {
+  &.gdraw,
+  &.gform,
+  &.pdf {
     background: $red;
   }
 }
@@ -109,7 +120,8 @@
 }
 
 .p-download_item__link--remove {
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $red;
   }
 }
@@ -159,4 +171,11 @@
 
 .p-download_toast__progress_inner--complete {
   background: $primary;
+}
+
+.p-download_toast_item--completed {
+  .c-pillow_file_meta_icon {
+    color: $selectFg;
+    background-image: linear-gradient($accent, $accent);
+  }
 }

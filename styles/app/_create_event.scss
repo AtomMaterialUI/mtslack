@@ -1,0 +1,19 @@
+.p-create_event_modal {
+  .conference-app-select {
+    .conference-link {
+      .link-icon {
+        color: $accent2;
+      }
+    }
+  }
+
+  .available-time-slots .suggested-option {
+    &:nth-last-child(2) {
+      border-bottom: 1px solid $borderLight;
+    }
+
+    .time-slot-availability {
+      color: $disabled;
+    }
+  }
+}

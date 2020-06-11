@@ -5,7 +5,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -17,17 +20,6 @@
 }
 
 .p-share_dialog_message_input {
-  color: $fg;
-  border: 1px solid $borderLight;
-
-  &:focus {
-    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
-
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
-      color: $disabled;
-    }
-  }
-
   &.ql-disabled {
     background: $excluded;
   }

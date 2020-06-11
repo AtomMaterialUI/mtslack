@@ -1,0 +1,27 @@
+.p-resizer {
+  &.p-resizer--dragging:after,
+  &.p-resizer--focused:after,
+  &:hover:after {
+    background-color: $primary;
+    box-shadow: 0 0 0 1px $primary;
+  }
+
+  &.p-resizer--default.p-resizer--dragging:after {
+    background-color: $primary;
+    animation: p-resizer-pulse 0.5s;
+  }
+}
+
+@keyframes p-resizer-pulse {
+  0% {
+    box-shadow: 0 0 0 1px $primary;
+  }
+
+  50% {
+    box-shadow: 0 0 0 3px $primary;
+  }
+
+  to {
+    box-shadow: 0 0 0 1px $primary;
+  }
+}
