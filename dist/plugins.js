@@ -629,67 +629,6 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
 
 window.slackPluginsAPI.plugins.nextTheme = new NextThemePlugin();
 
-// Sidebar.js
-window.slackPluginsAPI = window.slackPluginsAPI || {};
-window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
-
-class SidebarPlugin extends window.slackPluginsAPI.pluginBase {
-  constructor() {
-    super();
-    // Mandatory
-    this.name = 'sidebar';
-    this.desc = 'Toggle Sidebar';
-    this.longDescription = 'Show or hide the sidebar';
-    this.enabled = true;
-    this.shortcut = '';
-    this.icon = 'side-panel';
-
-    // Specific
-    this.sidebarEnabled = true;
-
-  }
-
-  apply() {
-    this.applySidebar();
-  }
-
-  saveSettings() {
-    return {
-      enabled: this.enabled,
-      sidebarEnabled: this.sidebarEnabled
-    };
-  }
-
-  onToolbarClick() {
-    this.toggleSidebar();
-  }
-
-  /**
-   * Toggle Sidebar
-   */
-  toggleSidebar() {
-    this.sidebarEnabled = !this.sidebarEnabled;
-    this.applySidebar();
-
-    window.slackPluginsAPI.saveSettings();
-  }
-
-  /**
-   * Apply
-   */
-  applySidebar() {
-    const sidebar = document.querySelector('.p-workspace');
-    if (this.sidebarEnabled) {
-      sidebar.style.gridTemplateColumns = '0px auto';
-    }
-    else {
-      sidebar.style.gridTemplateColumns = '260px auto';
-    }
-  }
-}
-
-window.slackPluginsAPI.plugins.sidebar = new SidebarPlugin();
-
 // Fonts.js
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
@@ -703,7 +642,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.longDescription = 'Enter the custom fonts, separated by commas';
     this.enabled = true;
     this.shortcut = '';
-    this.icon = 'format';
+    this.icon = 'text';
 
     // Specific
     this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, appleLogo, sans-serif';
@@ -746,8 +685,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
-    }
-    else {
+    } else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
@@ -771,7 +709,6 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
       fontsEnabled: this.fontsEnabled
     };
   }
-
 }
 
 window.slackPluginsAPI.plugins.fonts = new FontsPlugin();
@@ -789,7 +726,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.longDescription = 'Change the accent color';
     this.enabled = true;
     this.shortcut = '';
-    this.icon = 'highlight';
+    this.icon = 'highlight-filled';
 
     // Specific
     this.accentColor = '#80CBC4';
@@ -802,10 +739,14 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     return `
 <div class="c-color_picker__container"  role="presentation">
     <span class="c-color_picker__color_block_container">
-        <button id="customAccentColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${this.accentColor};"></button>
+        <button id="customAccentColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
+          this.accentColor
+        };"></button>
     </span>
     <span class="c-color_picker__hex_hash">#</span>
-    <input id="accentColor" name="accentColor" class="c-color_picker__input"  type="text" value="${this.accentColor.slice(1)}" style="min-width: auto">
+    <input id="accentColor" name="accentColor" class="c-color_picker__input"  type="text" value="${this.accentColor.slice(
+      1
+    )}" style="min-width: auto">
     <button id="customAccentButton" name="customAccentButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>
 </div>`;
   }
@@ -845,11 +786,12 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
 
   applyAccent() {
     if (this.accentColorEnabled) {
-      document.dispatchEvent(new CustomEvent('AccentChanged', {
-        detail: this.accentColor
-      }));
-    }
-    else {
+      document.dispatchEvent(
+        new CustomEvent('AccentChanged', {
+          detail: this.accentColor
+        })
+      );
+    } else {
       document.dispatchEvent(new CustomEvent('AccentReset', {}));
     }
 
