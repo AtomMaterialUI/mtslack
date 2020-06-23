@@ -118,7 +118,7 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class="c-icon c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
   }
 
   /**
