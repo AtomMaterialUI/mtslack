@@ -10,6 +10,14 @@
 
 .c-sk-modal {
   background-color: $bg;
+  opacity: 0;
+  transition: opacity 80ms linear, transform 80ms cubic-bezier(0.36, 0.19, 0.29, 1);
+  transform: scale(0.95);
+}
+
+.c-sk-modal.ReactModal__Content--after-open:not(.ReactModal__Content--before-close) {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .c-sk-modal__close_button--inverted {
