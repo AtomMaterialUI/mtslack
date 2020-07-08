@@ -3,7 +3,6 @@
   color: $fg;
 }
 
-
 .p-member_profile__picture {
   border-bottom: 1px solid $border;
 }
@@ -14,6 +13,10 @@
   &:focus {
     color: $selectFg;
   }
+}
+
+.p-member_profile_name__pronouns {
+  color: $text;
 }
 
 .p-member_profile_field__label {

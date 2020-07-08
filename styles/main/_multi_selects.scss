@@ -25,6 +25,7 @@
 }
 
 .c-multi_select_input--disabled,
+.c-multi_select_input__input.c-multi_select_input__input--disabled,
 .c-multi_select_input__input--disabled {
   background: $excluded;
 }

@@ -1,0 +1,11 @@
+.c-command_list_entity {
+  .c-command_entity__description, .c-command_list_entity__secondary {
+    color: $text;
+  }
+}
+
+.c-command_list_entity--active {
+  .c-command_entity__description, .c-command_list_entity__secondary {
+    color: $selectFg;
+  }
+}

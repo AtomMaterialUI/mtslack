@@ -176,6 +176,20 @@
 .p-download_toast_item--completed {
   .c-pillow_file_meta_icon {
     color: $selectFg;
-    background-image: linear-gradient($accent, $accent);
+    background-image: linear-gradient($accent, $accentT);
+  }
+}
+
+.p-download_progress__outer {
+  background: $hl;
+}
+
+.p-download_progress__inner {
+  background: $accent;
+}
+
+.p-downloads_modal__content {
+  .c-pillow_file--active_download .c-pillow_file__slide, .c-pillow_file_container--active_download {
+    background: $bg;
   }
 }

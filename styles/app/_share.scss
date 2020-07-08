@@ -24,3 +24,11 @@
     background: $excluded;
   }
 }
+
+.p-shared_invite_link {
+  color: $primary;
+}
+
+.p-shared_invite_link--disabled {
+  color: $disabled;
+}

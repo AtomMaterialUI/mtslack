@@ -1,0 +1,47 @@
+.p-event {
+  border: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-event_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-event_datetime, .p-event_title {
+  color: $fg;
+}
+
+.p-event_event-details {
+  border-top: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-event_copy-to-calendar, .p-event_event-join-call, .p-event_event-rsvp {
+  border-top: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-event .p-event_rsvp_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-event_icon_accepted {
+  color: $selectFg;
+  background-color: $green;
+}
+
+.p-event_icon_declined {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.p-event_icon_tentative {
+  color: $selectFg;
+  background-color: $accent2;
+}
+
+.p-event_action_options--action {
+  border: 1px solid $borderLight;
+}

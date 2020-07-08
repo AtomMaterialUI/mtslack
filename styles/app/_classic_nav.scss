@@ -273,14 +273,18 @@
   }
 }
 
-.p-classic_nav__model__title__info__tab--active {
-  color: $disabled;
-
-  &:after {
-    background: $accent;
-  }
-}
-
 .p-ia__view_header .p-classic_nav__model__title__info__sep {
   color: $text;
+}
+
+.p-shared_channel_trial_banner__body_icon {
+  color: $primary;
+}
+
+.c-message_stats__msg__nav_next, .c-message_stats__msg__nav_prev {
+  color: $fg;
+}
+
+.c-message_stats__msg__nav_next:disabled, .c-message_stats__msg__nav_prev:disabled {
+  color: $disabled;
 }

@@ -182,4 +182,8 @@
 
 .p-prefs_dialog__menu {
   border-right: 1px solid $borderLight;
+
+  .c-tabs__tab:not(.c-tabs__tab--active) .c-tabs__tab_icon--left {
+    color: $text;
+  }
 }

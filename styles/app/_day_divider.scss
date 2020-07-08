@@ -33,8 +33,14 @@
   box-shadow: 0 0 5px 0 $accent;
 }
 
-.c-message_list--dark
-  .c-message_list__unread_divider__separator--is-unread-enter-active
-  .c-message_list__unread_divider__separator {
+.c-message_list--dark,
+.c-message_list__unread_divider__separator--is-unread-enter-active,
+.c-message_list__unread_divider__separator {
   box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT;
+}
+
+.c-message_list__pill_banner {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+
 }

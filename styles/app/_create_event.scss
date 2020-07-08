@@ -16,4 +16,16 @@
       color: $disabled;
     }
   }
+
+  .custom-time-slots .custom-option {
+    &:nth-last-child(2) {
+      border-bottom: 1px solid $borderLight;
+    }
+
+    .time-slot-range {
+      &.change-selection-mode {
+        color: $primary;
+      }
+    }
+  }
 }

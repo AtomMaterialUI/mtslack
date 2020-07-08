@@ -126,6 +126,7 @@
   color: $disabled;
 }
 
+.p-custom_status_modal__preset_title,
 .p-custom_status_modal__content h2 {
   color: $text;
 }
@@ -155,7 +156,7 @@
 }
 
 .p-ia__main_menu__custom_status_item--empty:not(.p-ia__main_menu__custom_status_item--highlighted-kb)
-  .p-ia__main_menu__custom_status_button:not(:hover) {
+.p-ia__main_menu__custom_status_button:not(:hover) {
   color: $text;
 }
 

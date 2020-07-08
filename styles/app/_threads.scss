@@ -74,11 +74,11 @@
   }
 
   &.p-message_input--attachments-visible
-    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-    .ql-composer-sticky,
+  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+  .ql-composer-sticky,
   &.p-message_input--files-visible
-    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-    .ql-composer-sticky {
+  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+  .ql-composer-sticky {
     background: $active;
   }
 
@@ -156,18 +156,23 @@
   color: $text;
 }
 
+.p-threads_view_load_newer_message, .p-threads_view_load_older_message,
 .p-threads_view_load_newer_button,
 .p-threads_view_load_older_button {
   background: $button;
+  color: $primary;
   border-left: 1px solid $borderLight;
   border-right: 1px solid $borderLight;
 }
 
+.p-threads_view_load_newer_message:hover, .p-threads_view_load_older_message:hover,
 .p-threads_view_load_newer_button:hover,
 .p-threads_view_load_older_button:hover {
   background: $hl;
+  color: $primary;
 }
 
+.p-threads_view_load_newer_message__blue_dot,
 .p-threads_view_load_newer_button__blue_dot {
   color: $accent;
 }
@@ -297,5 +302,19 @@
 
   .p-threads_flexpane__marked_as_read_divider__label {
     color: $accent;
+  }
+}
+
+.p-thread_separator--dark {
+  .p-threads_flexpane__separator_line__read, .p-threads_flexpane__separator_line__unread {
+    border-top-color: $accent;
+  }
+
+  .p-threads_flexpane__read_divider__label, .p-threads_flexpane__unread_divider__label {
+    color: $accent;
+  }
+
+  .p-threads_flexpane__separator_line--is-unread-appear-active, .p-threads_flexpane__separator_line--is-unread-enter-active {
+    box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 rgba($accent, 0.7), 0 0 5px 0 rgba($accent, 0.3);
   }
 }

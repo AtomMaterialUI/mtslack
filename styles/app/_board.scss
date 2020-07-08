@@ -1,0 +1,11 @@
+.p-board__input__menu {
+  color: $text;
+}
+
+.p-board__row__gutter__hover_item {
+  color: $primaryT;
+
+  &:hover {
+    color: $primary;
+  }
+}

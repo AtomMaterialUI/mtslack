@@ -21,3 +21,23 @@
 .p-recent_page__date_divider {
   background: $bg;
 }
+
+.p-recent_page__loading {
+  background: $bg;
+}
+
+.p-recent_page__new {
+  color: $text;
+
+  &:hover {
+    box-shadow: 0 1px 0 0 $primary, 0 4px 12px -2px $primaryT;
+  }
+}
+
+.p-recent_page__list {
+  background: $bg;
+}
+
+.p-recent_page__divider {
+  background: $bg2;
+}

@@ -1,5 +1,5 @@
-.c-dialog__footer {
-  .p-create_gdoc_dialog__footer_share_inputs, .p-snippet_dialog__footer_share_inputs {
-    color: $fg;
-  }
+.c-dialog__footer .p-snippet_dialog__footer_share_inputs,
+.c-dialog__footer .p-create_gdoc_dialog__footer_share_inputs,
+.p-snippet_dialog__footer_share_inputs {
+  color: $fg;
 }

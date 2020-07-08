@@ -21,3 +21,30 @@
 .setup-caret-right {
   border-right: 14px solid $borderLight;
 }
+
+.p-channel_sidebar__loading_spacer_row {
+  background-color: $bg2;
+}
+
+.p-channel_sidebar__section_heading:after {
+  background: $bg;
+}
+
+.p-channel_sidebar__tip_highlighted_symbol {
+  background-color: $bg;
+}
+
+.sk-client-theme--dark {
+  .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__separator {
+    background-image: linear-gradient(90deg, $red 0, $red);
+  }
+
+  .c-message_list__unread_divider__separator--is-unread-enter-active .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__separator {
+    box-shadow: 0 0 5px 0 $red;
+    box-shadow: 0 0 5px 0 $red, 0 0 5px 0 rgba($red, 0.7), 0 0 5px 0 rgba($red, 0.3);
+  }
+
+  .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__label {
+    color: $red;
+  }
+}

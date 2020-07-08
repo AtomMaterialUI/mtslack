@@ -480,3 +480,8 @@ button.p-admin_member_table__menu_item--disabled {
   border: 2px dashed $borderLight;
   background: $bg;
 }
+
+.p-browse_page_layout__input_hint {
+  color: $text;
+  border-right: 1px solid $borderLight;
+}

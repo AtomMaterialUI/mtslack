@@ -86,6 +86,14 @@ a.c-sidebar_menu__list_item {
   }
 }
 
+.p-channel_sidebar__channel_section_menu_submenu_label__secondary_text {
+  color: $text;
+}
+
+.c-menu_item__li--highlighted .p-channel_sidebar__channel_section_menu_submenu_label__secondary_text {
+  color: $selectFg;
+}
+
 .p-channel_sidebar__channel,
 .p-channel_sidebar__link,
 .p-channel_sidebar__channel:link,
@@ -196,7 +204,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 /** `opacity: 1` color overrides */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected)
-  .p-channel_sidebar__name,
+.p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
