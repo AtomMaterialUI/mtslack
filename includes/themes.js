@@ -30,7 +30,8 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'dracula',
       'github',
       'nightowl',
-      'lightowl'
+      'lightowl',
+      'moonlight'
     ];
     // Current theme
     this.currentTheme = 0;

@@ -539,3 +539,39 @@ other:
     attributes: '#4876d6'
     numbers: '#aa0982'
     parameters: '#f78c6c'
+
+  - moonlight:
+    name: Moonlight
+    name2: Moonlight
+    className: moonlight
+    desc: Dark Blue theme with bubblegum colors
+    dark: true
+    scheme: Moonlight
+    background: "#212337"
+    foreground: "#afbeee"
+    text: "#afbeee"
+    selectBg: "#3c4361"
+    selectFg: "#FFFFFF"
+    selectFg2: "#FFFFFF"
+    button: "#161a2a"
+    second: "#212337"
+    disabled: "#7c85b3"
+    contrast: "#1e2132"
+    table: "#4E5579"
+    misc1: "#121523aa"
+    misc2: "#3c4361"
+    tree: "#1e2132"
+    notif: "#1e2132"
+    accent: "#2979ff"
+    excluded: "#383e5c"
+    comments: "#7e8eda"
+    vars: "#ffc777"
+    links: "#7fdaff"
+    functions: "#82aaff"
+    keywords: "#baacff"
+    tags: "#ff5370"
+    strings: "#c7f59b"
+    operators: "#7fdaff"
+    attributes: "#c3a2ff"
+    numbers: "#ff9e64"
+    parameters: "#f7a4ec"
