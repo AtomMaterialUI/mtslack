@@ -8251,7 +8251,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     color: var(--accent2); }
 
 .c-message_actions__container {
-  background: var(--button);
+  background: none;
   border: 0.0625rem solid var(--border); }
   .c-message_actions__container:hover {
     border-color: var(--active); }
@@ -8836,8 +8836,9 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .p-prefs_modal__channel_overrides_row {
   border-top: 1px solid var(--active); }
   .p-prefs_modal__channel_overrides_row:hover {
-    background: var(--selectBg);
-    border: 1px solid var(--accent); }
+    background: var(--selectBg) !important;
+    border: 1px solid var(--accent);
+    box-shadow: none !important; }
 
 .p-prefs_modal__channel_overrides_row--isDm:hover {
   border-top: var(--active); }
