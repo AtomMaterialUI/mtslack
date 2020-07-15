@@ -89,7 +89,7 @@ const slackPluginsAPI = {
     $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-sk-modal__close_button';
     $closeBtn.innerHTML = `<i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>`;
     // Close the modal
-    $closeBtn.addEventListener('keydown', ({keyCode}) => {
+    $closeBtn.addEventListener('keydown', ({ keyCode }) => {
       if (keyCode === 13) {
         requestAnimationFrame(() => $reactModal.remove());
       }
@@ -289,8 +289,8 @@ const slackPluginsAPI = {
     $wrapper.style.position = 'absolute';
 
     const rect = plugin.$el.getBoundingClientRect();
-    $wrapper.style.top = rect.y  + plugin.$el.offsetHeight + 'px';
-    $wrapper.style.left = rect.x  - (plugin.$el.offsetWidth * 2) + 'px';
+    $wrapper.style.top = rect.y + plugin.$el.offsetHeight + 'px';
+    $wrapper.style.left = rect.x - (plugin.$el.offsetWidth * 2) + 'px';
     $reactOverlay.appendChild($wrapper);
 
     // Header
@@ -350,7 +350,7 @@ ${plugin.desc}
     const settings = {};
     settings.main = {
       pluginsEnabled: this.pluginsEnabled
-    }
+    };
 
     Object.keys(this.plugins).forEach(key => {
       if (this.plugins[key] && this.plugins[key].saveSettings) {
@@ -368,7 +368,7 @@ ${plugin.desc}
     this._initSettings();
 
     // Add a keybinding to reinit
-    document.addEventListener('keydown', ({keyCode, altKey, metaKey}) => {
+    document.addEventListener('keydown', ({ keyCode, altKey, metaKey }) => {
       if (keyCode === 68 && (metaKey || altKey)) {
         this._initSettings();
       }
