@@ -321,6 +321,11 @@ button.p-admin_member_table__menu_item--disabled {
   color: $text;
 }
 
+.c-virtual_list__item {
+  position: relative;
+  top: auto !important;
+}
+
 .c-virtual_list__item:last-child .p-browse_page_channel,
 .p-browse_page_channel {
   border-top: 1px solid $borderLight;
