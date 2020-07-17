@@ -410,6 +410,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 // Here are files included in the end bundle
 
 //= include base.js
+//= include dim.js
 //= include themes.js
 //= include fonts.js
 //= include accent.js

@@ -49,7 +49,8 @@ class PluginBase {
     }
     if ($newHeader) {
       // Add buttons
-      $newHeader.appendChild($toolbarBtn);
+      
+      $newHeader.prepend($toolbarBtn);
     }
 
     // Show or hide the toolbar button according to settings
@@ -140,7 +141,7 @@ class PluginBase {
    * Action executed on clicking apply
    */
   extraContentOnClick() {
-// to be implemented
+    // to be implemented
   }
 }
 

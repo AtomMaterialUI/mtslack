@@ -2,16 +2,16 @@
 window.slackPluginsAPI = window.slackPluginsAPI || {};
 window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 
-class HideAwayPlugin extends window.slackPluginsAPI.pluginBase {
+class DimPlugin extends window.slackPluginsAPI.pluginBase {
   constructor() {
     super();
     // Mandatory
     this.name = 'hideAway';
-    this.desc = 'Hide Absent People';
-    this.longDescription = 'Hide Absent People from the list';
+    this.desc = 'Dim Absent People';
+    this.longDescription = 'Dim Absent People and Channels from the sidebar';
     this.enabled = true;
     this.shortcut = '';
-    this.icon = 'disable';
+    this.icon = 'channels';
 
     this.tweakEnabled = false;
   }
@@ -25,21 +25,21 @@ class HideAwayPlugin extends window.slackPluginsAPI.pluginBase {
    */
   toggleHide() {
     this.tweakEnabled = !this.tweakEnabled;
-    this.applyHide();
+    this.applyDim();
   }
 
   /**
-   * Apply fonts
+   * Apply Dim
    */
-  applyHide() {
+  applyDim() {
     if (this.tweakEnabled) {
       document.querySelectorAll('.p-channel_sidebar__name--away').forEach(el => {
-        el.closest('.p-channel_sidebar__static_list__item').style.display = 'none';
+        el.closest('.p-channel_sidebar__static_list__item').style.opacity = 0.4;
       });
     }
     else {
       document.querySelectorAll('.p-channel_sidebar__name--away').forEach(el => {
-        el.closest('.p-channel_sidebar__static_list__item').style.display = 'block';
+        el.closest('.p-channel_sidebar__static_list__item').style.opacity = 1;
       });
     }
     window.slackPluginsAPI.saveSettings();
@@ -49,7 +49,7 @@ class HideAwayPlugin extends window.slackPluginsAPI.pluginBase {
    * Apply
    */
   apply() {
-    this.applyHide();
+    this.applyDim();
   }
 
   /**
@@ -63,4 +63,4 @@ class HideAwayPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.hideAway = new HideAwayPlugin();
+window.slackPluginsAPI.plugins.hideAway = new DimPlugin();
