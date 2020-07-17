@@ -5,21 +5,23 @@ Beautify your Slack application from a list of popular themes!!!
 Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 
 **Theme List**:
-- Material Oceanic ![oceanic.png](doc/oceanic.png)
-- Material Darker ![darker.png](doc/darker.png)
-- Material Palenight ![palenight.png](doc/palenight.png)
-- Material Lighter ![lighter.png](doc/lighter.png)
-- Material DeepOcean ![deepocean.png](doc/deepocean.png)
-- Monokai Pro ![monokai.png](doc/monokai.png)
-- Arc Dark ![arcdark.png](doc/arcdark.png)
-- Dracula ![dracula.png](doc/dracula.png)
-- GitHub ![github.png](doc/github.png)
-- Atom One Dark ![onedark.png](doc/onedark.png)
-- Atom One Light ![onelight.png](doc/onelight.png)
-- Solarized Dark ![solardark.png](doc/solardark.png)
-- Solarized Light ![solarlight.png](doc/solarlight.png)
-- Night Owl ![nightowl.png](doc/nightowl.png)
-- Light Owl ![lightowl.png](doc/lightowl.png)
+- Material Oceanic ![oceanic.png](doc/v2/oceanic.png)
+- Material Darker ![darker.png](doc/v2/darker.png)
+- Material Palenight ![palenight.png](doc/v2/palenight.png)
+- Material Lighter ![lighter.png](doc/v2/lighter.png)
+- Material DeepOcean ![deepocean.png](doc/v2/deepocean.png)
+- Monokai Pro ![monokai.png](doc/v2/monokai.png)
+- Arc Dark ![arcdark.png](doc/v2/arcdark.png)
+- Dracula ![dracula.png](doc/v2/dracula.png)
+- GitHub ![github.png](doc/v2/github.png)
+- Atom One Dark ![onedark.png](doc/v2/onedark.png)
+- Atom One Light ![onelight.png](doc/v2/onelight.png)
+- Solarized Dark ![solardark.png](doc/v2/solardark.png)
+- Solarized Light ![solarlight.png](doc/v2/solarlight.png)
+- Night Owl ![nightowl.png](doc/v2/nightowl.png)
+- Light Owl ![lightowl.png](doc/v2/lightowl.png)
+- Moonlight (**NEW!**) ![moonlight.png](doc/v2/moonlight.png)
+
 
 ----------------------------
 
@@ -95,23 +97,23 @@ Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make t
 
 #### Slack Tweak Control Panel
 
-![Slack Tweaks](doc/tweaks.png)
+![Slack Tweaks](doc/v2/tweaksSettings.png)
 
 This panel controls which tweak toggles are available. **This doesn't actually toggle the tweaks themselves!**.
 
 Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will activate the tweak.
 
-![Tweaks](doc/tweakbar.png)
+![Tweaks](doc/v2/tweaksToolbar.png)
 
 These settings are saved in the application's Local Storage.
+
+#### Dim Absent People
+
+This button will dim absent people from the sidebar, making the present ones more prominent.
 
 #### Loop Over selected themes
 
 This button will loop over the available themes, allowing you to choose a theme in realtime.
-
-#### Toggle Sidebar
-
-Shows/Hides the channel sidebar
 
 #### Toggle Custom Font
 
