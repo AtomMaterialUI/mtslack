@@ -434,11 +434,12 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
   background: $contrast !important;
   color: $text !important;
+}
 
-  .p-channel_sidebar__section_heading__label {
-    font-weight: bold !important;
-    text-transform: uppercase !important;
-  }
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_label,
+.p-channel_sidebar__section_heading__label {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
 
 .p-sidebar_link__icon--bold {
