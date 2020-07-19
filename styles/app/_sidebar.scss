@@ -231,6 +231,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   border-bottom: none;
   box-shadow: 0px 10px 10px -6px $border;
   background: $bg2;
+  z-index: 9999;
 
   .p-channel_sidebar__history_button:not(.p-channel_sidebar__history_button--disabled) {
     &:hover {

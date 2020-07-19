@@ -452,7 +452,7 @@ other:
     table: '#cce5ff'
     misc1: '#DFE1E4'
     misc2: '#CCE5FF'
-    tree: '#3A66D1'
+    tree: '#3A66D170'
     notif: '#DFECFE'
     accent: '#79CB60'
     excluded: '#FDFDFD'
