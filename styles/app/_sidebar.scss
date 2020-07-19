@@ -228,8 +228,8 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-ia__view_header {
-  border-bottom: none;
-  box-shadow: 0px 10px 10px -6px $border;
+  border-bottom: none !important;
+  box-shadow: 0px 10px 10px -6px $border !important;
   background: $bg2;
   z-index: 9999;
 
