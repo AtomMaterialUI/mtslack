@@ -431,9 +431,10 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
-  background: $bg !important;
+  background: $contrast !important;
   color: $text !important;
-  border-bottom: 1px solid $border;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
 }
 
 .p-sidebar_link__icon--bold {
