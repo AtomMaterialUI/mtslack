@@ -68,6 +68,10 @@
 }
 
 .p-client_desktop--ia-top-nav {
+  .p-team_sidebar {
+    box-shadow: inset -1px 0 0 0 $border;
+  }
+
   .p-message_pane__unread_banner__banner {
     &:hover {
       background: $accentT;

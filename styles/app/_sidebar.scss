@@ -159,7 +159,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected,
 .p-channel_sidebar__link--selected:hover {
-  background: $selectBg !important;
+  background: $tree !important;
 }
 
 .p-channel_sidebar__channel--selected:before,
@@ -228,6 +228,10 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-ia__view_header {
+  border-bottom: none;
+  box-shadow: 0px 10px 10px -6px $border;
+  background: $bg2;
+
   .p-channel_sidebar__history_button:not(.p-channel_sidebar__history_button--disabled) {
     &:hover {
       background-color: $hl;

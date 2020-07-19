@@ -45,9 +45,13 @@
   }
 }
 
+.c-message_actions__group {
+  background: $button;
+}
+
 .c-message_actions__container {
   background: none;
-  border: 0.0625rem solid $border;
+  border: none;
 
   &:hover {
     border-color: $borderLight;
