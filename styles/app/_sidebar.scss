@@ -394,12 +394,12 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   }
 }
 
-.p-channel_sidebar__static_list__item {
-  opacity: 1;
-}
+.p-channel_sidebar__name.p-channel_sidebar__name--away,
+.p-channel_sidebar__name > .p-channel_sidebar__name--away {
 
-.mtslack--dim .p-channel_sidebar__static_list__item {
-  opacity: .4 !important;
+  .mtslack--dim & {
+    opacity: .4 !important;
+  }
 }
 
 div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
