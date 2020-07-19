@@ -33,14 +33,10 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
    */
   applyDim() {
     if (this.tweakEnabled) {
-      document.querySelectorAll('.p-channel_sidebar__name--away').forEach(el => {
-        el.closest('.p-channel_sidebar__static_list__item').classList.add('-dim');
-      });
+      document.body.classList.add('mtslack--dim');
     }
     else {
-      document.querySelectorAll('.p-channel_sidebar__name--away').forEach(el => {
-        el.closest('.p-channel_sidebar__static_list__item').classList.remove('-dim');
-      });
+      document.body.classList.remove('mtslack--dim');
     }
     window.slackPluginsAPI.saveSettings();
   }

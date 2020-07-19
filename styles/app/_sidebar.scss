@@ -398,8 +398,8 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   opacity: 1;
 }
 
-.p-channel_sidebar__static_list__item.-dim {
-  opacity: .4;
+.mtslack--dim .p-channel_sidebar__static_list__item {
+  opacity: .4 !important;
 }
 
 div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
