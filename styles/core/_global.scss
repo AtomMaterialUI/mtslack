@@ -200,9 +200,7 @@ legend {
   }
 }
 
-.sk-client-theme--dark ::-moz-selection,
 .sk-client-theme--dark ::selection,
-::-moz-selection,
 ::selection {
   background-color: $selectBg !important;
   color: $selectFg !important;
