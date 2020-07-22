@@ -84,7 +84,7 @@ hr,
 }
 
 textarea,
-input[type="text"] {
+input[type='text'] {
   background-color: $contrast;
   border-color: $border;
   color: $fg;
@@ -198,5 +198,15 @@ legend {
   small {
     color: $text;
   }
+}
+
+::-moz-selection, ::selection {
+  .sk-client-theme--dark & {
+    background-color: $selectBg;
+    color: $selectFg
+  }
+
+  background-color: $selectBg;
+  color: $selectFg;
 }
 
