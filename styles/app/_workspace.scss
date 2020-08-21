@@ -8,7 +8,8 @@
   box-shadow: inset 1px 0 $borderLight;
 }
 
-.p-workspace__primary_view_footer {
+.p-workspace__primary_view_footer,
+.workspace__primary_view_footer {
   box-shadow: inset 1px 0 $bg2;
   background: $bg;
 }
@@ -79,11 +80,11 @@
   }
 
   &.p-message_input--attachments-visible
-    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-    .ql-composer-sticky,
+  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+  .ql-composer-sticky,
   &.p-message_input--files-visible
-    .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-    .ql-composer-sticky {
+  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
+  .ql-composer-sticky {
     background: $contrast;
   }
 
@@ -121,7 +122,7 @@
 }
 
 .p-workspace__secondary_view {
-  border-left: 1px solid $border;
+  border-left: 1px solid $borderLight;
   background: $bg;
 }
 
