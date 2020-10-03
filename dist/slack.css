@@ -506,7 +506,7 @@ legend {
 
 .sk-client-theme--dark ::selection,
 ::selection {
-  background-color: var(--selectBg) !important;
+  background-color: var(--tree) !important;
   color: var(--selectFg) !important; }
 
 .bordered {
