@@ -848,15 +848,28 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.applyFonts();
   }
 
+  addNewStyle(newStyle) {
+    let styleElement = document.getElementById('styles_js');
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.type = 'text/css';
+      styleElement.id = 'styles_js';
+      document.getElementsByTagName('head')[0].appendChild(styleElement);
+    }
+    styleElement.appendChild(document.createTextNode(newStyle));
+  }
+
   /**
    * Apply fonts
    */
   applyFonts() {
     if (this.monoFontsEnabled) {
-      document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.monoFontFamily, 'important'));
+      this.addNewStyle(`pre,code {font: ${this.monoFontFamily} !important;}`);
+      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.monoFontFamily, 'important'));
     }
     else {
-      document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.DEFAULT, 'important'));
+      this.addNewStyle(`pre,code {font: ${this.DEFAULT} !important;}`);
+      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.DEFAULT, 'important'));
     }
     window.slackPluginsAPI.saveSettings();
   }
