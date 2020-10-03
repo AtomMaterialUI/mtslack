@@ -3,17 +3,18 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
 const fileInclude = require('gulp-browser-js-include');
+const injectVersion = require('gulp-inject-version');
 
 const paths = {
   styles: {
     src: 'styles/**/*.scss',
-    dest: 'dist',
+    dest: 'dist'
   },
   scripts: {
     src: 'includes/**/*.js',
     main: 'includes/**/plugins.js',
-    dest: 'dist',
-  },
+    dest: 'dist'
+  }
 };
 
 gulp.task('styles', () => {
@@ -21,7 +22,7 @@ gulp.task('styles', () => {
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(rename({
-      basename: 'slack.min',
+      basename: 'slack.min'
     })).pipe(gulp.dest(paths.styles.dest));
 });
 
@@ -29,12 +30,13 @@ gulp.task('debugStyles', () => {
   return gulp.src(paths.styles.src)
     .pipe(sass())
     .pipe(rename({
-      basename: 'slack',
+      basename: 'slack'
     })).pipe(gulp.dest(paths.styles.dest));
 });
 
 gulp.task('scripts', () => {
   return gulp.src(paths.scripts.main)
+    .pipe(injectVersion())
     .pipe(fileInclude())
     // .pipe(butternut())
     .pipe(gulp.dest(paths.scripts.dest));

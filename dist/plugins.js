@@ -1,6 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
+  version: 'v10.1.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -103,7 +104,7 @@ const slackPluginsAPI = {
     $header.className = 'c-sk-modal_header';
     $header.innerHTML = `
 <div data-qa="invite_modal_header" class="c-sk-modal_title_bar c-sk-modal_title_bar--pad_right">
-<div class="c-sk-modal_title_bar__text"><h1>Slack Tweaks</h1></div>
+<div class="c-sk-modal_title_bar__text"><h1>Slack Tweaks ${this.version}</h1></div>
 </div>`;
 
     // Finally the settings
