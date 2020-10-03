@@ -200,7 +200,7 @@ other:
     table: '#4A474B'
     misc1: '#2d2a2e'
     misc2: '#5b595c'
-    tree: '#403E41'
+    tree: '#403E4170'
     notif: '#363437'
     accent: '#ffd866'
     excluded: '#3a3a3c'
@@ -236,7 +236,7 @@ other:
     table: '#44475A'
     misc1: '#21222C'
     misc2: '#6272A4'
-    tree: '#44475A'
+    tree: '#44475A70'
     notif: '#1D2228'
     accent: '#FF79C5'
     excluded: '#34353D'
@@ -272,7 +272,7 @@ other:
     table: '#41416A'
     misc1: '#404552'
     misc2: '#3F3F46'
-    tree: '#08507C'
+    tree: '#08507C70'
     notif: '#262a33'
     accent: '#42A5F5'
     excluded: '#474B57'
@@ -308,7 +308,7 @@ other:
     table: '#383E49'
     misc1: '#282C34'
     misc2: '#383D48'
-    tree: '#3A3F4B'
+    tree: '#3A3F4B70'
     notif: '#282C34'
     accent: '#2979ff'
     excluded: '#3c4150'
@@ -380,7 +380,7 @@ other:
     table: '#11353F'
     misc1: '#0D3640'
     misc2: '#11353F'
-    tree: '#2E4C52'
+    tree: '#2E4C5270'
     notif: '#2E4C52'
     accent: '#d33682'
     excluded: '#083F4D'
@@ -416,7 +416,7 @@ other:
     table: '#F6F0DE'
     misc1: '#edead9'
     misc2: '#F6F0DE'
-    tree: '#93a1a1'
+    tree: '#93a1a170'
     notif: '#EDE8D4'
     accent: '#d33682'
     excluded: '#E3DCC9'
@@ -488,7 +488,7 @@ other:
     table: '#152C3B'
     misc1: '#2a373e'
     misc2: '#152C3B'
-    tree: '#152C3B'
+    tree: '#152C3B70'
     notif: '#152C3B'
     accent: '#7e57c2'
     excluded: '#0B253A'
@@ -524,7 +524,7 @@ other:
     table: '#FAFAFA'
     misc1: '#efefef'
     misc2: '#E0E7EA'
-    tree: '#E0E7EA'
+    tree: '#E0E7EA70'
     notif: '#F0F0F0'
     accent: '#269386'
     excluded: '#82AAFF'
@@ -560,7 +560,7 @@ other:
     table: "#4E5579"
     misc1: "#121523aa"
     misc2: "#3c4361"
-    tree: "#1e2132"
+    tree: "#1e213270"
     notif: "#1e2132"
     accent: "#2979ff"
     excluded: "#383e5c"
