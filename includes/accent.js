@@ -14,7 +14,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.icon = 'highlight-filled';
 
     // Specific
-    this.accentColor = '#80CBC4';
+    this.accentColor = '#80cbc4';
     this.accentColorEnabled = false;
 
     this.extraContentId = 'customAccent';
@@ -25,8 +25,8 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
 <div class="c-color_picker__container"  role="presentation">
     <span class="c-color_picker__color_block_container">
         <button id="customAccentColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
-          this.accentColor
-        };"></button>
+      this.accentColor
+    };"></button>
     </span>
     <span class="c-color_picker__hex_hash">#</span>
     <input id="accentColor" name="accentColor" class="c-color_picker__input"  type="text" value="${this.accentColor.slice(
@@ -76,11 +76,16 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
           detail: this.accentColor
         })
       );
-    } else {
+    }
+    else {
       document.dispatchEvent(new CustomEvent('AccentReset', {}));
     }
 
     window.slackPluginsAPI.saveSettings();
+  }
+
+  isApplied() {
+    return this.accentColorEnabled;
   }
 }
 

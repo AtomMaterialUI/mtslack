@@ -5,6 +5,7 @@ Beautify your Slack application from a list of popular themes!!!
 Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 
 **Theme List**:
+
 - Material Oceanic ![oceanic.png](doc/v2/oceanic.png)
 - Material Darker ![darker.png](doc/v2/darker.png)
 - Material Palenight ![palenight.png](doc/v2/palenight.png)
@@ -22,14 +23,15 @@ Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 - Light Owl ![lightowl.png](doc/v2/lightowl.png)
 - Moonlight (**NEW!**) ![moonlight.png](doc/v2/moonlight.png)
 
-
 ----------------------------
 
 # Pledge
 
-If you like this plugin, you can buy me a beer (or a coffee, or something else) using [PayPal](https://paypal.me/mallowigi?locale.x=en_US)
+If you like this plugin, you can buy me a beer (or a coffee, or something else)
+using [PayPal](https://paypal.me/mallowigi?locale.x=en_US)
 
-You can also support this theme by subscribing to the Material Theme OpenCollective. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]
+You can also support this theme by subscribing to the Material Theme
+OpenCollective. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]
 
 ## Backers
 
@@ -41,7 +43,8 @@ Check also : <http://www.material-theme.com/docs/support-us/>
 
 ## Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]
+Support this project by becoming a sponsor. Your logo will show up here with a link to your
+website. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains#sponsor)]
 
 <a href="https://opencollective.com/material-theme-jetbrains/sponsor/0/website" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/material-theme-jetbrains/sponsor/1/website" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/sponsor/1/avatar.svg"></a>
@@ -54,7 +57,6 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/material-theme-jetbrains/sponsor/8/website" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/material-theme-jetbrains/sponsor/9/website" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/sponsor/9/avatar.svg"></a>
 
-
 # Installation
 
 ### Global installation (works anywhere)
@@ -64,14 +66,13 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 3. PROFIT!!!
 
 - You will be prompted with a menu with two options:
-  - Apply Theme
-  - Remove Theme
+    - Apply Theme
+    - Remove Theme
 
 - Select *Apply Theme* to be prompted with a list of themes to choose with.
 - Open or Restart (with Cmd-Q) Slack
 - ?????
 - PROFIT!!!!!!!
-
 
 ### From npm
 
@@ -91,9 +92,11 @@ The best way to revert to the default theme would be to use the backup copy you 
 There is also a `Remove Theme` option in the menu but it is less robust.
 
 ----
+
 ### Slack Tweaks (Beta)
 
-Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can find a button to open the Slack Tweaks on the channels sidebar.
+Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can
+find a button to open the Slack Tweaks on the channels sidebar.
 
 #### Slack Tweak Control Panel
 
@@ -101,7 +104,8 @@ Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make t
 
 This panel controls which tweak toggles are available. **This doesn't actually toggle the tweaks themselves!**.
 
-Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will activate the tweak.
+Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will
+activate the tweak.
 
 ![Tweaks](doc/v2/tweaksToolbar.png)
 
@@ -119,20 +123,28 @@ This button will loop over the available themes, allowing you to choose a theme 
 
 Switch the fonts used in the app with the font you've defined in the Slack Tweak Settings.
 
+#### Toggle Custom Monospace Font
+
+Switch the monospace font size and family used in the app with the font you've defined in the Slack Tweak Settings.
+
 #### Toggle Accent Color
 
-Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
+Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak
+Settings.
 
-### Important Note! 
+### Important Note!
 
-Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would break those tweaks. In this case please report to the repository, thanks!
+Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would
+break those tweaks. In this case please report to the repository, thanks!
 
 ----
+
 # Development
 
 ## Building styles
 
 This project consists in two parts:
+
 - The CLI, used for applying the styles
 - The Styles, written with Sass (Node-sass)
 
@@ -146,10 +158,12 @@ Then run `npm run styles` or `npm run debugStyles` to compile the scss files in 
 
 Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
 
-To test your CSS, install a Stylish-like extension (<https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>) then create
-a new style for slack and paste the CSS inside and save.
+To test your CSS, install a Stylish-like
+extension (<https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>)
+then create a new style for slack and paste the CSS inside and save.
 
-You should already see all your styles applied. Please note that there are some differences between the web app and the native app.
+You should already see all your styles applied. Please note that there are some differences between the web app and the
+native app.
 
 ### Using the Electron app
 

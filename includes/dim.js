@@ -57,6 +57,10 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
       tweakEnabled: this.tweakEnabled
     };
   }
+
+  isApplied() {
+    return this.tweakEnabled;
+  }
 }
 
 window.slackPluginsAPI.plugins.hideAway = new DimPlugin();

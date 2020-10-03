@@ -447,8 +447,11 @@ class PluginBase {
 
     $toolbarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($toolbarBtn);
-    $toolbarBtn.addEventListener('click', () => this.onToolbarClick());
+    this.addIcon();
+    $toolbarBtn.addEventListener('click', () => {
+      this.onToolbarClick();
+      this.addIcon();
+    });
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
 
@@ -460,7 +463,7 @@ class PluginBase {
     }
     if ($newHeader) {
       // Add buttons
-      
+
       $newHeader.prepend($toolbarBtn);
     }
 
@@ -530,7 +533,7 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon} c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
   }
 
   /**
@@ -552,6 +555,10 @@ class PluginBase {
    * Action executed on clicking apply
    */
   extraContentOnClick() {
+    // to be implemented
+  }
+
+  isApplied() {
     // to be implemented
   }
 }
@@ -616,6 +623,10 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
       enabled: this.enabled,
       tweakEnabled: this.tweakEnabled
     };
+  }
+
+  isApplied() {
+    return this.tweakEnabled;
   }
 }
 
@@ -690,6 +701,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     }));
     window.slackPluginsAPI.saveSettings();
   }
+
+  isApplied() {
+    return false;
+  }
 }
 
 window.slackPluginsAPI.plugins.nextTheme = new NextThemePlugin();
@@ -750,7 +765,8 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
-    } else {
+    }
+    else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
@@ -774,9 +790,102 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
       fontsEnabled: this.fontsEnabled
     };
   }
+
+  isApplied() {
+    return this.fontsEnabled;
+  }
 }
 
 window.slackPluginsAPI.plugins.fonts = new FontsPlugin();
+
+// Fonts.js
+window.slackPluginsAPI = window.slackPluginsAPI || {};
+window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
+
+class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'monofonts';
+    this.desc = 'Custom Monospace Fonts';
+    this.longDescription = 'Enter the font size and custom monospace fonts, separated by commas';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'code';
+
+    // Specific
+    this.DEFAULT_CUSTOM = '12px Fira Code,JetBrains Mono,Operator Mono,Monaco,Menlo,Consolas,Courier New,monospace';
+    this.DEFAULT = '12px Monaco,Menlo,Consolas,Courier New,monospace';
+
+    this.monoFontFamily = '12px Monaco,Menlo,Consolas,Courier New,monospace';
+    this.monoFontsEnabled = false;
+
+    this.extraContentId = 'customMonoFonts';
+  }
+
+  extraContent() {
+    return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter monospace fonts, separated by commas" id="monoFontFamily" name="monoFontFamily" type="text" value="${this.monoFontFamily}">
+<button id="customMonoFontsButton" name="customMonoFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
+  }
+
+  extraContentOnClick() {
+    const ff = document.getElementById('monoFontFamily').value;
+    if (ff) {
+      this.monoFontFamily = ff;
+      this.applyFonts();
+    }
+  }
+
+  onToolbarClick() {
+    this.toggleFonts();
+  }
+
+  /**
+   * Toggle the setting
+   */
+  toggleFonts() {
+    this.monoFontsEnabled = !this.monoFontsEnabled;
+    this.applyFonts();
+  }
+
+  /**
+   * Apply fonts
+   */
+  applyFonts() {
+    if (this.monoFontsEnabled) {
+      document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.monoFontFamily, 'important'));
+    }
+    else {
+      document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.DEFAULT, 'important'));
+    }
+    window.slackPluginsAPI.saveSettings();
+  }
+
+  /**
+   * Apply
+   */
+  apply() {
+    this.applyFonts();
+  }
+
+  /**
+   * Save Settings
+   * @returns {{fontFamily: string, fontsEnabled: boolean, enabled: boolean}}
+   */
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      monoFontFamily: this.monoFontFamily,
+      monoFontsEnabled: this.monoFontsEnabled
+    };
+  }
+
+  isApplied() {
+    return this.monoFontsEnabled;
+  }
+}
+
+window.slackPluginsAPI.plugins.monofonts = new MonoFontsPlugin();
 
 // Accent.js
 window.slackPluginsAPI = window.slackPluginsAPI || {};
@@ -794,7 +903,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.icon = 'highlight-filled';
 
     // Specific
-    this.accentColor = '#80CBC4';
+    this.accentColor = '#80cbc4';
     this.accentColorEnabled = false;
 
     this.extraContentId = 'customAccent';
@@ -805,8 +914,8 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
 <div class="c-color_picker__container"  role="presentation">
     <span class="c-color_picker__color_block_container">
         <button id="customAccentColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
-          this.accentColor
-        };"></button>
+      this.accentColor
+    };"></button>
     </span>
     <span class="c-color_picker__hex_hash">#</span>
     <input id="accentColor" name="accentColor" class="c-color_picker__input"  type="text" value="${this.accentColor.slice(
@@ -856,11 +965,16 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
           detail: this.accentColor
         })
       );
-    } else {
+    }
+    else {
       document.dispatchEvent(new CustomEvent('AccentReset', {}));
     }
 
     window.slackPluginsAPI.saveSettings();
+  }
+
+  isApplied() {
+    return this.accentColorEnabled;
   }
 }
 

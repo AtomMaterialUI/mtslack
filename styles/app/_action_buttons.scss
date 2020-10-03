@@ -98,3 +98,10 @@
     background: $active;
   }
 }
+
+.c-icon-selected--true {
+  border-radius: 50%;
+  background: $hl;
+  border: 14px solid $hl;
+  margin-right: .5em !important;
+}

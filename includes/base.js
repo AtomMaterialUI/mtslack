@@ -36,8 +36,11 @@ class PluginBase {
 
     $toolbarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
-    this.addIcon($toolbarBtn);
-    $toolbarBtn.addEventListener('click', () => this.onToolbarClick());
+    this.addIcon();
+    $toolbarBtn.addEventListener('click', () => {
+      this.onToolbarClick();
+      this.addIcon();
+    });
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
 
@@ -49,7 +52,7 @@ class PluginBase {
     }
     if ($newHeader) {
       // Add buttons
-      
+
       $newHeader.prepend($toolbarBtn);
     }
 
@@ -119,7 +122,7 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon}" type="magic" aria-hidden="true"></i>`;
+    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon} c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
   }
 
   /**
@@ -141,6 +144,10 @@ class PluginBase {
    * Action executed on clicking apply
    */
   extraContentOnClick() {
+    // to be implemented
+  }
+
+  isApplied() {
     // to be implemented
   }
 }

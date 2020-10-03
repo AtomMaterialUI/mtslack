@@ -79,6 +79,10 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
       monoFontsEnabled: this.monoFontsEnabled
     };
   }
+
+  isApplied() {
+    return this.monoFontsEnabled;
+  }
 }
 
 window.slackPluginsAPI.plugins.monofonts = new MonoFontsPlugin();

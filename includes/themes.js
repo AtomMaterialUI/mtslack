@@ -67,6 +67,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     }));
     window.slackPluginsAPI.saveSettings();
   }
+
+  isApplied() {
+    return false;
+  }
 }
 
 window.slackPluginsAPI.plugins.nextTheme = new NextThemePlugin();

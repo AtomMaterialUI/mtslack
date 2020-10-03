@@ -54,7 +54,8 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
-    } else {
+    }
+    else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
     }
     window.slackPluginsAPI.saveSettings();
@@ -77,6 +78,10 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
       fontFamily: this.fontFamily,
       fontsEnabled: this.fontsEnabled
     };
+  }
+
+  isApplied() {
+    return this.fontsEnabled;
   }
 }
 
