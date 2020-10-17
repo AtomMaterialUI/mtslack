@@ -290,7 +290,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__preview_text {
   background: $bg2;
-  color: $text;
+  color: $fg;
 }
 
 .p-emoji_picker__skintone_btn_container,
@@ -305,7 +305,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker__content:hover .p-emoji_picker__skintone_btn_container {
-  border: 1px solid $borderLight;
+  border: 1px solid $hl;
   background: $hl;
 }
 
@@ -425,8 +425,8 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker__content:hover .p-emoji_picker_skintone__toggle_btn {
-  border: 1px solid $borderLight;
-  background: $button;
+  border: 1px solid $hl;
+  background: $hl;
 }
 
 .p-emoji_picker_skintone__radio_buttons {
@@ -447,4 +447,23 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__pack_cta_link {
   color: $primary;
+}
+
+.p-productivity_emoji_content-aliases--light {
+  border: 1px solid $borderLight;
+}
+
+.p-productivity_emoji_content-aliases--dark {
+  border: 1px solid $borderLight;
+}
+
+.p-emoji_picker__productivity_emoji_text {
+  background: transparent;
+  color: $fg;
+}
+
+.c-reaction__tip--emoji {
+  .c-emoji__large {
+    background-color: transparent;
+  }
 }
