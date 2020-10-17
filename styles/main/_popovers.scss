@@ -2,5 +2,39 @@
   &:before {
     background: rgba($bg, 0.6);
   }
+}
 
+.p-ia_details_popover_container {
+  &:after, &:before {
+    background: $bg;
+    border: 1px solid $borderLight;
+  }
+
+  &:after {
+    border-color: transparent;
+  }
+}
+
+.p-ia_details_popover {
+  background: $bg;
+}
+
+.p-ia_details_popover__nested_header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_details_popover__notifications__edit {
+  color: $accent;
+}
+
+.p-ia_details_popover__subtitle {
+  color: $text;
+}
+
+.p-ia_details_popover__description_edit {
+  color: $primary;
+}
+
+.p-ia_details_popover__description__created_text {
+  color: $text;
 }
