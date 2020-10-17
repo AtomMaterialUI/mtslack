@@ -314,3 +314,62 @@ button.p-channel_details_about__blurb {
     background: transparent;
   }
 }
+
+.p-channel_email_address_modal__body__content {
+  color: $text;
+}
+
+.p-channel_email_address_modal__body__footer {
+  color: $text;
+}
+
+.p-channel_email_address_modal__body__button_section {
+  border-top: $borderLight;
+}
+
+.p-channel_email_address_modal__body_customization_button {
+  color: $primary;
+
+  &:disabled, &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-channel_email_address_modal__body_message_preview {
+  background: $bg;
+}
+
+.p-channel_email_address_modal__body_message_preview_title {
+  color: $text;
+}
+
+.p-channel_email_address_modal__body_message_preview__icon {
+  background: $bg2;
+}
+
+.p-channel_email_address_modal__body_message_preview__message {
+  background: $contrast;
+  border: 1px solid $border;
+}
+
+.p-ia_channel_details_section {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_channel_details_section__title {
+  color: $text;
+}
+
+.p-ia_channel_details_section__see_all {
+  color: $primary;
+}
+
+.p-ia_channel_details__members_section {
+  .p-ia_channel_details_section {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-ia_channel_details_channel_description__blurb_edit {
+  color: $primary;
+}

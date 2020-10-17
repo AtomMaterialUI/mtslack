@@ -17,7 +17,8 @@
   }
 }
 
-.p-workspace--feature_message_actions_refresh .c-message_actions__container {
+.p-workspace--feature_message_actions_refresh .c-message_actions__container,
+.p-workspace--feature_message_actions_refresh .c-message_actions__group {
   background-color: $bg;
 }
 

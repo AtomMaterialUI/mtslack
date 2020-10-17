@@ -39,16 +39,16 @@
 }
 
 .sk-client-theme--dark {
-  .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__separator {
+  .c-message_list__unread_divider--unread_threads .c-message_list__unread_divider__separator {
     background-image: linear-gradient(90deg, $red 0, $red);
   }
 
-  .c-message_list__unread_divider__separator--is-unread-enter-active .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__separator {
+  .c-message_list__unread_divider__separator--is-unread-enter-active .c-message_list__unread_divider--unread_threads .c-message_list__unread_divider__separator {
     box-shadow: 0 0 5px 0 $red;
     box-shadow: 0 0 5px 0 $red, 0 0 5px 0 rgba($red, 0.7), 0 0 5px 0 rgba($red, 0.3);
   }
 
-  .c-message_list__unread_divider--unread_threads_experiment .c-message_list__unread_divider__label {
+  .c-message_list__unread_divider--unread_threads .c-message_list__unread_divider__label {
     color: $red;
   }
 }
