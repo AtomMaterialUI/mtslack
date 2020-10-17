@@ -221,3 +221,40 @@
     color: $disabled;
   }
 }
+
+.c-search__input_box__mode_close {
+  &:active, &:hover {
+    background-color: $accent;
+  }
+
+  &:active .c-search__input_box__mode_close_icon,
+  &:hover .c-search__input_box__mode_close_icon {
+    color: $selectFg;
+  }
+}
+
+.c-search__input_box__mode_close_icon {
+  color: $text;
+}
+
+.c-search_message__tombstone__text {
+  color: $text;
+}
+
+.c-search__query_refinement_suggestion {
+  .c-icon--times-small {
+    color: $red;
+  }
+
+  &.c-button--focus-visible:focus {
+    background: $bg;
+  }
+}
+
+.c-search__query_refinement_suggestion_term--enhancement {
+  color: $accent;
+}
+
+.c-search__query_refinement_suggestion_term--removal {
+  color: $text;
+}

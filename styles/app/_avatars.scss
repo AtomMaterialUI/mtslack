@@ -80,3 +80,15 @@
     }
   }
 }
+
+.p-avatar_stack__add_button--highlight {
+  background-color: $button;
+
+  &:hover {
+    background: $accent;
+  }
+
+  &:active {
+    background: $accent;
+  }
+}

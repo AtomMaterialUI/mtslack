@@ -20,7 +20,7 @@
 
 .c-banner--success {
   background-color: $green;
-  color: $selectFg;
+  color: $bg;
 }
 
 .c-banner--warning {
@@ -128,4 +128,27 @@
 
 .p-message_pane_banner_small {
   background-color: $notif;
+}
+
+.p-global_banner__spacer {
+  border-bottom: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_contrasted_text {
+  color: $text;
+}
+
+.p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_dont_ask_again {
+  color: $text;
+}
+
+.p-workspace_banner__download_ssb {
+  .p-workspace_banner__download_ssb_content_link--secondary {
+    color: $text;
+  }
 }
