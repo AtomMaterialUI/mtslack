@@ -166,3 +166,28 @@
     color: $fg;
   }
 }
+
+.c-texty_input__container--use_focus_ring {
+  .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &.c-texty_input__container--invalid .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.c-texty_input_unstyled__container {
+  .ql-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-texty_input_unstyled__warning {
+  background: $red;
+  color: $selectFg;
+}

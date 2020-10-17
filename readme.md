@@ -167,7 +167,14 @@ native app.
 
 ### Using the Electron app
 
-TODO
+1. Run `npm run server` to run a local server
+2. Run `watchStyles` or `watchScripts` to watch for changes in styles or code
+3. Run `npm run local` to run `apply` with the styles pointing to localhost
+4. Run `npm run debug`
+
+**IMPORTANT**: Please make sure to have enabled "Disable cache when devtools is open" in Chrome Settings.
+
+Also don't forget to re-apply the production styles before quitting :)
 
 ----
 Instead of launching Slack normally, you'll need to enable developer mode to be able to inspect things.

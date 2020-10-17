@@ -203,7 +203,7 @@ textarea {
 .c-input_character_count__characters-remaining {
   color: $text;
   background: $bg;
-  border: 1px solid $accent;
+  border: 1px solid $borderLight;
 }
 
 .c-input_character_count--invalid .c-input_character_count__characters-remaining {
@@ -221,6 +221,7 @@ textarea {
   &:before {
     color: $disabled;
   }
+
   &:after {
     color: $disabled;
     background: $bg;
@@ -243,7 +244,6 @@ input[type=text].c-input_text {
   }
 }
 
-
 .p-message_pane_input__disabled {
   background-color: $excluded;
   color: $disabled;
@@ -259,4 +259,9 @@ input[type=text].c-input_text {
 
 .p-message_pane_input__preview_metadata {
   color: $text;
+}
+
+.p-message_pane_input_barriered {
+  color: $disabled;
+  border-top: none;
 }

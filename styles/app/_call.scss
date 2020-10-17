@@ -9,7 +9,8 @@
 }
 
 .p-call_subtype__icon--ended {
-  background-color: $accentT;
+  background-color: $disabled;
+  filter: none;
 }
 
 .p-call_subtype__body,
@@ -25,4 +26,22 @@
 
 .p-call_subtype__description {
   color: $text;
+}
+
+.p-group_call_trial_modal__plan_caption {
+  color: $text;
+}
+
+.p-group_call_trial_modal__fine_print {
+  color: $accent;
+}
+
+.p-call_footer_blurb__alert {
+  .p-call_footer_blurb__link {
+    color: $accent2;
+  }
+}
+
+.p-call_footer_blurb__caret {
+  fill: $accent;
 }

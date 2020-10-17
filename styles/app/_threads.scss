@@ -1,5 +1,7 @@
 .p-threads_footer__input.p-message_input--dark,
 .p-threads_footer__input {
+  color: transparent;
+
   .ql-attachments,
   .ql-files {
     background: $bg2;
@@ -74,12 +76,8 @@
     }
   }
 
-  &.p-message_input--attachments-visible
-  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-  .ql-composer-sticky,
-  &.p-message_input--files-visible
-  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-  .ql-composer-sticky {
+  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
+  &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
     background: $active;
   }
 
@@ -97,6 +95,7 @@
     }
   }
 
+  .p-message_input__attachments,
   .ql-attachments {
     .p-composer_attachments__separator {
       border-left: 1px solid $borderLight;
