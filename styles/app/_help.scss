@@ -4,10 +4,11 @@
 
 .p-help_search__list__item {
   border-top: 1px solid $borderLight;
+  text-indent: 1em;
 
   &:focus, &:hover {
     background-color: $hl;
-    border: 1px solid $borderLight;
+    text-decoration: none;
   }
 }
 
@@ -56,4 +57,105 @@
   &.unread {
     background-color: $excluded;
   }
+}
+
+.p-help_search__list {
+  .c-virtual_list__item {
+    &:active, &:focus, &:hover {
+      color: $selectFg;
+      background-color: $hl;
+    }
+
+    &:active {
+      .p-help_search__list__item__title, .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+
+    &:focus {
+      .p-help_search__list__item__title, .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+
+    &:hover {
+      .p-help_search__list__item__title, .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+  }
+
+  .p-help_search__list__icon {
+    color: transparent;
+  }
+
+  .p-help_search__list__item__title {
+    color: $primary;
+  }
+
+  .p-help_search_category_item__description {
+    color: $fg;
+  }
+
+  .p-help_search__list__item__article {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .p-help_search__category__container {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-help_search__resource_card__container {
+  border: 1px solid $borderLight;
+}
+
+.p-help_search__resource_card__text {
+  color: $fg;
+}
+
+.p-help_search__keyboard_card__subtitle {
+  color: $text;
+}
+
+.p-help_search__keyboard_card__container {
+  background-color: $bg2;
+}
+
+.p-help_search__content__card__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-help_search__content__card__subtitle {
+  color: $text;
+}
+
+.p-help_search__badge_small {
+  background-color: $accent;
+}
+
+.p-help_search__badge_small__red {
+  background-color: $red;
+}
+
+.p-help_search__badge_small__blue {
+  background-color: $accent;
+}
+
+.p-help_dialog__modal_header {
+  .c-tabs__tab_count {
+    background-color: $red;
+    color: $selectFg;
+  }
+}
+
+.p-help_learning_modal__header {
+  .c-tabs__tab_count {
+    background-color: $red;
+    color: $selectFg;
+  }
+}
+
+.p-help_learning_modal__footer {
+  border-top: 1px solid $borderLight;
 }

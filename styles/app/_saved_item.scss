@@ -22,6 +22,11 @@
   }
 }
 
+.p-saved_page--empty {
+  background: $bg;
+  color: $fg;
+}
+
 .p-saved_page__title_icon {
   color: $accent;
 }
@@ -104,6 +109,10 @@
   &:hover {
     background: $hl;
   }
+}
+
+.p-activity_page__item--unread {
+  background: $excluded;
 }
 
 .c-virtual_list__item--focus .p-activity_page__item--docked {
