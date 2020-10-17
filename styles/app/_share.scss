@@ -27,8 +27,34 @@
 
 .p-shared_invite_link {
   color: $primary;
+
+  .p-edit_settings_button_container {
+    color: $text;
+  }
+
+  .p-edit_settings_link_button {
+    color: $text;
+  }
 }
 
 .p-shared_invite_link--disabled {
   color: $disabled;
+}
+
+.p-confirmation_modal {
+  .p-confirmation_modal_content {
+    color: $fg;
+  }
+}
+
+.p-shared_invite_link_form {
+  color: $primary;
+
+  .p-shared_invite_link_form_caption {
+    color: $primary;
+  }
+
+  .p-shared_invite_link_form_label {
+    color: $fg;
+  }
 }

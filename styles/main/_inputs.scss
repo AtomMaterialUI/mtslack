@@ -202,8 +202,8 @@ textarea {
 
 .c-input_character_count__characters-remaining {
   color: $text;
-  background: $bg;
-  border: 1px solid $borderLight;
+  background: transparent;
+  border: none;
 }
 
 .c-input_character_count--invalid .c-input_character_count__characters-remaining {

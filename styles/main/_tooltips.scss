@@ -99,6 +99,7 @@
 
 .c-tooltip__tip.c-tooltip__tip--success {
   background-color: $green;
+  color: $bg;
 
   &.c-tooltip__tip--left .c-tooltip__tip__arrow {
     border-left-color: $green;
