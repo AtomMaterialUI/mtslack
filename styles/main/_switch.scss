@@ -1,35 +1,44 @@
 .c-switch__input {
-  border: 1px solid $button;
-  background-color: $contrast;
+  border: none;
+  background-color: $fg;
+  color: $fg;
+  width: 38px;
+  height: 14px;
+  transform: translateY(8px);
 }
 
 .c-switch__visual {
   &:after {
-    background-color: $bg;
+    background-color: $selectFg;
+    left: 0;
   }
 }
 
 .c-switch__input:checked {
   background-color: $accent;
+  color: $accent;
+  filter: brightness(0.5);
 
   + .c-switch__visual {
     &:before {
-      color: $selectFg;
+      display: none;
     }
 
     &:after {
-      background-color: $selectFg;
+      background-color: $accent;
+      transform: translate3d(22px,0,0);
     }
   }
 }
 
 .sk-client-scheme--purple .c-switch__input:checked {
-  background-color: $accent2;
+  background-color: $accent;
+  color: $accent;
 }
 
 .c-switch__input {
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow: none;
 
     &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
       color: $disabled;
@@ -37,17 +46,13 @@
   }
 
   &:hover {
-    border-color: $hl;
+    border: none;
   }
 
   &:disabled {
-    background-color: $bg;
+    background-color: $disabled;
 
     + .c-switch__visual {
-      &:before {
-        color: $disabled;
-      }
-
       &:after {
         background-color: $fg;
       }
