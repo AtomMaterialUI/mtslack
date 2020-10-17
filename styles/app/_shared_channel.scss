@@ -59,7 +59,7 @@
 }
 
 .sk-client-theme--dark .p-channel_invite_modal_coachmark {
-  background-color: $accent;
+  background-color: $notif;
 }
 
 .p-channel_invite_modal_coachmark__caret {
@@ -67,7 +67,7 @@
 }
 
 .sk-client-theme--dark .p-channel_invite_modal_coachmark__caret {
-  border-top-color: $accent;
+  border-top-color: $notif;
 }
 
 .p-channel_invite_modal__link {
@@ -75,6 +75,10 @@
 }
 
 .p-message_pane_modal_rooster__header {
+  background: $bg2;
+}
+
+.p-message_pane_modal_rooster__header--feature_at_here_warning {
   background: $bg2;
 }
 
@@ -265,12 +269,30 @@ input[type=text].c-input_text {
 }
 
 .p-channel_invite_modal_access_choice_button_box {
-  border: 1px solid $borderLight;
+  color: $fg;
+  border: 1px solid $button;
+
+  &:hover {
+    color: $selectFg;
+    background-color: $active;
+    border: 1px solid $borderLight;
+  }
 }
 
 .p-channel_invite_modal_access_choice_button_box_selected {
-  background-color: $bg2;
-  border: 1px solid $primary;
+  background-color: $hl;
+  border: 1px solid $primaryT;
+
+  &:hover {
+    background-color: $selectBg;
+    border: 1px solid $primary;
+  }
+}
+
+.p-channel_invite_modal_option_not_available {
+  background-color: $bg;
+  color: $text;
+  border: 1px solid $border;
 }
 
 .p-channel_invite_modal_tokenized_option_container {
@@ -285,12 +307,33 @@ input[type=text].c-input_text {
   }
 }
 
+.p-channel_invite_modal__confirmation_radio {
+  border: 1px solid $borderLight;
+
+  &:hover {
+    background-color: $active;
+    border-color: $borderLight;
+  }
+}
+
 .p-channel_invite_modal_subtitle {
   color: $text;
 }
 
 .p-channel_invite_modal_shared_channel_not_available {
   background-color: $bg2;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_section {
+  background-color: $accentT;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_header {
+  color: $accent;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_text {
+  color: $fg;
 }
 
 .p-channel_share_legacy_conversion_modal__color {
@@ -336,3 +379,28 @@ input[type=text].c-input_text {
     color: $text;
   }
 }
+
+.p-channel_invite_modal_learn_more {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-channel_invite_modal_lock_icon {
+  color: $primary;
+}
+
+.p-channel_invite_modal_full_member_invites {
+  color: $text;
+}
+
+.p-channel_invite_modal_full_member_invites--overflow {
+  color: $text;
+}
+
+.p-channel_invite_modal_full_member_invites--light {
+  color: $text;
+}
+
