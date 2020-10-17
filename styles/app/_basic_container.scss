@@ -1,0 +1,12 @@
+.c-basic_container--bordered {
+  border: 1px solid $borderLight;
+
+  &.c-basic_container--focused {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    border-color: transparent;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}

@@ -132,8 +132,9 @@
 }
 
 .c-button--danger {
-  background: rgba($red, 0.8);
+  background: $red;
   color: $selectFg;
+  opacity: .8;
 
   &:link,
   &:visited {
@@ -143,10 +144,12 @@
   &:hover {
     color: $selectFg;
     background: $red;
+    opacity: 1;
   }
 
   &:active {
     background: $red;
+    opacity: 1;
   }
 }
 
