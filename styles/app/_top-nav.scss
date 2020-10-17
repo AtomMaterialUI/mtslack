@@ -45,3 +45,55 @@
 .p-top_nav__ia_edu_throbber circle {
   fill: $primary !important;
 }
+
+.p-top_nav__search__container--active {
+  .p-top_nav__search {
+    background: $contrast;
+    color: $fg;
+
+    &:hover {
+      background: $contrast;
+      color: $primary;
+    }
+  }
+
+  .p-top_nav__search__clear {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-top_nav--dark .p-top_nav__search__container--active {
+  .p-top_nav__search {
+    background: $contrast;
+    color: $fg;
+    box-shadow: inset 0 0 0 1px $bg2;
+
+    &:hover {
+      background: $contrast;
+      color: $primary;
+      box-shadow: inset 0 0 0 1px $bg2;
+    }
+  }
+
+  .p-top_nav__search__clear {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-top_nav__help__app_update {
+  &:hover .c-mention_badge {
+    background-color: $selectFg;
+  }
+
+  .c-mention_badge {
+    background-color: $accent;
+  }
+}

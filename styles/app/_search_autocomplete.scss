@@ -232,7 +232,7 @@
 }
 
 .c-search_autocomplete__suggestion_list {
-  background: $bg2;
+  background: $bg;
   color: $fg;
 }
 
@@ -255,4 +255,33 @@
 
 .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
   background-color: $contrast;
+}
+
+.c-search_autocomplete__guided_search_item {
+  background-color: $button;
+  border: 1px solid transparent;
+}
+
+.c-search_autocomplete__guided_search_item--hover:hover {
+  background-color: $accent;
+  color: $selectFg;
+  box-shadow: 0 1px 3px $accent;
+}
+
+.c-search_autocomplete__guided_search_item--dark {
+  background-color: $button;
+}
+
+.c-search_autocomplete__guided_search_item--hover.c-search_autocomplete__guided_search_item--dark:hover {
+  color: $selectFg;
+}
+
+.c-search_autocomplete__guided_search_item--selected {
+  background-color: $accent;
+  color: $selectFg;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
 }
