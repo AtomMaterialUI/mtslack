@@ -128,15 +128,20 @@ a.c-sidebar_menu__list_item {
   color: $fg !important;
 }
 
+.p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon--on-avatar-border,
+.p-channel_sidebar__channel--selected:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+  -webkit-text-stroke-color: $primary !important;
+}
+
 /* Folders */
 
 input[type='text'].p-channel_sidebar__folder_heading_label_rename {
-  background: rgb(13, 25, 31) !important;
+  background: $contrast !important;
   color: $fg !important;
 }
 
 input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
-  background: rgb(3, 15, 21) !important;
+  background: $bg !important;
   color: $fg !important;
 }
 

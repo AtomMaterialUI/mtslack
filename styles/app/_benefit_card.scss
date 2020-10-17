@@ -37,3 +37,11 @@
 .p-paid_benefits_view__fine_print {
   border-bottom: 1px solid $border;
 }
+
+.p-paid_benefits_view__alert_container {
+  background-color: $bg;
+}
+
+.p-paid_benefits_view__alert .p-paid_benefits_view__alert-link {
+  color: $accent2;
+}
