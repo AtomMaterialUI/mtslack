@@ -49,7 +49,8 @@
   background: $button;
 }
 
-.c-message_actions__container {
+.c-message_actions__container,
+.c-message_actions__group {
   background: none;
   border: none;
 
@@ -68,6 +69,7 @@
   background: $button;
 
   &:hover {
+    background: $hl;
     color: $primary;
   }
 

@@ -23,6 +23,19 @@
   color: $fg;
 }
 
+.p-classic_nav__team_messages_limit_meter__link {
+  color: $primary;
+}
+
+.p-classic_nav__team_messages_limit_meter__link--highlighted {
+  color: $selectFg;
+}
+
+.p-classic_nav__team_messages_limit_meter--highlighted {
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.4);
+}
+
+
 .p-classic_nav__team_messages_limit_meter__separator {
   border-top: 2px $borderLight solid;
 }
@@ -287,4 +300,16 @@
 
 .c-message_stats__msg__nav_next:disabled, .c-message_stats__msg__nav_prev:disabled {
   color: $disabled;
+}
+
+.p-shared_channel_trial_banner--persistent {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-shared_channel_trial_banner--persistent {
+  background: $notif;
+}
+
+.p-shared_channel_trial_banner--persistent_edu {
+  background-color: $notif;
 }

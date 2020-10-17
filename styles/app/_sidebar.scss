@@ -448,3 +448,9 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 .p-arrow_cta {
   color: $primary;
 }
+
+.p-channel_sidebar__link.p-channel_sidebar_header_link,
+.p-channel_sidebar__link.p-channel_sidebar_header_link--bright {
+  background: $bg2;
+  color: $selectFg;
+}
