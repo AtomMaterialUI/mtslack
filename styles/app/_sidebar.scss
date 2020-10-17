@@ -451,6 +451,6 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-channel_sidebar__link.p-channel_sidebar_header_link,
 .p-channel_sidebar__link.p-channel_sidebar_header_link--bright {
-  background: $bg2;
-  color: $selectFg;
+  background: $bg2 !important;
+  color: $selectFg !important;
 }
