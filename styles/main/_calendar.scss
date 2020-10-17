@@ -1,7 +1,11 @@
-.c-calendar_view_header {
+.c-calendar_view_header,
+.c-select_input__clear_button:hover {
   color: $fg;
 }
 
+.c-select_input__clear_button {
+  color: $primary;
+}
 
 .c-calendar_view_header__stepper_btn:hover,
 .c-calendar_view_header__title_btn:hover {
@@ -77,7 +81,6 @@
   border: 1px solid $button;
 }
 
-
 .c-mini_calendar__month_button--is_active:focus,
 .c-mini_calendar__month_button:not(:disabled):hover {
   border-color: $accent;
@@ -96,7 +99,6 @@
 .c-date_picker__dropdown {
   background-color: $bg;
 }
-
 
 .p-calendar_flexpane__loading {
   color: $fg;

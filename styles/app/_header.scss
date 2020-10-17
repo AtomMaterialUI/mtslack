@@ -32,7 +32,6 @@
   background-color: $bg;
 }
 
-
 @keyframes p-flexpane--highlight {
   20% {
     background: $excluded;
@@ -43,4 +42,14 @@
   }
 }
 
+.p-header_banner {
+  background-color: $bg;
+}
 
+.p-flexpane_subheader {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-flexpane__footer {
+  border-top: 1px solid $borderLight;
+}

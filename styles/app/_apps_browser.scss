@@ -10,7 +10,6 @@
   }
 }
 
-
 .p-apps_browser__apps_list {
   &::-webkit-scrollbar-thumb {
     color: $accent;
@@ -82,7 +81,6 @@
   color: $fg;
 }
 
-
 .p-apps_browser__app_description {
   color: $text;
 }
@@ -95,11 +93,9 @@
   }
 }
 
-
 .p-apps_browser__app_limit_meter__paragraph {
   color: $text;
 }
-
 
 .p-apps_browser__app_limit_meter__blank_app_box {
   background-color: $active;
