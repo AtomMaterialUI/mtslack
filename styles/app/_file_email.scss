@@ -28,7 +28,6 @@
   border: 1px solid $borderLight;
 }
 
-
 .c-pillow_file__email__attachment__icon {
   color: $selectFg;
   background: $accent2;
@@ -46,4 +45,12 @@
 
 .c-pillow_file__email__meta__forwarded {
   color: $primary;
+}
+
+.c-pillow_file__email__tip {
+  background: transparent;
+
+  &:after {
+    border-bottom-color: transparent;
+  }
 }

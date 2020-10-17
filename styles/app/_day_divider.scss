@@ -9,7 +9,8 @@
 .c-message_list__day_divider__label__pill {
   background: $button;
 
-  &:focus {
+  &:focus,
+  &.c-button--focus-visible:focus {
     box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
   }
 }
