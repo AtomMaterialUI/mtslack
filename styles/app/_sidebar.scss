@@ -459,3 +459,26 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   background: $bg2 !important;
   color: $selectFg !important;
 }
+
+.p-channel_sidebar__organize_mode_menu {
+  .p-channel_sidebar__organize_action {
+    color: $text;
+    background: $button;
+
+    &:hover, &:active, &:focus {
+      background: $hl;
+      color: $selectFg;
+    }
+  }
+
+  .p-channel_sidebar__organize_action--primary {
+    color: $fg;
+    background: $accent;
+
+    &:hover, &:active, &:focus {
+      color: $selectFg;
+      background: $accent;
+    }
+  }
+
+}

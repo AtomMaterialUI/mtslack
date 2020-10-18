@@ -7,9 +7,23 @@
     color: $selectFg !important;
   }
 }
+
+.p-workspace__channel_sidebar {
+  .p-ia__sidebar_header__mode__info_button, .p-ia__sidebar_header__mode__find_button {
+    border: 1px solid $button;
+    background: $button;
+    color: $fg;
+  }
+
+  .p-ia__sidebar_header .p-ia__sidebar_header__mode {
+    background: $bg2;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
 .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
 .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
-  border-bottom: 1px solid $border !important;
+  border-bottom: 1px solid $borderLight;
 }
 
 .p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__button:hover,
