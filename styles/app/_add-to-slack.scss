@@ -1,0 +1,39 @@
+.p-add_to_slack_confirmation__title_icon--success {
+  color: $bg;
+  background-color: $green;
+}
+
+.p-add_to_slack_confirmation__title_icon--error {
+  color: $bg;
+  background-color: $yellow;
+}
+
+.p-add_to_slack_confirmation__title {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__summary_list_header--success {
+  color: $green;
+  border-bottom: 1px solid $green;
+}
+
+.p-add_to_slack_confirmation__summary_list_header--error {
+  color: $red;
+  border-bottom: 1px solid $red;
+}
+
+.p-add_to_slack_confirmation__summary_divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-add_to_slack_confirmation__summary_message_invitees_overflow {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__summary_message_description {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__see_past_invites {
+  color: $text;
+}
