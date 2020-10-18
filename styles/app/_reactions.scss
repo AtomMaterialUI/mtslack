@@ -66,7 +66,7 @@ only screen and (min-resolution: 192dpi) {
 
     &:focus .c-icon--small-reaction,
     &:hover .c-icon--small-reaction {
-      color: $selectFg;
+      color: $bg;
     }
   }
 }

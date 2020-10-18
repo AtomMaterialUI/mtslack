@@ -1,0 +1,26 @@
+.p-quick_reactions_customization_tooltip {
+  color: $fg;
+  background: $notif;
+  box-shadow: 0 0 0 1px $notif;
+}
+
+.p-quick_reactions_customization_tooltip--dark {
+  background: $notif;
+}
+
+
+.p-quick_reactions_customization_tooltip_arrow_outer {
+  border-top: 9px solid $notif;
+}
+
+.p-quick_reactions_customization_tooltip_arrow_inner {
+  border-top: 10px solid $notif;
+}
+
+.p-quick_reactions_customization_tooltip_arrow_inner--dark {
+  border-top: 10px solid $notif;
+}
+
+.p-quick_reactions_customization_tooltip_dismiss_button {
+  color: $accent;
+}
