@@ -108,7 +108,7 @@
 }
 
 .c-pillow_file_container--download .c-pillow_file__slide {
-  background: transparent;
+  background: $notif;
 }
 
 .c-pillow_file--active_download .c-pillow_file__slide {
@@ -131,7 +131,7 @@
 
 .c-pillow_file__swap {
   .c-pillow_file__slide {
-    background: transparent;
+    background-color: $bg;
   }
 }
 
