@@ -79,12 +79,8 @@
     }
   }
 
-  &.p-message_input--attachments-visible
-  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-  .ql-composer-sticky,
-  &.p-message_input--files-visible
-  .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker)
-  .ql-composer-sticky {
+  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
+  &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
     background: $contrast;
   }
 
@@ -102,6 +98,7 @@
     }
   }
 
+  .p-message_input__attachments,
   .ql-attachments {
     .p-composer_attachments__separator {
       border-left: 1px solid $borderLight;
@@ -115,6 +112,36 @@
       background: $bg2 !important;
     }
   }
+
+  &.p-message_input--day1:not(.p-message_input--disabled) {
+    .c-icon_button.c-texty_input__button--send {
+      background: $accentT;
+      color: $selectFg;
+
+      &:hover {
+        color: $selectFg;
+        background: $accent;
+      }
+    }
+
+    .c-texty_input .ql-placeholder {
+      color: $disabled;
+    }
+
+    .p-message_input_field {
+      border-color: $button;
+      box-shadow: 0 0 0 1px $button;
+      background: $contrast;
+
+      .ql-composer-sticky {
+        border-color: $button;
+      }
+    }
+
+    &.p-message_input--dark .p-message_input_field {
+      background: $contrast;
+    }
+  }
 }
 
 .ql-composer-sticky {
@@ -122,8 +149,9 @@
 }
 
 .p-workspace__secondary_view {
-  border-left: 1px solid $borderLight;
+  box-shadow: -2px 0 7px 0 $contrast;
   background: $bg;
+  border-left: none;
 }
 
 .p-workspace__boot_failure {
@@ -150,4 +178,14 @@
 
 .p-workspace--context-pane-expanded {
   grid-template-columns: 260px auto 512px !important;
+}
+
+.p-workspace_row_item__domain {
+  color: $text;
+}
+
+.p-workspace_row_item__icon--inactive {
+  .p-workspace_row_item__text {
+    color: $text;
+  }
 }

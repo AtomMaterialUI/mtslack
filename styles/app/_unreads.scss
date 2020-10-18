@@ -51,7 +51,7 @@
 .p-unreads_view__empty__undo_button {
   color: $disabled;
 
-  &:active, &:hover {
+  &:active, &:focus, &:hover {
     color: $fg;
   }
 }
@@ -89,4 +89,8 @@
       background: $accent;
     }
   }
+}
+
+.p-all_unreads_header__header__sort_dropdown {
+  color: $text;
 }
