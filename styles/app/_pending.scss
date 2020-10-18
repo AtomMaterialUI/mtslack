@@ -8,18 +8,6 @@
   }
 }
 
-.p-pending_request {
-  border-bottom: 1px solid $borderLight;
-
-  &:first-child {
-    border-top: 1px solid $borderLight;
-  }
-}
-
-.p-pending_request__private_info {
-  color: $text;
-}
-
 .p-file_upload_dialog__section .p-multi_file_upload__container .p-gallery_scroller__wrapper {
   background: $bg2;
   border: 1px solid $borderLight;
@@ -107,6 +95,14 @@
 
 .p-pending_requests_v2_header_copy_color {
   color: $text;
+}
+
+.p-pending_requests_v2_acted_on_state__approved_orgs {
+  border-top: 1px solid $border;
+}
+
+.p-pending_requests_v2_accept_icon__approved_orgs {
+  color: $green;
 }
 
 .p-connection_info_icon__icon + .p-connection_info_icon__icon {

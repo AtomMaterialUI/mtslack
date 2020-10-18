@@ -3,6 +3,10 @@
 //  color: $fg;
 //}
 
+.p-ia__view_header__info .p-classic_nav__model__title__info__topic--empty:hover {
+  color: $primary;
+}
+
 .p-classic_nav__team_messages_progress_bar_background {
   stroke: $border !important;
 }

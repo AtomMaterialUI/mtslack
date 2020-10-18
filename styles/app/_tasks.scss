@@ -1,0 +1,22 @@
+.p-tasks_page_controls {
+  color: $text;
+}
+
+.p-tasks_page_controls__content_action_container {
+  &:hover {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-tasks_page_controls__content--total {
+  color: $text;
+}
+
+.p-tasks_page__title_icon {
+  color: $accent;
+}
+
+.p-tasks_page__board_channel {
+  color: $text;
+
+}

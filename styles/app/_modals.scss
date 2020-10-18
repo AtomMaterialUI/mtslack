@@ -179,3 +179,22 @@
 .c-sk-modal_footer--speedbump {
   background-color: $bg;
 }
+
+.c-sk-modal__speedbump_overlay {
+  background: rgba($bg, 0.1);
+}
+
+.c-sk-modal--faded {
+  &:after {
+    background: rgba($bg, 0.1);
+  }
+}
+
+.c-modal_speed_bump_overlay {
+  background-color: rgba($bg, 0.7);
+}
+
+.c-modal_speed_bump {
+  background-color: $bg;
+  border-top: 1px solid $borderLight;
+}
