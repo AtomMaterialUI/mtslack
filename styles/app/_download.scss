@@ -165,6 +165,10 @@
   background: $button;
 }
 
+.p-download_toast__item:focus {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
 .p-download_toast__progress_inner {
   background: $accent;
 }
@@ -191,5 +195,56 @@
 .p-downloads_modal__content {
   .c-pillow_file--active_download .c-pillow_file__slide, .c-pillow_file_container--active_download {
     background: $bg;
+  }
+}
+
+.p-download_modal__body {
+  background-color: $notif;
+}
+
+.p-download_modal__content_text--fullscreen {
+  color: $fg;
+}
+
+.p-download_modal__content_text {
+  .p-download_modal__title {
+    font-family: inherit;
+  }
+
+  .p-download_modal__instructions_list_item {
+    &:before {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+
+  .p-download_modal__connect_account_button {
+    background-color: $button;
+  }
+
+  .p-download_modal__connect_account_button--fullscreen {
+    background-color: $button;
+  }
+
+  .p-download_modal__try_download_again {
+    color: $text;
+  }
+
+  .p-download_modal__try_download_again--fullscreen {
+    color: $text;
+  }
+}
+
+.p-download_modal__close {
+  color: $fg;
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:active {
+    background-color: $accent;
+    color: $selectFg;
   }
 }

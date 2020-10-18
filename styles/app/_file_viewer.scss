@@ -100,7 +100,7 @@
 }
 
 .c-pillow_file_container--active_download {
-  background-color: $accent2;
+  background-color: $notif;
 
   .c-pillow_file__description, .c-pillow_file__title {
     color: $primary;
@@ -108,11 +108,11 @@
 }
 
 .c-pillow_file_container--download .c-pillow_file__slide {
-  background: $bg;
+  background: transparent;
 }
 
 .c-pillow_file--active_download .c-pillow_file__slide {
-  background: $accent2;
+  background: $notif;
 }
 
 .c-pillow_file__header {
@@ -131,7 +131,7 @@
 
 .c-pillow_file__swap {
   .c-pillow_file__slide {
-    background: $bg;
+    background: transparent;
   }
 }
 
