@@ -153,6 +153,10 @@
   .p-prefs_dialog__spellcheck_system_prefs_hint {
     color: $text;
   }
+
+  .p-prefs_dialog__message_example_pillow--hovered-example {
+    background: $notif;
+  }
 }
 
 .p-prefs_dialog__content:after {
@@ -187,4 +191,33 @@
   .c-tabs__tab:not(.c-tabs__tab--active) .c-tabs__tab_icon--left {
     color: $text;
   }
+}
+
+.p-prefs_modal__radio {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-prefs_modal__radio--selected {
+  box-shadow: 0 1px 3px 0 $accent, 0 0 0 1px $accentT;
+}
+
+.p-prefs_modal__radio__image {
+  border-bottom: 1px solid $border;
+}
+
+.p-prefs_modal__radio--selected .p-prefs_modal__radio__image {
+  border-color: $accent;
+}
+
+.p-prefs_modal__radio--selected .p-prefs_modal__radio__content {
+  background: $active;
+}
+
+.p-prefs_modal--video_audio_camera_video {
+  background-color: $bg2;
+}
+
+.p-block_kit_max_selected_items__info {
+  color: $fg;
 }
