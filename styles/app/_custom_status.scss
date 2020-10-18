@@ -114,6 +114,10 @@
   }
 }
 
+.p-custom_status_modal__input_action {
+  color: $text;
+}
+
 .p-custom_status_modal__input_action--emoji {
   color: $text;
 }
@@ -129,6 +133,21 @@
 .p-custom_status_modal__preset_title,
 .p-custom_status_modal__content h2 {
   color: $text;
+}
+
+.p-custom_status_modal__preset_container {
+  &.p-custom_status_modal__preset_container--active, &:focus-within, &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+
+
+  &.p-custom_status_modal__preset_container--active .p-custom_status_modal__preset_duration,
+  &:focus-within .p-custom_status_modal__preset_duration,
+  &:hover .p-custom_status_modal__preset_duration {
+    color: $selectFg;
+  }
+
 }
 
 .p-custom_status_modal__preset {
@@ -174,4 +193,12 @@
 
 .p-ia__main_menu__custom_status_smile--happy {
   color: $fg;
+}
+
+.p-custom_status_modal_calendar__footer {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
 }

@@ -42,3 +42,13 @@
 .p-thread_drag_overlay__subtitle {
   color: $text;
 }
+
+.p-drag_layer__board_item {
+  color: $fg;
+  background-color: $bg;
+  border: 1px solid $accentT;
+}
+
+.p-drag_layer__board_item__overflow_footer {
+  background: linear-gradient(0deg, rgba($bg, 1) 10%, rgba($bg, 0));
+}
