@@ -70,13 +70,19 @@
   }
 }
 
+.c-texty_input.c-texty_input--sticky_composer.focus .c-texty_input__button_composer--active,
+.c-texty_input.c-texty_input--sticky_composer.focus ~ .c-texty_buttons .c-texty_input__button_composer--active {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+    color: $primary;
+  }
+}
+
 .c-texty_input {
   &.c-texty_input--sticky_composer {
-
-    &.c-texty_input--has_content .c-texty_input__button_composer--active,
-    &.focus .c-texty_input__button_composer--active {
-      background-color: $active;
-    }
 
     &.focus {
       .ql-attachments, .ql-files {
@@ -97,10 +103,34 @@
   &.focus {
     .c-texty_input__button_composer--active {
       background-color: $button;
+      color: $fg;
+
+      &:hover {
+        background-color: $hl;
+        color: $primary;
+      }
     }
 
     .p-composer__body--sticky {
       background: $bg;
+    }
+
+    ~ .c-texty_buttons .c-texty_input__button_composer--active {
+      color: $fg;
+      background-color: $active;
+    }
+
+    ~ .c-texty_buttons .c-texty_input__button_composer--active:hover {
+      background-color: $hl;
+      color: $primary;
+    }
+
+    .ql-composer-sticky {
+      border-color: $borderLight;
+    }
+
+    .ql-buttons, .ql-composer-sticky, ~ .c-texty_buttons {
+      background: $button;
     }
   }
 
@@ -166,6 +196,11 @@
   .ql-placeholder {
     color: $disabled;
   }
+}
+
+.c-texty_input__warning {
+  background: $red;
+  color: $selectFg;
 }
 
 .c-texty_input__button {
