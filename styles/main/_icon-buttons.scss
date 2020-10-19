@@ -1,4 +1,6 @@
 .c-icon_button {
+  border-radius: 50%;
+
   &.c-texty_input__button {
     color: $fg;
   }
@@ -34,7 +36,7 @@
   }
 
   &.c-button-unstyled:hover, &:hover, &:link:hover {
-    background: $hl;
+    background: $accent;
     color: $selectFg;
   }
 
@@ -51,7 +53,7 @@
   }
 
   &.c-button-unstyled:hover, &:hover, &:link:hover {
-    color: $selectFg;
+    color: $accent;
     background: $hl;
   }
 

@@ -1,3 +1,6 @@
+.p-setup_page__header {
+  font-family: inherit;
+}
 .p-setup_page__content_button {
   background-color: $accentT;
 
@@ -17,23 +20,37 @@
 
 .p-setup_suggest_message__btn--primary {
   &:after {
-    border-top-color: $primary;
+    border-top-color: $borderLight;
   }
 
   &:before {
-    border-top-color: $primaryT;
+    border-top-color: $borderLight;
   }
+}
+
+.p-setup_page__content_button--aubergine {
+  background-color: $accentT;
+  color: $fg;
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-setup_suggest_message__btn--soft {
+  color: $text;
 }
 
 .p-setup_suggest_message__btn {
   &:active:after,
   &:hover:after {
-    border-top-color: $accent;
+    border-top-color: $borderLight;
   }
 
   &:active:before,
   &:hover:before {
-    border-top-color: $accentT;
+    border-top-color: $borderLight;
   }
 }
 
@@ -127,4 +144,62 @@
 
 .p-setup_channel_banner__app_icon {
   border: 1px solid $borderLight;
+}
+
+.p-setup_page__header_highlighted {
+  color: $primary;
+}
+
+.p-setup_page__header_highlighted--bordered {
+  border-bottom: 1px dashed $borderLight;
+}
+
+.sk-client-theme--dark {
+  .p-setup_page__header_highlighted {
+    color: $primary;
+  }
+
+  .p-setup_page__header_highlighted--bordered {
+    border-bottom: 1px dashed $borderLight;
+  }
+}
+
+.p-setup_suggest_message__mention_text {
+  color: $accent2;
+}
+
+.p-setup_send_message_input {
+  .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-setup_send_message_input__input--error {
+  .p-message_input_field {
+    border-color: $red;
+  }
+
+  .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px rgba($red, 0.3);
+  }
+}
+
+
+.p-setup_step_start_first_convo__title {
+  background: #f4ede4;
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+.p-setup_step_start_first_convo__email {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-setup_step_start_first_convo__email_input {
+  .c-token {
+    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.04);
+  }
+
+  .c-token--disabled {
+    color: inherit;
+  }
 }

@@ -94,46 +94,64 @@ a.c-sidebar_menu__list_item {
   color: $selectFg;
 }
 
-.p-channel_sidebar__channel,
-.p-channel_sidebar__link,
-.p-channel_sidebar__channel:link,
-.p-channel_sidebar__link:link,
-.p-channel_sidebar__channel:visited,
-.p-channel_sidebar__link:visited,
-.p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover {
+.p-channel_sidebar__list {
+  .p-channel_sidebar__channel,
+  .p-channel_sidebar__link,
+  .p-channel_sidebar__channel:link,
+  .p-channel_sidebar__link:link,
+  .p-channel_sidebar__channel:visited,
+  .p-channel_sidebar__link:visited,
+  .p-channel_sidebar__channel:hover,
+  .p-channel_sidebar__link:hover {
+    color: $fg;
+    border-left: 2px solid transparent;
+  }
+
+  .p-channel_sidebar__channel--selected,
+  .p-channel_sidebar__link--selected,
+  .p-channel_sidebar__channel--selected:link,
+  .p-channel_sidebar__link--selected:link,
+  .p-channel_sidebar__channel--selected:visited,
+  .p-channel_sidebar__link--selected:visited,
+  .p-channel_sidebar__channel--selected:hover,
+  .p-channel_sidebar__link--selected:hover,
+  .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
+  .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+    color: $primary !important;
+    border-left: 2px solid $accent;
+
+    .p-channel_sidebar__channel_icon_prefix.p-channel_sidebar__channel_icon_prefix--comfy {
+      background: $hl;
+    }
+  }
+
+  .p-channel_sidebar__channel:hover,
+  .p-channel_sidebar__link:hover,
+  .p-channel_sidebar__close_container:hover {
+    background: $tree !important;
+  }
+
+  .p-channel_sidebar__header {
+    color: $fg !important;
+  }
+
+  .p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon--on-avatar-border,
+  .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__presence_icon--on-avatar-border {
+    -webkit-text-stroke-color: $primary !important;
+  }
+}
+
+.p-channel_sidebar__section-heading--browse:hover,
+.p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix,
+.p-channel_sidebar__channel--selected:hover .p-channel_sidebar__channel_icon_prefix,
+.p-channel_sidebar__link--selected:before,
+.p-channel_sidebar__link--selected:before,
+.p-channel_sidebar__channel--selected:after,
+.p-channel_sidebar__channel--selected:hover:after,
+.p-channel_sidebar__link--selected:after,
+.p-channel_sidebar__link--selected:after {
   color: $selectFg !important;
 }
-
-.p-channel_sidebar__channel--selected,
-.p-channel_sidebar__link--selected,
-.p-channel_sidebar__channel--selected:link,
-.p-channel_sidebar__link--selected:link,
-.p-channel_sidebar__channel--selected:visited,
-.p-channel_sidebar__link--selected:visited,
-.p-channel_sidebar__channel--selected:hover,
-.p-channel_sidebar__link--selected:hover,
-.p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
-.p-channel_sidebar__link--selected + .p-channel_sidebar__close {
-  color: $primary !important;
-}
-
-.p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover,
-.p-channel_sidebar__close_container:hover {
-  background: $tree !important;
-}
-
-.p-channel_sidebar__header {
-  color: $fg !important;
-}
-
-.p-channel_sidebar__channel--selected .p-channel_sidebar__presence_icon--on-avatar-border,
-.p-channel_sidebar__channel--selected:hover .p-channel_sidebar__presence_icon--on-avatar-border {
-  -webkit-text-stroke-color: $primary !important;
-}
-
-/* Folders */
 
 input[type='text'].p-channel_sidebar__folder_heading_label_rename {
   background: $contrast !important;
@@ -481,4 +499,20 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
     }
   }
 
+}
+
+.p-channel_sidebar__member_label {
+  font-style: italic;
+  color: $disabled;
+}
+
+.p-channel_sidebar__list {
+  .p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
+  .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+    background: $button;
+  }
+
+  .p-channel_sidebar__link--add-more-items.p-channel_sidebar__channel--unread .p-channel_sidebar__channel_icon_prefix--comfy {
+    background: $button;
+  }
 }

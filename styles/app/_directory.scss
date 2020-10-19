@@ -1,0 +1,40 @@
+.p-directory_buttons {
+  color: $disabled;
+
+  .p-directory_button {
+    color: $accent2;
+
+    &:disabled {
+      color: $disabled;
+    }
+  }
+}
+
+.p-invite_type_select_option_label_description {
+  color: $fg;
+}
+
+.p-guest_expiration_select--custom_expiration {
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $bg;
+    border: 1px solid $border;
+  }
+}
+
+.p-guest_expiration_select--description {
+  color: $text;
+}
+
+.p-reason_for_request--description {
+  color: $fg;
+}

@@ -21,16 +21,17 @@
   }
 }
 
-.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
-.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
-  border-bottom: 1px solid $borderLight;
-}
+.p-client_desktop--ia-top-nav {
+  .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
+  .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
+    border-bottom: 1px solid $borderLight;
+  }
 
-.p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__button:hover,
-.p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__mode:hover {
-  border-color: $borderLight !important;
+  .p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__button:hover,
+  .p-ia__sidebar_header:not(.p-ia__sidebar_header--top-nav) .p-ia__sidebar_header__mode:hover {
+    border-color: $borderLight !important;
+  }
 }
-
 .p-channel_sidebar__compose_button--iap1 {
   background: $button !important;
   color: $fg !important;
