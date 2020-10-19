@@ -17,3 +17,13 @@
 .p-edit_profile__cropper {
   background-color: $bg !important;
 }
+
+.p-edit_profile_item__container {
+  .c-menu_item__icon {
+    color: $primary;
+  }
+
+  &.c-menu_item__button--highlighted .c-menu_item__icon {
+    color: $selectFg;
+  }
+}
