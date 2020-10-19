@@ -40,15 +40,36 @@
     background: $button;
     color: $text !important;
   }
-}
 
-.p-shortcuts_menu_trigger_button--dark.p-shortcuts_menu_trigger_button {
-  &:active,
-  &:hover {
-    background: $accent !important;
+  &:not(.p-shortcuts_menu_trigger_button--only_workflows) {
+    &:active, &:hover {
+      background: $accentT;
+      color: $selectFg !important;
+    }
+  }
+
+  &.p-shortcuts_menu_trigger_button--only_workflows {
+    &:active, &:hover {
+      color: $accent;
+    }
   }
 }
 
+.p-shortcuts_menu_trigger_button--dark:not(.p-shortcuts_menu_trigger_button--only_workflows).p-shortcuts_menu_trigger_button {
+  &:active, &:hover {
+    background: $accentT !important;
+  }
+}
+
+.p-shortcuts_menu_trigger_button--highlighted:not(.p-shortcuts_menu_trigger_button--only_workflows) {
+  color: $accent !important;
+}
+
+
 .p-shortcuts_menu_trigger_button--highlighted {
   color: $primary !important;
+}
+
+.p-new_file_menu_source__icon-gradient {
+  background: $bg2;
 }

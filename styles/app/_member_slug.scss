@@ -38,7 +38,7 @@
 
 .c-member_slug--mention {
   background: $active;
-  color: $text;
+  color: $fg;
   border-radius: 16px;
   padding: 2px 4px;
 
@@ -54,7 +54,7 @@
 
 .sk-client-theme--dark .c-member_slug--mention {
   background: $active;
-  color: $text;
+  color: $fg;
 
   &:hover {
     background: $selectBg;

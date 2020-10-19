@@ -1,0 +1,47 @@
+.p-first_channel_foreword {
+  background: $notif;
+
+  &:after {
+    border-top-color: $notif;
+  }
+}
+
+.p-first_channel_foreword__header {
+  font-family: inherit;
+  color: $fg;
+}
+
+.p-first_channel_foreword__body {
+  color: $fg;
+
+  .p-first_channel_foreword__foreword__notification_setting,
+  .p-first_channel_foreword__foreword__notification_warning {
+    color: $text;
+  }
+}
+
+
+.p-first_channel_foreword__invite-prompt {
+  color: $text;
+}
+
+
+.sk-client-theme--dark {
+  .p-first_channel_foreword {
+    background: $notif;
+    border: 1px solid $notif;
+
+    &:after {
+      border-top-color: $notif;
+    }
+
+    &:before {
+      border-top-color: $notif;
+      border-top-color: $notif;
+    }
+  }
+
+  .p-first_channel_foreword__body {
+    color: $fg;
+  }
+}
