@@ -3,7 +3,8 @@
 }
 
 .c-dialog_speed_bump_overlay {
-  background: $disabled;
+  background: $contrast;
+  opacity: 0.7;
 }
 
 .c-dialog_speed_bump {
