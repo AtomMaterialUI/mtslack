@@ -1,6 +1,8 @@
+.cm-s-yonce.CodeMirror,
 .CodeMirror {
   background: $contrast;
   color: $fg;
+  border-color: $hl;
 }
 
 .CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
@@ -54,6 +56,7 @@
   .cm-header {
     color: $blue;
   }
+
   .cm-quote {
     color: $green;
   }
@@ -71,48 +74,63 @@
   .cm-keyword {
     color: $purple;
   }
+
   .cm-atom {
     color: $blue;
   }
+
   .cm-number {
     color: $orange;
   }
+
   .cm-def {
     color: $blue;
   }
+
   .cm-variable-2 {
     color: $red;
   }
+
   .cm-type, .cm-variable-3 {
     color: $yellow;
   }
+
   .cm-comment {
     color: $gray;
   }
+
   .cm-string {
     color: $green;
   }
+
   .cm-string-2 {
     color: $cyan;
   }
+
   .cm-meta, .cm-qualifier {
     color: $purple;
   }
+
   .cm-builtin {
     color: $blue;
   }
+
   .cm-bracket {
     color: $fg;
   }
+
   .cm-tag {
     color: $red;
   }
+
   .cm-attribute {
     color: $yellow;
   }
+
   .cm-hr {
     color: $borderLight;
   }
+
   .cm-link {
     color: $accent;
   }
@@ -126,6 +144,7 @@ div.CodeMirror span {
   &.CodeMirror-matchingbracket {
     color: $cyan;
   }
+
   &.CodeMirror-nonmatchingbracket {
     color: $red;
   }
@@ -155,22 +174,27 @@ div.CodeMirror span {
   &::-moz-selection {
     background: $tree;
   }
+
   > span {
     &::-moz-selection, > span::-moz-selection {
       background: $tree;
     }
   }
+
   &::selection {
     background: $tree;
   }
+
   > span {
     &::selection, > span::selection {
       background: $tree;
     }
   }
+
   &::-moz-selection {
     background: $tree;
   }
+
   > span {
     &::-moz-selection, > span::-moz-selection {
       background: $tree;
@@ -185,14 +209,21 @@ div.CodeMirror span {
 .CodeMirror {
   border: 1px solid $borderLight;
   color: $fg;
+
   .CodeMirror-gutters {
     background-color: $bg;
     border-color: $border;
   }
+
   .CodeMirror-linenumber {
     color: $text;
   }
+
   &:focus, &:hover {
     border-color: $disabled;
   }
+}
+
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+  color: $fg;
 }

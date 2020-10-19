@@ -195,3 +195,9 @@
   background: $red;
   color: $selectFg;
 }
+
+.p-emoji_picker__group_tab_dot,
+.c-texty_input__button_badge {
+  background: $accent;
+  border-color: $bg;
+}
