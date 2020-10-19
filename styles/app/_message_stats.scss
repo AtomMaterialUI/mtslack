@@ -201,3 +201,13 @@
     fill: $primary;
   }
 }
+
+.c-message_stats__header {
+  .c-message_stats__total_reply_count {
+    color: $text;
+  }
+}
+
+.p-message_actions_menu__labels_bookmark_filled {
+  color: $accent;
+}

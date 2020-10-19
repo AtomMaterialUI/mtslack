@@ -18,7 +18,9 @@
     }
   }
 }
-
+.c-filter_input__input[type=text]::placeholder {
+  color: $disabled;
+}
 
 .c-filter_input__input[type=text] {
   &::-webkit-input-placeholder,

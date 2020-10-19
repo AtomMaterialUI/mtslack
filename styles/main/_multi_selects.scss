@@ -38,6 +38,10 @@
   }
 }
 
+.c-multi_select_input__input::placeholder {
+  color: $disabled;
+}
+
 .c-multi_select_input--invalid {
   border-color: $red;
 

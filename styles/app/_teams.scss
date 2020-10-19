@@ -9,7 +9,6 @@
   color: $accent;
 }
 
-
 .c-unified_member__current-status--legacy:before,
 .c-unified_member__secondary-name--large + .c-unified_member__current-status--large:before,
 .c-unified_member__secondary-name--medium + .c-unified_member__current-status--medium:before {
@@ -42,7 +41,6 @@
   }
 }
 
-
 .c-unified_member--small .c-unified_member__draft_icon {
   color: $text;
 }
@@ -59,7 +57,6 @@
     }
   }
 }
-
 
 .c-unified_member__context.c-unified_member__not-in-channel-context--small,
 .c-unified_member__label--small,
@@ -96,7 +93,6 @@
   color: $text;
 }
 
-
 .c-base_list_entity--small.c-base_list_entity--active {
   .c-base_entity__subtext,
   .c-unified_member__display-name,
@@ -120,7 +116,6 @@
   color: $fg;
 }
 
-
 .c-unified_member__display-name--large,
 .c-unified_member__title--large {
   color: $fg;
@@ -129,7 +124,6 @@
 .c-unified_member__other-names--large {
   color: $text;
 }
-
 
 .c-usergroup--small .c-usergroup__icon {
   background-color: $hl;
@@ -153,7 +147,6 @@
   color: $text;
 }
 
-
 .c-custom_status__expiration {
   color: $disabled;
 }
@@ -162,11 +155,9 @@
   color: $disabled;
 }
 
-
 .c-base_entity__metadata, .c-base_entity__subtext {
   color: $text;
 }
-
 
 .c-base_list_entity--dim {
   color: $disabled;
@@ -204,12 +195,27 @@
   color: $fg;
 }
 
-
 .c-base_list_entity--highlight-dark .c-file_entity__icon:before {
   color: $bg;
 }
 
 .c-base_list_entity--dim .c-file_entity__icon:before {
   color: $text;
+}
+
+.c-team_entity__verified_icon {
+  color: $accent;
+}
+
+.c-team_entity__verified_link {
+  color: $accent2;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.sk-client-theme--dark .c-team_entity__verified_icon {
+  color: $accent;
 }
 

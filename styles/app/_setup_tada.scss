@@ -1,0 +1,30 @@
+.p-setup_tada_coachmark__ReactModal__Body--open .p-workspace__primary_view_contents:before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.p-setup_tada_coachmark {
+  box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
+}
+
+.p-setup_tada_coachmark__header {
+  font-family: inherit;
+}
+
+.p-setup_tada_coachmark__header_channel {
+  background: $active;
+  color: $accent2;
+}
+
+.p-setup_tada_coachmark__button {
+  color: $selectFg;
+  background-color: $accentT;
+
+  &:active, &:hover {
+    background-color: $accent;
+  }
+
+  &[disabled] {
+    background-color: $button;
+    color: $disabled;
+  }
+}

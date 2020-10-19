@@ -137,6 +137,12 @@
   color: $text;
 }
 
+.c-emoji__emoji-tooltip {
+  .c-emoji__large {
+    background-color: transparent;
+  }
+}
+
 .c-message__body--unknown {
   background: $bg2;
 }
@@ -384,9 +390,9 @@ a.c-message__call_name--linked {
   border: none;
 }
 
-.p-message_pane__top_banners>.p-message_pane__search_tip_banner {
+.p-message_pane__top_banners > .p-message_pane__search_tip_banner {
   background: $notif;
-  box-shadow: 0 0 0 1px $borderLight,0 4px 12px 0 $tree;
+  box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $tree;
 }
 
 .p-message_pane__search_tip_banner_action {
@@ -403,4 +409,18 @@ a.c-message__call_name--linked {
 
 .p-channel_details__external_orgs_section .p-channel_details_section__icon {
   color: $accent;
+}
+
+@keyframes highlight-row {
+  0% {
+    background: transparent;
+  }
+
+  10% {
+    background: $tree;
+  }
+
+  to {
+    background: transparent;
+  }
 }
