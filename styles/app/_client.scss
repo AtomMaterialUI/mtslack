@@ -20,8 +20,25 @@
   .c-message_list__day_divider__label__pill {
     box-shadow: 0 0 0 1px $bg2, 0 1px 3px 0 $tree;
 
-    &:focus {
+    &:focus,
+    &.c-button--focus-visible:focus {
       box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
     }
+  }
+
+  .p-info_blurb__link {
+    color: $primary;
+  }
+
+  .p-info_blurb__link--highlighted {
+    color: $selectFg;
+  }
+
+  .p-info_blurb__sub_text {
+    color: $text;
+  }
+
+  .p-info_blurb__sub_text--highlighted {
+    color: $selectFg;
   }
 }
