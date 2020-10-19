@@ -1,7 +1,3 @@
-.p-texty_length_warning__warning {
-  background: $red;
-  color: $selectFg;
-}
 
 .p-composer__body {
   background: $contrast;
@@ -412,7 +408,7 @@
     box-shadow: 0 -1px 0 0 $primaryT;
   }
 
-  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky, &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded) .p-message_input_field:not(.c-texty_input--double_decker) .ql-composer-sticky, &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded) .p-message_input_field:not(.c-texty_input--double_decker) .ql-composer-sticky {
     background: $bg2;
   }
 
@@ -428,6 +424,37 @@
     }
   }
 
+  &.p-message_input--day1:not(.p-message_input--disabled) {
+    .c-icon_button.c-texty_input__button--send {
+      background: $accentT;
+      color: $selectFg;
+
+      &:hover {
+        color: $selectFg;
+        background: $accent;
+      }
+    }
+
+    .c-texty_input .ql-placeholder {
+      color: $disabled;
+    }
+
+    .p-message_input_field {
+      border-color: $active;
+      box-shadow: 0 0 0 1px $primaryT;
+      background: $contrast;
+
+      .ql-composer-sticky {
+        border-color: $primaryT;
+      }
+    }
+
+    &.p-message_input--dark .p-message_input_field {
+      background: $contrast;
+    }
+  }
+
+  .p-message_input__attachments,
   .ql-attachments {
     .p-composer_attachments__separator {
       border-left: 1px solid $borderLight;
@@ -504,4 +531,24 @@
 .p-browse_page_education_card {
   background-color: $bg2;
   color: $fg;
+}
+
+.p-composer_page__destination_select_suggestions {
+  color: $disabled;
+}
+
+.p-composer_page__destination_select_member_suggestion {
+  color: $disabled;
+
+  &:active, &:focus, &:hover {
+    color: $fg;
+  }
+}
+
+.p-composer_page__destination_select_escape_hatch_label {
+  color: $text;
+}
+
+.p-composer_page__sending_invites_status {
+  color: $text;
 }
