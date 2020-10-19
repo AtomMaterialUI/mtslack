@@ -79,6 +79,15 @@
     background: $button;
     border: 1px solid $borderLight;
   }
+
+  input[type=url], input[type=text], input[type=tel], input[type=number], input[type=email], input[type=password] {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 .c-input_select--with_default {

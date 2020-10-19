@@ -1,5 +1,5 @@
 .p-shortcuts_menu {
-  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
   background-color: $contrast;
 
   .c-input_text {
@@ -28,6 +28,8 @@
 
 .p-shortcuts_menu_search_input_wrapper {
   border-bottom: 1px solid $borderLight;
+  width: 97%;
+  padding: 8px;
 }
 
 .p-shortcuts_menu_trigger_button_container {
