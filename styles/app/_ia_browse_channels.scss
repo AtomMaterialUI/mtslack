@@ -218,3 +218,11 @@
   background: $accent;
   border-color: $borderLight;
 }
+
+.p-top_nav--iap2 .p-ia__sidebar_header__user__status {
+  background: $active;
+
+  &:hover {
+    background: $accentT;
+  }
+}
