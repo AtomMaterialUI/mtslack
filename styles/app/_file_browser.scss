@@ -1,0 +1,31 @@
+.p-file_browser_file--media {
+  border: 1px solid $border;
+}
+
+.p-file_browser_file--detail {
+  + .p-file_browser_file--detail {
+    border-top: $border;
+  }
+}
+
+.p-file_browser_focused_grid__action, .p-file_browser_focused_grid__title {
+  color: $text;
+}
+
+.p-file_browser_list {
+  .c-virtual_list__item:not(:first-child) {
+    border-top: $border;
+  }
+}
+
+.p-file_browser_focused_list__action, .p-file_browser_focused_list__title {
+  color: $text;
+}
+
+.p-file_browser_section__action, .p-file_browser_section__title {
+  color: $text;
+}
+
+.p-file_browser_search_results__title {
+  color: $text;
+}
