@@ -1,0 +1,79 @@
+// todo
+.c-table_column_header--sorted {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+
+.c-react_virtualized_table__scroll-indicator {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 0.25);
+  box-shadow: 4px 0 4px 0 var(--saf-0);
+}
+
+.c-react_virtualized_table--bottom-left,
+.c-react_virtualized_table--top-left {
+  border-right: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.ReactVirtualized__Table__sortableHeaderIcon {
+  fill: currentColor;
+}
+
+.c-data_table__body, .c-data_table__header_row, .c-data_table__no_results, .c-data_table__spinner {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.c-data_table__header_row {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.c-data_table__row {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.c-data_table__header_row--focus:after, .c-data_table__row--focus:after {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+}
+
+.c-data_table--focus-visible .c-data_table__header_column:focus .c-table_column_header {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  border-radius: 4px;
+}
+
+.c-table_row_actions .c-action_buttons__button {
+  border: 1px solid transparent;
+
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    border: 1px solid var(--saf-0);
+  }
+}
+
+.c-message_attachment, .c-table_row_actions .c-action_buttons__icon {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.c-message_actions__labels--dividers:not(:hover) {
+  &:before {
+    border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.c-message_actions__labels {
+  &:focus .c-message_actions__labels_front_icon, &:hover .c-message_actions__labels_front_icon {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.c-message_actions__labels_small-reply-filled--light {
+  color: rgba(0, 122, 90, 0.5);
+}
+
+.c-message_actions__labels_small-reaction-bg--light {
+  color: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
+}
+
+.c-message_actions__labels_front_icon {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}

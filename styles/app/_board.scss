@@ -1,3 +1,4 @@
+// TODO
 .p-board__input__menu {
   color: $text;
 }
@@ -7,5 +8,126 @@
 
   &:hover {
     color: $primary;
+  }
+}
+
+.p-board__info {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background-color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.p-board__input--checked {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-board__placeholder {
+  background-color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+}
+
+.p-board__item--selected {
+  background-color: rgba(29, 155, 209, 0.1);
+}
+
+.p-board__card__container {
+  &:focus {
+    color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  }
+}
+
+.p-board__card__container__menu_btn {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  border: 1px solid var(--saf-0);
+}
+
+.p-board__card {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  &:active, &:focus, &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.p-board__card__overflow_footer {
+  background: linear-gradient(0deg, rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%, rgba(var(--sk_primary_background, 255, 255, 255), 0));
+}
+
+.p-board__card__message__channel {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-board__card__preview {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-board__card__content {
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-board__card__content__title {
+  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+}
+
+.p-board__card__content__author {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-board__row__gutter__hover_item {
+  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+
+  &:hover {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  }
+}
+
+.p-board__tweet-card {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+  &:active, &:focus, &:hover {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-board__tweet-card__header__meta__author__subname {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-board__tweet-card__header__meta__subheader {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+
+  .c-icon {
+    color: #1da1f2;
+  }
+}
+
+
+.p-board__card__content__member_title {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-board__card__preview__mock_file {
+  background-color: #fff;
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  --saf-1: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  box-shadow: inset 5px 7px 0 7px var(--saf-0), inset -5px 7px 0 7px var(--saf-0);
+}
+
+.p-board__card__preview__mock_file__line {
+  background-color: #ddd;
+}
+
+.p-board__templates {
+  .p-board__template_option {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 1px solid var(--saf-0);
+  }
+
+  .p-board__template_icon {
+    color: #fff;
   }
 }

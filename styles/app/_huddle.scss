@@ -1,0 +1,268 @@
+// TODO
+.p-huddle_channel_floating_member_list {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-huddle_channel_floating_member_list__heading {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-huddle_channel_icon_popover {
+  background-color: #1d1c1d;
+}
+
+.p-huddle_channel_icon__popover_button {
+  color: var(--theme-text_color);
+  background: var(--theme-text_color_opacity);
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: var(--theme-text_color);
+  }
+}
+
+.p-channel_sidebar__channel--selected .p-huddle_channel_icon__popover_button {
+  color: var(--theme-active_item_text);
+  background: var(--theme-active_item_text_opacity);
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: var(--theme-active_item_text);
+  }
+}
+
+.p-huddle_channel_icon__popover_button {
+  &.p-huddle_channel_icon__popover_button--hover, &:hover {
+    color: var(--theme-column_bg);
+    background: var(--theme-text_color);
+  }
+
+  &.p-huddle_channel_icon__popover_button--hover .p-huddle_channel_icon__svg--headset path:last-of-type,
+  &:hover .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: var(--theme-column_bg);
+  }
+}
+
+.p-huddle_popover_trigger__tip_subtitle {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-huddle_nav_button__svg--headset path:last-of-type {
+  fill: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-huddle_nav_button {
+  &:hover .p-huddle_nav_button__svg--headset path:last-of-type {
+    fill: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-huddle_nav_button--started.p-ia__view_header__button {
+  background: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  color: #fff;
+
+  &:hover {
+    background: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    color: #fff;
+  }
+
+  .p-huddle_nav_button__svg--headset path:last-of-type, &:hover .p-huddle_nav_button__svg--headset path:last-of-type {
+    fill: #fff !important;
+  }
+}
+
+.p-huddle_mic_icon {
+  .p-huddle_mic_icon__microphone--slash {
+    color: #e01e5a;
+  }
+
+  .p-huddle_mic_icon__microphone--input_level {
+    background-color: var(--theme-text_color);
+  }
+}
+
+.p-huddle_flexpane_member_card {
+  &.p_huddle_flexpane_member_speaker--highlighted {
+    background-color: rgba(29, 155, 209, 0.1);
+  }
+
+  .p-huddle_flexpane_member_card__subtext {
+    color: #616061;
+  }
+
+  .p-huddle_flexpane_member_card__divider {
+    border-left: 1px solid #616061;
+  }
+
+  .p_huddle_flexpane_member_card__bell_button {
+    &:hover {
+      background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    }
+  }
+
+  .p_huddle_flexpane_member_card__bell--label {
+    color: #1264a3;
+  }
+
+  .p_huddle_flexpane_member_card__bell--label-sent {
+    color: #616061;
+  }
+
+  .p_huddle_flexpane_member_card_speaker_icon {
+    color: #1264a3;
+  }
+
+}
+
+.p-huddle_flexpane_details {
+  .p-huddle_flexpane_details__divider {
+    border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+
+  .p-huddle_flexpane_details__item {
+    color: #616061;
+  }
+
+  .p-huddle_flexpane__footer__join_button--container {
+    color: #fff;
+    background: #1264a3;
+  }
+
+  .p-huddle_flexpane__footer__leave_button--container {
+    color: #fff;
+    background: #000;
+  }
+
+  .p-huddle_flexpane__button--mute {
+    color: #000;
+    background: #fff;
+  }
+
+  .p-huddle_flexpane__button--leave_huddle {
+    color: #fff;
+    background: #e01e5a;
+  }
+
+  svg.p-huddle_flexpane__footer--headset {
+    path:last-of-type {
+      fill: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    }
+  }
+
+  .p-huddle_flexpane_details_speaker_icon {
+    color: #1264a3;
+  }
+}
+
+svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
+  fill: #616061;
+}
+
+.p-huddle_flexpane {
+  .p-huddle_flexpane__subtitle--label {
+    color: #616061;
+  }
+
+  .p-huddle_flexpane__divider {
+    border-left: 1px solid #616061;
+  }
+}
+
+.p-huddle_channel_name {
+  color: var(--theme-text_color);
+}
+
+.p-huddle_channel_name__team_label {
+  color: var(--theme-text_color);
+}
+
+.p-huddle_details {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-huddle_details__input_container {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-huddle_details__peers {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-huddle_details__divider {
+  border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-huddle_details__non_peers_header, .p-huddle_details__peers_header {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-huddle_details__peer--active-speaker {
+  background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
+}
+
+.p-huddle_details__speaker_icon {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+
+.p-huddle_sidebar_footer {
+  background-color: var(--theme-column_bg);
+  color: var(--theme-text_color);
+}
+
+.p-huddle_sidebar_footer__attention {
+  border: 3px solid var(--theme-text_color);
+}
+
+.p-huddle_sidebar_footer__container {
+  background-color: var(--theme-hover_item);
+  border-top: 1px solid var(--theme-border_color);
+}
+
+.p-huddle_sidebar_footer__button--settings {
+  color: var(--theme-text_color) !important;
+}
+
+.p-huddle_sidebar_footer__button--mic {
+  background-color: var(--theme-text_color_opacity);
+  color: var(--theme-text_color);
+
+  &:hover {
+    background-color: var(--theme-text_color_opacity_hover);
+  }
+}
+
+.p-huddle_sidebar_footer__button--leave {
+  background-color: var(--theme-badge);
+  color: var(--theme-text_color);
+
+  &:hover {
+    background-color: var(--theme-badge_faded);
+  }
+}
+
+.p-huddle_sidebar_footer__button--label {
+  color: var(--theme-text_color);
+}
+
+.p-huddle_sidebar_footer__button--label_leave {
+  color: #fff;
+}
+
+.p-huddle_sidebar_footer__button--channel {
+  color: #fff;
+}
+
+.p-huddle_sidebar_footer_new_member_label {
+  color: var(--theme-text_color);
+}
+
+.p-huddle_sidebar_footer__member_count_container {
+  box-shadow: 0 0 0 1px var(--theme-text_color_opacity);
+}
+
+.p-huddle_sidebar_footer__member_count_icon {
+  fill: var(--theme-text_color);
+}

@@ -1,0 +1,195 @@
+// TODO
+.p-story_viewer__modal {
+  background-color: #1d1c1d;
+  color: hsla(0, 0%, 100%, 0.7);
+
+  .c-sk-modal__close_button {
+    color: hsla(0, 0%, 100%, 0.7);
+
+    &:hover {
+      color: hsla(0, 0%, 100%, 0.7);
+    }
+  }
+}
+
+.p-story_viewer__progress {
+  background-color: #616061;
+
+  &.p-story_viewer__progress--viewed {
+    background-color: #fff;
+  }
+}
+
+.p-story_viewer__progress__bar {
+  background: #fff;
+}
+
+.p-story_viewer__control {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.p-story_viewer__reaction-active, .p-story_viewer__reaction:hover {
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.5);
+  background: #1d1c1d;
+}
+
+.p-story_viewer__reaction-reacted {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  border-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+
+.p-stories_screen_selector__screen {
+  &:hover {
+    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.p-stories_uploader__video {
+  background: #000;
+}
+
+.p-stories_uploader__footer {
+  background: #000;
+}
+
+.p-stories_uploader__footer__button {
+  background: #000;
+  color: #ddd;
+  border-color: #000;
+
+  &:active, &:focus, &:hover {
+    background: #000;
+    border-color: #616061;
+  }
+}
+
+.p-stories_uploader__footer__button--upload {
+  color: #33957b;
+  border-color: #33957b;
+
+  &:active, &:focus, &:hover {
+    color: #66af9c;
+    border-color: #66af9c;
+  }
+}
+
+.p-stories_uploader__footer__more {
+  color: #868686;
+
+  &:active, &:focus, &:hover {
+    color: #ddd;
+  }
+}
+
+.p-stories_uploader__record {
+  border: 2px solid #fff;
+}
+
+.p-stories_uploader__record__inner {
+  background-color: #de4e2b;
+}
+
+.p-stories_uploader__footer__timer {
+  color: #ddd;
+}
+
+.p-stories_uploader__footer__camera_toggle_label {
+  color: #ddd;
+}
+
+.p-story_viewer_modal {
+  background: #1d1c1d;
+  color: #fff;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 97.3%, 0.1);
+
+  .c-pillow_file__video {
+    background: #1d1c1d;
+  }
+}
+
+.p-story_viewer_modal__header {
+  box-shadow: inset 0 -1px 0 0 hsla(0, 0%, 86.7%, 0.13);
+}
+
+.p-story_viewer_modal__footer__add {
+  background: hsla(0, 0%, 86.7%, 0.13);
+}
+
+.p-story_viewer_modal__navigation__button {
+  background: rgba(29, 28, 29, 0.7);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.13);
+  color: #ddd;
+
+  &:hover {
+    color: #f8f8f8;
+    background: #1d1c1d;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.p-stories_scroller--chrono {
+  .p-gallery_scroller__wrapper {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.p-stories_scroller__container {
+  .c-avatar {
+    &:after {
+      background: #000;
+    }
+  }
+}
+
+.p-stories_scroller__container--placeholder .c-avatar:before, .p-stories_scroller__container--unreads .c-avatar:before {
+  background: linear-gradient(125deg, #4a154b, #36c5f0 25%, #2eb67d 50%, #ecb22e 75%, #e01e5a);
+}
+
+.p-stories_scroller__container--placeholder .c-avatar .c-base_icon, .p-stories_scroller__container--unreads .c-avatar .c-base_icon {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 2px solid var(--saf-0);
+}
+
+.p-stories_scroller__poster_thumb {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-stories_scroller__you_add--chrono {
+  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-stories_scroller__you_add_icon {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  box-shadow: 0 0 0 2px var(--saf-0);
+  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-stories_scroller__header {
+  &:after {
+    border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.p-stories_button__container {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-stories_button {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-stories_button__unreads {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 1px solid var(--saf-0);
+}
+
+.p-stories_button__add, .p-stories_button__unreads {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
