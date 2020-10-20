@@ -1,3 +1,16 @@
+.p-channel_sidebar__channel,
+.p-channel_sidebar__link,
+.p-channel_sidebar__channel:link,
+.p-channel_sidebar__link:link,
+.p-channel_sidebar__channel:visited,
+.p-channel_sidebar__link:visited,
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__channel--context,
+.p-channel_sidebar__link:hover,
+.p-channel_sidebar__section_placeholder {
+  color: $fg;
+}
+
 .c-sidebar_menu__list_item {
   color: $fg !important;
 

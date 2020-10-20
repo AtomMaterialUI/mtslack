@@ -10,7 +10,6 @@
   }
 }
 
-
 .p-message_pane_drag_overlay {
   background: $bg;
   animation: messagePaneDragOverlayOverlayTransition .12s;
@@ -19,7 +18,6 @@
 .p-message_pane_drag_overlay__subtitle {
   color: $text;
 }
-
 
 .p-message_pane_drag_overlay__anim_readonly {
 
@@ -38,7 +36,6 @@
   }
 }
 
-
 .p-thread_drag_overlay__subtitle {
   color: $text;
 }
@@ -51,4 +48,18 @@
 
 .p-drag_layer__board_item__overflow_footer {
   background: linear-gradient(0deg, rgba($bg, 1) 10%, rgba($bg, 0));
+}
+
+.p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
+  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset 0 4px 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT, inset 0 5px 0 0 $primaryT;
+}
+
+.p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
+  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT;
+}
+
+.p-drag_layer__sidebar_channels, .p-drag_layer__sidebar_section_heading {
+  color: $fg;
+  background: $active !important;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
