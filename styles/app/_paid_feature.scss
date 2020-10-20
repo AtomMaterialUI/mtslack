@@ -1,0 +1,24 @@
+.p-paid_feature_badge {
+  background-color: $accentT;
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.p-paid_feature_badge__icon {
+  color: $selectFg;
+}
+
+.p-paid_feature_badge__coachmark {
+  background-color: $notif;
+  border: 1px solid $hl;
+
+  &:before {
+    border-top-color: $hl;
+  }
+
+  &:after {
+    border-top-color: $notif;
+  }
+}
