@@ -203,19 +203,3 @@
   color: $text;
 }
 
-.c-team_entity__verified_icon {
-  color: $accent;
-}
-
-.c-team_entity__verified_link {
-  color: $accent2;
-
-  &:hover {
-    color: $primary;
-  }
-}
-
-.sk-client-theme--dark .c-team_entity__verified_icon {
-  color: $accent;
-}
-

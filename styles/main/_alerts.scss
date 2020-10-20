@@ -10,9 +10,10 @@
 .c-alert--level_info {
   background-color: $blue;
   border: 1px solid $blue;
+  color: $bg !important;
 
   .c-alert__icon {
-    color: $selectFg;
+    color: $bg !important;
   }
 }
 

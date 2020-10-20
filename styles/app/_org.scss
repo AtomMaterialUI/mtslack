@@ -1,0 +1,52 @@
+.c-team_entity__verified_icon {
+  color: $green;
+}
+
+.c-team_entity__verified_link {
+  color: $green;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.sk-client-theme--dark .c-team_entity__verified_icon {
+  color: $green;
+}
+
+.p-org_card_container {
+  background-color: $contrast;
+  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-org_card_header__verified_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-org_card_header__verified_icon {
+  color: $green;
+}
+
+.p-org_card_footer_expanded {
+  background-color: $bg2;
+}
+
+.p-org_card_footer_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-org_card_footer_icon {
+  color: $green;
+}
+
+.p-org_card_footer_text {
+  color: $text;
+}
+
+.p-add_approved_org_modal__learn_more {
+  color: $text;
+
+  .p-add_approved_org_modal__learn_more_link {
+    color: $accent2;
+  }
+}
