@@ -1,0 +1,27 @@
+.p-trial_modal_content_row_item__subtitle {
+  color: $text;
+}
+
+.p-trial_modal_content_row_item__title {
+  color: $fg;
+}
+
+.p-trial_modal__icon_container--warning_high {
+  background-color: $excluded;
+}
+
+.p-trial_modal__icon_container--warning_medium {
+  background-color: $excluded;
+}
+
+.p-trial_modal__icon_container--warning_high > i {
+  color: $red;
+}
+
+.p-trial_modal__icon_container--warning_medium > i {
+  color: $orange;
+}
+
+.p-trial_awareness_modal__img_text {
+  color: $text;
+}
