@@ -1,0 +1,77 @@
+.p-file_thumbnail__container--document,
+.p-file_thumbnail__container--image,
+.p-file_thumbnail__container--video {
+  background: $bg2;
+}
+
+.p-file_thumbnail__image {
+  box-shadow: 0 0 1px $contrast;
+}
+
+.p-file_thumbnail__video_play {
+  background: $accent;
+
+  &:before {
+    color: $selectFg;
+  }
+}
+
+.p-file_share_info {
+  border-top: 1px solid $borderLight;
+}
+
+.p-file_share_info__meta {
+  color: $text;
+}
+
+.p-file_hover_preview__inner_container {
+  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+  background-color: $bg;
+}
+
+.p-file_hover_preview__inner_container--interactive {
+  &:hover {
+    box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+  }
+}
+
+.p-file_search_input__container {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-file_search_thumb {
+  box-shadow: 0 0 0 1px $contrast;
+}
+
+.p-file_search_thumb--active {
+  box-shadow: 0 0 0 3px $accent;
+}
+
+.p-file_search_footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-file_search_footer__btn {
+  border-color: $button;
+  background: $button;
+
+  &:active, &:hover {
+    background-color: transparent;
+    border-color: $hl;
+  }
+}
+
+.sk-client-theme--dark .p-file_search_footer__btn {
+  border-color: $button;
+  background: $button;
+
+  &:active, &:hover {
+    background-color: transparent;
+    border-color: $hl;
+  }
+}
+
+.p-file_search_menu {
+  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+  background-color: $bg;
+}

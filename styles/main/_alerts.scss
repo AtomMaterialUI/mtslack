@@ -18,26 +18,28 @@
 
 .c-alert--level_success {
   background-color: $green;
-  color: $bg;
   border: 1px solid $green;
+  color: $bg !important;
 
   .c-alert__icon {
-    color: $fg;
+    color: $bg;
   }
 }
 
 .c-alert--level_warning {
   background-color: $orange;
   border: 1px solid $orange;
+  color: $bg !important;
 
   .c-alert__icon {
-    color: $fg;
+    color: $bg;
   }
 }
 
 .c-alert--level_error {
   background-color: $red;
   border: 1px solid $red;
+  color: $selectFg !important;
 
   .c-alert__icon {
     color: $selectFg;
