@@ -271,3 +271,7 @@ input[type=text].c-input_text {
   color: $disabled;
   border-top: none;
 }
+
+.c-input_text::placeholder {
+  color: $disabled;
+}

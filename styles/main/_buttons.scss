@@ -64,6 +64,7 @@
   color: $disabled;
 }
 
+.sk-client-theme--dark .c-link--button,
 .c-link--button {
   color: $primary;
 
@@ -87,7 +88,7 @@
     color: $fg;
   }
 }
-
+.sk-client-theme--dark .c-link--invert,
 .c-link--invert {
   color: $primary;
 
@@ -131,6 +132,7 @@
   }
 }
 
+.sk-client-theme--dark .c-button--danger,
 .c-button--danger {
   background: $red;
   color: $selectFg;
@@ -153,6 +155,7 @@
   }
 }
 
+.sk-client-theme--dark .c-button--outline,
 .c-button--outline {
   background: $button;
   border: 1px solid $borderLight;
@@ -183,6 +186,7 @@
   }
 }
 
+
 .sk-client-scheme--purple .c-button--outline-primary,
 .sk-client-theme--dark .c-button--outline-primary,
 .c-button--outline-primary {
@@ -206,6 +210,7 @@
   }
 }
 
+.sk-client-theme--dark .c-button--outline-danger,
 .c-button--outline-danger {
   background: transparent;
   border: 1px solid $red;
@@ -240,6 +245,7 @@
   }
 }
 
+.sk-client-theme--dark .c-button--disabled,
 .c-button--disabled {
   background: $excluded;
   color: $disabled;
@@ -259,6 +265,7 @@
   }
 }
 
+.sk-client-theme--dark .p-button,
 .p-button {
   border-top: 1px solid $button;
 }
