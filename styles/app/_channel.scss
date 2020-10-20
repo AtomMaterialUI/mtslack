@@ -329,9 +329,11 @@ button.p-channel_details_about__blurb {
 
 .p-channel_email_address_modal__body_customization_button {
   color: $primary;
+  background: $button;
 
   &:disabled, &:hover {
     color: $selectFg;
+    background: $hl;
   }
 }
 
@@ -348,7 +350,7 @@ button.p-channel_details_about__blurb {
 }
 
 .p-channel_email_address_modal__body_message_preview__message {
-  background: $contrast;
+  background: $bg;
   border: 1px solid $border;
 }
 
