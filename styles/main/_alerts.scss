@@ -47,7 +47,8 @@
 }
 
 .c-alert--boxed, .c-alert--custom {
-  color: $selectFg;
+  color: $fg;
+  padding: .5em;
 }
 
 .c-alert--inline {

@@ -1,0 +1,41 @@
+.p-prefs_modal__theme_thumb {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.p-prefs_modal__theme {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--light {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--dark {
+  background-color: $bg;
+}
+
+.p-prefs_modal__theme--dark .p-prefs_modal__theme_placeholder {
+  background-color: $bg2;
+}
+
+.p-prefs_modal__theme_placeholder {
+  &:first-child {
+    background-color: $accent;
+  }
+
+  &:nth-child(2) {
+    background-color: $accent2;
+  }
+
+  &:nth-child(3) {
+    background-color: $primary;
+  }
+}
+
+.p-ia_custom_theme__heading {
+  color: $text;
+}
+
+.p-ia_builtin_themes__heading {
+  color: $text;
+}
