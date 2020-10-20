@@ -45,3 +45,42 @@
 .p-event_action_options--action {
   border: 1px solid $borderLight;
 }
+
+.p-event-rsvp_count {
+  color: $accent2;
+}
+
+.p-event-avatar_wrapper {
+  .c-icon:before {
+    background-color: $accent;
+    border: 1px solid $bg;
+    color: $selectFg;
+  }
+}
+
+.p-event_title {
+  color: $fg;
+}
+
+.p-event_info-icon {
+  color: $text;
+}
+
+.p-event_video--pulse {
+  color: $accent;
+}
+
+.p-event_status-in-flight {
+  background-color: $bg2;
+  color: $accent;
+}
+
+.p-event_status-ended {
+  background-color: $excluded;
+  color: $text;
+}
+
+.p-event_rsvp-choice {
+  background-color: $accent;
+  color: $selectFg;
+}
