@@ -44,7 +44,10 @@
 }
 
 .c-tabs__tab_count {
-  background-color: $bg2;
+  background-color: $active;
+  min-width: 18px;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .c-tabs__tab_count_placeholder,

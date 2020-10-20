@@ -208,6 +208,17 @@
     background: $accent;
     color: $selectFg;
   }
+
+  &.c-button--disabled {
+    background: $button;
+    color: $disabled;
+  }
+
+  &.c-button--disabled:active,
+  &.c-button--disabled:hover {
+    background: $hl;
+    color: $fg;
+  }
 }
 
 .sk-client-theme--dark .c-button--outline-danger,

@@ -185,6 +185,11 @@
   }
 }
 
+[lang] .c-basic_container,
+[lang] .c-texty_input_unstyled {
+  font-family: inherit;
+}
+
 .c-texty_input_unstyled__container {
   .ql-placeholder {
     color: $disabled;
