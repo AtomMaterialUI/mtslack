@@ -2631,13 +2631,21 @@ input[type=checkbox]:not(.c-toggle__input):not(.c-switch__input) {
     background: var(--selectBg);
     color: var(--selectFg2); }
 
+.sk-client-theme--dark .c-mrkdwn__mention,
+.sk-client-theme--dark .c-mrkdwn__user_group--mention,
 .sk-client-theme--dark .c-mrkdwn__broadcast--mention,
+.c-mrkdwn__mention,
+.c-mrkdwn__user_group--mention,
 .c-mrkdwn__broadcast--mention {
   background: var(--active);
   color: var(--primary);
   border-radius: 16px;
   padding: 2px 4px; }
+  .sk-client-theme--dark .c-mrkdwn__mention:hover,
+  .sk-client-theme--dark .c-mrkdwn__user_group--mention:hover,
   .sk-client-theme--dark .c-mrkdwn__broadcast--mention:hover,
+  .c-mrkdwn__mention:hover,
+  .c-mrkdwn__user_group--mention:hover,
   .c-mrkdwn__broadcast--mention:hover {
     background: var(--selectBg);
     color: var(--selectFg2); }
@@ -8399,7 +8407,8 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
   color: var(--text); }
 
 .c-base_inline_entity--dim {
-  color: var(--text); }
+  color: var(--text);
+  filter: none; }
 
 .c-base_inline_entity--highlight-dark {
   color: var(--bg);
@@ -13973,6 +13982,10 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
 
 .p-ia__view_header__info .p-classic_nav__model__title__info__topic {
   color: var(--fg); }
+
+.p-ia__view_header .p-classic_nav__model__title__name,
+.p-ia__view_header__title {
+  font-size: 24px; }
 
 .p-ia__view_header__more,
 .p-ia__view_header__tab {
