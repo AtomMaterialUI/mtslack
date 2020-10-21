@@ -63,7 +63,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
 
   applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: window.themePresets[this.themes[this.currentTheme]]
+      detail: {
+        name: this.currentTheme,
+        css: window.themePresets[this.themes[this.currentTheme]]
+      }
     }));
     window.slackPluginsAPI.saveSettings();
   }

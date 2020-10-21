@@ -1,6 +1,7 @@
 .p-setup_page__header {
-  font-family: inherit;
+  font-family: $headerFont;
 }
+
 .p-setup_page__content_button {
   background-color: $accentT;
 
@@ -184,22 +185,21 @@
   }
 }
 
-
 .p-setup_step_start_first_convo__title {
-  background: #f4ede4;
-  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+  background: $notif;
+  font-family: $fontFamily;
 }
 
 .p-setup_step_start_first_convo__email {
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-bottom: 1px solid $borderLight;
 }
 
 .p-setup_step_start_first_convo__email_input {
   .c-token {
-    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.04);
+    background-color: $accent;
   }
 
   .c-token--disabled {
-    color: inherit;
+    color: $disabled;
   }
 }

@@ -65,11 +65,15 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.monoFontsEnabled) {
       this.addNewStyle(`pre,code {font: ${this.monoFontFamily} !important;}`);
-      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.monoFontFamily, 'important'));
+      document.dispatchEvent(
+        new CustomEvent('MonoFontChanged', {
+          detail: this.monoFontFamily
+        })
+      );
     }
     else {
       this.addNewStyle(`pre,code {font: ${this.DEFAULT} !important;}`);
-      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.DEFAULT, 'important'));
+      document.dispatchEvent(new CustomEvent('MonoFontReset', {}));
     }
     window.slackPluginsAPI.saveSettings();
   }

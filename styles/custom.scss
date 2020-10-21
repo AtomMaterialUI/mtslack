@@ -72,6 +72,10 @@ $gray: var(--gray);
 $silver: var(--silver);
 $black: var(--black);
 
+$headerFont: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif);
+$fontFamily: var(--fontFamily, Slack-Lato, appleLogo, sans-serif);
+$monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !important);
+
 @import 'core/index';
 @import 'main/index';
 @import 'app/index';

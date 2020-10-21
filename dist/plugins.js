@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v10.2.0',
+  version: 'v10.3.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -698,7 +698,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
 
   applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: window.themePresets[this.themes[this.currentTheme]]
+      detail: {
+        name: this.currentTheme,
+        css: window.themePresets[this.themes[this.currentTheme]]
+      }
     }));
     window.slackPluginsAPI.saveSettings();
   }
@@ -766,9 +769,15 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
+      document.dispatchEvent(
+        new CustomEvent('MainFontChanged', {
+          detail: this.fontFamily
+        })
+      );
     }
     else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
+      document.dispatchEvent(new CustomEvent('MainFontReset', {}));
     }
     window.slackPluginsAPI.saveSettings();
   }
@@ -866,11 +875,15 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.monoFontsEnabled) {
       this.addNewStyle(`pre,code {font: ${this.monoFontFamily} !important;}`);
-      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.monoFontFamily, 'important'));
+      document.dispatchEvent(
+        new CustomEvent('MonoFontChanged', {
+          detail: this.monoFontFamily
+        })
+      );
     }
     else {
       this.addNewStyle(`pre,code {font: ${this.DEFAULT} !important;}`);
-      // document.querySelectorAll('code, pre').forEach(e => e.style.setProperty('font', this.DEFAULT, 'important'));
+      document.dispatchEvent(new CustomEvent('MonoFontReset', {}));
     }
     window.slackPluginsAPI.saveSettings();
   }

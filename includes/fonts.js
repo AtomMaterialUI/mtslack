@@ -54,9 +54,15 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   applyFonts() {
     if (this.fontsEnabled) {
       document.querySelector('body').style.fontFamily = this.fontFamily;
+      document.dispatchEvent(
+        new CustomEvent('MainFontChanged', {
+          detail: this.fontFamily
+        })
+      );
     }
     else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
+      document.dispatchEvent(new CustomEvent('MainFontReset', {}));
     }
     window.slackPluginsAPI.saveSettings();
   }

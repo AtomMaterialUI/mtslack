@@ -1,0 +1,21 @@
+.mtslack {
+  color: $fg;
+  background: $contrast !important;
+
+  [lang] & {
+    font-family: $fontFamily !important;
+  }
+  
+  .p-ssb_landing {
+    color: $fg;
+  }
+
+  .p-ssb_landing__header {
+    font-family: $fontFamily;
+  }
+
+  .c-button--primary:link, .c-button--primary:visited {
+    background: $accent;
+    color: $selectFg;
+  }
+}

@@ -2165,7 +2165,7 @@ input[type=text].c-input_text.p-channel_name_input--input_with_warning {
   color: var(--disabled); }
 
 [lang] .p-message_pane_input__preview {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
 .p-message_pane_input__preview {
   background-color: var(--contrast); }
@@ -2184,7 +2184,7 @@ input[type=text].c-input_text.p-channel_name_input--input_with_warning {
   color: var(--disabled); }
 
 [lang] .c-menu {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
 .c-menu_item__button {
   color: var(--fg); }
@@ -4793,7 +4793,7 @@ audio::-webkit-media-controls-time-remaining-display {
     border-top-color: var(--notif); }
 
 .p-first_channel_foreword__header {
-  font-family: inherit;
+  font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif);
   color: var(--fg); }
 
 .p-first_channel_foreword__body {
@@ -5417,7 +5417,7 @@ a.c-sidebar_menu__list_item {
   color: var(--secondBg) !important; }
 
 .p-team_sidebar__signed_out_badge {
-  color: var(--accent2) !important; }
+  color: var(--yellow) !important; }
 
 .p-channel_sidebar--global_nav_layout:after {
   background: var(--bg) !important; }
@@ -7419,7 +7419,7 @@ input[type='text'].c-input_text.p-emoji_picker__input:focus {
   color: var(--fg); }
 
 [lang] .c-texty_input {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
 .c-texty_input {
   border: 1px solid var(--button);
@@ -7539,7 +7539,7 @@ input[type='text'].c-input_text.p-emoji_picker__input:focus {
 
 [lang] .c-basic_container,
 [lang] .c-texty_input_unstyled {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
 .c-texty_input_unstyled__container .ql-placeholder {
   color: var(--disabled); }
@@ -8266,7 +8266,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     border-right-color: var(--notif); }
 
 .p-setup_create_channel_coachmark__header {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif); }
 
 .p-setup_create_channel_coachmark__header_highlighted {
   color: var(--accent); }
@@ -13818,7 +13818,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   color: var(--fg); }
 
 .p-download_modal__content_text .p-download_modal__title {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif); }
 
 .p-download_modal__content_text .p-download_modal__instructions_list_item:before {
   background-color: var(--accent);
@@ -14206,7 +14206,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   color: var(--accent2); }
 
 .p-setup_page__header {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif); }
 
 .p-setup_page__content_button {
   background-color: var(--accentT); }
@@ -14333,17 +14333,17 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   box-shadow: 0 0 0 1px var(--red), 0 0 0 5px rgba(var(--red), 0.3); }
 
 .p-setup_step_start_first_convo__title {
-  background: #f4ede4;
-  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif; }
+  background: var(--notif);
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
 .p-setup_step_start_first_convo__email {
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13); }
+  border-bottom: 1px solid var(--active); }
 
 .p-setup_step_start_first_convo__email_input .c-token {
-  background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.04); }
+  background-color: var(--accent); }
 
 .p-setup_step_start_first_convo__email_input .c-token--disabled {
-  color: inherit; }
+  color: var(--disabled); }
 
 .p-case_study {
   background-color: var(--bg); }
@@ -14401,7 +14401,7 @@ body.sk-client-theme--dark .p-welcome-place .c-workflow-item-container .c-workfl
   box-shadow: 0 0 0 1px var(--contrast), 0 18px 48px 0 var(--contrast); }
 
 .p-setup_tada_coachmark__header {
-  font-family: inherit; }
+  font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif); }
 
 .p-setup_tada_coachmark__header_channel {
   background: var(--active);
@@ -14739,6 +14739,19 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
 .p-stories_button__add, .p-stories_button__unreads {
   color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   background: rgba(var(--sk_primary_foreground, 29, 28, 29), 1); }
+
+.mtslack {
+  color: var(--fg);
+  background: var(--contrast) !important; }
+  [lang] .mtslack {
+    font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
+  .mtslack .p-ssb_landing {
+    color: var(--fg); }
+  .mtslack .p-ssb_landing__header {
+    font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+  .mtslack .c-button--primary:link, .mtslack .c-button--primary:visited {
+    background: var(--accent);
+    color: var(--selectFg2); }
 
 .p-prefs_modal__theme_section > * {
   cursor: not-allowed;

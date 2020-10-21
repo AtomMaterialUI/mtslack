@@ -1,5 +1,5 @@
 [lang] .c-texty_input {
-  font-family: inherit;
+  font-family: $fontFamily;
 }
 
 .c-texty_input {
@@ -187,7 +187,7 @@
 
 [lang] .c-basic_container,
 [lang] .c-texty_input_unstyled {
-  font-family: inherit;
+  font-family: $fontFamily;
 }
 
 .c-texty_input_unstyled__container {

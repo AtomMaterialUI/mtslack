@@ -256,7 +256,7 @@ input[type=text].c-input_text {
 }
 
 [lang] .p-message_pane_input__preview {
-  font-family: inherit;
+  font-family: $fontFamily;
 }
 
 .p-message_pane_input__preview {
