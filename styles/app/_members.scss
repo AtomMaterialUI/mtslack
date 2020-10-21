@@ -319,7 +319,8 @@ button.p-admin_member_table__menu_item--disabled {
     &:active,
     &:focus,
     &:hover {
-      background: $selectBg;
+      background: $tree;
+      color: $selectFg;
     }
   }
 }
