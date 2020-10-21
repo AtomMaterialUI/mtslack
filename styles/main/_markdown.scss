@@ -12,7 +12,11 @@
   }
 }
 
+.sk-client-theme--dark .c-mrkdwn__mention,
+.sk-client-theme--dark .c-mrkdwn__user_group--mention,
 .sk-client-theme--dark .c-mrkdwn__broadcast--mention,
+.c-mrkdwn__mention,
+.c-mrkdwn__user_group--mention,
 .c-mrkdwn__broadcast--mention {
   background: $active;
   color: $primary;
