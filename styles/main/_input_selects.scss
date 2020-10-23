@@ -65,7 +65,7 @@
 
 .c-input_select {
   border: 1px solid $borderLight;
-  background: $button;
+  background: $contrast;
 
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;

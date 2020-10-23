@@ -1,8 +1,7 @@
-
 .p-app_actions_dialog {
   .c-dialog__footer {
-    background: $bg2;
-    border-top: 1px solid $border;
+    background: $bg;
+    border-top: 1px solid $borderLight;
   }
 
   a.c-dialog__footer_link {
@@ -11,9 +10,9 @@
 }
 
 .p-app_actions_dialog__message {
-  background: $bg2;
-  border-top: 1px solid $border;
-  border-bottom: 1px solid $borderLight;
+  background: $bg;
+  border-top: none;
+  border-bottom: none;
 }
 
 
@@ -42,7 +41,7 @@
 
 .p-app_actions_dialog__option--active {
   border: 1px solid $borderLight;
-  background-color: $bg2;
+  background-color: $hl;
 
   .c-menu_item__description {
     color: $text;
