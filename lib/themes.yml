@@ -192,7 +192,7 @@ other:
     text: '#939293'
     selectBg: '#5B595C'
     selectFg: '#FFFFFF'
-    selectFg2: '#ffd866'
+    selectFg2: '#FFFFFF'
     button: '#403E41'
     second: '#403E41'
     disabled: '#727072'

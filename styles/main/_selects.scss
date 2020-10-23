@@ -75,7 +75,8 @@
   color: $disabled;
 
   &:hover {
-    background-color: $fg;
+    background-color: $excluded;
+    color: $text;
   }
 }
 
@@ -84,12 +85,17 @@
 }
 
 .c-select_options_list__option--active {
-  background-color: $tree;
-  color: $primary;
+  background-color: $hl;
+  color: $selectFg;
 
   &.c-select_options_list__option--disabled {
-    background-color: $tree;
+    background-color: $excluded;
     color: $disabled;
+
+    &:hover {
+      background-color: $excluded;
+      color: $text;
+    }
   }
 }
 

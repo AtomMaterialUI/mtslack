@@ -2161,9 +2161,10 @@ input[type=text].c-input_text.p-channel_name_input--input_with_warning {
   background-color: var(--contrast); }
 
 .p-message_pane_input__disabled {
-  background-color: var(--excluded);
+  background-color: var(--contrast);
   color: var(--disabled); }
 
+[lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
   font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
@@ -2524,17 +2525,21 @@ input[type=checkbox]:not(.c-toggle__input):not(.c-switch__input) {
 .c-select_options_list__option--disabled {
   color: var(--disabled); }
   .c-select_options_list__option--disabled:hover {
-    background-color: var(--fg); }
+    background-color: var(--excluded);
+    color: var(--text); }
 
 .c-select_options_list__option--selected {
   color: var(--selectFg2); }
 
 .c-select_options_list__option--active {
-  background-color: var(--tree);
-  color: var(--primary); }
+  background-color: var(--hl);
+  color: var(--selectFg2); }
   .c-select_options_list__option--active.c-select_options_list__option--disabled {
-    background-color: var(--tree);
+    background-color: var(--excluded);
     color: var(--disabled); }
+    .c-select_options_list__option--active.c-select_options_list__option--disabled:hover {
+      background-color: var(--excluded);
+      color: var(--text); }
 
 .c-select_options_list__clear_option {
   color: var(--fg); }
@@ -5143,7 +5148,8 @@ button.p-admin_member_table__menu_item--disabled {
   .p-browse_page_channel:not(.p-browse_page_channel--disconnected):active,
   .p-browse_page_channel:not(.p-browse_page_channel--disconnected):focus,
   .p-browse_page_channel:not(.p-browse_page_channel--disconnected):hover {
-    background: var(--selectBg); }
+    background: var(--tree);
+    color: var(--selectFg2); }
 
 .p-browse_page_channel__justification_icon {
   color: var(--primary); }
@@ -6756,7 +6762,8 @@ input[type='text'].c-input_text.p-emoji_picker__input:focus {
   color: var(--disabled); }
 
 .c-base_entity--dim {
-  color: var(--disabled); }
+  color: var(--disabled);
+  filter: none; }
 
 .c-base_entity__metadata, .c-base_entity__subtext {
   color: var(--text); }
@@ -6769,8 +6776,8 @@ input[type='text'].c-input_text.p-emoji_picker__input:focus {
   background-color: var(--hl); }
 
 .c-base_list_entity--highlight-dim {
-  color: var(--disabled);
-  background-color: var(--hl); }
+  color: var(--text);
+  background-color: var(--excluded); }
 
 .c-base_list_entity--highlight-light {
   background-color: var(--hl); }
