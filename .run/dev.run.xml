@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dev" type="CompoundRunConfigurationType">
+    <toRun name="server" type="js.build_tools.npm" />
+    <toRun name="watchStyles" type="js.build_tools.npm" />
+    <toRun name="local" type="js.build_tools.npm" />
+    <toRun name="watchScripts" type="js.build_tools.npm" />
+    <method v="2" />
+  </configuration>
+</component>

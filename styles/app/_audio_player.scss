@@ -69,3 +69,13 @@ audio::-webkit-media-controls-time-remaining-display {
     background-color: $accent;
   }
 }
+
+.c-audio_player_play_button {
+  background: $button;
+  color: $accent;
+
+  &:hover {
+    background: $hl;
+    color: $primary;
+  }
+}
