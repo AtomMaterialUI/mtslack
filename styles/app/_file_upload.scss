@@ -178,16 +178,16 @@
 }
 
 .p-file_card {
-  box-shadow: 0 0 0 1px $primaryT;
+  @include card;
+  background: $bg2;
 
   &:active, &:hover {
     box-shadow: 0 0 0 1px $primary;
   }
-
 }
 
 .p-file_card__preview {
-  background-color: $bg2;
+  background-color: $bg;
 }
 
 .p-file_card__content {

@@ -1,5 +1,6 @@
 .p-app-card {
   background-color: $bg;
+  @include card;
 
   &:hover {
     box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight;

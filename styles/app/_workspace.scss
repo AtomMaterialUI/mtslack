@@ -149,7 +149,7 @@
 }
 
 .p-workspace__secondary_view {
-  box-shadow: -2px 0 7px 0 $contrast;
+  @include pane;
   background: $bg;
   border-left: none;
 }

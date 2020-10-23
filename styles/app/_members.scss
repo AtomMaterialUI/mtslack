@@ -1,5 +1,5 @@
 .p-member_profile_card {
-  background: $bg2;
+  background: $contrast;
   color: $fg;
 }
 
@@ -364,8 +364,8 @@ button.p-admin_member_table__menu_item--disabled {
 }
 
 .p-browse_page_member_card_entity {
-  background: $bg;
-  box-shadow: 0 0 0 1px $primary;
+  background: $bg2;
+  @include card;
 
   &:active,
   &:hover {
@@ -480,6 +480,10 @@ button.p-admin_member_table__menu_item--disabled {
   box-shadow: -2px 0 7px 0 $bg;
 }
 
+.p-browse_page_layout__filters_container--open {
+  @include pane;
+}
+
 .p-browse_page_layout__container {
   .p-browse_page_layout__tip_banner {
     background: $notif;
@@ -491,12 +495,10 @@ button.p-admin_member_table__menu_item--disabled {
   background: $notif;
 }
 
-
 .p-browse_page_layout__autocomplete_hint {
   color: $primary;
   border-right: 1px solid $borderLight;
 }
-
 
 .p-browse_page_layout__autocomplete__option.c-select_options_list__option--selected {
   color: $selectFg;

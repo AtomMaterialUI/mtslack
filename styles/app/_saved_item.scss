@@ -33,11 +33,7 @@
 
 .p-saved_page__item {
   background: $bg;
-  box-shadow: 0 0 0 1px $primaryT;
-
-  &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
-  }
+  @include card;
 }
 
 .c-virtual_list__item--focus .p-saved_page__item {
@@ -92,11 +88,7 @@
 
 .p-activity_page__item {
   background: $bg;
-  box-shadow: 0 0 0 1px $primaryT;
-
-  &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
-  }
+  @include card;
 }
 
 .c-virtual_list__item--focus .p-activity_page__item {

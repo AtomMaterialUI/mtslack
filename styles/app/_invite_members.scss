@@ -130,7 +130,7 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 
 .p-members_dialog_item {
   &:hover {
-    background-color: $active;
+    background-color: $hl;
   }
 }
 
