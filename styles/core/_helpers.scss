@@ -127,3 +127,7 @@ a.label {
 .sk_secondary_highlight_bg {
   background-color: $hl;
 }
+
+.sk_foreground_high_solid, .sk_light_gray, .sk_light_grey {
+  color: $text;
+}

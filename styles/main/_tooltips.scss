@@ -1,6 +1,6 @@
 .c-tooltip__tip__arrow {
-  background: $bg;
-  border-color: $border;
+  background: $notif;
+  border-color: $notif;
 }
 
 
@@ -14,25 +14,25 @@
     background-color: $notif;
 
     .c-tooltip__tip__arrow {
-      background-color: $bg;
-      border: 1px solid $border;
+      background-color: $notif;
+      border: 1px solid $notif;
     }
   }
 
   .c-tooltip__tip--left .c-tooltip__tip__arrow {
-    border-left-color: $border;
+    border-left-color: $notif;
   }
 
   .c-tooltip__tip--right .c-tooltip__tip__arrow {
-    border-right-color: $border;
+    border-right-color: $notif;
   }
 
   .c-tooltip__tip--top-left .c-tooltip__tip__arrow, .c-tooltip__tip--top-right .c-tooltip__tip__arrow, .c-tooltip__tip--top .c-tooltip__tip__arrow {
-    border-top-color: $border;
+    border-top-color: $notif;
   }
 
   .c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, .c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, .c-tooltip__tip--bottom .c-tooltip__tip__arrow {
-    border-bottom-color: $border;
+    border-bottom-color: $notif;
   }
 }
 
@@ -51,49 +51,49 @@
 
 .c-tooltip__tip--left {
   .c-tooltip__tip__arrow {
-    border-left-color: $border;
+    border-left-color: $notif;
   }
 }
 
 .c-tooltip__tip--right {
   .c-tooltip__tip__arrow {
-    border-right-color: $border;
+    border-right-color: $notif;
   }
 }
 
 .c-tooltip__tip--top {
   .c-tooltip__tip__arrow {
-    border-top-color: $border;
+    border-top-color: $notif;
   }
 }
 
 .c-tooltip__tip--top-left {
   .c-tooltip__tip__arrow {
-    border-top-color: $border;
+    border-top-color: $notif;
   }
 }
 
 .c-tooltip__tip--top-right {
   .c-tooltip__tip__arrow {
-    border-top-color: $border;
+    border-top-color: $notif;
   }
 }
 
 .c-tooltip__tip--bottom {
   .c-tooltip__tip__arrow {
-    border-bottom-color: $border;
+    border-bottom-color: $notif;
   }
 }
 
 .c-tooltip__tip--bottom-left {
   .c-tooltip__tip__arrow {
-    border-bottom-color: $border;
+    border-bottom-color: $notif;
   }
 }
 
 .c-tooltip__tip--bottom-right {
   .c-tooltip__tip__arrow {
-    border-bottom-color: $border;
+    border-bottom-color: $notif;
   }
 }
 
