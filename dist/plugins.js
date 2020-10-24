@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v10.3.0',
+  version: 'v11.1.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -64,6 +64,8 @@ const slackPluginsAPI = {
       this.pluginsUI = this._createPluginsUI();
     }
     document.body.append(this.pluginsUI);
+    document.body.classList.add('ReactModal__Body--open');
+    document.getElementsByClassName('p-client_container')[0].setAttribute('aria-hidden', true);
   },
 
   /**
@@ -87,7 +89,7 @@ const slackPluginsAPI = {
 
     // Close btn
     const $closeBtn = document.createElement('button');
-    $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-sk-modal__close_button';
+    $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium c-sk-modal__close_button';
     $closeBtn.innerHTML = `<i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>`;
     // Close the modal
     $closeBtn.addEventListener('keydown', ({ keyCode }) => {
@@ -96,6 +98,8 @@ const slackPluginsAPI = {
       }
     });
     $closeBtn.addEventListener('click', () => {
+      document.body.classList.remove('ReactModal__Body--open');
+      document.getElementsByClassName('p-client_container')[0].removeAttribute('aria-hidden');
       requestAnimationFrame(() => $reactModal.remove());
     });
 
@@ -1006,6 +1010,73 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
 }
 
 window.slackPluginsAPI.plugins.accent = new AccentPlugin();
+
+// Fonts.js
+window.slackPluginsAPI = window.slackPluginsAPI || {};
+window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
+
+class OverlayPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'overlay';
+    this.desc = 'Modal Overlays';
+    this.longDescription = 'Add an overlay when modals are open';
+    this.enabled = true;
+    this.shortcut = '';
+    this.icon = 'share-screen';
+
+    this.tweakEnabled = false;
+  }
+
+  onToolbarClick() {
+    this.toggleHide();
+  }
+
+  /**
+   * Toggle the setting
+   */
+  toggleHide() {
+    this.tweakEnabled = !this.tweakEnabled;
+    this.applyOverlay();
+  }
+
+  /**
+   * Apply Dim
+   */
+  applyOverlay() {
+    if (this.tweakEnabled) {
+      document.body.classList.add('mtslack--overlay');
+    }
+    else {
+      document.body.classList.remove('mtslack--overlay');
+    }
+    window.slackPluginsAPI.saveSettings();
+  }
+
+  /**
+   * Apply
+   */
+  apply() {
+    this.applyOverlay();
+  }
+
+  /**
+   * Save Settings
+   */
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      tweakEnabled: this.tweakEnabled
+    };
+  }
+
+  isApplied() {
+    return this.tweakEnabled;
+  }
+}
+
+window.slackPluginsAPI.plugins.hideAway = new OverlayPlugin();
 
 
 /** END DO NOT TOUCH THIS PART */
