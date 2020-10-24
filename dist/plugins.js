@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v11.1.0',
+  version: 'v12.0.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -1076,7 +1076,7 @@ class OverlayPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.hideAway = new OverlayPlugin();
+window.slackPluginsAPI.plugins.overlay = new OverlayPlugin();
 
 
 /** END DO NOT TOUCH THIS PART */

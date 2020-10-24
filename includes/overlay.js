@@ -63,4 +63,4 @@ class OverlayPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.hideAway = new OverlayPlugin();
+window.slackPluginsAPI.plugins.overlay = new OverlayPlugin();
