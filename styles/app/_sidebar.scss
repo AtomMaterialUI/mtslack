@@ -238,6 +238,13 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT !important;
 }
 
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_plus:hover,
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_ellipsis:hover,
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_expand_container--show_more_feature:hover {
+  background: $hl;
+  color: $primary;
+}
+
 /** `opacity: 1` color overrides */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected)
 .p-channel_sidebar__name,
