@@ -77,6 +77,18 @@ $fontFamily: var(--fontFamily, Slack-Lato, appleLogo, sans-serif);
 $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !important);
 
 @import 'core/index';
-@import 'main/index';
-@import 'app/index';
-@import 'settings/index';
+#mtslack {
+  @import 'main/index';
+  @import 'app/index';
+  @import 'settings/index';
+}
+@import 'app/landing';
+
+// Dim sidebar
+.p-channel_sidebar__name.p-channel_sidebar__name--away,
+.p-channel_sidebar__name > .p-channel_sidebar__name--away {
+  .mtslack--dim & {
+    opacity: .4 !important;
+  }
+}
+

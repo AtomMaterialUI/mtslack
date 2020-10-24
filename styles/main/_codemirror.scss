@@ -52,7 +52,17 @@
   border-left: 1px solid $borderLight;
 }
 
+.cm-s-yonce,
 .cm-s-default {
+  .cm-negative {
+    color: $red;
+  }
+
+  .cm-positive {
+    color: $green;
+  }
+
+
   .cm-header {
     color: $blue;
   }
@@ -60,29 +70,25 @@
   .cm-quote {
     color: $green;
   }
-}
 
-.cm-negative {
-  color: $red;
-}
+  .cm-tag.cm-bracket,
+  .cm-operator, .cm-qualifier {
+    color: $cyan;
+  }
 
-.cm-positive {
-  color: $green;
-}
-
-.cm-s-default {
   .cm-keyword {
     color: $purple;
   }
 
   .cm-atom {
-    color: $blue;
+    color: $orange;
   }
 
   .cm-number {
     color: $orange;
   }
 
+  .cm-callee, .cm-property.cm-def, .cm-type.cm-def,
   .cm-def {
     color: $blue;
   }
@@ -119,10 +125,12 @@
     color: $fg;
   }
 
+  .cm-comment.cm-tag,
   .cm-tag {
     color: $red;
   }
 
+  .cm-comment.cm-attribute,
   .cm-attribute {
     color: $yellow;
   }
@@ -134,10 +142,15 @@
   .cm-link {
     color: $accent;
   }
-}
 
-.cm-invalidchar, .cm-s-default .cm-error {
-  color: $red;
+  .cm-property, .cm-variable {
+    color: $silver;
+  }
+
+  .cm-invalidchar,
+  .cm-error {
+    color: $red2;
+  }
 }
 
 div.CodeMirror span {
