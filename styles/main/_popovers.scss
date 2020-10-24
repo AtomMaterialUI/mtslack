@@ -40,5 +40,6 @@
 }
 
 .c-popover .c-popover__content {
-  filter: drop-shadow(2px 4px 6px black)
+  //filter: drop-shadow(2px 4px 6px black)
+  box-shadow: 2px 4px 6px black;
 }
