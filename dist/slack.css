@@ -1404,7 +1404,7 @@ a.label {
   #mtslack .c-toast .c-button--focus-visible:focus, #mtslack .c-toast .c-link--focus-visible:focus, #mtslack .c-toast .focus-ring {
     box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
   #mtslack .c-icon_button {
-    border-radius: 50%; }
+    border-radius: 25px; }
     #mtslack .c-icon_button.c-texty_input__button {
       color: var(--fg); }
     #mtslack .c-icon_button.c-texty_input__button--send {
@@ -1458,7 +1458,7 @@ a.label {
     color: var(--primary); }
   #mtslack .p-ia_details_popover__description__created_text {
     color: var(--text); }
-  #mtslack .c-popover .c-popover__content {
+  #mtslack .c-popover .c-popover__content .c-tooltip__tip {
     box-shadow: 2px 4px 6px black; }
   #mtslack .c-tooltip__tip__arrow {
     background: var(--notif);
@@ -2000,7 +2000,8 @@ a.label {
     border-top: 1px solid var(--active); }
   #mtslack .c-menu {
     background-color: var(--notif);
-    color: var(--fg); }
+    color: var(--fg);
+    box-shadow: 2px 4px 6px black; }
   #mtslack .c-menu_item__header {
     color: var(--fg); }
   #mtslack .c-menu--nightshade_elevation {
@@ -2337,7 +2338,7 @@ a.label {
     border: 1px solid transparent; }
     #mtslack .c-date_picker_calendar__date.c-date_picker_calendar__date--is_active:focus, #mtslack .c-date_picker_calendar__date:not(.c-date_picker_calendar__date--disabled):hover {
       border-color: var(--accent);
-      border-radius: 50%; }
+      border-radius: 25px; }
     #mtslack .c-date_picker_calendar__date.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected), #mtslack .c-date_picker_calendar__date:not(.c-date_picker_calendar__date--disabled):not(.c-date_picker_calendar__date--is_selected):hover {
       background-color: var(--active); }
   #mtslack .c-date_picker_calendar__date--is_today {
@@ -2367,7 +2368,8 @@ a.label {
     border-color: var(--accent); }
   #mtslack .c-mini_calendar__month_button--is_active:focus:not(.c-mini_calendar__month_button--is_selected),
   #mtslack .c-mini_calendar__month_button:not(.c-mini_calendar__month_button--is_selected):not(:disabled):hover {
-    background-color: var(--accentT); }
+    background-color: var(--accentT);
+    color: var(--selectFg2); }
   #mtslack .c-mini_calendar__month_button--is_selected {
     color: var(--selectFg2);
     background-color: var(--accent); }
@@ -3182,7 +3184,7 @@ a.label {
     box-shadow: none; }
   #mtslack .p-top_nav__button {
     color: var(--fg);
-    border-radius: 50%; }
+    border-radius: 25px; }
   #mtslack .p-top_nav__button:hover {
     background: var(--accent);
     color: var(--selectFg2); }
@@ -3778,7 +3780,7 @@ a.label {
   #mtslack audio::-webkit-media-controls-play-button {
     box-shadow: inset 0 0 0 20px var(--tree);
     height: 32px;
-    border-radius: 50%; }
+    border-radius: 25px; }
     #mtslack audio::-webkit-media-controls-mute-button:hover,
     #mtslack audio::-webkit-media-controls-play-button:hover {
       box-shadow: inset 0 0 0 20px var(--primaryT); }
@@ -6032,6 +6034,7 @@ a.label {
   #mtslack .c-texty_input__container--use_focus_ring.c-texty_input__container--invalid .c-texty_input.focus {
     box-shadow: 0 0 0 1px var(--red), 0 0 0 5px var(--red); }
   #mtslack .c-texty_input_unstyled__container .ql-placeholder {
+    filter: none;
     color: var(--disabled); }
   #mtslack .c-texty_input_unstyled__warning {
     background: var(--red);
@@ -7516,7 +7519,7 @@ a.label {
   #mtslack .c-message_actions__emoji_button:hover {
     background: var(--active); }
   #mtslack .c-icon-selected--true {
-    border-radius: 50%;
+    border-radius: 25px;
     background: var(--hl);
     border: 14px solid var(--hl);
     margin-right: .5em !important; }
@@ -8134,7 +8137,7 @@ a.label {
     #mtslack .c-search__input_and_close__close:hover {
       background: var(--accent);
       color: var(--selectFg2);
-      border-radius: 50%; }
+      border-radius: 25px; }
   #mtslack .c-message_group {
     border: 1px solid var(--border);
     background-color: var(--bg); }
@@ -9124,8 +9127,8 @@ a.label {
       box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT), inset 0 -2px 0 0 var(--accent); }
   #mtslack .c-tabs__tab_count {
     background-color: var(--active);
-    min-width: 18px;
-    border-radius: 50%;
+    min-width: 22px;
+    border-radius: 25px;
     padding: 2px; }
   #mtslack .c-tabs__tab_count_placeholder,
   #mtslack .c-tabs__tab_placeholder {
@@ -11428,5 +11431,10 @@ a.label {
 .p-channel_sidebar__name > .p-channel_sidebar__name--away {
   opacity: .4 !important; }
 
+.mtslack--overlay.ReactModal__Body--open .c-search_modal:before,
 .mtslack--overlay.ReactModal__Body--open .c-sk-overlay:before {
-  background: rgba(0, 0, 0, 0.5) !important; }
+  background: rgba(0, 0, 0, 0.5) !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }

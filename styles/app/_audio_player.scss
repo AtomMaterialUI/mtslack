@@ -21,7 +21,7 @@ audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-play-button {
   box-shadow: inset 0 0 0 20px $tree;
   height: 32px;
-  border-radius: 50%;
+  border-radius: 25px;
 
   &:hover {
     box-shadow: inset 0 0 0 20px $primaryT;

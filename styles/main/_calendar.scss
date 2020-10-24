@@ -33,7 +33,7 @@
   &.c-date_picker_calendar__date--is_active:focus,
   &:not(.c-date_picker_calendar__date--disabled):hover {
     border-color: $accent;
-    border-radius: 50%;
+    border-radius: 25px;
   }
 
   &.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected),
@@ -90,6 +90,7 @@
 .c-mini_calendar__month_button--is_active:focus:not(.c-mini_calendar__month_button--is_selected),
 .c-mini_calendar__month_button:not(.c-mini_calendar__month_button--is_selected):not(:disabled):hover {
   background-color: $accentT;
+  color: $selectFg;
 }
 
 .c-mini_calendar__month_button--is_selected {

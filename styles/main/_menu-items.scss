@@ -359,6 +359,8 @@
 .c-menu {
   background-color: $notif;
   color: $fg;
+
+  @include dropShadow;
 }
 
 .c-menu_item__header {

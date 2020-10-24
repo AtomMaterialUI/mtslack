@@ -95,9 +95,18 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
 
 // React overlay
 .mtslack--overlay.ReactModal__Body--open {
+  //.p-client_container[aria-hidden="true"] {
+  //  filter: brightness(0.5);
+  //}
+
+  .c-search_modal,
   .c-sk-overlay {
     &:before {
       background: rgba(0, 0, 0, 0.5) !important;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
     }
   }
 }

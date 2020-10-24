@@ -13,3 +13,7 @@
 @mixin pane {
   box-shadow: -2px 0 7px 0 rgba(0,0,0,.3);
 }
+
+@mixin dropShadow {
+  box-shadow: 2px 4px 6px black;
+}
