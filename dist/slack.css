@@ -655,6 +655,9 @@ a.label {
 [lang] .c-menu {
   font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
 
+[lang] .p-huddle_details {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
 #mtslack {
   /* Override presence icons */
   /** `opacity: 1` color overrides */
@@ -11310,18 +11313,20 @@ a.label {
   #mtslack .p-huddle_sidebar_footer__member_count_icon {
     fill: var(--fg); }
   #mtslack .p-story_viewer__modal {
-    background-color: #1d1c1d;
-    color: rgba(255, 255, 255, 0.7); }
+    background-color: var(--bg);
+    color: var(--text); }
     #mtslack .p-story_viewer__modal .c-sk-modal__close_button {
-      color: rgba(255, 255, 255, 0.7); }
+      color: var(--text); }
       #mtslack .p-story_viewer__modal .c-sk-modal__close_button:hover {
-        color: rgba(255, 255, 255, 0.7); }
+        color: var(--primary); }
+  #mtslack .p-story_viewer_modal__footer__progress {
+    background: var(--accent); }
   #mtslack .p-story_viewer__progress {
-    background-color: #616061; }
+    background-color: var(--button); }
     #mtslack .p-story_viewer__progress.p-story_viewer__progress--viewed {
-      background-color: #fff; }
+      background-color: var(--accent); }
   #mtslack .p-story_viewer__progress__bar {
-    background: #fff; }
+    background: var(--button); }
   #mtslack .p-story_viewer__control {
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -11335,52 +11340,65 @@ a.label {
   #mtslack .p-stories_screen_selector__screen:hover {
     background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13); }
   #mtslack .p-stories_uploader__video {
-    background: #000; }
+    background: var(--bg); }
   #mtslack .p-stories_uploader__footer {
-    background: #000; }
+    background: var(--bg); }
   #mtslack .p-stories_uploader__footer__button {
-    background: #000;
-    color: #ddd;
-    border-color: #000; }
+    background: var(--button);
+    color: var(--fg);
+    border: var(--button); }
     #mtslack .p-stories_uploader__footer__button:active, #mtslack .p-stories_uploader__footer__button:focus, #mtslack .p-stories_uploader__footer__button:hover {
-      background: #000;
-      border-color: #616061; }
+      background: var(--hl);
+      border-color: var(--hl);
+      color: var(--selectFg2); }
   #mtslack .p-stories_uploader__footer__button--upload {
-    color: #33957b;
-    border-color: #33957b; }
+    color: var(--green);
+    border-color: var(--green);
+    opacity: .9; }
     #mtslack .p-stories_uploader__footer__button--upload:active, #mtslack .p-stories_uploader__footer__button--upload:focus, #mtslack .p-stories_uploader__footer__button--upload:hover {
-      color: #66af9c;
-      border-color: #66af9c; }
+      color: var(--green);
+      border-color: var(--green);
+      opacity: 1; }
   #mtslack .p-stories_uploader__footer__more {
-    color: #868686; }
+    color: var(--text); }
     #mtslack .p-stories_uploader__footer__more:active, #mtslack .p-stories_uploader__footer__more:focus, #mtslack .p-stories_uploader__footer__more:hover {
-      color: #ddd; }
+      color: var(--selectFg2); }
   #mtslack .p-stories_uploader__record {
-    border: 2px solid #fff; }
+    border: 2px solid var(--button); }
   #mtslack .p-stories_uploader__record__inner {
-    background-color: #de4e2b; }
+    background-color: var(--red); }
   #mtslack .p-stories_uploader__footer__timer {
-    color: #ddd; }
+    color: var(--fg); }
+  #mtslack .p-story_viewer_modal__reactions__toggle {
+    background: var(--button);
+    color: var(--fg); }
+    #mtslack .p-story_viewer_modal__reactions__toggle:hover {
+      background: var(--hl);
+      color: var(--primary); }
   #mtslack .p-stories_uploader__footer__camera_toggle_label {
-    color: #ddd; }
+    color: var(--fg); }
   #mtslack .p-story_viewer_modal {
-    background: #1d1c1d;
-    color: #fff;
-    box-shadow: 0 0 0 1px rgba(248, 248, 248, 0.1); }
+    background: var(--bg);
+    color: var(--fg);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
     #mtslack .p-story_viewer_modal .c-pillow_file__video {
-      background: #1d1c1d; }
+      background: var(--bg); }
   #mtslack .p-story_viewer_modal__header {
-    box-shadow: inset 0 -1px 0 0 rgba(221, 221, 221, 0.13); }
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.13); }
   #mtslack .p-story_viewer_modal__footer__add {
-    background: rgba(221, 221, 221, 0.13); }
+    background: var(--button);
+    color: var(--fg); }
+    #mtslack .p-story_viewer_modal__footer__add:hover {
+      background: var(--hl);
+      color: var(--primary); }
   #mtslack .p-story_viewer_modal__navigation__button {
     background: rgba(29, 28, 29, 0.7);
-    box-shadow: inset 0 0 0 1px rgba(221, 221, 221, 0.13);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.13);
     color: #ddd; }
     #mtslack .p-story_viewer_modal__navigation__button:hover {
       color: #f8f8f8;
       background: #1d1c1d;
-      box-shadow: inset 0 0 0 1px rgba(221, 221, 221, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2); }
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2); }
   #mtslack .p-stories_scroller--chrono .p-gallery_scroller__wrapper {
     background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
     --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
