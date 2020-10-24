@@ -38,3 +38,7 @@
 .p-ia_details_popover__description__created_text {
   color: $text;
 }
+
+.c-popover .c-popover__content {
+  filter: drop-shadow(2px 4px 6px black)
+}

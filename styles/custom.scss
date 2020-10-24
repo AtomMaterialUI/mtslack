@@ -92,3 +92,10 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
   }
 }
 
+.mtslack--overlay.ReactModal__Body--open {
+  .p-client_container[aria-hidden=true] {
+    filter: brightness(0.5);
+    transition: all .2s ease-out;
+  }
+}
+

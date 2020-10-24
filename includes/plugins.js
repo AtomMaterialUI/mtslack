@@ -64,6 +64,8 @@ const slackPluginsAPI = {
       this.pluginsUI = this._createPluginsUI();
     }
     document.body.append(this.pluginsUI);
+    document.body.classList.add('ReactModal__Body--open');
+    document.getElementsByClassName('p-client_container')[0].setAttribute('aria-hidden', true);
   },
 
   /**
@@ -87,7 +89,7 @@ const slackPluginsAPI = {
 
     // Close btn
     const $closeBtn = document.createElement('button');
-    $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-sk-modal__close_button';
+    $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium c-sk-modal__close_button';
     $closeBtn.innerHTML = `<i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>`;
     // Close the modal
     $closeBtn.addEventListener('keydown', ({ keyCode }) => {
@@ -96,6 +98,8 @@ const slackPluginsAPI = {
       }
     });
     $closeBtn.addEventListener('click', () => {
+      document.body.classList.remove('ReactModal__Body--open');
+      document.getElementsByClassName('p-client_container')[0].removeAttribute('aria-hidden');
       requestAnimationFrame(() => $reactModal.remove());
     });
 
@@ -416,6 +420,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 //= include fonts.js
 //= include monofonts.js
 //= include accent.js
+//= include overlay.js
 
 /** END DO NOT TOUCH THIS PART */
 

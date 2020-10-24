@@ -1,49 +1,55 @@
+.p-client--blurred .p-top_nav {
+  filter: none;
+}
+
 .p-top_nav {
-  background: $bg2 !important;
+  background: $bg2;
+  color: $fg;
+  box-shadow: none;
 }
 
 .p-top_nav__button {
-  color: $fg !important;
-  border-radius: 50% !important;
+  color: $fg;
+  border-radius: 50%;
 }
 
 .p-top_nav__button:hover {
-  background: $accent !important;
-  color: $selectFg !important;
+  background: $accent;
+  color: $selectFg;
 }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button {
-  color: $fg !important;
+  color: $fg;
 }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
-  background: $accent !important;
-  color: $selectFg !important;
+  background: $accent;
+  color: $selectFg;
 }
 
 .p-top_nav__search {
-  color: $fg !important;
-  background: $contrast !important;
-  box-shadow: inset 0 0 0 1px $borderLight !important;
+  color: $fg;
+  background: $contrast;
+  box-shadow: inset 0 0 0 1px $borderLight;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px $primary !important;
+    box-shadow: inset 0 0 0 1px $primary;
   }
 
   &:hover {
-    background: $contrast !important;
-    color: $primary !important;
-    box-shadow: inset 0 0 0 1px $primary !important;
+    background: $contrast;
+    color: $primary;
+    box-shadow: inset 0 0 0 1px $primary;
   }
 }
 
 .p-top_nav__help__badge {
-  background: $accent !important;
-  box-shadow: 0 0 0 2px $bg !important;
+  background: $accent;
+  box-shadow: 0 0 0 2px $bg;
 }
 
 .p-top_nav__ia_edu_throbber circle {
-  fill: $primary !important;
+  fill: $primary;
 }
 
 .p-top_nav__search__container--active {

@@ -21,7 +21,7 @@ Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 - Solarized Light ![solarlight.png](doc/v2/solarlight.png)
 - Night Owl ![nightowl.png](doc/v2/nightowl.png)
 - Light Owl ![lightowl.png](doc/v2/lightowl.png)
-- Moonlight (**NEW!**) ![moonlight.png](doc/v2/moonlight.png)
+- Moonlight ![moonlight.png](doc/v2/moonlight.png)
 
 ----------------------------
 
@@ -110,6 +110,10 @@ activate the tweak.
 ![Tweaks](doc/v2/tweaksToolbar.png)
 
 These settings are saved in the application's Local Storage.
+
+#### Modal Overlays
+
+This button will toggle an overlay to display whenever settings or menus are open.
 
 #### Dim Absent People
 
