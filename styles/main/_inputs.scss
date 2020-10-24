@@ -255,10 +255,7 @@ input[type=text].c-input_text {
   color: $disabled;
 }
 
-[lang] .p-message_pane_input__disabled,
-[lang] .p-message_pane_input__preview {
-  font-family: $fontFamily;
-}
+
 
 .p-message_pane_input__preview {
   background-color: $contrast;

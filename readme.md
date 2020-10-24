@@ -113,7 +113,7 @@ These settings are saved in the application's Local Storage.
 
 #### Modal Overlays
 
-This button will toggle an overlay to display whenever settings or menus are open.
+This button will toggle an overlay to display whenever settings are open.
 
 #### Dim Absent People
 

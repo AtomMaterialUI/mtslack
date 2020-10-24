@@ -1,6 +1,4 @@
-[lang] .c-texty_input {
-  font-family: $fontFamily;
-}
+
 
 .c-texty_input {
   border: 1px solid $button;
@@ -185,10 +183,7 @@
   }
 }
 
-[lang] .c-basic_container,
-[lang] .c-texty_input_unstyled {
-  font-family: $fontFamily;
-}
+
 
 .c-texty_input_unstyled__container {
   .ql-placeholder {

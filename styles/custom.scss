@@ -77,12 +77,13 @@ $fontFamily: var(--fontFamily, Slack-Lato, appleLogo, sans-serif);
 $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !important);
 
 @import 'core/index';
+@import 'core/landing';
+@import 'core/fonts';
 #mtslack {
   @import 'main/index';
   @import 'app/index';
   @import 'settings/index';
 }
-@import 'app/landing';
 
 // Dim sidebar
 .p-channel_sidebar__name.p-channel_sidebar__name--away,
@@ -92,10 +93,12 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
   }
 }
 
+// React overlay
 .mtslack--overlay.ReactModal__Body--open {
-  .p-client_container[aria-hidden=true] {
-    filter: brightness(0.5);
-    transition: all .2s ease-out;
+  .c-sk-overlay {
+    &:before {
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
   }
 }
 
