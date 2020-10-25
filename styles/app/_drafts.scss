@@ -25,6 +25,8 @@
 .p-drafts_page__draft_badge {
   background: $accent;
   color: $selectFg;
+  padding: 0 4px;
+  border-radius:5px;
 }
 
 .p-drafts_page__draft_thread_participants {
@@ -32,7 +34,7 @@
 }
 
 .p-drafts_page__draft--focused {
-  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-drafts_page__draft_badge--text {
