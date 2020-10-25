@@ -518,13 +518,31 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   color: $disabled;
 }
 
-.p-channel_sidebar__list {
-  .p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
-  .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
-    background: $button;
-  }
+.p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
+.p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+  background: $button;
+}
 
-  .p-channel_sidebar__link--add-more-items.p-channel_sidebar__channel--unread .p-channel_sidebar__channel_icon_prefix--comfy {
-    background: $button;
-  }
+.p-channel_sidebar__channel.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+  background: transparent;
+  color: $text;
+}
+
+.p-channel_sidebar__link--add-more-items .p-channel_sidebar__channel_icon_prefix--comfy {
+  background: transparent;
+  color: $fg;
+}
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__channel_icon_prefix--comfy {
+  background: $button;
+  color: $primary;
+}
+
+.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+  color: $text;
+  background: transparent;
+}
+
+.p-channel_sidebar__user_avatar_presence_bg {
+  background: transparent;
 }

@@ -95,10 +95,6 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
 
 // React overlay
 .mtslack--overlay.ReactModal__Body--open {
-  //.p-client_container[aria-hidden="true"] {
-  //  filter: brightness(0.5);
-  //}
-
   .c-search_modal,
   .c-sk-overlay {
     &:before {
@@ -111,3 +107,45 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
   }
 }
 
+.mtslack--with_presence {
+  .p-channel_sidebar__channel_icon_prefix--comfy {
+    background: none !important;
+    color: $fg !important;
+    opacity: 1 !important;
+
+    .p-channel_sidebar__channel--muted & {
+      opacity: .64 !important;
+    }
+
+    .p-channel_sidebar__channel--unread & {
+      color: $primary !important;
+    }
+  }
+
+  .p-channel_sidebar__user_avatar {
+    img {
+      display: none;
+    }
+
+    .p-channel_sidebar__presence_icon {
+      &.p-channel_sidebar__presence_icon--on-avatar-border {
+        -webkit-text-stroke-width: 0px;
+      }
+
+      &.p-channel_sidebar__presence_icon--on-avatar {
+        top: 0;
+        left: 0;
+        margin: 0 1px 0 -4px;
+
+        &::before {
+          font-size: 20px;
+          line-height: 1;
+        }
+      }
+    }
+
+    //p-channel_sidebar__presence_icon--dim_enabled,
+    //c-presence--away,
+    //c-icon--presence-offline
+  }
+}
