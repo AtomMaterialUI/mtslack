@@ -115,6 +115,10 @@ These settings are saved in the application's Local Storage.
 
 This button will toggle an overlay to display whenever settings are open.
 
+#### Presence Icons
+
+This button will restore the old school presence icons in the sidebar
+
 #### Dim Absent People
 
 This button will dim absent people from the sidebar, making the present ones more prominent.
