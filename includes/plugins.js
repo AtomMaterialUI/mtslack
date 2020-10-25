@@ -416,11 +416,12 @@ window.slackPluginsAPI = slackPluginsAPI;
 
 //= include base.js
 //= include dim.js
+//= include withPresence.js
 //= include themes.js
+//= include overlay.js
 //= include fonts.js
 //= include monofonts.js
 //= include accent.js
-//= include overlay.js
 
 /** END DO NOT TOUCH THIS PART */
 
