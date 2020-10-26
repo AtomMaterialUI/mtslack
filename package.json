@@ -88,6 +88,7 @@
     "lint-staged": "^10.0.7",
     "npx": "^10.2.0",
     "prettier": "^1.19.1",
+    "stylelint": "^13.7.2",
     "stylelint-prettier": "^1.1.2"
   }
 }
