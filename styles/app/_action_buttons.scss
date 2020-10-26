@@ -96,14 +96,24 @@
 }
 
 .c-message_actions__emoji_button {
+  border-radius: 25px;
+
   &:hover {
     background: $active;
   }
+}
+
+.c-message_actions__emoji_button--hover-light {
+  background-color: $hl;
+}
+
+.c-message_actions__emoji_button--hover-dark {
+  background-color: $hl;
 }
 
 .c-icon-selected--true {
   border-radius: 25px;
   background: $hl;
   border: 14px solid $hl;
-  margin-right: .5em !important;
+  margin-right: 0.5em !important;
 }
