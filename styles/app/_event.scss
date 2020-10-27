@@ -1,6 +1,16 @@
 .p-event {
   border: 1px solid $borderLight;
   background-color: $bg;
+
+  &:active, &:focus, &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.p-event--focused {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
 .p-event_icon {
@@ -80,7 +90,28 @@
   color: $text;
 }
 
+.p-event_rsvp--selection,
 .p-event_rsvp-choice {
   background-color: $accent;
   color: $selectFg;
+}
+
+.p-event_rsvp-options {
+  button {
+    &:not(.p-event_rsvp--selection):hover {
+      background-color: $hl;
+    }
+
+    &.p-event_rsvp--selection:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-event_join_call_text {
+  color: $accent;
+}
+
+.p-event_join_call_text_no_meeting {
+  color: $text;
 }
