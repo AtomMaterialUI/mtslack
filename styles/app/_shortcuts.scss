@@ -144,3 +144,29 @@
 .p-shortcuts_menu_add_shortcut_modal__footer a.p-shortcuts_menu_add_shortcut_modal__footer_link {
   color: $accent2;
 }
+
+.p-shortcuts_menu_v2 {
+  background: $bg2;
+  box-shadow: 0 0 0 1px $notif, 0 4px 12px 0 $notif;
+
+  .p-shortcuts_menu_education {
+    color: $fg;
+  }
+
+  .p-shortcuts_menu_education__wrapper {
+    background: $notif;
+  }
+}
+
+.p-shortcuts_menu_v2_search_input_wrapper {
+  border-bottom-color: $borderLight;
+}
+
+.p-shortcuts_menu_v2_heading {
+  color: $text;
+}
+
+.p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_container_subtext,
+.p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_name {
+  color: $text;
+}
