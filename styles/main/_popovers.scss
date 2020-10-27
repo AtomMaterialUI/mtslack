@@ -44,3 +44,42 @@
     @include dropShadow;
   }
 }
+
+.p-ia_details_popover_prototype {
+  color: $text;
+}
+
+.p-ia_details_popover_prototype__badge {
+  background-color: $button;
+}
+
+.p-ia_details_popover_prototype__button {
+  color: $accent2;
+}
+
+.p-ia_details_popover__pins_count {
+  color: $text;
+}
+
+.p-ia_pins_popover_container {
+  background-color: $notif;
+
+  &:after,
+  &:before {
+    background: $notif;
+    border: 1px solid $notif;
+  }
+
+  &:after {
+    border-color: transparent;
+  }
+}
+
+.p-ia_pins_popover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 18px 48px 0 rgba(0, 0, 0, 0.1);
+  background-color: $notif;
+}
+
+.p-ia_pins_popover__files {
+  color: $primary;
+}
