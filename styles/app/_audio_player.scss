@@ -58,6 +58,14 @@ audio::-webkit-media-controls-time-remaining-display {
   }
 }
 
+.c-audio_player_scrubber__thumb--paused {
+  background: $fg;
+}
+
+.c-audio_player_scrubber__thumb:focus {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
 .p-audio_levels__bubble--inactive {
   background-color: $fg;
 }
@@ -74,8 +82,17 @@ audio::-webkit-media-controls-time-remaining-display {
   background: $button;
   color: $accent;
 
+  &:active,
   &:hover {
     background: $hl;
     color: $primary;
   }
+}
+
+.c-audio_player_states--error {
+  color: $red;
+}
+
+.c-audio_player_states--buffering {
+  color: $text;
 }

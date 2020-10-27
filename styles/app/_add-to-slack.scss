@@ -37,3 +37,41 @@
 .p-add_to_slack_confirmation__see_past_invites {
   color: $text;
 }
+
+.p-add_to_slack_radio {
+  border: 1px solid $borderLight;
+  background: $bg2;
+  @include card;
+
+  &:hover {
+    border: 1px solid $primaryT;
+    background-color: $bg2;
+
+    .p-add_to_slack_radio__checkbox_icon {
+      color: $accent;
+    }
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-add_to_slack_radio--selected {
+  background-color: $bg2;
+  border: 1px solid $primary;
+  @include card;
+
+  &:hover {
+    border: 1px solid $primary;
+    background-color: $bg2;
+
+    .p-add_to_slack_radio__checkbox_icon {
+      color: $accent;
+    }
+  }
+}
+
+.p-add_to_slack_radio__checkbox_icon {
+  color: $accent;
+}
