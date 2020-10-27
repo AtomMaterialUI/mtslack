@@ -1,3 +1,12 @@
+@keyframes unread-highlight {
+  0% {
+    background: $hl;
+  }
+  60% {
+    background: transparent;
+  }
+}
+
 .p-message_pane__unread_banner {
   background: $accent;
   color: $selectFg;
@@ -93,4 +102,8 @@
 
 .p-all_unreads_header__header__sort_dropdown {
   color: $text;
+}
+
+.p-unreads_view__jump_to_section_button {
+  color: $accent2;
 }
