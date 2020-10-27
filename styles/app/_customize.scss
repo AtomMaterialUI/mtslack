@@ -1,0 +1,15 @@
+.p-customize_button--toggle-button {
+  background-color: $button;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-customize_button--toggle-cta {
+  color: $primary;
+}
+
+.p-customize_button--toggle-icon {
+  color: $primary;
+}

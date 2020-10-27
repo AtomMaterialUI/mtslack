@@ -1,0 +1,16 @@
+.p-expand_channels_button--toggle-button {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-expand_channels_button--toggle-cta {
+  color: $primary;
+}
+
+.p-channel_select--warning {
+  color: $text;
+}
