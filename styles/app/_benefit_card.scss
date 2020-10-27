@@ -45,3 +45,13 @@
 .p-paid_benefits_view__alert .p-paid_benefits_view__alert-link {
   color: $accent2;
 }
+
+.p-paid_benefits_card__container {
+  background-color: $bg2;
+}
+
+.p-paid_benefits_card__link {
+  > div:first-child {
+    border-right: 1px solid $borderLight;
+  }
+}
