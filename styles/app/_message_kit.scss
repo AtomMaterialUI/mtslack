@@ -63,6 +63,15 @@
   }
 }
 
+@keyframes c-message_kit--highlight {
+  20% {
+    background: $hl;
+  }
+  60% {
+    background: $hl;
+  }
+}
+
 .p-message_file__email_draft {
   border: 1px solid $borderLight;
   background: $bg;
