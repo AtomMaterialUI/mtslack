@@ -67,3 +67,37 @@
     box-shadow: none;
   }
 }
+
+@keyframes "btn-shadow-pulse-aubergine" {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    border: 1px solid #4a154b;
+  }
+  10%,
+  50% {
+    border: 1px solid #4a154b;
+  }
+  95%,
+  to {
+    box-shadow: none;
+  }
+}
+
+@keyframes "btn-shadow-pulse-orange-dark" {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    border: 1px solid #e8912d;
+  }
+  10%,
+  50% {
+    border: 1px solid #e8912d;
+  }
+  95%,
+  to {
+    box-shadow: none;
+  }
+}

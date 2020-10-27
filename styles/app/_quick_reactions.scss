@@ -6,8 +6,8 @@
 
 .p-quick_reactions_customization_tooltip--dark {
   background: $notif;
+  box-shadow: 0 0 0 1px $notif;
 }
-
 
 .p-quick_reactions_customization_tooltip_arrow_outer {
   border-top: 9px solid $notif;
@@ -21,6 +21,29 @@
   border-top: 10px solid $notif;
 }
 
+.p-quick_reactions_customization_tooltip_arrow_outer--dark {
+  border-top: 10px solid $notif;
+}
+
 .p-quick_reactions_customization_tooltip_dismiss_button {
   color: $accent;
+}
+
+.p-quick_reactions_customization_tooltip_icon_lightbulb--dark {
+  color: $yellow;
+}
+
+.p-prefs_modal--quick_reactions_customization_slots {
+  @include card;
+  border-radius: 25px;
+  border: 1px solid $button;
+}
+
+.p-prefs_modal--quick_reactions_customization_slots--dark {
+  border: 1px solid $button;
+}
+
+.p-prefs_modal--quick_reactions_customization_slots:hover {
+  background-color: $hl;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
