@@ -1,0 +1,32 @@
+.p-trouble_loading_overlay {
+  background: $bg;
+  color: $fg;
+}
+
+.p-trouble_loading {
+  background: $notif;
+  border-color: $notif;
+  color: $fg;
+}
+
+.Unreachable-Webdata {
+  background: $contrast;
+
+  .background {
+    background: $contrast !important;
+  }
+
+  > div {
+    color: $fg !important;
+  }
+
+  #downloadLogsButton {
+    background: $bg;
+    border-color: $fg;
+    color: $fg;
+  }
+  #restartButton {
+    background: $button;
+    color: $fg;
+  }
+}

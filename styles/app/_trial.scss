@@ -25,3 +25,17 @@
 .p-trial_awareness_modal__img_text {
   color: $text;
 }
+
+.p-trial_message_limit_header {
+  color: $fg;
+  background-color: $bg2;
+  border-color: $accent;
+}
+
+.p-trial_message_limit_header__icon {
+  color: $accent;
+}
+
+.p-trial_message_limit_header a {
+  color: $accent2;
+}

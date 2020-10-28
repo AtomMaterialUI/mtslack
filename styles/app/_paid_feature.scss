@@ -27,3 +27,21 @@
     border-top-color: $notif;
   }
 }
+
+.p-paid_feature_badge__coachmark--bottom {
+  &:before {
+    border-bottom-color: $borderLight;
+  }
+
+  &:after {
+    border-bottom-color: $bg2;
+  }
+}
+
+.p-paid_feature_badge__coachmark--dark {
+  color: $fg;
+
+  .c-coachmark__close i {
+    color: $fg;
+  }
+}

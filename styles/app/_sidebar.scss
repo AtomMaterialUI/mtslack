@@ -154,6 +154,10 @@ a.c-sidebar_menu__list_item {
   }
 }
 
+.p-channel_sidebar__close_container.p-channel_sidebar_header_link__container:hover * {
+  background: $hl;
+}
+
 .p-channel_sidebar__section-heading--browse:hover,
 .p-channel_sidebar__channel--selected .p-channel_sidebar__channel_icon_prefix,
 .p-channel_sidebar__channel--selected:hover .p-channel_sidebar__channel_icon_prefix,

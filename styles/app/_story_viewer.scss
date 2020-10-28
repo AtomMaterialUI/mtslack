@@ -50,6 +50,10 @@
   }
 }
 
+.p-stories_uploader {
+  background: #1d1c1d;
+}
+
 .p-stories_uploader__video {
   background: $bg;
 }
@@ -105,6 +109,7 @@
 .p-story_viewer_modal__reactions__toggle {
   background: $button;
   color: $fg;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.13);
 
   &:hover {
     background: $hl;
@@ -221,5 +226,23 @@
 
 .p-stories_button__unreads {
   --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 1px solid var(--saf-0);
+}
+
+.p-story_viewer_modal__reactions--open .p-story_viewer_modal__reactions__toggle,
+.p-story_viewer_modal__reactions__toggle:hover {
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.13), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-story_viewer_modal__reactions__reaction {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-story_viewer_modal__reactions__reaction--reacted {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.p-stories_input_button__container:not(.p-stories_input_button__container--first) .p-stories_input_button__add {
+  --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
   border: 1px solid var(--saf-0);
 }
