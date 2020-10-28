@@ -4,6 +4,10 @@
 
 .c-message_attachment__border {
   background-color: $borderLight !important;
+
+  :hover & {
+    background: $primary;
+  }
 }
 
 .c-message_attachment__delete {

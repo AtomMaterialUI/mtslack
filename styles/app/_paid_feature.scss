@@ -1,7 +1,7 @@
 .p-paid_feature_badge {
   background-color: $accentT;
 
-  &:hover {
+  &:hover .p-paid_feature_badge__icon {
     background-color: $accent;
   }
 }
@@ -13,6 +13,11 @@
 .p-paid_feature_badge__coachmark {
   background-color: $notif;
   border: 1px solid $hl;
+  color: $fg;
+
+  .c-coachmark__close i {
+    color: $fg;
+  }
 
   &:before {
     border-top-color: $hl;

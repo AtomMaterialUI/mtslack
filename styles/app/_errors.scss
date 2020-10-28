@@ -3,6 +3,7 @@
 }
 
 .p-error_boundary__error_code {
-  color: $text;
+  color: $red;
   border: 1px solid $borderLight;
+  background: $excluded;
 }

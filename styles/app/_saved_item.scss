@@ -99,7 +99,8 @@
   border-bottom: 1px solid $borderLight;
 
   &:hover {
-    background: $hl;
+    background: $bg2;
+    box-shadow: none;
   }
 }
 

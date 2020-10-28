@@ -1,8 +1,19 @@
-// TODO
+.p-board_proto__input__menu,
 .p-board__input__menu {
   color: $text;
 }
 
+.p-board_proto__title--editing,
+.p-board__title--editing {
+  background: $contrast;
+}
+
+.p-board_proto__title__edit_btn,
+.p-board__title__edit_btn {
+  color: $accent2;
+}
+
+.p-board_proto__row__gutter__hover_item,
 .p-board__row__gutter__hover_item {
   color: $primaryT;
 
@@ -11,123 +22,141 @@
   }
 }
 
+.p-board_proto__info,
 .p-board__info {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  background-color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  color: $fg;
+  background-color: $bg2;
 }
 
+.p-board_proto__input--checked,
 .p-board__input--checked {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $primary;
 }
 
+.p-board_proto__placeholder,
 .p-board__placeholder {
-  background-color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  background-color: $bg2;
 }
 
+.p-board_proto__item--selected,
 .p-board__item--selected {
-  background-color: rgba(29, 155, 209, 0.1);
+  background-color: $selectBg;
+  color: $selectFg;
 }
 
+.p-board_proto__card__container,
 .p-board__card__container {
   &:focus {
-    color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+    color: $primary;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
+.p-board_proto__card__container__menu_btn,
 .p-board__card__container__menu_btn {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
-  border: 1px solid var(--saf-0);
+  background-color: $button;
+  border: 1px solid $button;
 }
 
+.p-board_proto__card,
 .p-board__card {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-
-  &:active, &:focus, &:hover {
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  }
+  background-color: $bg2;
+  @include card;
 }
 
+.p-board_proto__card__overflow_footer,
 .p-board__card__overflow_footer {
-  background: linear-gradient(0deg, rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%, rgba(var(--sk_primary_background, 255, 255, 255), 0));
+  background: linear-gradient(0deg, $bg 40%, rgba(var(--sk_primary_background, 0, 0, 0), 0));
 }
 
+.p-board_proto__card__message__channel,
 .p-board__card__message__channel {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $primary;
 }
 
+.p-board_proto__card__preview,
 .p-board__card__preview {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-color: $bg2;
 }
 
+.p-board_proto__card__content,
 .p-board__card__content {
-  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-top: 1px solid $borderLight;
 }
 
+.p-board_proto__card__content__title,
 .p-board__card__content__title {
-  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+  color: $fg;
 }
 
+.p-board_proto__card__content__author,
 .p-board__card__content__author {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $primary;
 }
 
+.p-board_proto__row__gutter__hover_item,
 .p-board__row__gutter__hover_item {
-  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  color: $fg;
 
   &:hover {
-    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    color: $selectFg;
   }
 }
 
+.p-board_proto__tweet-card,
 .p-board__tweet-card {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 
-  &:active, &:focus, &:hover {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  &:active,
+  &:focus,
+  &:hover {
+    color: $selectFg;
   }
 }
 
+.p-board_proto__tweet-card__header__meta__author__subname,
 .p-board__tweet-card__header__meta__author__subname {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
+.p-board_proto__tweet-card__header__meta__subheader,
 .p-board__tweet-card__header__meta__subheader {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 
   .c-icon {
-    color: #1da1f2;
+    color: $accent;
   }
 }
 
-
+.p-board_proto__card__content__member_title,
 .p-board__card__content__member_title {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $accent2;
 }
 
+.p-board_proto__card__preview__mock_file,
 .p-board__card__preview__mock_file {
-  background-color: #fff;
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  --saf-1: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  box-shadow: inset 5px 7px 0 7px var(--saf-0), inset -5px 7px 0 7px var(--saf-0);
+  background-color: $bg;
+  box-shadow: inset 5px 7px 0 7px $hl, inset -5px 7px 0 7px $hl;
 }
 
+.p-board_proto__card__preview__mock_file__line,
 .p-board__card__preview__mock_file__line {
-  background-color: #ddd;
+  background-color: $bg2;
 }
 
+.p-board_proto__templates,
 .p-board__templates {
+  .p-board_proto__template_option,
   .p-board__template_option {
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    border: 1px solid var(--saf-0);
+    border: 1px solid $borderLight;
   }
 
+  .p-board_proto__template_icon,
   .p-board__template_icon {
-    color: #fff;
+    color: $bg;
   }
+}
+
+.p-board_flexpane__subtitle {
+  color: $text;
 }
