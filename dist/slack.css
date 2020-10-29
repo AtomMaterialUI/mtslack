@@ -11107,9 +11107,6 @@ a.label {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55), 0 0 0 5px rgba(0, 0, 0, 0.11); }
   #mtslack .p-ia__view_header__info .p-classic_nav__model__title__info__topic {
     color: var(--fg); }
-  #mtslack .p-ia__view_header .p-classic_nav__model__title__name,
-  #mtslack .p-ia__view_header__title {
-    font-size: 24px; }
   #mtslack .p-ia__view_header__more,
   #mtslack .p-ia__view_header__tab {
     color: var(--text); }
@@ -11785,3 +11782,7 @@ a.label {
     #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar::before {
       font-size: 20px;
       line-height: 1; }
+  #mtslack .p-ia__view_header .p-classic_nav__model__title__name,
+  #mtslack .p-classic_nav__model__title__name,
+  #mtslack .p-ia__view_header__title {
+    font-size: 24px; }
