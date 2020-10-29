@@ -152,3 +152,37 @@
     color: $text;
   }
 }
+
+.p-status_banner {
+  color: $fg;
+  background-color: $notif;
+}
+
+.p-status_banner__text {
+  color: $fg;
+
+  a {
+    color: $accent2;
+
+    &:active, &:hover, &:visited {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-status_banner--priority {
+  color: $fg;
+  background-color: $bg2;
+
+  .p-status_banner__text {
+    color: $fg;
+
+    a {
+      color: $primary;
+
+      &:active, &:hover, &:visited {
+        color: $selectFg;
+      }
+    }
+  }
+}

@@ -31,6 +31,7 @@
 .p-customize_emoji_list__download_btn {
   .p-customize_emoji_list__icon {
     color: $text;
+
     &:hover {
       color: $primary;
     }
@@ -119,6 +120,7 @@
   background: $accent;
   color: $selectFg;
 }
+
 .c-menu.p-emoji_picker {
   background: $bg2;
   color: $fg;
@@ -132,13 +134,16 @@
   &::-webkit-scrollbar-thumb {
     color: $accent;
   }
+
   &::-webkit-scrollbar-track {
     color: $bg;
     background: $bg2;
   }
+
   &::-webkit-scrollbar-thumb {
     background: $accent;
   }
+
   &::-webkit-scrollbar-corner {
     background: $bg;
   }
@@ -155,30 +160,35 @@
       background: $green;
     }
   }
+
   &[data-color-index='1'] {
     &.key_selection,
     &:hover {
       background: $yellow;
     }
   }
+
   &[data-color-index='2'] {
     &.key_selection,
     &:hover {
       background: $blue;
     }
   }
+
   &[data-color-index='3'] {
     &.key_selection,
     &:hover {
       background: $purple;
     }
   }
+
   &[data-color-index='4'] {
     &.key_selection,
     &:hover {
       background: $orange;
     }
   }
+
   &[data-color-index='5'] {
     &.key_selection,
     &:hover {
@@ -194,6 +204,7 @@
 
 .p-emoji_picker__group_tab {
   color: $fg;
+
   &:hover {
     color: $primary;
     background: $hl;
@@ -239,6 +250,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
   i {
     color: $text;
   }
+
   color: $text;
 }
 
@@ -252,26 +264,31 @@ input[type='text'].c-input_text.p-emoji_picker__input {
       background: $green;
     }
   }
+
   &[data-color-index='1'] {
     &.key_selection {
       background: $cyan;
     }
   }
+
   &[data-color-index='2'] {
     &.key_selection {
       background: $yellow;
     }
   }
+
   &[data-color-index='3'] {
     &.key_selection {
       background: $purple;
     }
   }
+
   &[data-color-index='4'] {
     &.key_selection {
       background: $orange;
     }
   }
+
   &[data-color-index='5'] {
     &.key_selection {
       background: $red;
@@ -311,6 +328,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__skintone_options {
   background: $active;
+
   .p-emoji_picker__skintone_choice {
     &[data-preferred='true'] {
       background: $accent;
@@ -320,6 +338,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__update_overlay {
   background-color: $bg;
+
   p {
     color: $text;
   }

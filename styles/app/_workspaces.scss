@@ -64,3 +64,12 @@
     color: $primary;
   }
 }
+
+.p-manage_shared_channels_row__revoked_invites,
+.p-manage_shared_channels_row__revoked_text {
+  color: $text;
+}
+
+.p-manage_shared_channels__inline_channel_entity {
+  color: $fg;
+}

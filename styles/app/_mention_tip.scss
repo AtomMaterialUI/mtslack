@@ -1,6 +1,7 @@
 .p-mention_tip {
   color: $fg;
   background: $notif;
+  @include dropShadow;
 
   &:focus {
     box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
@@ -9,8 +10,13 @@
 
 .p-mention_tip--dark {
   background: $notif;
+  @include dropShadow;
 }
 
 .p-mention_tip_dismiss_button {
   color: $fg;
+}
+
+.p-mention_tip_icon_lightbulb--dark {
+  color: $yellow;
 }

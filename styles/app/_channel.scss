@@ -330,10 +330,12 @@ button.p-channel_details_about__blurb {
 .p-channel_email_address_modal__body_customization_button {
   color: $primary;
   background: $button;
+  padding-left: 12px;
 
   &:disabled, &:hover {
     color: $selectFg;
     background: $hl;
+    padding-left: 12px;
   }
 }
 
@@ -374,4 +376,20 @@ button.p-channel_details_about__blurb {
 
 .p-ia_channel_details_channel_description__blurb_edit {
   color: $primary;
+}
+
+.p-channel_email_address_modal__body_message_preview_alt {
+  background: $bg2;
+}
+
+.p-channel_email_address_modal__body_message_preview_title_alt {
+  color: $text;
+}
+
+.p-channel_email_address_modal__body_density__sub_text {
+  color: $primary;
+}
+
+.p-channel_email_address_modal__options_overlay_options_list .c-select_options_list__option--active .p-channel_email_address_modal__body_density__sub_text {
+  color: $selectFg;
 }

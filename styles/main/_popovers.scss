@@ -83,3 +83,23 @@
 .p-ia_pins_popover__files {
   color: $primary;
 }
+
+.p-ia_details_popover__orgs_list__show_more {
+  color: $primary;
+}
+
+.p-ia_details_popover__orgs__previous {
+  .p-ia_details_popover__orgs_list_item {
+    color: $text;
+  }
+
+  .c-team_entity__icon {
+    filter: none;
+  }
+}
+
+.p-ia_details_popover__orgs_list_item {
+  .c-base_list_entity__secondary_content {
+    color: $text;
+  }
+}
