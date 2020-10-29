@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v13.2.0',
+  version: 'v13.4.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -56,7 +56,7 @@ const slackPluginsAPI = {
     this.$sideBar.prepend($pluginsSection);
 
     setTimeout(() => {
-      const version = getComputedStyle(document.documentElement).getPropertyValue('--version') || 0;
+      const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replace('"', '') || 'v0.0.0';
       if (version && this.version >= version) {
         return;
       }
