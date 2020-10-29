@@ -70,6 +70,9 @@ const slackPluginsAPI = {
     </button>
   </div>
 </div>`
+      $notif.addEventListener('click', () => {
+        $notif.innerHTML = '';
+      });
     }, 3000);
 
   },

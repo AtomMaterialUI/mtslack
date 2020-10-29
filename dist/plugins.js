@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v13.4.0',
+  version: 'v13.5.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -70,6 +70,9 @@ const slackPluginsAPI = {
     </button>
   </div>
 </div>`
+      $notif.addEventListener('click', () => {
+        $notif.innerHTML = '';
+      });
     }, 3000);
 
   },
