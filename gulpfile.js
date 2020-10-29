@@ -20,6 +20,7 @@ const paths = {
 gulp.task('styles', () => {
   return gulp.src(paths.styles.src)
     .pipe(sass())
+    .pipe(injectVersion())
     .pipe(cleanCSS())
     .pipe(rename({
       basename: 'slack.min'
@@ -29,6 +30,7 @@ gulp.task('styles', () => {
 gulp.task('debugStyles', () => {
   return gulp.src(paths.styles.src)
     .pipe(sass())
+    .pipe(injectVersion())
     .pipe(rename({
       basename: 'slack'
     })).pipe(gulp.dest(paths.styles.dest));

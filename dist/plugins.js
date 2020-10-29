@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v12.1.0',
+  version: 'v13.2.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -54,6 +54,24 @@ const slackPluginsAPI = {
     // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
     this.$sideBar.prepend($pluginsSection);
+
+    setTimeout(() => {
+      const version = getComputedStyle(document.documentElement).getPropertyValue('--version') || 0;
+      if (version && this.version >= version) {
+        return;
+      }
+
+      const $notif = document.querySelector('.p-ia__workspace_banner');
+      $notif.innerHTML = `
+<div role="alert" class="c-banner c-banner--neutral p-ia_banner p-workspace_banner__desktop-notifications" data-qa="banner" style="top: 0px; opacity: 1;">
+  <div class="c-banner__text">A new version of mtslack is available! Run <code>mtslack</code> in a terminal to update.</div>
+    <button class="c-button-unstyled c-icon_button c-icon_button--dark c-icon_button--size_medium c-banner__close" aria-label="Dismiss" type="button">
+    <i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>`
+    }, 3000);
+
   },
 
   /**

@@ -35,7 +35,9 @@
 //  --silver: #ABB2BF;
 //  --black: #21252B;
 //}
-
+:root {
+  --version: '%%GULP_INJECT_VERSION%%';
+}
 $primary: var(--primary);
 $primaryT: var(--primaryT);
 $accent: var(--accent);
