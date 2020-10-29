@@ -152,4 +152,10 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
       //c-icon--presence-offline
     }
   }
+
+  .p-ia__view_header .p-classic_nav__model__title__name,
+  .p-classic_nav__model__title__name,
+  .p-ia__view_header__title {
+    font-size: 24px; // todo use tweak for that?
+  }
 }
