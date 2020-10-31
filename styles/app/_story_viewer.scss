@@ -1,4 +1,3 @@
-// TODO
 .p-story_viewer__modal {
   background-color: $bg;
   color: $text;
@@ -24,34 +23,52 @@
   }
 }
 
+.p-stories_uploader__footer__note {
+  color: $text;
+}
+
 .p-story_viewer__progress__bar {
   background: $button;
 }
 
 .p-story_viewer__control {
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  background: $contrast;
+  color: $selectFg;
 }
 
-.p-story_viewer__reaction-active, .p-story_viewer__reaction:hover {
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.5);
-  background: #1d1c1d;
+.p-story_viewer__reaction-active,
+.p-story_viewer__reaction:hover {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+  background: $bg;
 }
 
 .p-story_viewer__reaction-reacted {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $accent;
+  border-color: $accent;
 }
 
 .p-stories_screen_selector__screen {
   &:hover {
-    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    background: $contrast;
   }
 }
 
 .p-stories_uploader {
-  background: #1d1c1d;
+  background: $bg;
+  color: $fg;
+}
+
+.p-stories_uploader__header {
+  @include pane;
+  background: $bg2;
+}
+
+.p-stories_uploader__header__name {
+  font-size: 24px;
+}
+
+.p-stories_uploader__header__wink {
+  color: $text;
 }
 
 .p-stories_uploader__video {
@@ -59,7 +76,8 @@
 }
 
 .p-stories_uploader__footer {
-  background: $bg;
+  background: $bg2;
+  @include pane;
 }
 
 .p-stories_uploader__footer__button {
@@ -67,7 +85,9 @@
   color: $fg;
   border: $button;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     background: $hl;
     border-color: $hl;
     color: $selectFg;
@@ -77,9 +97,11 @@
 .p-stories_uploader__footer__button--upload {
   color: $green;
   border-color: $green;
-  opacity: .9;
+  opacity: 0.9;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $green;
     border-color: $green;
     opacity: 1;
@@ -89,7 +111,9 @@
 .p-stories_uploader__footer__more {
   color: $text;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $selectFg;
   }
 }
@@ -106,10 +130,23 @@
   color: $fg;
 }
 
+.p-stories_uploader__footer__status--pending {
+  background: $text;
+}
+
+.p-stories_uploader__footer__status--recording {
+  background: $red;
+}
+
+.p-stories_uploader__footer__status--done {
+  background: $green;
+}
+
+
 .p-story_viewer_modal__reactions__toggle {
   background: $button;
   color: $fg;
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.13);
+  box-shadow: inset 0 0 0 1px $primaryT;
 
   &:hover {
     background: $hl;
@@ -132,7 +169,7 @@
 }
 
 .p-story_viewer_modal__header {
-  box-shadow: inset 0 -1px 0 0 hsla(0, 0, 0, 0.13);
+  @include pane;
 }
 
 .p-story_viewer_modal__footer__add {
@@ -147,13 +184,13 @@
 
 .p-story_viewer_modal__navigation__button {
   background: $button;
-  box-shadow: inset 0 0 0 1px hsla(0, 0, 0, 0.13);
+  box-shadow: inset 0 0 0 1px $button;
   color: $fg;
 
   &:hover {
-    color: $primary;
+    color: $selectFg;
     background: $hl;
-    box-shadow: inset 0 0 0 1px hsla(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 1px $primary, 0 2px 4px $primaryT;
   }
 }
 
@@ -166,12 +203,9 @@
   border-color: $button;
 }
 
-
 .p-stories_scroller--chrono {
   .p-gallery_scroller__wrapper {
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    background: $bg;
   }
 }
 
@@ -183,30 +217,20 @@
   }
 }
 
-.p-stories_scroller__container--placeholder .c-avatar:before,
-.p-stories_scroller__container--unreads .c-avatar:before {
-  background: linear-gradient(125deg, #4a154b, #36c5f0 25%, #2eb67d 50%, #ecb22e 75%, #e01e5a);
-}
-
 .p-stories_scroller__container--placeholder .c-avatar .c-base_icon,
 .p-stories_scroller__container--unreads .c-avatar .c-base_icon {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  border: 2px solid var(--saf-0);
-}
-
-.p-stories_scroller__poster_thumb {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  --saf-0: $bg;
+  border: 2px solid $borderLight;
 }
 
 .p-stories_scroller__you_add--chrono {
-  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background: $bg2;
 }
 
 .p-stories_scroller__you_add_icon {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  box-shadow: 0 0 0 2px var(--saf-0);
-  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  box-shadow: 0 0 0 2px $button;
+  background-color: $button;
+  color: $fg;
 }
 
 .p-stories_scroller__header {
@@ -216,33 +240,38 @@
 }
 
 .p-stories_button__container {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
 }
 
 .p-stories_button {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background-color: $button;
 }
 
 .p-stories_button__unreads {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  border: 1px solid var(--saf-0);
+  border: 1px solid $button;
 }
 
-.p-story_viewer_modal__reactions--open .p-story_viewer_modal__reactions__toggle,
-.p-story_viewer_modal__reactions__toggle:hover {
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 86.7%, 0.13), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+.p-story_audio_only {
+  background: $contrast;
 }
 
-.p-story_viewer_modal__reactions__reaction {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+.p-stories_ribbon,
+.p-stories_scroller__header:after {
+  border-bottom: 1px solid $borderLight;
 }
 
-.p-story_viewer_modal__reactions__reaction--reacted {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 4px rgba(0, 0, 0, 0.3);
+.p-stories_ribbon {
+  background: $contrast;
+  border-top: 1px solid $borderLight;
+  @include pane;
 }
 
-.p-stories_input_button__container:not(.p-stories_input_button__container--first) .p-stories_input_button__add {
-  --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
-  border: 1px solid var(--saf-0);
+.p-stories_ribbon__poster_container {
+  background-color: $button;
+  border: 1px solid $button;
+}
+
+.p-stories_ribbon__poster_thumb {
+  background-color: $button;
+  border: 2px solid $button;
 }
