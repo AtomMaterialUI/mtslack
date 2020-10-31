@@ -50,6 +50,19 @@
   }
 }
 
+.c-data_table__row--inactive {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+
+  .c-base_entity__subtext {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  }
+}
+
+.c-data_table__row--selected {
+  background-color: rgba(29, 155, 209, 0.1);
+}
+
 .c-message_attachment, .c-table_row_actions .c-action_buttons__icon {
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }
