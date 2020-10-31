@@ -173,3 +173,26 @@
 .p-board__empty__subtitle {
   color: $disabled;
 }
+
+
+.p-base_card {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-base_card__preview {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-base_card__content {
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-base_card__content__title {
+  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+}
+
+.p-base_card__content__subtitle {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}

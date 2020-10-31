@@ -272,3 +272,50 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
 .p-huddle_sidebar_footer__member_count_icon {
   fill: $fg;
 }
+
+.p-huddle_channel_icon__popover_button--active {
+  background: $accent;
+  color: $selectFg;
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $selectFg;
+  }
+}
+
+.p-channel_sidebar__channel--selected .p-huddle_channel_icon__popover_button--active {
+  background: $hl;
+  color: $fg;
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $fg;
+  }
+
+  &:hover {
+    color: $bg;
+    background: $primary;
+
+    .p-huddle_channel_icon__svg--headset path:last-of-type {
+      fill: $bg;
+    }
+  }
+}
+
+.p-huddle_channel_icon__popover_button--active:hover {
+  color: $bg;
+  background: $primary;
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $bg;
+  }
+}
+
+.p-huddle_details__leave_btn {
+  background-color: $red;
+  color: $selectFg;
+  opacity: .9;
+
+  &:hover {
+    background-color: $red;
+    opacity: 1;
+  }
+}
