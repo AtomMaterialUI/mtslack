@@ -110,6 +110,10 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
     .c-dialog {
       background: rgba(0, 0, 0, 0.5) !important;
     }
+
+    .c-coachmark__overlay {
+      background-color: rgba(0, 0, 0, 0.25) !important;
+    }
   }
 
   .mtslack--with_presence {

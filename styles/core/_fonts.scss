@@ -26,3 +26,11 @@
 .p-trouble_loading {
   font-family: $fontFamily !important;
 }
+
+.p-shared_channel_creator_welcome_modal__header--error,
+.p-shared_channel_creator_welcome_modal__content--error,
+.p-shared_channel_creator_welcome_modal__body,
+.p-shared_channel_creator_welcome_modal__header {
+  font-family: $fontFamily;
+}
+

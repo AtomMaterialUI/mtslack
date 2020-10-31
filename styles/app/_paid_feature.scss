@@ -1,8 +1,11 @@
 .p-paid_feature_badge {
-  background-color: $accentT;
+  background-color: $accent2;
+  border-radius: 25px;
+  min-width: 25px;
+  transition: all .3s ease-in;
 
-  &:hover .p-paid_feature_badge__icon {
-    background-color: $accent;
+  &:hover {
+    background-color: $hl;
   }
 }
 
@@ -34,7 +37,7 @@
   }
 
   &:after {
-    border-bottom-color: $bg2;
+    border-bottom-color: $notif;
   }
 }
 
@@ -44,4 +47,8 @@
   .c-coachmark__close i {
     color: $fg;
   }
+}
+
+.p-paid_feature_badge__anchor--selected .p-paid_feature_badge__icon {
+  color: $selectFg;
 }

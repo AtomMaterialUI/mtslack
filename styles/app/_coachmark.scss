@@ -1,11 +1,12 @@
 .c-coachmark {
-  background: $bg;
+  background: $notif;
+  @include dropShadow;
 }
 
 .c-coachmark--top-left,
 .c-coachmark--top {
   &:after {
-    border-top-color: $bg2;
+    border-top-color: $notif;
   }
 
   &:before {
@@ -15,7 +16,7 @@
 
 .c-coachmark--bottom {
   &:after {
-    border-bottom-color: $bg2;
+    border-bottom-color: $notif;
   }
 
   &:before {
@@ -25,7 +26,7 @@
 
 .c-coachmark--bottom-left {
   &:after {
-    border-bottom-color: $bg2;
+    border-bottom-color: $notif;
   }
 
   &:before {
@@ -35,7 +36,7 @@
 
 .c-coachmark--left {
   &:after {
-    border-left-color: $bg2;
+    border-left-color: $notif;
   }
 
   &:before {
@@ -45,7 +46,7 @@
 
 .c-coachmark--right {
   &:after {
-    border-right-color: $bg2;
+    border-right-color: $notif;
   }
 
   &:before {
@@ -54,7 +55,7 @@
 }
 
 .c-coachmark__overlay {
-  background-color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
 }
 
 .p-shared_channels_coachmark_div {
@@ -129,7 +130,8 @@
   box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
 
   &.c-coachmark--right {
-    &:after, &:before {
+    &:after,
+    &:before {
       border-right-color: $notif;
     }
   }
@@ -194,7 +196,8 @@
     background: $notif;
 
     &.c-coachmark--right {
-      &:after, &:before {
+      &:after,
+      &:before {
         border-right-color: $notif;
       }
     }
