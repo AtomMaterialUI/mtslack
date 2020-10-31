@@ -157,3 +157,27 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
 .p-shared_channel_org_list__previous_connections_header {
   color: $text;
 }
+
+.p-shared_channel_creator_welcome_modal__header--channel {
+  background: $notif;
+  color: $fg;
+}
+
+.p-shared_channel_creator_welcome_modal__body--pending {
+  color: $text;
+}
+
+.p-shared_channel_creator_welcome_modal__ok_button {
+  color: $selectFg;
+  background-color: $accent;
+
+  &:active,
+  &:hover {
+    background-color: $hl;
+  }
+
+  &[disabled] {
+    background-color: $disabled;
+    color: $fg;
+  }
+}
