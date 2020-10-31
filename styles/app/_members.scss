@@ -509,3 +509,11 @@ button.p-admin_member_table__menu_item--disabled {
     color: $disabled;
   }
 }
+
+.p-browse_page_layout__autocomplete_reset_button {
+  color: $fg;
+
+  &:hover {
+    color: $primary;
+  }
+}

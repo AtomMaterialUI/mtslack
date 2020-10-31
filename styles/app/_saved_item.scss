@@ -49,7 +49,7 @@
 }
 
 .c-virtual_list__item--focus .p-saved_page__item--docked {
-  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+  @include pane;
 }
 
 .p-saved_page__item--file {
@@ -92,7 +92,7 @@
 }
 
 .c-virtual_list__item--focus .p-activity_page__item {
-  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+ @include pane;
 }
 
 .p-activity_page__item--docked {
@@ -109,7 +109,7 @@
 }
 
 .c-virtual_list__item--focus .p-activity_page__item--docked {
-  box-shadow: 0 0 0 1px $accent, 0 1px 3px $accentT;
+  @include pane;
 }
 
 .p-activity_page__item__header {

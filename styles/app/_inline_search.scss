@@ -3,12 +3,21 @@
   border: 1px solid $borderLight;
 }
 
+.c-inline_search__controls {
+  background: $bg;
+  box-shadow: 0 0 0 1px $borderLight;
+}
+
 .c-inline_search__controls--input_focused {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .c-inline_search__count {
   color: $accent2;
+}
+
+.c-inline_search__placeholder_text {
+  color: $disabled;
 }
 
 .c-inline_search__divider {
@@ -32,6 +41,11 @@
   color: $selectFg;
 }
 
+.sk-client-theme--dark .c-inline_search__highlight--focused,
 .c-inline_search__highlight--focused {
   background: $accent;
+}
+
+.c-inline_search__btns_wrapper {
+  border-left: 1px solid $border;
 }
