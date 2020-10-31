@@ -237,6 +237,10 @@
   background-color: $tree;
 }
 
+.p-pending_requests_v2_channel_card {
+  @include card;
+}
+
 .p-channel_card h3 {
   color: $text;
 }

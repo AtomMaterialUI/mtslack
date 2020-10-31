@@ -160,3 +160,16 @@
 .p-board_flexpane__subtitle {
   color: $text;
 }
+
+
+.p-board__editable_text--editing {
+  background-color: $contrast;
+}
+
+.p-board__empty {
+  border: 1px dashed $borderLight;
+}
+
+.p-board__empty__subtitle {
+  color: $disabled;
+}

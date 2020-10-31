@@ -266,6 +266,8 @@ input[type=text].c-input_text {
 
 .p-channel_invite_modal_tokenized_option {
   background-color: $bg2;
+  color: $text;
+  border-color: $borderLight;
 }
 
 .p-channel_invite_modal_access_choice_button_box {
