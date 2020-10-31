@@ -79,6 +79,7 @@
 
 .p-pending_requests_v2_acted_on_state {
   border-top: 1px solid $borderLight;
+  background: $bg2;
 }
 
 .p-pending_requests_v2_acted_on_subtext {
@@ -86,7 +87,7 @@
 }
 
 .p-pending_requests_v2_accept_icon {
-  color: $accent2;
+  color: $green;
 }
 
 .p-pending_requests_v2_decline_icon {

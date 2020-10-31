@@ -206,3 +206,8 @@
 .c-date-time_picker__caret_icon {
   color: $text;
 }
+
+.c-date_range_picker_calendar--popover {
+  background-color: $bg;
+  @include dropShadow;
+}

@@ -6,6 +6,14 @@
   color: $fg;
 }
 
+.p-trial_modal__icon_container {
+  background-color: $notif;
+
+  > i {
+    color: $accent;
+  }
+}
+
 .p-trial_modal__icon_container--warning_high {
   background-color: $excluded;
 }
@@ -38,4 +46,30 @@
 
 .p-trial_message_limit_header a {
   color: $accent2;
+}
+
+.p-trial_persistent_banner__container {
+  background-color: $notif;
+  box-shadow: 0 0 0 1px $borderLight;
+}
+
+.p-trials_alert {
+  background-color: $notif;
+  border: 1px solid $accent;
+
+  > i {
+    color: $accent;
+
+    &.c-alert__icon {
+      color: $accent;
+    }
+  }
+}
+
+.p-trials_notification {
+  border-top: 5px solid $accent;
+
+  &.p-global_banner {
+    border-top: 5px solid $accent;
+  }
 }
