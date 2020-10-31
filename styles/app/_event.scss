@@ -115,3 +115,11 @@
 .p-event_join_call_text_no_meeting {
   color: $text;
 }
+
+.p-event_past_event_meeting_link {
+  color: $text;
+
+  &:hover {
+    color: $text;
+  }
+}

@@ -14,6 +14,10 @@
   border-color: $bg2;
 }
 
+.p-deprecated_channel_name {
+  font-style: italic;
+}
+
 .c-select_options_list__option--active .c-channel_name .p-deprecated_channel_name__team_name {
   color: $fg;
 }
@@ -21,7 +25,6 @@
 .p-search_filter__close {
   color: $disabled;
 }
-
 
 .p-search_filter__checkbox_label--disabled {
   color: $disabled;
@@ -42,12 +45,10 @@
 }
 
 .p-search_filter__datepicker_trigger {
-
   &:hover {
     color: $fg;
   }
 }
-
 
 .p-search_filter__date_readout {
   color: $fg;
@@ -57,7 +58,6 @@
   color: $fg;
 }
 
-
 .p-search_filter__placeholder_avatar {
   background-color: $contrast;
 }
@@ -66,3 +66,35 @@
   background-color: $contrast;
 }
 
+.p-search_filter__block_item {
+  &.active {
+    border: 1px solid $accent;
+    color: $accent;
+
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+      background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    }
+  }
+}
+
+.p-search_filter__block_item--clearable {
+  border: 1px solid $accent;
+  color: $accent;
+
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-search_filter__block_item_close {
+  .c-icon {
+    color: $accent;
+  }
+}
+
+.p-search_filter__panel {
+  background-color: $contrast;
+  @include pane;
+}
