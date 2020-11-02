@@ -15233,7 +15233,7 @@ input.c-input_select__filter_input.offscreen {
 
   .c-pillow_file__post__unfurl, .message {
     position: relative;
-    padding: .5rem .8rem !important;
+    padding: 0.5rem 0.8rem !important;
     border-radius: 6px;
     background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
   }
@@ -31688,7 +31688,7 @@ div.p-context_block_wrapper--modal_view {
   --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   --saf-1: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   --saf-2: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  box-shadow: -2px 0 0 var(--saf-0), -2px 1px 0 var(--saf-0), -2px -1px 0 var(--saf-0);
+  box-shadow: -2px 0 0 var(--saf-0), (-2px) 1px 0 var(--saf-0), (-2px) -1px 0 var(--saf-0);
 }
 
 .p-connection_info_text {
@@ -31730,7 +31730,7 @@ div.p-context_block_wrapper--modal_view {
     --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
     --saf-1: rgba(var(--sk_primary_background, 255, 255, 255), 1);
     --saf-2: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    box-shadow: -2px 0 0 var(--saf-0), -2px 1px 0 var(--saf-0), -2px -1px 0 var(--saf-0);
+    box-shadow: -2px 0 0 var(--saf-0), (-2px) 1px 0 var(--saf-0), (-2px) -1px 0 var(--saf-0);
   }
 }
 
@@ -66569,6 +66569,14 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  .p-setup_channel_banner__heading--welcome {
+    &:after, &:before {
+      background-image: url(https://a.slack-edge.com/bv1-8/sparkles@2x-d909902.png);
+    }
+  }
+}
+
 .p-setup_channel_banner__heading--dm-invited {
   color: #868686;
 }
@@ -66740,11 +66748,23 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
   background-image: url(https://a.slack-edge.com/bv1-8/slack-logo-8fdd573.png);
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  .p-setup_channel_banner__slack_icon {
+    background-image: url(https://a.slack-edge.com/bv1-8/slack-logo@2x-6045299.png);
+  }
+}
+
 .p-setup_channel_banner__lightbulb_icon {
   width: 15px;
   height: 15px;
   background-size: 15px 15px;
   background-image: url(https://a.slack-edge.com/bv1-8/lightbulb-1f13342.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+  .p-setup_channel_banner__lightbulb_icon {
+    background-image: url(https://a.slack-edge.com/bv1-8/lightbulb@2x-94e9db4.png);
+  }
 }
 
 .p-setup_channel_banner__app_icon {
