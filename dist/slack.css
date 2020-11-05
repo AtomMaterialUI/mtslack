@@ -4784,6 +4784,14 @@ a.label {
     color: var(--text); }
   #mtslack .c-menu_item__li--highlighted .p-channel_sidebar__channel_section_menu_submenu_label__secondary_text {
     color: var(--selectFg2); }
+  #mtslack .p-channel_sidebar__close:focus {
+    background: var(--accent); }
+  #mtslack .p-channel_sidebar__channel:hover,
+  #mtslack .p-channel_sidebar__channel--context,
+  #mtslack .p-channel_sidebar__link:hover,
+  #mtslack .p-channel_sidebar__channel:hover .p-channel_sidebar__user_avatar_presence_bg,
+  #mtslack .p-channel_sidebar__close_container:hover {
+    background: var(--active); }
   #mtslack .p-channel_sidebar__list .p-channel_sidebar__channel,
   #mtslack .p-channel_sidebar__list .p-channel_sidebar__link,
   #mtslack .p-channel_sidebar__list .p-channel_sidebar__channel:link,
@@ -12027,7 +12035,7 @@ a.label {
   #mtslack .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
   #mtslack .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
     opacity: 0.4 !important; }
-  #mtslack .mtslack--dim .c-icon--presence-offline::before {
+  #mtslack .mtslack--dim .p-channel_sidebar__list .c-icon--presence-offline::before {
     position: absolute;
     content: '';
     width: 24px;

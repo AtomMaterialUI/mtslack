@@ -94,15 +94,17 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
       opacity: 0.4 !important;
     }
 
-    .c-icon--presence-offline::before {
-      position: absolute;
-      content: '';
-      width: 24px;
-      height: 24px;
-      left: -10px;
-      top: -8px;
-      background: $contrast;
-      filter: opacity(0.5);
+    .p-channel_sidebar__list {
+      .c-icon--presence-offline::before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        left: -10px;
+        top: -8px;
+        background: $contrast;
+        filter: opacity(0.5);
+      }
     }
 
     .p-channel_sidebar__list .p-channel_sidebar__channel:hover,

@@ -107,6 +107,18 @@ a.c-sidebar_menu__list_item {
   color: $selectFg;
 }
 
+.p-channel_sidebar__close:focus {
+  background: $accent;
+}
+
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__channel--context,
+.p-channel_sidebar__link:hover,
+.p-channel_sidebar__channel:hover .p-channel_sidebar__user_avatar_presence_bg,
+.p-channel_sidebar__close_container:hover {
+  background: $active;
+}
+
 .p-channel_sidebar__list {
   .p-channel_sidebar__channel,
   .p-channel_sidebar__link,
