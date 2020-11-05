@@ -57,10 +57,14 @@
 
 .p-user_group_base_row__list_item {
   background-color: $bg;
-  border-bottom: 1px solid $borderLight;
+  border-bottom: none;
 
   &:focus, &:focus-within, &:hover {
     background-color: $hl;
+
+    .p-user_group_base_row__list_item {
+      background-color: $hl;
+    }
   }
 }
 

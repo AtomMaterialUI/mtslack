@@ -6847,9 +6847,11 @@ a.label {
     color: var(--text); }
   #mtslack .p-user_group_base_row__list_item {
     background-color: var(--bg);
-    border-bottom: 1px solid var(--active); }
+    border-bottom: none; }
     #mtslack .p-user_group_base_row__list_item:focus, #mtslack .p-user_group_base_row__list_item:focus-within, #mtslack .p-user_group_base_row__list_item:hover {
       background-color: var(--hl); }
+      #mtslack .p-user_group_base_row__list_item:focus .p-user_group_base_row__list_item, #mtslack .p-user_group_base_row__list_item:focus-within .p-user_group_base_row__list_item, #mtslack .p-user_group_base_row__list_item:hover .p-user_group_base_row__list_item {
+        background-color: var(--hl); }
   #mtslack .p-user_group_base_row__list_btn {
     background-color: var(--button); }
     #mtslack .p-user_group_base_row__list_btn.active {
