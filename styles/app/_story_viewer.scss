@@ -142,7 +142,6 @@
   background: $green;
 }
 
-
 .p-story_viewer_modal__reactions__toggle {
   background: $button;
   color: $fg;
@@ -180,6 +179,11 @@
     background: $hl;
     color: $primary;
   }
+}
+
+.p-story_viewer_modal__footer__paging {
+  background: $button;
+  color: $fg;
 }
 
 .p-story_viewer_modal__navigation__button {
