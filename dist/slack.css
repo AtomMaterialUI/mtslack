@@ -12024,9 +12024,33 @@ a.label {
     cursor: not-allowed;
     opacity: 0.5;
     pointer-events: none; }
-  .mtslack--dim #mtslack .p-channel_sidebar__name.p-channel_sidebar__name--away, .mtslack--dim
-  #mtslack .p-channel_sidebar__name > .p-channel_sidebar__name--away {
-    opacity: .4 !important; }
+  #mtslack .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
+  #mtslack .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
+    opacity: 0.4 !important; }
+  #mtslack .mtslack--dim .c-icon--presence-offline::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    left: -10px;
+    top: -8px;
+    background: var(--contrast);
+    filter: opacity(0.5); }
+  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__channel:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__link:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__close_container:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__channel--selected .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__channel--selected:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__link--selected .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim .p-channel_sidebar__link--selected:hover .c-icon--presence-offline::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    left: -10px;
+    top: -8px;
+    background: var(--tree);
+    filter: opacity(0.5); }
   #mtslack .mtslack--overlay.ReactModal__Body--open .c-search_modal:before,
   #mtslack .mtslack--overlay.ReactModal__Body--open .c-sk-overlay:before {
     background: rgba(0, 0, 0, 0.5) !important;
@@ -12043,7 +12067,7 @@ a.label {
     color: var(--fg) !important;
     opacity: 1 !important; }
     .p-channel_sidebar__channel--muted #mtslack .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
-      opacity: .64 !important; }
+      opacity: 0.64 !important; }
     .p-channel_sidebar__channel--unread #mtslack .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
       color: var(--primary) !important; }
   #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar img {

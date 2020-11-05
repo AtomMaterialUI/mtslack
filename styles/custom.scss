@@ -38,6 +38,7 @@
 :root {
   --version: '%%GULP_INJECT_VERSION%%';
 }
+
 $primary: var(--primary);
 $primaryT: var(--primaryT);
 $accent: var(--accent);
@@ -87,10 +88,40 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
   @import 'settings/index';
 
   // Dim sidebar
-  .p-channel_sidebar__name.p-channel_sidebar__name--away,
-  .p-channel_sidebar__name > .p-channel_sidebar__name--away {
-    .mtslack--dim & {
-      opacity: .4 !important;
+  .mtslack--dim {
+    .p-channel_sidebar__name.p-channel_sidebar__name--away,
+    .p-channel_sidebar__name > .p-channel_sidebar__name--away {
+      opacity: 0.4 !important;
+    }
+
+    .c-icon--presence-offline::before {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      left: -10px;
+      top: -8px;
+      background: $contrast;
+      filter: opacity(0.5);
+    }
+
+    .p-channel_sidebar__list .p-channel_sidebar__channel:hover,
+    .p-channel_sidebar__list .p-channel_sidebar__link:hover,
+    .p-channel_sidebar__list .p-channel_sidebar__close_container:hover,
+    .p-channel_sidebar__channel--selected,
+    .p-channel_sidebar__channel--selected:hover,
+    .p-channel_sidebar__link--selected,
+    .p-channel_sidebar__link--selected:hover {
+      .c-icon--presence-offline::before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        left: -10px;
+        top: -8px;
+        background: $tree;
+        filter: opacity(0.5);
+      }
     }
   }
 
@@ -123,7 +154,7 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
       opacity: 1 !important;
 
       .p-channel_sidebar__channel--muted & {
-        opacity: .64 !important;
+        opacity: 0.64 !important;
       }
 
       .p-channel_sidebar__channel--unread & {
