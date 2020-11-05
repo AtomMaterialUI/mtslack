@@ -161,6 +161,9 @@
   color: $text;
 }
 
+.p-board__editable_text__icon_btn {
+  color: $accent;
+}
 
 .p-board__editable_text--editing {
   background-color: $contrast;
@@ -173,7 +176,6 @@
 .p-board__empty__subtitle {
   color: $disabled;
 }
-
 
 .p-base_card {
   background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);

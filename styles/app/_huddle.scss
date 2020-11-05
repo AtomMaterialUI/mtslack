@@ -30,7 +30,8 @@
 }
 
 .p-huddle_channel_icon__popover_button {
-  &.p-huddle_channel_icon__popover_button--hover, &:hover {
+  &.p-huddle_channel_icon__popover_button--hover,
+  &:hover {
     color: $fg;
     background: $hl;
   }
@@ -111,7 +112,6 @@
   .p_huddle_flexpane_member_card_speaker_icon {
     color: $accent;
   }
-
 }
 
 .p-huddle_flexpane_details {
@@ -193,7 +193,8 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
   border-top: 1px solid $borderLight;
 }
 
-.p-huddle_details__non_peers_header, .p-huddle_details__peers_header {
+.p-huddle_details__non_peers_header,
+.p-huddle_details__peers_header {
   color: $text;
 }
 
@@ -312,10 +313,18 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
 .p-huddle_details__leave_btn {
   background-color: $red;
   color: $selectFg;
-  opacity: .9;
+  opacity: 0.9;
 
   &:hover {
     background-color: $red;
     opacity: 1;
   }
+}
+
+.p-huddle_join_message__new_member_text {
+  color: $text;
+}
+
+.p-huddle_sidebar_footer__member_count_icon--bg {
+  background: $fg;
 }

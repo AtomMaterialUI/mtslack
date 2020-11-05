@@ -73,3 +73,11 @@
     border-top: 5px solid $accent;
   }
 }
+
+.p-trial_awareness_modal__secondary_cta {
+  color: $text;
+
+  &:focus, &:hover {
+    color: $selectFg;
+  }
+}
