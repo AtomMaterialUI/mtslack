@@ -392,6 +392,8 @@ ${plugin.desc}
    */
   init() {
     this._initSettings();
+    this.loadSettings();
+    this.initPlugins();
 
     // Add a keybinding to reinit
     document.addEventListener('keydown', ({ keyCode, altKey, metaKey }) => {
