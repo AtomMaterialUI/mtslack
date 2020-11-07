@@ -9605,7 +9605,7 @@ a.label {
     #mtslack .c-tabs__tab.c-tabs__tab--active,
     #mtslack .c-tabs__tab:active {
       color: var(--fg);
-      box-shadow: inset 0 -2px 0 0 var(--accent); }
+      box-shadow: none; }
     #mtslack .sk-client-theme--dark.sk-client-scheme--purple .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus,
     #mtslack .sk-client-scheme--purple .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus,
     #mtslack .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus {
