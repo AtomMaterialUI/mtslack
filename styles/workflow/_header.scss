@@ -1,0 +1,33 @@
+.container__1Qn04z0 {
+  // Header
+  .name__11wOBDp {
+    border: none;
+    border-bottom: 2px solid $bg2;
+  }
+
+  &.can_edit__UNLbJYK:hover {
+    .name__11wOBDp {
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid $accent;
+    }
+
+    .edit__f-Y04MA {
+      color: $primary;
+      margin-left: 2em;
+    }
+  }
+}
+
+.container__3i0x3QY > header {
+  background: $bg2;
+
+  > a:first-child {
+    color: $fg;
+
+    &:focus,
+    &:hover {
+      color: $primary;
+    }
+  }
+}

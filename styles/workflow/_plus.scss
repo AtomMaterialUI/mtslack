@@ -1,0 +1,22 @@
+.button__2EzTd61,
+.dot__3sIOqNI {
+  border: 2px solid $borderLight;
+}
+
+.button__2EzTd61 {
+  background-color: $button;
+
+  &:focus,
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:focus + .line__m1GhbtL,
+  &:hover + .line__m1GhbtL {
+    background-color: $accent;
+  }
+}
+
+.dot__3sIOqNI {
+  background-color: $hl;
+}
