@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v13.7.0',
+  version: 'v13.8.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -392,6 +392,8 @@ ${plugin.desc}
    */
   init() {
     this._initSettings();
+    this.loadSettings();
+    this.initPlugins();
 
     // Add a keybinding to reinit
     document.addEventListener('keydown', ({ keyCode, altKey, metaKey }) => {
@@ -442,18 +444,28 @@ window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 class PluginBase {
   constructor() {
     // Mandatory parameters
-    this.name = 'pluginBase';
-    this.desc = 'A plugin description';
-    this.longDescription = 'Description to show in the settings';
+    this.name = "pluginBase";
+    this.desc = "A plugin description";
+    this.longDescription = "Description to show in the settings";
     this.enabled = true; //Whether the plugin is enabled
-    this.shortcut = ''; // Assign a shortcut key
-    this.icon = ''; // Icon to put on the toolbar
+    this.shortcut = ""; // Assign a shortcut key
+    this.icon = ""; // Icon to put on the toolbar
 
     // Toolbar button
     this.$el = null;
 
     // Extra content for settings
     this.extraContentId = null;
+
+    this.shortCutListener = e => {
+      if (!this.enabled) {
+        return;
+      }
+      if (e.ctrlKey && e.key === this.shortcut) {
+        this.onToolbarClick();
+        this.addIcon();
+      }
+    };
   }
 
   /**
@@ -468,28 +480,27 @@ class PluginBase {
    */
   init() {
     // Next Theme
-    const $toolbarBtn = document.createElement('button');
+    const $toolbarBtn = document.createElement("button");
     this.$el = $toolbarBtn;
 
     $toolbarBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
+      "c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag";
     this.addIcon();
-    $toolbarBtn.addEventListener('click', () => {
+    $toolbarBtn.addEventListener("click", () => {
       this.onToolbarClick();
       this.addIcon();
     });
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
 
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    let $newHeader = document.querySelector('.p-top_nav__right');
+    let $header = document.querySelector(".p-classic_nav__right_header");
+    let $newHeader = document.querySelector(".p-top_nav__right");
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
     }
     if ($newHeader) {
       // Add buttons
-
       $newHeader.prepend($toolbarBtn);
     }
 
@@ -498,6 +509,15 @@ class PluginBase {
 
     // Apply preferences
     this.apply();
+
+    // Shortcuts
+    this.listenShortcuts();
+  }
+
+  listenShortcuts() {
+    if (this.shortcut) {
+      document.addEventListener("keydown", this.shortCutListener);
+    }
   }
 
   /**
@@ -522,10 +542,10 @@ class PluginBase {
    */
   toggleDisplay() {
     if (this.enabled) {
-      this.$el.style.display = 'flex';
+      this.$el.style.display = "flex";
     }
     else {
-      this.$el.style.display = 'none';
+      this.$el.style.display = "none";
     }
   }
 
@@ -542,7 +562,7 @@ class PluginBase {
    * @abstract
    */
   saveSettings() {
-    throw Error('To be implemented');
+    throw Error("To be implemented");
   }
 
   /**
@@ -559,7 +579,9 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon} c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
+    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${
+      this.icon
+    } c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
   }
 
   /**
@@ -567,14 +589,14 @@ class PluginBase {
    * @abstract
    */
   apply() {
-    throw Error('to be implemented');
+    throw Error("to be implemented");
   }
 
   /**
    * Return the html code for the extra content
    */
   extraContent() {
-    return '';
+    return "";
   }
 
   /**
@@ -603,7 +625,7 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Dim Absent People';
     this.longDescription = 'Dim Absent People and Channels from the sidebar';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'd';
     this.icon = 'channels';
 
     this.tweakEnabled = false;
@@ -670,7 +692,7 @@ class WithPresence extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Presence Icons';
     this.longDescription = 'Restore old style presence icons';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'p';
     this.icon = 'circle-fill';
 
     this.tweakEnabled = false;
@@ -737,7 +759,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Loop over installed themes';
     this.longDescription = 'Add a button in the toolbar to loop over installed themes';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 't';
     this.icon = 'magic';
 
     // Specific
@@ -817,7 +839,7 @@ class OverlayPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Modal Overlays';
     this.longDescription = 'Add an overlay when modals are open';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'o';
     this.icon = 'share-screen';
 
     this.tweakEnabled = false;
@@ -884,7 +906,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom Fonts';
     this.longDescription = 'Enter the custom fonts, separated by commas';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'f';
     this.icon = 'text';
 
     // Specific
@@ -979,7 +1001,7 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom Monospace Fonts';
     this.longDescription = 'Enter the font size and custom monospace fonts, separated by commas';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'm';
     this.icon = 'code';
 
     // Specific
@@ -1085,7 +1107,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom accent color';
     this.longDescription = 'Change the accent color';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'a';
     this.icon = 'highlight-filled';
 
     // Specific
@@ -1165,6 +1187,99 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
 }
 
 window.slackPluginsAPI.plugins.accent = new AccentPlugin();
+
+// Links.js
+window.slackPluginsAPI = window.slackPluginsAPI || {};
+window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
+
+class LinksPlugin extends window.slackPluginsAPI.pluginBase {
+  constructor() {
+    super();
+    // Mandatory
+    this.name = 'links';
+    this.desc = 'Custom links color';
+    this.longDescription = 'Change the links color';
+    this.enabled = true;
+    this.shortcut = 'l';
+    this.icon = 'link';
+
+    // Specific
+    this.linksColor = '#C679DD';
+    this.linksColorEnabled = false;
+
+    this.extraContentId = 'customLinks';
+  }
+
+  extraContent() {
+    return `
+<div class="c-color_picker__container"  role="presentation">
+    <span class="c-color_picker__color_block_container">
+        <button id="customLinksColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
+      this.linksColor
+    };"></button>
+    </span>
+    <span class="c-color_picker__hex_hash">#</span>
+    <input id="linksColor" name="linksColor" class="c-color_picker__input"  type="text" value="${this.linksColor.slice(
+      1
+    )}" style="min-width: auto">
+    <button id="customLinksButton" name="customLinksButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>
+</div>`;
+  }
+
+  extraContentOnClick() {
+    const ff = document.getElementById('linksColor').value;
+    const bg = document.getElementById('customLinksColor');
+    if (ff) {
+      this.linksColor = `#${ff}`;
+      bg.style.background = this.linksColor;
+
+      this.applyLinksColor();
+    }
+  }
+
+  apply() {
+    this.applyLinksColor();
+  }
+
+  onToolbarClick() {
+    this.toggleLinksColor();
+  }
+
+  saveSettings() {
+    return {
+      enabled: this.enabled,
+      linksColor: this.linksColor,
+      linksColorEnabled: this.linksColorEnabled
+    };
+  }
+
+  toggleLinksColor() {
+    this.linksColorEnabled = !this.linksColorEnabled;
+    this.applyLinksColor();
+    window.slackPluginsAPI.saveSettings();
+  }
+
+  applyLinksColor() {
+    if (this.linksColorEnabled) {
+      document.dispatchEvent(
+        new CustomEvent('LinksChanged', {
+          detail: this.linksColor
+        })
+      );
+    }
+    else {
+      document.dispatchEvent(new CustomEvent('LinksReset', {}));
+    }
+
+    window.slackPluginsAPI.saveSettings();
+  }
+
+  isApplied() {
+    return this.linksColorEnabled;
+  }
+}
+
+window.slackPluginsAPI.plugins.links = new LinksPlugin();
 
 
 /** END DO NOT TOUCH THIS PART */
