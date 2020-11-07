@@ -10,7 +10,7 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom Monospace Fonts';
     this.longDescription = 'Enter the font size and custom monospace fonts, separated by commas';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'm';
     this.icon = 'code';
 
     // Specific

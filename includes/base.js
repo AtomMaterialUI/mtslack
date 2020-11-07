@@ -5,18 +5,28 @@ window.slackPluginsAPI.plugins = window.slackPluginsAPI.plugins || {};
 class PluginBase {
   constructor() {
     // Mandatory parameters
-    this.name = 'pluginBase';
-    this.desc = 'A plugin description';
-    this.longDescription = 'Description to show in the settings';
+    this.name = "pluginBase";
+    this.desc = "A plugin description";
+    this.longDescription = "Description to show in the settings";
     this.enabled = true; //Whether the plugin is enabled
-    this.shortcut = ''; // Assign a shortcut key
-    this.icon = ''; // Icon to put on the toolbar
+    this.shortcut = ""; // Assign a shortcut key
+    this.icon = ""; // Icon to put on the toolbar
 
     // Toolbar button
     this.$el = null;
 
     // Extra content for settings
     this.extraContentId = null;
+
+    this.shortCutListener = e => {
+      if (!this.enabled) {
+        return;
+      }
+      if (e.ctrlKey && e.key === this.shortcut) {
+        this.onToolbarClick();
+        this.addIcon();
+      }
+    };
   }
 
   /**
@@ -31,28 +41,27 @@ class PluginBase {
    */
   init() {
     // Next Theme
-    const $toolbarBtn = document.createElement('button');
+    const $toolbarBtn = document.createElement("button");
     this.$el = $toolbarBtn;
 
     $toolbarBtn.className =
-      'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
+      "c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag";
     this.addIcon();
-    $toolbarBtn.addEventListener('click', () => {
+    $toolbarBtn.addEventListener("click", () => {
       this.onToolbarClick();
       this.addIcon();
     });
     // Add tooltip
     window.slackPluginsAPI.addTooltip(this);
 
-    let $header = document.querySelector('.p-classic_nav__right_header');
-    let $newHeader = document.querySelector('.p-top_nav__right');
+    let $header = document.querySelector(".p-classic_nav__right_header");
+    let $newHeader = document.querySelector(".p-top_nav__right");
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
     }
     if ($newHeader) {
       // Add buttons
-
       $newHeader.prepend($toolbarBtn);
     }
 
@@ -61,6 +70,15 @@ class PluginBase {
 
     // Apply preferences
     this.apply();
+
+    // Shortcuts
+    this.listenShortcuts();
+  }
+
+  listenShortcuts() {
+    if (this.shortcut) {
+      document.addEventListener("keydown", this.shortCutListener);
+    }
   }
 
   /**
@@ -85,10 +103,10 @@ class PluginBase {
    */
   toggleDisplay() {
     if (this.enabled) {
-      this.$el.style.display = 'flex';
+      this.$el.style.display = "flex";
     }
     else {
-      this.$el.style.display = 'none';
+      this.$el.style.display = "none";
     }
   }
 
@@ -105,7 +123,7 @@ class PluginBase {
    * @abstract
    */
   saveSettings() {
-    throw Error('To be implemented');
+    throw Error("To be implemented");
   }
 
   /**
@@ -122,7 +140,9 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${this.icon} c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
+    this.$el.innerHTML = `<i class="c-icon c-icon-plugin c-icon--${
+      this.icon
+    } c-icon-selected--${this.isApplied()}" type="magic" aria-hidden="true"></i>`;
   }
 
   /**
@@ -130,14 +150,14 @@ class PluginBase {
    * @abstract
    */
   apply() {
-    throw Error('to be implemented');
+    throw Error("to be implemented");
   }
 
   /**
    * Return the html code for the extra content
    */
   extraContent() {
-    return '';
+    return "";
   }
 
   /**

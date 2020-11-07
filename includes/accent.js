@@ -10,7 +10,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom accent color';
     this.longDescription = 'Change the accent color';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'a';
     this.icon = 'highlight-filled';
 
     // Specific

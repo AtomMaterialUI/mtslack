@@ -10,7 +10,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Custom Fonts';
     this.longDescription = 'Enter the custom fonts, separated by commas';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'f';
     this.icon = 'text';
 
     // Specific

@@ -10,7 +10,7 @@ class OverlayPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Modal Overlays';
     this.longDescription = 'Add an overlay when modals are open';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'o';
     this.icon = 'share-screen';
 
     this.tweakEnabled = false;

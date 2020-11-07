@@ -6,11 +6,11 @@ class LinksPlugin extends window.slackPluginsAPI.pluginBase {
   constructor() {
     super();
     // Mandatory
-    this.name = 'accent';
+    this.name = 'links';
     this.desc = 'Custom links color';
     this.longDescription = 'Change the links color';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'l';
     this.icon = 'link';
 
     // Specific

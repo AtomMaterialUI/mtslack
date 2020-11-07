@@ -10,7 +10,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Loop over installed themes';
     this.longDescription = 'Add a button in the toolbar to loop over installed themes';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 't';
     this.icon = 'magic';
 
     // Specific

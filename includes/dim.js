@@ -10,7 +10,7 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Dim Absent People';
     this.longDescription = 'Dim Absent People and Channels from the sidebar';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'd';
     this.icon = 'channels';
 
     this.tweakEnabled = false;

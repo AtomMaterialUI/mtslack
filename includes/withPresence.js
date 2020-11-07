@@ -10,7 +10,7 @@ class WithPresence extends window.slackPluginsAPI.pluginBase {
     this.desc = 'Presence Icons';
     this.longDescription = 'Restore old style presence icons';
     this.enabled = true;
-    this.shortcut = '';
+    this.shortcut = 'p';
     this.icon = 'circle-fill';
 
     this.tweakEnabled = false;
