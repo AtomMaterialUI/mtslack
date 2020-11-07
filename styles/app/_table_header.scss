@@ -1,6 +1,13 @@
-// todo
+.c-table_view_row_header {
+  border-bottom-color: $borderLight;
+}
+
+.c-table_view_header_item_value, .c-table_view_row_header .c-deprecated-icon {
+  color: $text;
+}
+
 .c-table_column_header--sorted {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }
 
 .c-react_virtualized_table__scroll-indicator {
@@ -89,4 +96,15 @@
 
 .c-message_actions__labels_front_icon {
   color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.c-table_view_flexbox_container:not(.c-table_view_hover_disabled) {
+  .c-table_view_header_item:not(.c-table_view_hover_disabled):hover,
+  .c-table_view_row:not(.c-table_view_hover_disabled):hover {
+    background: $tree;
+  }
+}
+
+.c-table_view_all_rows_container .c-table_view_row_container {
+  border-bottom-color: $borderLight;
 }

@@ -1,0 +1,21 @@
+.container__1sA_bQg {
+  .heading__4VqhjGm {
+    color: $text;
+  }
+
+  .list__9Rsvtd1 {
+    &.top_border__38gNqs_ {
+      border-top: solid 1px $border;
+    }
+
+    > li {
+      border-bottom: solid 1px $borderLight;
+    }
+  }
+}
+
+.list__cTAzG3g {
+  li {
+    border-bottom: 1px solid $borderLight;
+  }
+}
