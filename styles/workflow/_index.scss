@@ -15,39 +15,8 @@
 @import 'steps';
 @import 'warning';
 @import 'footer';
-
-.container__mAj-IsV {
-  border-bottom: solid 1px rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-}
-
-.container__17lkY3e {
-  .placeholder__3OHrZfE {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  }
-}
-
-.container__1GenrZD {
-  border-bottom: solid 1px rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-}
-
-.body__3CzxX2R {
-  .subtext__NtX88X9 {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  }
-}
-
-.list__3HrSUe1 {
-  .subtext__3DzaJGd {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  }
-}
-
+@import 'settings';
 @import 'workspace';
-
-.pipe__2l5EPg5 {
-  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-}
-
 @import 'main_list';
 @import 'templates';
 @import 'create';
