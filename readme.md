@@ -100,35 +100,35 @@ You can also activate the toggle using a shortcut.
 
 These settings are saved in the application's Local Storage.
 
-#### Modal Overlays (Alt/Option+O)
+#### Modal Overlays (Ctrl+Shift+O)
 
 This button will toggle an overlay to display whenever settings are open.
 
-#### Presence Icons (Alt/Option+P)
+#### Presence Icons (Ctrl+Shift+P)
 
 This button will restore the old school presence icons in the sidebar
 
-#### Dim Absent People (Alt/Option+D)
+#### Dim Absent People (Ctrl+Shift+D)
 
 This button will dim absent people from the sidebar, making the present ones more prominent.
 
-#### Loop Over selected themes (Alt/Option+T)
+#### Loop Over selected themes (Ctrl+Shift+T)
 
 This button will loop over the available themes, allowing you to choose a theme in realtime.
 
-#### Toggle Custom Font (Alt/Option+F)
+#### Toggle Custom Font (Ctrl+Shift+F)
 
 Switch the fonts used in the app with the font you've defined in the Slack Tweak Settings.
 
-#### Toggle Custom Monospace Font (Alt/Option+M)
+#### Toggle Custom Monospace Font (Ctrl+Shift+M)
 
 Switch the monospace font size and family used in the app with the font you've defined in the Slack Tweak Settings.
 
-#### Accent Color (Alt/Option+A)
+#### Accent Color (Ctrl+Shift+A)
 
 Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
 
-#### Links Color (Alt/Option+L)
+#### Links Color (Ctrl+Shift+L)
 
 Switch the current theme's links color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
 
