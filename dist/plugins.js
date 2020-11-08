@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v13.8.0',
+  version: 'v14.0.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -461,7 +461,7 @@ class PluginBase {
       if (!this.enabled) {
         return;
       }
-      if (e.ctrlKey && e.key === this.shortcut) {
+      if (e.altKey && e.ctrlKey && String.fromCharCode(e.keyCode).toLowerCase() === this.shortcut) {
         this.onToolbarClick();
         this.addIcon();
       }

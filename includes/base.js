@@ -22,7 +22,7 @@ class PluginBase {
       if (!this.enabled) {
         return;
       }
-      if (e.ctrlKey && e.key === this.shortcut) {
+      if (e.altKey && e.ctrlKey && String.fromCharCode(e.keyCode).toLowerCase() === this.shortcut) {
         this.onToolbarClick();
         this.addIcon();
       }
