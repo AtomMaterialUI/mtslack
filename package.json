@@ -55,7 +55,7 @@
     "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
     "configstore": "^5.0.0",
-    "figlet": "^1.2.3",
+    "figlet": "^1.5.0",
     "inquirer": "^6.5.0",
     "is-elevated": "^3.0.0",
     "is-root": "^2.1.0",
@@ -69,8 +69,8 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-oclif": "^3.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gulp": "^4.0.2",
@@ -84,10 +84,10 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "http-server": "^0.12.3",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
     "npx": "^10.2.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
     "stylelint-prettier": "^1.1.2"
   }
