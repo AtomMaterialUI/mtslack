@@ -166,11 +166,19 @@
   color: $text;
 }
 
-.p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_container_subtext,
-.p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_name {
+.p-shortcuts_menu_v2
+  .c-select_options_list__option:not(.c-select_options_list__option--active)
+  .p-shortcuts_menu_v2_item__app_container_subtext,
+.p-shortcuts_menu_v2
+  .c-select_options_list__option:not(.c-select_options_list__option--active)
+  .p-shortcuts_menu_v2_item__app_name {
   color: $text;
 }
 
 .p-shortcuts_menu_v2_heading__icon--app {
   border: 1px solid $borderLight;
+}
+
+.p-shortcuts_menu_v2_search_input_wrapper--end {
+  border-top: 1px solid $borderLight;
 }

@@ -7,6 +7,10 @@
 
   .p-classic_nav__model__title__info__tab--active {
     color: $primary;
+
+    &:after {
+      background: $green;
+    }
   }
 }
 
@@ -23,7 +27,8 @@
 }
 
 .p-workspace--feature_message_actions_refresh .c-message_actions__button {
-  &:active, &:focus {
+  &:active,
+  &:focus {
     color: $selectFg;
   }
 
