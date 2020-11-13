@@ -61,21 +61,23 @@
       }
     }
 
-    .p-avatar_stack__avatar--in_banner, .p-avatar_stack__count.p-avatar_stack__count--in_banner {
+    .p-avatar_stack__avatar--in_banner,
+    .p-avatar_stack__count.p-avatar_stack__count--in_banner {
       box-shadow: 0 0 0 2px $bg2;
     }
   }
 
   &:active {
     .p-avatar_stack__count {
-      background: $accentT;
+      background: $selectBg;
 
       &.p-avatar_stack__count--in_banner {
-        background: $accent;
+        background: $selectBg;
       }
     }
 
-    .p-avatar_stack__avatar--in_banner, .p-avatar_stack__count.p-avatar_stack__count--in_banner {
+    .p-avatar_stack__avatar--in_banner,
+    .p-avatar_stack__count.p-avatar_stack__count--in_banner {
       box-shadow: 0 0 0 2px $bg2;
     }
   }
@@ -95,4 +97,25 @@
 
 .p-avatar_stack__tip_subtitle {
   color: $text;
+}
+
+.p-avatar_stack--channel-details {
+  border: 1px solid $borderLight;
+
+  &.p-avatar_stack--no-outline {
+    border: none;
+  }
+
+  &:not(.p-avatar_stack--no-outline) .p-avatar_stack__stack:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  .p-avatar_stack__stack:hover .p-avatar_stack__count {
+    background-color: $active;
+  }
+
+  .p-avatar_stack__stack_divider {
+    background-color: $borderLight;
+  }
 }
