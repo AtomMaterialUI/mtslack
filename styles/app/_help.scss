@@ -6,7 +6,8 @@
   border-top: 1px solid $borderLight;
   text-indent: 1em;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $hl;
     text-decoration: none;
   }
@@ -59,27 +60,48 @@
   }
 }
 
+.search-help-center-input_input {
+  color: $fg;
+}
+
 .p-help_search__list {
+  .p-help_search__file__icon {
+    &:before {
+      color: $primary;
+    }
+  }
+
   .c-virtual_list__item {
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $selectFg;
       background-color: $hl;
     }
 
+    &:active .p-help_search__file__icon:before,
+    &:focus .p-help_search__file__icon:before,
+    &:hover .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
     &:active {
-      .p-help_search__list__item__title, .p-help_search_category_item__description {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
         color: $selectFg;
       }
     }
 
     &:focus {
-      .p-help_search__list__item__title, .p-help_search_category_item__description {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
         color: $selectFg;
       }
     }
 
     &:hover {
-      .p-help_search__list__item__title, .p-help_search_category_item__description {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
         color: $selectFg;
       }
     }
@@ -122,10 +144,6 @@
   background-color: $bg2;
 }
 
-.p-help_search__content__card__header {
-  border-bottom: 1px solid $borderLight;
-}
-
 .p-help_search__content__card__subtitle {
   color: $text;
 }
@@ -158,4 +176,47 @@
 
 .p-help_learning_modal__footer {
   border-top: 1px solid $borderLight;
+}
+
+
+.p-help_search__resource_card__image {
+  img {
+    background-color: transparent;
+  }
+}
+
+.p-help_article_flexpane {
+  .tip {
+    border-color: $borderLight;
+    background-color: $contrast;
+
+    &:before {
+      color: $borderLight;
+    }
+  }
+
+  table {
+    tr {
+      &:nth-child(odd) td {
+        background-color: $contrast;
+      }
+
+      &.white td {
+        background: none;
+      }
+
+      &.grey td {
+        background-color: $contrast;
+      }
+    }
+
+    td {
+      border-color: transparent;
+    }
+
+    th {
+      border-color: $border;
+      color: $primary;
+    }
+  }
 }
