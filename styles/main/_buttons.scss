@@ -1,3 +1,7 @@
+.c-button {
+  transition: background-color 0.3s ease-in;
+}
+
 .c-deprecated_button--link {
   color: $primary;
 }
@@ -88,6 +92,7 @@
     color: $fg;
   }
 }
+
 .sk-client-theme--dark .c-link--invert,
 .c-link--invert {
   color: $primary;
@@ -101,7 +106,7 @@
 
 .sk-client-scheme--purple .c-button--primary,
 .c-button--primary {
-  background: $accent;
+  background: $active;
   color: $selectFg;
 
   &:link,
@@ -115,7 +120,8 @@
   }
 
   &:active {
-    background: $accent;
+    background: $hl;
+    border-color: $primary;
   }
 
   &.c-button--disabled {
@@ -136,7 +142,7 @@
 .c-button--danger {
   background: $red;
   color: $selectFg;
-  opacity: .8;
+  opacity: 0.8;
 
   &:link,
   &:visited {
@@ -185,7 +191,6 @@
     color: $selectFg;
   }
 }
-
 
 .sk-client-scheme--purple .c-button--outline-primary,
 .sk-client-theme--dark .c-button--outline-primary,
