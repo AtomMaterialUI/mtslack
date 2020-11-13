@@ -15,3 +15,13 @@
 .c-small_mpim_entity--frozen {
   color: $disabled;
 }
+
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter {
+  background: $button;
+  box-shadow: none;
+}
+
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter .p-channel_sidebar__mpim_counter_inner,
+.p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy:not(.p-channel_sidebar__channel_icon_prefix--comfy-extra) {
+  background: $button;
+}

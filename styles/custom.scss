@@ -150,6 +150,7 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
     }
   }
 
+  // Presence icons
   .mtslack--with_presence {
     .p-channel_sidebar__channel_icon_prefix--comfy {
       background: none !important;
@@ -178,13 +179,27 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
         &.p-channel_sidebar__presence_icon--on-avatar {
           top: 0;
           left: 0;
-          margin: 0 1px 0 -4px;
+          margin: 0;
 
           &::before {
             font-size: 20px;
             line-height: 1;
           }
         }
+      }
+    }
+
+    .p-channel_sidebar__mpim_avatars {
+      img {
+        display: none;
+      }
+
+      .p-channel_sidebar__mpim_counter {
+        top: 0;
+        left: 0;
+        margin: 4px 0 0 4px;
+        transform: scale(1.5);
+
       }
     }
   }

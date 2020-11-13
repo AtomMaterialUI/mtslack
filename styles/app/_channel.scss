@@ -198,7 +198,7 @@
 }
 
 .p-ia__channel_details__actions {
-  background-color: $button;
+  background-color: $bg2;
 }
 
 .p-ia__channel_details__action {
@@ -336,7 +336,8 @@ button.p-channel_details_about__blurb {
   background: $button;
   padding-left: 12px;
 
-  &:disabled, &:hover {
+  &:disabled,
+  &:hover {
     color: $selectFg;
     background: $hl;
     padding-left: 12px;
@@ -394,6 +395,8 @@ button.p-channel_details_about__blurb {
   color: $primary;
 }
 
-.p-channel_email_address_modal__options_overlay_options_list .c-select_options_list__option--active .p-channel_email_address_modal__body_density__sub_text {
+.p-channel_email_address_modal__options_overlay_options_list
+  .c-select_options_list__option--active
+  .p-channel_email_address_modal__body_density__sub_text {
   color: $selectFg;
 }
