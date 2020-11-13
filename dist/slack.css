@@ -1,5 +1,5 @@
 :root {
-  --version: 'v13.8.0'; }
+  --version: 'v14.1.2'; }
 
 .neutral_white_bg {
   background: var(--bg) !important; }
@@ -1221,6 +1221,8 @@ a.label {
     color: var(--fg); }
   #mtslack .c-icon--file-figma-tiny:after {
     background-color: var(--fg); }
+  #mtslack .c-button {
+    transition: background-color 0.3s ease-in; }
   #mtslack .c-deprecated_button--link {
     color: var(--primary); }
   #mtslack .c-deprecated_button--disabled {
@@ -1277,7 +1279,7 @@ a.label {
       color: var(--fg); }
   #mtslack .sk-client-scheme--purple .c-button--primary,
   #mtslack .c-button--primary {
-    background: var(--accent);
+    background: var(--active);
     color: var(--selectFg2); }
     #mtslack .sk-client-scheme--purple .c-button--primary:link, #mtslack .sk-client-scheme--purple .c-button--primary:visited,
     #mtslack .c-button--primary:link,
@@ -1289,7 +1291,8 @@ a.label {
       background: var(--hl); }
     #mtslack .sk-client-scheme--purple .c-button--primary:active,
     #mtslack .c-button--primary:active {
-      background: var(--accent); }
+      background: var(--hl);
+      border-color: var(--primary); }
     #mtslack .sk-client-scheme--purple .c-button--primary.c-button--disabled,
     #mtslack .c-button--primary.c-button--disabled {
       background: var(--bg);
@@ -1305,7 +1308,7 @@ a.label {
   #mtslack .c-button--danger {
     background: var(--red);
     color: var(--selectFg2);
-    opacity: .8; }
+    opacity: 0.8; }
     #mtslack .sk-client-theme--dark .c-button--danger:link, #mtslack .sk-client-theme--dark .c-button--danger:visited,
     #mtslack .c-button--danger:link,
     #mtslack .c-button--danger:visited {
@@ -1530,6 +1533,10 @@ a.label {
     filter: none; }
   #mtslack .p-ia_details_popover__orgs_list_item .c-base_list_entity__secondary_content {
     color: var(--text); }
+  #mtslack .p-ia_details_popover__members_header__add_button {
+    color: var(--accent); }
+  #mtslack .p-ia_details_popover__members_more {
+    color: var(--accent); }
   #mtslack .c-tooltip__tip__arrow {
     background: var(--notif);
     border-color: var(--notif); }
@@ -3309,6 +3316,7 @@ a.label {
     background-color: var(--selectFg2); }
   #mtslack .p-top_nav__help__app_update .c-mention_badge {
     background-color: var(--accent); }
+  #mtslack .p-top_nav__help__banner,
   #mtslack .p-top_nav__help__customer_consult {
     background-color: var(--secondBg); }
   #mtslack .p-ia__sidebar_header {
@@ -3550,6 +3558,8 @@ a.label {
     border-color: var(--active); }
   #mtslack .p-channel_section_selector--has_standard_channel_section.p-channel_section_selector--has_dropdown_focus {
     box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+  #mtslack .p-channel_section_selector {
+    transition: border-color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1); }
   #mtslack .p-channel_section_selector__dropdown,
   #mtslack .p-channel_section_selector__star {
     color: var(--text); }
@@ -3568,11 +3578,11 @@ a.label {
   #mtslack .c-sk-modal_footer--speedbump {
     background-color: var(--bg); }
   #mtslack .c-sk-modal__speedbump_overlay {
-    background: rgba(var(--bg), 0.1); }
+    background: rgba(0, 0, 0, 0.1); }
   #mtslack .c-sk-modal--faded:after {
-    background: rgba(var(--bg), 0.1); }
+    background: rgba(0, 0, 0, 0.1); }
   #mtslack .c-modal_speed_bump_overlay {
-    background-color: rgba(var(--bg), 0.7); }
+    background-color: rgba(0, 0, 0, 0.7); }
   #mtslack .c-modal_speed_bump {
     background-color: var(--bg);
     border-top: 1px solid var(--active); }
@@ -3746,6 +3756,48 @@ a.label {
     color: rgba(var(--sk_inverted_background, 29, 28, 29), 1); }
   #mtslack .p-base_card__content__subtitle {
     color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1); }
+  #mtslack .p-board__empty--file-drop-hover {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    border: 2px solid var(--saf-0);
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1); }
+  #mtslack .p-board__empty__file_drop_icon {
+    background-color: rgba(29, 155, 209, 0.1); }
+  #mtslack .p-board-selected-items-pill {
+    color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+    background: rgba(var(--sk_inverted_background, 29, 28, 29), 1); }
+  #mtslack .p-board-selected-items-pill__button:hover {
+    background: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.1); }
+  #mtslack .p-board-selected-items-pill__button:first-child {
+    border-right: 1px solid rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.3); }
+  #mtslack .p-board-selectable-item__select-button .c-icon {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1); }
+  #mtslack .p-board-selectable-item--selected .p-board-selectable-item__select-button .c-icon {
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1); }
+  #mtslack .p-board-selectable-item--hovered .p-board-selectable-item__item {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 4px solid var(--saf-0); }
+  #mtslack .p-board-selectable-item--selected .p-board-selectable-item__item {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    border: 4px solid var(--saf-0); }
+  #mtslack .p-board-item__button--delete.c-button--outline:hover {
+    box-shadow: none;
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1); }
+  #mtslack .p-board_dragIndicator {
+    background-color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1); }
+  #mtslack .p-unfurl_card {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1); }
+    #mtslack .p-unfurl_card:active, #mtslack .p-unfurl_card:focus, #mtslack .p-unfurl_card:hover {
+      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1); }
+  #mtslack .p-message_card {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 1px solid var(--saf-0); }
+  #mtslack .p-message_card__channel {
+    color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1); }
+  #mtslack .p-message_card__overflow_footer {
+    background: linear-gradient(0deg, rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%, rgba(var(--sk_primary_background, 255, 255, 255), 0)); }
   #mtslack .p-one_on_one_calls_discovery_tip {
     background: var(--secondBg);
     color: var(--fg); }
@@ -4251,6 +4303,61 @@ a.label {
     color: var(--text); }
   #mtslack .p-slack_connect_dm_modal__url_input {
     background-color: transparent; }
+  #mtslack .p-slack_connect_dm_email_modal__learn_more {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7); }
+  #mtslack .p-slack_connect_dm_email_modal__success_icon {
+    color: #007a5a;
+    background-color: rgba(0, 122, 90, 0.15); }
+  #mtslack .p-slack_connect_channel {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    #mtslack .p-slack_connect_channel:hover {
+      background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1); }
+  #mtslack .p-slack_connect_channel--first {
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1), inset 0 1px rgba(0, 0, 0, 0.1); }
+  #mtslack .p-slack_connect_channel--focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3); }
+  #mtslack .p-slack_connect_channel:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3); }
+  #mtslack .p-slack_connect_channel__primary {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1); }
+  #mtslack .p-slack_connect_channel__shared_icon {
+    background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1); }
+  #mtslack .p-slack_connect_channel__shared_icon_lock {
+    background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border: 2px solid var(--saf-0); }
+  #mtslack .p-slack_connect_channel:hover .p-slack_connect_channel__shared_icon_lock {
+    border-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1); }
+  #mtslack .p-slack_connect_channels_list {
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04); }
+  #mtslack .p-slack_connect_channels_list__divider {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1); }
+  #mtslack .p-slack_connect_channels_tab__loading {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), .13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1); }
+  #mtslack .p-slack_connect_empty_landing_page__security_info__description {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7); }
+  #mtslack .p-slack_connect_empty_landing_page__shared_workspace_stack {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7); }
+  #mtslack .p-slack_connect_empty_landing_page__cta.c-card_container {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), .13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08); }
+  #mtslack .p-slack_connect_empty_landing_page__cta:focus, #mtslack .p-slack_connect_empty_landing_page__cta:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), .13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08); }
+  #mtslack .p-slack_connect_empty_landing_page__cta:focus .p-slack_connect_empty_landing_page__link_icon,
+  #mtslack .p-slack_connect_empty_landing_page__cta:hover .p-slack_connect_empty_landing_page__link_icon {
+    color: #e8f5fa;
+    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1); }
+  #mtslack .p-slack_connect_empty_landing_page__link_icon {
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: #e8f5fa; }
   #mtslack .p-first_channel_foreword {
     background: var(--notif); }
     #mtslack .p-first_channel_foreword:after {
@@ -4631,6 +4738,8 @@ a.label {
     color: var(--fg); }
     #mtslack .p-browse_page_layout__autocomplete_reset_button:hover {
       color: var(--primary); }
+  #mtslack .p-browse_page_layout__autocomplete_options_list_option_delete--visible:focus-within {
+    border: 1px solid var(--primary); }
   #mtslack .p-app_external_team_banner {
     background: var(--contrast); }
   #mtslack .p-app_external_team_banner__team_icon {
@@ -5178,13 +5287,15 @@ a.label {
     color: var(--fg); }
     #mtslack .p-avatar_stack__stack:hover .p-avatar_stack__count.p-avatar_stack__count--in_banner {
       background-color: var(--secondBg); }
-  #mtslack .p-avatar_stack__stack:hover .p-avatar_stack__avatar--in_banner, #mtslack .p-avatar_stack__stack:hover .p-avatar_stack__count.p-avatar_stack__count--in_banner {
+  #mtslack .p-avatar_stack__stack:hover .p-avatar_stack__avatar--in_banner,
+  #mtslack .p-avatar_stack__stack:hover .p-avatar_stack__count.p-avatar_stack__count--in_banner {
     box-shadow: 0 0 0 2px var(--secondBg); }
   #mtslack .p-avatar_stack__stack:active .p-avatar_stack__count {
-    background: var(--accentT); }
+    background: var(--selectBg); }
     #mtslack .p-avatar_stack__stack:active .p-avatar_stack__count.p-avatar_stack__count--in_banner {
-      background: var(--accent); }
-  #mtslack .p-avatar_stack__stack:active .p-avatar_stack__avatar--in_banner, #mtslack .p-avatar_stack__stack:active .p-avatar_stack__count.p-avatar_stack__count--in_banner {
+      background: var(--selectBg); }
+  #mtslack .p-avatar_stack__stack:active .p-avatar_stack__avatar--in_banner,
+  #mtslack .p-avatar_stack__stack:active .p-avatar_stack__count.p-avatar_stack__count--in_banner {
     box-shadow: 0 0 0 2px var(--secondBg); }
   #mtslack .p-avatar_stack__add_button--highlight {
     background-color: var(--button); }
@@ -5194,6 +5305,17 @@ a.label {
       background: var(--accent); }
   #mtslack .p-avatar_stack__tip_subtitle {
     color: var(--text); }
+  #mtslack .p-avatar_stack--channel-details {
+    border: 1px solid var(--active); }
+    #mtslack .p-avatar_stack--channel-details.p-avatar_stack--no-outline {
+      border: none; }
+    #mtslack .p-avatar_stack--channel-details:not(.p-avatar_stack--no-outline) .p-avatar_stack__stack:hover {
+      background-color: var(--hl);
+      color: var(--selectFg2); }
+    #mtslack .p-avatar_stack--channel-details .p-avatar_stack__stack:hover .p-avatar_stack__count {
+      background-color: var(--active); }
+    #mtslack .p-avatar_stack--channel-details .p-avatar_stack__stack_divider {
+      background-color: var(--active); }
   #mtslack .c-missing_text {
     color: var(--text); }
   #mtslack .c-missing_text--unknown {
@@ -6632,7 +6754,7 @@ a.label {
   #mtslack .p-ia__channel_details__prefs_control__content {
     color: var(--fg); }
   #mtslack .p-ia__channel_details__actions {
-    background-color: var(--button); }
+    background-color: var(--secondBg); }
   #mtslack .p-ia__channel_details__action.active .p-ia__channel_details__action_icon {
     background-color: var(--active);
     color: var(--selectFg2); }
@@ -6732,7 +6854,9 @@ a.label {
     color: var(--text); }
   #mtslack .p-channel_email_address_modal__body_density__sub_text {
     color: var(--primary); }
-  #mtslack .p-channel_email_address_modal__options_overlay_options_list .c-select_options_list__option--active .p-channel_email_address_modal__body_density__sub_text {
+  #mtslack .p-channel_email_address_modal__options_overlay_options_list
+.c-select_options_list__option--active
+.p-channel_email_address_modal__body_density__sub_text {
     color: var(--selectFg2); }
   #mtslack .p-invite_members_form__header_icon {
     color: var(--accent2); }
@@ -7035,6 +7159,12 @@ a.label {
     color: var(--disabled); }
   #mtslack .c-small_mpim_entity--frozen {
     color: var(--disabled); }
+  #mtslack .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter {
+    background: var(--button);
+    box-shadow: none; }
+  #mtslack .p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter .p-channel_sidebar__mpim_counter_inner,
+  #mtslack .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy:not(.p-channel_sidebar__channel_icon_prefix--comfy-extra) {
+    background: var(--button); }
   #mtslack .p-dm_browser_modal__controls_meta {
     color: var(--text); }
   #mtslack .p-dm_browser_modal__list_heading {
@@ -7090,7 +7220,7 @@ a.label {
   #mtslack .channel_option_item--disabled:hover {
     background: var(--excluded); }
   #mtslack .p-channel-options__retention_modal .c-button--primary.c-button--disabled {
-    background: var(--accentT); }
+    background: var(--button); }
   #mtslack .p-channel_options--retention_duration {
     background-color: var(--bg); }
   #mtslack .p-channel_options--retention_duration_add_on {
@@ -10058,14 +10188,25 @@ a.label {
       background-color: var(--accent2); }
     #mtslack .p-help_modal__requests_badge.unread {
       background-color: var(--excluded); }
+  #mtslack .search-help-center-input_input {
+    color: var(--fg); }
+  #mtslack .p-help_search__list .p-help_search__file__icon:before {
+    color: var(--primary); }
   #mtslack .p-help_search__list .c-virtual_list__item:active, #mtslack .p-help_search__list .c-virtual_list__item:focus, #mtslack .p-help_search__list .c-virtual_list__item:hover {
     color: var(--selectFg2);
     background-color: var(--hl); }
-  #mtslack .p-help_search__list .c-virtual_list__item:active .p-help_search__list__item__title, #mtslack .p-help_search__list .c-virtual_list__item:active .p-help_search_category_item__description {
+  #mtslack .p-help_search__list .c-virtual_list__item:active .p-help_search__file__icon:before,
+  #mtslack .p-help_search__list .c-virtual_list__item:focus .p-help_search__file__icon:before,
+  #mtslack .p-help_search__list .c-virtual_list__item:hover .p-help_search__file__icon:before {
     color: var(--selectFg2); }
-  #mtslack .p-help_search__list .c-virtual_list__item:focus .p-help_search__list__item__title, #mtslack .p-help_search__list .c-virtual_list__item:focus .p-help_search_category_item__description {
+  #mtslack .p-help_search__list .c-virtual_list__item:active .p-help_search__list__item__title,
+  #mtslack .p-help_search__list .c-virtual_list__item:active .p-help_search_category_item__description {
     color: var(--selectFg2); }
-  #mtslack .p-help_search__list .c-virtual_list__item:hover .p-help_search__list__item__title, #mtslack .p-help_search__list .c-virtual_list__item:hover .p-help_search_category_item__description {
+  #mtslack .p-help_search__list .c-virtual_list__item:focus .p-help_search__list__item__title,
+  #mtslack .p-help_search__list .c-virtual_list__item:focus .p-help_search_category_item__description {
+    color: var(--selectFg2); }
+  #mtslack .p-help_search__list .c-virtual_list__item:hover .p-help_search__list__item__title,
+  #mtslack .p-help_search__list .c-virtual_list__item:hover .p-help_search_category_item__description {
     color: var(--selectFg2); }
   #mtslack .p-help_search__list .p-help_search__list__icon {
     color: transparent; }
@@ -10085,8 +10226,6 @@ a.label {
     color: var(--text); }
   #mtslack .p-help_search__keyboard_card__container {
     background-color: var(--secondBg); }
-  #mtslack .p-help_search__content__card__header {
-    border-bottom: 1px solid var(--active); }
   #mtslack .p-help_search__content__card__subtitle {
     color: var(--text); }
   #mtslack .p-help_search__badge_small {
@@ -10103,6 +10242,24 @@ a.label {
     color: var(--selectFg2); }
   #mtslack .p-help_learning_modal__footer {
     border-top: 1px solid var(--active); }
+  #mtslack .p-help_search__resource_card__image img {
+    background-color: transparent; }
+  #mtslack .p-help_article_flexpane .tip {
+    border-color: var(--active);
+    background-color: var(--contrast); }
+    #mtslack .p-help_article_flexpane .tip:before {
+      color: var(--active); }
+  #mtslack .p-help_article_flexpane table tr:nth-child(odd) td {
+    background-color: var(--contrast); }
+  #mtslack .p-help_article_flexpane table tr.white td {
+    background: none; }
+  #mtslack .p-help_article_flexpane table tr.grey td {
+    background-color: var(--contrast); }
+  #mtslack .p-help_article_flexpane table td {
+    border-color: transparent; }
+  #mtslack .p-help_article_flexpane table th {
+    border-color: var(--border);
+    color: var(--primary); }
   #mtslack .p-app-launcher .c-filter_input {
     border-color: var(--active); }
   #mtslack .p-app-launcher__link {
@@ -10627,11 +10784,17 @@ a.label {
     border-bottom-color: var(--active); }
   #mtslack .p-shortcuts_menu_v2_heading {
     color: var(--text); }
-  #mtslack .p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_container_subtext,
-  #mtslack .p-shortcuts_menu_v2 .c-select_options_list__option:not(.c-select_options_list__option--active) .p-shortcuts_menu_v2_item__app_name {
+  #mtslack .p-shortcuts_menu_v2
+.c-select_options_list__option:not(.c-select_options_list__option--active)
+.p-shortcuts_menu_v2_item__app_container_subtext,
+  #mtslack .p-shortcuts_menu_v2
+.c-select_options_list__option:not(.c-select_options_list__option--active)
+.p-shortcuts_menu_v2_item__app_name {
     color: var(--text); }
   #mtslack .p-shortcuts_menu_v2_heading__icon--app {
     border: 1px solid var(--active); }
+  #mtslack .p-shortcuts_menu_v2_search_input_wrapper--end {
+    border-top: 1px solid var(--active); }
   #mtslack .p-quick_switcher__input {
     border-bottom: 1px solid var(--button); }
     #mtslack .p-quick_switcher__input:focus {
@@ -11274,6 +11437,8 @@ a.label {
       color: var(--text); }
     #mtslack .p-channel_tabs__header .p-classic_nav__model__title__info__tab--active {
       color: var(--primary); }
+      #mtslack .p-channel_tabs__header .p-classic_nav__model__title__info__tab--active:after {
+        background: var(--green); }
   #mtslack .p-workspace--channel-tabs-header .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
   #mtslack .p-workspace--channel-tabs-header .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before {
     background: var(--bg); }
@@ -11926,6 +12091,16 @@ a.label {
     background: var(--red); }
   #mtslack .p-stories_uploader__footer__status--done {
     background: var(--green); }
+  #mtslack .p-story_viewer_modal__reactions__reaction:hover {
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04); }
+  #mtslack .p-story_viewer_modal__reactions__reaction--reacted {
+    background: rgba(29, 155, 209, 0.1);
+    --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+    box-shadow: inset 0 0 0 1px var(--saf-0); }
+    #mtslack .p-story_viewer_modal__reactions__reaction--reacted:hover {
+      background: rgba(29, 155, 209, 0.1);
+      --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+      box-shadow: inset 0 0 0 1px var(--saf-0); }
   #mtslack .p-story_viewer_modal__reactions__toggle {
     background: var(--button);
     color: var(--fg);
@@ -11943,6 +12118,8 @@ a.label {
       background: var(--bg); }
   #mtslack .p-story_viewer_modal__header {
     box-shadow: -2px 0 7px 0 rgba(0, 0, 0, 0.3); }
+  #mtslack .p-story_viewer_modal__header__divider {
+    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13); }
   #mtslack .p-story_viewer_modal__footer__add {
     background: var(--button);
     color: var(--fg); }
@@ -12004,6 +12181,25 @@ a.label {
   #mtslack .p-stories_ribbon__poster_thumb {
     background-color: var(--button);
     border: 2px solid var(--button); }
+  #mtslack .p-stories_ribbon__create_plus {
+    background: var(--button); }
+  #mtslack .p-ia__view_header--stories-collapsed-and-has-stories .p-ia__view_header__button--stories_entrypoint {
+    border: 2px solid var(--button);
+    background: var(--button); }
+    #mtslack .p-ia__view_header--stories-collapsed-and-has-stories .p-ia__view_header__button--stories_entrypoint:hover {
+      border: 2px solid var(--hl);
+      background: var(--hl); }
+    #mtslack .p-ia__view_header--stories-collapsed-and-has-stories .p-ia__view_header__button--stories_entrypoint .c-icon,
+    #mtslack .p-ia__view_header--stories-collapsed-and-has-stories .p-ia__view_header__button--stories_entrypoint:hover .c-icon {
+      color: var(--primary);
+      text-shadow: 0 1px 2px var(--fg); }
+  #mtslack .p-ia__view_header--stories-unreads.p-ia__view_header--stories-collapsed-and-has-stories
+.p-ia__view_header__button--stories_entrypoint {
+    border-color: var(--accent); }
+  #mtslack .p-ia__view_header--stories-expanded .p-ia__view_header__button--stories_entrypoint:before {
+    border-color: transparent transparent var(--notif) transparent; }
+  #mtslack .p-ia__view_header--stories-expanded .p-ia__view_header__button--stories_entrypoint:after {
+    border-color: transparent transparent var(--notif) transparent; }
   #mtslack .p-trouble_loading_overlay {
     background: var(--bg);
     color: var(--fg); }
@@ -12282,10 +12478,17 @@ a.label {
   #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar {
     top: 0;
     left: 0;
-    margin: 0 1px 0 -4px; }
+    margin: 0; }
     #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar::before {
       font-size: 20px;
       line-height: 1; }
+  #mtslack .mtslack--with_presence .p-channel_sidebar__mpim_avatars img {
+    display: none; }
+  #mtslack .mtslack--with_presence .p-channel_sidebar__mpim_avatars .p-channel_sidebar__mpim_counter {
+    top: 0;
+    left: 0;
+    margin: 4px 0 0 4px;
+    transform: scale(1.5); }
   #mtslack .p-ia__view_header .p-classic_nav__model__title__name,
   #mtslack .p-classic_nav__model__title__name,
   #mtslack .p-ia__view_header__title {
