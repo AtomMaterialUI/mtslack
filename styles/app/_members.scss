@@ -517,3 +517,9 @@ button.p-admin_member_table__menu_item--disabled {
     color: $primary;
   }
 }
+
+.p-browse_page_layout__autocomplete_options_list_option_delete--visible {
+  &:focus-within {
+    border: 1px solid $primary;
+  }
+}
