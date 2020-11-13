@@ -149,6 +149,10 @@
   }
 }
 
+.p-channel_section_selector {
+  transition: border-color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
+}
+
 .p-channel_section_selector__dropdown,
 .p-channel_section_selector__star {
   color: $text;
@@ -181,17 +185,17 @@
 }
 
 .c-sk-modal__speedbump_overlay {
-  background: rgba($bg, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .c-sk-modal--faded {
   &:after {
-    background: rgba($bg, 0.1);
+    background: rgba(0, 0, 0, 0.1);
   }
 }
 
 .c-modal_speed_bump_overlay {
-  background-color: rgba($bg, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .c-modal_speed_bump {
