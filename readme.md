@@ -1,4 +1,4 @@
-# Slack Theme Collection
+# mtslack (Material Themed Slack)
 
 Beautify your Slack application from a list of popular themes!!!
 
@@ -21,7 +21,7 @@ Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 - Solarized Light ![solarlight.png](doc/v2/solarlight.png)
 - Night Owl ![nightowl.png](doc/v2/nightowl.png)
 - Light Owl ![lightowl.png](doc/v2/lightowl.png)
-- Moonlight ![moonlight.png](doc/v2/moonlight.png)
+- Moonlight (BETA) ![moonlight.png](doc/v2/moonlight.png)
 
 ----------------------------
 
@@ -39,7 +39,7 @@ Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com
 
 <a href="https://opencollective.com/material-theme-jetbrains#backers" target="_blank"><img src="https://opencollective.com/material-theme-jetbrains/backers.svg?width=890"></a>
 
-Check also : <http://www.material-theme.com/docs/support-us/>
+Check also : <https://www.material-theme.com/docs/support-us/>
 
 ## Sponsors
 
@@ -61,18 +61,16 @@ website. [[Become a sponsor](https://opencollective.com/material-theme-jetbrains
 
 ### Global installation (works anywhere)
 
-1. Run `npm install -g mtslack` in a terminal
-2. Run the command `mtslack`
-3. PROFIT!!!
-
-- You will be prompted with a menu with two options:
+1. Run `npm install -g mtslack` in a terminal (or run `sudo npx mtslack` if you don't want to install it globally)
+2. Run the command `sudo mtslack` (in Windows, you need to open the Terminal in Administrator Mode)
+3. You will be prompted with a menu with two options:
     - Apply Theme
     - Remove Theme
 
-- Select *Apply Theme* to apply the theme.
-- Open or Restart (with Cmd-Q) Slack
-- ?????
-- PROFIT!!!!!!!
+4. Select *Apply Theme* to apply the theme.
+5. Open or Restart (with Cmd-Q) Slack
+6. ?????
+7. PROFIT!!!!!!!
 
 ### Revert to the default theme
 
@@ -80,9 +78,13 @@ The best way to revert to the default theme would be to use the backup copy you 
 
 There is also a `Remove Theme` option in the menu but it is less robust.
 
+### Updates
+
+`mtslack` has an auto-update function. Whenever there is a new package available, a notification will appear on the bottom on your Slack Window prompting you to run the `mtslack` command again to trigger the update. You will then need to run the command again to apply the updates.
+
 ----
 
-### Slack Tweaks (Beta)
+### Slack Tweaks
 
 Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can find a button to open the Slack Tweaks on the channels sidebar.
 
