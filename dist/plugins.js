@@ -324,7 +324,7 @@ const slackPluginsAPI = {
     $popover.innerHTML = `<div role="presentation">
 <div id="slack-kit-tooltip" role="tooltip" class="c-tooltip__tip c-tooltip__tip--bottom-right" data-qa="tooltip-tip">
 ${plugin.desc}
-<div class="c-tooltip__tip_shortcut">${plugin.shortcut}</div>
+<div class="c-tooltip__tip_shortcut">Ctrl-Shift-${plugin.shortcut}</div>
 <div class="c-tooltip__tip__arrow" style="right: 18px;"></div>
 </div>
 </div>`;
