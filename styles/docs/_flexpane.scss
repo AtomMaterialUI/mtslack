@@ -1,0 +1,61 @@
+[data-docs-editor='true'] {
+  .p-flexpane_header {
+    background: $bg2;
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .p-flexpane--iap1 .p-flexpane_header {
+    background: $bg2;
+  }
+
+  .p-flexpane_header__control {
+    color: $text;
+
+    &:hover {
+      color: $selectFg;
+    }
+
+    &:active {
+      color: $primary;
+    }
+  }
+
+  @keyframes p-flexpane--highlight {
+    20% {
+      background: $excluded;
+    }
+
+    60% {
+      background: $excluded;
+    }
+  }
+
+  .p-flexpane__footer {
+    border-top: 1px solid $borderLight;
+  }
+
+  .p-flexpane__floating_loader {
+    background: $bg;
+  }
+
+  .p-flexpane__body--empty_loading {
+    background-color: $bg;
+
+    &:after {
+      background-image: linear-gradient(transparent, $bg);
+    }
+  }
+
+  .p-flexpane__body--empty {
+    background-color: $bg;
+  }
+
+  .p-flexpane_header,
+  .p-flexpane__body {
+    @include pane;
+  }
+
+  .c-banner--info.p-docs_welcome {
+    background: $notif;
+  }
+}

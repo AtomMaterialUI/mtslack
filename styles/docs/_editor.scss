@@ -1,0 +1,55 @@
+.p-docs_editor__container {
+  background: $bg;
+  color: $fg;
+}
+
+.p-docs_editor__container.p-docs_editor__container--disabled {
+  opacity: 0.7;
+}
+
+html[data-app='docs'] {
+  background-color: $bg;
+}
+
+[data-app='docs'] .p-client_container,
+[data-docs-editor] {
+  background-color: $bg;
+
+  .c-texty_input {
+    background: $bg;
+    border: none;
+  }
+}
+
+
+
+.p-docs_editor_body {
+  &.c-texty_input,
+  &.c-texty_input.focus {
+    border: none;
+  }
+
+  .ql-editor {
+    background: $bg;
+  }
+
+  .ql-editor hr {
+    background: $hl;
+  }
+
+  &.c-texty_input code {
+    color: $fg;
+  }
+
+  .ql-editor.ql-blank:before {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .ql-editor blockquote:before {
+    background: $hl;
+  }
+}
+
+.ql-editor docsblockembed[data-is-selected='true'] .selected {
+  box-shadow: inset 0 0 0 4px $accent;
+}

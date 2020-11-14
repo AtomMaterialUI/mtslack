@@ -1,0 +1,39 @@
+.p-docs_header {
+  border-bottom: 1px solid $borderLight;
+  background: $bg2;
+  height: 76px;
+
+  .c-texty_input {
+    background: $bg2 !important;
+    border: none;
+  }
+}
+
+.p-docs_header__container {
+  height: 76px;
+}
+
+.p-docs_header_title {
+  color: $fg;
+  background: $bg2;
+
+  .ql-editor {
+    padding: 0;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+.p-meta_info_text {
+  color: $text;
+}
+
+.p-meta_info_star {
+  color: $text;
+}
+
+.p-meta_info_star--starred {
+  color: $blue;
+}

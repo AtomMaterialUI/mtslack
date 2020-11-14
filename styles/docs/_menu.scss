@@ -1,0 +1,16 @@
+.p-docs_action_menu .c-menu_item__button--danger .c-menu_item__description {
+  color: $text;
+}
+
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted,
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:link,
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:visited {
+  color: $selectFg;
+  background-color: $red;
+}
+
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted .c-menu_item__description,
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:link .c-menu_item__description,
+.p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:visited .c-menu_item__description {
+  color: $selectFg;
+}

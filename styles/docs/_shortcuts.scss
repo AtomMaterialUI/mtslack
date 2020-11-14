@@ -1,0 +1,31 @@
+[data-docs-editor="true"] {
+  .p-shortcuts_flexpane__shortcut {
+    border-color: $border;
+  }
+
+  .p-shortcuts_flexpane__shortcut_title {
+    color: $fg;
+  }
+
+  .p-shortcuts_flexpane__tip {
+    color: $text;
+  }
+
+  .p-shortcuts_flexpane__shortcut_heading {
+    border-color: $borderLight;
+    color: $fg;
+  }
+
+  .p-shortcuts_flexpane__shortcut_sub_heading {
+    color: $text;
+  }
+
+  .p-shortcuts_flexpane {
+    border-left: 1px solid $border;
+  }
+
+  .p-shortcuts_flexpane__shortcut ul[data-checked='true'] > li:before {
+    color: $accent;
+  }
+
+}

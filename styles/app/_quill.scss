@@ -156,7 +156,7 @@
 
     ul {
       &[data-checked=false] > li:before {
-        color: $button;
+        color: $fg;
       }
 
       &[data-checked=true] > li {
@@ -164,7 +164,7 @@
           color: $accent;
         }
 
-        color: $bg;
+        color: $fg;
       }
 
       &[data-checked=true] > li:before {
@@ -173,7 +173,7 @@
       }
 
       &[data-checked=false] > li > .slack-list-item-checkbox:before {
-        color: $button;
+        color: $fg;
       }
 
       &[data-checked=false] > li > .slack-list-item-checkbox:focus:before {
@@ -182,12 +182,12 @@
 
       &[data-checked=true] > li > .slack-list-item-checkbox {
         &:focus:before {
-          box-shadow: 0 0 0 5px $primary;
-          color: $hl;
+          box-shadow: none;
+          color: $accent;
         }
 
         &:before {
-          color: $hl;
+          color: $accent;
         }
       }
     }

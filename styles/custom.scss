@@ -82,11 +82,13 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
 @import 'core/index';
 @import 'core/landing';
 @import 'core/fonts';
+
 #mtslack {
   @import 'main/index';
   @import 'app/index';
   @import 'settings/index';
   @import 'workflow/index';
+  @import 'docs/index';
 
   // Dim sidebar
   .mtslack--dim {
@@ -199,7 +201,6 @@ $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !im
         left: 0;
         margin: 4px 0 0 4px;
         transform: scale(1.5);
-
       }
     }
   }
