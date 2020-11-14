@@ -1,0 +1,52 @@
+// Presence icons
+.mtslack--with_presence {
+  .p-channel_sidebar__channel_icon_prefix--comfy {
+    background: none !important;
+    color: $fg !important;
+    opacity: 1 !important;
+
+    .p-channel_sidebar__channel--muted & {
+      opacity: 0.64 !important;
+    }
+
+    .p-channel_sidebar__channel--unread & {
+      color: $primary !important;
+    }
+  }
+
+  .p-channel_sidebar__user_avatar {
+    img {
+      display: none;
+    }
+
+    .p-channel_sidebar__presence_icon {
+      &.p-channel_sidebar__presence_icon--on-avatar-border {
+        -webkit-text-stroke-width: 0px;
+      }
+
+      &.p-channel_sidebar__presence_icon--on-avatar {
+        top: 0;
+        left: 0;
+        margin: 0;
+
+        &::before {
+          font-size: 20px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .p-channel_sidebar__mpim_avatars {
+    img {
+      display: none;
+    }
+
+    .p-channel_sidebar__mpim_counter {
+      top: 0;
+      left: 0;
+      margin: 4px 0 0 4px;
+      transform: scale(1.5);
+    }
+  }
+}

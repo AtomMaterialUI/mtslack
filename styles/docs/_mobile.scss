@@ -1,9 +1,9 @@
 .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked]:before {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.35);
+  color: $fg;
 }
 
 .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked='true'] {
-  color: $text;
+  color: $accent;
 }
 
 .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked='true']:before {

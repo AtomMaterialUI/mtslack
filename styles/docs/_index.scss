@@ -5,9 +5,3 @@
 @import 'mobile';
 @import 'share';
 @import 'menu';
-
-@media print {
-  .p-docs_creator {
-    color: $primary;
-  }
-}

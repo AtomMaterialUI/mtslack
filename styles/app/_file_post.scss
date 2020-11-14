@@ -2,7 +2,6 @@
   border-top: 1px solid $borderLight;
 }
 
-
 .sk-client-theme--dark .c-pillow_file__post__content code {
   color: $orange;
 }
@@ -12,7 +11,8 @@
     border-top: 1px solid $borderLight;
   }
 
-  code, pre {
+  code,
+  pre {
     background: $contrast;
     color: $fg;
   }
@@ -23,22 +23,22 @@
     }
   }
 
-  .c-pillow_file__post__unfurl, .message {
+  .c-pillow_file__post__unfurl,
+  .message {
     background-color: $bg2;
   }
 
   ul {
-
     > li[data-checked]:before {
       color: $fg;
     }
 
     > li {
-      &[data-checked=true] {
+      &[data-checked='true'] {
         color: $disabled;
       }
 
-      &[data-checked=true]:before {
+      &[data-checked='true']:before {
         color: $accent;
       }
     }
