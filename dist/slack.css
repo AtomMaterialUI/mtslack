@@ -12554,7 +12554,7 @@ a.label {
   #mtslack .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
   #mtslack .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
     opacity: 0.4 !important; }
-  #mtslack .mtslack--dim .p-channel_sidebar__list .c-icon--presence-offline::before {
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .c-icon--presence-offline::before {
     position: absolute;
     content: '';
     width: 24px;
@@ -12563,13 +12563,13 @@ a.label {
     top: -8px;
     background: var(--contrast);
     filter: opacity(0.5); }
-  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__channel:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__link:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__list .p-channel_sidebar__close_container:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__channel--selected .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__channel--selected:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__link--selected .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim .p-channel_sidebar__link--selected:hover .c-icon--presence-offline::before {
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__channel:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__link:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__close_container:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected:hover .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected .c-icon--presence-offline::before,
+  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected:hover .c-icon--presence-offline::before {
     position: absolute;
     content: '';
     width: 24px;
