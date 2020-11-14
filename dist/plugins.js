@@ -57,7 +57,7 @@ const slackPluginsAPI = {
 
     setTimeout(() => {
       const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replaceAll('"', '') || '0.0.0';
-      if (version && this.version > version) {
+      if (version && this.version === version) {
         return;
       }
 
