@@ -8106,18 +8106,20 @@ a.label {
     color: var(--orange); }
   #mtslack .c-pillow_file__post__content hr {
     border-top: 1px solid var(--active); }
-  #mtslack .c-pillow_file__post__content code, #mtslack .c-pillow_file__post__content pre {
+  #mtslack .c-pillow_file__post__content code,
+  #mtslack .c-pillow_file__post__content pre {
     background: var(--contrast);
     color: var(--fg); }
   #mtslack .c-pillow_file__post__content blockquote:before {
     background-color: var(--secondBg); }
-  #mtslack .c-pillow_file__post__content .c-pillow_file__post__unfurl, #mtslack .c-pillow_file__post__content .message {
+  #mtslack .c-pillow_file__post__content .c-pillow_file__post__unfurl,
+  #mtslack .c-pillow_file__post__content .message {
     background-color: var(--secondBg); }
   #mtslack .c-pillow_file__post__content ul > li[data-checked]:before {
     color: var(--fg); }
-  #mtslack .c-pillow_file__post__content ul > li[data-checked=true] {
+  #mtslack .c-pillow_file__post__content ul > li[data-checked='true'] {
     color: var(--disabled); }
-  #mtslack .c-pillow_file__post__content ul > li[data-checked=true]:before {
+  #mtslack .c-pillow_file__post__content ul > li[data-checked='true']:before {
     color: var(--accent); }
   #mtslack .c-pillow_file__snippet__content .CodeMirror {
     color: var(--fg); }
@@ -12523,9 +12525,9 @@ a.label {
   #mtslack [data-docs-editor="true"] .p-shortcuts_flexpane__shortcut ul[data-checked='true'] > li:before {
     color: var(--accent); }
   #mtslack .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked]:before {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.35); }
+    color: var(--fg); }
   #mtslack .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked='true'] {
-    color: var(--text); }
+    color: var(--accent); }
   #mtslack .p-docs_mobile_view--body .c-pillow_file__post__content ul > li[data-checked='true']:before {
     color: var(--accent); }
   #mtslack .p-docs_mobile_view--body .c-pillow_file__post__content hr {
@@ -12549,9 +12551,6 @@ a.label {
   #mtslack .p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:link .c-menu_item__description,
   #mtslack .p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:visited .c-menu_item__description {
     color: var(--selectFg2); }
-  @media print {
-    #mtslack .p-docs_creator {
-      color: var(--primary); } }
   #mtslack .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
   #mtslack .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
     opacity: 0.4 !important; }
