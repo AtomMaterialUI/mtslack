@@ -656,8 +656,7 @@ a.label {
   background: var(--bg); }
 
 .mtslack {
-  color: var(--fg);
-  background: var(--contrast); }
+  color: var(--fg); }
   [lang] .mtslack {
     font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
   .mtslack .p-ssb_landing {
@@ -12454,6 +12453,8 @@ a.label {
     color: var(--fg); }
   #mtslack .p-docs_editor__container.p-docs_editor__container--disabled {
     opacity: 0.7; }
+  #mtslack html[data-app='docs'] {
+    background-color: var(--bg); }
   #mtslack [data-app='docs'] .p-client_container,
   #mtslack [data-docs-editor] {
     background-color: var(--bg); }
