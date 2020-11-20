@@ -196,6 +196,10 @@
   color: $fg;
 }
 
+.c-team_entity__icon--error {
+  color: $error;
+}
+
 .c-base_list_entity--highlight-dark .c-file_entity__icon:before {
   color: $bg;
 }
