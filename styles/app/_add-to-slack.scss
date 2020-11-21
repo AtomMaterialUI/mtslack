@@ -47,6 +47,7 @@
     border: 1px solid $primaryT;
     background-color: $bg2;
 
+    .p-add_to_slack_radio__icon,
     .p-add_to_slack_radio__checkbox_icon {
       color: $accent;
     }
@@ -74,12 +75,28 @@
     border: 1px solid $primary;
     background-color: $bg2;
 
+    .p-add_to_slack_radio__icon,
     .p-add_to_slack_radio__checkbox_icon {
       color: $accent;
     }
   }
 }
 
+.p-add_to_slack_radio__icon,
 .p-add_to_slack_radio__checkbox_icon {
   color: $accent;
+}
+
+.p-add_to_slack_radio--disabled {
+  background-color: $bg;
+  color: $disabled;
+}
+
+.p-add_to_slack_radio__disabled_text {
+  background-color: $bg;
+  color: $disabled;
+}
+
+.p-add_to_slack_radio__icon--disabled {
+  color: $disabled;
 }
