@@ -1,5 +1,5 @@
 :root {
-  --version: 'v14.1.5'; }
+  --version: 'v14.2.0'; }
 
 .neutral_white_bg {
   background: var(--bg) !important; }
@@ -5226,10 +5226,10 @@ a.label {
       color: var(--selectFg2); }
   #mtslack .p-channel_sidebar__organize_mode_menu .p-channel_sidebar__organize_action--primary {
     color: var(--fg);
-    background: var(--accent); }
+    background: var(--hl); }
     #mtslack .p-channel_sidebar__organize_mode_menu .p-channel_sidebar__organize_action--primary:hover, #mtslack .p-channel_sidebar__organize_mode_menu .p-channel_sidebar__organize_action--primary:active, #mtslack .p-channel_sidebar__organize_mode_menu .p-channel_sidebar__organize_action--primary:focus {
       color: var(--selectFg2);
-      background: var(--accent); }
+      background: var(--selectBg); }
   #mtslack .p-channel_sidebar__member_label {
     font-style: italic;
     color: var(--disabled); }
@@ -5378,6 +5378,9 @@ a.label {
       background-color: var(--active); }
     #mtslack .p-avatar_stack--channel-details .p-avatar_stack__stack_divider {
       background-color: var(--active); }
+  #mtslack .p-avatar_stack__avatar {
+    background: var(--button);
+    box-shadow: 0 0 0 2px var(--contrast); }
   #mtslack .c-missing_text {
     color: var(--text); }
   #mtslack .c-missing_text--unknown {
@@ -9835,7 +9838,7 @@ a.label {
     #mtslack .c-tabs__tab.c-tabs__tab--active,
     #mtslack .c-tabs__tab:active {
       color: var(--fg);
-      box-shadow: none; }
+      box-shadow: inset 0 -2px 0 0 var(--accent); }
     #mtslack .sk-client-theme--dark.sk-client-scheme--purple .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus,
     #mtslack .sk-client-scheme--purple .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus,
     #mtslack .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus {
@@ -12415,23 +12418,6 @@ a.label {
     #mtslack .Unreachable-Webdata #restartButton {
       background: var(--button);
       color: var(--fg); }
-  #mtslack .p-prefs_modal__theme_section > * {
-    cursor: not-allowed;
-    opacity: 0.25;
-    pointer-events: none; }
-  #mtslack .p-prefs_modal__theme_section::before {
-    content: ' (disabled: the Custom Themes override these settings ;))';
-    font-size: 30px;
-    margin: 1em auto;
-    opacity: 1;
-    text-align: center; }
-  #mtslack .p-prefs_modal__theme_section h2,
-  #mtslack .p-prefs_modal__theme_section h3 {
-    text-decoration: line-through; }
-  #mtslack .c-plugins--disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-    pointer-events: none; }
   #mtslack .p-client_container {
     background-color: var(--bg); }
   #mtslack .black_always__u1RkQA2 {

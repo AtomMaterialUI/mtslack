@@ -520,11 +520,11 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
   .p-channel_sidebar__organize_action--primary {
     color: $fg;
-    background: $accent;
+    background: $hl;
 
     &:hover, &:active, &:focus {
       color: $selectFg;
-      background: $accent;
+      background: $selectBg;
     }
   }
 
