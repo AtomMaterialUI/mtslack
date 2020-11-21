@@ -119,3 +119,8 @@
     background-color: $borderLight;
   }
 }
+
+.p-avatar_stack__avatar {
+  background: $button;
+  box-shadow: 0 0 0 2px $contrast;
+}
