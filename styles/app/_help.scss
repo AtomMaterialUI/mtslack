@@ -219,4 +219,13 @@
       color: $primary;
     }
   }
+
+  ol:not(.takeaway) {
+    li {
+      &:before {
+        background-color: $green;
+        color: $selectFg;
+      }
+    }
+  }
 }

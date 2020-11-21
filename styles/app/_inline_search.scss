@@ -49,3 +49,12 @@
 .c-inline_search__btns_wrapper {
   border-left: 1px solid $border;
 }
+
+.c-inline_search__btn {
+  &:disabled {
+    .c-icon--chevron-medium-down,
+    .c-icon--chevron-medium-up {
+      color: $disabled;
+    }
+  }
+}

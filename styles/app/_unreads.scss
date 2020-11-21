@@ -107,3 +107,22 @@
 .p-unreads_view__jump_to_section_button {
   color: $accent2;
 }
+
+.p-unreads_view__header--new {
+  background: $bg2;
+}
+
+.p-unreads_view__header--was_marked {
+  background: $bg2;
+  box-shadow: inset 0 -1px $borderLight;
+}
+
+.p-unreads_view__header--was_marked--new {
+  background: $bg2;
+  box-shadow: inset 0 -1px $borderLight;
+  color: $text;
+}
+
+.p-unreads_view__header--collapsed {
+  box-shadow: inset 0 -1px $borderLight;
+}

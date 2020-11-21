@@ -75,3 +75,11 @@
 .p-new_file_menu_source__icon-gradient {
   background: $bg2;
 }
+
+.p-new_file_menu_source_slack_connect_disabled__container {
+  .c-callout {
+    color: $disabled;
+    background: $bg;
+    border: 1px solid $bg;
+  }
+}
