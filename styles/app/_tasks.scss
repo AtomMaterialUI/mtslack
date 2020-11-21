@@ -4,7 +4,7 @@
 
 .p-tasks_page_controls__content_action_container {
   &:hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: transparent;
   }
 }
 
@@ -18,5 +18,8 @@
 
 .p-tasks_page__board_channel {
   color: $text;
+}
 
+.p-tasks_flexpane__table {
+  border-top: 1px solid $borderLight;
 }
