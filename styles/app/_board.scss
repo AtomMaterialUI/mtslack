@@ -288,8 +288,8 @@
 }
 
 .p-board__group--empty {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), .04);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), .13);
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   border: 1px dashed var(--saf-0);
 }
 
@@ -327,5 +327,14 @@
   .p-base_card,
   .p-message_card {
     background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.p-ia__view_header__button__board--selected {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+
+  &.p-ia__view_header__button:hover {
+    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   }
 }

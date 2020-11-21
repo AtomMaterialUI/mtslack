@@ -75,6 +75,10 @@
   background: $bg;
 }
 
+.p-stories_uploader__video_container {
+  background: $bg;
+}
+
 .p-stories_uploader__footer {
   background: $bg2;
   @include pane;
@@ -130,6 +134,36 @@
   color: $fg;
 }
 
+.p-stories_uploader__footer__control--camera.p-stories_uploader__footer__control--off
+  .p-stories_uploader__footer__control__icon {
+  background: $red;
+  color: $selectFg;
+}
+
+.p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on
+  .p-stories_uploader__footer__control__icon {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-stories_uploader__footer__control__icon {
+  background: $button;
+}
+
+.p-stories_uploader__retry {
+  color: $text;
+
+  &:hover {
+    background: $hl;
+  }
+
+  &:active,
+  &:focus {
+    background: $hl;
+    color: $primary;
+  }
+}
+
 .p-stories_uploader__footer__status--pending {
   background: $text;
 }
@@ -144,19 +178,17 @@
 
 .p-story_viewer_modal__reactions__reaction {
   &:hover {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background: $bg2;
   }
 }
 
 .p-story_viewer_modal__reactions__reaction--reacted {
-  background: rgba(29, 155, 209, 0.1);
-  --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
-  box-shadow: inset 0 0 0 1px var(--saf-0);
+  background: $active;
+  box-shadow: inset 0 0 0 1px $accentT;
 
   &:hover {
-    background: rgba(29, 155, 209, 0.1);
-    --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
-    box-shadow: inset 0 0 0 1px var(--saf-0);
+    background: $hl;
+    box-shadow: inset 0 0 0 1px $accent;
   }
 }
 
@@ -190,7 +222,7 @@
 }
 
 .p-story_viewer_modal__header__divider {
-  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: $borderLight;
 }
 
 .p-story_viewer_modal__footer__add {
@@ -279,6 +311,10 @@
 
 .p-story_audio_only {
   background: $contrast;
+
+  &:before {
+    background: $contrast;
+  }
 }
 
 .p-stories_ribbon,
@@ -323,7 +359,8 @@
 }
 
 .p-ia__view_header--stories-unreads.p-ia__view_header--stories-collapsed-and-has-stories
-  .p-ia__view_header__button--stories_entrypoint {
+  .p-ia__view_header__button--stories_entrypoint
+  .c-icon {
   border-color: $accent;
 }
 
@@ -334,5 +371,19 @@
 
   &:after {
     border-color: transparent transparent $notif transparent;
+  }
+}
+
+.p-ia__view_header__button.p-ia__view_header__button--stories_entrypoint_disabled {
+  &:active,
+  &:hover {
+    background-color: $hl;
+    color: $text;
+  }
+}
+
+.p-story_progress_bar--scrubbable {
+  &:hover {
+    background: $tree;
   }
 }
