@@ -1,0 +1,19 @@
+.supports_custom_scrollbar .p-setup_channel_examples {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: $fg;
+    }
+  }
+}
+
+.p-setup_channel_examples {
+  .p-setup_channel_examples__footer {
+    background: $bg;
+  }
+
+  .p-setup_channel_examples__message_input {
+    color: $disabled;
+    background: $contrast;
+    border: 1px solid $borderLight;
+  }
+}

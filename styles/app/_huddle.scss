@@ -106,7 +106,7 @@
   }
 
   .p_huddle_flexpane_member_card__bell--label-sent {
-    color: #616061;
+    color: $text;
   }
 
   .p_huddle_flexpane_member_card_speaker_icon {
@@ -327,4 +327,102 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
 
 .p-huddle_sidebar_footer__member_count_icon--bg {
   background: $fg;
+}
+
+.p-huddle_invite {
+  background: $notif;
+}
+
+.p-huddle_invite__content {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-huddle_invite__button {
+  background: $button;
+  color: $selectFg;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_invite__button--accept {
+  background: $selectFg;
+  color: $accent;
+
+  &:hover {
+    background: var(--theme-active_item_text_hover);
+    color: $accent;
+  }
+}
+
+.p-huddle_invite__icon--join {
+  fill: $accent;
+}
+
+.p-huddle_join_message__new_member_text {
+  color: $fg;
+}
+
+.p-huddle_details__mute_btn {
+  background-color: $button;
+}
+
+.p-huddle_details__peer--active-speaker .p-huddle_details__mute_btn {
+  color: $primary;
+}
+
+.p-huddle_details__mute_btn:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer_buttons__outer .p-huddle_sidebar_footer_buttons__secondary_btn {
+  color: $fg;
+
+  &:hover {
+    color: $fg;
+    background-color: $hl;
+  }
+
+  background-color: $button;
+}
+
+.p-huddle_sidebar_footer_buttons__label {
+  color: $fg;
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--mic {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--leave {
+  background-color: var(--theme-badge);
+  color: $fg;
+
+  .p-huddle_sidebar_footer_buttons__label,
+  .p-huddle_sidebar_footer_buttons__label_icon {
+    color: $selectFg;
+  }
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.p-huddle_sidebar_footer {
+  background-color: $notif;
+  color: $fg;
+}
+
+.p-huddle_sidebar_footer__container {
+  background-color: $notif;
+  border: 2px solid $notif;
 }
