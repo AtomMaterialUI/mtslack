@@ -9,6 +9,10 @@
 
 .p-slack_connect_dm_email_modal__learn_more {
   color: rgba(var(--sk_foreground_max, 29, 28, 29), .7);
+
+  .link {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), .7);
+  }
 }
 
 .p-slack_connect_dm_email_modal__success_icon {
