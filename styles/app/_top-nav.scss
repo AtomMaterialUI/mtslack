@@ -8,14 +8,18 @@
   box-shadow: none;
 }
 
-.p-top_nav__button {
+.p-top_nav__button,
+.p-top_nav__search,
+.p-top_nav__sidebar .p-channel_sidebar__history_button,
+.p-top_nav__sidebar .p-channel_sidebar__history_button--disabled:hover,
+.p-top_nav__search__clear {
   color: $fg;
   border-radius: 25px;
-}
 
-.p-top_nav__button:hover {
-  background: $accent;
-  color: $selectFg;
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
 }
 
 .p-top_nav__sidebar .p-channel_sidebar__history_button {

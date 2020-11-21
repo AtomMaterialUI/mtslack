@@ -89,6 +89,8 @@
   background-color: $bg2;
 
   &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
     &:-moz-placeholder,
     &:-ms-input-placeholder,
     &::-moz-placeholder,
@@ -104,16 +106,17 @@
 }
 
 .c-date_range_picker_calendar {
-  background-color: $bg;
+  background-color: transparent;
 }
 
 .c-date_range_picker_calendar__date {
-  border: 1px solid $borderLight;
+  border: none;
 
   &:hover,
   &:focus {
     background-color: $tree;
     color: $selectFg;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
@@ -127,24 +130,24 @@
 
 .c-date_range_picker_calendar__date--select_range_end,
 .c-date_range_picker_calendar__date--select_range_start {
-  color: $bg;
-  background-color: $primaryT;
-  border-color: $primaryT;
+  color: $primary;
+  background-color: $button;
+  border-color: $button;
 }
 
 .c-date_range_picker_calendar__date--select_range_end:hover,
 .c-date_range_picker_calendar__date--select_range_start:hover {
-  background-color: $primary;
+  background-color: $hl;
   color: $selectFg;
 }
 
 .c-date_range_picker_calendar__date--in_selected_range {
-  background-color: $accentT;
-  border-color: $accentT;
+  background-color: $active;
+  border-color: $active;
 
   &:hover,
   &:focus {
-    background-color: $accent;
+    background-color: $selectBg;
   }
 }
 
@@ -165,6 +168,7 @@
     background-color: $red;
   }
 }
+
 .c-date_picker__icon,
 .c-date_picker__select_btn {
   color: $primary;

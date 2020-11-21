@@ -8,8 +8,8 @@
 }
 
 .c-alert--level_info {
-  background-color: $blue;
-  border: 1px solid $blue;
+  background-color: $blue !important;
+  border: 1px solid $blue !important;
   color: $bg !important;
 
   .c-alert__icon {
@@ -18,32 +18,32 @@
 }
 
 .c-alert--level_success {
-  background-color: $green;
-  border: 1px solid $green;
+  background-color: $green !important;
+  border: 1px solid $green !important;
   color: $bg !important;
 
   .c-alert__icon {
-    color: $bg;
+    color: $bg !important;
   }
 }
 
 .c-alert--level_warning {
-  background-color: $orange;
-  border: 1px solid $orange;
+  background-color: $orange !important;
+  border: 1px solid $orange !important;
   color: $bg !important;
 
   .c-alert__icon {
-    color: $bg;
+    color: $bg !important;
   }
 }
 
 .c-alert--level_error {
-  background-color: $red;
-  border: 1px solid $red;
+  background-color: $red !important;
+  border: 1px solid $red !important;
   color: $selectFg !important;
 
   .c-alert__icon {
-    color: $selectFg;
+    color: $selectFg !important;
   }
 }
 
