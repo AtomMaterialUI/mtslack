@@ -8,16 +8,20 @@ const {execute} = require('./lib/command');
 const pkg = require('./package.json');
 
 async function run() {
-  console.log(chalk.yellow(figlet.textSync('Slack Theme Applier')));
+  console.log(chalk.yellow(figlet.textSync('mtslack', {
+    font: 'nancyj',
+    horizontalLayout: 'default',
+    verticalLayout: 'default',
+    width: 80,
+    whitespaceBreak: true
+  })));
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
-  console.log(chalk.cyan('Welcome to the Slack Theme Applier CLI!'));
-  console.log('');
-  console.log(chalk.red('Please note that this is still experimental and can ruin your Slack application! In the case of a problem, please reinstall Slack.'));
+  console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
 
   if (!isRoot()) {
-    console.log(chalk.red('You must be root to execute this command. Run with "sudo mtslack"'));
+    console.log(chalk.red('You must be root to execute this command. Run with "sudo mtslack" (or run as a Windows Administrator)'));
     process.exit(1);
   }
 
