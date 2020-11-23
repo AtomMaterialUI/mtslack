@@ -79,16 +79,17 @@ $headerFont: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe 
 $fontFamily: var(--fontFamily, Slack-Lato, appleLogo, sans-serif);
 $monoFont: var(--monoFont, Monaco, Menlo, Consolas, 'Courier New', monospace !important);
 
+@import 'core/fonts';
+
 #mtslack {
   @import 'core/index';
   @import 'core/landing';
-  @import 'core/fonts';
 
   @import 'main/index';
   @import 'app/index';
   @import 'settings/index';
   @import 'workflow/index';
   @import 'docs/index';
-
-  @import 'custom/index';
 }
+
+@import 'custom/index';
