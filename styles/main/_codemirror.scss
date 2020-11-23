@@ -237,6 +237,11 @@ div.CodeMirror span {
   }
 }
 
+.CodeMirror pre {
+  background-color: transparent;
+  border: none;
+}
+
 .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
   color: $fg;
 }

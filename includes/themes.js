@@ -31,7 +31,8 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'github',
       'nightowl',
       'lightowl',
-      'moonlight'
+      'moonlight',
+      'default'
     ];
     // Current theme
     this.currentTheme = 0;
@@ -64,7 +65,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
   applyTheme() {
     document.dispatchEvent(new CustomEvent('ThemeChanged', {
       detail: {
-        name: this.currentTheme,
+        name: this.themes[this.currentTheme],
         css: window.themePresets[this.themes[this.currentTheme]]
       }
     }));
