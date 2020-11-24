@@ -7,7 +7,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     super();
     // Mandatory
     this.name = 'nextTheme';
-    this.desc = 'Loop over installed themes';
+    // this.desc = 'Loop over installed themes';
     this.longDescription = 'Add a button in the toolbar to loop over installed themes';
     this.enabled = true;
     this.shortcut = 't';
@@ -36,6 +36,18 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     ];
     // Current theme
     this.currentTheme = 0;
+  }
+
+  get desc() {
+    return `Loop over installed themes (current: ${this.themes[this.currentTheme]})`;
+  }
+
+  set desc(v) {
+
+  }
+
+  get currentThemeName() {
+    return this.themes[this.currentTheme || 0];
   }
 
   apply() {

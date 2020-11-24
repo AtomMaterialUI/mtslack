@@ -1,341 +1,267 @@
 :root {
   --version: 'v14.2.0'; }
 
-.neutral_white_bg {
-  background: var(--bg) !important; }
-
-.sk_black {
-  color: var(--black) !important; }
-
-.sk_black_bg {
-  background-color: var(--black) !important; }
-
-.sk_dark_gray, .sk_dark_grey {
-  color: var(--gray) !important; }
-
-.sk_dark_gray_bg, .sk_dark_grey_bg {
-  background-color: var(--gray) !important; }
-
-.sk_light_gray, .sk_light_grey {
-  color: var(--silver) !important; }
-
-.sk_light_gray_bg, .sk_light_grey_bg {
-  background-color: var(--silver) !important; }
-
-.sk_soft_gray, .sk_soft_grey {
-  color: var(--selectFg2) !important; }
-
-.sk_soft_gray_bg, .sk_soft_grey_bg {
-  background-color: var(--selectFg2) !important; }
-
-.sk_link_blue {
-  color: var(--blue) !important; }
-
-.sk_link_blue_bg {
-  background-color: var(--blue) !important; }
-
-.sk_hover_blue {
-  color: var(--blue) !important; }
-
-.sk_hover_blue_bg {
-  background-color: var(--blue) !important; }
-
-.sk_fill_blue {
-  color: var(--accent) !important; }
-
-.sk_fill_blue_bg {
-  background-color: var(--accent) !important; }
-
-.sk_sapphire_blue {
-  color: var(--blue) !important; }
-
-.sk_sapphire_blue_bg {
-  background-color: var(--blue) !important; }
-
-.sk_pale_blue {
-  color: var(--blue) !important; }
-
-.sk_pale_blue_bg {
-  background-color: var(--blue) !important; }
-
-.seafoam_green,
-.sk_seafoam_green {
-  color: var(--green) !important; }
-
-.seafoam_green_bg,
-.sk_seafoam_green_bg {
-  background-color: var(--green) !important; }
-
-.sk_warning_red {
-  color: var(--red) !important; }
-
-.sk_warning_red_bg {
-  background-color: var(--red) !important; }
-
-.sk_pin_orange {
-  color: var(--orange) !important; }
-
-.sk_pin_orange_bg {
-  background-color: var(--orange) !important; }
-
-.subtle_silver {
-  color: var(--text) !important; }
-
-.sk_colonel_mustard {
-  color: var(--orange2) !important; }
-
-.sk_colonel_mustard_bg {
-  background-color: var(--orange2) !important; }
-
-.sk_star_yellow {
-  color: var(--yellow) !important; }
-
-.sk_star_yellow_bg {
-  background-color: var(--yellow) !important; }
-
-.sk_aubergine {
-  color: var(--purple) !important; }
-
-.sk_aubergine_bg {
-  background-color: var(--purple) !important; }
-
-.sk_just_orange {
-  color: var(--orange) !important; }
-
-.sk_just_orange_bg {
-  background-color: var(--orange) !important; }
-
-.sk_reddish_orange {
-  color: var(--orange2) !important; }
-
-.sk_reddish_orange_bg {
-  background-color: var(--orange2) !important; }
-
-.sk_sapphire_blue {
-  color: var(--blue) !important; }
-
-.sk_sapphire_blue_bg {
-  background-color: var(--blue) !important; }
-
-.sk_indigo {
-  color: var(--purple) !important; }
-
-.sk_indigo_bg {
-  background-color: var(--purple) !important; }
-
-.sk_sky_blue {
-  color: var(--cyan) !important; }
-
-.sk_sky_blue_bg {
-  background-color: var(--cyan) !important; }
-
-.sk_frosty_blue {
-  color: var(--selectFg2) !important; }
-
-.sk_frosty_blue_bg {
-  background-color: var(--selectFg2) !important; }
-
-.sk_raspberry_red {
-  color: var(--red2) !important; }
-
-.sk_raspberry_red_bg {
-  background-color: var(--red2) !important; }
-
-.sk_sunshine_yellow {
-  color: var(--yellow) !important; }
-
-.sk_sunshine_yellow_bg {
-  background-color: var(--yellow) !important; }
-
-.sk_pale_yellow {
-  color: var(--selectFg2) !important; }
-
-.sk_pale_yellow_bg {
-  background-color: var(--selectFg2) !important; }
-
-.sk_lilypad_green {
-  color: var(--green) !important; }
-
-.sk_lilypad_green_bg {
-  background-color: var(--green) !important; }
-
-.clear_blue {
-  color: var(--blue) !important; }
-
-.clear_blue_bg {
-  background-color: var(--blue) !important; }
-
-.solid_blue {
-  color: var(--blue) !important; }
-
-.solid_blue_bg {
-  background-color: var(--blue) !important; }
-
-.candy_red, .candy_red_on_hover:hover {
-  color: var(--red) !important; }
-
-.candy_red_bg {
-  background-color: var(--red) !important; }
-
-.code_red {
-  color: var(--red) !important; }
-
-.flat_grey {
-  color: var(--selectFg2) !important; }
-
-.indifferent_grey {
-  color: var(--text) !important; }
-
-.mention_yellow_bg {
-  background-color: var(--yellow) !important; }
-
-.star_yellow {
-  color: var(--yellow) !important; }
-
-.star_yellow_bg {
-  background-color: var(--yellow) !important; }
-
-.yolk_orange {
-  color: var(--orange2) !important; }
-
-.yolk_orange_bg {
-  background-color: var(--orange2) !important; }
-
-.thrills_purple {
-  color: var(--purple) !important; }
-
-.thrills_purple_bg {
-  background-color: var(--purple) !important; }
-
-.mantis_green {
-  color: var(--green) !important; }
-
-.burnt_violet {
-  color: var(--purple) !important; }
-
-.burnt_violet_bg {
-  background-color: var(--purple) !important; }
-
-.ocean_teal {
-  color: var(--cyan) !important; }
-
-.ocean_teal_bg {
-  background-color: var(--cyan) !important; }
-
-.havana_blue {
-  color: var(--blue) !important; }
-
-.havana_blue_bg {
-  background-color: var(--blue) !important; }
-
-.sky_blue {
-  color: var(--cyan) !important; }
-
-.sky_blue_bg {
-  background-color: var(--cyan) !important; }
-
-.slate_blue {
-  color: var(--blue) !important; }
-
-.slate_blue_bg {
-  background-color: var(--blue) !important; }
-
-.muddy_lilac {
-  color: var(--purple) !important; }
-
-.muddy_lilac_bg {
-  background-color: var(--purple) !important; }
-
-.moscow_red, .moscow_red_dark, .moscow_red_on_hover:hover, moscow_red_bg {
-  color: var(--red) !important; }
-
-.moscow_red_dark_bg {
-  background-color: var(--red) !important; }
-
-.mustard_yellow {
-  color: var(--orange2) !important; }
-
-.mustard_yellow_bg {
-  background-color: var(--orange2) !important; }
-
-.kelly_green, .kelly_green_dark {
-  color: var(--green) !important; }
-
-.kelly_green_bg {
-  background-color: var(--green) !important; }
-
-.channel_page_blue {
-  color: var(--blue) !important; }
-
-.pin_orange {
-  color: var(--orange) !important; }
-
-.charcoal_grey {
-  color: var(--black) !important; }
-
-.old_petunia_grey {
-  color: var(--disabled) !important; }
-
-.cool_purple {
-  color: var(--purple) !important; }
-
-.cool_purple_bg {
-  background-color: var(--purple) !important; }
-
-.dusty_springfield_grey {
-  color: var(--disabled) !important; }
-
-.dropbox_blue {
-  color: var(--blue) !important; }
-
-.dropbox_blue_bg {
-  background-color: var(--blue) !important; }
-
-.twitter_blue {
-  color: var(--cyan) !important; }
-
-.twitter_blue_bg {
-  background-color: var(--cyan) !important; }
-
-.gdrive_blue_bg {
-  background-color: var(--blue) !important; }
-
-.screenhero_blue {
-  color: var(--blue) !important; }
-
-.screenhero_blue_bg {
-  background-color: var(--blue) !important; }
-
-.blue_link {
-  color: var(--accent) !important; }
-
-.blue_hover {
-  color: var(--accent) !important; }
-
-.blue_fill {
-  color: var(--cyan); }
-
-.blue_fill_bg {
-  background-color: var(--cyan) !important; }
-
-.greigh {
-  color: var(--text) !important; }
-
-.greigh_bg {
-  background-color: var(--text) !important; }
+[lang] .p-message_pane_input__disabled,
+[lang] .p-message_pane_input__preview {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+[lang] .c-texty_input {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+[lang] .c-basic_container,
+[lang] .c-texty_input_unstyled {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+[lang] .c-menu {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+[lang] .p-huddle_details {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+.Unreachable-Webdata,
+.p-trouble_loading {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
+
+.p-shared_channel_creator_welcome_modal__header--error,
+.p-shared_channel_creator_welcome_modal__content--error,
+.p-shared_channel_creator_welcome_modal__body,
+.p-shared_channel_creator_welcome_modal__header {
+  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+
+#mtslack {
+  /* Override presence icons */
+  /** `opacity: 1` color overrides */
+  /** Navigation Bar **/
+  /** Global Nav (DEPRECATED BUT KEEP FOR SONIC) **/
+  /** Classic Nav (WIP) **/ }
+  #mtslack .neutral_white_bg {
+    background: var(--bg) !important; }
+  #mtslack .sk_black {
+    color: var(--black) !important; }
+  #mtslack .sk_black_bg {
+    background-color: var(--black) !important; }
+  #mtslack .sk_dark_gray, #mtslack .sk_dark_grey {
+    color: var(--gray) !important; }
+  #mtslack .sk_dark_gray_bg, #mtslack .sk_dark_grey_bg {
+    background-color: var(--gray) !important; }
+  #mtslack .sk_light_gray, #mtslack .sk_light_grey {
+    color: var(--silver) !important; }
+  #mtslack .sk_light_gray_bg, #mtslack .sk_light_grey_bg {
+    background-color: var(--silver) !important; }
+  #mtslack .sk_soft_gray, #mtslack .sk_soft_grey {
+    color: var(--selectFg2) !important; }
+  #mtslack .sk_soft_gray_bg, #mtslack .sk_soft_grey_bg {
+    background-color: var(--selectFg2) !important; }
+  #mtslack .sk_link_blue {
+    color: var(--blue) !important; }
+  #mtslack .sk_link_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .sk_hover_blue {
+    color: var(--blue) !important; }
+  #mtslack .sk_hover_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .sk_fill_blue {
+    color: var(--accent) !important; }
+  #mtslack .sk_fill_blue_bg {
+    background-color: var(--accent) !important; }
+  #mtslack .sk_sapphire_blue {
+    color: var(--blue) !important; }
+  #mtslack .sk_sapphire_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .sk_pale_blue {
+    color: var(--blue) !important; }
+  #mtslack .sk_pale_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .seafoam_green,
+  #mtslack .sk_seafoam_green {
+    color: var(--green) !important; }
+  #mtslack .seafoam_green_bg,
+  #mtslack .sk_seafoam_green_bg {
+    background-color: var(--green) !important; }
+  #mtslack .sk_warning_red {
+    color: var(--red) !important; }
+  #mtslack .sk_warning_red_bg {
+    background-color: var(--red) !important; }
+  #mtslack .sk_pin_orange {
+    color: var(--orange) !important; }
+  #mtslack .sk_pin_orange_bg {
+    background-color: var(--orange) !important; }
+  #mtslack .subtle_silver {
+    color: var(--text) !important; }
+  #mtslack .sk_colonel_mustard {
+    color: var(--orange2) !important; }
+  #mtslack .sk_colonel_mustard_bg {
+    background-color: var(--orange2) !important; }
+  #mtslack .sk_star_yellow {
+    color: var(--yellow) !important; }
+  #mtslack .sk_star_yellow_bg {
+    background-color: var(--yellow) !important; }
+  #mtslack .sk_aubergine {
+    color: var(--purple) !important; }
+  #mtslack .sk_aubergine_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .sk_just_orange {
+    color: var(--orange) !important; }
+  #mtslack .sk_just_orange_bg {
+    background-color: var(--orange) !important; }
+  #mtslack .sk_reddish_orange {
+    color: var(--orange2) !important; }
+  #mtslack .sk_reddish_orange_bg {
+    background-color: var(--orange2) !important; }
+  #mtslack .sk_sapphire_blue {
+    color: var(--blue) !important; }
+  #mtslack .sk_sapphire_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .sk_indigo {
+    color: var(--purple) !important; }
+  #mtslack .sk_indigo_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .sk_sky_blue {
+    color: var(--cyan) !important; }
+  #mtslack .sk_sky_blue_bg {
+    background-color: var(--cyan) !important; }
+  #mtslack .sk_frosty_blue {
+    color: var(--selectFg2) !important; }
+  #mtslack .sk_frosty_blue_bg {
+    background-color: var(--selectFg2) !important; }
+  #mtslack .sk_raspberry_red {
+    color: var(--red2) !important; }
+  #mtslack .sk_raspberry_red_bg {
+    background-color: var(--red2) !important; }
+  #mtslack .sk_sunshine_yellow {
+    color: var(--yellow) !important; }
+  #mtslack .sk_sunshine_yellow_bg {
+    background-color: var(--yellow) !important; }
+  #mtslack .sk_pale_yellow {
+    color: var(--selectFg2) !important; }
+  #mtslack .sk_pale_yellow_bg {
+    background-color: var(--selectFg2) !important; }
+  #mtslack .sk_lilypad_green {
+    color: var(--green) !important; }
+  #mtslack .sk_lilypad_green_bg {
+    background-color: var(--green) !important; }
+  #mtslack .clear_blue {
+    color: var(--blue) !important; }
+  #mtslack .clear_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .solid_blue {
+    color: var(--blue) !important; }
+  #mtslack .solid_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .candy_red, #mtslack .candy_red_on_hover:hover {
+    color: var(--red) !important; }
+  #mtslack .candy_red_bg {
+    background-color: var(--red) !important; }
+  #mtslack .code_red {
+    color: var(--red) !important; }
+  #mtslack .flat_grey {
+    color: var(--selectFg2) !important; }
+  #mtslack .indifferent_grey {
+    color: var(--text) !important; }
+  #mtslack .mention_yellow_bg {
+    background-color: var(--yellow) !important; }
+  #mtslack .star_yellow {
+    color: var(--yellow) !important; }
+  #mtslack .star_yellow_bg {
+    background-color: var(--yellow) !important; }
+  #mtslack .yolk_orange {
+    color: var(--orange2) !important; }
+  #mtslack .yolk_orange_bg {
+    background-color: var(--orange2) !important; }
+  #mtslack .thrills_purple {
+    color: var(--purple) !important; }
+  #mtslack .thrills_purple_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .mantis_green {
+    color: var(--green) !important; }
+  #mtslack .burnt_violet {
+    color: var(--purple) !important; }
+  #mtslack .burnt_violet_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .ocean_teal {
+    color: var(--cyan) !important; }
+  #mtslack .ocean_teal_bg {
+    background-color: var(--cyan) !important; }
+  #mtslack .havana_blue {
+    color: var(--blue) !important; }
+  #mtslack .havana_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .sky_blue {
+    color: var(--cyan) !important; }
+  #mtslack .sky_blue_bg {
+    background-color: var(--cyan) !important; }
+  #mtslack .slate_blue {
+    color: var(--blue) !important; }
+  #mtslack .slate_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .muddy_lilac {
+    color: var(--purple) !important; }
+  #mtslack .muddy_lilac_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .moscow_red, #mtslack .moscow_red_dark, #mtslack .moscow_red_on_hover:hover, #mtslack moscow_red_bg {
+    color: var(--red) !important; }
+  #mtslack .moscow_red_dark_bg {
+    background-color: var(--red) !important; }
+  #mtslack .mustard_yellow {
+    color: var(--orange2) !important; }
+  #mtslack .mustard_yellow_bg {
+    background-color: var(--orange2) !important; }
+  #mtslack .kelly_green, #mtslack .kelly_green_dark {
+    color: var(--green) !important; }
+  #mtslack .kelly_green_bg {
+    background-color: var(--green) !important; }
+  #mtslack .channel_page_blue {
+    color: var(--blue) !important; }
+  #mtslack .pin_orange {
+    color: var(--orange) !important; }
+  #mtslack .charcoal_grey {
+    color: var(--black) !important; }
+  #mtslack .old_petunia_grey {
+    color: var(--disabled) !important; }
+  #mtslack .cool_purple {
+    color: var(--purple) !important; }
+  #mtslack .cool_purple_bg {
+    background-color: var(--purple) !important; }
+  #mtslack .dusty_springfield_grey {
+    color: var(--disabled) !important; }
+  #mtslack .dropbox_blue {
+    color: var(--blue) !important; }
+  #mtslack .dropbox_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .twitter_blue {
+    color: var(--cyan) !important; }
+  #mtslack .twitter_blue_bg {
+    background-color: var(--cyan) !important; }
+  #mtslack .gdrive_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .screenhero_blue {
+    color: var(--blue) !important; }
+  #mtslack .screenhero_blue_bg {
+    background-color: var(--blue) !important; }
+  #mtslack .blue_link {
+    color: var(--accent) !important; }
+  #mtslack .blue_hover {
+    color: var(--accent) !important; }
+  #mtslack .blue_fill {
+    color: var(--cyan); }
+  #mtslack .blue_fill_bg {
+    background-color: var(--cyan) !important; }
+  #mtslack .greigh {
+    color: var(--text) !important; }
+  #mtslack .greigh_bg {
+    background-color: var(--text) !important; }
 
 @keyframes c-highlight {
   0% {
     background: var(--notif); }
   to {
     background: var(--bg); } }
-
-.c-animation_wrapper-pulse--orange > button {
-  animation: btn-shadow-pulse-orange 2s 5; }
-  .c-animation_wrapper-pulse--orange > button:before {
-    background: var(--yellow); }
-  .c-animation_wrapper-pulse--orange > button:after {
-    box-shadow: 0 0 4px 2px var(--yellow); }
+  #mtslack .c-animation_wrapper-pulse--orange > button {
+    animation: btn-shadow-pulse-orange 2s 5; }
+    #mtslack .c-animation_wrapper-pulse--orange > button:before {
+      background: var(--yellow); }
+    #mtslack .c-animation_wrapper-pulse--orange > button:after {
+      box-shadow: 0 0 4px 2px var(--yellow); }
 
 @keyframes btn-shadow-pulse-orange {
   0% {
@@ -346,13 +272,12 @@
     box-shadow: inset 0 0 0 1px var(--orange); }
   95%, to {
     box-shadow: none; } }
-
-.c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button {
-  animation: btn-shadow-pulse-orange-dark 2s 5; }
-  .c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button:before {
-    background: rgba(var(--orange), 0.3); }
-  .c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button:after {
-    box-shadow: 0 0 4px 2px rgba(var(--orange), 0.3); }
+  #mtslack .c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button {
+    animation: btn-shadow-pulse-orange-dark 2s 5; }
+    #mtslack .c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button:before {
+      background: rgba(var(--orange), 0.3); }
+    #mtslack .c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button:after {
+      box-shadow: 0 0 4px 2px rgba(var(--orange), 0.3); }
 
 @keyframes btn-shadow-pulse-orange-dark {
   0% {
@@ -387,321 +312,228 @@
   95%,
   to {
     box-shadow: none; } }
-
-body {
-  color: var(--fg); }
-  body input[readonly] {
-    background: var(--contrast); }
-
-header,
-footer {
-  background: var(--bg);
-  border-top-color: var(--border);
-  color: var(--fg); }
-  header ul a,
-  header ul a:link,
-  footer ul a,
-  footer ul a:link {
+  #mtslack body {
     color: var(--fg); }
-    header ul a:hover,
-    header ul a:link:hover,
-    footer ul a:hover,
-    footer ul a:link:hover {
-      color: var(--selectFg2); }
-  header label,
-  header .label,
-  footer label,
-  footer .label {
-    background: transparent;
+    #mtslack body input[readonly] {
+      background: var(--contrast); }
+  #mtslack header,
+  #mtslack footer {
+    background: var(--bg);
+    border-top-color: var(--border);
     color: var(--fg); }
-    header label:hover,
-    header .label:hover,
-    footer label:hover,
-    footer .label:hover {
-      background: var(--hl);
-      color: var(--selectFg2); }
-
-a {
-  color: var(--accent); }
-
-a:active, a:focus, a:hover {
-  color: var(--selectFg2); }
-
-a:visited, a:link {
-  color: var(--accent2); }
-
-h1, h2, h3, h4 {
-  color: var(--fg); }
-  h1 a, h2 a, h3 a, h4 a {
+    #mtslack header ul a,
+    #mtslack header ul a:link,
+    #mtslack footer ul a,
+    #mtslack footer ul a:link {
+      color: var(--fg); }
+      #mtslack header ul a:hover,
+      #mtslack header ul a:link:hover,
+      #mtslack footer ul a:hover,
+      #mtslack footer ul a:link:hover {
+        color: var(--selectFg2); }
+    #mtslack header label,
+    #mtslack header .label,
+    #mtslack footer label,
+    #mtslack footer .label {
+      background: transparent;
+      color: var(--fg); }
+      #mtslack header label:hover,
+      #mtslack header .label:hover,
+      #mtslack footer label:hover,
+      #mtslack footer .label:hover {
+        background: var(--hl);
+        color: var(--selectFg2); }
+  #mtslack a {
+    color: var(--accent); }
+  #mtslack a:active, #mtslack a:focus, #mtslack a:hover {
+    color: var(--selectFg2); }
+  #mtslack a:visited, #mtslack a:link {
+    color: var(--accent2); }
+  #mtslack h1, #mtslack h2, #mtslack h3, #mtslack h4 {
     color: var(--fg); }
-
-code {
-  background-color: var(--hl);
-  border: 1px solid var(--border);
-  color: var(--fg); }
-
-pre {
-  background: var(--hl);
-  border: 1px solid var(--active);
-  color: var(--fg); }
-
-blockquote:before {
-  background: var(--secondBg); }
-
-hr,
-.divider {
-  border-top: 1px solid var(--active); }
-
-textarea,
-input[type='text'] {
-  background-color: var(--contrast);
-  border-color: var(--border);
-  color: var(--fg); }
-  textarea:focus,
-  input[type='text']:focus {
+    #mtslack h1 a, #mtslack h2 a, #mtslack h3 a, #mtslack h4 a {
+      color: var(--fg); }
+  #mtslack code {
+    background-color: var(--hl);
+    border: 1px solid var(--border);
+    color: var(--fg); }
+  #mtslack pre {
+    background: var(--hl);
+    border: 1px solid var(--active);
+    color: var(--fg); }
+  #mtslack blockquote:before {
+    background: var(--secondBg); }
+  #mtslack hr,
+  #mtslack .divider {
+    border-top: 1px solid var(--active); }
+  #mtslack textarea,
+  #mtslack input[type='text'] {
+    background-color: var(--contrast);
+    border-color: var(--border);
+    color: var(--fg); }
+    #mtslack textarea:focus,
+    #mtslack input[type='text']:focus {
+      border-color: var(--primary); }
+  #mtslack input[type=url]:active, #mtslack input[type=url]:focus {
     border-color: var(--primary); }
-
-input[type=url]:active, input[type=url]:focus {
-  border-color: var(--primary); }
-
-input[type=text]:active, input[type=text]:focus {
-  border-color: var(--primary); }
-
-input[type=number]:active, input[type=number]:focus {
-  border-color: var(--primary); }
-
-input[type=email]:active, input[type=email]:focus {
-  border-color: var(--primary); }
-
-input[type=password]:active, input[type=password]:focus {
-  border-color: var(--primary); }
-
-input[type=url], input[type=text], input[type=tel], input[type=number], input[type=email], input[type=password] {
-  background: var(--contrast);
-  border: 1px solid var(--active);
-  color: var(--fg); }
-
-textarea {
-  border: 1px solid var(--active);
-  color: var(--fg); }
-  textarea:active, textarea:focus {
+  #mtslack input[type=text]:active, #mtslack input[type=text]:focus {
     border-color: var(--primary); }
-
-select {
-  background-color: var(--button);
-  border-color: var(--border);
-  color: var(--text); }
-  select:active, select:focus {
+  #mtslack input[type=number]:active, #mtslack input[type=number]:focus {
     border-color: var(--primary); }
-
-input:-moz-placeholder,
-textarea:-moz-placeholder,
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-::-webkit-input-placeholder,
-::-moz-placeholder,
-::-moz-placeholder,
-::-ms-input-placeholder {
-  color: var(--disabled); }
-
-input:disabled,
-select:disabled,
-textarea:disabled {
-  background: var(--button);
-  border-color: var(--active);
-  color: var(--disabled); }
-
-abbr {
-  border-color: var(--border); }
-
-blockquote {
-  border-color: var(--border); }
-  blockquote small {
-    color: var(--disabled); }
-
-legend {
-  border: none;
-  color: var(--text); }
-  legend small {
+  #mtslack input[type=email]:active, #mtslack input[type=email]:focus {
+    border-color: var(--primary); }
+  #mtslack input[type=password]:active, #mtslack input[type=password]:focus {
+    border-color: var(--primary); }
+  #mtslack input[type=url], #mtslack input[type=text], #mtslack input[type=tel], #mtslack input[type=number], #mtslack input[type=email], #mtslack input[type=password] {
+    background: var(--contrast);
+    border: 1px solid var(--active);
+    color: var(--fg); }
+  #mtslack textarea {
+    border: 1px solid var(--active);
+    color: var(--fg); }
+    #mtslack textarea:active, #mtslack textarea:focus {
+      border-color: var(--primary); }
+  #mtslack select {
+    background-color: var(--button);
+    border-color: var(--border);
     color: var(--text); }
-
-.sk-client-theme--dark ::selection,
-::selection {
-  background-color: var(--tree) !important;
-  color: var(--selectFg2) !important; }
-
-.sk_foreground_max {
-  color: var(--text); }
-
-.bordered {
-  border: 1px solid var(--border) !important; }
-
-.border_top {
-  border-top: 1px solid var(--border) !important; }
-
-.border_right {
-  border-right: 1px solid var(--border) !important; }
-
-.border_bottom {
-  border-bottom: 1px solid var(--border) !important; }
-
-.border_left {
-  border-left: 1px solid var(--border) !important; }
-
-.top_border {
-  border-top: 1px solid var(--border) !important; }
-
-.right_border {
-  border-right: 1px solid var(--border) !important; }
-
-.bottom_border {
-  border-bottom: 1px solid var(--border) !important; }
-
-.left_border {
-  border-left: 1px solid var(--border) !important; }
-
-.bullet {
-  color: var(--primary); }
-
-.muted,
-a.muted {
-  color: var(--disabled); }
-  .muted:focus, .muted:hover,
-  a.muted:focus,
-  a.muted:hover {
-    color: var(--fg); }
-
-.badge,
-.label,
-a.badge,
-a.label {
-  background: var(--accent);
-  color: var(--fg); }
-  .badge:focus, .badge:hover,
-  .label:focus,
-  .label:hover,
-  a.badge:focus,
-  a.badge:hover,
-  a.label:focus,
-  a.label:hover {
-    color: var(--selectFg2); }
-
-.btn_link {
-  color: var(--accent); }
-
-.table,
-.table-bordered {
-  background: var(--bg); }
-  .table td, .table th,
-  .table-bordered td,
-  .table-bordered th {
-    border-color: var(--border); }
-
-.table-striped tr:nth-child(odd) td, .table-striped tr:nth-child(odd) th {
-  background: var(--contrast); }
-
-.table-hover tr:hover td, .table-hover tr:hover th {
-  background: var(--active); }
-
-.uneditable-input,
-.uneditable-textarea {
-  color: var(--disabled);
-  background: var(--button);
-  border: var(--button); }
-  .uneditable-input:focus,
-  .uneditable-textarea:focus {
+    #mtslack select:active, #mtslack select:focus {
+      border-color: var(--primary); }
+  #mtslack input:-moz-placeholder,
+  #mtslack textarea:-moz-placeholder,
+  #mtslack input:-ms-input-placeholder,
+  #mtslack textarea:-ms-input-placeholder,
+  #mtslack input::-webkit-input-placeholder,
+  #mtslack textarea::-webkit-input-placeholder,
+  #mtslack ::-webkit-input-placeholder,
+  #mtslack ::-moz-placeholder,
+  #mtslack ::-moz-placeholder,
+  #mtslack ::-ms-input-placeholder {
+    color: var(--disabled); }
+  #mtslack input:disabled,
+  #mtslack select:disabled,
+  #mtslack textarea:disabled {
+    background: var(--button);
     border-color: var(--active);
-    border-width: 2px; }
-
-.sk_highlight {
-  color: var(--selectFg2); }
-
-.sk_highlight_bg {
-  background: var(--hl); }
-
-.sk_highlight_hover {
-  color: var(--primary); }
-
-.sk_highlight_hover_bg {
-  background-color: var(--selectBg); }
-
-.sk_highlight_accent {
-  color: var(--accent); }
-
-.sk_highlight_accent_bg {
-  background-color: var(--selectBg); }
-
-.sk_secondary_highlight {
-  color: var(--selectFg2); }
-
-.sk_secondary_highlight_bg {
-  background-color: var(--hl); }
-
-.sk_foreground_high_solid, .sk_light_gray, .sk_light_grey {
-  color: var(--text); }
-
-::-webkit-scrollbar-thumb {
-  color: var(--accent); }
-
-::-webkit-scrollbar-track {
-  color: var(--bg);
-  background: var(--secondBg); }
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent); }
-
-::-webkit-scrollbar-corner {
-  background: var(--bg); }
-
-.mtslack {
-  color: var(--fg); }
-  [lang] .mtslack {
-    font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
-  .mtslack .p-ssb_landing {
-    color: var(--fg); }
-  .mtslack .p-ssb_landing__header {
-    font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-  .mtslack .c-button--primary:link, .mtslack .c-button--primary:visited {
+    color: var(--disabled); }
+  #mtslack abbr {
+    border-color: var(--border); }
+  #mtslack blockquote {
+    border-color: var(--border); }
+    #mtslack blockquote small {
+      color: var(--disabled); }
+  #mtslack legend {
+    border: none;
+    color: var(--text); }
+    #mtslack legend small {
+      color: var(--text); }
+  #mtslack .sk-client-theme--dark ::selection,
+  #mtslack ::selection {
+    background-color: var(--tree) !important;
+    color: var(--selectFg2) !important; }
+  #mtslack .sk_foreground_max {
+    color: var(--text); }
+  #mtslack .bordered {
+    border: 1px solid var(--border) !important; }
+  #mtslack .border_top {
+    border-top: 1px solid var(--border) !important; }
+  #mtslack .border_right {
+    border-right: 1px solid var(--border) !important; }
+  #mtslack .border_bottom {
+    border-bottom: 1px solid var(--border) !important; }
+  #mtslack .border_left {
+    border-left: 1px solid var(--border) !important; }
+  #mtslack .top_border {
+    border-top: 1px solid var(--border) !important; }
+  #mtslack .right_border {
+    border-right: 1px solid var(--border) !important; }
+  #mtslack .bottom_border {
+    border-bottom: 1px solid var(--border) !important; }
+  #mtslack .left_border {
+    border-left: 1px solid var(--border) !important; }
+  #mtslack .bullet {
+    color: var(--primary); }
+  #mtslack .muted,
+  #mtslack a.muted {
+    color: var(--disabled); }
+    #mtslack .muted:focus, #mtslack .muted:hover,
+    #mtslack a.muted:focus,
+    #mtslack a.muted:hover {
+      color: var(--fg); }
+  #mtslack .badge,
+  #mtslack .label,
+  #mtslack a.badge,
+  #mtslack a.label {
     background: var(--accent);
+    color: var(--fg); }
+    #mtslack .badge:focus, #mtslack .badge:hover,
+    #mtslack .label:focus,
+    #mtslack .label:hover,
+    #mtslack a.badge:focus,
+    #mtslack a.badge:hover,
+    #mtslack a.label:focus,
+    #mtslack a.label:hover {
+      color: var(--selectFg2); }
+  #mtslack .btn_link {
+    color: var(--accent); }
+  #mtslack .table,
+  #mtslack .table-bordered {
+    background: var(--bg); }
+    #mtslack .table td, #mtslack .table th,
+    #mtslack .table-bordered td,
+    #mtslack .table-bordered th {
+      border-color: var(--border); }
+  #mtslack .table-striped tr:nth-child(odd) td, #mtslack .table-striped tr:nth-child(odd) th {
+    background: var(--contrast); }
+  #mtslack .table-hover tr:hover td, #mtslack .table-hover tr:hover th {
+    background: var(--active); }
+  #mtslack .uneditable-input,
+  #mtslack .uneditable-textarea {
+    color: var(--disabled);
+    background: var(--button);
+    border: var(--button); }
+    #mtslack .uneditable-input:focus,
+    #mtslack .uneditable-textarea:focus {
+      border-color: var(--active);
+      border-width: 2px; }
+  #mtslack .sk_highlight {
     color: var(--selectFg2); }
-
-[lang] .p-message_pane_input__disabled,
-[lang] .p-message_pane_input__preview {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-[lang] .c-texty_input {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-[lang] .c-basic_container,
-[lang] .c-texty_input_unstyled {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-[lang] .c-menu {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-[lang] .p-huddle_details {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-.Unreachable-Webdata,
-.p-trouble_loading {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
-
-.p-shared_channel_creator_welcome_modal__header--error,
-.p-shared_channel_creator_welcome_modal__content--error,
-.p-shared_channel_creator_welcome_modal__body,
-.p-shared_channel_creator_welcome_modal__header {
-  font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
-
-#mtslack {
-  /* Override presence icons */
-  /** `opacity: 1` color overrides */
-  /** Navigation Bar **/
-  /** Global Nav (DEPRECATED BUT KEEP FOR SONIC) **/
-  /** Classic Nav (WIP) **/ }
-  #mtslack .c-icon-plugin {
-    margin-right: 1em; }
+  #mtslack .sk_highlight_bg {
+    background: var(--hl); }
+  #mtslack .sk_highlight_hover {
+    color: var(--primary); }
+  #mtslack .sk_highlight_hover_bg {
+    background-color: var(--selectBg); }
+  #mtslack .sk_highlight_accent {
+    color: var(--accent); }
+  #mtslack .sk_highlight_accent_bg {
+    background-color: var(--selectBg); }
+  #mtslack .sk_secondary_highlight {
+    color: var(--selectFg2); }
+  #mtslack .sk_secondary_highlight_bg {
+    background-color: var(--hl); }
+  #mtslack .sk_foreground_high_solid, #mtslack .sk_light_gray, #mtslack .sk_light_grey {
+    color: var(--text); }
+  #mtslack ::-webkit-scrollbar-thumb {
+    color: var(--accent); }
+  #mtslack ::-webkit-scrollbar-track {
+    color: var(--bg);
+    background: var(--secondBg); }
+  #mtslack ::-webkit-scrollbar-thumb {
+    background: var(--accent); }
+  #mtslack ::-webkit-scrollbar-corner {
+    background: var(--bg); }
+  #mtslack .mtslack {
+    color: var(--fg); }
+    [lang] #mtslack .mtslack {
+      font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif) !important; }
+    #mtslack .mtslack .p-ssb_landing {
+      color: var(--fg); }
+    #mtslack .mtslack .p-ssb_landing__header {
+      font-family: var(--fontFamily, Slack-Lato, appleLogo, sans-serif); }
+    #mtslack .mtslack .c-button--primary:link, #mtslack .mtslack .c-button--primary:visited {
+      background: var(--accent);
+      color: var(--selectFg2); }
   #mtslack .c-deprecated-icon--danger {
     color: var(--red); }
   #mtslack .c-icon--filetype {
@@ -2837,6 +2669,9 @@ a.label {
       color: var(--text); }
     #mtslack .CodeMirror:focus, #mtslack .CodeMirror:hover {
       border-color: var(--disabled); }
+  #mtslack .CodeMirror pre {
+    background-color: transparent;
+    border: none; }
   #mtslack .CodeMirror pre.CodeMirror-line, #mtslack .CodeMirror pre.CodeMirror-line-like {
     color: var(--fg); }
   #mtslack .c-color_slider__slider .c-slider__input::-webkit-slider-thumb,
@@ -3247,6 +3082,9 @@ a.label {
       color: var(--text); }
     #mtslack .CodeMirror:focus, #mtslack .CodeMirror:hover {
       border-color: var(--disabled); }
+  #mtslack .CodeMirror pre {
+    background-color: transparent;
+    border: none; }
   #mtslack .CodeMirror pre.CodeMirror-line, #mtslack .CodeMirror pre.CodeMirror-line-like {
     color: var(--fg); }
   #mtslack .p-client_container_placeholder {
@@ -11621,7 +11459,7 @@ a.label {
     color: var(--bg);
     -webkit-text-stroke: 4px var(--bg); }
   #mtslack .p-ia__view_header {
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid transparent;
     box-shadow: 0px 10px 7px -17px rgba(0, 0, 0, 0.55), 5px 5px 15px 5px rgba(0, 0, 0, 0.11); }
   #mtslack .p-ia__view_header__info .p-classic_nav__model__title__info__topic {
     color: var(--fg); }
@@ -12730,71 +12568,87 @@ a.label {
   #mtslack .p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:link .c-menu_item__description,
   #mtslack .p-docs_action_menu .c-menu_item__button--danger.c-menu_item__button--highlighted:visited .c-menu_item__description {
     color: var(--selectFg2); }
-  #mtslack .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
-  #mtslack .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
-    opacity: 0.4 !important; }
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .c-icon--presence-offline::before {
-    position: absolute;
-    content: '';
-    width: 24px;
-    height: 24px;
-    left: -10px;
-    top: -8px;
-    background: var(--contrast);
-    filter: opacity(0.5); }
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__channel:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__link:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__close_container:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected:hover .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected .c-icon--presence-offline::before,
-  #mtslack .mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected:hover .c-icon--presence-offline::before {
-    position: absolute;
-    content: '';
-    width: 24px;
-    height: 24px;
-    left: -10px;
-    top: -8px;
-    background: var(--tree);
-    filter: opacity(0.5); }
-  #mtslack .mtslack--overlay.ReactModal__Body--open .c-search_modal:before,
-  #mtslack .mtslack--overlay.ReactModal__Body--open .c-sk-overlay:before {
-    background: rgba(0, 0, 0, 0.5) !important;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0; }
-  #mtslack .mtslack--overlay.ReactModal__Body--open .c-dialog {
-    background: rgba(0, 0, 0, 0.5) !important; }
-  #mtslack .mtslack--overlay.ReactModal__Body--open .c-coachmark__overlay {
-    background-color: rgba(0, 0, 0, 0.25) !important; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
-    background: none !important;
-    color: var(--fg) !important;
-    opacity: 1 !important; }
-    .p-channel_sidebar__channel--muted #mtslack .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
-      opacity: 0.64 !important; }
-    .p-channel_sidebar__channel--unread #mtslack .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
-      color: var(--primary) !important; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar img {
-    display: none; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar-border {
-    -webkit-text-stroke-width: 0px; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar {
-    top: 0;
-    left: 0;
-    margin: 0; }
-    #mtslack .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar::before {
-      font-size: 20px;
-      line-height: 1; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__mpim_avatars img {
-    display: none; }
-  #mtslack .mtslack--with_presence .p-channel_sidebar__mpim_avatars .p-channel_sidebar__mpim_counter {
-    top: 0;
-    left: 0;
-    margin: 4px 0 0 4px;
-    transform: scale(1.5); }
-  #mtslack .p-ia__view_header .p-classic_nav__model__title__name,
-  #mtslack .p-classic_nav__model__title__name,
-  #mtslack .p-ia__view_header__title {
-    font-size: 24px; }
+
+.c-icon-plugin {
+  margin-right: 1em; }
+
+.mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
+.mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
+  opacity: 0.4 !important; }
+
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .c-icon--presence-offline::before {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  left: -10px;
+  top: -8px;
+  background: var(--contrast);
+  filter: opacity(0.5); }
+
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__channel:hover .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__link:hover .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__list .p-channel_sidebar__close_container:hover .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__channel--selected:hover .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected .c-icon--presence-offline::before,
+.mtslack--dim:not(.mtslack--with_presence) .p-channel_sidebar__link--selected:hover .c-icon--presence-offline::before {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  left: -10px;
+  top: -8px;
+  background: var(--tree);
+  filter: opacity(0.5); }
+
+.mtslack--overlay.ReactModal__Body--open .c-search_modal:before,
+.mtslack--overlay.ReactModal__Body--open .c-sk-overlay:before {
+  background: rgba(0, 0, 0, 0.5) !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.mtslack--overlay.ReactModal__Body--open .c-dialog {
+  background: rgba(0, 0, 0, 0.5) !important; }
+
+.mtslack--overlay.ReactModal__Body--open .c-coachmark__overlay {
+  background-color: rgba(0, 0, 0, 0.25) !important; }
+
+.mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
+  background: none !important;
+  color: var(--fg) !important;
+  opacity: 1 !important; }
+  .p-channel_sidebar__channel--muted .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
+    opacity: 0.64 !important; }
+  .p-channel_sidebar__channel--unread .mtslack--with_presence .p-channel_sidebar__channel_icon_prefix--comfy {
+    color: var(--primary) !important; }
+
+.mtslack--with_presence .p-channel_sidebar__user_avatar img {
+  display: none; }
+
+.mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar-border {
+  -webkit-text-stroke-width: 0px; }
+
+.mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar {
+  top: 0;
+  left: 0;
+  margin: 0; }
+  .mtslack--with_presence .p-channel_sidebar__user_avatar .p-channel_sidebar__presence_icon.p-channel_sidebar__presence_icon--on-avatar::before {
+    font-size: 20px;
+    line-height: 1; }
+
+.mtslack--with_presence .p-channel_sidebar__mpim_avatars img {
+  display: none; }
+
+.mtslack--with_presence .p-channel_sidebar__mpim_avatars .p-channel_sidebar__mpim_counter {
+  top: 0;
+  left: 0;
+  margin: 4px 0 0 4px;
+  transform: scale(1.5); }
+
+.p-ia__view_header .p-classic_nav__model__title__name,
+.p-classic_nav__model__title__name,
+.p-ia__view_header__title {
+  font-size: 24px; }

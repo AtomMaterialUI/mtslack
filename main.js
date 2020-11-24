@@ -3,13 +3,14 @@ const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
 const isRoot = require('is-elevated');
+const sample  = require('@feizheng/next-sample');
 const cli = require('./lib/cli');
 const {execute} = require('./lib/command');
 const pkg = require('./package.json');
 
 async function run() {
   console.log(chalk.yellow(figlet.textSync('mtslack', {
-    font: 'nancyj',
+    font: sample(['whimsy']),
     horizontalLayout: 'default',
     verticalLayout: 'default',
     width: 80,
