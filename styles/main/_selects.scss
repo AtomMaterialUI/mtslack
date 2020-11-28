@@ -84,6 +84,10 @@
   color: $primary;
 }
 
+.c-select_options_list__option--active .p-invite_type_select_option_label_description {
+  color: $selectFg;
+}
+
 .c-select_options_list__option--active {
   background-color: $hl;
   color: $selectFg;

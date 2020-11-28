@@ -387,3 +387,27 @@
     background: $tree;
   }
 }
+
+.p-message_file--video-story.c-pillow_file_container {
+  .c-pillow_file__video_container {
+    &:hover .c-pillow_file__video__placeholder_button {
+      background-color: $bg;
+    }
+  }
+
+  .c-pillow_file__video--placeholder-poster {
+    background-color: $disabled;
+  }
+
+  .c-pillow_file__video__placeholder_button {
+    background-color: $button;
+    color: $fg;
+  }
+}
+
+.p-ia__view_header--details-popover {
+  .p-classic_nav__model__button.p-classic_nav__model__button--calls,
+  .p-ia__view_header__button {
+    border: 1px solid $button;
+  }
+}

@@ -426,3 +426,11 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
   background-color: $notif;
   border: 2px solid $notif;
 }
+
+.p-huddle_channel_tooltip__avatar {
+  box-shadow: 0 0 0 2px $bg;
+}
+
+.p-huddle_sidebar_footer__join_message {
+  color: $fg;
+}
