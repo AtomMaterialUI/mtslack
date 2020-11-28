@@ -65,6 +65,32 @@
 }
 
 .p-help_search__list {
+  .hover_styles {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title, .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
+
+  &.p-help_search__list__highlight_first .c-virtual_list__item:first-of-type {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title, .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
+
   .p-help_search__file__icon {
     &:before {
       color: $primary;
@@ -130,6 +156,11 @@
 
 .p-help_search__resource_card__container {
   border: 1px solid $borderLight;
+  @include card;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
 }
 
 .p-help_search__resource_card__text {
@@ -228,4 +259,16 @@
       }
     }
   }
+
+  .boxed {
+    border: 1px solid $borderLight;
+
+    ul strong {
+      color: $accent;
+    }
+  }
+}
+
+.p-help_search__resource_card__title {
+  color: $fg;
 }
