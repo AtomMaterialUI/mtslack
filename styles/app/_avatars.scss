@@ -7,8 +7,14 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.c-avatar .c-avatar__team_icon {
-  box-shadow: 0 0 0 2px $borderLight;
+.c-avatar {
+  .c-avatar__team_icon {
+    box-shadow: 0 0 0 2px $borderLight;
+  }
+
+  .c-avatar__nonteam_icon {
+    box-shadow: -1px 0 0 1px $selectFg;
+  }
 }
 
 .c-avatar__badge--restricted {
