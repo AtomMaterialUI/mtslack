@@ -1,0 +1,26 @@
+.p-siws_auth_modal__member {
+  border: 1px solid $borderLight;
+}
+
+.p-siws_auth_modal__member_email {
+  color: $accent2;
+}
+
+.split_input_item {
+  border: 1px solid $borderLight;
+
+  &.focused {
+    border: 1px double $primary;
+    box-shadow: 0 0 7px $primaryT;
+  }
+}
+
+.confirmation_code[data-state='error'] .split_input_item {
+  border-color: $red;
+}
+
+.confirmation_code_checker {
+  .confirmation_code_state_message {
+    color: $fg;
+  }
+}
