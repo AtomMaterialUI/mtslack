@@ -81,6 +81,7 @@
   }
 }
 
+.c-texty_input_unstyled__container,
 .c-texty_input {
   &.c-texty_input--sticky_composer {
 
@@ -161,6 +162,10 @@
 
       &[data-checked=true] > li {
         &:before {
+          color: $accent;
+        }
+
+        > .slack-list-item-checkbox:before {
           color: $accent;
         }
 
