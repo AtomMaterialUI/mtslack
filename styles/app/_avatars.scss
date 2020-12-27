@@ -129,4 +129,12 @@
 .p-avatar_stack__avatar {
   background: $button;
   box-shadow: 0 0 0 2px $contrast;
+
+  &.p-avatar_stack__avatar--placeholder {
+    background-color: $button;
+  }
+}
+
+.p-avatar_stack {
+  color: $text;
 }
