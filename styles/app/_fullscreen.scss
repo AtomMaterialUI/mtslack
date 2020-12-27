@@ -101,6 +101,16 @@ body:not(.p-client_desktop--ia-top-nav) .c-fullscreen_modal__content--with_frame
   }
 }
 
+.c-fullscreen_modal__content {
+  background: $bg;
+
+  .p-download-illo {
+    [fill='#4A154B'] {
+      fill: $accent !important;
+    }
+  }
+}
+
 .c-fullscreen_modal__content--with_footer {
   .c-fullscreen_modal__footer {
     background-color: $bg2;
