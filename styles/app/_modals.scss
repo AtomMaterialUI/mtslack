@@ -202,3 +202,13 @@
   background-color: $bg;
   border-top: 1px solid $borderLight;
 }
+
+.p-async_modals__list {
+  &.top_border {
+    border-top: solid 1px $borderLight;
+  }
+
+  > li {
+    border-bottom: solid 1px $borderLight;
+  }
+}

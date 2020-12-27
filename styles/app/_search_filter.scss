@@ -112,6 +112,10 @@
   }
 }
 
+.p-search_filter__block_item_icon--selected:before {
+  color: $primary;
+}
+
 .p-search_filter__multi-select-list {
   .c-member_name--deactivated {
     color: $disabled;

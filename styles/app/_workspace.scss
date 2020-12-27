@@ -41,14 +41,14 @@
 
     &.focus {
       border-color: $primary;
-    }
-
-    &.focus {
-      border-color: $borderLight;
 
       ~ .p-message_input_file_button:not(:hover) {
         border-color: $button;
         color: $disabled;
+      }
+
+      ~ .p-texty_sticky_formatting_bar {
+        border-color: $primary;
       }
     }
   }
@@ -67,6 +67,10 @@
 
         .ql-composer-sticky {
           background: $bg;
+          border-color: $primary;
+        }
+
+        ~ .p-texty_sticky_formatting_bar {
           border-color: $primary;
         }
       }

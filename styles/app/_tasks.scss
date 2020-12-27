@@ -23,3 +23,11 @@
 .p-tasks_flexpane__table {
   border-top: 1px solid $borderLight;
 }
+
+.p-tasks_page_controls__list_button_selected {
+  background-color: $button;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
