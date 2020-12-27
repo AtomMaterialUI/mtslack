@@ -1,0 +1,55 @@
+.p-mini_browser {
+  border-left: 1px solid $borderLight;
+}
+
+.p-mini_browser .p-mini_browser__title {
+  .p-mini_browser__title_text {
+    color: $fg;
+  }
+}
+
+.p-mini_browser {
+  .p-mini_browser-close-btn {
+    background: $bg;
+  }
+}
+
+.p-mini_browser_file_selector--has_standard_file_item {
+  &.p-mini_browser_file_selector--has_dropdown_focus,
+  &.p-mini_browser_file_selector--has_file_focus,
+  &.p-mini_browser_file_selector--is_dropdown_open,
+  &.p-mini_browser_file_selector:hover {
+    border-color: $text;
+  }
+
+  &.p-mini_browser_file_selector--has_dropdown_focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-mini_browser_file_selector__dropdown,
+.p-mini_browser_file_selector__file {
+  color: $text;
+}
+
+.p-mini_browser_file_selector--has_file_focus .p-mini_browser_file_selector__file,
+.p-mini_browser_file_selector__file:hover {
+  background-color: $active;
+}
+
+.p-mini_browser_file_selector--has_dropdown_focus .p-mini_browser_file_selector__dropdown,
+.p-mini_browser_file_selector--is_dropdown_open .p-mini_browser_file_selector__dropdown {
+  color: $fg;
+  background-color: $active;
+}
+
+.p-mini_browser_file_selector__dropdown {
+  &:hover {
+    color: $fg;
+    background-color: $active;
+  }
+}
+
+.p-mini_browser_file_selector__file--active {
+  color: $accent;
+}
