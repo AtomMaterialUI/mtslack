@@ -94,6 +94,7 @@
   color: $text;
 }
 
+.p-admin_member_table__guest_expiration,
 .p_admin_member_table__guest_expiration {
   color: $text;
 }
@@ -181,25 +182,39 @@ button.p-admin_member_table__menu_item--disabled {
   }
 }
 
+.p-admin_member_table_unified_filter {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-admin_member_table_unified_filter__menus,
 .p-admin_member_unified_filter__menus {
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
 }
 
+.p-admin_member_table_unified_filter__labels {
+  color: $fg;
+}
+
 .c-menu {
+  &.p-admin_member_table_unified_filter__account_type,
   &.p-admin_member_unified_filter__account_type {
     border-right: 1px solid $border;
   }
 
+  &.p-admin_member_table_unified_filter__status,
   &.p-admin_member_unified_filter__status {
     border-right: 1px solid $border;
   }
 }
 
+.p-admin_member_table_unified_filter__titles,
 .p-admin_member_unified_filter__titles {
   color: $text;
 }
 
+.p-admin_member_table_unified_filter__grid_deactivate,
 .p-admin_member_unified_filter__grid_deactivate {
   color: $disabled;
 }
