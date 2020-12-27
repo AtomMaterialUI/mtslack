@@ -487,6 +487,10 @@
 
       &.focus {
         border-color: $primary;
+
+        ~ .p-texty_sticky_formatting_bar {
+          border-color: $primary;
+        }
       }
     }
 
@@ -501,14 +505,14 @@
 
     &.focus {
       border-color: $primary;
-    }
-
-    &.focus {
-      border-color: $primary;
 
       ~ .p-message_input_file_button:not(:hover) {
         border-color: $primary;
         color: $primary;
+      }
+
+      ~ .p-texty_sticky_formatting_bar {
+        border-color: $primary;
       }
     }
 

@@ -106,7 +106,7 @@
 
 .sk-client-scheme--purple .c-button--primary,
 .c-button--primary {
-  background: $active;
+  background: $accentT;
   color: $selectFg;
 
   &:link,
@@ -116,11 +116,11 @@
 
   &:hover {
     color: $selectFg;
-    background: $hl;
+    background: $accent;
   }
 
   &:active {
-    background: $hl;
+    background: $accent;
     border-color: $primary;
   }
 
