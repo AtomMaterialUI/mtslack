@@ -2,7 +2,9 @@
   background: $bg;
   color: $fg;
 
-  .c-button--focus-visible:focus, .c-link--focus-visible:focus, .focus-ring {
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus,
+  .focus-ring {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
@@ -11,11 +13,77 @@
   background: $bg;
   color: $fg;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     color: $selectFg;
   }
 }
 
 button:focus > .p-wysiwyg_deluxe_toast__close {
   color: $selectFg;
+}
+
+.c-wysiwyg_container {
+  background: $contrast;
+}
+
+.c-wysiwyg_container:focus-within .c-wysiwyg_container__footer {
+  border-color: $borderLight;
+}
+
+.c-wysiwyg_container__button {
+  &.c-wysiwyg_container__button--send {
+    background: $accentT;
+    color: $fg;
+
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+    }
+
+    &[disabled] {
+      color: $disabled;
+    }
+  }
+
+  &.c-wysiwyg_container__button--shortcuts {
+    &:active,
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+    }
+
+    &:after {
+      border-right: 1px solid $borderLight;
+    }
+  }
+}
+
+.c-wysiwyg_container__button {
+  background: $button;
+}
+
+.c-wysiwyg_container__button--active {
+  background-color: $hl;
+}
+
+.c-wysiwyg_container--theme_light {
+  border-color: $borderLight;
+
+  &:focus-within {
+    border-color: $primary;
+
+    .c-wysiwyg_container__footer--with_formatting {
+      background-color: $bg;
+    }
+  }
+}
+
+.c-wysiwyg_container--theme_dark {
+  background-color: $contrast;
+  border-color: $borderLight;
+
+  &:focus-within {
+    border-color: $primary;
+  }
 }
