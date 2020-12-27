@@ -6,6 +6,12 @@
   background: $bg2;
   color: $fg;
   box-shadow: none;
+
+  .p-ia__nav__user__button {
+    &:hover .p-ia__nav__user__avatar:after {
+      background: $button;
+    }
+  }
 }
 
 .p-top_nav__button,
