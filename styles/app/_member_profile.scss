@@ -39,11 +39,32 @@
   border-bottom: 1px solid $border;
 }
 
-.p-profile_page__header__info__status, .p-profile_page__header__info__title {
+.p-profile_page__header__info__status,
+.p-profile_page__header__info__title {
   color: $text;
 }
 
 .p-profile_page__section {
   background: $bg;
   border-bottom: 1px solid $border;
+}
+
+.p-member_organization_entity--dim {
+  color: $text;
+}
+
+.p-member_organization_entity__subtext {
+  color: $text;
+}
+
+.p-member_profile_card__verified_footer {
+  background: $bg;
+}
+
+.p-member_profile_card__verified_footer_text {
+  color: $text;
+}
+
+.p-member_profile_card__verified_footer_icon {
+  color: $accent;
 }

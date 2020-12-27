@@ -485,6 +485,10 @@ button.p-admin_member_table__menu_item--disabled {
   background: $bg;
 }
 
+.p-browse_page_layout__shadow--inset {
+  @include dropShadow;
+}
+
 .p-browse_page_layout__input_hint {
   color: $text;
   border-right: 1px solid $borderLight;

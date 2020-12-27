@@ -79,6 +79,10 @@
   background: $bg;
 }
 
+.p-block_kit_modal .c-dialog__footer {
+  border-top: none;
+}
+
 .c-dialog__footer--overflow {
   border-top: 1px solid $borderLight;
 }
