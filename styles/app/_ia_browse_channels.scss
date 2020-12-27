@@ -74,6 +74,7 @@
   }
 }
 
+.p-ia__view_header__info .p-classic_nav__model__title__info__topic,
 .p-ia__view_header__metadata,
 .p-ia__view_header__subtitle {
   color: $text;
@@ -104,6 +105,10 @@
 
 .p-ia__main_menu__open_slack_app_icon {
   background: $bg;
+}
+
+.p-ia__view_header__divider {
+  background-color: $border;
 }
 
 .p-ia__view_header__button {

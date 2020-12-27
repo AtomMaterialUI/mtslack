@@ -73,7 +73,8 @@
       color: $selectFg;
     }
 
-    .p-help_search__list__item__title, .p-help_search_category_item__description {
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
       color: $selectFg;
     }
   }
@@ -86,7 +87,8 @@
       color: $selectFg;
     }
 
-    .p-help_search__list__item__title, .p-help_search_category_item__description {
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
       color: $selectFg;
     }
   }
@@ -209,7 +211,6 @@
   border-top: 1px solid $borderLight;
 }
 
-
 .p-help_search__resource_card__image {
   img {
     background-color: transparent;
@@ -254,7 +255,7 @@
   ol:not(.takeaway) {
     li {
       &:before {
-        background-color: $green;
+        background-color: $hl;
         color: $selectFg;
       }
     }
@@ -266,9 +267,41 @@
     ul strong {
       color: $accent;
     }
+
+    .ts_icon:before {
+      color: $disabled;
+    }
   }
 }
 
 .p-help_search__resource_card__title {
   color: $fg;
+}
+
+.p-help_search__resource_card__quick_start_guide__image img {
+  background-color: $accent;
+}
+
+.p-help_search__content__card__quick_start_guide {
+  .p-help_search__resource_card__container {
+    border: 1px solid $primary;
+  }
+
+  .p-help_search__resource_card__image img {
+    background-color: $accent;
+  }
+}
+
+.p-help_search__content__card__app_update .p-help_search__resource_card__image img {
+  background-color: $accent;
+}
+
+.p-help_search__content__card__customer_consult_card {
+  .p-help_search__resource_card__container {
+    border: 1px solid $accent;
+  }
+
+  .p-help_search__resource_card__image img {
+    background-color: $accent;
+  }
 }
