@@ -53,6 +53,8 @@
 .c-message_actions__group {
   background: none;
   border: none;
+  box-shadow: none;
+  transition: opacity .3s ease-in;
 
   &:hover {
     border-color: $borderLight;
