@@ -7,6 +7,11 @@
 }
 
 .p-setup_channel_examples {
+  .p-setup_channel_examples__main_pane--with-thread {
+    border-right: 1px solid $borderLight;
+  }
+
+  .p-setup_channel_examples__completed_example,
   .p-setup_channel_examples__footer {
     background: $bg;
   }
@@ -16,4 +21,59 @@
     background: $contrast;
     border: 1px solid $borderLight;
   }
+
+  .p-setup_channel_examples__completed_example {
+    background: $bg;
+
+    .p-setup_channel_examples__message_input {
+      border: 1px solid $borderLight;
+      color: $accent2;
+      background: $button;
+    }
+
+    .c-link--button {
+      color: $accent2;
+    }
+  }
+}
+
+.p-setup_channel_examples_intro {
+  border-top: 1px solid $borderLight;
+
+  .p-setup_channel_examples_intro__content {
+    background: $bg;
+    box-shadow: 0 8px 4px 4px $bg;
+  }
+
+  .p-setup_channel_examples_intro__illustration {
+    background: $bg2;
+  }
+}
+
+.p-setup_channel_examples_narrator {
+  .p-setup_channel_examples_narrator__inner {
+    background: $accentT;
+    border: 1px solid $primary;
+  }
+
+  .p-setup_channel_examples_narrator__inner--completed {
+    background: $tree;
+    border: 1px solid $accent;
+
+    .p-setup_channel_examples_narrator__icon {
+      color: $accent;
+    }
+  }
+
+  .p-setup_channel_examples_narrator__icon {
+    color: $primary;
+  }
+}
+
+.p-message_container_loading {
+  background-color: $bg;
+}
+
+.p-message_container_loading__msg {
+  color: $disabled;
 }
