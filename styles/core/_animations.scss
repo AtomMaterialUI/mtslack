@@ -68,16 +68,16 @@
   }
 }
 
-@keyframes "btn-shadow-pulse-aubergine" {
+@keyframes btn-shadow-pulse-aubergine {
   0% {
     box-shadow: none;
   }
   5% {
-    border: 1px solid #4a154b;
+    border: 1px solid $accent;
   }
   10%,
   50% {
-    border: 1px solid #4a154b;
+    border: 1px solid $accent;
   }
   95%,
   to {
@@ -85,16 +85,16 @@
   }
 }
 
-@keyframes "btn-shadow-pulse-orange-dark" {
+@keyframes btn-shadow-pulse-orange-dark {
   0% {
     box-shadow: none;
   }
   5% {
-    border: 1px solid #e8912d;
+    border: 1px solid $primary;
   }
   10%,
   50% {
-    border: 1px solid #e8912d;
+    border: 1px solid $primary;
   }
   95%,
   to {
