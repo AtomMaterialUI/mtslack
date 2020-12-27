@@ -1,0 +1,29 @@
+.p-story_root__pillow {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.p-story_root__overflow:hover,
+.p-story_root__poster:hover,
+.p-story_root__poster__placeholder:hover,
+.p-story_root__reply:hover {
+  box-shadow: inset 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.p-story_root__reply {
+  background: $bg;
+}
+
+.p-story_root__overflow__text {
+  background: $contrast;
+  color: $selectFg;
+}
+
+.c-message_kit__tombstone__icon,
+.p-story_root_avatar {
+  background: $button;
+}
+
+.p-story_root_avatar {
+  color: $text;
+}
