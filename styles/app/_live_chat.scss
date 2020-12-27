@@ -1,0 +1,153 @@
+.p-live_chat_support__slack_icon {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-live_chat_support__container {
+  border: 1px solid $accent;
+  color: $fg;
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    color: $fg;
+  }
+
+}
+
+.p-live_chat_support__slack_icon--dark {
+  color: $fg;
+  background-color: $bg;
+}
+
+.p-live_chat_support__container--dark {
+  border: 1px solid $borderLight;
+}
+
+.p-live_chat_support__live_icon {
+  color: $green;
+}
+
+.p-live_chat_support__container--dark:hover {
+  border: 1px solid $primary;
+}
+
+.p-live_chat_support_menu_item__container {
+  border-bottom: 1px solid $border;
+  color: $fg;
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    color: $fg;
+  }
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-live_chat_support_menu_item__subtext {
+  color: $text;
+}
+
+.p-live_chat_support_menu_item__slack_icon {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-live_chat_support_menu_item__presence_icon--stroke {
+  color: $accent;
+  -webkit-text-stroke: 6px $bg;
+}
+
+.p-live_chat_support_menu_item__container:hover .p-live_chat_support_menu_item__presence_icon--stroke {
+  -webkit-text-stroke: 6px $bg;
+}
+
+.p-live_chat_support_menu_item__presence_icon {
+  color: $accent;
+}
+
+.p-live_chat_support_menu_item__slack_icon--dark {
+  color: $fg;
+  background-color: $bg;
+}
+
+.p-live_chat_support_menu_item__container--dark:hover {
+  background-color: $bg2;
+
+  .p-live_chat_support_menu_item__presence_icon--stroke {
+    -webkit-text-stroke: 6px $accent;
+  }
+}
+
+.p-live_chat_support_menu_item__container:hover .p-live_chat_support_menu_item__presence_icon--stroke {
+  -webkit-text-stroke: 6px $accent;
+}
+
+.p-live_chat_support_menu_item__presence_icon {
+  color: $accent;
+}
+
+.p-live_chat_support_menu_item__slack_icon--dark {
+  color: $fg;
+  background-color: $bg;
+}
+
+.p-live_chat_support_menu_item__container--dark:hover {
+  background-color: $active;
+
+  .p-live_chat_support_menu_item__presence_icon--stroke {
+    -webkit-text-stroke: 6px $accent;
+  }
+}
+
+.p-live_chat_support_alert__container {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-live_chat_support_alert__container--dark .p-live_chat_support_alert__presence_icon--stroke {
+  -webkit-text-stroke: 6px $accent;
+}
+
+.p-live_chat_support_alert__slack_icon {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-live_chat_support_alert__container .p-live_chat_support_alert__link {
+  color: $accent2;
+}
+
+.p-live_chat_support_alert__container--dark {
+  background-color: $bg2;
+  color: $selectFg;
+  border-color: $accent;
+
+  .p-live_chat_support_alert__slack_icon {
+    color: $fg;
+    background-color: $bg;
+  }
+
+  .p-live_chat_support_alert__presence_icon--stroke {
+    -webkit-text-stroke: 6px $accent;
+  }
+
+  .p-live_chat_support_alert__link {
+    color: $accent2;
+  }
+}
+
+.p-live_chat_support_alert__presence_icon--stroke {
+  color: $accent;
+  -webkit-text-stroke: 6px $bg2;
+}
+
+
+.p-live_chat_support_alert__presence_icon {
+  color: $accent;
+}

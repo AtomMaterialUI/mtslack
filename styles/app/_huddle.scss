@@ -434,3 +434,48 @@ svg.p-huddle_flexpane_details__active_members--headset path:last-of-type {
 .p-huddle_sidebar_footer__join_message {
   color: $fg;
 }
+
+.p-huddle_mini_panel {
+  background: $bg;
+}
+
+.p-huddle_mini_panel__border {
+  box-shadow: 0 0 0 2px $selectFg;
+}
+
+.p-huddle_mini_panel__headset_container {
+  border: 1px solid $borderLight;
+}
+
+.p-huddle_mini_panel__headset {
+  fill: $fg;
+}
+
+.p-message_input__input_container_unstyled {
+  .p-message_input__attachments .p-composer_attachments__separator,
+  .p-message_input__files .p-composer_attachments__separator {
+    border-left: 1px solid $borderLight;
+  }
+}
+
+.p-huddle_screen_viewer__container {
+  background: $bg;
+}
+
+.p-huddle_screen_viewer__play_button {
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--survey:hover {
+  background-color: $hl;
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--survey {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-huddle_alert__content {
+  background-color: var(--theme-badge);
+  color: $selectFg;
+}
