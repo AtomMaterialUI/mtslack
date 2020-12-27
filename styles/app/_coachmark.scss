@@ -215,3 +215,11 @@
     }
   }
 }
+
+.p-directory_buttons_coachmark {
+  background-color: $bg2;
+
+  &:after {
+    border-top: 12px solid $bg2;
+  }
+}

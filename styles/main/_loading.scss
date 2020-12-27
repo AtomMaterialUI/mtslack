@@ -7,6 +7,15 @@
 }
 
 .p-degraded_list__loading {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-degraded_list__loading--offline {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-degraded_list__loading {
   color: $disabled;
   background: $excluded;
 }
