@@ -77,7 +77,44 @@
 .p-trial_awareness_modal__secondary_cta {
   color: $text;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $selectFg;
+  }
+}
+
+.p-new_year_discount_offer_start_modal .c-sk-modal__close_button.c-icon_button--light {
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-trial_seven_days_left_banner__alert {
+  background-color: $bg;
+}
+
+.p-new_year_discount_offer_banner__subtitle,
+.p-new_year_discount_offer_banner__title {
+  color: $primary;
+}
+
+.p-client_footer__icon {
+  color: $yellow;
+}
+
+.p-client_footer__trial_awareness {
+  background-color: $notif;
+  color: $fg;
+
+  .c-icon_button--dark,
+  .c-icon_button--light {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
   }
 }
