@@ -550,7 +550,7 @@ other:
     background: "#222436"
     foreground: "#c8d3f5"
     text: "#a9b8e8"
-    selectBg: "#444a73"
+    selectBg: "#828bb8"
     selectFg: "#FFFFFF"
     selectFg2: "#FFFFFF"
     button: "#444a73"

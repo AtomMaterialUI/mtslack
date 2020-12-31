@@ -72,7 +72,8 @@ a.c-sidebar_menu__list_item {
 }
 
 .p-channel_sidebar__banner--unreads {
-  background: $primary;
+  background: $accent;
+  color: $selectFg;
 }
 
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name {

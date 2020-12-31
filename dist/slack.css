@@ -1,5 +1,5 @@
 :root {
-  --version: 'v15.0.0'; }
+  --version: 'v16.0.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -5030,7 +5030,8 @@
   #mtslack .p-channel_sidebar__banner--mentions {
     background: var(--red); }
   #mtslack .p-channel_sidebar__banner--unreads {
-    background: var(--primary); }
+    background: var(--accent);
+    color: var(--selectFg2); }
   #mtslack .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name {
     box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
   #mtslack .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,

@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v15.0.0',
+  version: 'v16.0.0',
   // Loaded plugins
   plugins: {
     main: {
