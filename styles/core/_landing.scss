@@ -1,21 +1,33 @@
 .mtslack {
   color: $fg;
-  //background: $contrast;
+
+  nav.top.persistent,
+  nav.top.with_color {
+    background: $bg2;
+  }
 
   [lang] & {
     font-family: $fontFamily !important;
   }
-  
+
   .p-ssb_landing {
     color: $fg;
   }
 
+  #page_contents > *,
   .p-ssb_landing__header {
     font-family: $fontFamily;
   }
 
-  .c-button--primary:link, .c-button--primary:visited {
+  .c-button--primary:link,
+  .c-button--primary:visited {
     background: $accent;
     color: $selectFg;
+  }
+
+  .card {
+    background-color: $bg2;
+    border-color: $hl;
+    @include card;
   }
 }

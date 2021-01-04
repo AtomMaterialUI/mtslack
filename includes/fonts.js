@@ -14,10 +14,10 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.icon = 'text';
 
     // Specific
-    this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, appleLogo, sans-serif';
-    this.DEFAULT = 'Slack-Lato, appleLogo, sans-serif';
+    this.DEFAULT_CUSTOM = 'Roboto, Slack-Lato, CircularPro, appleLogo, sans-serif';
+    this.DEFAULT = 'Slack-Lato, CircularPro, appleLogo, sans-serif';
 
-    this.fontFamily = 'Roboto, Slack-Lato, appleLogo, sans-serif';
+    this.fontFamily = 'Roboto, Slack-Lato, CircularPro, appleLogo, sans-serif';
     this.fontsEnabled = false;
 
     this.extraContentId = 'customFonts';

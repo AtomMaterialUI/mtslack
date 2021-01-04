@@ -468,6 +468,42 @@ other:
     numbers: '#005CC5'
     parameters: '#E36209'
 
+  - github_dark:
+    name: GitHub Dark
+    name2: GitHub Dark Contrast
+    className: github_dark
+    desc: GitHub Dark Theme
+    dark: rue
+    scheme: GitHub Dark (Material)
+    background: '#24292e'
+    foreground: '#e1e4e8'
+    text: '#959da5'
+    selectBg: '#3392FF44'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#39414a'
+    second: '#2f363d'
+    disabled: '#6a737d'
+    contrast: '#1e2428'
+    table: '#2b3036'
+    border: '#1b1f23'
+    hl: '#444d56'
+    tree: '#39414a70'
+    notif: '#2f363d'
+    accent: '#2f363d'
+    excluded: '#FDFDFD'
+    comments: '#6A737D'
+    vars: '#24292E'
+    links: '#79b8ff'
+    functions: '#79b8ff'
+    keywords: '#f97583'
+    tags: '#85e89d'
+    strings: '#9ecbff'
+    operators: '#f97583'
+    attributes: '#b392f0'
+    numbers: '#79b8ff'
+    parameters: '#ffab70'
+
   - nightowl:
     name: Night Owl
     name2: Night Owl Contrast

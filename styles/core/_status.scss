@@ -1,0 +1,78 @@
+.mtslack {
+  #nav_bar_section.general_scope {
+    background: $bg2;
+    border-color: $hl;
+  }
+
+  #nav_bar_section.general_scope .logo img {
+    border-color: $hl;
+  }
+
+  #nav_bar span, #nav_bar a {
+    color: $fg;
+  }
+
+  .bg_lighter_gray,
+  .bg_white {
+    background: $bg;
+  }
+
+  p {
+    color: $fg;
+  }
+
+  .off_black {
+    color: $fg;
+  }
+
+  .off_gray {
+    color: $text;
+  }
+
+  #current_status .title_subheader > *:first-child {
+    border-right-color: $hl;
+  }
+
+  #services_legend .header {
+    background: $bg2;
+    border-color: $hl;
+  }
+
+  #services {
+    border-color: $hl;
+
+    .service {
+      border-color: $hl;
+    }
+  }
+
+  .c-nav--footer__metasocial,
+  .c-nav--footer {
+    background: $bg2;
+    border-color: $hl;
+  }
+
+  .c-nav--footer__listheader {
+    color: $text;
+  }
+
+  .button {
+    background: $button;
+    color: $fg;
+  }
+
+  .month {
+    background: $bg2;
+  }
+
+  .c-tooltip__content {
+    color: $text;
+    background: $notif;
+    border-top-color: $accent;
+  }
+
+  .calendar_day.exists:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}
