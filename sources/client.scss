@@ -30,7 +30,7 @@
 @font-face {
   font-family: Slack v2;
   src: url(https://a.slack-edge.com/bv1-8/slack-icons-v2-efcc328.woff2) format('woff2'),
-  url(https://a.slack-edge.com/bv1-8/slack-icons-v2-5cc0417.woff) format('woff');
+    url(https://a.slack-edge.com/bv1-8/slack-icons-v2-5cc0417.woff) format('woff');
   font-style: normal;
   font-weight: 400;
 }
@@ -64,8 +64,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -.5em;
-    margin-left: -.5em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
     width: 1em;
     height: 1em;
   }
@@ -4861,8 +4861,8 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-paid_benefits_header__bg--standard {
     background-image: url(https://a.slack-edge.com/bv1-8/header_bg_standard@2x-1b3262a.png);
   }
@@ -4876,8 +4876,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-paid_benefits_header__bg--plus {
     background-image: url(https://a.slack-edge.com/bv1-8/header_bg_plus@2x-3626b08.png);
   }
@@ -4896,8 +4896,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-paid_benefits_header__bg--gift {
     background-image: url(https://a.slack-edge.com/bv1-8/header_bg_gift@2x-8668894.png);
   }
@@ -4915,8 +4915,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-paid_benefits_header__bg--collab {
     background-image: url(https://a.slack-edge.com/bv1-8/header_bg_collab@2x-80ade16.png);
   }
@@ -4934,8 +4934,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-paid_benefits_header__bg--new_year_discount {
     background-image: url(https://a.slack-edge.com/bv1-8/NY-promo-transparent@2x-7bfa8db.png);
   }
@@ -5170,7 +5170,6 @@ only screen and (min-resolution: 192dpi) {
     -webkit-text-stroke: 6px rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
   }
 }
-
 
 .p-live_chat_support_alert__container {
   background-color: #fcf4da;
@@ -7644,7 +7643,7 @@ textarea {
   line-height: 28px;
 }
 
-[lang=ja-JP] .c-menu_item__li {
+[lang='ja-JP'] .c-menu_item__li {
   line-height: 30.8px;
 }
 
@@ -7728,7 +7727,7 @@ textarea {
   }
 }
 
-[lang=ja-JP] .c-menu_item__button {
+[lang='ja-JP'] .c-menu_item__button {
   font-size: 14px;
 
   &:link,
@@ -7746,7 +7745,7 @@ textarea {
   }
 }
 
-[lang=ja-JP] .c-menu_item__button {
+[lang='ja-JP'] .c-menu_item__button {
   line-height: 30.8px;
 
   &:link,
@@ -8266,11 +8265,11 @@ textarea {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-menu {
+[lang='ja-JP'] .c-menu {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-menu {
+[lang='ko-KR'] .c-menu {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -8741,7 +8740,7 @@ img.p-classic_nav__call-menu_icon {
 
 input {
   &.c-input_checkbox,
-  &[type=checkbox].c-input_checkbox {
+  &[type='checkbox'].c-input_checkbox {
     box-sizing: border-box;
     display: block;
     flex: none;
@@ -8752,12 +8751,12 @@ input {
   }
 
   &.c-input_checkbox[disabled],
-  &[type=checkbox].c-input_checkbox[disabled] {
+  &[type='checkbox'].c-input_checkbox[disabled] {
     cursor: default;
   }
 
   &.c-input_checkbox:focus,
-  &[type=checkbox].c-input_checkbox:focus {
+  &[type='checkbox'].c-input_checkbox:focus {
     outline-style: auto;
   }
 }
@@ -9310,7 +9309,6 @@ pre {
   display: flex;
   width: 100%;
 }
-
 
 .c-medium_channel_entity__name {
   flex: 0 1 auto;
@@ -10157,7 +10155,6 @@ a.c-dialog__footer_link {
   margin: 32px 0;
 }
 
-
 .p-channel_share_channel_by_email_modal__header {
   border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   padding: 12px 28px;
@@ -10253,8 +10250,8 @@ a.c-dialog__footer_link {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-channel_share_channel_by_email_modal__success_graphics {
     background-image: url(https://a.slack-edge.com/bv1-8/invitation_sent@2x-2d63716.png);
   }
@@ -10344,8 +10341,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-channel_share_channel_paywall_modal__graphics {
     background-image: url(https://a.slack-edge.com/bv1-8/shared_channel_paywall@2x-239fda0.png);
   }
@@ -10946,7 +10943,7 @@ body.p-client_desktop--frameless .c-fullscreen_modal__header {
   height: calc(100vh - 38px);
 }
 
-input[type=text].c-input_text {
+input[type='text'].c-input_text {
   &.p-channel_name_input--input {
     margin-bottom: 0;
   }
@@ -11199,7 +11196,7 @@ input[type=text].c-input_text {
   .ts_icon_warning {
     position: absolute;
     margin-left: -2rem;
-    margin-top: -.175rem;
+    margin-top: -0.175rem;
   }
 
   .ts_icon_org_shared_channel {
@@ -13480,7 +13477,7 @@ input.p-admin_member_table__edit_profile_input {
 .p-invite_members_form__header {
   text-align: center;
   font-size: 1.8rem;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   margin-bottom: 48px;
 }
 
@@ -14641,7 +14638,7 @@ header.p-invite_members_form__header {
 
 .p-select_invite_type__header {
   font-size: 2rem;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 300;
   margin: 32px;
 }
@@ -15263,7 +15260,7 @@ a.p-invite_dialog__footer_link {
   }
 }
 
-[lang=it-IT] .p-shared_invite_link .p-edit_settings_button_container {
+[lang='it-IT'] .p-shared_invite_link .p-edit_settings_button_container {
   font-size: 14px;
 }
 
@@ -15365,7 +15362,7 @@ a.p-invite_dialog__footer_link {
 
 input {
   &.c-input_radio,
-  &[type=radio].c-input_radio {
+  &[type='radio'].c-input_radio {
     box-sizing: border-box;
     display: block;
     flex: none;
@@ -15376,12 +15373,12 @@ input {
   }
 
   &.c-input_radio[disabled],
-  &[type=radio].c-input_radio[disabled] {
+  &[type='radio'].c-input_radio[disabled] {
     cursor: default;
   }
 
   &.c-input_radio:focus,
-  &[type=radio].c-input_radio:focus {
+  &[type='radio'].c-input_radio:focus {
     outline-style: auto;
   }
 }
@@ -15499,6 +15496,7 @@ input {
     }
   }
 }
+
 .c-medium_missing_user_group {
   display: flex;
   flex-direction: column;
@@ -16065,16 +16063,15 @@ pre .p-message_pane_input_broadcast_warning__highlight {
   color: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1);
 }
 
-
 [lang] .c-basic_container {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-basic_container {
+[lang='ja-JP'] .c-basic_container {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-basic_container {
+[lang='ko-KR'] .c-basic_container {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -16271,8 +16268,6 @@ pre .p-message_pane_input_broadcast_warning__highlight {
   opacity: 0.6;
   pointer-events: none;
 }
-
-
 
 .p-channel_name_input__label_title {
   display: inline-block;
@@ -16998,7 +16993,7 @@ pre .p-message_pane_input_broadcast_warning__highlight {
 
   input {
     &.c-input_text,
-    &[type=text].c-input_text {
+    &[type='text'].c-input_text {
       margin: 0;
     }
   }
@@ -17384,7 +17379,6 @@ pre .p-message_pane_input_broadcast_warning__highlight {
   line-height: 1.46668;
   font-weight: 700;
 }
-
 
 .c-file_container {
   position: relative;
@@ -18002,9 +17996,9 @@ pre .p-message_pane_input_broadcast_warning__highlight {
     top: 0;
     bottom: 0;
     background: linear-gradient(
-        0deg,
-        rgba(var(--sk_primary_background, 255, 255, 255), 1),
-        rgba(var(--sk_primary_background, 255, 255, 255), 0) 40px
+      0deg,
+      rgba(var(--sk_primary_background, 255, 255, 255), 1),
+      rgba(var(--sk_primary_background, 255, 255, 255), 0) 40px
     );
   }
 }
@@ -18225,7 +18219,7 @@ pre .p-message_pane_input_broadcast_warning__highlight {
   font-size: 15px;
 }
 
-[lang=ja-JP] .p-share_dialog_message_input {
+[lang='ja-JP'] .p-share_dialog_message_input {
   font-size: 14px;
 }
 
@@ -18233,7 +18227,7 @@ pre .p-message_pane_input_broadcast_warning__highlight {
   line-height: 1.2;
 }
 
-[lang=ja-JP] .p-share_dialog_message_input {
+[lang='ja-JP'] .p-share_dialog_message_input {
   line-height: 1.3;
 }
 
@@ -18878,7 +18872,7 @@ body.p-client_desktop--frameless .p-file_viewer__header {
 }
 
 .c-input_select_options_list__virtualized_list:not(.c-input_select_options_list__virtualized_list--full-width)
-.ReactVirtualized__Grid__innerScrollContainer {
+  .ReactVirtualized__Grid__innerScrollContainer {
   margin: 0 4px;
 }
 
@@ -19256,8 +19250,8 @@ input.c-input_select__filter_input.offscreen {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_image_thumbnail__wrapper--broken {
     background-image: url(https://a.slack-edge.com/bv1-8/broken_image@2x-0765596.png);
   }
@@ -19360,7 +19354,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .p-email_reply_modal .p-reply_to_email_input {
+[lang='ja-JP'] .p-email_reply_modal .p-reply_to_email_input {
   font-size: 14px;
 }
 
@@ -19368,7 +19362,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.2;
 }
 
-[lang=ja-JP] .p-email_reply_modal .p-reply_to_email_input {
+[lang='ja-JP'] .p-email_reply_modal .p-reply_to_email_input {
   line-height: 1.3;
 }
 
@@ -20311,7 +20305,7 @@ only screen and (min-resolution: 192dpi) {
           display: block;
           position: absolute;
           margin-left: -100%;
-          margin-top: -.38rem;
+          margin-top: -0.38rem;
           width: 200%;
           height: 1px;
           background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
@@ -20347,7 +20341,7 @@ only screen and (min-resolution: 192dpi) {
       }
 
       + .singleton.checklist {
-        margin-top: -.3rem;
+        margin-top: -0.3rem;
 
         li {
           padding-top: 0.68rem;
@@ -20563,26 +20557,26 @@ only screen and (min-resolution: 192dpi) {
   }
 
   li {
-    &[data-checked=false],
-    &[data-checked=true] {
+    &[data-checked='false'],
+    &[data-checked='true'] {
       list-style-type: none;
     }
   }
 
   > li {
-    &[data-checked=true] {
+    &[data-checked='true'] {
       text-decoration: line-through;
       color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
     }
 
-    &[data-checked=false]:before {
+    &[data-checked='false']:before {
       margin-right: 6px;
       line-height: 1;
       font-size: 15px;
       margin-left: -16px;
     }
 
-    &[data-checked=true]:before {
+    &[data-checked='true']:before {
       margin-right: 6px;
       line-height: 1;
       font-size: 15px;
@@ -20591,7 +20585,7 @@ only screen and (min-resolution: 192dpi) {
       color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
     }
 
-    &[data-checked=false]:before {
+    &[data-checked='false']:before {
       content: '\E322';
     }
   }
@@ -21543,9 +21537,9 @@ span.CodeMirror-selectedtext {
     top: calc(8.5em - 40px);
     height: 40px;
     background: linear-gradient(
-        0deg,
-        rgba(var(--sk_primary_background, 255, 255, 255), 1),
-        rgba(var(--sk_primary_background, 255, 255, 255), 0) 40px
+      0deg,
+      rgba(var(--sk_primary_background, 255, 255, 255), 1),
+      rgba(var(--sk_primary_background, 255, 255, 255), 0) 40px
     );
   }
 }
@@ -22950,8 +22944,8 @@ span.CodeMirror-selectedtext {
 }
 
 .p-multi_file_upload__file_container:hover
-.p-multi_file_upload__remove_btn:hover
-.p-multi_file_upload__remove_btn_circle,
+  .p-multi_file_upload__remove_btn:hover
+  .p-multi_file_upload__remove_btn_circle,
 .p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }
@@ -24829,9 +24823,9 @@ a.c-sidebar_menu__list_item {
 
 .c-message_attachment__delete_container--pushed,
 .c-message_kit__text:empty
-+ .c-message_kit__attachments
-> .c-message_attachment:first-child
-.c-message_attachment__delete_container {
+  + .c-message_kit__attachments
+  > .c-message_attachment:first-child
+  .c-message_attachment__delete_container {
   top: 24px;
 }
 
@@ -24863,7 +24857,7 @@ a.c-sidebar_menu__list_item {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message_attachment__pretext {
+[lang='ja-JP'] .c-message_attachment__pretext {
   font-size: 14px;
 }
 
@@ -24871,7 +24865,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .c-message_attachment__pretext {
+[lang='ja-JP'] .c-message_attachment__pretext {
   line-height: 1.56666667;
 }
 
@@ -24890,7 +24884,7 @@ a.c-sidebar_menu__list_item {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message_attachment__body {
+[lang='ja-JP'] .c-message_attachment__body {
   font-size: 14px;
 }
 
@@ -24898,7 +24892,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .c-message_attachment__body {
+[lang='ja-JP'] .c-message_attachment__body {
   line-height: 1.56666667;
 }
 
@@ -24924,7 +24918,7 @@ a.c-sidebar_menu__list_item {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message_attachment__author .emoji-sizer {
+[lang='ja-JP'] .c-message_attachment__author .emoji-sizer {
   font-size: 14px;
 }
 
@@ -24932,7 +24926,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .c-message_attachment__author .emoji-sizer {
+[lang='ja-JP'] .c-message_attachment__author .emoji-sizer {
   line-height: 1.56666667;
 }
 
@@ -24940,7 +24934,7 @@ a.c-sidebar_menu__list_item {
   font-size: 12px;
 }
 
-[lang=ja-JP] .c-message_attachment__author_icon {
+[lang='ja-JP'] .c-message_attachment__author_icon {
   font-size: 11px;
 }
 
@@ -24948,7 +24942,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.25;
 }
 
-[lang=ja-JP] .c-message_attachment__author_icon {
+[lang='ja-JP'] .c-message_attachment__author_icon {
   line-height: 1.35;
 }
 
@@ -24988,7 +24982,7 @@ a.c-sidebar_menu__list_item {
   font-size: 12px;
 }
 
-[lang=ja-JP] .c-message_attachment__footer {
+[lang='ja-JP'] .c-message_attachment__footer {
   font-size: 11px;
 }
 
@@ -24996,7 +24990,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.25;
 }
 
-[lang=ja-JP] .c-message_attachment__footer {
+[lang='ja-JP'] .c-message_attachment__footer {
   line-height: 1.35;
 }
 
@@ -25205,7 +25199,7 @@ a.c-sidebar_menu__list_item {
   font-size: 13px;
 }
 
-[lang=ja-JP] .c-message_attachment__media_trigger--caption {
+[lang='ja-JP'] .c-message_attachment__media_trigger--caption {
   font-size: 12px;
 }
 
@@ -25213,7 +25207,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.38461538;
 }
 
-[lang=ja-JP] .c-message_attachment__media_trigger--caption {
+[lang='ja-JP'] .c-message_attachment__media_trigger--caption {
   line-height: 1.48461538;
 }
 
@@ -25226,7 +25220,7 @@ a.c-sidebar_menu__list_item {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message_attachment__media_trigger--too_large {
+[lang='ja-JP'] .c-message_attachment__media_trigger--too_large {
   font-size: 14px;
 }
 
@@ -25234,7 +25228,7 @@ a.c-sidebar_menu__list_item {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .c-message_attachment__media_trigger--too_large {
+[lang='ja-JP'] .c-message_attachment__media_trigger--too_large {
   line-height: 1.56666667;
 }
 
@@ -25714,7 +25708,7 @@ pre .p-channel_notification_prefs_new__mentions {
 .c-sv_picker__thumb--focus-visible {
   --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
   box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3), inset 0 0 0 2px #fff,
-  inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
+    inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
   border-radius: 4px;
   border-radius: 16px;
 }
@@ -25879,18 +25873,18 @@ pre .p-channel_notification_prefs_new__mentions {
 
 .c-color_slider__inner_hue_track {
   background: linear-gradient(
-      90deg,
-      red 0,
-      #f90 10%,
-      #cf0 20%,
-      #3f0 30%,
-      #0f6 40%,
-      #0ff 50%,
-      #06f 60%,
-      #30f 70%,
-      #c0f 80%,
-      #f09 90%,
-      red
+    90deg,
+    red 0,
+    #f90 10%,
+    #cf0 20%,
+    #3f0 30%,
+    #0f6 40%,
+    #0ff 50%,
+    #06f 60%,
+    #30f 70%,
+    #c0f 80%,
+    #f09 90%,
+    red
   );
 }
 
@@ -25950,7 +25944,7 @@ pre .p-channel_notification_prefs_new__mentions {
     &::-webkit-slider-thumb {
       --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
       box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3), inset 0 0 0 2px #fff,
-      inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
+        inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
       border-radius: 4px;
       border-radius: 16px;
       -webkit-appearance: none;
@@ -25963,7 +25957,7 @@ pre .p-channel_notification_prefs_new__mentions {
     &::-ms-thumb {
       --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
       box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3), inset 0 0 0 2px #fff,
-      inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
+        inset 0 0 4px 2px rgba(0, 0, 0, 0.35);
       border-radius: 4px;
       border-radius: 16px;
     }
@@ -26086,7 +26080,7 @@ pre .p-channel_notification_prefs_new__mentions {
   margin-left: 12px;
 }
 
-.c-color_picker__input[type=text] {
+.c-color_picker__input[type='text'] {
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
   flex: 1 1 0;
   margin: 0;
@@ -26182,7 +26176,6 @@ pre .p-channel_notification_prefs_new__mentions {
 .p-ia_custom_theme__picker .c-color_picker__container {
   margin-bottom: 12px;
 }
-
 
 .p-trial_modal_content_row_container {
   display: flex;
@@ -26317,8 +26310,8 @@ pre .p-channel_notification_prefs_new__mentions {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-trial_modal__footer_bg--standard {
     background-image: url(https://a.slack-edge.com/bv1-8/lastdaymodal_bg_standard_plan@2x-2bd0387.png);
   }
@@ -26329,8 +26322,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-trial_modal__footer_bg--plus {
     background-image: url(https://a.slack-edge.com/bv1-8/lastdaymodal_bg_plus_plan@2x-dfaa62f.png);
   }
@@ -26368,8 +26361,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-trial_expired_modal__footer--standard {
     background-image: url(https://a.slack-edge.com/bv1-8/trialexpiredmodal_bg_standard_plan@2x-7b27fb0.png);
   }
@@ -26382,8 +26375,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-trial_expired_modal__footer--plus {
     background-image: url(https://a.slack-edge.com/bv1-8/trialexpiredmodal_bg_plus_plan@2x-16cba3b.png);
   }
@@ -26477,18 +26470,18 @@ only screen and (min-resolution: 192dpi) {
 
 .p-header_banner--bg_confetti {
   background-image: url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_left-3303ad8.png),
-  url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_right-92a6acb.png);
+    url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_right-92a6acb.png);
   background-position: 0 0, 100% 100%;
   background-repeat: no-repeat;
   background-size: 150px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-header_banner--bg_confetti {
     background-image: url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_left@2x-24b8772.png),
-    url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_right@2x-94fbeb7.png);
+      url(https://a.slack-edge.com/bv1-8/banner_bg_confetti_tall_right@2x-94fbeb7.png);
   }
 }
 
@@ -28179,7 +28172,7 @@ body.desktop .p-emoji_picker {
   }
 }
 
-input[type=text].c-input_text.p-emoji_picker__input {
+input[type='text'].c-input_text.p-emoji_picker__input {
   padding-top: 2px;
   padding-bottom: 4px;
   padding-left: 30px;
@@ -28393,7 +28386,7 @@ input[type=text].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker__preview_img span.emoji-sizer {
-  margin-top: -.3rem;
+  margin-top: -0.3rem;
   vertical-align: top;
   font-size: 2.25rem;
   line-height: 2.25rem;
@@ -28465,8 +28458,8 @@ input[type=text].c-input_text.p-emoji_picker__input {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-emoji_picker__update_overlay_image_container {
     background-image: url(https://a.slack-edge.com/bv1-8/google_emoji_update_overlay_smileys@2x-2bb3490.png);
   }
@@ -28477,8 +28470,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-emoji_picker__update_overlay--apple .p-emoji_picker__update_overlay_image_container {
     background-image: url(https://a.slack-edge.com/bv1-8/apple_emoji_update_overlay_smileys@2x-63c5921.png);
   }
@@ -28522,7 +28515,6 @@ only screen and (min-resolution: 192dpi) {
   left: 14px;
 }
 
-
 .c-message {
   padding-right: 26px;
   min-width: 1px;
@@ -28537,7 +28529,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message {
+[lang='ja-JP'] .c-message {
   font-size: 14px;
 }
 
@@ -28545,7 +28537,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 16px;
 }
 
-[lang=ja-JP] .c-message {
+[lang='ja-JP'] .c-message {
   line-height: 17.6px;
 }
 
@@ -28604,7 +28596,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46668;
 }
 
-[lang=ja-JP] .c-message__body {
+[lang='ja-JP'] .c-message__body {
   line-height: 1.56668;
 }
 
@@ -29025,7 +29017,7 @@ a.c-message__label_link {
   line-height: 1;
 }
 
-[lang=ja-JP] .c-message__editor__emoji_menu {
+[lang='ja-JP'] .c-message__editor__emoji_menu {
   line-height: 1.1;
 }
 
@@ -29841,8 +29833,8 @@ a.c-message__call_name--linked {
 }
 
 .p-lightbulb_icon--inline.p-lightbulb_icon--inherit .p-lightbulb_icon__icon {
-  margin-top: -.5em;
-  margin-left: -.5em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
   width: 1em;
   height: 1em;
 }
@@ -29908,7 +29900,7 @@ a.c-message__call_name--linked {
   &.c-fullscreen_modal__content--after-open,
   &.c-fullscreen_modal__content--before-open {
     transition: opacity 0.15s cubic-bezier(0.2, 0.8, 0.5, 1) 0.1s, transform 0.15s cubic-bezier(0.2, 0.8, 0.5, 1) 0.1s,
-    left 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
+      left 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
   }
 }
 
@@ -29966,7 +29958,7 @@ a.c-message__call_name--linked {
   margin: 0 24px 0 0;
 }
 
-input[type=text].p-prefs_modal__custom_theme_input {
+input[type='text'].p-prefs_modal__custom_theme_input {
   max-width: 545px;
   margin: 0 8px 0 0;
 }
@@ -30211,7 +30203,7 @@ input[type=text].p-prefs_modal__custom_theme_input {
 
 .p-prefs_modal__ia_radio--selected .p-prefs_modal__notification_example:not(.p-prefs_modal__notification_example--none),
 .p-prefs_modal__radiogroup--selected
-.p-prefs_modal__notification_example:not(.p-prefs_modal__notification_example--none) {
+  .p-prefs_modal__notification_example:not(.p-prefs_modal__notification_example--none) {
   opacity: 1;
   transform: scale(1);
 }
@@ -30228,7 +30220,7 @@ input[type=text].p-prefs_modal__custom_theme_input {
   vertical-align: top;
 }
 
-input[type=text].p-prefs_modal__email_forwarding_address_input {
+input[type='text'].p-prefs_modal__email_forwarding_address_input {
   max-width: 365px;
   margin: 0 8px 0 0;
 }
@@ -31629,7 +31621,6 @@ div.p-context_block_wrapper--modal_view {
   margin-top: 4px;
 }
 
-
 .c-message_kit__tombstone__icon {
   border-radius: 3px;
   color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
@@ -31649,7 +31640,7 @@ div.p-context_block_wrapper--modal_view {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    letter-spacing: -.75px;
+    letter-spacing: -0.75px;
   }
 
   .p-shared_channel_creator_welcome_modal__header--channel_icon {
@@ -31706,7 +31697,7 @@ div.p-context_block_wrapper--modal_view {
   font-weight: 900;
   font-size: 22px;
   line-height: 30px;
-  letter-spacing: -.75px;
+  letter-spacing: -0.75px;
 }
 
 .p-shared_channel_creator_welcome_modal__content--error {
@@ -31829,8 +31820,8 @@ div.p-context_block_wrapper--modal_view {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .c-reaction--reacted {
     --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
     box-shadow: inset 0 0 0 1.5px var(--saf-0);
@@ -31927,8 +31918,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .c-reaction_expand--reacted {
     --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
     box-shadow: inset 0 0 0 1.5px var(--saf-0);
@@ -32485,7 +32476,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .p-rich_text_block {
+[lang='ja-JP'] .p-rich_text_block {
   font-size: 14px;
 }
 
@@ -32493,7 +32484,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46668;
 }
 
-[lang=ja-JP] .p-rich_text_block {
+[lang='ja-JP'] .p-rich_text_block {
   line-height: 1.56668;
 }
 
@@ -32811,8 +32802,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-call_footer_blurb__image {
     background-image: url(https://a.slack-edge.com/bv1-8/calls_discovery_small@2x-62f9ddc.png);
   }
@@ -33597,9 +33588,9 @@ only screen and (min-resolution: 192dpi) {
 
 .c-message_attachment_v2__delete_container--pushed,
 .c-message_kit__text:empty
-+ .c-message_kit__attachments
-> .c-message_attachment_v2:first-child
-.c-message_attachment_v2__delete_container {
+  + .c-message_kit__attachments
+  > .c-message_attachment_v2:first-child
+  .c-message_attachment_v2__delete_container {
   top: 24px;
 }
 
@@ -33645,7 +33636,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 12px;
 }
 
-[lang=ja-JP] .c-message_attachment_v2__attribution {
+[lang='ja-JP'] .c-message_attachment_v2__attribution {
   font-size: 11px;
 }
 
@@ -33653,7 +33644,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.25;
 }
 
-[lang=ja-JP] .c-message_attachment_v2__attribution {
+[lang='ja-JP'] .c-message_attachment_v2__attribution {
   line-height: 1.35;
 }
 
@@ -34234,30 +34225,30 @@ only screen and (min-resolution: 192dpi) {
       }
     }
 
-    &[data-checked=false],
-    &[data-checked=true] {
+    &[data-checked='false'],
+    &[data-checked='true'] {
       pointer-events: none;
     }
 
-    &[data-checked=false] > li *,
-    &[data-checked=true] > li * {
+    &[data-checked='false'] > li *,
+    &[data-checked='true'] > li * {
       pointer-events: all;
     }
 
-    &[data-checked=false] > li:before {
+    &[data-checked='false'] > li:before {
       color: #777;
       cursor: pointer;
       pointer-events: all;
     }
 
-    &[data-checked=true] > li:before {
+    &[data-checked='true'] > li:before {
       color: #777;
       cursor: pointer;
       pointer-events: all;
       content: '\2611';
     }
 
-    &[data-checked=false] > li:before {
+    &[data-checked='false'] > li:before {
       content: '\2610';
     }
   }
@@ -34871,11 +34862,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-texty_input {
+[lang='ja-JP'] .c-texty_input {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-texty_input {
+[lang='ko-KR'] .c-texty_input {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -34953,7 +34944,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input {
+[lang='ja-JP'] .c-texty_input {
   .ql-editor,
   .ql-placeholder {
     font-size: 14px;
@@ -34967,7 +34958,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input {
+[lang='ja-JP'] .c-texty_input {
   .ql-editor,
   .ql-placeholder {
     line-height: 1.56668;
@@ -35271,62 +35262,62 @@ only screen and (min-resolution: 192dpi) {
     }
 
     ul {
-      &[data-checked=false] > li:before,
-      &[data-checked=true] > li:before {
+      &[data-checked='false'] > li:before,
+      &[data-checked='true'] > li:before {
         display: none;
       }
 
-      &[data-checked=false] li:not([class*='ql-indent-']),
-      &[data-checked=true] li:not([class*='ql-indent-']) {
+      &[data-checked='false'] li:not([class*='ql-indent-']),
+      &[data-checked='true'] li:not([class*='ql-indent-']) {
         margin-left: 3px;
       }
 
-      &[data-checked=false] li.ql-indent-1,
-      &[data-checked=true] li.ql-indent-1 {
+      &[data-checked='false'] li.ql-indent-1,
+      &[data-checked='true'] li.ql-indent-1 {
         margin-left: 25px;
       }
 
-      &[data-checked=false] li.ql-indent-2,
-      &[data-checked=true] li.ql-indent-2 {
+      &[data-checked='false'] li.ql-indent-2,
+      &[data-checked='true'] li.ql-indent-2 {
         margin-left: 50px;
       }
 
-      &[data-checked=false] li.ql-indent-3,
-      &[data-checked=true] li.ql-indent-3 {
+      &[data-checked='false'] li.ql-indent-3,
+      &[data-checked='true'] li.ql-indent-3 {
         margin-left: 75px;
       }
 
-      &[data-checked=false] li.ql-indent-4,
-      &[data-checked=true] li.ql-indent-4 {
+      &[data-checked='false'] li.ql-indent-4,
+      &[data-checked='true'] li.ql-indent-4 {
         margin-left: 100px;
       }
 
-      &[data-checked=false] li.ql-indent-5,
-      &[data-checked=true] li.ql-indent-5 {
+      &[data-checked='false'] li.ql-indent-5,
+      &[data-checked='true'] li.ql-indent-5 {
         margin-left: 125px;
       }
 
-      &[data-checked=false] li.ql-indent-6,
-      &[data-checked=true] li.ql-indent-6 {
+      &[data-checked='false'] li.ql-indent-6,
+      &[data-checked='true'] li.ql-indent-6 {
         margin-left: 150px;
       }
 
-      &[data-checked=false] li.ql-indent-7,
-      &[data-checked=true] li.ql-indent-7 {
+      &[data-checked='false'] li.ql-indent-7,
+      &[data-checked='true'] li.ql-indent-7 {
         margin-left: 175px;
       }
 
-      &[data-checked=false] li.ql-indent-8,
-      &[data-checked=true] li.ql-indent-8 {
+      &[data-checked='false'] li.ql-indent-8,
+      &[data-checked='true'] li.ql-indent-8 {
         margin-left: 200px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox,
-      &[data-checked=true] > li > .slack-list-item-checkbox {
+      &[data-checked='false'] > li > .slack-list-item-checkbox,
+      &[data-checked='true'] > li > .slack-list-item-checkbox {
         margin-right: 2px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
         font-family: Slack v2;
         font-size: 20px;
         font-style: normal;
@@ -35342,7 +35333,7 @@ only screen and (min-resolution: 192dpi) {
         pointer-events: all;
       }
 
-      &[data-checked=true] > li {
+      &[data-checked='true'] > li {
         > .slack-list-item-checkbox:before {
           font-family: Slack v2;
           font-size: 20px;
@@ -35363,17 +35354,17 @@ only screen and (min-resolution: 192dpi) {
         color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before,
-      &[data-checked=true] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before,
+      &[data-checked='true'] > li > .slack-list-item-checkbox:before {
         margin-right: 6px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:focus,
-      &[data-checked=true] > li > .slack-list-item-checkbox:focus {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:focus,
+      &[data-checked='true'] > li > .slack-list-item-checkbox:focus {
         outline: none;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:focus:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:focus:before {
         --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 0.3);
         box-shadow: 0 0 0 5px var(--saf-0);
         border-radius: 4px;
@@ -35385,7 +35376,7 @@ only screen and (min-resolution: 192dpi) {
         margin-right: 7px;
       }
 
-      &[data-checked=true] > li > .slack-list-item-checkbox {
+      &[data-checked='true'] > li > .slack-list-item-checkbox {
         &:focus:before {
           --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 0.3);
           box-shadow: 0 0 0 5px var(--saf-0);
@@ -35404,7 +35395,7 @@ only screen and (min-resolution: 192dpi) {
         }
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
         content: '\E322';
       }
     }
@@ -36142,62 +36133,62 @@ only screen and (min-resolution: 192dpi) {
     }
 
     ul {
-      &[data-checked=false] > li:before,
-      &[data-checked=true] > li:before {
+      &[data-checked='false'] > li:before,
+      &[data-checked='true'] > li:before {
         display: none;
       }
 
-      &[data-checked=false] li:not([class*='ql-indent-']),
-      &[data-checked=true] li:not([class*='ql-indent-']) {
+      &[data-checked='false'] li:not([class*='ql-indent-']),
+      &[data-checked='true'] li:not([class*='ql-indent-']) {
         margin-left: 3px;
       }
 
-      &[data-checked=false] li.ql-indent-1,
-      &[data-checked=true] li.ql-indent-1 {
+      &[data-checked='false'] li.ql-indent-1,
+      &[data-checked='true'] li.ql-indent-1 {
         margin-left: 25px;
       }
 
-      &[data-checked=false] li.ql-indent-2,
-      &[data-checked=true] li.ql-indent-2 {
+      &[data-checked='false'] li.ql-indent-2,
+      &[data-checked='true'] li.ql-indent-2 {
         margin-left: 50px;
       }
 
-      &[data-checked=false] li.ql-indent-3,
-      &[data-checked=true] li.ql-indent-3 {
+      &[data-checked='false'] li.ql-indent-3,
+      &[data-checked='true'] li.ql-indent-3 {
         margin-left: 75px;
       }
 
-      &[data-checked=false] li.ql-indent-4,
-      &[data-checked=true] li.ql-indent-4 {
+      &[data-checked='false'] li.ql-indent-4,
+      &[data-checked='true'] li.ql-indent-4 {
         margin-left: 100px;
       }
 
-      &[data-checked=false] li.ql-indent-5,
-      &[data-checked=true] li.ql-indent-5 {
+      &[data-checked='false'] li.ql-indent-5,
+      &[data-checked='true'] li.ql-indent-5 {
         margin-left: 125px;
       }
 
-      &[data-checked=false] li.ql-indent-6,
-      &[data-checked=true] li.ql-indent-6 {
+      &[data-checked='false'] li.ql-indent-6,
+      &[data-checked='true'] li.ql-indent-6 {
         margin-left: 150px;
       }
 
-      &[data-checked=false] li.ql-indent-7,
-      &[data-checked=true] li.ql-indent-7 {
+      &[data-checked='false'] li.ql-indent-7,
+      &[data-checked='true'] li.ql-indent-7 {
         margin-left: 175px;
       }
 
-      &[data-checked=false] li.ql-indent-8,
-      &[data-checked=true] li.ql-indent-8 {
+      &[data-checked='false'] li.ql-indent-8,
+      &[data-checked='true'] li.ql-indent-8 {
         margin-left: 200px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox,
-      &[data-checked=true] > li > .slack-list-item-checkbox {
+      &[data-checked='false'] > li > .slack-list-item-checkbox,
+      &[data-checked='true'] > li > .slack-list-item-checkbox {
         margin-right: 2px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
         font-family: Slack v2;
         font-size: 20px;
         font-style: normal;
@@ -36213,7 +36204,7 @@ only screen and (min-resolution: 192dpi) {
         pointer-events: all;
       }
 
-      &[data-checked=true] > li {
+      &[data-checked='true'] > li {
         > .slack-list-item-checkbox:before {
           font-family: Slack v2;
           font-size: 20px;
@@ -36234,17 +36225,17 @@ only screen and (min-resolution: 192dpi) {
         color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before,
-      &[data-checked=true] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before,
+      &[data-checked='true'] > li > .slack-list-item-checkbox:before {
         margin-right: 6px;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:focus,
-      &[data-checked=true] > li > .slack-list-item-checkbox:focus {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:focus,
+      &[data-checked='true'] > li > .slack-list-item-checkbox:focus {
         outline: none;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:focus:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:focus:before {
         --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 0.3);
         box-shadow: 0 0 0 5px var(--saf-0);
         border-radius: 4px;
@@ -36256,7 +36247,7 @@ only screen and (min-resolution: 192dpi) {
         margin-right: 7px;
       }
 
-      &[data-checked=true] > li > .slack-list-item-checkbox {
+      &[data-checked='true'] > li > .slack-list-item-checkbox {
         &:focus:before {
           --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 0.3);
           box-shadow: 0 0 0 5px var(--saf-0);
@@ -36275,7 +36266,7 @@ only screen and (min-resolution: 192dpi) {
         }
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
         content: '\E322';
       }
     }
@@ -36314,7 +36305,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input_unstyled__container--size_medium {
+[lang='ja-JP'] .c-texty_input_unstyled__container--size_medium {
   .ql-editor,
   .ql-placeholder {
     font-size: 14px;
@@ -36328,7 +36319,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input_unstyled__container--size_medium {
+[lang='ja-JP'] .c-texty_input_unstyled__container--size_medium {
   .ql-editor,
   .ql-placeholder {
     line-height: 1.56668;
@@ -36349,7 +36340,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input_unstyled__container--size_large {
+[lang='ja-JP'] .c-texty_input_unstyled__container--size_large {
   .ql-editor,
   .ql-placeholder {
     font-size: 17px;
@@ -36363,7 +36354,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .c-texty_input_unstyled__container--size_large {
+[lang='ja-JP'] .c-texty_input_unstyled__container--size_large {
   .ql-editor,
   .ql-placeholder {
     line-height: 1.43334;
@@ -36394,11 +36385,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-texty_input_unstyled {
+[lang='ja-JP'] .c-texty_input_unstyled {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-texty_input_unstyled {
+[lang='ko-KR'] .c-texty_input_unstyled {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -36673,11 +36664,11 @@ only screen and (min-resolution: 192dpi) {
   color: #fff;
 }
 
-[lang=de-DE] .c-texty_autocomplete__result--broadcasted,
-[lang=es-ES] .c-texty_autocomplete__result--broadcasted,
-[lang=es-LA] .c-texty_autocomplete__result--broadcasted,
-[lang=fr-FR] .c-texty_autocomplete__result--broadcasted,
-[lang=it-IT] .c-texty_autocomplete__result--broadcasted {
+[lang='de-DE'] .c-texty_autocomplete__result--broadcasted,
+[lang='es-ES'] .c-texty_autocomplete__result--broadcasted,
+[lang='es-LA'] .c-texty_autocomplete__result--broadcasted,
+[lang='fr-FR'] .c-texty_autocomplete__result--broadcasted,
+[lang='it-IT'] .c-texty_autocomplete__result--broadcasted {
   margin: 8px 0;
 }
 
@@ -36877,8 +36868,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_section_modal_input__input_wrap
-.c-input_character_count.c-input_character_count--large.c-input_character_count--invalid
-.c-input_character_count__characters-remaining {
+  .c-input_character_count.c-input_character_count--large.c-input_character_count--invalid
+  .c-input_character_count__characters-remaining {
   position: absolute;
   right: 25px;
   top: 5px;
@@ -37038,7 +37029,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_section_modal_input:not(.p-channel_section_modal_input--for_team_site)
-.p-channel_section_modal_input__duration_picker_select {
+  .p-channel_section_modal_input__duration_picker_select {
   border: none;
   justify-content: flex-start;
   padding-left: 0;
@@ -37065,7 +37056,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_section_modal_input:not(.p-channel_section_modal_input--for_team_site)
-.p-channel_section_modal_input__duration_picker_select {
+  .p-channel_section_modal_input__duration_picker_select {
   &.c-input_select--active,
   &.c-input_select:focus {
     border: none;
@@ -37289,7 +37280,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .p-channel_section_modal_input__dialog .p-channel_section_modal_input__preset_option {
+[lang='ja-JP'] .p-channel_section_modal_input__dialog .p-channel_section_modal_input__preset_option {
   font-size: 14px;
 
   &:link,
@@ -37307,7 +37298,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-[lang=ja-JP] .p-channel_section_modal_input__dialog .p-channel_section_modal_input__preset_option {
+[lang='ja-JP'] .p-channel_section_modal_input__dialog .p-channel_section_modal_input__preset_option {
   line-height: 30.8px;
 
   &:link,
@@ -37739,7 +37730,7 @@ pre {
   font-size: 16px;
 }
 
-[lang=ja-JP] .c-unified_member__small-font--small {
+[lang='ja-JP'] .c-unified_member__small-font--small {
   font-size: 15px;
 }
 
@@ -39831,12 +39822,12 @@ pre {
   padding: 0 4px;
   font-size: 13px;
 
-  .c-filter_input__input[type=text] {
+  .c-filter_input__input[type='text'] {
     padding: 0 4px;
   }
 }
 
-.c-filter_input__input[type=text] {
+.c-filter_input__input[type='text'] {
   flex-grow: 1;
   margin: 0;
   padding: 0 8px;
@@ -40726,8 +40717,8 @@ pre {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-migration_blocker_page__icon {
     background-image: url(https://a.slack-edge.com/bv1-8/mig-blocker-asset@2x-86aa73a.png);
   }
@@ -40743,8 +40734,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-migration_blocker_page__icon--complete {
     background-image: url(https://a.slack-edge.com/bv1-8/enterprise_welcome@2x-a838124.png);
   }
@@ -41499,8 +41490,8 @@ body {
 }
 
 .p-channel_email_address_modal__options_overlay_options_list
-.c-select_options_list__option--active
-.p-channel_email_address_modal__body_density__sub_text {
+  .c-select_options_list__option--active
+  .p-channel_email_address_modal__body_density__sub_text {
   color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
 }
 
@@ -42007,7 +41998,7 @@ body {
   display: flex;
   padding: 24px;
   background: linear-gradient(136.53deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.2)),
-  linear-gradient(312.01deg, #616061, rgba(97, 96, 97, 0.75));
+    linear-gradient(312.01deg, #616061, rgba(97, 96, 97, 0.75));
   background-color: #616061;
   position: relative;
 }
@@ -42018,7 +42009,7 @@ body {
   display: flex;
   padding: 24px;
   background: linear-gradient(136.53deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.2)),
-  linear-gradient(312.01deg, #616061, rgba(97, 96, 97, 0.75));
+    linear-gradient(312.01deg, #616061, rgba(97, 96, 97, 0.75));
   background-color: #616061;
   position: relative;
   padding-top: 60px;
@@ -42141,7 +42132,7 @@ body {
   margin-left: auto;
 }
 
-[lang=ja-JP] .p-member_profile_buttons__button {
+[lang='ja-JP'] .p-member_profile_buttons__button {
   font-size: 13px;
 }
 
@@ -42489,12 +42480,13 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    margin-left: -.5em;
+    margin-left: -0.5em;
     left: 9px;
     top: 16px;
     box-sizing: border-box;
     border: 8px solid var(--saf-0);
-    border-color: transparent transparent rgba(var(--sk_primary_background, 255, 255, 255), 1) rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border-color: transparent transparent rgba(var(--sk_primary_background, 255, 255, 255), 1)
+      rgba(var(--sk_primary_background, 255, 255, 255), 1);
     transform-origin: 0 0;
     transform: rotate(45deg);
     --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
@@ -43429,7 +43421,7 @@ body {
     .p-shortcuts_menu_speedbump__text {
       overflow: hidden;
       animation-name: animate-text-ease-in, animate-text-expanded-pause, animate-text-ease-out,
-      animate-text-collapsed-pause;
+        animate-text-collapsed-pause;
       animation-duration: 0.5s, 1.5s, 0.5s, 0.3s;
       animation-delay: 0s, 0.5s, 2s, 2.5s;
       animation-timing-function: ease-in-out, linear, ease-in-out, linear;
@@ -43443,7 +43435,7 @@ body {
       width: 36px;
       line-height: 1;
       animation-name: animate-app-icon-ease-in, animate-app-icon-expanded-pause, animate-app-icon-ease-out,
-      animate-app-icon-collapsed-pause;
+        animate-app-icon-collapsed-pause;
       animation-duration: 0.5s, 1.5s, 0.5s, 0.3s;
       animation-delay: 0s, 0.5s, 2s, 2.5s;
       animation-timing-function: ease-in-out, linear, ease-in-out, linear;
@@ -43469,8 +43461,8 @@ body {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-shortcuts_menu_speedbump:not([data-animation-enabled='true']) .p-shortcuts_menu_speedbump__app_icon {
     background-image: url(https://a.slack-edge.com/bv1-8/shortcuts-menu-speedbump-static-graphic@2x-46c9a58.png);
   }
@@ -43782,8 +43774,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-shortcuts_menu_education__content {
     background-image: url(https://a.slack-edge.com/bv1-8/shortcuts-education-light@2x-49a8aaa.png);
   }
@@ -44516,8 +44508,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_thumbnail__broken_img {
     background-image: url(https://a.slack-edge.com/bv1-8/broken_image@2x-0765596.png);
   }
@@ -44566,11 +44558,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-file_hover_preview__inner_container {
+[lang='ja-JP'] .p-file_hover_preview__inner_container {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-file_hover_preview__inner_container {
+[lang='ko-KR'] .p-file_hover_preview__inner_container {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -44707,7 +44699,7 @@ only screen and (min-resolution: 192dpi) {
   overflow: hidden;
 }
 
-.p-file_share_info__channel .p-deprecated_channel_name [data-qa-icon-type=mpim] {
+.p-file_share_info__channel .p-deprecated_channel_name [data-qa-icon-type='mpim'] {
   font-size: 20px;
   height: 20px;
   width: 20px;
@@ -44804,8 +44796,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_search_cloud_files__box {
     background-image: url(https://a.slack-edge.com/bv1-8/box_64-fd8e4a8.png);
 
@@ -44826,8 +44818,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_search_cloud_files__dropbox {
     background-image: url(https://a.slack-edge.com/bv1-8/dropbox_64-a5a1061.png);
 
@@ -44848,8 +44840,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_search_cloud_files__gdrive {
     background-image: url(https://a.slack-edge.com/bv1-8/gdrive_64-8ed6586.png);
 
@@ -44870,8 +44862,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_search_cloud_files__onedrive {
     background-image: url(https://a.slack-edge.com/bv1-8/service_64-ad43dc3.png);
 
@@ -44941,11 +44933,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-file_search_menu {
+[lang='ja-JP'] .p-file_search_menu {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-file_search_menu {
+[lang='ko-KR'] .p-file_search_menu {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -45145,12 +45137,12 @@ only screen and (min-resolution: 192dpi) {
 
 .invites-carousel__arrow_overlay--left {
   background: linear-gradient(
-      90deg,
-      #f8f8f8,
-      #f3f6f7 0.01%,
-      rgba(243, 246, 247, 0.901132) 0.02%,
-      #f8f8f8 0.03%,
-      hsla(0, 0%, 97.3%, 0)
+    90deg,
+    #f8f8f8,
+    #f3f6f7 0.01%,
+    rgba(243, 246, 247, 0.901132) 0.02%,
+    #f8f8f8 0.03%,
+    hsla(0, 0%, 97.3%, 0)
   );
 }
 
@@ -45160,12 +45152,12 @@ only screen and (min-resolution: 192dpi) {
 
 .invites-carousel__arrow_overlay--right {
   background: linear-gradient(
-      270deg,
-      #f8f8f8,
-      #f3f6f7 0.01%,
-      rgba(243, 246, 247, 0.901132) 0.02%,
-      #f8f8f8 0.03%,
-      hsla(0, 0%, 97.3%, 0)
+    270deg,
+    #f8f8f8,
+    #f3f6f7 0.01%,
+    rgba(243, 246, 247, 0.901132) 0.02%,
+    #f8f8f8 0.03%,
+    hsla(0, 0%, 97.3%, 0)
   );
 }
 
@@ -45487,8 +45479,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-welcome-place:not(.newxp3100_v1_a) .video-player .video-player__title-card {
     background-image: url(https://a.slack-edge.com/bv1-8/video-background@2x-23d8190.png);
   }
@@ -46483,8 +46475,8 @@ body {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_upload_banner__progress_inner {
     background-image: url(https://a.slack-edge.com/bv1-8/progress_bar_pattern@2x-bc0f9bf.png);
   }
@@ -46726,6 +46718,7 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
   padding-top: 32px;
   text-align: center;
 }
+
 .p-new_channel_make_shared_cta_container {
   margin-right: 12px;
   position: relative;
@@ -46776,7 +46769,6 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
   font-weight: 700;
   text-shadow: none;
 }
-
 
 .p-setup_channel_examples_intro {
   position: relative;
@@ -46870,7 +46862,6 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
   }
 }
 
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -46928,7 +46919,6 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
     margin-bottom: 32px;
   }
 }
-
 
 .p-global_banner {
   font-size: 15px;
@@ -47089,6 +47079,7 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
   top: 12px;
   color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
 }
+
 .p-message_pane_banner__header_icon {
   display: inline-block;
   width: 25px;
@@ -47104,8 +47095,8 @@ body:not(.p-client_desktop--ia-top-nav) .p-message_pane .p-message_pane__top_ban
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-message_pane_banner__header_icon--brazil {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-brazil@2x-7c75e5a.png);
   }
@@ -47116,8 +47107,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-message_pane_banner__header_icon--india {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-india@2x-2cc8d91.png);
   }
@@ -47132,8 +47123,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-message_pane_banner__header_icon--tenured-team {
     background-image: url(https://a.slack-edge.com/bv1-8/discount-promo-icon@2x-f4a9238.png);
   }
@@ -47183,7 +47174,6 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-
 .p-large_offline_indicator {
   position: absolute;
   top: 0;
@@ -47208,8 +47198,6 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.38463;
   font-weight: 400;
 }
-
-
 
 .c-message_kit__reaction_bar {
   margin-bottom: 4px;
@@ -47246,7 +47234,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-message_kit__message {
+[lang='ja-JP'] .c-message_kit__message {
   font-size: 14px;
 }
 
@@ -47254,7 +47242,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46668;
 }
 
-[lang=ja-JP] .c-message_kit__message {
+[lang='ja-JP'] .c-message_kit__message {
   line-height: 1.56668;
 }
 
@@ -47488,9 +47476,9 @@ only screen and (min-resolution: 192dpi) {
   left: 0;
   height: 100%;
   background: linear-gradient(
-      180deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1)
+    180deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0),
+    rgba(var(--sk_primary_background, 255, 255, 255), 1)
   );
   opacity: 0;
   transition: opacity ease-out;
@@ -47778,11 +47766,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-message_stats__activity_time_series_chart text {
+[lang='ja-JP'] .c-message_stats__activity_time_series_chart text {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-message_stats__activity_time_series_chart text {
+[lang='ko-KR'] .c-message_stats__activity_time_series_chart text {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -47880,11 +47868,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .c-message_stats__viewers_by_department_chart text {
+[lang='ja-JP'] .c-message_stats__viewers_by_department_chart text {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .c-message_stats__viewers_by_department_chart text {
+[lang='ko-KR'] .c-message_stats__viewers_by_department_chart text {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -47949,9 +47937,9 @@ only screen and (min-resolution: 192dpi) {
   height: 40px;
   border-radius: 0 0 4px 4px;
   background: linear-gradient(
-      180deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1)
+    180deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0),
+    rgba(var(--sk_primary_background, 255, 255, 255), 1)
   );
 }
 
@@ -47973,7 +47961,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .p-app_actions_pillow__attachment {
+[lang='ja-JP'] .p-app_actions_pillow__attachment {
   font-size: 14px;
 }
 
@@ -47981,7 +47969,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .p-app_actions_pillow__attachment {
+[lang='ja-JP'] .p-app_actions_pillow__attachment {
   line-height: 1.56666667;
 }
 
@@ -48572,7 +48560,6 @@ only screen and (min-resolution: 192dpi) {
 .p-message_pane_message__message--showing_mention_tip.p-message_pane_message__message--last {
   margin-bottom: 8px;
 }
-
 
 .p-browse_page_education_card {
   position: relative;
@@ -49179,8 +49166,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-slack_tip__icon {
     background-image: url(https://a.slack-edge.com/bv1-8/lightbulb@2x-94e9db4.png);
   }
@@ -49273,6 +49260,7 @@ only screen and (min-resolution: 192dpi) {
 .p-degraded_list__loading--offline {
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }
+
 .p-notification_bar {
   height: 24px;
   display: flex;
@@ -49387,6 +49375,7 @@ only screen and (min-resolution: 192dpi) {
     display: none;
   }
 }
+
 .p-message_input_announce_only_roadblock {
   padding: 17px 16px;
   color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
@@ -49398,11 +49387,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-message_input_announce_only_roadblock {
+[lang='ja-JP'] .p-message_input_announce_only_roadblock {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-message_input_announce_only_roadblock {
+[lang='ko-KR'] .p-message_input_announce_only_roadblock {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -49533,7 +49522,7 @@ only screen and (min-resolution: 192dpi) {
     }
 
     .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-    .p-message_input_field:not(.c-texty_input--double_decker) {
+      .p-message_input_field:not(.c-texty_input--double_decker) {
       padding-left: 12px;
 
       .ql-placeholder {
@@ -49737,7 +49726,7 @@ only screen and (min-resolution: 192dpi) {
   }
 
   .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-  .p-message_input_field:not(.c-texty_input--double_decker) {
+    .p-message_input_field:not(.c-texty_input--double_decker) {
     padding-left: 43px;
 
     .ql-placeholder {
@@ -49802,8 +49791,8 @@ only screen and (min-resolution: 192dpi) {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1);
+        ),
+        rgba(var(--sk_primary_background, 255, 255, 255), 1);
       z-index: 200;
 
       ~ .p-texty_sticky_formatting_bar {
@@ -49816,8 +49805,8 @@ only screen and (min-resolution: 192dpi) {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+        ),
+        rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
     }
   }
 }
@@ -50233,8 +50222,6 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-
-
 .p-message_pane_input_barriered {
   display: flex;
   justify-content: space-between;
@@ -50558,7 +50545,7 @@ only screen and (min-resolution: 192dpi) {
     }
 
     .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-    .p-message_input_field:not(.c-texty_input--double_decker) {
+      .p-message_input_field:not(.c-texty_input--double_decker) {
       padding-left: 12px;
 
       .ql-placeholder {
@@ -50762,7 +50749,7 @@ only screen and (min-resolution: 192dpi) {
   }
 
   .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-  .p-message_input_field:not(.c-texty_input--double_decker) {
+    .p-message_input_field:not(.c-texty_input--double_decker) {
     padding-left: 42px;
 
     .ql-placeholder {
@@ -50827,8 +50814,8 @@ only screen and (min-resolution: 192dpi) {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1);
+        ),
+        rgba(var(--sk_primary_background, 255, 255, 255), 1);
       z-index: 200;
 
       ~ .p-texty_sticky_formatting_bar {
@@ -50841,8 +50828,8 @@ only screen and (min-resolution: 192dpi) {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+        ),
+        rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
     }
   }
 
@@ -52419,7 +52406,7 @@ only screen and (min-resolution: 192dpi) {
   opacity: 1;
   visibility: visible;
   transition: padding-right 0.1s cubic-bezier(0.36, 0.19, 0.29, 1), opacity 0.1s cubic-bezier(0.36, 0.19, 0.29, 1),
-  visibility 0.1s cubic-bezier(0.36, 0.19, 0.29, 1);
+    visibility 0.1s cubic-bezier(0.36, 0.19, 0.29, 1);
   display: flex;
   flex-direction: column;
 }
@@ -52953,8 +52940,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-file_card__preview--broken {
     background-image: url(https://a.slack-edge.com/bv1-8/broken_image@2x-0765596.png);
   }
@@ -53223,7 +53210,7 @@ only screen and (min-resolution: 192dpi) {
   margin-right: 8px;
   text-align: right;
 
-  input[type=checkbox] {
+  input[type='checkbox'] {
     margin: 0;
   }
 }
@@ -53363,7 +53350,7 @@ only screen and (min-resolution: 192dpi) {
   font-weight: 700;
 }
 
-.p-search_filter__checkbox_label input[type=checkbox] {
+.p-search_filter__checkbox_label input[type='checkbox'] {
   margin-right: 8px;
 }
 
@@ -54207,7 +54194,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-search_message {
+[lang='ja-JP'] .c-search_message {
   font-size: 14px;
 }
 
@@ -54215,7 +54202,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 16px;
 }
 
-[lang=ja-JP] .c-search_message {
+[lang='ja-JP'] .c-search_message {
   line-height: 17.6px;
 }
 
@@ -54274,7 +54261,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46668;
 }
 
-[lang=ja-JP] .c-search_message__body {
+[lang='ja-JP'] .c-search_message__body {
   line-height: 1.56668;
 }
 
@@ -54470,7 +54457,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 15px;
 }
 
-[lang=ja-JP] .c-search_message__attachment {
+[lang='ja-JP'] .c-search_message__attachment {
   font-size: 14px;
 }
 
@@ -54478,7 +54465,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.46666667;
 }
 
-[lang=ja-JP] .c-search_message__attachment {
+[lang='ja-JP'] .c-search_message__attachment {
   line-height: 1.56666667;
 }
 
@@ -55634,8 +55621,8 @@ a.c-search_message__replies_count {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-sidebar_link__gift_bg:before {
     background-image: url(https://a.slack-edge.com/bv1-8/sparkles@2x-c5f2a7a.png);
   }
@@ -55961,8 +55948,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-benefit_card__image--group_calls {
     background-image: url(https://a.slack-edge.com/bv1-8/group_calls@2x-53679b3.png);
   }
@@ -55977,8 +55964,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-benefit_card__image--shared_channels {
     background-image: url(https://a.slack-edge.com/bv1-8/shared_channels@2x-6fe40f9.png);
   }
@@ -55993,8 +55980,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-benefit_card__image--guests {
     background-image: url(https://a.slack-edge.com/bv1-8/guests@2x-a763706.png);
   }
@@ -56009,8 +55996,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-benefit_card__image--apps {
     background-image: url(https://a.slack-edge.com/bv1-8/apps@2x-30b6861.png);
   }
@@ -57231,7 +57218,7 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (min-width: 960px) {
   .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav.c-search_modal--initial_autocomplete
-  > .popover {
+    > .popover {
     min-width: 800px;
     max-width: 800px;
     right: auto;
@@ -57242,8 +57229,8 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (max-width: 1080px) {
   .p-client_desktop--custom-titlebar
-  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav.c-search_modal--initial_autocomplete
-  > .popover {
+    .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav.c-search_modal--initial_autocomplete
+    > .popover {
     left: 140px !important;
     right: 140px !important;
     min-width: unset;
@@ -57252,8 +57239,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-client_desktop--custom-titlebar
-.c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
-> .popover {
+  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
+  > .popover {
   left: 300px !important;
   right: 300px !important;
   min-width: unset;
@@ -57262,8 +57249,8 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (max-width: 1344px) {
   .p-client_desktop--custom-titlebar
-  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
-  > .popover {
+    .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
+    > .popover {
     left: 12px !important;
     right: 300px !important;
     min-width: unset;
@@ -57273,8 +57260,8 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (min-width: 2016px) {
   body:not(.p-client_desktop--custom-titlebar)
-  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
-  > .popover {
+    .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
+    > .popover {
     width: 1800px;
     right: auto;
     left: 50% !important;
@@ -57284,8 +57271,8 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (min-width: 2400px) {
   .p-client_desktop--custom-titlebar
-  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
-  > .popover {
+    .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav:not(.c-search_modal--initial_autocomplete)
+    > .popover {
     width: 1800px;
     right: auto;
     left: 50% !important;
@@ -57305,8 +57292,8 @@ only screen and (min-resolution: 192dpi) {
 
 @media screen and (max-width: 959px) {
   .p-client_desktop--frameless
-  .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav
-  > .popover {
+    .c-search_modal:not(.c-search_modal--primarysearch).c-search_modal--iap1_topnav
+    > .popover {
     left: 72px !important;
     right: 72px !important;
     min-width: unset;
@@ -58569,7 +58556,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 30px;
   line-height: 35px;
   text-align: center;
-  letter-spacing: -.75px;
+  letter-spacing: -0.75px;
   padding: 0 16px;
 }
 
@@ -58879,9 +58866,9 @@ only screen and (min-resolution: 192dpi) {
   bottom: 0;
   height: 32px;
   background: linear-gradient(
-      0deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0)
+    0deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0)
   );
   border-radius: 0 0 8px 8px;
 }
@@ -58969,9 +58956,9 @@ only screen and (min-resolution: 192dpi) {
   bottom: 0;
   height: 30px;
   background: linear-gradient(
-      0deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 1) 10%,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0)
+    0deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 1) 10%,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0)
   );
 }
 
@@ -58996,7 +58983,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_sidebar--classic_nav,
-[lang=ja-JP] .p-channel_sidebar:not(.p-channel_sidebar--classic_nav) {
+[lang='ja-JP'] .p-channel_sidebar:not(.p-channel_sidebar--classic_nav) {
   font-size: 15px;
 }
 
@@ -59016,7 +59003,7 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-.p-channel_sidebar--animate-channels .p-channel_sidebar__channel[data-qa-channel-sidebar-channel-type=channel] {
+.p-channel_sidebar--animate-channels .p-channel_sidebar__channel[data-qa-channel-sidebar-channel-type='channel'] {
   animation: p-welcome-place__sidebar_animation 0.8s 4;
   animation-timing-function: ease-out;
 }
@@ -59227,7 +59214,7 @@ only screen and (min-resolution: 192dpi) {
   background: #e01e5a;
 }
 
-[lang=de-DE] .p-channel_sidebar__banner--mentions {
+[lang='de-DE'] .p-channel_sidebar__banner--mentions {
   padding-left: 16px;
 }
 
@@ -59235,7 +59222,7 @@ only screen and (min-resolution: 192dpi) {
   background: #1264a3;
 }
 
-[lang=fr-FR] .p-channel_sidebar__banner--unreads {
+[lang='fr-FR'] .p-channel_sidebar__banner--unreads {
   padding-left: 16px;
 }
 
@@ -59376,7 +59363,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_sidebar--show_more_feature
-.p-channel_sidebar__link.p-channel_sidebar__link--upgrade-slack.p-channel_sidebar__link--comfy,
+  .p-channel_sidebar__link.p-channel_sidebar__link--upgrade-slack.p-channel_sidebar__link--comfy,
 .p-drag_layer .p-channel_sidebar__link.p-channel_sidebar__link--upgrade-slack.p-channel_sidebar__link--comfy {
   padding-left: 26px;
 }
@@ -59520,7 +59507,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested)
-.p-channel_sidebar__name {
+  .p-channel_sidebar__name {
   font-weight: 900;
   opacity: 1;
 }
@@ -59561,8 +59548,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-channel_sidebar__channel_icon_prefix--typing {
     background-size: auto 100%;
     background-image: url(https://a.slack-edge.com/bv1-8/typing-sprite@2x-3364974.png);
@@ -60427,10 +60414,10 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_sidebar__section_heading:hover
-.p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji,
+  .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji,
 .p-channel_sidebar__static_list--keyboard_focus
-.p-channel_sidebar__static_list__item:focus
-.p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji {
+  .p-channel_sidebar__static_list__item:focus
+  .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji {
   .p-channel_sidebar__emoji {
     transition-delay: 0.2s;
     opacity: 0;
@@ -60443,18 +60430,18 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-channel_sidebar__section_heading:active
-.p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji
-.p-channel_sidebar__emoji,
+  .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji
+  .p-channel_sidebar__emoji,
 .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji:hover
-.p-channel_sidebar__emoji {
+  .p-channel_sidebar__emoji {
   transition: none;
 }
 
 .p-channel_sidebar__section_heading:active
-.p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji
-.p-channel_sidebar__section_heading_expand,
+  .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji
+  .p-channel_sidebar__section_heading_expand,
 .p-channel_sidebar__section_heading_expand_container--show_more_feature.p-channel_sidebar__section_heading_expand_container--has_emoji:hover
-.p-channel_sidebar__section_heading_expand {
+  .p-channel_sidebar__section_heading_expand {
   transition: transform 0.1s;
 }
 
@@ -60781,7 +60768,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar__custom_sections_copy_header__heading
-.p-channel_sidebar__custom_sections_copy_header__heading__text {
+  .p-channel_sidebar__custom_sections_copy_header__heading__text {
   display: inline;
   font-size: 15px;
   font-weight: 700;
@@ -61457,7 +61444,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-ia__main_menu__custom_status_item--empty:not(.p-ia__main_menu__custom_status_item--highlighted-kb)
-.p-ia__main_menu__custom_status_button:not(:hover) {
+  .p-ia__main_menu__custom_status_button:not(:hover) {
   color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }
 
@@ -62060,7 +62047,7 @@ svg.p-top_nav__search__icon {
   .p-download_modal__title {
     font-size: 50px;
     font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
-    letter-spacing: -.005em;
+    letter-spacing: -0.005em;
   }
 
   .p-download_modal__not_now:hover {
@@ -62386,7 +62373,7 @@ path {
 }
 
 .p-huddle_mini_panel__channel_icon {
-  margin-left: -.25em;
+  margin-left: -0.25em;
 }
 
 .p-huddle_mini_panel__subtext,
@@ -62900,7 +62887,7 @@ path {
     }
 
     .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-    .p-message_input_field:not(.c-texty_input--double_decker) {
+      .p-message_input_field:not(.c-texty_input--double_decker) {
       padding-left: 12px;
 
       .ql-placeholder {
@@ -63104,7 +63091,7 @@ path {
   }
 
   .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input__container--no_actions)
-  .p-message_input_field:not(.c-texty_input--double_decker) {
+    .p-message_input_field:not(.c-texty_input--double_decker) {
     padding-left: 43px;
 
     .ql-placeholder {
@@ -63169,8 +63156,8 @@ path {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1);
+        ),
+        rgba(var(--sk_primary_background, 255, 255, 255), 1);
       z-index: 200;
 
       ~ .p-texty_sticky_formatting_bar {
@@ -63183,8 +63170,8 @@ path {
           0deg,
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05),
           rgba(var(--sk_highlight_accent, 29, 155, 209), 0.05)
-      ),
-      rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+        ),
+        rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
     }
   }
 
@@ -64006,8 +63993,8 @@ input.p-workspace-search__select {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-grid_onboarding__pane {
     background-image: url(https://a.slack-edge.com/bv1-8/onboarding-illo@2x-b2f8f39.png);
   }
@@ -64293,7 +64280,7 @@ only screen and (min-resolution: 192dpi) {
 .p-workspace_directory_dialog {
   .c-dialog__header {
     background: linear-gradient(46.57deg, #1a2129, rgba(29, 155, 209, 0.2)),
-    rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+      rgba(var(--sk_inverted_background, 29, 28, 29), 1);
   }
 
   .c-dialog__close {
@@ -64368,7 +64355,7 @@ only screen and (min-resolution: 192dpi) {
   padding-top: 32px;
   padding-bottom: 32px;
   background: linear-gradient(46.57deg, #1a2129, rgba(29, 155, 209, 0.2)),
-  rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+    rgba(var(--sk_inverted_background, 29, 28, 29), 1);
 }
 
 .p-workspace_directory_dialog__contents--mobile {
@@ -64720,8 +64707,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-workspace_directory__banner--onboarding {
     background-image: url(https://a.slack-edge.com/bv1-8/onboarding-banner-illo@2x-56afb94.png);
   }
@@ -64751,8 +64738,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-workspace_directory__banner--workspace_request {
     background-image: url(https://a.slack-edge.com/bv1-8/nwr-banner-illo@2x-5823e1f.png);
   }
@@ -66870,8 +66857,8 @@ button.p-channel_details_about__blurb {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-ia_channel_details__lightbulb_icon {
     background-image: url(https://a.slack-edge.com/bv1-8/lightbulb@2x-94e9db4.png);
   }
@@ -67849,9 +67836,9 @@ only screen and (min-resolution: 192dpi) {
 
 .p-ia_details_popover__members--non-channel-results {
   background-image: linear-gradient(
-      180deg,
-      rgba(var(--sk_foreground_min, 29, 28, 29), 0.04),
-      rgba(var(--sk_foreground_min, 29, 28, 29), 0.04)
+    180deg,
+    rgba(var(--sk_foreground_min, 29, 28, 29), 0.04),
+    rgba(var(--sk_foreground_min, 29, 28, 29), 0.04)
   );
   background-position: bottom 0 left 0;
   background-repeat: no-repeat;
@@ -68118,6 +68105,7 @@ only screen and (min-resolution: 192dpi) {
 .p-ia_details_popover__members_header__search_input {
   margin: 0 20px 12px 20px;
 }
+
 .p-jump_to_date_modal__content {
   padding: 0 28px;
   height: 352px;
@@ -68155,7 +68143,7 @@ only screen and (min-resolution: 192dpi) {
   font-size: 14px;
 }
 
-[lang=ja-JP] .c-message_list__day_divider__label {
+[lang='ja-JP'] .c-message_list__day_divider__label {
   font-size: 13px;
 }
 
@@ -68307,8 +68295,8 @@ only screen and (min-resolution: 192dpi) {
   }
 
   .c-message_list__unread_divider__separator--is-unread-enter-active
-  .c-message_list__unread_divider--unread_threads
-  .c-message_list__unread_divider__separator {
+    .c-message_list__unread_divider--unread_threads
+    .c-message_list__unread_divider__separator {
     box-shadow: 0 0 5px 0 #de4e2b;
     box-shadow: 0 0 5px 0 #de4e2b, 0 0 5px 0 rgba(222, 78, 43, 0.7), 0 0 5px 0 rgba(222, 78, 43, 0.3);
   }
@@ -68391,7 +68379,6 @@ only screen and (min-resolution: 192dpi) {
   margin-right: 4px;
   top: 3px;
 }
-
 
 .has_top_messages_banner .p-message_pane__top_banners {
   display: none;
@@ -68902,7 +68889,7 @@ only screen and (min-resolution: 192dpi) {
 .p-message_pane__limited_history_alert {
   padding: 30px 80px 30px 96px;
   background-image: url(https://a.slack-edge.com/bv1-8/wave-915af80.jpg),
-  url(https://a.slack-edge.com/bv1-8/wave_top-6363f89.jpg);
+    url(https://a.slack-edge.com/bv1-8/wave_top-6363f89.jpg);
   background-position: 0 100%, 0 0;
   background-repeat: repeat-x;
   background-color: #f7f7f7;
@@ -68910,7 +68897,7 @@ only screen and (min-resolution: 192dpi) {
 
 .p-message_pane__limited_history_alert--dark {
   background-image: url(https://a.slack-edge.com/bv1-8/wave-dark-9aaee4b.png),
-  url(https://a.slack-edge.com/bv1-8/wave_top-6363f89.jpg);
+    url(https://a.slack-edge.com/bv1-8/wave_top-6363f89.jpg);
   background-color: #212428;
 }
 
@@ -69093,7 +69080,6 @@ only screen and (min-resolution: 192dpi) {
     margin-left: 0;
   }
 }
-
 
 .p-flexpane_controller_menu .c-menu_item__checkmark {
   top: 0;
@@ -69327,7 +69313,6 @@ only screen and (min-resolution: 192dpi) {
   margin: 0 16px 8px 8px;
 }
 
-
 .p-ia_details_popover__members_list__empty_state__heading {
   font-weight: 700;
   margin-top: 20px;
@@ -69439,8 +69424,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-ia_details_popover__orgs_list--active
-.p-ia_details_popover__orgs_list_item_entity:hover
-.c-base_list_entity__secondary_content {
+  .p-ia_details_popover__orgs_list_item_entity:hover
+  .c-base_list_entity__secondary_content {
   color: #fff;
   text-decoration: none;
 }
@@ -70869,8 +70854,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-ia__view_header--stories-unreads.p-ia__view_header--stories-collapsed-and-has-stories
-.p-ia__view_header__button--stories_entrypoint
-.c-icon {
+  .p-ia__view_header__button--stories_entrypoint
+  .c-icon {
   color: #e01e5a;
 }
 
@@ -71912,11 +71897,11 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-message_pane_input__disabled {
+[lang='ja-JP'] .p-message_pane_input__disabled {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-message_pane_input__disabled {
+[lang='ko-KR'] .p-message_pane_input__disabled {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -71945,11 +71930,11 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-message_pane_input__preview {
+[lang='ja-JP'] .p-message_pane_input__preview {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-message_pane_input__preview {
+[lang='ko-KR'] .p-message_pane_input__preview {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 
@@ -73044,9 +73029,9 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
   bottom: 0;
   height: 30px;
   background: linear-gradient(
-      0deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0)
+    0deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0)
   );
 }
 
@@ -73190,8 +73175,8 @@ body:not(.p-client_desktop--ia-top-nav) .p-threads_view .p-threads_view__top_ban
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-board_proto__board-card__content__author_icon {
     background-image: url(https://a.slack-edge.com/bv1-8/boards_card_icon@2x-b85a55a.png);
   }
@@ -73596,7 +73581,7 @@ only screen and (min-resolution: 192dpi) {
 
 .p-setup_channel_banner__heading {
   font-size: 40px;
-  letter-spacing: -.25px;
+  letter-spacing: -0.25px;
   font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
   font-weight: 700;
   position: relative;
@@ -73689,8 +73674,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-setup_channel_banner__heading--welcome {
     &:after,
     &:before {
@@ -73737,7 +73722,7 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-setup_channel_banner__heading--with-button
-.p-setup_channel_banner__heading_button.p-setup_channel_banner__heading_button:active {
+  .p-setup_channel_banner__heading_button.p-setup_channel_banner__heading_button:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -73872,8 +73857,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-setup_channel_banner__slack_icon {
     background-image: url(https://a.slack-edge.com/bv1-8/slack-logo@2x-6045299.png);
   }
@@ -73887,8 +73872,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-setup_channel_banner__lightbulb_icon {
     background-image: url(https://a.slack-edge.com/bv1-8/lightbulb@2x-94e9db4.png);
   }
@@ -74015,8 +74000,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-classic_nav__team_menu__blurb_plan--has_local_discount_india:before {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-india@2x-2cc8d91.png);
   }
@@ -74027,8 +74012,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-classic_nav__team_menu__blurb_plan--has_local_discount_brazil:before {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-brazil@2x-7c75e5a.png);
   }
@@ -74176,8 +74161,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-trial_info:before {
     background-image: url(https://a.slack-edge.com/bv1-8/trial-rocket-icon@2x-ce5a32b.png);
   }
@@ -74198,8 +74183,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-discount_promo:before {
     background-image: url(https://a.slack-edge.com/bv1-8/discount-gift-icon@2x-d3433aa.png);
   }
@@ -74210,8 +74195,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-discount_promo--local_discount_rupee:before {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-india@2x-2cc8d91.png);
   }
@@ -74222,8 +74207,8 @@ only screen and (min-resolution: 192dpi) {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 2dppx),
-only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi) {
   .p-discount_promo--local_discount_real:before {
     background-image: url(https://a.slack-edge.com/bv1-8/flag-brazil@2x-7c75e5a.png);
   }
@@ -74582,7 +74567,7 @@ only screen and (min-resolution: 192dpi) {
   display: flex;
   width: 100%;
 
-  .c-filter_input__input[type=text][placeholder] {
+  .c-filter_input__input[type='text'][placeholder] {
     padding: 0;
     margin-left: 8px;
     width: inherit;
@@ -74606,6 +74591,7 @@ only screen and (min-resolution: 192dpi) {
     }
   }
 }
+
 .p-story_audio_only {
   background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
   display: flex;
@@ -74889,13 +74875,13 @@ only screen and (min-resolution: 192dpi) {
 }
 
 .p-stories_uploader__footer__control--camera.p-stories_uploader__footer__control--off
-.p-stories_uploader__footer__control__icon {
+  .p-stories_uploader__footer__control__icon {
   background: #e01e5a;
   color: #fff;
 }
 
 .p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on
-.p-stories_uploader__footer__control__icon {
+  .p-stories_uploader__footer__control__icon {
   background: #1264a3;
   color: #fff;
 }
@@ -75112,7 +75098,7 @@ only screen and (min-resolution: 192dpi) {
   box-shadow: inset 0 0 0 2px, inset 0 0 0 4px var(--saf-0);
   transform: scale(1);
   transition: box-shadow 80ms cubic-bezier(0.36, 0.19, 0.29, 1), transform 80ms cubic-bezier(0.36, 0.19, 0.29, 1),
-  opacity 80ms cubic-bezier(0.36, 0.19, 0.29, 1);
+    opacity 80ms cubic-bezier(0.36, 0.19, 0.29, 1);
 }
 
 .p-story_viewer_modal__footer__poster--current .p-story_viewer_modal__footer__poster__image {
@@ -75160,18 +75146,18 @@ only screen and (min-resolution: 192dpi) {
 .p-story_viewer_modal__footer__paging--prev {
   left: 0;
   background: linear-gradient(
-      270deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1) 60%
+    270deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0),
+    rgba(var(--sk_primary_background, 255, 255, 255), 1) 60%
   );
 }
 
 .p-story_viewer_modal__footer__paging--next {
   right: 0;
   background: linear-gradient(
-      90deg,
-      rgba(var(--sk_primary_background, 255, 255, 255), 0),
-      rgba(var(--sk_primary_background, 255, 255, 255), 1) 60%
+    90deg,
+    rgba(var(--sk_primary_background, 255, 255, 255), 0),
+    rgba(var(--sk_primary_background, 255, 255, 255), 1) 60%
   );
 }
 
@@ -76159,11 +76145,11 @@ only screen and (min-resolution: 192dpi) {
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ja-JP] .p-huddle_details {
+[lang='ja-JP'] .p-huddle_details {
   font-family: NotoSansJP, Slack-Lato, appleLogo, sans-serif;
 }
 
-[lang=ko-KR] .p-huddle_details {
+[lang='ko-KR'] .p-huddle_details {
   font-family: NotoSansKR, Slack-Lato, appleLogo, sans-serif;
 }
 

@@ -2,6 +2,8 @@
   "plugins": ["stylelint-prettier"],
   "rules": {
     "prettier/prettier": true,
-    "number-leading-zero": "never"
+    "color-hex-length": "short",
+    "string-quotes": "single",
+    "number-leading-zero": "always"
   }
 }
