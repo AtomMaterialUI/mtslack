@@ -21,7 +21,8 @@
     "watchScripts": "gulp watchScripts",
     "httpServer": "http-server --cors &",
     "liveServer": "npm run httpServer && npm run watchStyles",
-    "debug": "export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app"
+    "debug": "export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app",
+    "stylelint": "stylelint --fix sources/client.scss"
   },
   "engines": {
     "node": ">=10.0.0"

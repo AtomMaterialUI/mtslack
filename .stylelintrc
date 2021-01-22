@@ -4,6 +4,7 @@
     "prettier/prettier": true,
     "color-hex-length": "short",
     "string-quotes": "single",
-    "number-leading-zero": "always"
+    "number-leading-zero": "always",
+    "selector-list-comma-newline-after": "always"
   }
 }
