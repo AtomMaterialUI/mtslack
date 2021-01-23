@@ -47,7 +47,7 @@
 }
 
 .p-drag_layer__board_item__overflow_footer {
-  background: linear-gradient(0deg, rgba($bg, 1) 10%, rgba($bg, 0));
+  background: linear-gradient(0deg, $bg 10%, transparent);
 }
 
 .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {

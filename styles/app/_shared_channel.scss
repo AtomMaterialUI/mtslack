@@ -55,7 +55,7 @@
 }
 
 .p-channel_invite_modal_coachmark {
-  background-color: rgba($accent, 0.1);
+  background-color: $notif;
 }
 
 .sk-client-theme--dark .p-channel_invite_modal_coachmark {
@@ -229,27 +229,27 @@
 
   &.p-channel_type_button--selected {
     &.p-channel_type_button--type-announcements {
-      background-color: rgba($purple, 0.15);
+      background-color: $purple;
     }
 
     &.p-channel_type_button--type-sync {
-      background-color: rgba($yellow, 0.15);
+      background-color: $yellow;
     }
 
     &.p-channel_type_button--type-project {
-      background-color: rgba($blue, 0.15);
+      background-color: $blue;
     }
 
     &.p-channel_type_button--type-team {
-      background-color: rgba($green, 0.15);
+      background-color: $green;
     }
 
     &.p-channel_type_button--type-brainstorming {
-      background-color: rgba($red, 0.15);
+      background-color: $red;
     }
 
     &.p-channel_type_button--type-other {
-      background-color: rgba($text, 0.15);
+      background-color: $text;
     }
   }
 }

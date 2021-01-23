@@ -52,3 +52,7 @@
 .p-paid_feature_badge__anchor--selected .p-paid_feature_badge__icon {
   color: $selectFg;
 }
+
+.p-channel_sidebar__link--page_ppaid-benefits_offer_container > .p-channel_sidebar__link--page_ppaid-benefits:not(.p-channel_sidebar__link--selected) {
+  background: $tree;
+}

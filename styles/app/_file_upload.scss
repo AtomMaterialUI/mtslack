@@ -107,7 +107,7 @@
 .p-email_reply_modal {
   .p-reply_to_email_input {
     &.ql-disabled {
-      background: rgba($bg, 0.13);
+      background: $active;
     }
   }
 

@@ -4,7 +4,7 @@
 }
 
 .p-channel_sidebar--iap1.p-channel_sidebar--bottom_banner_showing .p-channel_sidebar__list:after {
-  background: linear-gradient(to top, $bg, rgba($bg, 0)) !important;
+  background: linear-gradient(to top, $bg, $bg) !important;
 }
 
 .p-channel_sidebar__setup_channel_container {

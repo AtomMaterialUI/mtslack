@@ -321,7 +321,8 @@
     color: $accent;
   }
 
-  .p-threads_flexpane__separator_line--is-unread-appear-active, .p-threads_flexpane__separator_line--is-unread-enter-active {
-    box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 rgba($accent, 0.7), 0 0 5px 0 rgba($accent, 0.3);
+  .p-threads_flexpane__separator_line--is-unread-appear-active,
+  .p-threads_flexpane__separator_line--is-unread-enter-active {
+    box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT, 0 0 5px 0 $accentT;
   }
 }

@@ -45,5 +45,6 @@
 }
 
 .c-missing_menu_item__button--loading {
-  background: rgba($button, .7);
+  background: $button;
+  opacity: .7;
 }

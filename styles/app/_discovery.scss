@@ -5,7 +5,8 @@
 
 .p-one_on_one_calls_discovery_tip--dark {
   color: $fg;
-  background-color: rgba($yellow, 0.1);
+  background-color: transparent;
+  border-left: 2px solid $accent;
 }
 
 .p-one_on_one_calls_discovery_tip__dismiss_button {
