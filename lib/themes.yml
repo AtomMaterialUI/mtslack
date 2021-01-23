@@ -563,7 +563,7 @@ other:
     tree: '#E0E7EA70'
     notif: '#F0F0F0'
     accent: '#269386'
-    excluded: '#82AAFF'
+    excluded: '#E0E7EA'
     comments: '#637777'
     vars: '#0C969B'
     links: '#994cc3'
