@@ -211,3 +211,7 @@
 .p-message_actions_menu__labels_bookmark_filled {
   color: $accent;
 }
+
+.p-message_actions_menu__flag.c-menu_item__button--highlighted {
+  background-color: $accent;
+}

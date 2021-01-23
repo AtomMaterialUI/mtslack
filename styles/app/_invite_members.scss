@@ -181,3 +181,9 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     color: $fg;
   }
 }
+
+.p-shared_channel_creator_welcome_modal {
+  .p-shared_channel_creator_welcome_modal__team_icons--dot {
+    background-color: $bg2;
+  }
+}
