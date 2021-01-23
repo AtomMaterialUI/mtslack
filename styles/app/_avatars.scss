@@ -106,7 +106,7 @@
 }
 
 .p-avatar_stack--channel-details {
-  border: 1px solid $borderLight;
+  border: 1px solid $button;
 
   &.p-avatar_stack--no-outline {
     border: none;
@@ -124,6 +124,16 @@
   .p-avatar_stack__stack_divider {
     background-color: $borderLight;
   }
+
+  .p-avatar_stack__count {
+    background: $button;
+    color: $fg;
+  }
+
+  .p-avatar_stack__stack:hover .p-avatar_stack__count {
+    background-color: $hl;
+    color: $primary;
+  }
 }
 
 .p-avatar_stack__avatar {
@@ -137,4 +147,15 @@
 
 .p-avatar_stack {
   color: $text;
+}
+
+
+.p-ia__view_header__avatar__presence--stroke {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  -webkit-text-stroke: 6px rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-story_root_threads_message.p-threads_view_root {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px solid var(--saf-0);
 }
