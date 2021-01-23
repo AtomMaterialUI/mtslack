@@ -6,7 +6,7 @@
   }
 
   &:not(.mtslack--with_presence) {
-    .p-channel_sidebar__list {
+    .p-channel_sidebar__list .p-channel_sidebar__user_avatar {
       .c-icon--presence-offline::before {
         position: absolute;
         content: '';
