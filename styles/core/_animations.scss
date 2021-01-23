@@ -42,11 +42,11 @@
   animation: btn-shadow-pulse-orange-dark 2s 5;
 
   &:before {
-    background: rgba($orange, 0.3);
+    background: $primaryT;
   }
 
   &:after {
-    box-shadow: 0 0 4px 2px rgba($orange, 0.3);
+    box-shadow: 0 0 4px 2px $primaryT;
   }
 }
 
