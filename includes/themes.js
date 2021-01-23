@@ -29,6 +29,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'solarlight',
       'dracula',
       'github',
+      'githubdark',
       'nightowl',
       'lightowl',
       'moonlight',
