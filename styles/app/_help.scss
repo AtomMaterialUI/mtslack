@@ -154,6 +154,20 @@
   .p-help_search__category__container {
     border-bottom: 1px solid $borderLight;
   }
+
+  .p-help_search__list__item__article_active {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
 }
 
 .p-help_search__resource_card__container {
@@ -303,5 +317,22 @@
 
   .p-help_search__resource_card__image img {
     background-color: $accent;
+  }
+}
+
+.p-help_search__resource_card__badge .c-icon {
+  &:before {
+    color: $accent;
+  }
+}
+
+.p-help_search__content__card__live_chat_support_card {
+  .p-help_search__resource_card__container {
+    border: 1px solid $primary;
+  }
+
+  .p-help_search__content__card__live_chat_support_card_icon {
+    color: $accent;
+    background-color: $bg;
   }
 }

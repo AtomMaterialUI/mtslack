@@ -34,7 +34,7 @@
 }
 
 .p-live_chat_support_menu_item__container {
-  border-bottom: 1px solid $border;
+  border-bottom: none;
   color: $fg;
 
   &:active,
@@ -77,7 +77,7 @@
 }
 
 .p-live_chat_support_menu_item__container--dark:hover {
-  background-color: $bg2;
+  background-color: $hl;
 
   .p-live_chat_support_menu_item__presence_icon--stroke {
     -webkit-text-stroke: 6px $accent;
@@ -98,7 +98,7 @@
 }
 
 .p-live_chat_support_menu_item__container--dark:hover {
-  background-color: $active;
+  background-color: $hl;
 
   .p-live_chat_support_menu_item__presence_icon--stroke {
     -webkit-text-stroke: 6px $accent;
