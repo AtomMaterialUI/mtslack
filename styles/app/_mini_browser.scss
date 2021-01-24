@@ -29,6 +29,7 @@
 
 .p-mini_browser_file_selector__dropdown,
 .p-mini_browser_file_selector__file {
+  background: $button;
   color: $text;
 }
 
@@ -52,4 +53,8 @@
 
 .p-mini_browser_file_selector__file--active {
   color: $accent;
+}
+
+.p-mini_browser_file_selector__app_name {
+  color: $fg;
 }
