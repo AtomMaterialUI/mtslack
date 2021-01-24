@@ -17,3 +17,13 @@
     color: $fg;
   }
 }
+
+.p-pinned_message--truncated .c-message__message_blocks {
+  &:after {
+    background: linear-gradient(
+        180deg,
+        transparent 70%,
+        $bg
+    );
+  }
+}
