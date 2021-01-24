@@ -24,3 +24,32 @@
     color: $fg;
   }
 }
+
+.p-siws_auth_modal .c-sk-modal__close_button {
+  color: $fg;
+}
+
+.p-siws_auth_modal__header__logo--left {
+  background-color: $accent;
+
+  img {
+    border: 2px solid $borderLight;
+  }
+}
+
+.p-siws_auth_modal__header__logo__lock {
+  background: $bg;
+}
+
+.p-siws_auth_modal__header__redirect {
+  background-color: $bg2;
+  color: $primary;
+}
+
+.p-siws_auth_modal__marketing_consent {
+  border-top: 1px solid $borderLight;
+}
+
+.p-siws_auth_modal__legal {
+  color: $accent2;
+}
