@@ -1,5 +1,5 @@
 :root {
-  --version: 'v16.1.0'; }
+  --version: 'v17.0.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -35,6 +35,9 @@
   font-family: var(--fontFamily, Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif); }
 
 .p-mini_browser_file_selector__app_name {
+  font-family: var(--fontFamily, Slack-Lato, "CircularPro", appleLogo, sans-serif); }
+
+.p-message_input_roadblock {
   font-family: var(--fontFamily, Slack-Lato, "CircularPro", appleLogo, sans-serif); }
 
 #mtslack {
@@ -5375,7 +5378,7 @@
     font-weight: 900;
     color: inherit; } }
   #mtslack div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
-    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+    box-shadow: none; }
   #mtslack .p-channel_sidebar__invite_prompt__container {
     background-color: var(--hl); }
   #mtslack .p-channel_sidebar__custom_sections_alert {
@@ -13272,6 +13275,9 @@
   #mtslack .p-slapps_header__placeholder_holder--text {
     background-color: var(--hl);
     background-image: none; }
+  #mtslack .p-message_input_roadblock {
+    background: var(--notif);
+    color: var(--fg); }
   #mtslack .p-client_container {
     background-color: var(--bg); }
   #mtslack .black_always__u1RkQA2 {
