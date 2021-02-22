@@ -2,15 +2,15 @@
   border: 1px solid $borderLight;
   background-color: $bg;
 
-  &:active, &:focus, &:hover {
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
   }
 }
 
 .p-event--focused {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
 }
 
 .p-event_icon {
@@ -18,7 +18,8 @@
   color: $selectFg;
 }
 
-.p-event_datetime, .p-event_title {
+.p-event_datetime,
+.p-event_title {
   color: $fg;
 }
 
@@ -27,7 +28,9 @@
   background-color: $bg;
 }
 
-.p-event_copy-to-calendar, .p-event_event-join-call, .p-event_event-rsvp {
+.p-event_copy-to-calendar,
+.p-event_event-join-call,
+.p-event_event-rsvp {
   border-top: 1px solid $borderLight;
   background-color: $bg;
 }

@@ -410,3 +410,29 @@ input[type=text].c-input_text {
 .p-channel_invite_modal__share_disabled {
   color: $disabled;
 }
+
+.p-shared_invite_creator_welcome_modal__header--channel {
+  color: $primary;
+  background: $bg2;
+}
+
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__body--pending {
+  color: $text;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button:active,
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button:hover {
+  background-color: $accentT;
+  border: none;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button[disabled] {
+  background-color: $button;
+  color: $disabled;
+}

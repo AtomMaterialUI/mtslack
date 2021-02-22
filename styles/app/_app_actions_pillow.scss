@@ -10,7 +10,6 @@
   .p-app_actions_pillow__sender .p-app_actions_pillow__sender_link {
     color: $accent2;
   }
-
 }
 
 .p-app_actions_pillow--dense {
@@ -24,7 +23,6 @@
   background-color: $bg2;
 }
 
-
 .p-app_actions_pillow--gradient:after {
-  background: linear-gradient(180deg, rgba(0,0,0,0), $bg2);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), $bg2);
 }

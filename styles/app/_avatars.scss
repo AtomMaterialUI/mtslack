@@ -149,13 +149,11 @@
   color: $text;
 }
 
-
 .p-ia__view_header__avatar__presence--stroke {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  -webkit-text-stroke: 6px rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $bg;
+  -webkit-text-stroke: 6px $bg;
 }
 
 .p-story_root_threads_message.p-threads_view_root {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px solid var(--saf-0);
+  border: 1px solid $bg2;
 }

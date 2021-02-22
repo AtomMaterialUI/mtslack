@@ -57,13 +57,6 @@
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 
-  &:not(.p-add_to_slack_radio--selected) {
-    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-
-    &:hover {
-      box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-    }
-  }
 }
 
 .p-add_to_slack_radio--selected {

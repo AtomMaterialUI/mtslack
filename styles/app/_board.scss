@@ -66,7 +66,7 @@
 
 .p-board_proto__card__overflow_footer,
 .p-board__card__overflow_footer {
-  background: linear-gradient(0deg, $bg 40%, rgba(var(--sk_primary_background, 0, 0, 0), 0));
+  background: $notif;
 }
 
 .p-board_proto__card__message__channel,

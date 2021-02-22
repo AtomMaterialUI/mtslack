@@ -1,4 +1,5 @@
 .c-card {
+  @include card;
   border: 1px solid $borderLight;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
@@ -22,13 +23,13 @@
 }
 
 .c-card_container--elevation_0 {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .c-card_container--elevation_1 {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 
 .c-card_container--elevation_0.c-card_container--active {
-  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }

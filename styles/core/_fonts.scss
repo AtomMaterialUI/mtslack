@@ -49,3 +49,19 @@
 .p-message_input_roadblock {
   font-family: $fontFamily;
 }
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__header {
+  font-family: $headerFont;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__body {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal__header--error {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal__content--error {
+  font-family: $fontFamily;
+}
