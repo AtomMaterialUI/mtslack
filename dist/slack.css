@@ -4574,6 +4574,8 @@
   #mtslack .p-slack_connect_footer {
     background: var(--notif);
     color: var(--fg); }
+  #mtslack .p-slack_connect_hub_cta__icon {
+    color: var(--accent); }
   #mtslack .p-first_channel_foreword {
     background: var(--notif); }
     #mtslack .p-first_channel_foreword:after {
