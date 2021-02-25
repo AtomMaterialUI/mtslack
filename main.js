@@ -10,7 +10,7 @@ const pkg = require('./package.json');
 
 async function run() {
   console.log(chalk.yellow(figlet.textSync('mtslack', {
-    font: sample(['whimsy']),
+    font: sample(['Whimsy']),
     horizontalLayout: 'default',
     verticalLayout: 'default',
     width: 80,
