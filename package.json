@@ -58,7 +58,7 @@
     "clui": "^0.3.6",
     "configstore": "^5.0.0",
     "figlet": "^1.5.0",
-    "inquirer": "^7.3.3",
+    "inquirer": "^8.0.0",
     "is-elevated": "^3.0.0",
     "is-root": "^2.1.0",
     "js-yaml": "^3.14.0",
