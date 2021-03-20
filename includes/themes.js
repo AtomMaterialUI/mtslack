@@ -33,7 +33,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'nightowl',
       'lightowl',
       'moonlight',
-      'default'
+      'default',
     ];
     // Current theme
     this.currentTheme = 0;
@@ -43,9 +43,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
     return `Loop over installed themes (current: ${this.themes[this.currentTheme]})`;
   }
 
-  set desc(v) {
-
-  }
+  set desc(v) {}
 
   get currentThemeName() {
     return this.themes[this.currentTheme || 0];
@@ -56,13 +54,14 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   onToolbarClick() {
+    super.onToolbarClick();
     this.nextTheme();
   }
 
   saveSettings() {
     return {
       enabled: this.enabled,
-      currentTheme: this.currentTheme
+      currentTheme: this.currentTheme,
     };
   }
 
@@ -76,12 +75,14 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   applyTheme() {
-    document.dispatchEvent(new CustomEvent('ThemeChanged', {
-      detail: {
-        name: this.themes[this.currentTheme],
-        css: window.themePresets[this.themes[this.currentTheme]]
-      }
-    }));
+    document.dispatchEvent(
+      new CustomEvent('ThemeChanged', {
+        detail: {
+          name: this.themes[this.currentTheme],
+          css: window.themePresets[this.themes[this.currentTheme]],
+        },
+      })
+    );
     window.slackPluginsAPI.saveSettings();
   }
 

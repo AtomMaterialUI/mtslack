@@ -23,9 +23,13 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.extraContentId = 'customMonoFonts';
   }
 
+  get tooltipDesc() {
+    return `${this.desc} (current: ${this.monoFontFamily})`;
+  }
+
   extraContent() {
-    return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter monospace fonts, separated by commas" id="monoFontFamily" name="monoFontFamily" type="text" value="${this.monoFontFamily}">
-<button id="customMonoFontsButton" name="customMonoFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
+    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter monospace fonts, separated by commas' id='monoFontFamily' name='monoFontFamily' type='text' value='${this.monoFontFamily}'>
+<button id='customMonoFontsButton' name='customMonoFontsButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>`;
   }
 
   extraContentOnClick() {
@@ -67,11 +71,10 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
       this.addNewStyle(`pre,code {font: ${this.monoFontFamily} !important;}`);
       document.dispatchEvent(
         new CustomEvent('MonoFontChanged', {
-          detail: this.monoFontFamily
+          detail: this.monoFontFamily,
         })
       );
-    }
-    else {
+    } else {
       this.addNewStyle(`pre,code {font: ${this.DEFAULT} !important;}`);
       document.dispatchEvent(new CustomEvent('MonoFontReset', {}));
     }
@@ -93,7 +96,7 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
     return {
       enabled: this.enabled,
       monoFontFamily: this.monoFontFamily,
-      monoFontsEnabled: this.monoFontsEnabled
+      monoFontsEnabled: this.monoFontsEnabled,
     };
   }
 

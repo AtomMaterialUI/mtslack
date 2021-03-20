@@ -308,25 +308,6 @@ const slackPluginsAPI = {
   },
 
   /**
-   * Update settings with workspace settings
-   * @private
-   */
-  _updateSettings() {
-    this.togglePlugins();
-    // for (let [, plugin] of Object.entries(this.plugins)) {
-    //   if (!plugin) {
-    //     continue;
-    //   }
-    //
-    //   // Toggle checkbox
-    //   const $checkbox = document.getElementById(`mtslack_setting_${plugin.name}`);
-    //   if ($checkbox) {
-    //     $checkbox.checked = plugin.enabled;
-    //   }
-    // }
-  },
-
-  /**
    * Create a tooltip for a plugin in the toolbar
    * @param plugin
    * @returns {HTMLDivElement}
@@ -345,7 +326,8 @@ const slackPluginsAPI = {
 
     // Contents
     const $wrapper = document.createElement('div');
-    $wrapper.className = 'ReactModal__Content ReactModal__Content--after-open popover c-popover__content';
+    $wrapper.className =
+      'mtslack_tooltip ReactModal__Content ReactModal__Content--after-open popover c-popover__content';
     $wrapper.style.position = 'absolute';
 
     const rect = plugin.$el.getBoundingClientRect();
@@ -356,10 +338,10 @@ const slackPluginsAPI = {
     // Header
     const $popover = document.createElement('div');
     $popover.innerHTML = `<div role='presentation'>
-<div id='slack-kit-tooltip' role='tooltip' class='c-tooltip__tip c-tooltip__tip--bottom-right' data-qa='tooltip-tip'>
-${plugin.desc}
-<div class='c-tooltip__tip_shortcut'>Ctrl-Shift-${plugin.shortcut}</div>
-<div class='c-tooltip__tip__arrow' style='right: 18px;'></div>
+<div id='slack-kit-tooltip' role='tooltip' class='mtslack_tooltip__desc c-tooltip__tip c-tooltip__tip--bottom-right' data-qa='tooltip-tip'>
+${plugin.tooltipDesc}
+<div class='mtslack_tooltip__shortcut c-tooltip__tip_shortcut'>Ctrl-Shift-${plugin.shortcut}</div>
+<div class='mtslack_tooltip__arrow c-tooltip__tip__arrow' style='right: 18px;'></div>
 </div>
 </div>`;
 
@@ -372,21 +354,36 @@ ${plugin.desc}
   },
 
   /**
+   * Show the plugin tooltip
+   * @param plugin
+   * @private
+   */
+  _showPluginTooltip(plugin) {
+    if (plugin.$tooltip) {
+      return;
+    }
+    plugin.$tooltip = this._createTooltip(plugin);
+    document.body.append(plugin.$tooltip);
+  },
+
+  /**
+   * Hides the plugin tooltip
+   * @param plugin
+   * @private
+   */
+  _removePluginTooltip(plugin) {
+    plugin.$tooltip && plugin.$tooltip.remove();
+    plugin.$tooltip = null;
+  },
+
+  /**
    * Create the plugin tooltip
    * @param plugin
    */
   addTooltip(plugin) {
-    plugin.$el.addEventListener('mouseover', () => {
-      if (plugin.$tooltip) {
-        return;
-      }
-      plugin.$tooltip = this._createTooltip(plugin);
-      document.body.append(plugin.$tooltip);
-    });
-    plugin.$el.addEventListener('mouseout', () => {
-      plugin.$tooltip && plugin.$tooltip.remove();
-      plugin.$tooltip = null;
-    });
+    plugin.$el.addEventListener('mouseover', () => this._showPluginTooltip(plugin));
+
+    plugin.$el.addEventListener('mouseout', () => this._removePluginTooltip(plugin));
   },
 
   /**
@@ -495,6 +492,13 @@ ${plugin.desc}
   initPlugins() {
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
       plugin.init && plugin.init();
+    });
+
+    // When a plugin triggers a change, rebuild tooltip
+    document.addEventListener('pluginOnChange', (e) => {
+      const plugin = e.detail.plugin;
+      this._removePluginTooltip(plugin);
+      this._showPluginTooltip(plugin);
     });
   },
 };

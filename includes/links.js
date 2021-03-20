@@ -14,25 +14,29 @@ class LinksPlugin extends window.slackPluginsAPI.pluginBase {
     this.icon = 'link';
 
     // Specific
-    this.linksColor = '#C679DD';
+    this.linksColor = '#c679dd';
     this.linksColorEnabled = false;
 
     this.extraContentId = 'customLinks';
   }
 
+  get tooltipDesc() {
+    return `${this.desc} (current: ${this.linksColor})`;
+  }
+
   extraContent() {
     return `
-<div class="c-color_picker__container"  role="presentation">
-    <span class="c-color_picker__color_block_container">
-        <button id="customLinksColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
-      this.linksColor
-    };"></button>
+<div class='c-color_picker__container'  role='presentation'>
+    <span class='c-color_picker__color_block_container'>
+        <button id='customLinksColor' class='c-button-unstyled c-color_picker__color_block' type='button' style='background: ${
+          this.linksColor
+        };'></button>
     </span>
-    <span class="c-color_picker__hex_hash">#</span>
-    <input id="linksColor" name="linksColor" class="c-color_picker__input"  type="text" value="${this.linksColor.slice(
+    <span class='c-color_picker__hex_hash'>#</span>
+    <input id='linksColor' name='linksColor' class='c-color_picker__input'  type='text' value='${this.linksColor.slice(
       1
-    )}" style="min-width: auto">
-    <button id="customLinksButton" name="customLinksButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>
+    )}' style='min-width: auto'>
+    <button id='customLinksButton' name='customLinksButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>
 </div>`;
   }
 
@@ -59,7 +63,7 @@ class LinksPlugin extends window.slackPluginsAPI.pluginBase {
     return {
       enabled: this.enabled,
       linksColor: this.linksColor,
-      linksColorEnabled: this.linksColorEnabled
+      linksColorEnabled: this.linksColorEnabled,
     };
   }
 
@@ -73,11 +77,10 @@ class LinksPlugin extends window.slackPluginsAPI.pluginBase {
     if (this.linksColorEnabled) {
       document.dispatchEvent(
         new CustomEvent('LinksChanged', {
-          detail: this.linksColor
+          detail: this.linksColor,
         })
       );
-    }
-    else {
+    } else {
       document.dispatchEvent(new CustomEvent('LinksReset', {}));
     }
 

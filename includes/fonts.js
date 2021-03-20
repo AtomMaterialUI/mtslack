@@ -23,9 +23,13 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     this.extraContentId = 'customFonts';
   }
 
+  get tooltipDesc() {
+    return `${this.desc} (current: ${this.fontFamily})`;
+  }
+
   extraContent() {
-    return `<input class="c-input_text p-prefs_modal__custom_theme_input" style="width:70%" placeholder="Enter fonts, separated by commas" id="fontFamily" name="fontFamily" type="text" value="${this.fontFamily}">
-<button id="customFontsButton" name="customFontsButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>`;
+    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter fonts, separated by commas' id='fontFamily' name='fontFamily' type='text' value='${this.fontFamily}'>
+<button id='customFontsButton' name='customFontsButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>`;
   }
 
   extraContentOnClick() {
@@ -56,11 +60,10 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
       document.querySelector('body').style.fontFamily = this.fontFamily;
       document.dispatchEvent(
         new CustomEvent('MainFontChanged', {
-          detail: this.fontFamily
+          detail: this.fontFamily,
         })
       );
-    }
-    else {
+    } else {
       document.querySelector('body').style.fontFamily = this.DEFAULT;
       document.dispatchEvent(new CustomEvent('MainFontReset', {}));
     }
@@ -82,7 +85,7 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
     return {
       enabled: this.enabled,
       fontFamily: this.fontFamily,
-      fontsEnabled: this.fontsEnabled
+      fontsEnabled: this.fontsEnabled,
     };
   }
 

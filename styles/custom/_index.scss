@@ -2,3 +2,9 @@
 @import 'dim';
 @import 'overlay';
 @import 'title';
+
+#pluginsSection {
+  > button {
+    padding: 0 16px;
+  }
+}

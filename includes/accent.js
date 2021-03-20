@@ -20,19 +20,23 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     this.extraContentId = 'customAccent';
   }
 
+  get tooltipDesc() {
+    return `${this.desc} (current: ${this.accentColor})`;
+  }
+
   extraContent() {
     return `
-<div class="c-color_picker__container"  role="presentation">
-    <span class="c-color_picker__color_block_container">
-        <button id="customAccentColor" class="c-button-unstyled c-color_picker__color_block" type="button" style="background: ${
-      this.accentColor
-    };"></button>
+<div class='c-color_picker__container'  role='presentation'>
+    <span class='c-color_picker__color_block_container'>
+        <button id='customAccentColor' class='c-button-unstyled c-color_picker__color_block' type='button' style='background: ${
+          this.accentColor
+        };'></button>
     </span>
-    <span class="c-color_picker__hex_hash">#</span>
-    <input id="accentColor" name="accentColor" class="c-color_picker__input"  type="text" value="${this.accentColor.slice(
+    <span class='c-color_picker__hex_hash'>#</span>
+    <input id='accentColor' name='accentColor' class='c-color_picker__input'  type='text' value='${this.accentColor.slice(
       1
-    )}" style="min-width: auto">
-    <button id="customAccentButton" name="customAccentButton" class="c-button c-button--outline c-button--medium null--outline null--medium" type="button">Apply</button>
+    )}' style='min-width: auto'>
+    <button id='customAccentButton' name='customAccentButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>
 </div>`;
   }
 
@@ -59,7 +63,7 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     return {
       enabled: this.enabled,
       accentColor: this.accentColor,
-      accentColorEnabled: this.accentColorEnabled
+      accentColorEnabled: this.accentColorEnabled,
     };
   }
 
@@ -73,11 +77,10 @@ class AccentPlugin extends window.slackPluginsAPI.pluginBase {
     if (this.accentColorEnabled) {
       document.dispatchEvent(
         new CustomEvent('AccentChanged', {
-          detail: this.accentColor
+          detail: this.accentColor,
         })
       );
-    }
-    else {
+    } else {
       document.dispatchEvent(new CustomEvent('AccentReset', {}));
     }
 
