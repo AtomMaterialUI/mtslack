@@ -14,6 +14,9 @@ const slackPluginsAPI = {
     },
   },
 
+  /**
+   * Toggle all plugins
+   */
   togglePlugins() {
     this.pluginsEnabled = !this.pluginsEnabled;
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
@@ -48,13 +51,19 @@ const slackPluginsAPI = {
     $pluginsLinkBtn.className =
       'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
     $pluginsLinkBtn.innerHTML = `
-<i class='c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit' type='list' aria-hidden='true'></i>
+<i class='mtslack_settings-button c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit' type='list' aria-hidden='true'></i>
 <span class='p-channel_sidebar__name'>Slack Tweaks</span>`;
 
     // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
     this.$sideBar.prepend($pluginsSection);
+  },
 
+  /**
+   * Show new version banner TODO
+   * @private
+   */
+  _createBanner() {
     //     setTimeout(() => {
     //       const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replaceAll('"', '') || '0.0.0';
     //       if (version && this.version === version) {
@@ -90,7 +99,6 @@ const slackPluginsAPI = {
 
   /**
    * Generate the plugin settings UI.
-   * TODO EXTRACT MAGIC STRINGS
    */
   _createPluginsUI() {
     // Modal
@@ -115,13 +123,19 @@ const slackPluginsAPI = {
     // Close the modal
     $closeBtn.addEventListener('keydown', ({ keyCode }) => {
       if (keyCode === 13) {
-        requestAnimationFrame(() => $reactModal.remove());
+        requestAnimationFrame(() => {
+          this.pluginsUI.remove();
+          delete this.pluginsUI;
+        });
       }
     });
     $closeBtn.addEventListener('click', () => {
       document.body.classList.remove('ReactModal__Body--open');
       document.getElementsByClassName('p-client_container')[0].removeAttribute('aria-hidden');
-      requestAnimationFrame(() => $reactModal.remove());
+      requestAnimationFrame(() => {
+        this.pluginsUI.remove();
+        delete this.pluginsUI;
+      });
     });
 
     // Header
@@ -151,11 +165,11 @@ const slackPluginsAPI = {
   _createSettings() {
     // Contents
     const $settings = document.createElement('div');
-    $settings.className = 'c-sk-modal_content c-sk-modal_content--indicateBottom';
+    $settings.className = 'mtslack-settings c-sk-modal_content c-sk-modal_content--indicateBottom';
 
     // Wrapper
     const $settingsWrapper = document.createElement('div');
-    $settingsWrapper.className = 'c-scrollbar c-scrollbar--inherit_size';
+    $settingsWrapper.className = 'mtslack-settings_wrapper c-scrollbar c-scrollbar--inherit_size';
     $settingsWrapper.innerHTML = `<div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
     <div role='presentation' class='c-scrollbar__child' style='width: 492px;'>
         <div class='c-sk-modal__content__inner'>
@@ -170,7 +184,7 @@ const slackPluginsAPI = {
 
     // Plugins List
     const $pluginList = document.createElement('div');
-    $pluginList.className = 'c-virtual_list c-virtual_list--scrollbar c-scrollbar';
+    $pluginList.className = 'mtslack-settings_plugin-list c-virtual_list c-virtual_list--scrollbar c-scrollbar';
     $pluginList.innerHTML = `<div role='list' class='c-virtual_list c-virtual_list--scrollbar c-scrollbar' style='width: 440px; height: 481px;'>
     <div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
         <div role='presentation' class='c-scrollbar__child'>
@@ -186,7 +200,7 @@ const slackPluginsAPI = {
     const $pluginListInner = $pluginList.querySelector('.c-plugins_list');
     // Header
     const $pluginListHeader = document.createElement('div');
-    $pluginListHeader.className = 'c-virtual_list__item';
+    $pluginListHeader.className = 'mtslack-settings_plugins-list__header c-virtual_list__item';
     $pluginListHeader.innerHTML = `<div class='p-channel_browser_section_header p-channel_browser_section_header--first'>Plugins List</div>`;
     $pluginList.append($pluginListHeader);
 
@@ -196,7 +210,11 @@ const slackPluginsAPI = {
     return $settings;
   },
 
-  // Add plugins to the UI
+  /**
+   * Add plugins in the settings
+   * @param $container
+   * @private
+   */
   _addPlugins($container) {
     for (let [pluginName, plugin] of Object.entries(this.plugins)) {
       if (!plugin) {
@@ -204,7 +222,7 @@ const slackPluginsAPI = {
       }
 
       const $divWrapper = document.createElement('div');
-      $divWrapper.className = 'padding_bottom_75';
+      $divWrapper.className = 'mtslack-setting padding_bottom_75';
 
       // Toggle checkbox
       const $checkbox = this._createOptionCheckbox(plugin);
@@ -213,7 +231,7 @@ const slackPluginsAPI = {
       // Explanation
       if (plugin.longDescription) {
         const $fullDescRow = document.createElement('span');
-        $fullDescRow.className = 'p-admin_member_table__caption';
+        $fullDescRow.className = 'mtslack-setting__desc p-admin_member_table__caption';
         $fullDescRow.innerText = plugin.longDescription;
         $divWrapper.append($fullDescRow);
       }
@@ -246,22 +264,21 @@ const slackPluginsAPI = {
    */
   _createOptionCheckbox(plugin) {
     const $wrapper = document.createElement('div');
-    // $wrapper.className = 'padding_bottom_75';
 
     // Label
     const $label = document.createElement('label');
-    $label.className = 'c-label c-label--inline c-label--pointer';
+    $label.className = 'mtslack_setting__label c-label c-label--inline c-label--pointer';
     $label.innerHTML = `<span class='c-label__text' data-qa-label-text='true'>${plugin.desc}</span>`;
-    $label.htmlFor = plugin.name;
+    $label.htmlFor = `mtslack_setting_${plugin.name}`;
     $label.title = plugin.desc;
     $wrapper.append($label);
 
     // Checkbox
     const $cb = document.createElement('input');
-    $cb.className = 'c-input_checkbox';
+    $cb.className = 'mtslack_setting__checkbox c-input_checkbox';
     $cb.type = 'checkbox';
-    $cb.id = plugin.name;
-    $cb.name = plugin.name;
+    $cb.id = `mtslack_setting_${plugin.name}`;
+    $cb.name = `mtslack_setting_${plugin.name}`;
     $cb.checked = plugin.enabled;
     $label.append($cb);
 
@@ -288,6 +305,25 @@ const slackPluginsAPI = {
     });
 
     return $wrapper;
+  },
+
+  /**
+   * Update settings with workspace settings
+   * @private
+   */
+  _updateSettings() {
+    this.togglePlugins();
+    // for (let [, plugin] of Object.entries(this.plugins)) {
+    //   if (!plugin) {
+    //     continue;
+    //   }
+    //
+    //   // Toggle checkbox
+    //   const $checkbox = document.getElementById(`mtslack_setting_${plugin.name}`);
+    //   if ($checkbox) {
+    //     $checkbox.checked = plugin.enabled;
+    //   }
+    // }
   },
 
   /**
@@ -353,6 +389,10 @@ ${plugin.desc}
     });
   },
 
+  /**
+   * Fetches current workspace name
+   * @returns {string}
+   */
   getWorkspaceName() {
     let workspaceName = '';
     const $workspace = document.getElementsByClassName('p-ia__sidebar_header__team_name_text')[0];
@@ -362,6 +402,9 @@ ${plugin.desc}
     return workspaceName;
   },
 
+  /**
+   * Load workspace settings from localStorage
+   */
   loadSettings() {
     const workspaceName = this.getWorkspaceName();
 
@@ -384,6 +427,9 @@ ${plugin.desc}
     }
   },
 
+  /**
+   * Save settings in localStorage
+   */
   saveSettings() {
     const workspaceName = this.getWorkspaceName();
 
@@ -420,7 +466,10 @@ ${plugin.desc}
     });
   },
 
-  // Init settings dialog
+  /**
+   * Launch the interval to add the tweaks button and toolbar
+   * @private
+   */
   _initSettings() {
     this.interval = setInterval(() => {
       if (document.getElementById('pluginsSection')) {
@@ -440,7 +489,9 @@ ${plugin.desc}
     }, 1000);
   },
 
-  // Call plugins's init
+  /**
+   * Init plugins
+   */
   initPlugins() {
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
       plugin.init && plugin.init();
