@@ -10,8 +10,8 @@ const slackPluginsAPI = {
       enabled: true,
       callback() {
         window.slackPluginsAPI.togglePlugins();
-      }
-    }
+      },
+    },
   },
 
   togglePlugins() {
@@ -24,8 +24,7 @@ const slackPluginsAPI = {
       if (plugin.$settingEl) {
         if (this.pluginsEnabled) {
           plugin.$settingEl.classList.remove('c-plugins--disabled');
-        }
-        else {
+        } else {
           plugin.$settingEl.classList.add('c-plugins--disabled');
         }
       }
@@ -46,35 +45,35 @@ const slackPluginsAPI = {
 
     // Menu item
     const $pluginsLinkBtn = document.createElement('button');
-    $pluginsLinkBtn.className = 'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
+    $pluginsLinkBtn.className =
+      'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
     $pluginsLinkBtn.innerHTML = `
-<i class="c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit" type="list" aria-hidden="true"></i>
-<span class="p-channel_sidebar__name">Slack Tweaks</span>`;
+<i class='c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit' type='list' aria-hidden='true'></i>
+<span class='p-channel_sidebar__name'>Slack Tweaks</span>`;
 
     // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
     this.$sideBar.prepend($pluginsSection);
 
-//     setTimeout(() => {
-//       const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replaceAll('"', '') || '0.0.0';
-//       if (version && this.version === version) {
-//         return;
-//       }
-//
-//       const $notif = document.querySelector('.p-ia__workspace_banner');
-//       $notif.innerHTML = `
-// <div role="alert" class="c-banner c-banner--neutral p-ia_banner p-workspace_banner__desktop-notifications" data-qa="banner" style="top: 0px; opacity: 1;">
-//   <div class="c-banner__text">A new version of mtslack is available (${this.version})! Run <code>mtslack</code> in a terminal to update.</div>
-//     <button class="c-button-unstyled c-icon_button c-icon_button--dark c-icon_button--size_medium c-banner__close" aria-label="Dismiss" type="button">
-//     <i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>
-//     </button>
-//   </div>
-// </div>`
-//       $notif.addEventListener('click', () => {
-//         $notif.innerHTML = '';
-//       });
-//     }, 3000);
-
+    //     setTimeout(() => {
+    //       const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replaceAll('"', '') || '0.0.0';
+    //       if (version && this.version === version) {
+    //         return;
+    //       }
+    //
+    //       const $notif = document.querySelector('.p-ia__workspace_banner');
+    //       $notif.innerHTML = `
+    // <div role="alert" class="c-banner c-banner--neutral p-ia_banner p-workspace_banner__desktop-notifications" data-qa="banner" style="top: 0px; opacity: 1;">
+    //   <div class="c-banner__text">A new version of mtslack is available (${this.version})! Run <code>mtslack</code> in a terminal to update.</div>
+    //     <button class="c-button-unstyled c-icon_button c-icon_button--dark c-icon_button--size_medium c-banner__close" aria-label="Dismiss" type="button">
+    //     <i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>
+    //     </button>
+    //   </div>
+    // </div>`
+    //       $notif.addEventListener('click', () => {
+    //         $notif.innerHTML = '';
+    //       });
+    //     }, 3000);
   },
 
   /**
@@ -110,8 +109,9 @@ const slackPluginsAPI = {
 
     // Close btn
     const $closeBtn = document.createElement('button');
-    $closeBtn.className = 'c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium c-sk-modal__close_button';
-    $closeBtn.innerHTML = `<i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>`;
+    $closeBtn.className =
+      'c-button-unstyled c-icon_button c-icon_button--light c-icon_button--size_medium c-sk-modal__close_button';
+    $closeBtn.innerHTML = `<i class='c-icon c-icon--times' type='times' aria-hidden='true'></i>`;
     // Close the modal
     $closeBtn.addEventListener('keydown', ({ keyCode }) => {
       if (keyCode === 13) {
@@ -128,8 +128,8 @@ const slackPluginsAPI = {
     const $header = document.createElement('div');
     $header.className = 'c-sk-modal_header';
     $header.innerHTML = `
-<div data-qa="invite_modal_header" class="c-sk-modal_title_bar c-sk-modal_title_bar--pad_right">
-<div class="c-sk-modal_title_bar__text"><h1>Slack Tweaks ${this.version}</h1></div>
+<div data-qa='invite_modal_header' class='c-sk-modal_title_bar c-sk-modal_title_bar--pad_right'>
+<div class='c-sk-modal_title_bar__text'><h1>Slack Tweaks ${this.version}</h1></div>
 </div>`;
 
     // Finally the settings
@@ -140,7 +140,7 @@ const slackPluginsAPI = {
     $wrapper.append($settings);
 
     // animatsia!
-    requestAnimationFrame(() => $wrapper.className += ' ReactModal__Content--after-open');
+    requestAnimationFrame(() => ($wrapper.className += ' ReactModal__Content--after-open'));
 
     return $reactModal;
   },
@@ -156,10 +156,10 @@ const slackPluginsAPI = {
     // Wrapper
     const $settingsWrapper = document.createElement('div');
     $settingsWrapper.className = 'c-scrollbar c-scrollbar--inherit_size';
-    $settingsWrapper.innerHTML = `<div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
-    <div role="presentation" class="c-scrollbar__child" style="width: 492px;">
-        <div class="c-sk-modal__content__inner">
-            <div data-qa="invite_modal_form" class="c-sk-modal_content_section"></div>
+    $settingsWrapper.innerHTML = `<div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
+    <div role='presentation' class='c-scrollbar__child' style='width: 492px;'>
+        <div class='c-sk-modal__content__inner'>
+            <div data-qa='invite_modal_form' class='c-sk-modal_content_section'></div>
         </div>
     </div>
 </div>`;
@@ -171,10 +171,10 @@ const slackPluginsAPI = {
     // Plugins List
     const $pluginList = document.createElement('div');
     $pluginList.className = 'c-virtual_list c-virtual_list--scrollbar c-scrollbar';
-    $pluginList.innerHTML = `<div role="list" class="c-virtual_list c-virtual_list--scrollbar c-scrollbar" style="width: 440px; height: 481px;">
-    <div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
-        <div role="presentation" class="c-scrollbar__child">
-            <div data-qa="slack_kit_list" class="c-virtual_list__scroll_container c-plugins_list" role="presentation">
+    $pluginList.innerHTML = `<div role='list' class='c-virtual_list c-virtual_list--scrollbar c-scrollbar' style='width: 440px; height: 481px;'>
+    <div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
+        <div role='presentation' class='c-scrollbar__child'>
+            <div data-qa='slack_kit_list' class='c-virtual_list__scroll_container c-plugins_list' role='presentation'>
                 
             </div>
         </div>
@@ -187,8 +187,7 @@ const slackPluginsAPI = {
     // Header
     const $pluginListHeader = document.createElement('div');
     $pluginListHeader.className = 'c-virtual_list__item';
-    $pluginListHeader.innerHTML =
-      `<div class="p-channel_browser_section_header p-channel_browser_section_header--first">Plugins List</div>`;
+    $pluginListHeader.innerHTML = `<div class='p-channel_browser_section_header p-channel_browser_section_header--first'>Plugins List</div>`;
     $pluginList.append($pluginListHeader);
 
     // Now load the plugins
@@ -252,7 +251,7 @@ const slackPluginsAPI = {
     // Label
     const $label = document.createElement('label');
     $label.className = 'c-label c-label--inline c-label--pointer';
-    $label.innerHTML = `<span class="c-label__text" data-qa-label-text="true">${plugin.desc}</span>`;
+    $label.innerHTML = `<span class='c-label__text' data-qa-label-text='true'>${plugin.desc}</span>`;
     $label.htmlFor = plugin.name;
     $label.title = plugin.desc;
     $wrapper.append($label);
@@ -281,8 +280,7 @@ const slackPluginsAPI = {
         for (const child of $extraContent.children) {
           if (plugin.enabled) {
             child.removeAttribute('disabled');
-          }
-          else {
+          } else {
             child.setAttribute('disabled', true);
           }
         }
@@ -316,23 +314,23 @@ const slackPluginsAPI = {
 
     const rect = plugin.$el.getBoundingClientRect();
     $wrapper.style.top = rect.y + plugin.$el.offsetHeight + 'px';
-    $wrapper.style.left = rect.x - (plugin.$el.offsetWidth * 2) + 'px';
+    $wrapper.style.left = rect.x - plugin.$el.offsetWidth * 2 + 'px';
     $reactOverlay.appendChild($wrapper);
 
     // Header
     const $popover = document.createElement('div');
-    $popover.innerHTML = `<div role="presentation">
-<div id="slack-kit-tooltip" role="tooltip" class="c-tooltip__tip c-tooltip__tip--bottom-right" data-qa="tooltip-tip">
+    $popover.innerHTML = `<div role='presentation'>
+<div id='slack-kit-tooltip' role='tooltip' class='c-tooltip__tip c-tooltip__tip--bottom-right' data-qa='tooltip-tip'>
 ${plugin.desc}
-<div class="c-tooltip__tip_shortcut">Ctrl-Shift-${plugin.shortcut}</div>
-<div class="c-tooltip__tip__arrow" style="right: 18px;"></div>
+<div class='c-tooltip__tip_shortcut'>Ctrl-Shift-${plugin.shortcut}</div>
+<div class='c-tooltip__tip__arrow' style='right: 18px;'></div>
 </div>
 </div>`;
 
     $wrapper.append($popover);
 
     // animatsia!
-    requestAnimationFrame(() => $wrapper.className += ' ReactModal__Content--after-open');
+    requestAnimationFrame(() => ($wrapper.className += ' ReactModal__Content--after-open'));
 
     return $reactModal;
   },
@@ -355,36 +353,55 @@ ${plugin.desc}
     });
   },
 
+  getWorkspaceName() {
+    let workspaceName = '';
+    const $workspace = document.getElementsByClassName('p-ia__sidebar_header__team_name_text')[0];
+    if ($workspace) {
+      workspaceName = $workspace.textContent;
+    }
+    return workspaceName;
+  },
+
   loadSettings() {
+    const workspaceName = this.getWorkspaceName();
+
     try {
-      let savedSettings = localStorage.getItem(this.LOCAL_STORAGE);
+      let savedSettings = localStorage.getItem(`${this.LOCAL_STORAGE}${workspaceName}`);
+      if (!savedSettings) {
+        savedSettings = localStorage.getItem(`${this.LOCAL_STORAGE}`);
+      }
       if (savedSettings) {
         savedSettings = JSON.parse(savedSettings);
 
-        Object.keys(this.plugins).forEach(key => {
+        Object.keys(this.plugins).forEach((key) => {
           if (this.plugins[key] && this.plugins[key].loadSettings && savedSettings[key]) {
             this.plugins[key].loadSettings(savedSettings[key]);
           }
         });
       }
     } catch (e) {
-      ;
+      // do nothing
     }
   },
 
   saveSettings() {
+    const workspaceName = this.getWorkspaceName();
+
     const settings = {};
     settings.main = {
-      pluginsEnabled: this.pluginsEnabled
+      pluginsEnabled: this.pluginsEnabled,
     };
 
-    Object.keys(this.plugins).forEach(key => {
+    Object.keys(this.plugins).forEach((key) => {
       if (this.plugins[key] && this.plugins[key].saveSettings) {
         settings[key] = this.plugins[key].saveSettings();
       }
     });
 
-    localStorage.setItem(this.LOCAL_STORAGE, JSON.stringify(settings));
+    if (!localStorage.getItem(this.LOCAL_STORAGE)) {
+      localStorage.setItem(this.LOCAL_STORAGE, JSON.stringify(settings));
+    }
+    localStorage.setItem(`${this.LOCAL_STORAGE}${workspaceName}`, JSON.stringify(settings));
   },
 
   /**
@@ -420,7 +437,6 @@ ${plugin.desc}
         this.initPlugins();
         // clearInterval(this.interval);
       }
-
     }, 1000);
   },
 
@@ -429,7 +445,7 @@ ${plugin.desc}
     Object.entries(this.plugins).forEach(([pluginName, plugin]) => {
       plugin.init && plugin.init();
     });
-  }
+  },
 };
 
 window.slackPluginsAPI = slackPluginsAPI;
