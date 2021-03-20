@@ -1,5 +1,5 @@
 :root {
-  --version: 'v17.0.0'; }
+  --version: 'v18.0.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -13649,3 +13649,6 @@
 .p-classic_nav__model__title__name,
 .p-ia__view_header__title {
   font-size: 24px; }
+
+#pluginsSection > button {
+  padding: 0 16px; }
