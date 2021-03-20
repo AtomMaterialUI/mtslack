@@ -1,5 +1,5 @@
 :root {
-  --version: 'v18.0.0'; }
+  --version: 'v19.0.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -369,21 +369,26 @@
         color: var(--selectFg2); }
   #mtslack a {
     color: var(--accent); }
-  #mtslack a:active, #mtslack a:focus, #mtslack a:hover {
+  #mtslack a:active,
+  #mtslack a:focus,
+  #mtslack a:hover {
     color: var(--selectFg2); }
-  #mtslack a:visited, #mtslack a:link {
+  #mtslack a:visited,
+  #mtslack a:link {
     color: var(--accent2); }
-  #mtslack h1, #mtslack h2, #mtslack h3, #mtslack h4 {
+  #mtslack h1,
+  #mtslack h2,
+  #mtslack h3,
+  #mtslack h4 {
     color: var(--fg); }
-    #mtslack h1 a, #mtslack h2 a, #mtslack h3 a, #mtslack h4 a {
+    #mtslack h1 a,
+    #mtslack h2 a,
+    #mtslack h3 a,
+    #mtslack h4 a {
       color: var(--fg); }
   #mtslack code {
     background-color: var(--hl);
     border: 1px solid var(--border);
-    color: var(--fg); }
-  #mtslack pre {
-    background: var(--hl);
-    border: 1px solid var(--active);
     color: var(--fg); }
   #mtslack blockquote:before {
     background: var(--secondBg); }
@@ -398,17 +403,17 @@
     #mtslack textarea:focus,
     #mtslack input[type='text']:focus {
       border-color: var(--primary); }
-  #mtslack input[type=url]:active, #mtslack input[type=url]:focus {
+  #mtslack input[type='url']:active, #mtslack input[type='url']:focus {
     border-color: var(--primary); }
-  #mtslack input[type=text]:active, #mtslack input[type=text]:focus {
+  #mtslack input[type='text']:active, #mtslack input[type='text']:focus {
     border-color: var(--primary); }
-  #mtslack input[type=number]:active, #mtslack input[type=number]:focus {
+  #mtslack input[type='number']:active, #mtslack input[type='number']:focus {
     border-color: var(--primary); }
-  #mtslack input[type=email]:active, #mtslack input[type=email]:focus {
+  #mtslack input[type='email']:active, #mtslack input[type='email']:focus {
     border-color: var(--primary); }
-  #mtslack input[type=password]:active, #mtslack input[type=password]:focus {
+  #mtslack input[type='password']:active, #mtslack input[type='password']:focus {
     border-color: var(--primary); }
-  #mtslack input[type=url], #mtslack input[type=text], #mtslack input[type=tel], #mtslack input[type=number], #mtslack input[type=email], #mtslack input[type=password] {
+  #mtslack input[type='url'], #mtslack input[type='text'], #mtslack input[type='tel'], #mtslack input[type='number'], #mtslack input[type='email'], #mtslack input[type='password'] {
     background: var(--contrast);
     border: 1px solid var(--active);
     color: var(--fg); }
@@ -13649,6 +13654,11 @@
 .p-classic_nav__model__title__name,
 .p-ia__view_header__title {
   font-size: 24px; }
+
+body:not(.mtslack--hljs) pre {
+  background: var(--hl);
+  border: 1px solid var(--active);
+  color: var(--fg); }
 
 #pluginsSection > button {
   padding: 0 16px; }

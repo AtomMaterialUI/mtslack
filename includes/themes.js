@@ -54,8 +54,8 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   onToolbarClick() {
-    super.onToolbarClick();
     this.nextTheme();
+    super.onToolbarClick();
   }
 
   saveSettings() {

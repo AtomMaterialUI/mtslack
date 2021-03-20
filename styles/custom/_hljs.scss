@@ -1,0 +1,7 @@
+body:not(.mtslack--hljs) {
+  pre {
+    background: $hl;
+    border: 1px solid $borderLight;
+    color: $fg;
+  }
+}

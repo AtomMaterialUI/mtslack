@@ -15,13 +15,14 @@ Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 - Arc Dark ![arcdark.png](doc/v2/arcdark.png)
 - Dracula ![dracula.png](doc/v2/dracula.png)
 - GitHub ![github.png](doc/v2/github.png)
+- GitHub Dark ![github_dark.png](doc/v2/github_dark.png)
 - Atom One Dark ![onedark.png](doc/v2/onedark.png)
 - Atom One Light ![onelight.png](doc/v2/onelight.png)
 - Solarized Dark ![solardark.png](doc/v2/solardark.png)
 - Solarized Light ![solarlight.png](doc/v2/solarlight.png)
 - Night Owl ![nightowl.png](doc/v2/nightowl.png)
 - Light Owl ![lightowl.png](doc/v2/lightowl.png)
-- Moonlight (BETA) ![moonlight.png](doc/v2/moonlight.png)
+- Moonlight ![moonlight.png](doc/v2/moonlight.png)
 
 ----------------------------
 
@@ -106,13 +107,22 @@ You can also activate the toggle using a shortcut.
 
 These settings are saved in the application's Local Storage.
 
+#### Highlight Code [NEW!] (Ctrl+Alt+H)
+
+Automatically detects code blocks and highlight then using highlight.js. You can annotate the code blocks by setting the
+language name as the first line.
+
+Example: to annotate the code as a javascript code, write:
+
+```
+javascript
+function foo() {
+}
+```
+
 #### Modal Overlays (Ctrl+Alt+O)
 
 This button will toggle an overlay to display whenever settings are open.
-
-#### Presence Icons (Ctrl+Alt+P)
-
-This button will restore the old school presence icons in the sidebar
 
 #### Dim Absent People (Ctrl+Alt+D)
 
