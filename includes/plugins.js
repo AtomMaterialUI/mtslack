@@ -381,7 +381,13 @@ ${plugin.tooltipDesc}
    * @param plugin
    */
   addTooltip(plugin) {
-    plugin.$el.addEventListener('mouseover', () => this._showPluginTooltip(plugin));
+    plugin.$el.addEventListener('mouseover', () => {
+      this._showPluginTooltip(plugin);
+
+      setTimeout(() => {
+        this._removePluginTooltip(plugin);
+      }, 50000);
+    });
 
     plugin.$el.addEventListener('mouseout', () => this._removePluginTooltip(plugin));
   },
