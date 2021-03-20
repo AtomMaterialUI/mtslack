@@ -20,50 +20,42 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
     this.highlightEnabled = false;
 
     this.extraContentId = 'hljsTheme';
+    this.styleTagId = `hljs-style`;
   }
 
   init() {
     super.init();
-    this.loadLibrary();
+    this.applyHighlight();
   }
 
   unloadLibrary() {
     if (this.interval) {
       clearInterval(this.interval);
     }
-    document.getElementById('hljs-script').remove();
-    document.getElementById('hljs-style').remove();
+    if (document.getElementById(this.styleTagId)) {
+      document.getElementById(this.styleTagId).remove();
+    }
   }
 
   loadLibrary() {
-    if (!document.getElementById('hljs-script')) {
-      const scripts = ['https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.0/highlight.min.js'];
-      scripts.map((src, index) => {
-        let code = fetch(src).then((response) => response.text());
-        code.then((js) => {
-          const element = document.createElement('script');
-          element.innerHTML = js;
-          element.defer = true;
-          element.id = `hljs-script`;
-          document.head.appendChild(element);
-        });
-      });
+    // Do not attempt to load more than once
+    if (document.getElementById(this.styleTagId)) {
+      return;
     }
 
-    if (!document.getElementById('hljs-style')) {
-      const styles = [`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.0/styles/${this.theme}.min.css`];
-      styles.map((src, index) => {
-        let style = fetch(src).then((response) => response.text());
-        style.then((css) => {
-          const element = document.createElement('link');
-          element.rel = 'stylesheet';
-          element.innerHTML = css;
-          element.id = `hljs-style`;
-          document.head.appendChild(element);
-        });
+    const styles = [`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.0/styles/${this.theme}.min.css`];
+    styles.map((src, index) => {
+      let style = fetch(src).then((response) => response.text());
+      style.then((css) => {
+        const element = document.createElement('style');
+        element.rel = 'stylesheet';
+        element.innerHTML = css;
+        element.id = `hljs-style`;
+        document.head.appendChild(element);
       });
-    }
+    });
 
+    // Constantly check for code messages
     this.interval = setInterval(() => {
       this.highlightMessages();
     }, 1000);
@@ -73,19 +65,20 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
     if (!window.hljs) {
       return;
     }
-    debugger;
-    // Array.from(document.querySelectorAll('.c-mrkdwn__pre')).forEach((element) => {
-    // Array.from(element.querySelectorAll('pre.special_formatting:not(.hljs)')).forEach((element) => {
-    // const text = element.innerText;
-    // const [firstLine = false] = text.split('\\n') || [];
-    // if (firstLine && !firstLine.includes(' ') && window.hljs.getLanguage(firstLine)) {
-    //   const newContent = text.replace(firstLine + '\\n', '');
-    //   element.innerText = newContent;
-    //   element.classList.add(firstLine);
-    // }
-    // });
-    window.hljs.highlightAll();
-    // });
+
+    Array.from(document.querySelectorAll('.c-mrkdwn__pre:not(.hljs)')).forEach((element) => {
+      const text = element.innerText;
+      // If the first line contains the language
+      let [firstLine, ...code] = text.split('\n') || [];
+      if (firstLine) {
+        firstLine = firstLine.replace('"', '');
+        if (!firstLine.includes(' ') && window.hljs.getLanguage(firstLine)) {
+          element.innerText = code.join('\n');
+          element.classList.add(firstLine);
+        }
+      }
+      window.hljs.highlightBlock(element);
+    });
   }
 
   get tooltipDesc() {
@@ -93,15 +86,20 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   extraContent() {
-    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter your highlight.js theme' id='hljsTheme'
-  name='hljsTheme' type='text' value='${this.theme}'> <button id='hljsThemeButton' name='hljsThemeButton' class='c-button c-button--outline
+    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter your highlight.js theme' id='hljsThemeValue'
+  name='hljsThemeValue' type='text' value='${this.theme}'> <button id='hljsThemeButton' name='hljsThemeButton' class='c-button c-button--outline
   c-button--medium null--outline null--medium' type='button'>Apply</button>`;
   }
 
   extraContentOnClick() {
-    const theme = document.getElementById('hljsTheme').value;
+    this.unloadLibrary();
+
+    const theme = document.getElementById('hljsThemeValue').value;
     if (theme) {
       this.theme = theme;
+      this.applyHighlight();
+    } else {
+      this.theme = this.DEFAULT;
       this.applyHighlight();
     }
   }
@@ -119,9 +117,11 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
     if (this.highlightEnabled) {
       this.loadLibrary();
       document.dispatchEvent(new CustomEvent('HighlightChanged', { detail: this.theme }));
+      document.body.classList.add('mtslack--hljs');
     } else {
       this.unloadLibrary();
       document.dispatchEvent(new CustomEvent('HighlightReset', {}));
+      document.body.classList.remove('mtslack--hljs');
     }
     window.slackPluginsAPI.saveSettings();
   }

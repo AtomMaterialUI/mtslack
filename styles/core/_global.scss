@@ -46,15 +46,21 @@ a {
   color: $accent;
 }
 
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
   color: $selectFg;
 }
 
-a:visited, a:link {
+a:visited,
+a:link {
   color: $accent2;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $fg;
 
   a {
@@ -68,11 +74,11 @@ code {
   color: $fg;
 }
 
-pre {
-  background: $hl;
-  border: 1px solid $borderLight;
-  color: $fg;
-}
+//pre {
+//  background: $hl;
+//  border: 1px solid $borderLight;
+//  color: $fg;
+//}
 
 blockquote:before {
   background: $bg2;
@@ -95,44 +101,49 @@ input[type='text'] {
 }
 
 input {
-  &[type=url] {
-    &:active, &:focus {
+  &[type='url'] {
+    &:active,
+    &:focus {
       border-color: $primary;
     }
   }
 
-  &[type=text] {
-    &:active, &:focus {
+  &[type='text'] {
+    &:active,
+    &:focus {
       border-color: $primary;
     }
   }
 
-  &[type=number] {
-    &:active, &:focus {
+  &[type='number'] {
+    &:active,
+    &:focus {
       border-color: $primary;
     }
   }
 
-  &[type=email] {
-    &:active, &:focus {
+  &[type='email'] {
+    &:active,
+    &:focus {
       border-color: $primary;
     }
   }
 
-  &[type=password] {
-    &:active, &:focus {
+  &[type='password'] {
+    &:active,
+    &:focus {
       border-color: $primary;
     }
   }
 }
 
 input {
-  &[type=url],
-  &[type=text],
-  &[type=tel],
-  &[type=number],
-  &[type=email],
-  &[type=password] {
+  &[type='url'],
+  &[type='text'],
+  &[type='tel'],
+  &[type='number'],
+  &[type='email'],
+  &[type='password'] {
     background: $contrast;
     border: 1px solid $borderLight;
     color: $fg;
@@ -143,7 +154,8 @@ textarea {
   border: 1px solid $borderLight;
   color: $fg;
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     border-color: $primary;
   }
 }
@@ -153,7 +165,8 @@ select {
   border-color: $border;
   color: $text;
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     border-color: $primary;
   }
 }
