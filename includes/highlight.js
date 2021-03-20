@@ -11,7 +11,7 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
     this.longDescription = 'Highlight code using highlight.js';
     this.enabled = true;
     this.shortcut = 'h';
-    this.icon = 'code';
+    this.icon = 'codeblock';
 
     // Specific
     this.interval = undefined;
