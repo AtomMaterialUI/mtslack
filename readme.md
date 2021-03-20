@@ -80,13 +80,16 @@ There is also a `Remove Theme` option in the menu but it is less robust.
 
 ### Updates
 
-`mtslack` has an auto-update function. Whenever there is a new package available, a notification will appear on the bottom on your Slack Window prompting you to run the `mtslack` command again to trigger the update. You will then need to run the command again to apply the updates.
+`mtslack` has an auto-update function. Whenever there is a new package available, a notification will appear on the
+bottom on your Slack Window prompting you to run the `mtslack` command again to trigger the update. You will then need
+to run the command again to apply the updates.
 
 ----
 
 ### Slack Tweaks
 
-Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can find a button to open the Slack Tweaks on the channels sidebar.
+Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make the application more enjoyable. You can
+find a button to open the Slack Tweaks on the channels sidebar.
 
 #### Slack Tweak Control Panel
 
@@ -94,7 +97,8 @@ Since version 2.0 you can also profit from a bunch of **Slack Tweaks** to make t
 
 This panel controls which tweak toggles are available. **This doesn't actually toggle the tweaks themselves!**.
 
-Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will activate the tweak.
+Once you've enabled a tweak, a new toggle button will appear on the Channel Header. Pressing on these buttons will
+activate the tweak.
 
 You can also activate the toggle using a shortcut.
 
@@ -102,41 +106,44 @@ You can also activate the toggle using a shortcut.
 
 These settings are saved in the application's Local Storage.
 
-#### Modal Overlays (Ctrl+Shift+O)
+#### Modal Overlays (Ctrl+Alt+O)
 
 This button will toggle an overlay to display whenever settings are open.
 
-#### Presence Icons (Ctrl+Shift+P)
+#### Presence Icons (Ctrl+Alt+P)
 
 This button will restore the old school presence icons in the sidebar
 
-#### Dim Absent People (Ctrl+Shift+D)
+#### Dim Absent People (Ctrl+Alt+D)
 
 This button will dim absent people from the sidebar, making the present ones more prominent.
 
-#### Loop Over selected themes (Ctrl+Shift+T)
+#### Loop Over selected themes (Ctrl+Alt+T)
 
 This button will loop over the available themes, allowing you to choose a theme in realtime.
 
-#### Toggle Custom Font (Ctrl+Shift+F)
+#### Toggle Custom Font (Ctrl+Alt+F)
 
 Switch the fonts used in the app with the font you've defined in the Slack Tweak Settings.
 
-#### Toggle Custom Monospace Font (Ctrl+Shift+M)
+#### Toggle Custom Monospace Font (Ctrl+Alt+M)
 
 Switch the monospace font size and family used in the app with the font you've defined in the Slack Tweak Settings.
 
-#### Accent Color (Ctrl+Shift+A)
+#### Accent Color (Ctrl+Alt+A)
 
-Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
+Switch the current theme's accent color with the one of your choice. You can set the desired color in the Slack Tweak
+Settings.
 
-#### Links Color (Ctrl+Shift+L)
+#### Links Color (Ctrl+Alt+L)
 
-Switch the current theme's links color with the one of your choice. You can set the desired color in the Slack Tweak Settings.
+Switch the current theme's links color with the one of your choice. You can set the desired color in the Slack Tweak
+Settings.
 
 ### Important Note!
 
-Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would break those tweaks. In this case please report to the repository, thanks!
+Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would
+break those tweaks. In this case please report to the repository, thanks!
 
 ----
 
@@ -159,9 +166,12 @@ Then run `npm run styles` or `npm run debugStyles` to compile the scss files in 
 
 Open Slack on the browser. It has the useful Developer Tools available to them so you can debug with ease.
 
-To test your CSS, install a Stylish-like extension (<https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>) then create a new style for slack and paste the CSS inside and save.
+To test your CSS, install a Stylish-like
+extension (<https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>)
+then create a new style for slack and paste the CSS inside and save.
 
-You should already see all your styles applied. Please note that there are some differences between the web app and the native app.
+You should already see all your styles applied. Please note that there are some differences between the web app and the
+native app.
 
 ### Using the Electron app
 
