@@ -371,3 +371,21 @@
 .p-slack_connect_hub_cta__icon {
   color: $accent;
 }
+
+.p-slack_connect_dm_email_modal__header_container {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_email_modal__header_container {
+  background-color: $contrast;
+}
+
+.p-slack_connect_dm_email_modal__learn_more,
+.p-slack_connect_dm_email_modal__learn_more .link {
+  color: $accent2;
+}
+
+.p-slack_connect_dm_email_modal__success_icon {
+  color: $green;
+  background-color: $bg;
+}

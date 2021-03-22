@@ -1,0 +1,39 @@
+.p-scdm_education_launcher {
+  background-color: $button;
+  color: $accent2;
+}
+
+.p-scdm_education_launcher:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-scdm_education_launcher__icon_close i {
+  color: $accent2;
+}
+
+.sk-client-theme--dark .p-scdm_education_launcher {
+  background-color: $button;
+  color: $accent2;
+}
+
+.sk-client-theme--dark .p-scdm_education_launcher:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-scdm_education_launcher__icon_close i {
+  color: $accent2;
+}
+
+.p-escape_hatch__group_label {
+  color: $text;
+}
+
+.p-escape_hatch__icon {
+  color: $accent;
+}
+
+.p-escape_hatch__subheading {
+  color: $text;
+}
