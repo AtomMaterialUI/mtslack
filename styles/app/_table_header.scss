@@ -42,7 +42,7 @@
 }
 
 .c-data_table__row--hover {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background-color: $active;
 }
 
 .c-data_table__header_row--focus:after,

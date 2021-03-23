@@ -65,8 +65,13 @@
 }
 
 .c-search_modal__tip {
-  color: $bg;
-  background: $fg;
+  color: $fg;
+  background: $hl;
+}
+
+.search_wrapper__1z62RW7 {
+  background: $contrast;
+  border-color: $borderLight;
 }
 
 .c-search_modal .popover > div {
@@ -289,6 +294,6 @@
 }
 
 .c-search__query_refinement_suggestion_term--filter__inner {
-  background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $bg2;
+  color: $primary;
 }

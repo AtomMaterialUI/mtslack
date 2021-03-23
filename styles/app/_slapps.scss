@@ -1,6 +1,6 @@
 .p-slapps_header {
   background: $contrast;
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-bottom: 1px solid $borderLight;
   box-shadow: 0 1px 2px $borderLight;
 }
 
@@ -14,5 +14,5 @@
 }
 
 .p-slapps_header__add-link-icon__text {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $accent2;
 }

@@ -15,7 +15,7 @@
   }
 
   input {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 }
 
@@ -59,16 +59,10 @@
   color: $accent2;
 }
 
-.p-identity_transfer_modal__header__logo--app-icon {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-}
-
 .p-identity_transfer_modal__member_card {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px solid var(--saf-0);
+  @include card;
 }
 
 .p-identity_transfer_modal__content_section {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-color: $bg2;
 }

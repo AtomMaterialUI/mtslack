@@ -444,19 +444,11 @@ input[type='text'].c-input_text {
   }
 
   .p-shared_invite_creator_welcome_modal__team_icons--dot {
-    background-color: #ddd;
-  }
-
-  .p-shared_invite_creator_welcome_modal__header {
-    font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+    background-color: $bg2;
   }
 
   .p-shared_invite_creator_welcome_modal__header--channel {
     background: rgba(29, 155, 209, 0.1);
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  }
-
-  .p-shared_invite_creator_welcome_modal__body {
-    font-family: Slack-Lato, appleLogo, sans-serif;
+    color: $primary;
   }
 }

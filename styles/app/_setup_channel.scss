@@ -67,7 +67,7 @@
     color: $fg;
 
     .highlight_aubergine {
-      color: #4a154b;
+      color: $accent;
     }
   }
 
@@ -126,7 +126,7 @@
   }
 
   .p-setup_channel_examples_narrator__step {
-    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    color: $disabled;
   }
 }
 

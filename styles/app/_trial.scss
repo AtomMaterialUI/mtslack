@@ -67,7 +67,7 @@
 }
 
 .p-trials_gold_color {
-  color: #b98a09;
+  color: $yellow;
 }
 
 .p-trials_notification {
@@ -124,80 +124,76 @@
 }
 
 .p-trials_alert--v2 {
-  border-color: rgba(185, 138, 9, 0.3);
+  border-color: $border;
 }
 
 .sk-client-theme--dark {
   .p-trials_alert--v2 {
-    background-color: rgba(232, 145, 45, 0.1);
-    border-color: rgba(232, 145, 45, 0.4);
+    background-color: $notif;
+    border-color: $border;
   }
 
   .p-trials_alert > i {
-    color: #e8912d;
+    color: $primary;
 
     &.c-alert__icon {
-      color: #e8912d;
+      color: $primary;
     }
   }
 }
 
 .p-trial_slack_connect_awareness_modal_content__subtitle {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $fg;
 }
 
 .p-trial_slack_connect_awareness_modal_content__nav_btn,
 .p-trial_slack_connect_awareness_modal_content__nav_btn--next {
-  color: #000;
-  background-color: #fff;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: $fg;
+  background-color: $bg;
 }
 
 .p-trial_slack_connect_awareness_modal_content__nav_btn--prev {
-  color: #000;
-  background-color: #fff;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: $fg;
+  background-color: $bg;
 }
 
 .p-trial_slack_connect_awareness_modal_content__dots_container {
-  color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  color: $fg;
 }
 
 .p-trial_slack_connect_awareness_modal_content__dot_icon--selected {
-  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+  color: $selectFg;
 }
 
 .p-trial_slack_connect_awareness_modal__light_bg .c-sk-modal__close_button.c-icon_button--light {
-  color: rgba(29, 28, 29, 0.8);
+  color: $fg;
 
   &:hover {
-    background: rgba(29, 28, 29, 0.04);
-    color: #1d1c1d;
+    background: $accent;
+    color: $selectFg;
   }
 }
 
 .p-trial_slack_connect_awareness_modal__invite_users_content_title {
-  background-color: #e8f5fa;
+  background-color: $notif;
 }
 
 .p-trial_slack_connect_awareness_modal__wait_for_admins_content_title {
-  background-color: #e6f2ee;
+  background-color: $notif;
 }
 
 .p-trial_slack_connect_awareness_modal__get_to_work_content_title {
-  background-color: #fcf4da;
+  background-color: $notif;
 }
 
 .sk-client-theme--dark .p-trial_search_message_limit_header__icon {
-  color: #e8912d;
+  color: $primary;
 }
 
 .p-trial_search_message_limit_header a {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $accent2;
 }
 
 .sk-client-theme--dark .p-message_limit_trial_offer_banner__icon {
-  color: #e8912d;
+  color: $primary;
 }
