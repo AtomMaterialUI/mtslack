@@ -11,14 +11,14 @@
   .c-message_group__header--active a,
   .c-message_group__header:focus a,
   &:hover .c-message_group__header a {
-    color: inherit;
+    color: $accent2;
   }
 
   .c-message_group__header--active {
     .c-message_group__header_date,
     .p-deprecated_channel_name,
     .p-deprecated_channel_name__team_name {
-      color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      color: $disabled;
     }
   }
 

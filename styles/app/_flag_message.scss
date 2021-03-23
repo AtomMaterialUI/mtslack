@@ -1,15 +1,15 @@
 .p-flag_message_dialog__options_subhead {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-flag_message_dialog__option {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $fg;
 }
 
 .p-flag_message_dialog__option_icon {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }
 
 .p-flag_message_dialog__option_title {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }

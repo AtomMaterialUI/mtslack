@@ -78,7 +78,7 @@
 
   &.active {
     border: 1px solid $accent;
-    color: $accent;
+    color: $selectFg;
 
     &:hover {
       background: $hl;

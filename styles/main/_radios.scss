@@ -1,18 +1,8 @@
-.c-input_radio {
-}
-
-input {
-  &.c-input_radio, &[type=radio].c-input_radio {
-  }
-  &.c-input_radio[disabled], &[type=radio].c-input_radio[disabled] {
-  }
-  &.c-input_radio:focus, &[type=radio].c-input_radio:focus {
-  }
-}
-
-input[type="radio"] {
+input[type='radio'] {
   //opacity: 0 !important; // hide it
   margin-right: 10px !important;
+  margin-left: 2px;
+  margin-bottom: 4px;
   filter: none !important;
   position: relative;
 

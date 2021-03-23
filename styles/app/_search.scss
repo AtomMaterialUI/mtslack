@@ -178,20 +178,20 @@
 }
 
 .c-search__pager_search_as_a_page_feedback {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $accent2;
 
   .c-link--button {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    color: $accent2;
   }
 }
 
 .c-virtual_list__item {
   .c-search__feedback_small .c-link--button {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    color: $accent2;
   }
 
   .c-search__blank_state div .c-search__feedback_small .c-link--button {
-    color: #1264a3;
+    color: $accent2;
   }
 }
 
@@ -206,11 +206,11 @@
 
 .c-search__no_results {
   .c-icon--search {
-    color: $accent;
+    color: $accent2;
   }
 
   .c-link--button {
-    color: #1264a3;
+    color: $accent2;
   }
 }
 
@@ -265,7 +265,7 @@
 }
 
 .c-search__query_refinement_suggestion {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 
   .c-icon--times-small {
     color: $red;
@@ -277,7 +277,7 @@
 }
 
 .c-search__query_refinement_suggestion_header {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .c-search__query_refinement_suggestion_term--enhancement {
