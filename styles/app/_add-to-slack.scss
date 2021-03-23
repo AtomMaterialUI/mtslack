@@ -94,9 +94,9 @@
 }
 
 .p-add_to_slack_confirmation__footer_link {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $accent2;
 
   &:hover {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    color: $selectFg;
   }
 }

@@ -1,15 +1,3 @@
-.c-pillow_file_container {
-  @include card;
-
-  .c-pillow_file {
-    padding: 0;
-
-    .c-pillow_file__email > * {
-      padding: 12px;
-    }
-  }
-}
-
 .c-pillow_file__email__sender__address {
   color: $text;
 }
@@ -44,10 +32,10 @@
 }
 
 .c-pillow_file__email__content--scale-btn {
-  background: hsla(0, 0%, 100%, 0.8);
+  background: $button;
 
   &:hover {
-    background: hsla(0, 0%, 100%, 0.5) !important;
+    background: $hl !important;
   }
 }
 

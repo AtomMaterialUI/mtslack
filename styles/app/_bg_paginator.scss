@@ -28,16 +28,16 @@
 .c-pagination__page_btn--active,
 .p-bp__paginator__page_btn--active {
   color: $selectFg;
-  background-color: $accent;
+  background-color: $accentT;
 
   &:focus,
   &:hover {
-    color: #fff;
-    background: #148567;
+    color: $selectFg;
+    background: $accent;
   }
 
   &:active {
-    background: #006e51;
+    background: $accent;
     box-shadow: none;
   }
 }

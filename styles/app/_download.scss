@@ -193,8 +193,9 @@
 }
 
 .p-downloads_modal__content {
-  .c-pillow_file--active_download .c-pillow_file__slide, .c-pillow_file_container--active_download {
-    background: $bg;
+  .c-pillow_file--active_download .c-pillow_file__slide,
+  .c-pillow_file_container--active_download {
+    background: $bg2;
   }
 }
 
