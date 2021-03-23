@@ -1,4 +1,9 @@
+.p_channel_examples_section__spacer--top {
+  border-top: 1px solid #522653;
+}
+
 .p_channel_examples_section {
+  background-color: #522653;
   border-top: 1px solid $borderLight;
 
   .p-channel_sidebar__channel {
@@ -52,4 +57,66 @@
 
 .sk-client-theme--dark .p_channel_examples_section__inner {
   background-color: $bg;
+}
+
+.p_channel_examples_section__link_wrapper,
+.p_channel_examples_section__spacer--bottom {
+  background-color: #522653;
+}
+
+.p_channel_examples_section__link_wrapper {
+  .p-channel_sidebar__channel {
+    color: #fff;
+  }
+
+  .p-channel_sidebar__channel--selected {
+    .p-channel_sidebar__channel_icon_prefix,
+    &:hover .p-channel_sidebar__channel_icon_prefix {
+      color: #fff;
+    }
+  }
+
+  .p-channel_sidebar__channel {
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+  }
+
+  .p-channel_sidebar__channel--selected {
+    &.p-channel_sidebar__channel {
+      color: #1d1c1d;
+
+      &:link,
+      &:visited {
+        color: #1d1c1d;
+      }
+    }
+
+    .p-channel_sidebar__channel_icon_prefix {
+      color: #1d1c1d;
+    }
+
+    &:hover {
+      .p-channel_sidebar__channel_icon_prefix {
+        color: #1d1c1d;
+      }
+
+      background-color: #f2c744;
+    }
+
+    background-color: #f2c744;
+  }
+}
+
+.sk-client-theme--dark {
+  .p_channel_examples_section,
+  .p_channel_examples_section__link_wrapper,
+  .p_channel_examples_section__spacer--bottom {
+    background-color: #302e34;
+  }
+
+  .p_channel_examples_section__spacer--top {
+    border-color: #2b2a2f;
+  }
 }

@@ -1,0 +1,28 @@
+.p-admin_channel_modal__subtitle {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-admin_channel_modal__danger {
+  color: #e01e5a;
+}
+
+.p-admin_channel_modal__icon {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-admin_channel_modal__section_title {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-disabled_add_people_button__tip {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  .c-tooltip__tip__arrow {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 1px solid var(--saf-0);
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border-right-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    border-bottom-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  }
+}

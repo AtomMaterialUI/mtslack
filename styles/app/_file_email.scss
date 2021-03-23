@@ -43,6 +43,14 @@
   }
 }
 
+.c-pillow_file__email__content--scale-btn {
+  background: hsla(0, 0%, 100%, 0.8);
+
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.5) !important;
+  }
+}
+
 .c-pillow_file__email__attachments {
   border-top: 1px solid $border;
 }

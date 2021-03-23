@@ -22,3 +22,12 @@
 .c-basic_container--disabled {
   background: $bg2;
 }
+
+.c-basic_container--invalid {
+  border-color: #e01e5a;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: 0 0 0 1px #e01e5a, 0 0 0 5px rgba(224, 30, 90, 0.3);
+  }
+}

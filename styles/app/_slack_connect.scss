@@ -15,11 +15,6 @@
   }
 }
 
-.p-slack_connect_dm_email_modal__success_icon {
-  color: $green;
-  background-color: $bg2;
-}
-
 .p-slack_connect_channel {
   background: $bg;
 
@@ -75,6 +70,7 @@
   color: $text;
 }
 
+.p-slack_connect_hub_cta,
 .p-slack_connect_empty_landing_page__cta {
   &.c-card_container {
     box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
@@ -89,6 +85,18 @@
   &:hover .p-slack_connect_empty_landing_page__link_icon {
     color: $selectFg;
     background-color: $primary;
+  }
+}
+
+.p-slack_connect_hub_cta--disabled.c-card_container {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  .p-slack_connect_hub_cta__icon {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
+
+  .p-slack_connect_hub_cta__disabled_text {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
   }
 }
 
@@ -290,8 +298,70 @@
   color: $text;
 }
 
+.p-slack_connect_hub_cta__content_container__subtitle--user-hub {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_hub_cta__icon--user-hub {
+  background-color: #e0eee7;
+  color: #11a489;
+}
+
+.sk-client-theme--dark .p-slack_connect_hub_cta__icon--user-hub {
+  background-color: rgba(76, 191, 157, 0.1);
+  color: #e0eee7;
+}
+
+.p-slack_connect_hub_cta__icon--disabled,
+.sk-client-theme--dark .p-slack_connect_hub_cta__icon--disabled {
+  background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.p-slack_connect_hub_cta--user-hub {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+
+  &.p-slack_connect_hub_cta--disabled {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+
+  &:active {
+    border-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.3);
+  }
+}
+
+.p-slack_connect_hub_cta__icon,
 .p-slack_connect_empty_landing_page__cta__icon {
   color: $primary;
+}
+
+.p-slack_connect_manage_menu__menu:hover .p-slack_connect_manage_menu__trigger__button,
+.p-slack_connect_manage_menu__trigger__button--hover {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-slack_connect_manage_menu__trigger__button {
+  &:focus,
+  &:hover {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-slack_connect_header__channel_button,
+.p-slack_connect_header__dm_button {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-slack_connect_header__channel_button:active,
+.p-slack_connect_header__dm_button:active {
+  border-color: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+}
+
+.p-slack_connect_header__channel_button__icon,
+.p-slack_connect_header__dm_button__icon {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }
 
 .p-slack_connect_manage_menu__trigger__button {
@@ -388,4 +458,328 @@
 .p-slack_connect_dm_email_modal__success_icon {
   color: $green;
   background-color: $bg;
+}
+
+.p-slack_connect_edu_modal__banner {
+  background-color: #4a154b;
+  color: #fff;
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+.p-slack_connect_edu_modal__image_1 {
+  background-color: #e8f5fa;
+}
+
+.p-slack_connect_edu_modal__image_2 {
+  background-color: #e0eee7;
+}
+
+.p-slack_connect_edu_modal__image_3 {
+  background-color: #ede8ed;
+}
+
+.p-slack_connect_edu_modal__image_4 {
+  background-color: #fcf4da;
+}
+
+.p-view_header__slack_connect_team_icons {
+  .c-team_icon {
+    --saf-0: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    box-shadow: 0 0 0 2px var(--saf-0);
+
+    &:not(:last-child) {
+      margin-left: -5px;
+    }
+  }
+}
+
+.p-view_header__menu .c-menu_item__button--highlighted .c-team_icon {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 2px var(--saf-0);
+}
+
+.p-slack_connect_edu_modal__content--bg_color_light_green {
+  background-color: #e0eee7;
+}
+
+.p-slack_connect_edu_modal__content--bg_color_light_blue {
+  background-color: #e8f5fa;
+}
+
+.p-slack_connect_edu_modal__content--bg_color_light_purple {
+  background-color: #ede8ed;
+}
+
+.p-slack_connect_edu_modal__content--bg_color_light_yellow {
+  background-color: #fcf4da;
+}
+
+.sk-client-theme--dark .p-slack_connect_edu_modal__content {
+  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-slack_connect_edu_modal__content.p-slack_connect_edu_modal__content--intro,
+.p-slack_connect_edu_modal__image.p-slack_connect_edu_modal__image_intro--user_hub_v1 {
+  background-color: #e0eee7;
+}
+
+.sk-client-theme--dark {
+  .p-slack_connect_edu_modal__content.p-slack_connect_edu_modal__content--intro,
+  .p-slack_connect_edu_modal__image.p-slack_connect_edu_modal__image_intro--user_hub_v1 {
+    background-color: rgba(76, 191, 157, 0.1);
+  }
+}
+
+.p-slack_connect_edu_modal__content_section {
+  border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.sk-client-theme--dark .p-slack_connect_empty_landing_page__header {
+  background-color: rgba(76, 191, 157, 0.1);
+}
+
+.sk-client-theme--dark .p-slack_connect_empty_landing_page__learn_more {
+  border-color: rgba(76, 191, 157, 0.1);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: rgba(76, 191, 157, 0.1);
+  }
+}
+
+.p-slack_connect_empty_landing_page__cta_container_prompt--user-hub {
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+.p-slack_connect_empty_landing_page__cta_container_prompt__link {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  font-family: Slack-Lato, appleLogo, sans-serif;
+}
+
+.p-slack_connect_empty_landing_page__setup_container__content__title {
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+.p-slack_connect_card_buttons__card_button_container {
+  &:hover {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-slack_connect_card_buttons__card_button__icon_container {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-slack_connect_card_buttons__card_button__content_container {
+  .c-truncate {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  }
+}
+
+.p-slack_connect_card_buttons__card_button__link_icon {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_card_buttons__card_button__icon {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_social_proof_banner {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_social_proof_banner_icon__icon + .p-slack_connect_social_proof_banner_icon__icon {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-1: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-2: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  box-shadow: -2px 0 0 var(--saf-0), -2px 1px 0 var(--saf-0), -2px -1px 0 var(--saf-0);
+}
+
+.p-slack_connect_edu_banner {
+  background-color: rgba(74, 21, 75, 0.1);
+  background-color: #e0eee7;
+  border: 1px solid rgba(17, 164, 137, 0.3);
+}
+
+.sk-client-theme--dark .p-slack_connect_edu_banner {
+  background-color: rgba(76, 191, 157, 0.1);
+}
+
+.p-slack_connect_edu_banner:focus {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+}
+
+.p-slack_connect_multi_avatar__icon--front {
+  border-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-slack_connect_channel:hover .p-slack_connect_multi_avatar__icon--front {
+  border-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-slack_connect_multi_avatar__icon--multi {
+  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-end_dm_dialog_learn_more {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+
+  .link {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  }
+}
+
+.p-slack_connect_channel--first {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  --saf-1: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: inset 0 -1px var(--saf-0), inset 0 1px var(--saf-0);
+}
+
+.p-slack_connect_channel--focus,
+.p-slack_connect_channel:focus {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+}
+
+.p-slack_connect_simple_populated_page__connected_channels_header {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-slack_connect_simple_populated_page__footer {
+  border-top: 1px solid rgba(29, 28, 29, 0.13);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_invite__wrapper {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-slack_connect_invite__wrapper_header {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-slack_connect_invite {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  &:hover {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}
+
+.p-slack_connect_invite--focus,
+.p-slack_connect_invite:focus {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+}
+
+.p-slack_connect_invite--first-of-group {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13) !important;
+}
+
+.p-slack_connect_invite__avatar--dm-icon,
+.p-slack_connect_invite__avatar--shared-channel-icon {
+  background-color: rgba(0, 122, 90, 0.1);
+  color: #007a5a;
+}
+
+.p-slack_connect_invite__avatar--link-icon {
+  background-color: rgba(var(--sk_highlight, 18, 100, 163), 0.1);
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+
+.p-slack_connect_invite__actions_list {
+  --saf-0: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  border: 1px solid var(--saf-0);
+  --saf-0: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  box-shadow: 0 1px 3px var(--saf-0);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-slack_connect_invite__status {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_invite__status--connected {
+  color: #007a5a;
+}
+
+.p-slack_connect_invite__status_icon--expired,
+.p-slack_connect_invite__status_icon--rejected,
+.p-slack_connect_invite__status_icon--revoked {
+  color: #e01e5a;
+}
+
+.p-slack_connect_list {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-slack_connect_list__header {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
+.p-slack_connect_tab_empty_state__title {
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+}
+
+.p-slack_connect_tab_empty_state__subtitle {
+  font-family: Slack-Lato, appleLogo, sans-serif;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_tab_empty_state__divider {
+  border-top: 1px solid rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.p-slack_connect_tab_empty_state__sent_steps {
+  font-family: Slack-Lato, appleLogo, sans-serif;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_tab_empty_state_footer {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-slack_connect_tab_empty_state_footer__title {
+  font-family: Slack-Lato, appleLogo, sans-serif;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-slack_connect_tab_empty_state_footer__button__icon {
+  color: #11a489;
+}
+
+.p-slack_connect_tab_empty_state_footer__button {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+
+  &:active {
+    border-color: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  }
+}
+
+.p-slack_connect_tab__loading {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-slack_connect_tab__empty {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
 }

@@ -2,25 +2,42 @@
   &:disabled {
     color: $disabled;
 
-    &:active, &:hover {
+    &:active,
+    &:hover {
       background: none;
       color: $fg;
     }
   }
 }
 
+.c-pagination__page_btn,
 .p-bp__paginator__page_btn {
   color: $fg;
 
+  &:not(.c-pagination__page_btn--active),
   &:not(.p-bp__paginator__page_btn--active) {
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $selectFg;
       background-color: $accent;
     }
   }
 }
 
+.c-pagination__page_btn--active,
 .p-bp__paginator__page_btn--active {
   color: $selectFg;
   background-color: $accent;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background: #148567;
+  }
+
+  &:active {
+    background: #006e51;
+    box-shadow: none;
+  }
 }

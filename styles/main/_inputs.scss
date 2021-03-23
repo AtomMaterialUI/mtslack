@@ -7,7 +7,10 @@ textarea.c-input_textarea,
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -18,7 +21,14 @@ textarea.c-input_textarea,
     color: $disabled;
   }
 
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
     color: $disabled;
   }
 }
@@ -77,7 +87,10 @@ textarea {
     &:focus {
       box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-      &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+      &:-moz-placeholder,
+      &:-ms-input-placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
         color: $disabled;
       }
     }
@@ -88,7 +101,14 @@ textarea {
       color: $disabled;
     }
 
-    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
       color: $disabled;
     }
   }
@@ -142,7 +162,10 @@ textarea {
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -153,7 +176,14 @@ textarea {
     color: $disabled;
   }
 
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
     color: $disabled;
   }
 }
@@ -201,7 +231,8 @@ textarea {
 .c-input_text--with_inline_alert {
   border-color: $red;
 
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
 }
@@ -240,11 +271,11 @@ textarea {
 
 .p-public_private_input__label {
   &[disabled] {
-    color: $disabled
+    color: $disabled;
   }
 }
 
-input[type=text].c-input_text {
+input[type='text'].c-input_text {
   &.p-channel_name_input--input_with_warning {
     background-color: $contrast;
   }
@@ -254,8 +285,6 @@ input[type=text].c-input_text {
   background-color: $contrast;
   color: $disabled;
 }
-
-
 
 .p-message_pane_input__preview {
   background-color: $contrast;

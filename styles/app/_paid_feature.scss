@@ -1,8 +1,5 @@
 .p-paid_feature_badge {
   background-color: $accent2;
-  border-radius: 25px;
-  min-width: 25px;
-  transition: all .3s ease-in;
 
   &:hover {
     background-color: $hl;
@@ -49,10 +46,58 @@
   }
 }
 
+.p-paid_feature_badge__anchor--selected .p-paid_feature_badge {
+  border: 1px solid rgba(179, 134, 10, 0.3);
+}
+
 .p-paid_feature_badge__anchor--selected .p-paid_feature_badge__icon {
   color: $selectFg;
 }
 
-.p-channel_sidebar__link--page_ppaid-benefits_offer_container > .p-channel_sidebar__link--page_ppaid-benefits:not(.p-channel_sidebar__link--selected) {
+.p-channel_sidebar__link--page_ppaid-benefits_offer_container
+  > .p-channel_sidebar__link--page_ppaid-benefits:not(.p-channel_sidebar__link--selected) {
   background: $tree;
+}
+
+.p-paid_feature_badge__coachmark_message_body {
+  color: $text;
+}
+
+.p-paid_feature_badge__coachmark_icon {
+  color: #b98a09;
+}
+
+.p-paid_feature_invite_member_banner {
+  background-color: #fcf4da;
+
+  &:before {
+    border-bottom: 16px solid #fcf4da;
+  }
+}
+
+.p-paid_feature_invite_member_banner--dark {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  .p-paid_feature_invite_member_banner__close_banner_icon.c-icon_button--light {
+    color: rgba(var(--sk_primary_background, 255, 255, 255), 0.8);
+
+    &:hover {
+      background: rgba(var(--sk_primary_background, 255, 255, 255), 0.04);
+      color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    }
+  }
+}
+
+.p-paid_feature_invite_member_banner__icon {
+  color: #b98a09;
+}
+
+.p-paid_feature_invite_guest_banner {
+  background-color: #fcf4da;
+  border: 1px solid rgba(185, 138, 9, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.p-paid_feature_invite_guest_banner--dark {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
 }

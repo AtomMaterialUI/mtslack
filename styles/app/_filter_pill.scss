@@ -1,0 +1,31 @@
+.c-filter-pill {
+  &:hover {
+    background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.c-filter-pill.active {
+  background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.c-filter-pill--active {
+  background: #1264a3;
+  border-color: #1264a3;
+  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+
+  &.active,
+  &:hover {
+    background: #0b4c8c;
+    border-color: #0b4c8c;
+    color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  }
+
+  .p-search_filter__mpim_avatars--bottom {
+    box-shadow: 0 0 0 1px #1264a3;
+  }
+}
+
+.c-filter-pill--dark.c-filter-pill--active {
+  background: #1d9bd1;
+  border-color: #1d9bd1;
+}

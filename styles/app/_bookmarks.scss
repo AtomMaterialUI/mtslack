@@ -1,0 +1,67 @@
+.p-bookmarks_bar {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  .c-button-unstyled:hover {
+    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-bookmarks_bar_modal__preview {
+  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  border: 1px solid var(--saf-0);
+  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 0.3);
+  box-shadow: 0 0 4px var(--saf-0);
+}
+
+.p-bookmarks_bar__placeholder_holder--icon {
+  background: rgba(133, 128, 133, 0.13);
+}
+
+.p-bookmarks_bar__placeholder_holder--text {
+  background-color: rgba(133, 128, 133, 0.13);
+  background-image: linear-gradient(
+    90deg,
+    rgba(133, 128, 133, 0.13) 0,
+    rgba(122, 118, 122, 0.13) 20%,
+    rgba(133, 128, 133, 0.13) 40%,
+    rgba(133, 128, 133, 0.13)
+  );
+  background-repeat: no-repeat;
+}
+
+.p-bookmarks_bar__pins_popover_button__icon {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-tiles__tile {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.p-tiles__tile:not(.p-tiles__tile--active) {
+  .c-message_kit__background,
+  .c-message_list__day_divider,
+  .c-virtual_list__item,
+  .c-virtual_list__item--sticky,
+  .p-activity_page__item_background,
+  .p-bookmarks_bar,
+  .p-flexpane--iap1 .p-flexpane_header,
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+  .p-threads_flexpane,
+  .p-threads_view__default_background,
+  .p-threads_view_load_older_message,
+  .p-view_header--tiles,
+  .workspace__primary_view_footer {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+
+  .c-wysiwyg_container--theme_light_bordered {
+    border-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+
+  .c-wysiwyg_container--theme_dark_bordered {
+    border-color: rgba(86, 88, 86, 0.5);
+  }
+}

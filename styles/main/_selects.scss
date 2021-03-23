@@ -61,6 +61,11 @@
 
 .c-select_input--invalid {
   border-color: $red;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
 }
 
 .c-select_options_list__wrapper {
@@ -159,7 +164,8 @@
 .c-select_button--invalid {
   border-color: $red;
 
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
 }

@@ -41,6 +41,10 @@
   border-bottom: 1px solid $active;
 }
 
+.c-data_table__row--hover {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
 .c-data_table__header_row--focus:after,
 .c-data_table__row--focus:after {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;

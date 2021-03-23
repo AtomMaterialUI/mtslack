@@ -258,7 +258,7 @@
   color: $primary;
 }
 
-input[type=text].c-input_text {
+input[type='text'].c-input_text {
   &.p-channel_name_input--input_with_warning {
     background-color: $bg;
   }
@@ -348,37 +348,43 @@ input[type=text].c-input_text {
 }
 
 .p-step_channels_channel_info--type-project {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $purple;
   }
 }
 
 .p-step_channels_channel_info--type-announcements {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $blue;
   }
 }
 
 .p-step_channels_channel_info--type-team {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $green;
   }
 }
 
 .p-step_channels_channel_info--type-brainstorming {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $red;
   }
 }
 
 .p-step_channels_channel_info--type-sync {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $yellow;
   }
 }
 
 .p-step_channels_channel_info--type-other {
-  .p-step_channels_channel_info__type, svg {
+  .p-step_channels_channel_info__type,
+  svg {
     color: $text;
   }
 }
@@ -416,23 +422,41 @@ input[type=text].c-input_text {
   background: $bg2;
 }
 
+.p-shared_invite_creator_welcome_modal {
+  .p-shared_invite_creator_welcome_modal__body--pending {
+    color: $text;
+  }
 
-.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__body--pending {
-  color: $text;
-}
+  .p-shared_invite_creator_welcome_modal__ok_button {
+    background: $accent;
+    color: $selectFg;
+  }
 
-.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button {
-  background: $accent;
-  color: $selectFg;
-}
+  .p-shared_invite_creator_welcome_modal__ok_button:active,
+  .p-shared_invite_creator_welcome_modal__ok_button:hover {
+    background-color: $accentT;
+    border: none;
+  }
 
-.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button:active,
-.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button:hover {
-  background-color: $accentT;
-  border: none;
-}
+  .p-shared_invite_creator_welcome_modal__ok_button[disabled] {
+    background-color: $button;
+    color: $disabled;
+  }
 
-.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__ok_button[disabled] {
-  background-color: $button;
-  color: $disabled;
+  .p-shared_invite_creator_welcome_modal__team_icons--dot {
+    background-color: #ddd;
+  }
+
+  .p-shared_invite_creator_welcome_modal__header {
+    font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
+  }
+
+  .p-shared_invite_creator_welcome_modal__header--channel {
+    background: rgba(29, 155, 209, 0.1);
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  }
+
+  .p-shared_invite_creator_welcome_modal__body {
+    font-family: Slack-Lato, appleLogo, sans-serif;
+  }
 }

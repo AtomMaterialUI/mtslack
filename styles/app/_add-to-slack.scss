@@ -56,7 +56,6 @@
   &:focus-within {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
-
 }
 
 .p-add_to_slack_radio--selected {
@@ -92,4 +91,12 @@
 
 .p-add_to_slack_radio__icon--disabled {
   color: $disabled;
+}
+
+.p-add_to_slack_confirmation__footer_link {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+
+  &:hover {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  }
 }

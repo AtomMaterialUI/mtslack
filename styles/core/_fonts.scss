@@ -16,7 +16,7 @@
   .c-menu {
     font-family: $fontFamily;
   }
-  
+
   .p-huddle_details {
     font-family: $fontFamily;
   }
@@ -63,5 +63,17 @@
 }
 
 .p-shared_invite_creator_welcome_modal__content--error {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__item_name {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__reports_header {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__item_image_overlay {
   font-family: $fontFamily;
 }

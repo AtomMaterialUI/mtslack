@@ -1,0 +1,20 @@
+.p-view_header {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-view_header__big_button {
+  &:not(.p-view_header__big_button--inactive):hover {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-view_header__avatar__presence--stroke {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  -webkit-text-stroke: 6px rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-view_header__menu {
+  .p-about_modal__mpdm_avatars .p-about_modal__member_avatar img {
+    border-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}

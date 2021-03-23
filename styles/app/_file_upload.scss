@@ -14,7 +14,9 @@
   color: $button;
 }
 
-.p-multi_file_upload__file_container:hover .p-multi_file_upload__remove_btn:hover .p-multi_file_upload__remove_btn_circle,
+.p-multi_file_upload__file_container:hover
+  .p-multi_file_upload__remove_btn:hover
+  .p-multi_file_upload__remove_btn_circle,
 .p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
   color: $selectFg;
 }
@@ -94,7 +96,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -122,7 +127,8 @@
   .p-email_reply_modal__discard_draft_btn {
     color: $text;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: $accent;
     }
   }
@@ -157,7 +163,6 @@
       background: $button;
     }
   }
-
 }
 
 .p-workflowtoken__channel {
@@ -181,7 +186,8 @@
   @include card;
   background: $bg2;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     box-shadow: 0 0 0 1px $primary;
   }
 }
@@ -208,4 +214,12 @@
 
 .p-email_link_menu__title {
   color: $text;
+}
+
+.p-recently_uploaded_files__datestamp {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-recently_uploaded_files.c-menu_item__button--highlighted .p-recently_uploaded_files__datestamp {
+  color: #fff;
 }

@@ -1,8 +1,8 @@
-.p-siws_auth_modal__member {
+.p-identity_transfer_modal__member {
   border: 1px solid $borderLight;
 }
 
-.p-siws_auth_modal__member_email {
+.p-identity_transfer_modal__member_email {
   color: $accent2;
 }
 
@@ -12,6 +12,10 @@
   &.focused {
     border: 1px double $primary;
     box-shadow: 0 0 7px $primaryT;
+  }
+
+  input {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
   }
 }
 
@@ -25,11 +29,11 @@
   }
 }
 
-.p-siws_auth_modal .c-sk-modal__close_button {
+.p-identity_transfer_modal .c-sk-modal__close_button {
   color: $fg;
 }
 
-.p-siws_auth_modal__header__logo--left {
+.p-identity_transfer_modal__header__logo--left {
   background-color: $accent;
 
   img {
@@ -37,19 +41,34 @@
   }
 }
 
-.p-siws_auth_modal__header__logo__lock {
+.p-identity_transfer_modal__header__logo__lock {
   background: $bg;
+  color: $fg;
 }
 
-.p-siws_auth_modal__header__redirect {
+.p-identity_transfer_modal__header__redirect {
   background-color: $bg2;
   color: $primary;
 }
 
-.p-siws_auth_modal__marketing_consent {
+.p-identity_transfer_modal__marketing_consent {
   border-top: 1px solid $borderLight;
 }
 
-.p-siws_auth_modal__legal {
+.p-identity_transfer_modal__legal {
   color: $accent2;
+}
+
+.p-identity_transfer_modal__header__logo--app-icon {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-identity_transfer_modal__member_card {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px solid var(--saf-0);
+}
+
+.p-identity_transfer_modal__content_section {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
 }

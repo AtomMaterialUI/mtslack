@@ -1,0 +1,14 @@
+.p-contact_sales_banner__icon {
+  margin-right: 12px;
+  color: #1d9bd1;
+}
+
+.p-contact_sales_banner__dismiss {
+  &.c-button-unstyled {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.5);
+  }
+}
+
+.c-alert .p-contact_sales_banner__link {
+  border-bottom: 1px solid rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}

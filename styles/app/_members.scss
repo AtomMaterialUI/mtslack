@@ -322,6 +322,14 @@ button.p-admin_member_table__menu_item--disabled {
   color: $text;
 }
 
+.p-browse_page_results__feedback_link {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+
+  .c-link--button {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
+}
+
 .c-virtual_list__item:last-child .p-browse_page_channel,
 .p-browse_page_channel {
   border-top: 1px solid $borderLight;
@@ -541,4 +549,50 @@ button.p-admin_member_table__menu_item--disabled {
   &:focus-within {
     border: 1px solid $primary;
   }
+}
+
+.p-browse_page_controls__results_display_channel_files {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.c-button--icon {
+  &.p-browse_page_controls__toggle_button {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    background: transparent;
+    border: none;
+
+    &:hover {
+      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    }
+  }
+}
+
+.p-browse_page_controls__toggle_background {
+  --saf-0: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-browse_page_controls__toggle_button_background--left {
+  --saf-0: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  border: 1px solid var(--saf-0);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-browse_page_controls__toggle_button_background--left--toggled {
+  --saf-0: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  border: 1px solid var(--saf-0);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-browse_page_controls__toggle_button_background--right {
+  --saf-0: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  border: 1px solid var(--saf-0);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-browse_page_controls__toggle_button_background--right--toggled {
+  --saf-0: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  border: 1px solid var(--saf-0);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
 }

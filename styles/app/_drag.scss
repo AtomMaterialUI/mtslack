@@ -12,7 +12,7 @@
 
 .p-message_pane_drag_overlay {
   background: $bg;
-  animation: messagePaneDragOverlayOverlayTransition .12s;
+  animation: messagePaneDragOverlayOverlayTransition 0.12s;
 }
 
 .p-message_pane_drag_overlay__subtitle {
@@ -20,7 +20,6 @@
 }
 
 .p-message_pane_drag_overlay__anim_readonly {
-
   &:before {
     color: $disabled;
   }
@@ -30,6 +29,7 @@
   background: $bg;
 }
 
+.p-thread_drag_overlay__anim_locked,
 .p-thread_drag_overlay__anim_readonly {
   &:before {
     color: $disabled;
@@ -50,15 +50,18 @@
   background: linear-gradient(0deg, $bg 10%, transparent);
 }
 
-.p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
-  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset 0 4px 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT, inset 0 5px 0 0 $primaryT;
+.p-channel_sidebar--channel_dragging
+  .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
+  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset 0 4px 0 0 $primary, inset -5px 0 0 0 $primaryT,
+    inset 5px 0 0 0 $primaryT, inset 0 5px 0 0 $primaryT;
 }
 
 .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
   box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT;
 }
 
-.p-drag_layer__sidebar_channels, .p-drag_layer__sidebar_section_heading {
+.p-drag_layer__sidebar_channels,
+.p-drag_layer__sidebar_section_heading {
   color: $fg;
   background: $active !important;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);

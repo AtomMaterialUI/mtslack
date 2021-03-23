@@ -147,3 +147,7 @@
 .p-search_filter__mpim_avatars--bottom {
   box-shadow: 0 0 0 1px $bg2;
 }
+
+.p-search_filter__modal_divider {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}

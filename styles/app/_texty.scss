@@ -184,6 +184,40 @@
   }
 }
 
+.c-texty_input_unstyled {
+  .c-texty_workflow_token {
+    > button {
+      background: $button;
+      color: $fg;
+      border: 1px solid $button;
+
+      &:hover {
+        background: $hl;
+        color: $selectFg;
+      }
+    }
+
+    &.is-missing {
+      > button {
+        color: $red;
+        background: $button;
+        border: 1px solid $button;
+
+        &:hover {
+          cursor: text;
+          background: $hl;
+          border: 1px solid $hl;
+        }
+      }
+    }
+
+    .c-texty_workflow_token__property {
+      border-left: 1px solid $accent;
+      color: $text;
+    }
+  }
+}
+
 .sk-client-theme--dark .c-texty_input_unstyled__container .ql-editor blockquote:before {
   background: $bg2;
 }

@@ -5,7 +5,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -33,7 +36,10 @@
 .c-multi_select_input--focused {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-  &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+  &:-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
     color: $disabled;
   }
 }
@@ -45,7 +51,8 @@
 .c-multi_select_input--invalid {
   border-color: $red;
 
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 
@@ -59,12 +66,19 @@ input.c-multi_select_input__input {
   color: $fg;
   border: none;
 
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
     color: $disabled;
   }
 }
 
-.c-multi_select_input[data-prefix]:not([data-prefix=""]) {
+.c-multi_select_input[data-prefix]:not([data-prefix='']) {
   &:before {
     color: $fg;
   }

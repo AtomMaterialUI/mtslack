@@ -29,10 +29,6 @@
   }
 }
 
-.p-rimeto_org_chart_page__item_name {
-  font-family: Lato;
-}
-
 .p-rimeto_org_chart_page__item_reports {
   --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
   border: 1px solid var(--saf-0);
@@ -51,7 +47,6 @@
 }
 
 .p-rimeto_org_chart_page__reports_header {
-  font-family: Lato;
   color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }
 
@@ -64,12 +59,23 @@
 }
 
 .p-rimeto_org_chart_page__item_image_overlay {
-  font-family: Lato;
   color: #fff;
 
   &:hover {
     background: rgba(0, 0, 0, 0.5);
   }
+}
+
+.p-rimeto_member_profile_field__secondary {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-rimeto_member_profile_field__label {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-rimeto_member_profile_field__status_expiration {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }
 
 .p-rimeto_org_chart_page__skeleton_img {
@@ -78,4 +84,47 @@
 
 .p-member_profile_rimeto_link--flexpane_org_chart {
   color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+}
+
+.p-rimeto_member_profile_field_key_peoples__label {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-r_member_profile__link {
+  color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+}
+
+.p-r_member_profile__buttons__button_icon {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+  &:hover {
+    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.1);
+  }
+
+  &:active {
+    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.15);
+  }
+}
+
+.p-r_member_profile__buttons__button_label {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-r_member_profile__classification_text {
+  background-color: rgba(29, 155, 209, 0.1);
+}
+
+.p-r_member_profile--link {
+  &:hover {
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  }
+}
+
+.p-r_member_profile_info_icon {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 0.85);
+}
+
+.p-r_member_profile_section {
+  border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
 }

@@ -14,6 +14,7 @@
   background: $bg;
 }
 
+.p-workspace__input.p-message_input,
 .p-workspace__input {
   .ql-attachments,
   .ql-files {
@@ -83,8 +84,12 @@
     }
   }
 
-  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
-  &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+  &.p-message_input--attachments-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky,
+  &.p-message_input--files-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky {
     background: $contrast;
   }
 
@@ -192,4 +197,8 @@
   .p-workspace_row_item__text {
     color: $text;
   }
+}
+
+.p-get_started_confirmation_code__hint {
+  color: #454245;
 }

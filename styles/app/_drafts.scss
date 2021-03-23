@@ -26,7 +26,7 @@
   background: $accent;
   color: $selectFg;
   padding: 0 4px;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .p-drafts_page__draft_thread_participants {
@@ -102,4 +102,17 @@
   &:after {
     color: $borderLight;
   }
+}
+
+.p-drafts_page__older_drafts_label,
+.p-drafts_page__section_header {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-drafts_page__older_drafts_label:after {
+  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-drafts_page__draft_date_scheduled {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }

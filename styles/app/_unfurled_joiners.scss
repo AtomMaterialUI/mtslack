@@ -1,0 +1,102 @@
+.p-unfurled_joiners_carousel__channel_members_info {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unfurled_joiners_carousel__invite_member_link {
+  border-left: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-unfurled_joiners_carousel__card {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px solid var(--saf-0);
+
+  &:hover {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}
+
+.p-unfurled_joiners_carousel__face_pile_card {
+  &:hover .p-unfurled_joiners_carousel__face_pile_card_team_icon {
+    --saf-0: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    border: 2px solid var(--saf-0);
+  }
+}
+
+.p-unfurled_joiners_carousel__face_pile_card_team_icon {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 2px solid var(--saf-0);
+}
+
+.p-unfurled_joiners_carousel__face_pile_card_label {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unfurled_joiners_carousel__action_card_label {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unfurled_joiners_carousel__invite_member_card {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px dashed var(--saf-0);
+}
+
+.p-unfurled_joiners_carousel__invite_member_card_icon {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unfurled_joiners_company_pile__avatar--stacked {
+  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  box-shadow: 0 0 0 2px var(--saf-0);
+}
+
+.p-unfurled_joiners_company_pile__count_tile {
+  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-unfurled_joiners_company_pile__icon_container {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-unfurled_joiners_company_pile__wrapper__contextual_banner {
+  .p-unfurled_joiners_company_pile__icon_container {
+    background-color: #e8f5fa;
+  }
+
+  .p-unfurled_joiners_company_pile__avatar--stacked {
+    box-shadow: 0 0 0 2px #e8f5fa;
+  }
+}
+
+.p-unfurled_joiners_channel_header__title_channel_name {
+  color: #712073;
+}
+
+.p-unfurled_joiners_channel_header__title_channel_name--dark {
+  color: #db83dc;
+}
+
+.p-unfurled_joiners_contextual_banner__banner {
+  color: #000;
+  background-color: #e8f5fa;
+
+  .c-banner__close {
+    color: #616061;
+
+    &:hover {
+      color: #616061;
+    }
+  }
+}
+
+.p-unfurled_joiners_contextual_banner__banner--dark {
+  background-color: #212121;
+  color: #ddd;
+
+  .p-unfurled_joiners_company_pile__icon_container {
+    background-color: #212121;
+  }
+
+  .p-unfurled_joiners_company_pile__avatar--stacked {
+    box-shadow: 0 0 0 2px #212121;
+  }
+}

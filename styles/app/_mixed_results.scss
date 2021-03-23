@@ -1,0 +1,37 @@
+.p-mixed_results_module_card {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0);
+
+  &:active,
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  }
+}
+
+.p-mixed_results_module_card--see_all {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+
+  &:focus,
+  &:hover {
+    color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  }
+}
+
+.p-mixed_results_module_card__text {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-mixed_results_module_card__text--focused,
+.p-mixed_results_module_card__text--hovered {
+  color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+}
+
+.p-mixed_results_module__feedback_link .c-link--button {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}

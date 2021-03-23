@@ -50,26 +50,6 @@
   }
 }
 
-.p-setup_channel_examples_narrator {
-  .p-setup_channel_examples_narrator__inner {
-    background: $accentT;
-    border: 1px solid $primary;
-  }
-
-  .p-setup_channel_examples_narrator__inner--completed {
-    background: $tree;
-    border: 1px solid $accent;
-
-    .p-setup_channel_examples_narrator__icon {
-      color: $accent;
-    }
-  }
-
-  .p-setup_channel_examples_narrator__icon {
-    color: $primary;
-  }
-}
-
 .p-message_container_loading {
   background-color: $bg;
 }
@@ -79,13 +59,16 @@
 }
 
 .p-setup_channel_examples_header {
-
   .p-setup_channel_examples_header__channel_icon {
     background-color: $bg2;
   }
 
   .p-setup_channel_examples_header__title {
     color: $fg;
+
+    .highlight_aubergine {
+      color: #4a154b;
+    }
   }
 
   .p-setup_channel_examples_header__subtitle {
@@ -140,6 +123,10 @@
     strong {
       color: $fg;
     }
+  }
+
+  .p-setup_channel_examples_narrator__step {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
   }
 }
 

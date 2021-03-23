@@ -36,6 +36,20 @@
   @include card;
 }
 
+.p-saved_page__item--tombstone {
+  background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  &:hover {
+    background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
+}
+
+.p-saved_page__item--docked.p-saved_page__item--tombstone {
+  border-color: #d0d0d0;
+}
+
 .c-virtual_list__item--focus .p-saved_page__item {
   box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
 }
@@ -92,7 +106,7 @@
 }
 
 .c-virtual_list__item--focus .p-activity_page__item {
- @include pane;
+  @include pane;
 }
 
 .p-activity_page__item--docked {

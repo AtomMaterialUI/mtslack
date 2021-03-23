@@ -11,11 +11,28 @@
 }
 
 .p-block_kit_input_block--invalid {
-  .c-input_text, .c-input_textarea, .c-multi_select_input, .c-select_input, .p-block_kit_date_picker_button, .p-block_kit_date_picker__datepicker_trigger {
+  .c-input_text,
+  .c-input_textarea,
+  .c-multi_select_input,
+  .c-select_input,
+  .p-block_kit_date_picker_button,
+  .p-block_kit_date_picker__datepicker_trigger {
     border-color: $red;
   }
 
-  .c-input_text:focus, .c-input_textarea:focus, .c-multi_select_input:focus, .c-select_input:focus, .p-block_kit_date_picker__datepicker_trigger:focus {
+  .c-input_text:focus,
+  .c-input_textarea:focus,
+  .c-multi_select_input:focus,
+  .c-select_input:focus,
+  .p-block_kit_date_picker__datepicker_trigger:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+
+  .c-input_text:focus-within,
+  .c-input_textarea:focus-within,
+  .c-multi_select_input:focus-within,
+  .c-select_input:focus-within,
+  .p-block_kit_date_picker__datepicker_trigger:focus-within {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
 }
@@ -30,7 +47,10 @@
     .c-input_select__filter_input {
       background-color: $contrast;
 
-      &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder {
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &::-ms-input-placeholder,
+      &::placeholder {
         color: $disabled;
       }
     }

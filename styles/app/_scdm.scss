@@ -37,3 +37,18 @@
 .p-escape_hatch__subheading {
   color: $text;
 }
+
+.c-select_options_list__option--active {
+  .p-escape_hatch__icon,
+  .p-escape_hatch__subheading {
+    color: $selectFg;
+  }
+}
+
+.p-send_admin_message_dialog__icon_container {
+  background-color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+
+  .c-icon {
+    color: #fff;
+  }
+}
