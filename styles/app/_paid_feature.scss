@@ -1,8 +1,11 @@
 .p-paid_feature_badge {
-  background-color: $accent2;
+  background-color: $button;
+  color: $fg;
 
   &:hover {
     background-color: $hl;
+    color: $selectFg;
+    border-color: $primary;
   }
 }
 
@@ -47,11 +50,11 @@
 }
 
 .p-paid_feature_badge__anchor--selected .p-paid_feature_badge {
-  border: 1px solid rgba(179, 134, 10, 0.3);
+  border: 1px solid $button;
 }
 
 .p-paid_feature_badge__anchor--selected .p-paid_feature_badge__icon {
-  color: $selectFg;
+  color: $primary;
 }
 
 .p-channel_sidebar__link--page_ppaid-benefits_offer_container
@@ -64,40 +67,39 @@
 }
 
 .p-paid_feature_badge__coachmark_icon {
-  color: #b98a09;
+  color: $primary;
 }
 
 .p-paid_feature_invite_member_banner {
-  background-color: #fcf4da;
+  background-color: $notif;
 
   &:before {
-    border-bottom: 16px solid #fcf4da;
+    border-bottom: 16px solid $notif;
   }
 }
 
 .p-paid_feature_invite_member_banner--dark {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $fg;
 
   .p-paid_feature_invite_member_banner__close_banner_icon.c-icon_button--light {
-    color: rgba(var(--sk_primary_background, 255, 255, 255), 0.8);
+    color: $text;
 
     &:hover {
-      background: rgba(var(--sk_primary_background, 255, 255, 255), 0.04);
-      color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+      background: $notif;
+      color: $fg;
     }
   }
 }
 
 .p-paid_feature_invite_member_banner__icon {
-  color: #b98a09;
+  color: $primary;
 }
 
 .p-paid_feature_invite_guest_banner {
-  background-color: #fcf4da;
-  border: 1px solid rgba(185, 138, 9, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: $notif;
+  border: 1px solid $notif;
 }
 
 .p-paid_feature_invite_guest_banner--dark {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $fg;
 }
