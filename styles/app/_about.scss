@@ -25,72 +25,68 @@
 }
 
 .p-about_modal__contents {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background-color: $bg;
 }
 
 .p-about_modal__section,
 .p-about_modal__section_button {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 1px solid $border;
+  background-color: $bg2;
 }
 
 .p-about_modal__section_button {
   &:hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: $hl;
   }
 }
 
 .p-about_modal__empty_topic {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-about_modal__notifications {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-about_modal__meta {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-about_modal__mpdm_avatars {
   .p-about_modal__member_avatar {
     img {
-      --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-      border: 2px solid var(--saf-0);
+      border: 2px solid $border;
     }
   }
 }
 
 .p-about_modal__connected_section_heading {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-about_modal__connected_section_item {
   &:hover {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background: $bg;
 
     .c-team_icon,
     .p-about_modal__workspace_overflow_icon {
-      --saf-0: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-      border: 2px solid var(--saf-0);
+      border: 2px solid $borderLight;
     }
   }
 }
 
 .p-about_modal__connected_subheading {
-  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  color: $text;
 }
 
 .p-about_modal__connected_icons {
   .c-team_icon,
   .p-about_modal__workspace_overflow_icon {
-    --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    border: 2px solid var(--saf-0);
+    border: 2px solid $borderLight;
   }
 }
 
 .p-about_modal__workspace_overflow_icon {
-  background: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background: $bg;
+  color: $fg;
 }

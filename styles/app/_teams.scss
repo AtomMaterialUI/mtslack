@@ -23,10 +23,6 @@
     background-color: $accent;
     color: $selectFg;
   }
-
-  &:after {
-    box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.08);
-  }
 }
 
 .c-team__name--small,
@@ -85,7 +81,6 @@
   .presence {
     color: $fg;
   }
-
 }
 
 .c-unified_member--medium,
@@ -156,7 +151,8 @@
   filter: none;
 }
 
-.c-base_entity__metadata, .c-base_entity__subtext {
+.c-base_entity__metadata,
+.c-base_entity__subtext {
   color: $text;
 }
 
@@ -175,7 +171,7 @@
 }
 
 .c-base_list_entity--highlight-light {
-  background-color: $hl;
+  background-color: $tree;
 }
 
 .c-base_list_entity--small {
@@ -207,4 +203,3 @@
 .c-base_list_entity--dim .c-file_entity__icon:before {
   color: $text;
 }
-

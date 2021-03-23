@@ -49,7 +49,7 @@
 }
 
 .p-ia_details_popover__members_list_item_button {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 
   &:hover {
     background: $tree;
@@ -162,10 +162,10 @@
 }
 
 .p-ia_details_popover__members_header__add {
-  border-color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  border: none;
 
   .c-icon {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    color: $fg;
   }
 }
 
@@ -238,25 +238,25 @@
 
 .p-ia_details_popover__members_list__empty_state {
   &:not(.p-ia_details_popover__members_list__empty_state--entirely):after {
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    background: $bg;
+    border-bottom: 1px solid $borderLight;
   }
 }
 
 .p-ia_details_popover__heading_placeholder {
-  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background: $active;
 }
 
 .p-ia_details_popover__item_placeholder__avatar,
 .p-ia_details_popover__item_placeholder__name,
 .p-ia_details_popover__item_placeholder__title {
-  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background: $active;
 }
 
 .p-channel_org_members_modal__remove_button {
-  color: #e01e5a;
+  color: $red;
 
   &:hover {
-    color: #e01e5a;
+    color: $red;
   }
 }
