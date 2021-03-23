@@ -1,8 +1,8 @@
 .p-calls_draw__name_tag {
-  background: rgba(var(--sk_inverted_background, 29, 28, 29), 0.9);
-  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  background: $bg;
+  color: $fg;
 }
 
 .p-active_speaker__member_name {
-  color: #fff;
+  color: $primary;
 }

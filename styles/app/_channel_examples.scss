@@ -1,9 +1,9 @@
 .p_channel_examples_section__spacer--top {
-  border-top: 1px solid #522653;
+  border-top: 1px solid $notif;
 }
 
 .p_channel_examples_section {
-  background-color: #522653;
+  background-color: $notif;
   border-top: 1px solid $borderLight;
 
   .p-channel_sidebar__channel {
@@ -61,51 +61,51 @@
 
 .p_channel_examples_section__link_wrapper,
 .p_channel_examples_section__spacer--bottom {
-  background-color: #522653;
+  background-color: $notif;
 }
 
 .p_channel_examples_section__link_wrapper {
   .p-channel_sidebar__channel {
-    color: #fff;
+    color: $accent2;
   }
 
   .p-channel_sidebar__channel--selected {
     .p-channel_sidebar__channel_icon_prefix,
     &:hover .p-channel_sidebar__channel_icon_prefix {
-      color: #fff;
+      color: $accent2;
     }
   }
 
   .p-channel_sidebar__channel {
     &:link,
     &:visited {
-      color: #fff;
+      color: $accent2;
     }
   }
 
   .p-channel_sidebar__channel--selected {
     &.p-channel_sidebar__channel {
-      color: #1d1c1d;
+      color: $fg;
 
       &:link,
       &:visited {
-        color: #1d1c1d;
+        color: $fg;
       }
     }
 
     .p-channel_sidebar__channel_icon_prefix {
-      color: #1d1c1d;
+      color: $fg;
     }
 
     &:hover {
       .p-channel_sidebar__channel_icon_prefix {
-        color: #1d1c1d;
+        color: $fg;
       }
 
-      background-color: #f2c744;
+      background-color: $tree;
     }
 
-    background-color: #f2c744;
+    background-color: $tree;
   }
 }
 
@@ -113,10 +113,10 @@
   .p_channel_examples_section,
   .p_channel_examples_section__link_wrapper,
   .p_channel_examples_section__spacer--bottom {
-    background-color: #302e34;
+    background-color: $bg2;
   }
 
   .p_channel_examples_section__spacer--top {
-    border-color: #2b2a2f;
+    border-color: $bg2;
   }
 }

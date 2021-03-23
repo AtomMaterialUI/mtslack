@@ -1,15 +1,15 @@
 .p-channel_email_address_modal__help_content_section {
-  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background: $bg2;
 }
 
 .p-channel_email_address_modal__help_content_section--light-mode {
-  background: #fef4ea;
+  background: $bg2;
 }
 
 .p-channel_email_address_modal__help_container_icon {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-channel_email_address_modal__help_link {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
