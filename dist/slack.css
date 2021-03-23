@@ -1,5 +1,5 @@
 :root {
-  --version: 'v19.0.0'; }
+  --version: 'v20.0.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -3923,6 +3923,28 @@
       color: var(--text); }
   #mtslack .p-approved_domains_invites_tip {
     background: var(--secondBg); }
+  #mtslack .p-scdm_education_launcher {
+    background-color: var(--button);
+    color: var(--accent2); }
+  #mtslack .p-scdm_education_launcher:hover {
+    background-color: var(--hl);
+    color: var(--selectFg2); }
+  #mtslack .p-scdm_education_launcher__icon_close i {
+    color: var(--accent2); }
+  #mtslack .sk-client-theme--dark .p-scdm_education_launcher {
+    background-color: var(--button);
+    color: var(--accent2); }
+  #mtslack .sk-client-theme--dark .p-scdm_education_launcher:hover {
+    background-color: var(--hl);
+    color: var(--selectFg2); }
+  #mtslack .sk-client-theme--dark .p-scdm_education_launcher__icon_close i {
+    color: var(--accent2); }
+  #mtslack .p-escape_hatch__group_label {
+    color: var(--text); }
+  #mtslack .p-escape_hatch__icon {
+    color: var(--accent); }
+  #mtslack .p-escape_hatch__subheading {
+    color: var(--text); }
   #mtslack .p-benefit_card__container {
     background-color: var(--bg); }
   #mtslack .p-benefit_card__card_link {
@@ -4581,6 +4603,16 @@
     color: var(--fg); }
   #mtslack .p-slack_connect_hub_cta__icon {
     color: var(--accent); }
+  #mtslack .p-slack_connect_dm_email_modal__header_container {
+    background-color: var(--contrast); }
+  #mtslack .sk-client-theme--dark .p-slack_connect_dm_email_modal__header_container {
+    background-color: var(--contrast); }
+  #mtslack .p-slack_connect_dm_email_modal__learn_more,
+  #mtslack .p-slack_connect_dm_email_modal__learn_more .link {
+    color: var(--accent2); }
+  #mtslack .p-slack_connect_dm_email_modal__success_icon {
+    color: var(--green);
+    background-color: var(--bg); }
   #mtslack .p-first_channel_foreword {
     background: var(--notif); }
     #mtslack .p-first_channel_foreword:after {
