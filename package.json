@@ -1,10 +1,10 @@
 {
   "name": "mtslack",
-  "version": "20.0.0",
+  "version": "20.1.0",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "bin": {
-    "mtslack": "./main.js"
+    "mtslack": "main.js"
   },
   "scripts": {
     "start": "node ./bin/mtslack",
