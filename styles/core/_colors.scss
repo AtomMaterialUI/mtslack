@@ -1,44 +1,51 @@
 .neutral_white_bg {
   background: $bg !important;
 }
+
 .sk_black {
-  color: $black !important
+  color: $black !important;
 }
 
 .sk_black_bg {
   background-color: $black !important;
 }
 
-.sk_dark_gray, .sk_dark_grey {
+.sk_dark_gray,
+.sk_dark_grey {
   color: $gray !important;
 }
 
-.sk_dark_gray_bg, .sk_dark_grey_bg {
+.sk_dark_gray_bg,
+.sk_dark_grey_bg {
   background-color: $gray !important;
 }
 
-.sk_light_gray, .sk_light_grey {
-  color: $silver !important
+.sk_light_gray,
+.sk_light_grey {
+  color: $silver !important;
 }
 
-.sk_light_gray_bg, .sk_light_grey_bg {
-  background-color: $silver !important
+.sk_light_gray_bg,
+.sk_light_grey_bg {
+  background-color: $silver !important;
 }
 
-.sk_soft_gray, .sk_soft_grey {
-  color: $selectFg !important
+.sk_soft_gray,
+.sk_soft_grey {
+  color: $selectFg !important;
 }
 
-.sk_soft_gray_bg, .sk_soft_grey_bg {
-  background-color: $selectFg !important
+.sk_soft_gray_bg,
+.sk_soft_grey_bg {
+  background-color: $selectFg !important;
 }
 
 .sk_link_blue {
-  color: $blue !important
+  color: $blue !important;
 }
 
 .sk_link_blue_bg {
-  background-color: $blue !important
+  background-color: $blue !important;
 }
 
 .sk_hover_blue {
@@ -58,11 +65,11 @@
 }
 
 .sk_sapphire_blue {
-  color: $blue !important
+  color: $blue !important;
 }
 
 .sk_sapphire_blue_bg {
-  background-color: $blue !important
+  background-color: $blue !important;
 }
 
 .sk_pale_blue {
@@ -75,20 +82,20 @@
 
 .seafoam_green,
 .sk_seafoam_green {
-  color: $green !important
+  color: $green !important;
 }
 
 .seafoam_green_bg,
 .sk_seafoam_green_bg {
-  background-color: $green !important
+  background-color: $green !important;
 }
 
 .sk_warning_red {
-  color: $red !important
+  color: $red !important;
 }
 
 .sk_warning_red_bg {
-  background-color: $red !important
+  background-color: $red !important;
 }
 
 .sk_pin_orange {
@@ -104,11 +111,11 @@
 }
 
 .sk_colonel_mustard {
-  color: $orange2 !important
+  color: $orange2 !important;
 }
 
 .sk_colonel_mustard_bg {
-  background-color: $orange2 !important
+  background-color: $orange2 !important;
 }
 
 .sk_star_yellow {
@@ -120,27 +127,27 @@
 }
 
 .sk_aubergine {
-  color: $purple !important
+  color: $purple !important;
 }
 
 .sk_aubergine_bg {
-  background-color: $purple !important
+  background-color: $purple !important;
 }
 
 .sk_just_orange {
-  color: $orange !important
+  color: $orange !important;
 }
 
 .sk_just_orange_bg {
-  background-color: $orange !important
+  background-color: $orange !important;
 }
 
 .sk_reddish_orange {
-  color: $orange2 !important
+  color: $orange2 !important;
 }
 
 .sk_reddish_orange_bg {
-  background-color: $orange2 !important
+  background-color: $orange2 !important;
 }
 
 .sk_sapphire_blue {
@@ -151,63 +158,61 @@
   background-color: $blue !important;
 }
 
-
 .sk_indigo {
-  color: $purple !important
+  color: $purple !important;
 }
 
 .sk_indigo_bg {
-  background-color: $purple !important
+  background-color: $purple !important;
 }
 
 .sk_sky_blue {
-  color: $cyan !important
+  color: $cyan !important;
 }
 
 .sk_sky_blue_bg {
-  background-color: $cyan !important
+  background-color: $cyan !important;
 }
 
 .sk_frosty_blue {
-  color: $selectFg !important
+  color: $selectFg !important;
 }
 
 .sk_frosty_blue_bg {
-  background-color: $selectFg !important
+  background-color: $selectFg !important;
 }
 
 .sk_raspberry_red {
-  color: $red2 !important
+  color: $red2 !important;
 }
 
 .sk_raspberry_red_bg {
-  background-color: $red2 !important
+  background-color: $red2 !important;
 }
 
 .sk_sunshine_yellow {
-  color: $yellow !important
+  color: $yellow !important;
 }
 
 .sk_sunshine_yellow_bg {
-  background-color: $yellow !important
+  background-color: $yellow !important;
 }
 
 .sk_pale_yellow {
-  color: $selectFg !important
+  color: $selectFg !important;
 }
 
 .sk_pale_yellow_bg {
-  background-color: $selectFg !important
+  background-color: $selectFg !important;
 }
 
 .sk_lilypad_green {
-  color: $green !important
+  color: $green !important;
 }
 
 .sk_lilypad_green_bg {
-  background-color: $green !important
+  background-color: $green !important;
 }
-
 
 .clear_blue {
   color: $blue !important;
@@ -225,7 +230,8 @@
   background-color: $blue !important;
 }
 
-.candy_red, .candy_red_on_hover:hover {
+.candy_red,
+.candy_red_on_hover:hover {
   color: $red !important;
 }
 
@@ -325,7 +331,10 @@
   background-color: $purple !important;
 }
 
-.moscow_red, .moscow_red_dark, .moscow_red_on_hover:hover, moscow_red_bg {
+.moscow_red,
+.moscow_red_dark,
+.moscow_red_on_hover:hover,
+moscow_red_bg {
   color: $red !important;
 }
 
@@ -341,7 +350,8 @@
   background-color: $orange2 !important;
 }
 
-.kelly_green, .kelly_green_dark {
+.kelly_green,
+.kelly_green_dark {
   color: $green !important;
 }
 
@@ -427,4 +437,180 @@
 
 .greigh_bg {
   background-color: $text !important;
+}
+
+.sk_primary_foreground {
+  color: $fg;
+}
+
+.sk_inverted_foreground_bg,
+.sk_primary_foreground_bg {
+  background: $bg;
+}
+
+.sk_primary_background,
+.sk_primary_background_bg,
+.sk_white_bg {
+  background: $bg;
+}
+
+.sk_inverted_foreground,
+.sk_white {
+  color: $fg;
+}
+
+.sk_black_bg,
+.sk_inverted_background,
+.sk_inverted_background_bg {
+  background-color: $bg;
+}
+
+.sk_foreground_max {
+  color: $text;
+}
+
+.sk_foreground_max_bg {
+  background-color: $bg;
+}
+
+.sk_dark_gray,
+.sk_dark_grey,
+.sk_foreground_max_solid {
+  color: $disabled;
+}
+
+.sk_dark_gray_bg,
+.sk_dark_grey_bg,
+.sk_foreground_max_solid_bg {
+  background-color: $excluded;
+}
+
+.sk_foreground_high {
+  color: $text;
+}
+
+.sk_foreground_high_bg {
+  background-color: $bg;
+}
+
+.sk_foreground_high_solid,
+.sk_light_gray,
+.sk_light_grey {
+  color: $disabled;
+}
+
+.sk_foreground_high_solid_bg,
+.sk_light_gray_bg,
+.sk_light_grey_bg {
+  background-color: $excluded;
+}
+
+.sk_foreground_mid {
+  color: $primary;
+}
+
+.sk_foreground_mid_bg {
+  background-color: $bg;
+}
+
+.sk_foreground_mid_solid {
+  color: $primary;
+}
+
+.sk_foreground_mid_solid_bg {
+  background-color: $bg;
+}
+
+//.sk_foreground_low {
+//  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//}
+//
+//.sk_foreground_low_bg {
+//  background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//}
+
+.sk_foreground_low_solid,
+.sk_soft_gray,
+.sk_soft_grey {
+  color: $bg2;
+}
+
+.sk_foreground_low_solid_bg,
+.sk_soft_gray_bg,
+.sk_soft_grey_bg {
+  background-color: $bg2;
+}
+
+//.sk_foreground_min {
+//  color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+//}
+//
+//.sk_foreground_min_bg {
+//  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+//}
+
+.sk_foreground_min_solid,
+.sk_off_white {
+  color: $bg2;
+}
+
+.sk_foreground_min_solid_bg,
+.sk_off_white_bg {
+  background-color: $bg2;
+}
+
+.sk_white_always {
+  color: $silver;
+}
+
+.sk_black_always {
+  color: $black;
+}
+
+.sk_dark_gray_always {
+  color: $gray;
+}
+
+.sk_light_gray_always {
+  color: $gray;
+}
+
+.sk_soft_gray_always {
+  color: $silver;
+}
+
+.sk_off_white_always {
+  color: $silver;
+}
+
+.sk_highlight {
+  color: $primary;
+}
+
+.sk_highlight_bg {
+  background-color: $primary;
+}
+
+.sk_highlight_hover {
+  color: $primaryT;
+}
+
+.sk_highlight_hover_bg {
+  background-color: $primaryT;
+}
+
+.sk_highlight_accent {
+  color: $accent;
+}
+
+.sk_highlight_accent_bg {
+  background-color: $accent;
+}
+
+.sk_secondary_highlight {
+  color: $accent2;
+}
+
+.sk_secondary_highlight_bg {
+  background-color: $accent2;
 }

@@ -140,9 +140,7 @@ a.c-sidebar_menu__list_item {
   .p-channel_sidebar__channel--selected:visited,
   .p-channel_sidebar__link--selected:visited,
   .p-channel_sidebar__channel--selected:hover,
-  .p-channel_sidebar__link--selected:hover,
-  .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
-  .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+  .p-channel_sidebar__link--selected:hover {
     color: $primary;
     border-left: 2px solid $accent;
 
@@ -150,6 +148,12 @@ a.c-sidebar_menu__list_item {
       background: $hl;
       color: $primary;
     }
+  }
+
+  .p-channel_sidebar__channel--selected + .p-channel_sidebar__close,
+  .p-channel_sidebar__link--selected + .p-channel_sidebar__close {
+    color: $fg;
+    border-left: none;
   }
 
   .p-channel_sidebar__channel:hover,
@@ -265,7 +269,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 /** `opacity: 1` color overrides */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__name,
+  .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
@@ -513,7 +517,9 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
     color: $text;
     background: $button;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       background: $hl;
       color: $selectFg;
     }
@@ -523,12 +529,13 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
     color: $fg;
     background: $hl;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       color: $selectFg;
       background: $selectBg;
     }
   }
-
 }
 
 .p-channel_sidebar__member_label {
@@ -541,7 +548,8 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   background: $button;
 }
 
-.p-channel_sidebar__channel.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+.p-channel_sidebar__channel.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--typing)
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   background: transparent;
   color: $text;
 }
@@ -551,12 +559,14 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   color: $fg;
 }
 
-.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__channel_icon_prefix--comfy {
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   background: $button;
   color: $primary;
 }
 
-.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
+.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--typing)
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   color: $text;
   background: transparent;
 }

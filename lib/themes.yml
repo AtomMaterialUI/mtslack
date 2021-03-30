@@ -157,7 +157,7 @@ material:
     table: '#414863'
     border: '#2b2a3e'
     hl: '#444267'
-    tree: '#676E95'
+    tree: '#676E9540'
     notif: '#202331'
     accent: '#ab47bc'
     excluded: '#2f2e43'

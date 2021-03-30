@@ -4,42 +4,67 @@
 }
 
 .c-workflow-item-card {
-  border-color: $accent;
+  border: none;
+  border-left: 4px solid $borderLight;
+  padding-left: 8px;
   background-color: $bg;
+  color: $fg;
 
-  button {
+  .video-player .video-player__title-card {
+    background-color: $bg2;
+  }
+
+  svg * {
+    stroke: $fg;
+    fill: $fg;
+  }
+
+  button,
+  .c-button {
     background: $button;
-    border: 1px solid $accent2;
+    border: 1px solid $button;
+    color: $fg;
+  }
+
+  //.c-button.c-button--primary {
+  //  background: $primary;
+  //  color: $selectFg;
+  //}
+
+  .c-link--button {
+    background: transparent;
+    border: none;
     color: $accent2;
   }
 
   &.complete {
-    background-color: $hl;
-    border-color: $green;
+    background-color: $excluded;
+    border: none;
+    opacity: 0.5;
+    border-left: 4px solid $green;
 
     button {
       background-color: $button;
+      color: $disabled;
     }
 
     .cta--complete {
-      color: $text;
+      color: $selectFg;
 
       .c-workflow-item-card__number {
-        background-color: $bg2;
+        padding: 8px 16px;
+        background-color: $green;
       }
     }
-  }
-
-  &:not(:last-child) {
-    border-bottom: $borderLight;
   }
 }
 
 .c-workflow-item-container {
-  border-left: 4px solid $borderLight;
+  border-left: none;
+  margin-top: 16px;
 }
 
 .c-workflow-item-card__number {
-  background-color: $primary;
+  background-color: $accent;
   color: $selectFg;
 }
