@@ -91,6 +91,7 @@ input[type='text'] {
 
   &:focus {
     border-color: $primary;
+    border-width: 2px;
   }
 }
 
@@ -99,6 +100,7 @@ input {
     &:active,
     &:focus {
       border-color: $primary;
+      border-width: 2px;
     }
   }
 
@@ -106,6 +108,7 @@ input {
     &:active,
     &:focus {
       border-color: $primary;
+      border-width: 2px;
     }
   }
 
@@ -113,6 +116,7 @@ input {
     &:active,
     &:focus {
       border-color: $primary;
+      border-width: 2px;
     }
   }
 
@@ -120,6 +124,7 @@ input {
     &:active,
     &:focus {
       border-color: $primary;
+      border-width: 2px;
     }
   }
 
@@ -127,6 +132,7 @@ input {
     &:active,
     &:focus {
       border-color: $primary;
+      border-width: 2px;
     }
   }
 }
@@ -151,6 +157,7 @@ textarea {
   &:active,
   &:focus {
     border-color: $primary;
+    border-width: 2px;
   }
 }
 
@@ -162,6 +169,7 @@ select {
   &:active,
   &:focus {
     border-color: $primary;
+    border-width: 2px;
   }
 }
 
