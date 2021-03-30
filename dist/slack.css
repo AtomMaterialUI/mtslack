@@ -543,17 +543,23 @@
     color: var(--fg); }
     #mtslack textarea:focus,
     #mtslack input[type='text']:focus {
-      border-color: var(--primary); }
+      border-color: var(--primary);
+      border-width: 2px; }
   #mtslack input[type='url']:active, #mtslack input[type='url']:focus {
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    border-width: 2px; }
   #mtslack input[type='text']:active, #mtslack input[type='text']:focus {
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    border-width: 2px; }
   #mtslack input[type='number']:active, #mtslack input[type='number']:focus {
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    border-width: 2px; }
   #mtslack input[type='email']:active, #mtslack input[type='email']:focus {
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    border-width: 2px; }
   #mtslack input[type='password']:active, #mtslack input[type='password']:focus {
-    border-color: var(--primary); }
+    border-color: var(--primary);
+    border-width: 2px; }
   #mtslack input[type='url'], #mtslack input[type='text'], #mtslack input[type='tel'], #mtslack input[type='number'], #mtslack input[type='email'], #mtslack input[type='password'] {
     background: var(--contrast);
     border: 1px solid var(--active);
@@ -562,13 +568,15 @@
     border: 1px solid var(--active);
     color: var(--fg); }
     #mtslack textarea:active, #mtslack textarea:focus {
-      border-color: var(--primary); }
+      border-color: var(--primary);
+      border-width: 2px; }
   #mtslack select {
     background-color: var(--button);
     border-color: var(--border);
     color: var(--text); }
     #mtslack select:active, #mtslack select:focus {
-      border-color: var(--primary); }
+      border-color: var(--primary);
+      border-width: 2px; }
   #mtslack input:-moz-placeholder,
   #mtslack textarea:-moz-placeholder,
   #mtslack input:-ms-input-placeholder,
@@ -3009,10 +3017,13 @@
     #mtslack .c-slider__input--focus-visible:focus::-ms-thumb:-moz-placeholder, #mtslack .c-slider__input--focus-visible:focus::-ms-thumb:-ms-input-placeholder, #mtslack .c-slider__input--focus-visible:focus::-ms-thumb::-moz-placeholder, #mtslack .c-slider__input--focus-visible:focus::-ms-thumb::-webkit-input-placeholder {
       color: var(--disabled); }
   #mtslack .c-color_picker__container {
-    border: 1px solid var(--active); }
-    #mtslack .c-color_picker__container:focus {
+    border: 1px solid var(--active);
+    background: var(--contrast);
+    color: var(--text);
+    max-width: 238px; }
+    #mtslack .c-color_picker__container:focus, #mtslack .c-color_picker__container:focus-within {
       box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
-      #mtslack .c-color_picker__container:focus:-moz-placeholder, #mtslack .c-color_picker__container:focus:-ms-input-placeholder, #mtslack .c-color_picker__container:focus::-moz-placeholder, #mtslack .c-color_picker__container:focus::-webkit-input-placeholder {
+      #mtslack .c-color_picker__container:focus:-moz-placeholder, #mtslack .c-color_picker__container:focus:-ms-input-placeholder, #mtslack .c-color_picker__container:focus::-moz-placeholder, #mtslack .c-color_picker__container:focus::-webkit-input-placeholder, #mtslack .c-color_picker__container:focus-within:-moz-placeholder, #mtslack .c-color_picker__container:focus-within:-ms-input-placeholder, #mtslack .c-color_picker__container:focus-within::-moz-placeholder, #mtslack .c-color_picker__container:focus-within::-webkit-input-placeholder {
         color: var(--disabled); }
     #mtslack .c-color_picker__container[disabled] {
       background: var(--excluded);
@@ -3021,6 +3032,12 @@
       box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
       #mtslack .c-color_picker__container.c-color_picker__container--focus-within:-moz-placeholder, #mtslack .c-color_picker__container.c-color_picker__container--focus-within:-ms-input-placeholder, #mtslack .c-color_picker__container.c-color_picker__container--focus-within::-moz-placeholder, #mtslack .c-color_picker__container.c-color_picker__container--focus-within::-webkit-input-placeholder {
         color: var(--disabled); }
+    #mtslack .c-color_picker__container input {
+      border-left: none;
+      border-radius: 4px; }
+      #mtslack .c-color_picker__container input:focus {
+        border-width: 1px;
+        border-color: var(--active); }
   #mtslack .c-color_picker__color_block {
     border: 1px solid var(--active);
     background: var(--border); }
@@ -3033,9 +3050,9 @@
       border: 1px solid var(--active); }
   #mtslack .c-color_picker__container--focus-within .c-color_picker__color_block {
     border-color: var(--primary); }
-  #mtslack .c-color_picker__input[type=text] {
+  #mtslack .c-color_picker__input[type='text'] {
     color: var(--fg); }
-    #mtslack .c-color_picker__input[type=text]::-webkit-input-placeholder, #mtslack .c-color_picker__input[type=text]:-moz-placeholder, #mtslack .c-color_picker__input[type=text]::-moz-placeholder, #mtslack .c-color_picker__input[type=text]:-ms-input-placeholder, #mtslack .c-color_picker__input[type=text]::-webkit-input-placeholder, #mtslack .c-color_picker__input[type=text]::-moz-placeholder, #mtslack .c-color_picker__input[type=text]::-ms-input-placeholder, #mtslack .c-color_picker__input[type=text]::placeholder {
+    #mtslack .c-color_picker__input[type='text']::-webkit-input-placeholder, #mtslack .c-color_picker__input[type='text']:-moz-placeholder, #mtslack .c-color_picker__input[type='text']::-moz-placeholder, #mtslack .c-color_picker__input[type='text']:-ms-input-placeholder, #mtslack .c-color_picker__input[type='text']::-webkit-input-placeholder, #mtslack .c-color_picker__input[type='text']::-moz-placeholder, #mtslack .c-color_picker__input[type='text']::-ms-input-placeholder, #mtslack .c-color_picker__input[type='text']::placeholder {
       color: var(--disabled); }
   #mtslack .c-color_picker__popover {
     background: var(--bg); }
