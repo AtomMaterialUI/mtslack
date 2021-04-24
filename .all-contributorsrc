@@ -6,6 +6,15 @@
   "commit": false,
   "contributors": [
     {
+      "login": "jlevier",
+      "name": "jlevier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74258557?v=4",
+      "profile": "https://github.com/jlevier",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
       "login": "sid-maddy",
       "name": "Siddhesh Mhadnak",
       "avatar_url": "https://avatars.githubusercontent.com/u/10049286?v=4",
