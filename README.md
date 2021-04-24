@@ -228,6 +228,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/jlevier"><img src="https://avatars.githubusercontent.com/u/74258557?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jlevier</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Ajlevier" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/sid-maddy"><img src="https://avatars.githubusercontent.com/u/10049286?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhesh Mhadnak</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Asid-maddy" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
