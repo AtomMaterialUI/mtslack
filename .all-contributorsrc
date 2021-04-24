@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jlevier",
+      "name": "jlevier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74258557?v=4",
+      "profile": "https://github.com/jlevier",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mtslack",
+  "projectOwner": "mallowigi",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
