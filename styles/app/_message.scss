@@ -55,7 +55,9 @@
   }
 }
 
-.c-message--focus-within:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+.c-message--focus-within:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight),
+.c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight),
+.c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
   background-color: $bg2;
 }
 
@@ -75,11 +77,13 @@
   background: $active;
 }
 
-.c-message--ephemeral, .c-message--sli_highlight_negative {
+.c-message--ephemeral,
+.c-message--sli_highlight_negative {
   background: $bg2;
 }
 
-.c-message--highlight, .c-message--highlight_yellow_bg {
+.c-message--highlight,
+.c-message--highlight_yellow_bg {
   background: $selectBg;
 }
 
@@ -242,14 +246,29 @@
   color: $text;
 }
 
-.c-message__reply_bar--focus-within .c-message__reply_bar_view_thread {
+.c-message__reply_bar--focus-within .c-message__reply_bar_view_thread,
+.c-message__reply_bar:hover .c-message__reply_bar_view_thread {
   background-color: $contrast;
 }
 
+.c-message__reply_bar--progressive-disclosure-tip-wrapper,
 .c-message__reply_bar {
   &:hover .c-message__reply_bar_view_thread {
     background-color: $contrast;
   }
+
+  .c-message__reply_bar_progressive_disclosure_flag {
+    color: $fg;
+    background: $contrast;
+
+    &:before {
+      background: $contrast;
+    }
+  }
+}
+
+.c-message_kit__background--hovered .c-message__reply_bar_progressive_disclosure_flag:before {
+  background: $contrast;
 }
 
 .c-message__reply_bar_description {
@@ -398,7 +417,8 @@ a.c-message__call_name--linked {
 .p-message_pane__search_tip_banner_action {
   color: $text;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background: $accent;
   }
 }
@@ -423,4 +443,12 @@ a.c-message__call_name--linked {
   to {
     background: transparent;
   }
+}
+
+.p-message_types__context {
+  background-color: $excluded;
+}
+
+.c-message_kit__labels--message_type .c-message_kit__labels__icon {
+  color: $accent;
 }

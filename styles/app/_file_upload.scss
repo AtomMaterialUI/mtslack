@@ -223,3 +223,12 @@
 .p-recently_uploaded_files.c-menu_item__button--highlighted .p-recently_uploaded_files__datestamp {
   color: $selectFg;
 }
+
+.p-file_upload_malware_dialog__alert {
+  background: $excluded;
+  border: 1px solid $orange;
+
+  .p-file_upload_malware_dialog__alert_warning_icon {
+    color: $orange;
+  }
+}

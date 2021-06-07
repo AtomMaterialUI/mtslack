@@ -22,7 +22,9 @@
   color: $bg;
 }
 
-.p-dnd_menu__new_pill {
+.p-dnd_menu__new_pill,
+.p-dnd_menu__set_notif_schedule--prog-disc-tip:not(.c-menu_item__li--highlighted
+    .p-dnd_menu__set_notif_schedule--prog-disc-tip) {
   background-color: $button;
   color: $primary;
 }
