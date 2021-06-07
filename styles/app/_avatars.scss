@@ -105,6 +105,28 @@
   color: $text;
 }
 
+.p-avatar_stack--details {
+  box-shadow: 0 0 0 1px $bg;
+  color: $text;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $button 0 1px 3px 0 $button;
+    background-color: $button;
+
+    .p-avatar_stack__avatar {
+      box-shadow: 0 0 0 2px $button;
+    }
+  }
+
+  &:active {
+    background-color: $primary;
+
+    .p-avatar_stack__avatar {
+      box-shadow: 0 0 0 2px $active;
+    }
+  }
+}
+
 .p-avatar_stack--channel-details {
   border: 1px solid $button;
 

@@ -1,0 +1,11 @@
+.p-end_dm_dialog_learn_more {
+  color: $fg;
+
+  .link {
+    color: $accent2;
+  }
+
+  &:hover {
+    color: $selectFg;
+  }
+}
