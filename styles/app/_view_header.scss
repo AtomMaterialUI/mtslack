@@ -1,20 +1,95 @@
 .p-view_header {
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: $contrast;
+  border-bottom: 1px solid $borderLight;
 }
 
 .p-view_header__big_button {
-  &:not(.p-view_header__big_button--inactive):hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  &:not(.p-view_header__big_button--inactive) {
+    &:hover {
+      background-color: $button;
+    }
+
+    &:active {
+      background-color: $hl;
+    }
   }
 }
 
 .p-view_header__avatar__presence--stroke {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  -webkit-text-stroke: 6px rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $bg;
+  -webkit-text-stroke: 6px $bg;
 }
 
 .p-view_header__menu {
   .p-about_modal__mpdm_avatars .p-about_modal__member_avatar img {
-    border-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    border-color: $bg2;
   }
+}
+
+.p-view_header__member_name {
+  color: $fg;
+}
+
+.p-view_header__big_button {
+  &:hover .p-view_header__avatar__presence--stroke {
+    color: $bg2;
+    -webkit-text-stroke: 4px $bg2;
+  }
+
+  &:active .p-view_header__avatar__presence--stroke {
+    color: $active;
+    -webkit-text-stroke: 4px $active;
+  }
+}
+
+.p-view_header__avatar__presence--stroke.c-presence--away:after {
+  background-color: $bg;
+}
+
+.p-view_header__big_button {
+  &:hover .p-view_header__avatar__presence--stroke.c-presence--away:after {
+    background-color: $bg2;
+  }
+
+  &:active .p-view_header__avatar__presence--stroke.c-presence--away:after {
+    background-color: $active;
+  }
+}
+
+.p-view_header__big_button__tooltip_topic {
+  color: $text;
+}
+
+.p-view_header__topic_container {
+  color: $text;
+}
+
+.p-view_header__actions {
+  background: $contrast;
+}
+
+.p-view_header .p-ia__view_header__button:not(.p-ia__view_header__button--close_tile) {
+  color: $fg;
+}
+
+.p-view_header_channel_section_selector {
+  &:hover {
+    background-color: $button;
+  }
+
+  .c-icon--star-o {
+    color: $text;
+  }
+
+  .c-icon--star {
+    color: $primary;
+  }
+}
+
+.p-view_header_channel_section_selector__tooltip_section_name {
+  color: $primary;
+}
+
+.p-view_header--with-bookmarks-bar {
+  background: $contrast;
 }

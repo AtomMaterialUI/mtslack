@@ -25,3 +25,33 @@
     border-bottom-color: $notif;
   }
 }
+
+.p-admin_channel_modal__copy_members__copied {
+  color: $green;
+}
+
+.p-manage_org_access_modal--workspace_access_heading {
+  border-top: 1px solid $borderLight;
+}
+
+.p-apps_in_channel_contents__list_item {
+  &:hover {
+    background-color: $bg2;
+  }
+}
+
+.p-apps_in_channel_contents__list--indicate-top {
+  border-top: 1px solid $borderLight;
+}
+
+.p-apps_in_channel_contents__loading {
+  color: $fg;
+}
+
+.p-channel_details__placeholder_avatar {
+  background-color: $text;
+}
+
+.p-channel_details__placeholder_line {
+  background-color: $text;
+}
