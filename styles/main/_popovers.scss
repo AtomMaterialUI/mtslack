@@ -46,6 +46,27 @@
   color: $fg;
   border-top: 1px solid $borderLight;
   background: $bg;
+
+  h3 {
+    color: $text;
+  }
+}
+
+.p-ia_details_popover__members_list_item_member--non-channel {
+  background: $bg2;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-ia_details_popover__add_member_icon {
+  background: $button;
+  color: $accent;
+}
+
+.p-ia_details_popover__members_search_input_wrapper--scrolled {
+  border-bottom: 1px solid $hl;
 }
 
 .p-ia_details_popover__members_list_item_button {
@@ -195,6 +216,22 @@
 
 .p-ia_details_popover__members--non-channel-results {
   background: $bg;
+
+  .p-ia_details_popover__members_list {
+    background: $bg2;
+  }
+
+  .p-ia_details_popover__members_list_item_heading {
+    background: $bg;
+  }
+
+  .p-ia_details_popover__members_list_item_heading--out_of_channel {
+    background: $bg2;
+  }
+
+  .p-ia_details_popover__members_list__empty_state {
+    background: $bg;
+  }
 }
 
 .p-ia_details_popover--members {
@@ -258,5 +295,17 @@
 
   &:hover {
     color: $red;
+  }
+}
+
+.p-ia_details_popover__members {
+  background: $bg;
+}
+
+.p-ia_details_popover__members_list_item {
+  background: $bg;
+
+  &:not(.p-ia_details_popover__members_list_item--no_hover):hover {
+    background: $bg2;
   }
 }

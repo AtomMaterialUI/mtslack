@@ -1,3 +1,17 @@
+.c-new_locale_toast {
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+}
+
+.c-new_locale_toast__close_button.c-toast__close-button {
+  color: $fg;
+  background: $notif;
+}
+
+.c-new_locale_toast .c-link--button:hover,
+.c-new_locale_toast__close_button:hover {
+  color: $accent2;
+}
+
 .c-new_locale_toast__close_button,
 .c-new_locale_toast__close_button.c-toast__close-button {
   color: $fg;
@@ -11,14 +25,6 @@
 
 .c-sk-modal {
   background-color: $bg;
-  opacity: 0;
-  transition: opacity 80ms linear, transform 80ms cubic-bezier(0.36, 0.19, 0.29, 1);
-  transform: scale(0.95);
-}
-
-.c-sk-modal.ReactModal__Content--after-open:not(.ReactModal__Content--before-close) {
-  transform: scale(1);
-  opacity: 1;
 }
 
 .c-sk-modal__close_button--inverted {
@@ -40,6 +46,7 @@
   background-color: $bg;
 }
 
-.c-new_locale_toast .c-link--button:hover, .c-new_locale_toast__close_button:hover {
+.c-new_locale_toast .c-link--button:hover,
+.c-new_locale_toast__close_button:hover {
   color: $primary;
 }

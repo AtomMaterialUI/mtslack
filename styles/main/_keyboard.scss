@@ -1,7 +1,17 @@
-.c-keyboard_key,
-.c-keyboard_key--dark {
-  background: $button;
-  color: $fg;
-  border: 1px solid $borderLight;
-  box-shadow: 0 1px 0 $borderLight;
+.p-client_desktop--ia-top-nav {
+  .c-keyboard_key,
+  .c-keyboard_key--dark {
+    background: $button;
+    color: $fg;
+    border: 1px solid $borderLight;
+    box-shadow: 0 1px 0 $borderLight;
+  }
+
+  .c-keyboard_key__tooltip_text {
+    color: $text;
+  }
+
+  .p-file_viewer__header {
+    border-bottom: 1px solid $hl;
+  }
 }

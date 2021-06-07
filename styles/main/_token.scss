@@ -11,7 +11,6 @@
       color: $selectFg;
       background: $primary;
     }
-
   }
 }
 
@@ -28,15 +27,20 @@
   }
 }
 
-.c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
-  background: $accentT;
-  color: $selectFg;
+.c-token--selected {
+  &:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
+    background: $accentT;
+    color: $selectFg;
 
-  &:hover {
-    background: $accent;
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  .c-app_badge {
+    color: $selectFg;
   }
 }
-
 
 .c-token--dark.c-token--invalid,
 .c-token--invalid {
@@ -135,4 +139,8 @@
 
 .p-border {
   border-bottom: 1px solid $borderLight;
+}
+
+.c-base_list_entity--highlight-dark .c-small_mpim_entity__mpim_counter {
+  box-shadow: 0 0 0 2px $primary;
 }
