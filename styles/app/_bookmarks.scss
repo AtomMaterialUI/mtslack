@@ -1,5 +1,6 @@
 .p-bookmarks_bar {
   background: $contrast;
+  @include shadow;
 
   .c-button-unstyled:hover {
     background: $button;
@@ -11,22 +12,6 @@
   border: 1px solid $borderLight;
   box-shadow: 0 0 4px $borderLight;
 }
-
-//.p-bookmarks_bar__placeholder_holder--icon {
-//  background: rgba(133, 128, 133, 0.13);
-//}
-//
-//.p-bookmarks_bar__placeholder_holder--text {
-//  background-color: rgba(133, 128, 133, 0.13);
-//  background-image: linear-gradient(
-//    90deg,
-//    rgba(133, 128, 133, 0.13) 0,
-//    rgba(122, 118, 122, 0.13) 20%,
-//    rgba(133, 128, 133, 0.13) 40%,
-//    rgba(133, 128, 133, 0.13)
-//  );
-//  background-repeat: no-repeat;
-//}
 
 .p-bookmarks_bar__pins_popover_button__icon {
   color: $fg;
@@ -66,4 +51,182 @@
   &::after {
     background-color: $contrast;
   }
+}
+
+.p-bookmarks_bar--with-hide-on-scroll {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-bookmarks_bar__item {
+  color: $fg;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__retry {
+  color: $disabled;
+}
+
+.p-bookmarks_bar__bookmark {
+  color: $fg;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__bookmark--dragging {
+  background: none !important;
+  color: $text !important;
+}
+
+.p-bookmarks_bar__bookmark__icon {
+  background: $contrast;
+  border: 1px solid var(--saf-0);
+}
+
+.p-bookmarks_bar__bookmark__tooltip_url {
+  color: $accent2;
+}
+
+.p-bookmarks_bar__add_bookmark_button {
+  color: $text;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button--add_new {
+  color: $text;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button__add_new_bookmark .c-menu_item__icon,
+.p-bookmarks_bar__add_bookmark_button__suggested_bookmark .c-menu_item__icon {
+  background: $accent;
+}
+
+.p-bookmarks_bar__add_bookmark_button__add_new_bookmark {
+  &.c-menu_item__button--highlighted .c-icon:before,
+  &.c-menu_item__button .c-icon:before {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button__suggested_bookmark {
+  &.c-menu_item__button--highlighted .c-icon:before,
+  &.c-menu_item__button .c-icon:before {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button--hovering .c-button-unstyled {
+  background: $button;
+  color: $fg;
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button button {
+  color: $fg;
+
+  &:active {
+    background-color: $hl;
+  }
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button__item {
+  &.c-menu_item__button--highlighted .p-bookmarks_bar__bookmark {
+    color: $accent;
+
+    .p-bookmarks_bar__bookmark__icon {
+      color: $fg;
+    }
+
+    &:active {
+      background: none;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_left {
+  border-left: 2px solid $hl;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_right {
+  border-right: 2px solid $hl;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_bottom {
+  border-bottom: 2px solid $hl !important;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_top {
+  border-top: 2px solid $hl !important;
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
+  color: $primary;
+}
+
+.p-bookmarks_bar__collapsed_bookmarks__add_bookmarks_option.c-menu_item__button--highlighted {
+  .p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__pins_popover_button {
+  color: $primary;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar_modal__input_section_title__container__image__icon {
+  color: $primary;
+}
+
+.p-bookmarks_bar_modal__bookmarks_intro {
+  background: $bg2;
+}
+
+.p-bookmarks_bar_modal__bookmarks_intro--dark {
+  background: $bg2;
+}
+
+.p-bookmarks_bar__meetings_popover_button {
+  color: $fg;
+}
+
+.p-bookmarks_bar__meetings_popover_button__icon {
+  color: $fg;
+}
+
+.p-tiles__container--has_primary_tile {
+  background: $bg2;
+  border-left: 1px solid $borderLight;
+
+  .p-tiles__tile {
+    background: $bg;
+  }
+
+  .p-tiles__tile {
+    &:not(.p-tiles__tile--primary) {
+      box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+
+      &.p-tiles__tile--active {
+        box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+      }
+    }
+  }
+}
+
+.p-tiles__minimized_tile {
+  box-shadow: 0 0 0 1px $primary, 0 18px 48px 0 $primaryT;
 }
