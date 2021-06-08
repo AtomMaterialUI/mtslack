@@ -127,13 +127,13 @@
   &.c-button--disabled {
     background: $bg;
     color: $disabled;
-    border-color: $disabled;
+    border-color: $bg;
 
     &:active,
     &:hover {
-      background: $active;
+      background: $bg;
       color: $fg;
-      border-color: $active;
+      border-color: $bg;
     }
   }
 }
@@ -215,13 +215,13 @@
   }
 
   &.c-button--disabled {
-    background: $button;
+    background: $bg;
     color: $disabled;
   }
 
   &.c-button--disabled:active,
   &.c-button--disabled:hover {
-    background: $hl;
+    background: $bg;
     color: $fg;
   }
 }
@@ -254,17 +254,29 @@
 
     &:active,
     &:hover {
-      background: $active;
-      color: $fg;
-      border-color: $active;
+      background: $bg;
+      color: $selectFg;
+      border-color: $bg;
     }
   }
 }
 
+.p-about_modal__badge {
+  color: $primary;
+  background-color: $excluded;
+}
+
 .sk-client-theme--dark .c-button--disabled,
 .c-button--disabled {
-  background: $excluded;
+  background: $bg;
   color: $disabled;
+
+  &:active,
+  &:hover {
+    background: $bg;
+    color: $fg;
+    border-color: $bg;
+  }
 }
 
 .c-button--focus-visible:focus {

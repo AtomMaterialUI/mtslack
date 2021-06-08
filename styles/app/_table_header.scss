@@ -115,3 +115,7 @@
 .c-table_view_all_rows_container .c-table_view_row_container {
   border-bottom-color: $borderLight;
 }
+
+.c-virtualized_table__scroll-indicator {
+  background-image: linear-gradient(90deg, $bg2, $bg2 25%, transparent);
+}

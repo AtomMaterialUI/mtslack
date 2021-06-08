@@ -119,10 +119,10 @@
   }
 
   &:active {
-    background-color: $primary;
+    background-color: $hl;
 
     .p-avatar_stack__avatar {
-      box-shadow: 0 0 0 2px $active;
+      box-shadow: 0 0 0 2px $hl;
     }
   }
 }

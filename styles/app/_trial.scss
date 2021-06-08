@@ -197,3 +197,103 @@
 .sk-client-theme--dark .p-message_limit_trial_offer_banner__icon {
   color: $primary;
 }
+
+.p-trial_modal_coachmark {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark {
+  background-color: $notif;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-trial_modal_coachmark:before {
+  background: $notif;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark:before {
+  border-right: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  background: $notif;
+}
+
+.p-trial_modal_coachmark__icon {
+  color: $primary;
+}
+
+.p-trial_modal_coachmark__label {
+  color: $text;
+}
+
+.p-trial_modal_coachmark__heading {
+  color: $fg;
+}
+
+.p-survey_cancellation__option_label_subtext {
+  color: $text;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content {
+  background-color: $notif;
+  border-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--left:before {
+  border-left-color: $borderLight;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--left:before {
+  border-left-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--left:after {
+  border-left-color: $notif;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--left:after {
+  border-left-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content__message_body {
+  color: $text;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content__icon {
+  color: $primary;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content__icon {
+  color: $primary;
+}
+
+.p-trial_slack_connect_hub_trial_offer_banner {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-trial_slack_connect_hub_trial_offer_banner__description {
+  color: $text;
+}
+
+.p-trial_slack_connect_hub_in_trial_learn_more_banner {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-trial_slack_connect_hub_in_trial_learn_more_banner__description {
+  color: $text;
+}
