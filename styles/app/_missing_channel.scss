@@ -1,6 +1,6 @@
 .c-missing_channel--medium_hash {
   &:before {
-    color: $text
+    color: $text;
   }
 }
 
@@ -13,7 +13,6 @@
   background: none;
   border: 1px solid $active;
 }
-
 
 .c-missing_team--unknown {
   background: $active;
@@ -31,4 +30,9 @@
 .c-missing_text--non_existent_inverted {
   background: none;
   border: 1px solid $active;
+}
+
+.c-missing_channel--private {
+  background-color: $bg;
+  color: $text;
 }

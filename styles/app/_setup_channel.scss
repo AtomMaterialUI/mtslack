@@ -58,6 +58,10 @@
   color: $disabled;
 }
 
+.sk-client-theme--dark .p-setup_channel_examples_header__title .highlight_aubergine {
+  color: $primary;
+}
+
 .p-setup_channel_examples_header {
   .p-setup_channel_examples_header__channel_icon {
     background-color: $bg2;
@@ -132,4 +136,12 @@
 
 .p-setup_channel_examples__is_typing {
   color: $text;
+}
+
+.sk-client-theme--dark .p-setup_channel_examples_narrator__text {
+  color: $fg;
+
+  strong {
+    color: $accent;
+  }
 }

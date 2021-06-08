@@ -448,7 +448,25 @@ input[type='text'].c-input_text {
   }
 
   .p-shared_invite_creator_welcome_modal__header--channel {
-    background: rgba(29, 155, 209, 0.1);
+    background: $excluded;
     color: $primary;
   }
+}
+
+.p-shared_channel_invite_flow_modal_tip__container {
+  border-top: 1px solid $borderLight;
+}
+
+.p-shared_channel_invite_flow_modal_tip__icon {
+  background-color: $button;
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-shared_channel_invite_flow_modal_tip__icon {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-shared_channel_invite_flow_modal_tip__text {
+  color: $text;
 }

@@ -128,3 +128,114 @@
 .p-r_member_profile_section {
   border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
 }
+
+.p-rimeto_org_chart_page {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-rimeto_org_chart_page_row {
+  &.reports {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-rimeto_org_chart_page_row_arrow {
+  background: #fff;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0);
+
+  &:active,
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.p-rimeto_org_chart_page_row_member_cards {
+  &.reports_container {
+    border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+
+  &.valid_cards {
+    border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+
+  &.reports {
+    grid-template-columns: repeat(3, 128px);
+  }
+}
+
+.p-rimeto_org_chart_member_card {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0);
+
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:active {
+    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 2px var(--saf-0);
+
+    .p-rimeto_org_chart_member_card_name,
+    .p-rimeto_org_chart_member_card_title {
+      color: #fff;
+    }
+
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+
+    &:hover {
+      --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+      box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+    }
+  }
+}
+
+.p-rimeto_org_chart_member_card_outline {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 2px var(--saf-0);
+
+  &:active,
+  &:hover {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+  }
+}
+
+.p-rimeto_org_chart_member_card_selected {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+
+  .p-rimeto_org_chart_member_card_name,
+  .p-rimeto_org_chart_member_card_title {
+    color: #fff;
+  }
+}
+
+.p-rimeto_org_chart_member_card_name {
+  font-family: Slack-Lato, appleLogo, sans-serif;
+}
+
+.p-rimeto_org_chart_member_card_reports {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  --saf-1: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 2px 8px 0 var(--saf-1);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-rimeto_org_chart_member_card_tick {
+  border-right: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-rimeto_org_chart_member_card_dim {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  -webkit-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+}
