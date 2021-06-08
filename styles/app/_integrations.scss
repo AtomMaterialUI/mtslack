@@ -1,0 +1,13 @@
+.p-integrations__icon_container {
+  background-color: $button;
+}
+
+.p-integrations__icon {
+  color: $primary;
+}
+
+.p-integrations__list_entity_row {
+  &:not(.p-integrations__list_entity_row--disabled):hover {
+    background-color: $bg2;
+  }
+}
