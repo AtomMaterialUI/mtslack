@@ -39,7 +39,6 @@
   box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.4);
 }
 
-
 .p-classic_nav__team_messages_limit_meter__separator {
   border-top: 2px $borderLight solid;
 }
@@ -57,7 +56,7 @@
 }
 
 .p-classic_nav__model__title__name__tabs__workspace {
-  background: $bg2;
+  background: $contrast;
   color: $fg;
 }
 
@@ -70,7 +69,8 @@
 }
 
 .p-classic_nav__model__title__name__unmute {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $red;
   }
 }
@@ -88,25 +88,29 @@
 }
 
 .p-classic_nav__model__title__info__star {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $yellow;
   }
 }
 
 .p-classic_nav__model__title__info__members {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $primary;
   }
 }
 
 .p-classic_nav__model__title__info__pins {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $primary;
   }
 }
 
 .p-classic_nav__model__title__info__shared_teams {
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $primary;
   }
 }
@@ -157,7 +161,8 @@
 .p-classic_nav__model__menu__jump__back {
   border-top: 1px solid $border;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $primary;
   }
 }
@@ -201,7 +206,8 @@
 }
 
 .p-classic_nav__right__search:hover .p-classic_nav__right__search__placeholder,
-.p-classic_nav__right__search:not(.p-classic_nav__right__search--dark):hover .p-classic_nav__right__search__placeholder {
+.p-classic_nav__right__search:not(.p-classic_nav__right__search--dark):hover
+  .p-classic_nav__right__search__placeholder {
   color: $fg;
 }
 
@@ -262,7 +268,8 @@
   color: $selectFg;
 }
 
-.p-classic_nav__tip_shortcut, .p-classic_nav__tip_sub {
+.p-classic_nav__tip_shortcut,
+.p-classic_nav__tip_sub {
   color: $text;
 }
 
@@ -295,11 +302,13 @@
   color: $primary;
 }
 
-.c-message_stats__msg__nav_next, .c-message_stats__msg__nav_prev {
+.c-message_stats__msg__nav_next,
+.c-message_stats__msg__nav_prev {
   color: $fg;
 }
 
-.c-message_stats__msg__nav_next:disabled, .c-message_stats__msg__nav_prev:disabled {
+.c-message_stats__msg__nav_next:disabled,
+.c-message_stats__msg__nav_prev:disabled {
   color: $disabled;
 }
 
@@ -313,4 +322,26 @@
 
 .p-shared_channel_trial_banner--persistent_edu {
   background-color: $notif;
+}
+
+.p-classic_nav__model__title__name__tabs__workspace_ia {
+  @include shadow;
+
+  .p-bookmarks_bar__pins_popover_button_wrapper {
+    &:before {
+      border-left: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-classic_nav__model__title__name--active {
+  color: $fg;
+}
+
+.p-ia__view_header--with-bookmarks-bar {
+  background: $contrast;
+}
+
+.p-ia__view_header__button--huddles {
+  border: 1px solid $borderLight;
 }
