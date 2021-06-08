@@ -23,3 +23,12 @@
 .p-mixed_results_module__feedback_link .c-link--button {
   color: $text;
 }
+
+.p-mixed_results_module--channel_result {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}

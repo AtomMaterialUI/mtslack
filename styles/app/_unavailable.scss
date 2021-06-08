@@ -6,3 +6,13 @@
 .p-unavailable_channel_content {
   color: $text;
 }
+
+.p-unverified_disclosure--pillow {
+  box-shadow: 0 0 0 1px $primaryT;
+  background: $bg;
+  color: $fg;
+}
+
+.p-unverified_disclosure__icon {
+  color: $text;
+}

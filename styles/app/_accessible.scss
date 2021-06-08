@@ -1,0 +1,72 @@
+.c-accessible_multi_select_input {
+  border: 1px solid $borderLight;
+  background-color: $contrast;
+  color: $fg;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $bg2;
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-accessible_multi_select_input--disabled {
+  background: $bg2;
+}
+
+.c-accessible_multi_select_input--focused {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+  &:-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
+    color: $disabled;
+  }
+}
+
+.c-accessible_multi_select_input--invalid {
+  border-color: $red;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red2;
+  }
+
+  &.c-accessible_multi_select_input--focused {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red2;
+    border-radius: 4px;
+  }
+}
+
+.c-accessible_multi_select_input__placeholder {
+  color: $disabled;
+}
+
+.c-accessible_multi_select_input__remove_token {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+    background-color: $button;
+  }
+}
+
+.c-accessible_multi_select_input .c-token--selected .c-accessible_multi_select_input__remove_token {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+    background-color: $button;
+  }
+}

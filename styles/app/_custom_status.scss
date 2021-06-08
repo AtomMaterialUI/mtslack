@@ -136,18 +136,18 @@
 }
 
 .p-custom_status_modal__preset_container {
-  &.p-custom_status_modal__preset_container--active, &:focus-within, &:hover {
+  &.p-custom_status_modal__preset_container--active,
+  &:focus-within,
+  &:hover {
     background: $accent;
     color: $selectFg;
   }
-
 
   &.p-custom_status_modal__preset_container--active .p-custom_status_modal__preset_duration,
   &:focus-within .p-custom_status_modal__preset_duration,
   &:hover .p-custom_status_modal__preset_duration {
     color: $selectFg;
   }
-
 }
 
 .p-custom_status_modal__preset {
@@ -175,7 +175,7 @@
 }
 
 .p-ia__main_menu__custom_status_item--empty:not(.p-ia__main_menu__custom_status_item--highlighted-kb)
-.p-ia__main_menu__custom_status_button:not(:hover) {
+  .p-ia__main_menu__custom_status_button:not(:hover) {
   color: $text;
 }
 
@@ -200,5 +200,11 @@
 
   &:hover {
     color: $fg;
+  }
+}
+
+.p-custom_status_modal__pause_notifications {
+  .c-label__text {
+    color: $text;
   }
 }
