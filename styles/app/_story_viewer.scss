@@ -180,6 +180,20 @@
   color: $selectFg;
 }
 
+.p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on {
+  background: #1264a3;
+  color: #fff;
+
+  .p-stories_uploader__footer__control__icon {
+    background: #1264a3;
+    color: #fff;
+  }
+
+  &:hover {
+    background: #0d4875;
+  }
+}
+
 .p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on
   .p-stories_uploader__footer__control__icon {
   background: $accent;
@@ -268,8 +282,12 @@
 
 .p-story_viewer_modal__header {
   @include pane;
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 1px 0 var(--saf-0);
 }
 
+.p-story_viewer_modal__header__separator,
 .p-story_viewer_modal__header__divider {
   background: $borderLight;
 }
@@ -460,6 +478,21 @@
   &:hover {
     background: rgba(0, 0, 0, 0.5);
   }
+}
+
+.p-stories_uploader__footer__control {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  border: 1px solid transparent;
+
+  &:not(:disabled):hover {
+    --saf-0: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    border: 1px solid var(--saf-0);
+  }
+}
+
+.p-stories_uploader--recording .p-stories_uploader__footer__control {
+  background: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.4);
+  color: #fff;
 }
 
 .p-stories_uploader--new {
@@ -778,4 +811,29 @@
     background: rgba(var(--sk_highlight, 18, 100, 163), 1);
     color: #fff;
   }
+}
+
+.p-story_message_file__poster__content {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.p-story_message_file__controls {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-stories_uploader__countdown {
+  background: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.p-stories_uploader__countdown_number {
+  color: #fff;
+}
+
+.p-story_viewer_add_annotation_popover {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
 }

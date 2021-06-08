@@ -59,3 +59,13 @@
     color: #000;
   }
 }
+
+.p-story_video_controls__control[disabled] {
+  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-story_video_controls__captions_icon--on,
+.p-story_video_controls__control:not([disabled]) .p-story_video_controls__captions_icon:hover {
+  --saf-0: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+  box-shadow: inset 0 0 0 1px var(--saf-0);
+}

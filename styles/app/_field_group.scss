@@ -1,0 +1,63 @@
+.p-field_group {
+  background: $bg2;
+  border: 1px solid $borderLight;
+
+  .p-field {
+    + .p-field {
+      border-top: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-field_group__banner {
+  background: $bg;
+  color: $primary;
+
+  &:before {
+    background: $excluded;
+    border: 1px solid $primary;
+  }
+}
+
+.p-field_group__banner_icon {
+  color: $primary;
+}
+
+.p-field--button {
+  &:focus,
+  &:hover:not(.p-field--disabled) {
+    color: $selectFg;
+  }
+}
+
+.p-field--editable {
+  &:focus,
+  &:hover:not(.p-field--disabled) {
+    color: $selectFg;
+  }
+}
+
+.p-field--button:hover:not(.p-field--disabled),
+.p-field--editable:hover:not(.p-field--disabled) {
+  background-color: $hl;
+}
+
+.p-field--type_danger {
+  &:hover:not(.p-field--disabled),
+  &:not(.p-field--disabled) {
+    color: $red;
+  }
+}
+
+.p-field--disabled {
+  color: $disabled;
+}
+
+.p-field__edit_link,
+.p-field__title_link {
+  color: $accent2;
+}
+
+.p-field__side_image {
+  background-color: $excluded;
+}
