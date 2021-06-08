@@ -16,12 +16,40 @@
   color: $disabled;
 }
 
-.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected .p-channel_sidebar__mpim_counter {
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim.p-channel_sidebar__channel--selected
+  .p-channel_sidebar__mpim_counter {
   background: $button;
   box-shadow: none;
 }
 
-.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter .p-channel_sidebar__mpim_counter_inner,
-.p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy:not(.p-channel_sidebar__channel_icon_prefix--comfy-extra) {
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim
+  .p-channel_sidebar__mpim_counter
+  .p-channel_sidebar__mpim_counter_inner,
+.p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing)
+  .p-channel_sidebar__channel_icon_prefix--comfy:not(.p-channel_sidebar__channel_icon_prefix--comfy-extra) {
   background: $contrast;
+}
+
+.c-small_mpim_entity__mpim_counter {
+  color: $text;
+  background-color: $bg2;
+  box-shadow: 0 0 0 2px $bg2;
+}
+
+.c-small_mpim_entity__mpim_avatars {
+  &.c-small_mpim_entity__mpim_avatars--dark .c-small_mpim_entity__mpim_counter {
+    background-color: $bg2;
+  }
+
+  &.c-small_mpim_entity__mpim_avatars--inverted {
+    &.c-small_mpim_entity__mpim_avatars--dark .c-small_mpim_entity__mpim_counter {
+      box-shadow: 0 0 0 2px $accent;
+    }
+
+    .c-small_mpim_entity__mpim_counter {
+      background-color: $accent;
+      box-shadow: 0 0 0 2px $primaryT;
+      color: $selectFg;
+    }
+  }
 }

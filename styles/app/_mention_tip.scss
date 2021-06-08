@@ -20,3 +20,9 @@
 .p-mention_tip_icon_lightbulb--dark {
   color: $yellow;
 }
+
+.p-setup_suggest_message--in-prog-disc-tip {
+  .p-setup_suggest_message__btn:hover {
+    background: $bg;
+  }
+}

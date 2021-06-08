@@ -209,11 +209,37 @@
           border: 1px solid $hl;
         }
       }
+
+      .c-texty_workflow_token__content {
+        color: #e01e5a;
+        background: rgba(224, 30, 90, 0.1);
+
+        &:hover {
+          background: rgba(224, 30, 90, 0.1);
+        }
+      }
     }
 
     .c-texty_workflow_token__property {
       border-left: 1px solid $accent;
       color: $text;
+    }
+
+    .c-texty_workflow_token__content {
+      background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
+      color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+
+      &:hover {
+        background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.2);
+        color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+      }
+    }
+
+    &.is-not-clickable {
+      .c-texty_workflow_token__content:hover {
+        color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+        background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
+      }
     }
   }
 }
@@ -243,4 +269,37 @@
 .c-texty_input__button_badge {
   background: $accent;
   border-color: $bg;
+}
+
+.c-texty_input .c-texty_workflow_token {
+  .c-texty_workflow_token__content {
+    background: $accentT;
+    color: $fg;
+
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+    }
+  }
+
+  .c-texty_workflow_token__property {
+    border-left: solid 1px $accent;
+    color: $text;
+  }
+
+  &.is-missing .c-texty_workflow_token__content {
+    color: $red;
+    background: $excluded;
+
+    &:hover {
+      background: $excluded;
+    }
+  }
+
+  &.is-not-clickable {
+    .c-texty_workflow_token__content:hover {
+      color: $selectFg;
+      background: $accent;
+    }
+  }
 }

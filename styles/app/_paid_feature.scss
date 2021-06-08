@@ -5,7 +5,7 @@
   &:hover {
     background-color: $hl;
     color: $selectFg;
-    border-color: $primary;
+    border-color: $hl;
   }
 }
 
@@ -102,4 +102,103 @@
 
 .p-paid_feature_invite_guest_banner--dark {
   color: $fg;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+    border-color: $hl;
+  }
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__icon {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark {
+  background-color: $notif;
+  border: 1px solid $hl;
+  color: $fg;
+
+  .c-coachmark__close i {
+    color: $fg;
+  }
+
+  &:before {
+    border-top-color: $hl;
+  }
+
+  &:after {
+    border-top-color: $notif;
+  }
+}
+
+.p-paid_feature_badge__coachmark--top:before {
+  border-top-color: $hl;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark--top:before {
+  border-top-color: $hl;
+}
+
+.p-paid_feature_badge__coachmark--top:after {
+  border-top-color: $hl;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark--top:after {
+  border-top-color: $hl;
+}
+
+.p-paid_feature_badge__coachmark--bottom:before {
+  border-bottom-color: $hl;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark--bottom:before {
+  border-bottom-color: $hl;
+}
+
+.p-paid_feature_badge__coachmark--bottom:after {
+  border-bottom-color: $hl;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark--bottom:after {
+  border-bottom-color: $hl;
+}
+
+.sk-client-theme--dark .p-paid_feature_badge__coachmark_icon {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-paid_feature_invite_member_banner {
+  background-color: $notif;
+
+  &:before {
+    border-bottom: 16px solid $notif;
+  }
+
+  border-top: 1px solid $hl;
+  border-bottom: 1px solid $hl;
+}
+
+.p-paid_feature_invite_member_banner:before {
+  background: $notif;
+}
+
+.sk-client-theme--dark .p-paid_feature_invite_member_banner:before {
+  border-right: 1px solid $hl;
+  border-bottom: 1px solid $hl;
+  background: $notif;
+}
+
+.sk-client-theme--dark .p-paid_feature_invite_member_banner__icon {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-paid_feature_invite_guest_banner {
+  background-color: $notif;
+  border: 1px solid $notif;
 }

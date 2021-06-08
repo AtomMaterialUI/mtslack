@@ -151,3 +151,12 @@
 .p-search_filter__modal_divider {
   border-bottom: 1px solid $borderLight;
 }
+
+.p-search_filter__select-label--open,
+.p-search_filter__select-label:hover {
+  color: $fg;
+}
+
+.p-search_filter__emoji_picker {
+  background-color: $bg2;
+}

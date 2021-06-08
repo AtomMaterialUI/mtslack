@@ -565,6 +565,15 @@ button.p-admin_member_table__menu_item--disabled {
       color: $selectFg;
     }
   }
+
+  &.p-browse_page_controls__toggle_button--selected:hover {
+    background-color: $hl;
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-browse_page_controls__toggle_button.p-browse_page_controls__toggle_button--selected {
+  color: $selectFg;
 }
 
 .p-browse_page_controls__toggle_background {
@@ -590,4 +599,34 @@ button.p-admin_member_table__menu_item--disabled {
 .p-browse_page_controls__toggle_button_background--right--toggled {
   border: 1px solid $button;
   background: $contrast;
+}
+
+.p-browse_page_controls__channel_files_sort--isOpen,
+.p-browse_page_controls__total:hover {
+  color: $fg;
+}
+
+.p-browse_page_controls__filter_pill {
+  &.p-browse_page_controls__filter_pill--default:hover,
+  &.p-browse_page_controls__filter_pill--isOpen {
+    background-color: $bg2;
+  }
+}
+
+.p-search_filter__block_item.p-browse_page_controls__filter_pill--active {
+  background-color: $bg2;
+}
+
+.p-browse_page_controls__button_search_link_button {
+  border: 1px solid $button;
+  background-color: $button;
+}
+
+.p-browse_page_controls__button.p-browse_page_controls__button_search_link_button {
+  border: 1px solid $button;
+  color: $fg;
+}
+
+.p-browse_page_controls__results_display_channel_files--loading {
+  color: $text;
 }

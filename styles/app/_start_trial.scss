@@ -1,3 +1,26 @@
+.sk-client-theme--dark .p-start_trial_modal_speedbump__container,
 .p-start_trial_modal_speedbump__container {
   background-color: $bg2;
+  border-top: 1px solid $bg2;
+}
+
+.p-slack_connect_dm_trial_base_banner {
+  background: $bg;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  .p-slack_connect_dm_trial_base_banner__link {
+    color: $accent2;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_base_banner__alert {
+  background-color: $bg2;
+  border-color: $bg2;
 }

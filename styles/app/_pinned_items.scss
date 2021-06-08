@@ -1,7 +1,12 @@
+.p-team_sidebar__locked_badge {
+  background: $fg;
+}
+
 .p-pinned_items__remove_item {
   color: $text;
 
-  &.c-button--focus-visible:focus, &:hover {
+  &.c-button--focus-visible:focus,
+  &:hover {
     color: $fg;
   }
 }
@@ -20,10 +25,6 @@
 
 .p-pinned_message--truncated .c-message__message_blocks {
   &:after {
-    background: linear-gradient(
-        180deg,
-        transparent 70%,
-        $bg
-    );
+    background: linear-gradient(180deg, transparent 70%, $bg);
   }
 }
