@@ -1,0 +1,12 @@
+.p-wp_card_drag_overlay {
+  background: $notif;
+  border: 4px solid $borderLight;
+}
+
+.sk-client-theme--dark .p-wp_card_drag_overlay {
+  background: $notif;
+}
+
+.p-wp_card_drag_overlay__title {
+  color: $primary;
+}

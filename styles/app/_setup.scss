@@ -207,3 +207,21 @@
 .p-setup_page__step_tada_skip {
   color: $fg;
 }
+
+.p-setup_page__content_secondary_link {
+  color: $accent2;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: $selectFg;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-setup_page__step_calendar_contact_import_loading_body {
+  color: $text;
+}
+
+.p-setup_page__content__select_teammates_step_email {
+  color: $text;
+}

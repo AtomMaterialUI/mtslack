@@ -10,7 +10,6 @@
   color: $fg;
 }
 
-
 .c-search_message--light {
   .c-search_message__sender .c-search_message__sender_link {
     color: $fg;
@@ -26,7 +25,6 @@
 .c-search_message__reactions {
   color: $text;
 }
-
 
 .c-search__input_and_close {
   background: $contrast;
@@ -52,7 +50,14 @@
   border-left: thin solid $borderLight;
 }
 
+.c-search__back_to_filters__button--v2,
 .c-search__back_to_filters--v2_button {
-  background: $button;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .13), 0 1px 3px 0 rgba(0, 0, 0, .08);
+  background: $contrast;
+  box-shadow: 0 0 0 1px $hl, 0 1px 3px 0 $hl;
+  color: $fg;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+    color: $primary;
+  }
 }

@@ -49,11 +49,14 @@
   background-color: $button;
   color: $fg;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $accent2;
   }
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     background: $selectBg;
     color: $primary;
   }
@@ -67,7 +70,8 @@
   background-color: $button;
   color: $fg;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: $active;
     color: $selectFg;
   }
@@ -82,27 +86,31 @@
 }
 
 .c-pillow_file_container {
-  background: $bg;
+  background: $button;
   border: 1px solid $border;
+  @include card;
 
-  &.c-pillow_file_container--focus-within, &:hover {
+  &.c-pillow_file_container--focus-within,
+  &:hover {
     border-color: $borderLight;
   }
 }
 
 .c-pillow_file_container--full_width {
   border-color: $borderLight;
+  @include card;
 
-  &.c-pillow_file_container--focus-within, &:hover {
+  &.c-pillow_file_container--focus-within,
+  &:hover {
     background: $tree;
   }
-
 }
 
 .c-pillow_file_container--active_download {
   background-color: $notif;
 
-  .c-pillow_file__description, .c-pillow_file__title {
+  .c-pillow_file__description,
+  .c-pillow_file__title {
     color: $primary;
   }
 }
@@ -117,7 +125,8 @@
 
 .c-pillow_file__header {
   &:link {
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: $primary;
     }
   }
@@ -125,7 +134,8 @@
   color: $fg;
 }
 
-.c-pillow_file__header--hidden, .c-pillow_file__header--tombstone {
+.c-pillow_file__header--hidden,
+.c-pillow_file__header--tombstone {
   color: $disabled;
 }
 
@@ -140,7 +150,9 @@
   color: $fg;
 }
 
-.c-pillow_file__icon--hidden, .c-pillow_file__icon--not_found, .c-pillow_file__icon--tombstone {
+.c-pillow_file__icon--hidden,
+.c-pillow_file__icon--not_found,
+.c-pillow_file__icon--tombstone {
   background: $excluded;
 }
 
@@ -160,14 +172,14 @@
   background: $bg;
 }
 
-.c-pillow_file__video:focus, .c-pillow_file__video_container:focus {
+.c-pillow_file__video:focus,
+.c-pillow_file__video_container:focus {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .c-pillow_file__content--collapsed {
-
   &:after {
-    background: linear-gradient(0deg, $bg, hsla(0, 0%, 100%, 0) 40px)
+    background: linear-gradient(0deg, $bg, hsla(0, 0%, 100%, 0) 40px);
   }
 }
 

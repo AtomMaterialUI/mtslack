@@ -4,7 +4,7 @@
   color: $text;
 
   &:hover {
-    border-color: $fg;
+    border-color: $primary;
   }
 
   &.c-filter_input--active {
@@ -18,11 +18,12 @@
     }
   }
 }
-.c-filter_input__input[type=text]::placeholder {
+
+.c-filter_input__input[type='text']::placeholder {
   color: $disabled;
 }
 
-.c-filter_input__input[type=text] {
+.c-filter_input__input[type='text'] {
   &::-webkit-input-placeholder,
   &:-moz-placeholder,
   &::-moz-placeholder,
@@ -37,7 +38,6 @@
   &[placeholder] {
     color: $disabled;
   }
-
 }
 
 .c-filter_input__reset_button {
