@@ -250,6 +250,8 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .client_channels_list_container a:not(.c-link--focus-visible).focus-ring,
 .client_channels_list_container button:not(.c-button--focus-visible).focus-ring,
+.p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+.p-channel_sidebar__organize_action.c-button--focus-visible:focus,
 .p-channel_sidebar__jumper.c-button--focus-visible:focus,
 .p-channel_sidebar__history_button.c-button--focus-visible:focus,
 .p-channel_sidebar__section_heading_label--clickable.c-button--focus-visible:focus,
@@ -573,4 +575,298 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-channel_sidebar__user_avatar_presence_bg {
   background: transparent;
+}
+
+.p-channel_sidebar__link--selected.p-channel_sidebar__link--page--disabled,
+.p-channel_sidebar__link--selected.p-channel_sidebar__link--all-threads--disabled {
+  color: $disabled;
+  background: $tree;
+}
+
+.p-channel_sidebar__callout {
+  color: $selectFg;
+  background: $accent;
+}
+
+.p-channel_sidebar__link:hover:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__callout {
+  color: $primary;
+}
+
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__callout {
+  background: $accent;
+}
+
+.p-channel_sidebar__link--selected .p-channel_sidebar__callout {
+  color: $primary;
+  background: $accent;
+}
+
+/** `opacity: 1` color overrides */
+.p-channel_sidebar__organize_selection_action.c-link--focus-visible:focus,
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--suggested):not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__link--add-apps:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading:not(.p-channel_sidebar__section_heading--selected)
+  .p-channel_sidebar__section_heading_label--unreads,
+.p-channel_sidebar__quickswitcher:hover,
+.p-channel_sidebar__section_placeholder--has_cta:hover,
+.p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer:hover {
+  color: $primary;
+}
+
+.p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer--disabled:hover {
+  color: $disabled;
+}
+
+/** Compose Button **/
+.p-channel_sidebar__compose_button,
+.p-ia__big_search_compose {
+  background: $button;
+  color: $fg;
+}
+
+.p-channel_sidebar__compose_button--disabled {
+  background: $disabled;
+}
+
+.p-channel_sidebar__compose_button--iap1:active {
+  background-color: $hl;
+}
+
+.p-drag_layer__sidebar_channels--multiple {
+  background: $selectBg;
+}
+
+/** Allow dragged section heading to have a background **/
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading,
+.p-drag_layer .p-channel_sidebar__section_heading {
+  background: $contrast;
+  color: $text;
+}
+
+.p-ia__sidebar_header__mode__info_button:hover,
+.p-ia__sidebar_header__mode__find_button:hover {
+  background-color: $hl;
+  border: 1px solid $borderLight;
+}
+
+.p-ia__sidebar_header__mode__filter_input,
+.p-ia__sidebar_header__mode__filter_input:hover
+  .p-ia__sidebar_header__mode__filter_input:active
+  .p-ia__sidebar_header__mode__filter_input:focus {
+  border: 1px solid $borderLight;
+}
+
+.p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input--active,
+.p-ia__sidebar_header__mode__filter_input.c-filter_input.c-filter_input:hover {
+  border: 1px solid $primary;
+}
+
+.p-ia__sidebar_header__mode__filter_input.c-filter_input .c-icon,
+.p-ia__sidebar_header__mode__filter_input .c-filter_input__reset_button {
+  color: $fg;
+}
+
+.p-ia__sidebar_header__mode__filter_input .c-filter_input__input[type='text'] {
+  color: $fg;
+}
+
+.p-ia__sidebar_header__mode__filter_input .c-filter_input__input::placeholder {
+  color: $disabled;
+}
+
+.p-ia__omniswitcher_button {
+  color: $fg;
+  border: 1px solid $button;
+}
+
+.p-ia__omniswitcher_button:hover {
+  border-color: $hl;
+}
+
+.p-ia__sidebar_header__mode {
+  background-color: $bg2;
+}
+
+.p-ia__sidebar_header .p-ia__sidebar_header__mode {
+  background: $bg2;
+}
+
+.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
+.p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
+  background-color: initial;
+  border-color: $hl;
+}
+
+.p-ia__sidebar_header--top-nav:not(.p-ia__sidebar_header--creator-setup):hover {
+  background-color: $bg2;
+}
+
+.p-ia__sidebar_header__user__presence.c-presence--active {
+  color: $accent;
+}
+
+.p-ia__sidebar_header__user__presence.c-presence--away {
+  color: $disabled;
+}
+
+.p-top_nav .p-ia__nav__user__presence {
+  color: $accent;
+}
+
+.p-top_nav .p-ia__nav__user__presence.c-presence--away {
+  color: $fg;
+}
+
+.p-top_nav__windows_icon {
+  fill: $button;
+}
+
+.p-top_nav__button:hover,
+.p-setup_escape_hatch:hover,
+.p-top_nav__sidebar .p-channel_sidebar__history_button:hover {
+  background: $hl;
+}
+
+.p-top_nav__button--notif_unread .p-top_nav__button_dot:after {
+  background: $notif;
+}
+
+.p-top_nav__help__badge--dot {
+  background: $accent;
+}
+
+.p-ia_edu_throbber circle {
+  fill: $primary;
+}
+
+.p-top_nav__ia_edu_throbber circle {
+  fill: $primary;
+}
+
+.p-channel_sidebar__section_heading_ellipsis--showing_throbber {
+  box-shadow: 0 0 1px 1px $primary;
+}
+
+.p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_thobber__inner--square {
+  fill: $primary;
+}
+
+.p-channel_sidebar__section_heading_ellipsis--showing_throbber .p-ia_edu_throbber__pulse--square {
+  fill: $primary;
+}
+
+.p-ia__view_header__sidebar_toggle_dot.p-ia__view_header__sidebar_toggle_dot--mentions {
+  background: $accent;
+}
+
+/** Day 1: Setup Sidebar **/
+.p-channel_sidebar__loading_spacer_section--bottom-border {
+  border-color: $borderLight;
+}
+
+.p-channel_sidebar__channel.p-channel_sidebar__setup_channel_input {
+  background: $contrast;
+  color: $fg;
+}
+
+.p-channel_sidebar__setup_channel_input::placeholder,
+.p-channel_sidebar__setup_prompt .c-icon {
+  color: $disabled;
+}
+
+.p-channel_sidebar__setup_channel_error_text {
+  color: $red;
+}
+
+.p-channel_sidebar__close_container:hover .p-channel_sidebar__setup_channel_input:not(:focus) {
+  background: $button;
+}
+
+.p-channel_sidebar__setup_channel_input:focus,
+.p-channel_sidebar__link--page_pbrowse-people.p-channel_sidebar__link--page_pbrowse-people--setup,
+.p-ia__sidebar_header--v-team-creation-view {
+  background: $contrast;
+  color: $primary;
+}
+
+.p-channel_sidebar__link--add-teammates,
+.p-channel_sidebar__link--add-teammates:hover {
+  color: $fg;
+}
+
+.p-channel_type_button--selected:not(.p-channel_type_button--large-with-icon) {
+  background: $button;
+  border: 1px solid $button;
+  color: $fg;
+}
+
+.p_channel_examples_section {
+  border: 1px solid $borderLight;
+}
+
+/** Day 1: Sidebar Setup Prompt**/
+.p-channel_sidebar__setup_prompt {
+  border-top: 1px solid $borderLight;
+  color: $fg;
+  background: $contrast;
+}
+
+.p-channel_sidebar__setup_prompt a,
+.p-channel_sidebar__setup_prompt .c-link--button {
+  color: $accent2;
+}
+
+/** Message send failure indicator **/
+.p-channel_sidebar__message_failure_suffix {
+  color: $red;
+}
+
+/** Golden Gate **/
+.p-channel_sidebar__link .p-sidebar_link__icon--bold {
+  color: $accent2;
+}
+
+.p-channel_sidebar__link.p-channel_sidebar_header_link {
+  color: $accent2;
+}
+
+.p-channel_sidebar__link.p-channel_sidebar_header_link__discount {
+  background: $hl;
+  color: $accent2;
+}
+
+.p-channel_sidebar__link.p-channel_sidebar_header_link--bright {
+  background: $hl;
+  color: $accent2;
+}
+
+.p-channel_sidebar__link.p-channel_sidebar_header_link:hover {
+  background: $primary;
+}
+
+.p-channel_sidebar__close_container.p-channel_sidebar_header_link__container:hover * {
+  background: $button;
+}
+
+/** Tiling experiment */
+.p-channel_sidebar__channel--is-inactive-tile {
+  background: $contrast;
+}
+
+.p-tiles__tile:not(.p-tiles__tile--active)::after {
+  background-color: $bg;
+}
+
+.p-tiles__minimized_tile {
+  background-color: $bg;
+}
+
+.p-tiles__minimized_tile__title,
+.p-tiles__minimized_tile__button.c-icon_button--light,
+.p-tiles__minimized_tile__button.c-icon_button--light.c-button-unstyled:hover:hover {
+  color: $fg;
 }
