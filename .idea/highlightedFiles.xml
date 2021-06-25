@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTreeColorHighlighter">
+    <colors>
+      <color name="Color 1" value="#4f060d" enabled="true" />
+      <color name="Color 2" value="#44220e" enabled="true" />
+      <color name="Color 3" value="#3f371b" enabled="true" />
+      <color name="Color 4" value="#162c16" enabled="true" />
+      <color name="Color 5" value="#0f2f47" enabled="true" />
+      <color name="Color 6" value="#171a34" enabled="true" />
+      <color name="Color 7" value="#311333" enabled="true" />
+      <color name="Color 8" value="#1e1e1e" enabled="true" />
+    </colors>
+  </component>
+</project>

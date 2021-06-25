@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SaveActionSettings">
+    <option name="actions">
+      <set>
+        <option value="activate" />
+        <option value="noActionIfCompileErrors" />
+        <option value="organizeImports" />
+        <option value="reformat" />
+      </set>
+    </option>
+    <option name="exclusions">
+      <set>
+        <option value="client\.scss" />
+      </set>
+    </option>
+  </component>
+</project>

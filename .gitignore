@@ -50,8 +50,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.idea/
-
 package-lock.json
 
 node_modules
