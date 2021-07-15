@@ -7,6 +7,7 @@
 
   &:not(.mtslack--with_presence) {
     .p-channel_sidebar__list .p-channel_sidebar__user_avatar {
+      .c-icon--presence-external-offline::before,
       .c-icon--presence-dnd-offline::before,
       .c-icon--presence-offline::before {
         position: absolute;
@@ -27,6 +28,7 @@
     .p-channel_sidebar__channel--selected:hover,
     .p-channel_sidebar__link--selected,
     .p-channel_sidebar__link--selected:hover {
+      .c-icon--presence-external-offline::before,
       .c-icon--presence-dnd-offline::before,
       .c-icon--presence-offline::before {
         position: absolute;
