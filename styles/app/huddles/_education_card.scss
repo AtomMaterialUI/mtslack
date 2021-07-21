@@ -15,3 +15,11 @@
 .p-huddle_education_card--dark_mode .p-huddle_education_card__learn_more_lightbulb {
   color: $fg;
 }
+
+.p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link {
+  color: $accent2;
+}
+
+.p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}

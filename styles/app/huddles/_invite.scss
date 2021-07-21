@@ -1,10 +1,11 @@
 .p-huddle_invite {
-  background: $notif;
+  background: $bg;
 }
 
 .p-huddle_invite__content {
-  background: $accent;
+  background: $notif;
   color: $selectFg;
+  @include card;
 }
 
 .p-huddle_invite__button {
@@ -18,15 +19,23 @@
 }
 
 .p-huddle_invite__button--accept {
-  background: $selectFg;
-  color: $accent;
+  background: $accentT;
+  color: $fg;
 
   &:hover {
-    background: var(--theme-active_item_text_hover);
-    color: $accent;
+    background: $accent;
+    color: $selectFg;
+
+    > * {
+      color: $selectFg;
+    }
+
+    .p-huddle_invite__icon--join {
+      fill: $selectFg;
+    }
   }
 }
 
 .p-huddle_invite__icon--join {
-  fill: $accent;
+  fill: $fg;
 }

@@ -6696,7 +6696,7 @@
       background: var(--selectBg); }
   #mtslack .p-channel_sidebar__member_label {
     font-style: italic;
-    color: var(--disabled); }
+    color: var(--text); }
   #mtslack .p-channel_sidebar__link .p-channel_sidebar__channel_icon_prefix--comfy,
   #mtslack .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--typing) .p-channel_sidebar__channel_icon_prefix--comfy {
     background: var(--button); }
@@ -6912,7 +6912,7 @@
   #mtslack .c-filter_input {
     background-color: var(--contrast);
     border: 1px solid var(--button);
-    color: var(--text); }
+    color: var(--fg); }
     #mtslack .c-filter_input:hover {
       border-color: var(--primary); }
     #mtslack .c-filter_input.c-filter_input--active {
@@ -14593,6 +14593,10 @@
   #mtslack .p-huddle_education_card .p-huddle_education_card__learn_more_lightbulb,
   #mtslack .p-huddle_education_card--dark_mode .p-huddle_education_card__learn_more_lightbulb {
     color: var(--fg); }
+  #mtslack .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link {
+    color: var(--accent2); }
+  #mtslack .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link:focus {
+    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
   #mtslack .p-huddle_channel_floating_member_list {
     box-shadow: 2px 4px 6px black;
     background-color: var(--bg); }
@@ -14756,10 +14760,13 @@
   #mtslack .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__join_non_active_container {
     color: var(--fg); }
   #mtslack .p-huddle_invite {
-    background: var(--notif); }
+    background: var(--bg); }
   #mtslack .p-huddle_invite__content {
-    background: var(--accent);
-    color: var(--selectFg2); }
+    background: var(--notif);
+    color: var(--selectFg2);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); }
+    #mtslack .p-huddle_invite__content:hover {
+      box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3); }
   #mtslack .p-huddle_invite__button {
     background: var(--button);
     color: var(--selectFg2); }
@@ -14767,13 +14774,17 @@
       background: var(--hl);
       color: var(--selectFg2); }
   #mtslack .p-huddle_invite__button--accept {
-    background: var(--selectFg2);
-    color: var(--accent); }
+    background: var(--accentT);
+    color: var(--fg); }
     #mtslack .p-huddle_invite__button--accept:hover {
-      background: var(--theme-active_item_text_hover);
-      color: var(--accent); }
+      background: var(--accent);
+      color: var(--selectFg2); }
+      #mtslack .p-huddle_invite__button--accept:hover > * {
+        color: var(--selectFg2); }
+      #mtslack .p-huddle_invite__button--accept:hover .p-huddle_invite__icon--join {
+        fill: var(--selectFg2); }
   #mtslack .p-huddle_invite__icon--join {
-    fill: var(--accent); }
+    fill: var(--fg); }
   #mtslack .p-huddle_popover_footer_controls__secondary_btn {
     background: var(--button);
     color: var(--text); }
