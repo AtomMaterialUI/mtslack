@@ -1,0 +1,139 @@
+.p-huddle_mini_panel {
+  background: $bg;
+  color: $fg;
+
+  &.p-huddle_mini_panel--always-on-exp {
+    color: $fg;
+    background: $bg2;
+  }
+
+  .p-huddle_activity__headset_container {
+    border: 2px solid $accentT;
+  }
+}
+
+.p-huddle_mini_panel__border {
+  box-shadow: 0 0 0 2px $selectFg;
+}
+
+.p-huddle_mini_panel__headset_container {
+  border: 1px solid $borderLight;
+}
+
+.p-huddle_mini_panel__headset {
+  fill: $fg;
+}
+
+.p-huddle_mini_panel__button {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-huddle_mini_panel__button--mute .p-huddle_mic_icon__microphone--input_level {
+  background-color: $button;
+}
+
+.p-huddle_mini_panel__button--stop-screen-share,
+.p-huddle_mini_panel__button--leave {
+  background-color: $accent;
+  color: $fg;
+
+  .p-huddle_sidebar_footer_buttons__label,
+  .p-huddle_sidebar_footer_buttons__label_icon {
+    color: $selectFg;
+  }
+
+  &:hover {
+    background-color: $excluded;
+  }
+}
+
+.p-huddle_mini_panel__button--leave {
+  .p-huddle_sidebar_footer_buttons__label,
+  .p-huddle_sidebar_footer_buttons__label_icon {
+    color: $selectFg;
+  }
+}
+
+.p-huddle_mini_panel--always-on-exp .p-huddle_mini_panel__button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--theme-text_color);
+
+  &:hover {
+    background-color: var(--theme-hover_item);
+    border: 1px solid var(--theme-hover_item);
+  }
+}
+
+.p-huddle_mini_panel__button {
+  &:focus-visible {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-huddle_mini_panel__button--active {
+  background-color: $active;
+  color: $selectFg;
+  border: 1px solid $primaryT;
+
+  &:hover {
+    background-color: $hl;
+    border: 1px solid $primary;
+  }
+}
+
+.p-huddle_mini_panel--always-on-exp .p-huddle_mini_panel__button--active {
+  background-color: $active;
+  color: $selectFg;
+  border: 1px solid $primaryT;
+
+  &:hover {
+    background-color: $hl;
+    border: 1px solid $primary;
+  }
+}
+
+.p-huddle_mini_panel--always-on-exp .p-huddle_mini_panel__button--mute .p-huddle_mic_icon__microphone--input_level {
+  background-color: $fg;
+}
+
+.p-huddle_mini_panel--always-on-exp {
+  .p-huddle_mini_panel__button--leave,
+  .p-huddle_mini_panel__button--stop-screen-share {
+    background-color: $accentT;
+    border: 1px solid $accentT;
+    color: $selectFg;
+  }
+
+  .p-huddle_mini_panel__button--leave:hover,
+  .p-huddle_mini_panel__button--stop-screen-share:hover {
+    background-color: $accent;
+    border: 1px solid $accent;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_mini_panel--always-on-exp {
+  .p-huddle_mini_panel__button--leave {
+    .p-huddle_sidebar_footer_buttons__label,
+    .p-huddle_sidebar_footer_buttons__label_icon {
+      color: $fg;
+    }
+  }
+
+  .p-huddle_mini_panel__button--stop-screen-share {
+    .p-huddle_sidebar_footer_buttons__label,
+    .p-huddle_sidebar_footer_buttons__label_icon {
+      color: $fg;
+    }
+  }
+}
+
+.p-huddle_mini_panel__icon--slash {
+  color: $red;
+}

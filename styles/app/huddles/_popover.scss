@@ -1,0 +1,48 @@
+.p-huddle_popover_footer_controls__secondary_btn {
+  background: $button;
+  color: $text;
+}
+
+.p-huddle_popover_join_buttons__join_button--muted {
+  background: $button;
+  color: $disabled;
+}
+
+.p-huddle_popover {
+  background-color: $bg;
+}
+
+.p-huddle_popover__footer {
+  border-top: 1px solid $borderLight;
+  background: $bg;
+}
+
+.p-huddle_popover_avatar__avatar_container--muted {
+  .p-huddle_mic_icon__microphone--slash {
+    color: $fg;
+  }
+}
+
+.p-huddle_popover_avatar__active_speaker_border {
+  border: 2px solid $primaryT;
+}
+
+.p-huddle_popover_avatar__mic_container {
+  background: $contrast;
+}
+
+.p-huddle_popover_avatar__mic--active {
+  color: $primary;
+
+  .p-huddle_mic_icon__microphone--input_level {
+    background: $primary;
+  }
+}
+
+.p-huddle_popover_avatar__name--muted {
+  color: $text;
+}
+
+.p-huddle_popover_avatar__name--active {
+  color: $primary;
+}

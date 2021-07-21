@@ -1,0 +1,102 @@
+.p-huddle_sidebar_footer_buttons__outer .p-huddle_sidebar_footer_buttons__secondary_btn {
+  color: $fg;
+
+  &:hover {
+    color: $fg;
+    background-color: $hl;
+  }
+
+  background-color: $button;
+}
+
+.p-huddle_sidebar_footer__container--always_on_exp .p-huddle_sidebar_footer_buttons__label,
+.p-huddle_sidebar_footer_buttons__label {
+  color: $fg;
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--mic {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-huddle_sidebar_footer_buttons__primary_btn--leave {
+  background-color: $button;
+  color: $fg;
+
+  .p-huddle_sidebar_footer_buttons__label,
+  .p-huddle_sidebar_footer_buttons__label_icon {
+    color: $selectFg;
+  }
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.p-huddle_sidebar_footer__container--always_on_exp .p-huddle_sidebar_footer_buttons__button {
+  &.p-huddle_sidebar_footer_buttons__button--leave-active,
+  &.p-huddle_sidebar_footer_buttons__button--screen-share-active {
+    color: $fg;
+    background: transparent;
+  }
+}
+
+.p-huddle_sidebar_footer_buttons__button {
+  &.p-huddle_sidebar_footer_buttons__button--leave-active:not(.p-huddle_sidebar_footer_buttons__button--loading),
+  &.p-huddle_sidebar_footer_buttons__button--screen-share-active:not(.p-huddle_sidebar_footer_buttons__button--loading) {
+    background: none;
+  }
+
+  &.p-huddle_sidebar_footer_buttons__button--leave-active:not(.p-huddle_sidebar_footer_buttons__button--loading):hover,
+  &.p-huddle_sidebar_footer_buttons__button--screen-share-active:not(.p-huddle_sidebar_footer_buttons__button--loading):hover {
+    color: $red;
+    background: $button;
+  }
+}
+
+.p-huddle_sidebar_footer_buttons__button {
+  background-color: $button;
+  color: $fg;
+
+  &.p-huddle_sidebar_footer_buttons__button--leave-active,
+  &.p-huddle_sidebar_footer_buttons__button--screen-share-active {
+    color: $red;
+    background: $button;
+  }
+
+  &.c-icon_button {
+    background-color: $button;
+    color: $fg;
+
+    &:hover {
+      background-color: $hl;
+      color: $fg;
+    }
+  }
+
+  &:hover {
+    background-color: $hl;
+    color: $primary;
+  }
+}
+
+.p-huddle_sidebar_footer__container--always_on_exp
+  .p-huddle_sidebar_footer_buttons__button--mic
+  .p-huddle_mic_icon__microphone--input_level,
+.p-huddle_sidebar_footer_buttons__button--mic .p-huddle_mic_icon__microphone--input_level {
+  background-color: $button;
+}
+
+.p-huddle_sidebar_footer_buttons__button.p-huddle_sidebar_footer_buttons__button--leave {
+  color: $selectFg;
+  background-color: $accent;
+
+  &:hover {
+    color: $selectFg;
+    background-color: $accentT;
+  }
+}

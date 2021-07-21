@@ -1,0 +1,110 @@
+.p-huddle_switch__input {
+  border: 1px solid $hl;
+  background: transparent;
+
+  &:hover {
+    border-color: $primary;
+    background-color: transparent;
+  }
+
+  &:checked {
+    background-color: $accent;
+    border-color: $accent;
+
+    + .p-huddle_switch__visual {
+      &:before {
+        color: $selectFg;
+      }
+
+      &:after {
+        background-color: $selectFg;
+      }
+    }
+
+    ~ .p-huddle_switch__headphones_icon {
+      color: $accent;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled;
+
+    + .p-huddle_switch__visual {
+      &:before {
+        color: $disabled;
+      }
+
+      &:after {
+        background-color: $disabled;
+      }
+    }
+  }
+}
+
+.p-huddle_sidebar_footer--join_active,
+.p-huddle_sidebar_footer--join_non_active {
+  &:hover {
+    .p-huddle_switch__input {
+      border: 1px solid $fg;
+
+      &:hover {
+        border: 1px solid $primary;
+
+        + .p-huddle_switch__visual:after {
+          background-color: $primary;
+        }
+
+        .p-huddle_switch__headphones_icon {
+          color: $primary;
+        }
+      }
+    }
+
+    .p-huddle_switch__visual:after {
+      background-color: $fg;
+    }
+
+    .p-huddle_switch__headphones_icon {
+      color: $fg;
+
+      &.p-huddle_switch__headphones_icon--toggled {
+        color: $selectFg;
+      }
+    }
+
+    .p-huddle_switch:hover .p-huddle_switch__headphones_icon {
+      color: $primary;
+    }
+  }
+}
+
+.p-huddle_switch__visual {
+  &:after {
+    background-color: $fg;
+  }
+}
+
+.p-huddle_switch__headphones_icon {
+  color: $fg;
+}
+
+.p-huddle_nav_button__svg--headset path:last-of-type {
+  fill: $text;
+}
+
+.p-huddle_nav_button {
+  &:hover .p-huddle_nav_button__svg--headset path:last-of-type {
+    fill: $primary;
+  }
+}

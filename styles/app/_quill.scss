@@ -1,10 +1,10 @@
 .ql-editor {
   ul {
-    &[data-checked=false] > li:before {
+    &[data-checked='false'] > li:before {
       color: $button;
     }
 
-    &[data-checked=true] > li:before {
+    &[data-checked='true'] > li:before {
       color: $button;
     }
   }
@@ -81,12 +81,23 @@
   }
 }
 
+.p-message_input__input_container_unstyled--day1 .c-texty_input_unstyled__container--size_medium .ql-placeholder {
+  color: $primary;
+}
+
+.p-message_input__input_container_unstyled {
+  .p-message_input__attachments .p-composer_attachments__separator,
+  .p-message_input__files .p-composer_attachments__separator {
+    border-left: 1px solid $borderLight;
+  }
+}
+
 .c-texty_input_unstyled__container,
 .c-texty_input {
   &.c-texty_input--sticky_composer {
-
     &.focus {
-      .ql-attachments, .ql-files {
+      .ql-attachments,
+      .ql-files {
         box-shadow: 0 -1px 0 0 $borderLight;
       }
 
@@ -95,7 +106,8 @@
       }
     }
 
-    ::-moz-selection, ::selection {
+    ::-moz-selection,
+    ::selection {
       background-color: $selectBg;
       color: $selectFg;
     }
@@ -130,7 +142,9 @@
       border-color: $borderLight;
     }
 
-    .ql-buttons, .ql-composer-sticky, ~ .c-texty_buttons {
+    .ql-buttons,
+    .ql-composer-sticky,
+    ~ .c-texty_buttons {
       background: $button;
     }
   }
@@ -150,17 +164,18 @@
     }
 
     > {
-      .ql-code-block:first-child, :not(.ql-code-block) + .ql-code-block {
+      .ql-code-block:first-child,
+      :not(.ql-code-block) + .ql-code-block {
         border-top: 1px solid $borderLight;
       }
     }
 
     ul {
-      &[data-checked=false] > li:before {
+      &[data-checked='false'] > li:before {
         color: $fg;
       }
 
-      &[data-checked=true] > li {
+      &[data-checked='true'] > li {
         &:before {
           color: $accent;
         }
@@ -172,20 +187,20 @@
         color: $fg;
       }
 
-      &[data-checked=true] > li:before {
+      &[data-checked='true'] > li:before {
         background: $accent;
         color: $bg;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
         color: $fg;
       }
 
-      &[data-checked=false] > li > .slack-list-item-checkbox:focus:before {
+      &[data-checked='false'] > li > .slack-list-item-checkbox:focus:before {
         color: $hl;
       }
 
-      &[data-checked=true] > li > .slack-list-item-checkbox {
+      &[data-checked='true'] > li > .slack-list-item-checkbox {
         &:focus:before {
           box-shadow: none;
           color: $accent;

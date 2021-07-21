@@ -26,7 +26,7 @@
 
     &:after {
       background-color: $accent;
-      transform: translate3d(22px,0,0);
+      transform: translate3d(22px, 0, 0);
     }
   }
 }
@@ -40,7 +40,10 @@
   &:focus {
     box-shadow: none;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -54,7 +57,7 @@
 
     + .c-switch__visual {
       &:after {
-        background-color: $fg;
+        background-color: $disabled;
       }
     }
   }

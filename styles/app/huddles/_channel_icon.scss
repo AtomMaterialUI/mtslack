@@ -1,0 +1,34 @@
+.p-huddle_channel_icon_popover {
+  background-color: $notif;
+}
+
+.p-huddle_channel_icon__popover_button {
+  color: $fg;
+  background: $button;
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $fg;
+  }
+}
+
+.p-channel_sidebar__channel--selected .p-huddle_channel_icon__popover_button {
+  color: $selectFg;
+  background: $accent;
+
+  .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $selectFg;
+  }
+}
+
+.p-huddle_channel_icon__popover_button {
+  &.p-huddle_channel_icon__popover_button--hover,
+  &:hover {
+    color: $fg;
+    background: $hl;
+  }
+
+  &.p-huddle_channel_icon__popover_button--hover .p-huddle_channel_icon__svg--headset path:last-of-type,
+  &:hover .p-huddle_channel_icon__svg--headset path:last-of-type {
+    fill: $fg;
+  }
+}

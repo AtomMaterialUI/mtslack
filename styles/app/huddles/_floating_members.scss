@@ -1,0 +1,12 @@
+.p-huddle_channel_floating_member_list {
+  @include dropShadow;
+  background-color: $bg;
+}
+
+.p-huddle_channel_floating_member_list__heading {
+  color: $text;
+}
+
+.p-huddle_channel_tooltip__avatar {
+  box-shadow: 0 0 0 2px $bg;
+}
