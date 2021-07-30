@@ -63,7 +63,7 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 
 # Installation
 
-### Global installation (works anywhere)
+### Global installation (only for Unix based systems)
 
 1. Run `npm install -g mtslack` in a terminal (or run `sudo npx mtslack` if you don't want to install it globally)
 2. Run the command `sudo mtslack` (in Windows, you need to open the Terminal in Administrator Mode)
@@ -82,11 +82,6 @@ The best way to revert to the default theme would be to use the backup copy you 
 
 There is also a `Remove Theme` option in the menu but it is less robust.
 
-### Updates
-
-`mtslack` has an auto-update function. Whenever there is a new package available, a notification will appear on the
-bottom on your Slack Window prompting you to run the `mtslack` command again to trigger the update. You will then need
-to run the command again to apply the updates.
 
 ----
 
