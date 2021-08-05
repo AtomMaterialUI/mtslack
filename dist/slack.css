@@ -1,5 +1,5 @@
 :root {
-  --version: 'v21.6.2'; }
+  --version: 'v21.8.0'; }
 
 [lang] .p-message_pane_input__disabled,
 [lang] .p-message_pane_input__preview {
@@ -6939,7 +6939,14 @@
   #mtslack .c-virtual_list--slack_scrollbar::-webkit-scrollbar-corner {
     background: var(--bg); }
   #mtslack .c-virtual_list__item--focus:focus:after {
-    box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT); }
+    box-shadow: none;
+    outline: none;
+    border-left: 3px solid var(--accent);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0; }
   #mtslack .c-base_icon {
     background-color: var(--secondBg);
     color: var(--fg); }
