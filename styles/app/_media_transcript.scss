@@ -10,3 +10,15 @@
 .p-custom_approval_settings__caption {
   color: $text;
 }
+
+.p-media_transcript__timestamp {
+  color: $text;
+}
+
+.p-media_transcript__text {
+  color: $fg;
+}
+
+.p-media_transcript--popover {
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+}

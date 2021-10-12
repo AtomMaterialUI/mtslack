@@ -54,7 +54,7 @@
   background: none;
   border: none;
   box-shadow: none;
-  transition: opacity .3s ease-in;
+  transition: opacity 0.3s ease-in;
 
   &:hover {
     border-color: $borderLight;
@@ -81,6 +81,14 @@
 
   .c-icon--small-star-filled {
     color: $yellow;
+  }
+
+  &:disabled {
+    color: $disabled;
+
+    &:hover {
+      color: $fg;
+    }
   }
 }
 

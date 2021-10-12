@@ -119,3 +119,28 @@
 .c-virtualized_table__scroll-indicator {
   background-image: linear-gradient(90deg, $bg2, $bg2 25%, transparent);
 }
+
+.p-data_table_header_count_selected {
+  background-color: $accentT;
+}
+
+.c-data_table_header_multi_filter__filter_button {
+  color: $text;
+}
+
+.c-data_table_header_multi_filter__pop_over_container {
+  border: 1px solid $primary;
+  background: $bg;
+}
+
+.c-data_table_header_multi_filter__pop_over_header {
+  box-shadow: inset 0 -1px 0 $bg2;
+}
+
+.c-data_table_header_multi_filter__header_reset {
+  color: $text;
+}
+
+.p-data_table_header {
+  background-color: $bg2;
+}

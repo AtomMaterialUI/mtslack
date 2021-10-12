@@ -330,6 +330,10 @@ button.p-admin_member_table__menu_item--disabled {
   }
 }
 
+.c-member__pronoun {
+  color: $fg;
+}
+
 .c-virtual_list__item:last-child .p-browse_page_channel,
 .p-browse_page_channel {
   border-top: 1px solid $borderLight;

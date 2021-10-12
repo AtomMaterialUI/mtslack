@@ -1,4 +1,3 @@
-
 .c-input_select_options_list_container:not(.c-input_select_options_list_container--always-open) {
   border: 1px solid $borderLight;
   background-color: $bg2;
@@ -7,7 +6,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -70,7 +72,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }
@@ -80,7 +85,12 @@
     border: 1px solid $borderLight;
   }
 
-  input[type=url], input[type=text], input[type=tel], input[type=number], input[type=email], input[type=password] {
+  input[type='url'],
+  input[type='text'],
+  input[type='tel'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'] {
     background-color: transparent;
     border-color: transparent;
 
@@ -134,7 +144,10 @@
 .c-input_select--active {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-  &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+  &:-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder {
     color: $disabled;
   }
 }
@@ -166,14 +179,16 @@ input.c-input_select__filter_input {
 }
 
 .c-input_select--open_panel {
+  background-color: $bg;
   border: 1px solid $borderLight;
-  background-color: $button;
-  border-color: $borderLight;
 
   &:focus {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
-    &:-moz-placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder {
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
       color: $disabled;
     }
   }

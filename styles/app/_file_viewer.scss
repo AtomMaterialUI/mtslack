@@ -223,3 +223,8 @@
 .p-new_file_menu__gpres_icon {
   color: $yellow;
 }
+
+.p-file_viewer__footer {
+  background: $bg;
+  box-shadow: 0 -1px 0 $primaryT;
+}
