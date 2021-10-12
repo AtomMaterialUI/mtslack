@@ -43,3 +43,51 @@
 .c-select_options_list__option--active .p-invite_type_select_option_icon {
   color: $selectFg;
 }
+
+.p-comprehensible_invites_mixed_interim_small_text {
+  color: $text;
+}
+
+.p-comprehensible_invites_mixed_interim_email_icon {
+  background-color: $button;
+}
+
+.p-comprehensible_invites_invite_type_modal_body {
+  background-color: $bg;
+  border-top: 1px solid $borderLight;
+}
+
+.p-comprehensible_invites__type_external__label .p-invite_type_radio_label__image_wrapper {
+  background-color: #cbedf5;
+}
+
+.p-comprehensible_invites__type_internal__label .p-invite_type_radio_label__image_wrapper {
+  background-color: #d6edb8;
+}
+
+.p-comprehensible_invites_invite_type_modal_footer {
+  background-color: $bg;
+}
+
+.p-invite_type_radio_label__radio {
+  background-color: $bg;
+  border: 1px solid $accentT;
+}
+
+.p-invite_type_radio_label--focus-visible {
+  border-color: $primary;
+  box-shadow: 0 0 0 4px $primaryT;
+}
+
+.p-invite_type_radio_label__disabled_text {
+  background-color: $bg;
+  color: $disabled;
+}
+
+.p-invite_type_radio_label__icon--disabled {
+  color: $text;
+}
+
+.p-invite_type_radio_label__icon {
+  color: $text;
+}
