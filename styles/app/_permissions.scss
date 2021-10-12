@@ -15,3 +15,31 @@
 .p-app_permission_dialog__app_icon--placeholder {
   background: $bg2;
 }
+
+.p-manage_permissions_modal__enable_label {
+  .c-label__subtext {
+    color: $text;
+  }
+}
+
+.p-manage_permissions_modal__enable_switch_text {
+  color: $disabled;
+}
+
+.p-manage_permissions_modal_list_orgs_step__org_item {
+  &:hover {
+    background-color: $bg2;
+  }
+
+  .c-base_list_entity__secondary_content {
+    color: $text;
+  }
+}
+
+.p-external_limited_invite_teammates_modal__invite_switch_text {
+  color: $text;
+}
+
+.p-external_limited_invite_teammates_modal__warning {
+  color: $text;
+}
