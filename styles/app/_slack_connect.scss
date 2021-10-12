@@ -943,3 +943,25 @@
     color: $selectFg;
   }
 }
+
+.p-connected_accounts_app {
+  .p-connected_accounts_app_info_container {
+    .p-connected_accounts_app__info {
+      color: $primary;
+    }
+  }
+}
+
+.p-connected_accounts_banner {
+  background-color: $bg2;
+  color: $text;
+}
+
+.p-connected_accounts_disconnected_caption {
+  color: $text;
+}
+
+.p-connected_accounts__disconnect_modal__info_box,
+.p-connected_accounts__turnoff_modal__info_box {
+  background-color: $bg2;
+}

@@ -3,17 +3,23 @@
 }
 
 @mixin card {
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,.1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 
   &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 rgba(0, 0, 0, 0.3);
   }
 }
 
 @mixin pane {
-  box-shadow: -2px 0 7px 0 rgba(0,0,0,.3);
+  box-shadow: -2px 0 7px 0 rgba(0, 0, 0, 0.3);
 }
 
 @mixin dropShadow {
   box-shadow: 2px 4px 6px black;
+}
+
+@keyframes row_highlight {
+  10% {
+    background-color: $tree;
+  }
 }

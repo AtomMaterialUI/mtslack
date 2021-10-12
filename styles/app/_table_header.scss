@@ -144,3 +144,21 @@
 .p-data_table_header {
   background-color: $bg2;
 }
+
+.c-virtualized_table--bottom-left {
+  .c-data_table__header_row,
+  .c-data_table__row:not(.c-data_table__row--header) {
+    border-right: 1px solid $borderLight;
+  }
+}
+
+.c-virtualized_table--top-left {
+  .c-data_table__header_row,
+  .c-data_table__row:not(.c-data_table__row--header) {
+    border-right: 1px solid $borderLight;
+  }
+}
+
+.c-data_table__row--header {
+  background: $bg2;
+}

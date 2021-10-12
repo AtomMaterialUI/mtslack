@@ -202,3 +202,51 @@
     color: $selectFg;
   }
 }
+
+.p-setup_prog_disc_icon_action--reacji {
+  background-color: $button;
+
+  .p-setup_prog_disc_icon_action__icon {
+    background-color: $button;
+  }
+
+  &.p-setup_prog_disc_icon_action--exiting {
+    background-color: $primary;
+  }
+}
+
+@keyframes prog_disc_icon_action_reacji--bg-color {
+  0% {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: $primary;
+  }
+}
+
+@keyframes prog_disc_icon_action_reacji--bg-color-restore {
+  0% {
+    background-color: $primary;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.p-setup_prog_disc_icon_action--at_mention .p-setup_prog_disc_icon_action__icon,
+.p-setup_prog_disc_icon_action--attachments .p-setup_prog_disc_icon_action__icon,
+.p-setup_prog_disc_icon_action--completed_all .p-setup_prog_disc_icon_action__icon {
+  background-color: $button;
+}
+
+@keyframes prog_disc_icon_action_texty_button--bg-color {
+  0% {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: $primary;
+  }
+}

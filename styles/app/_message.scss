@@ -253,8 +253,18 @@
 
 .c-message__reply_bar--progressive-disclosure-tip-wrapper,
 .c-message__reply_bar {
+  &.c-message__reply_bar--focus-within,
+  &:hover {
+    border-color: $accent;
+  }
+
   &:hover .c-message__reply_bar_view_thread {
     background-color: $contrast;
+  }
+
+  &.c-message__reply_bar--focus-within .c-message__reply_bar_progressive_disclosure_flag:before,
+  &:hover .c-message__reply_bar_progressive_disclosure_flag:before {
+    background-color: $bg;
   }
 
   .c-message__reply_bar_progressive_disclosure_flag {

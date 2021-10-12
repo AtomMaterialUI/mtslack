@@ -489,3 +489,25 @@ input[type='text'].c-input_text.p-emoji_picker__input {
     background-color: transparent;
   }
 }
+
+.p-emoji_skin_tone_picker_radio_button__container {
+  box-shadow: 0 1px 3px 0 $primaryT;
+  border: 1px solid $primary;
+
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:focus-within {
+    border-color: $primary;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-emoji_skin_tone_picker_radio_button__container--selected {
+  border-color: $primary;
+}
+
+.p-emoji_skin_tone_prefs_section__description {
+  color: $text;
+}
