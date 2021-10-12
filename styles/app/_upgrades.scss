@@ -1,0 +1,15 @@
+.p-upgrades_icon {
+  color: $primary;
+}
+
+.p-upgrades_icon_container {
+  background-color: $hl;
+}
+
+.p-upgrades_modal__icon_container {
+  background-color: $hl;
+
+  > i {
+    color: $primary;
+  }
+}
