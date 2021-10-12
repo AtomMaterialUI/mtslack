@@ -1,0 +1,78 @@
+.p-video_recorder_canvas__container {
+  background: $bg;
+}
+
+.p-video_recorder_canvas__container--screen_share {
+  background: $contrast;
+}
+
+.p-video_recorder_canvas__shroud {
+  background-color: $bg;
+}
+
+.p-video_recorder_canvas__shroud_text {
+  color: $fg;
+}
+
+.p-video_recorder_canvas__pause_icon_container {
+  background: $button;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: $fg;
+}
+
+.p-media_progress_bar {
+  background: $bg2;
+}
+
+.p-video_recorder_footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-video_recorder_footer__separator {
+  background-color: $borderLight;
+}
+
+.p-video_recorder_screen_picker_tile {
+  @include card;
+}
+
+.p-video_recorder_screen_picker_tile--selected {
+  background-color: $selectBg;
+  color: $selectFg;
+}
+
+.p-video_recorder_screen_picker__no_screen_tile {
+  background: $bg;
+}
+
+.p-video_recorder_minipanel__avatar {
+  border: 2px solid $accent;
+}
+
+.p-video_recorder_modal__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-video_recorder_modal__section_label {
+  color: $text;
+}
+
+.p-media_controls__control[disabled] {
+  color: $disabled;
+  border-color: $border;
+}
+
+.p-video_recorder__borderless_button {
+  border: none;
+  color: $text;
+
+  &:hover {
+    box-shadow: none;
+    color: $selectFg;
+  }
+}
+
+.p-media_progress_bar__bar {
+  background: $accent !important;
+}

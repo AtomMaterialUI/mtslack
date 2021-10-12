@@ -1,0 +1,70 @@
+.p-audio_only_animation {
+  background: $bg;
+
+  &:before {
+    background: $bg2;
+  }
+}
+
+.p-media_viewer_modal .p-audio_only_animation {
+  background: $contrast;
+}
+
+.c-audio_player_play_button--disabled {
+  background: $button;
+  color: $disabled;
+  opacity: 0.3;
+}
+
+.p-audio_waveform__dot {
+  background: $bg;
+}
+
+.p-audio_waveform__dot--blue,
+.p-audio_waveform__dot--highlight {
+  background: $accent;
+}
+
+.p-audio_waveform__dot--red {
+  background: $red;
+}
+
+.c-audio_player_scrubber--with-waveform-focus {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.c-audio_player_scrubber__waveform_elapsed_wrapper {
+  .p-audio_waveform__dot {
+    background: $accent;
+  }
+}
+
+.c-audio_player--audio_message {
+  .c-audio_player_play_button {
+    background: $accentT;
+    color: $selectFg;
+
+    &:active,
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  .c-audio_player_play_button--disabled {
+    background: $button;
+    color: $disabled;
+
+    &:hover {
+      background: $button;
+      color: $fg;
+    }
+  }
+}
+
+.c-audio_player--audio_message .c-audio_player__time {
+  color: $fg;
+}
+
+.c-audio_player .p-media_controls__control--playback-speed {
+  color: $text;
+}
