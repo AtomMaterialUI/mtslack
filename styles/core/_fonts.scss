@@ -138,3 +138,11 @@
 [lang] .p-huddle_popover {
   font-family: $fontFamily;
 }
+
+.p-video_message_file {
+  .p-media_viewer__video {
+    &::cue {
+      font-family: $fontFamily;
+    }
+  }
+}

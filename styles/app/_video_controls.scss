@@ -1,0 +1,93 @@
+.p-video_controls_scrubber__track {
+  background: $bg2;
+}
+
+.p-video_controls_scrubber__elapsed {
+  background: $accent;
+
+  &:after {
+    background: $accent;
+  }
+}
+
+.p-video_controls_overlay {
+  color: $fg;
+}
+
+.p-video_controls_overlay--controls {
+  &:before {
+    background: linear-gradient(180deg, rgba(29, 28, 29, 0), rgba(29, 28, 29, 0.7) 70%);
+  }
+}
+
+.p-video_controls_overlay__button {
+  &.c-button--focus-visible:focus {
+    box-shadow: inset 0 0 0 1px $accent, inset 0 0 0 5px $accentT;
+  }
+}
+
+.p-video_controls_overlay__controls__pill {
+  background: $button;
+}
+
+.p-video_controls_overlay--active .p-video_controls_overlay__controls__pill,
+.p-video_controls_overlay--controls:hover .p-video_controls_overlay__controls__pill {
+  background: rgba(29, 28, 29, 0);
+}
+
+.p-video_controls_overlay__controls__button {
+  &.c-button--focus-visible:focus,
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-video_controls_overlay__controls__button--disabled {
+  color: $disabled;
+
+  &.c-button--focus-visible:focus,
+  &:hover {
+    background: none;
+  }
+}
+
+.p-video_controls_overlay__controls__speed {
+  &:hover {
+    background: $hl;
+  }
+
+  .c-select_button__icon,
+  &:hover .c-select_button__icon {
+    color: $primary;
+  }
+}
+
+.p-video_controls_overlay__corner {
+  .p-video_message_file__controls_overlay_ellipsis,
+  .p-video_message_file__controls_overlay_fullscreen {
+    background: $button;
+  }
+
+  .p-video_message_file__controls_overlay_ellipsis:hover,
+  .p-video_message_file__controls_overlay_fullscreen:hover {
+    background: $button;
+  }
+}
+
+.p-video_message_file {
+  .p-media_viewer__video_container {
+    background: #000;
+  }
+
+  .p-media_viewer__video {
+    &::cue {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.p-video_message_file__duration {
+  background: $bg;
+  color: $fg;
+}
