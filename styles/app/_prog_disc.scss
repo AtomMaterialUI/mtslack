@@ -1,121 +1,119 @@
 .p-setup_prog_disc_icon_action {
-  background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background-color: $bg2;
 }
 
 .p-setup_prog_disc_icon_action__icon {
-  background-color: #fff;
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background-color: $bg2;
+  color: $primary;
 }
 
 .p-setup_prog_disc_icon_action__text {
-  color: #fff;
+  color: $fg;
 }
 
 .p-setup_prog_disc_icon_action--completed_all {
   .p-top_nav__help {
-    background-color: #fff;
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: $button;
+    color: $primary;
 
     &:hover {
-      background-color: #fff;
+      background-color: $hl;
     }
   }
 
   .p-top_nav__help__badge {
-    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 2px #fff;
+    background: $primary;
+    box-shadow: 0 0 0 2px $primaryT;
   }
 
   .p-top_nav__help__badge--dot {
-    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background: $primary;
   }
 }
 
 .p-setup_progressive_disclosure_menu__menu_item_dismiss_tips {
-  color: #e01e5a;
+  color: $red;
 
   &.c-menu_item__button--highlighted,
   &:hover {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
 .p-setup_prog_disc_explainer_tip {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $button;
 
   .p-setup_prog_disc_explainer_tip_dismissal {
     .p-setup_prog_disc_explainer_tip_dismissal_icon {
-      color: #fff;
+      color: $selectFg;
     }
   }
 
   .p-setup_prog_disc_explainer_tip_text {
-    color: #fff;
+    color: $fg;
   }
 }
 
 .p-setup_prog_disc_success_coachmark {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  color: #fff;
+  background: $bg2;
+  color: $selectFg;
 
   .c-coachmark__close {
-    color: #fff;
+    color: $selectFg;
   }
 
   &.c-coachmark--top {
     &:after,
     &:before {
-      border-top-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      border-top-color: $borderLight;
     }
   }
 
   &.c-coachmark--bottom-left {
     &:after,
     &:before {
-      border-bottom-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      border-bottom-color: $borderLight;
     }
   }
 
   &.c-coachmark--left {
     &:after,
     &:before {
-      border-left-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      border-left-color: $borderLight;
     }
   }
 }
 
 .p-setup_prog_disc_success_coachmark__emoji {
-  background: #e7f0f6;
+  background: $bg;
 }
 
 .p-setup_prog_disc_success_coachmark__teach_me_more_link {
-  color: #fff;
+  color: $accent2;
 
   &:hover {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
 .p-composer__body--prog-disc-tip {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border: 2px solid var(--saf-0);
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 2px solid $primaryT;
+  background: $bg2;
 
   .p-composer__prog_disc_tip_copy {
-    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    border: 2px solid var(--saf-0);
-    color: #fff;
+    background: $bg2;
+    border: 2px solid $primary;
+    color: $selectFg;
 
     &:before {
-      background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+      background: $bg2;
     }
   }
 }
 
 .p-composer__button--prog-disc-tip.c-icon_button {
   background: transparent;
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }
 
 .p-stories_uploader_preview__video_container {
@@ -131,76 +129,76 @@
 }
 
 .p-setup_prog_disc_flag {
-  background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background-color: $bg2;
 }
 
 .p-setup_prog_disc_flag__text {
-  color: #fff;
+  color: $selectFg;
 }
 
 .p-setup_prog_disc_status_tip_explainer {
-  background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background-color: $bg2;
 }
 
 .p-setup_prog_disc_status_tip_explainer__inner_container {
-  color: #fff;
+  color: $selectFg;
 }
 
 .p-setup_prog_disc_status_tip_explainer__close {
   :before {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
 .p-setup_prog_disc_notifications_tip_explainer {
-  background-color: rgba(29, 155, 209, 0.1);
+  background-color: $bg2;
 }
 
 .p-setup_prog_disc_notifications_tip_explainer__inner_container {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 }
 
 .p-ia__main_menu__dnd_list_item--prog-disc-tip.c-menu_item__li {
-  background: rgba(29, 155, 209, 0.1);
+  background: $bg2;
 
   &:not(.c-menu_item__li--highlighted) {
     .c-menu_item__label,
     .c-menu_item__submenu-indicator:before {
-      color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      color: $primary;
     }
   }
 }
 
 .p-message_pane_input__prog-disc-tip-flag {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  color: #fff;
+  background: $bg2;
+  color: $selectFg;
 }
 
-.p-setup_prog_disc_menu_explainer {
-  background-color: rgba(29, 155, 209, 0.1);
+.p-setup_prog_disc_menu_explainer,
+.p-setup_prog_disc_message_menu_explainer_tip {
+  background-color: $bg2;
 }
 
 .p-setup_prog_disc_empty_reply_bar {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $primary;
 
   &:focus,
   &:hover {
-    background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    border: 2px solid var(--saf-0);
+    background-color: $bg;
+    border: 2px solid $borderLight;
   }
 
   &:focus .c-message__reply_bar_arrow,
   &:hover .c-message__reply_bar_arrow {
-    color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+    color: $primary;
   }
 
   .p-setup_prog_disc_empty_reply_bar__avatar_and_text {
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    background: #fff;
+    color: $primary;
+    background: $bg2;
   }
 
   .p-setup_prog_disc_empty_reply_bar__cta_text {
-    color: #fff;
+    color: $selectFg;
   }
 }

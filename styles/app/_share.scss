@@ -58,3 +58,13 @@
     color: $fg;
   }
 }
+
+.p-share_dialog__already_shared_text {
+  border-bottom: 1px solid $border;
+}
+
+.p-share_dialog__already_shared_text_list {
+  li {
+    border-bottom: 1px solid $border;
+  }
+}

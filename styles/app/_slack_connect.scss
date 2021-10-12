@@ -845,12 +845,12 @@
 
 .p-slack_connect_card__footer--accepted {
   border-color: $green;
-  background-color: $green;
+  background-color: $bg2;
 }
 
 .p-slack_connect_card__footer--rejected {
   border-color: $red;
-  background-color: $red;
+  background-color: $bg2;
 }
 
 .p-slack_connect_card__footer--inactive {
