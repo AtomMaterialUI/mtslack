@@ -1,0 +1,10 @@
+.p-contact_card__simple_container {
+  @include dropShadow;
+  background-color: $bg;
+}
+
+.p-contact_card__contact_details {
+  .p-contact_card__contact_team {
+    color: $text;
+  }
+}

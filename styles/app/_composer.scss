@@ -1,4 +1,3 @@
-
 .p-composer__body {
   background: $contrast;
 }
@@ -18,7 +17,8 @@
     }
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $selectFg;
     background-color: $hl;
   }
@@ -27,14 +27,16 @@
     border: 1px solid $borderLight;
   }
 
-  &.p-composer__button--selected, &:active {
+  &.p-composer__button--selected,
+  &:active {
     color: $primary;
-    background-color: $active;
+    background-color: $hl;
   }
 
   &.p-composer__button--selected {
-    &:focus, &:hover {
-      background-color: $hl;
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
     }
   }
 }
@@ -54,12 +56,12 @@
 
   &.p-composer__button--selected {
     color: $selectFg;
-    background-color: $active;
+    background-color: $hl;
 
-    &:focus, &:hover {
-      background-color: $hl;
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
     }
-
   }
 }
 
@@ -74,23 +76,26 @@
     }
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $fg;
-    background-color: $contrast;
+    background-color: $hl;
   }
 
   &:focus {
     border: 1px solid $primary;
   }
 
-  &.p-composer__button--selected, &:active {
+  &.p-composer__button--selected,
+  &:active {
     color: $primary;
-    background-color: $active;
+    background-color: $hl;
   }
 
   &.p-composer__button--selected {
-    &:focus, &:hover {
-      background-color: $active;
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
     }
   }
 }
@@ -106,7 +111,8 @@
     }
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background-color: $hl;
     color: $selectFg;
   }
@@ -116,8 +122,9 @@
   }
 }
 
-.p-composer__button--selected, .p-composer__button:active {
-  background-color: $active;
+.p-composer__button--selected,
+.p-composer__button:active {
+  background-color: $hl;
   color: $fg;
 }
 
@@ -152,7 +159,8 @@
 }
 
 .p-composer__body--floating {
-  background: $bg2;
+  @include dropShadow;
+  background: $bg;
 }
 
 .p-composer__button--floating {
@@ -195,33 +203,35 @@
   }
 
   &.p-composer__button--selected {
-    background-color: $primary;
+    background-color: $hl;
     color: $selectFg;
 
-    &:focus, &:hover {
-      background-color: $primary;
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
       color: $selectFg;
     }
   }
 
   &:active {
-    background-color: $primary;
+    background-color: $hl;
     color: $selectFg;
   }
 }
 
 .p-composer__button--floating--selected {
-  background-color: $primary;
+  background-color: $hl;
   color: $selectFg;
 
-  &:focus, &:hover {
-    background-color: $primary;
+  &:focus,
+  &:hover {
+    background-color: $selectBg;
     color: $selectFg;
   }
 }
 
 .p-composer__button--floating:active {
-  background-color: $primary;
+  background-color: $hl;
   color: $selectFg;
 }
 
@@ -346,7 +356,6 @@
 }
 
 .p-cp_composer__message_input {
-
   .ql-placeholder {
     color: $disabled;
   }
@@ -361,12 +370,15 @@
 }
 
 .p-composer_page__context {
-  .c-message_kit__message, .c-message_list__placeholders, .p-composer_page__context_list_divider {
+  .c-message_kit__message,
+  .c-message_list__placeholders,
+  .p-composer_page__context_list_divider {
     border-left: 1px solid $borderLight;
     border-right: 1px solid $borderLight;
   }
 
-  .c-message_list__placeholders, .p-composer_page__context_list_divider {
+  .c-message_list__placeholders,
+  .p-composer_page__context_list_divider {
     background-color: $bg;
   }
 
@@ -379,15 +391,18 @@
   }
 
   .c-virtual_list__item {
-
     &:first-child {
-      .c-message_kit__message, .c-message_list__placeholders, .p-composer_page__context_list_divider {
+      .c-message_kit__message,
+      .c-message_list__placeholders,
+      .p-composer_page__context_list_divider {
         border-top: 1px solid $borderLight;
       }
     }
 
     &:nth-last-child(2) {
-      .c-message_kit__message, .c-message_list__placeholders, .p-composer_page__context_list_divider {
+      .c-message_kit__message,
+      .c-message_list__placeholders,
+      .p-composer_page__context_list_divider {
         border-bottom: 1px solid $borderLight;
       }
     }
@@ -403,23 +418,33 @@
 }
 
 .p-composer_page__message_input {
-  .ql-attachments, .ql-files {
+  .ql-attachments,
+  .ql-files {
     background: $bg2;
     box-shadow: 0 -1px 0 0 $primaryT;
   }
 
-  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded) .p-message_input_field:not(.c-texty_input--double_decker) .ql-composer-sticky, &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded) .p-message_input_field:not(.c-texty_input--double_decker) .ql-composer-sticky {
+  &.p-message_input--attachments-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded)
+    .p-message_input_field:not(.c-texty_input--double_decker)
+    .ql-composer-sticky,
+  &.p-message_input--files-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded)
+    .p-message_input_field:not(.c-texty_input--double_decker)
+    .ql-composer-sticky {
     background: $bg2;
   }
 
   &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
-    .ql-attachments, .ql-files {
+    .ql-attachments,
+    .ql-files {
       box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
     }
   }
 
   &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
-    .ql-attachments, .ql-files {
+    .ql-attachments,
+    .ql-files {
       box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
     }
   }
@@ -468,7 +493,8 @@
   .p-message_input_file_button {
     color: $text;
 
-    &.p-message_input_file_button--active, &:hover {
+    &.p-message_input_file_button--active,
+    &:hover {
       color: $selectFg;
       background: $primary;
     }
@@ -494,7 +520,9 @@
       }
     }
 
-    ::-moz-selection, ::selection, ::-moz-selection {
+    ::-moz-selection,
+    ::selection,
+    ::-moz-selection {
       background-color: $accent2;
     }
   }
@@ -544,7 +572,9 @@
 .p-composer_page__destination_select_member_suggestion {
   color: $disabled;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $fg;
   }
 }

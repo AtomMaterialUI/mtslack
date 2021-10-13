@@ -1,0 +1,11 @@
+.p-rich_text_list {
+  &[data-border='1'] {
+    &:before {
+      background-color: $borderLight;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-rich_text_list[data-border='1']:before {
+  background-color: $borderLight;
+}
