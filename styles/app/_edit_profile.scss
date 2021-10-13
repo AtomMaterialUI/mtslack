@@ -27,3 +27,27 @@
     color: $selectFg;
   }
 }
+
+.p-edit_profile__drag_and_drop {
+  border: 4px dashed $hl;
+}
+
+.p-edit_profile__centered_primary--background {
+  background: $bg2;
+}
+
+.p-edit_profile__cropper {
+  background-color: $bg !important;
+}
+
+.p-edit_profile__upload_preview_label {
+  color: $text;
+}
+
+.p-edit_profile__date_button {
+  border: 1px solid $primary;
+}
+
+.p-edit_profile__rules {
+  color: $fg;
+}
