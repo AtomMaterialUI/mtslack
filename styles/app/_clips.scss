@@ -1,0 +1,45 @@
+.p-clips_nux_pill {
+  background: $button;
+  color: $fg;
+}
+
+.p-clips_nux_pill__button {
+  &:focus,
+  &:hover {
+    color: $selectFg;
+    background: $hl;
+  }
+}
+
+.p-clips_nux_pill__play_icon {
+  color: $accent2;
+}
+
+.p-clips_nux_pill_text {
+  color: $accent2;
+}
+
+.p-clips_nux_pill__dismiss {
+  color: $fg;
+
+  &:focus,
+  &:hover {
+    color: $selectFg;
+    background: $accent;
+    border-radius: 50%;
+  }
+}
+
+.p-clips_nux_pill__tooltip_span {
+  color: $text;
+}
+
+.p-video_composer_button--highlight.c-button-unstyled {
+  color: $text;
+  background: $button;
+
+  &:hover {
+    color: $selectFg;
+    background: $accent;
+  }
+}
