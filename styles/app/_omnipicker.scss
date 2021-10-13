@@ -1,6 +1,7 @@
 .p-omnipicker_dialog__menu {
-  .c-menu {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
 
+  .c-menu {
     .c-menu_item__button--highlighted {
       background-color: $tree;
       border: 1px solid $tree;
@@ -46,5 +47,17 @@
 
 .c-missing_menu_item__button--loading {
   background: $button;
-  opacity: .7;
+  opacity: 0.7;
+}
+
+.p-omnipicker_dialog__list_section {
+  background-color: $bg;
+}
+
+.p-omnipicker_dialog__footer {
+  background-color: $bg2;
+}
+
+.p-omnipicker_dialog {
+  background-color: $bg2;
 }

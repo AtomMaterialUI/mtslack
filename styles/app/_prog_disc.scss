@@ -58,8 +58,13 @@
   background: $bg2;
   color: $selectFg;
 
+  .c-coachmark__close.c-icon_button--light,
   .c-coachmark__close {
     color: $selectFg;
+
+    &:hover {
+      color: $selectFg;
+    }
   }
 
   &.c-coachmark--top {
@@ -80,6 +85,13 @@
     &:after,
     &:before {
       border-left-color: $borderLight;
+    }
+  }
+
+  &.c-coachmark--bottom {
+    &:after,
+    &:before {
+      border-bottom-color: $borderLight;
     }
   }
 }

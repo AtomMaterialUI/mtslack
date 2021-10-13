@@ -35,6 +35,15 @@
   .p-block_kit_date_picker__datepicker_trigger:focus-within {
     box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
   }
+
+  .c-accessible_multi_select_input {
+    border-color: $accent;
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+    }
+  }
 }
 
 .p-block_kit_input_block__enter_help_text,
