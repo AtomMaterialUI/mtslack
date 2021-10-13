@@ -1,3 +1,11 @@
+.p-integrations_page {
+  background: $bg;
+}
+
+.p-integrations_banner {
+  background: $contrast;
+}
+
 .p-integrations__icon_container {
   background-color: $button;
 }
@@ -9,5 +17,88 @@
 .p-integrations__list_entity_row {
   &:not(.p-integrations__list_entity_row--disabled):hover {
     background-color: $bg2;
+  }
+}
+
+.p-integrations_page__category_item_button {
+  background: $button;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+    box-shadow: none;
+  }
+}
+
+.p-integrations_page__category_item_button--selected {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-integrations_banner__subtext {
+  color: $fg;
+}
+
+.p-integrations_modal__text {
+  color: $text;
+
+  span {
+    color: $accent;
+  }
+}
+
+.p-integrations_modal__trigger-config-section {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__trigger-config-header {
+  background: $bg;
+  color: $primary;
+}
+
+.p-integrations_modal__trigger-config-icon {
+  background: $green;
+  color: $selectFg;
+}
+
+.p-integrations_modal__trigger-config-text {
+  p {
+    color: $text;
+  }
+}
+
+.p-integrations_modal__integration-config-section {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__integration-config-header {
+  background: $bg;
+  color: $text;
+}
+
+.p-integrations_modal__integration-config-icon {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-integrations_modal__integration-config-text {
+  p {
+    color: $text;
+  }
+}
+
+.p-integrations_modal__integration-inputs-list {
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__integration-input-info {
+  color: $fg;
+  border-bottom: 1px solid $borderLight;
+
+  span {
+    background: $bg2;
+    color: $text;
   }
 }
