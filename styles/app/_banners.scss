@@ -7,9 +7,18 @@
 }
 
 .c-banner {
-  .c-button--focus-visible:focus, .c-link--focus-visible:focus {
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus {
     color: $selectFg;
     box-shadow: 0 0 0 1px $selectBg, 0 0 0 5px $selectBg;
+  }
+
+  &.c-banner--neutral {
+    .c-banner__close.c-button--focus-visible:focus,
+    .c-link--focus-visible:not(.c-button):focus {
+      color: $selectFg;
+      @include dropShadow;
+    }
   }
 }
 
@@ -36,6 +45,10 @@
 .c-banner--neutral {
   background-color: $notif;
   color: $fg;
+
+  .c-banner__close.c-button-unstyled {
+    color: $selectFg;
+  }
 }
 
 .p-message_pane__degraded_banner {
@@ -113,7 +126,8 @@
   color: $fg;
 }
 
-.p-message_pane_banner__spacer, .p-message_pane_banner_common {
+.p-message_pane_banner__spacer,
+.p-message_pane_banner_common {
   background-color: $bg;
 }
 
@@ -164,7 +178,9 @@
   a {
     color: $accent2;
 
-    &:active, &:hover, &:visited {
+    &:active,
+    &:hover,
+    &:visited {
       color: $selectFg;
     }
   }
@@ -180,7 +196,9 @@
     a {
       color: $primary;
 
-      &:active, &:hover, &:visited {
+      &:active,
+      &:hover,
+      &:visited {
         color: $selectFg;
       }
     }
