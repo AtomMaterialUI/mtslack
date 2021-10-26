@@ -9,14 +9,19 @@
   .c-tabs__tab {
     color: $fg;
 
-    &.c-tabs__tab--active, &:active {
-      background: $accent;
+    &.c-tabs__tab--active,
+    &:active {
+      background: $tree;
       color: $selectFg;
+      border-left: 2px solid $accent;
+      border-radius: 0;
     }
 
     &:not(.c-tabs__tab--active):hover {
-      background-color: $accentT;
+      background-color: $tree;
       color: $selectFg;
+      border-left: 2px solid $hl;
+      border-radius: 0;
     }
   }
 }
@@ -37,11 +42,11 @@
   &.c-tabs__tab--active,
   &:active {
     color: $fg;
-    box-shadow: inset 0 -2px 0 0 $accent;
+    box-shadow: none;
   }
 
   &.c-tabs__tab--active.c-button--focus-visible:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT, inset 0 -2px 0 0 $accent;
+    box-shadow: none;
   }
 }
 

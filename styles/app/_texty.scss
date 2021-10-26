@@ -199,7 +199,7 @@
 
     &.is-missing {
       > button {
-        color: $red;
+        color: $red2;
         background: $button;
         border: 1px solid $button;
 
@@ -211,11 +211,11 @@
       }
 
       .c-texty_workflow_token__content {
-        color: #e01e5a;
-        background: rgba(224, 30, 90, 0.1);
+        color: $red2;
+        background: $button;
 
         &:hover {
-          background: rgba(224, 30, 90, 0.1);
+          background: $hl;
         }
       }
     }
@@ -226,19 +226,19 @@
     }
 
     .c-texty_workflow_token__content {
-      background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
-      color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      background: $accentT;
+      color: $fg;
 
       &:hover {
-        background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.2);
-        color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+        background: $accent;
+        color: $selectFg;
       }
     }
 
     &.is-not-clickable {
       .c-texty_workflow_token__content:hover {
-        color: rgba(var(--sk_highlight, 18, 100, 163), 1);
-        background: rgba(var(--sk_highlight_accent, 29, 155, 209), 0.1);
+        color: $selectFg;
+        background: $accent;
       }
     }
   }

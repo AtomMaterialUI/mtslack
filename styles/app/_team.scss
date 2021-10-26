@@ -18,3 +18,23 @@
 .p-team_row--muted {
   color: $text;
 }
+
+.p-team_row__team_info_separator {
+  color: $borderLight;
+}
+
+.p-team_row__team_verified_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-team_row__team_verified_icon {
+  color: $green;
+}
+
+.p-team_row__remove_menu_item:not(.c-menu_item__button--highlighted) {
+  color: $red;
+}
+
+.p-team_row__manage_item:not(.c-menu_item__button--highlighted) {
+  color: $red;
+}
