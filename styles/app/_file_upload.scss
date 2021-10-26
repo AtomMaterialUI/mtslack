@@ -78,7 +78,7 @@
 }
 
 .p-multi_file_upload__file_status_icon--error {
-  color: $red;
+  color: $red2;
 }
 
 .p-multi_file_upload__file_status_icon--remove {
@@ -87,7 +87,7 @@
 
 .p-email_reply_modal .p-reply_to_email_input,
 .p-multi_file_upload__file_status_icon--remove:hover {
-  color: $selectFg;
+  color: $accent;
 }
 
 .p-email_reply_modal .p-reply_to_email_input {

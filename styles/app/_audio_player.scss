@@ -104,3 +104,85 @@ audio::-webkit-media-controls-time-remaining-display {
 .c-audio_player__time {
   color: $text;
 }
+
+.p-audio_popover__strip {
+  @include dropShadow;
+  background: $notif;
+  min-width: 300px;
+}
+
+.p-audio_popover__strip--speedbump {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-audio_popover__control {
+  background: $button;
+}
+
+.p-audio_popover__control--highlight {
+  background: $hl;
+  color: $selectFg;
+}
+
+.p-audio_popover__stop {
+  background: $bg;
+}
+
+.p-audio_popover__timer--warning {
+  color: $red2;
+}
+
+.p-audio_popover__footer {
+  background: $contrast;
+}
+
+.p-audio_popover__attach {
+  color: $text;
+  background: $accentT;
+
+  &:focus,
+  &:hover {
+    background: $accent;
+    color: $primary;
+  }
+}
+
+.p-audio_popover__attach--fast {
+  background: $accentT;
+  color: $fg;
+
+  &:focus,
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-audio_popover__attach_variant {
+  border-color: $accent;
+}
+
+.p-audio_popover__close {
+  background: $button;
+  color: $fg;
+  box-shadow: none;
+
+  &:hover {
+    color: $primary;
+    background: $accent;
+  }
+
+  .p-audio_composer_button--highlight.c-button-unstyled {
+    color: $primary;
+    background: $accent;
+
+    &:hover {
+      color: $primary;
+      background: $accent;
+    }
+  }
+}
+
+.p-audio_popover_overlay {
+  background: linear-gradient(180deg, rgba(var(--sk_primary_background, 255, 255, 255), 0), $contrast 200px);
+}
