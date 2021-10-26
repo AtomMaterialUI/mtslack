@@ -299,8 +299,9 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker__footer {
-  background: $bg2;
+  background: $bg;
   border-top: 1px solid $borderLight;
+  @include pane;
 }
 
 .p-emoji_picker__emoji_deluxe_label {

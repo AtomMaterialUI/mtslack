@@ -1,0 +1,129 @@
+.p-media_viewer_modal__header {
+  background: $bg;
+  box-shadow: 0 0 0 1px $borderLight;
+}
+
+.p-media_viewer_modal__footer {
+  background: $bg;
+  @include pane;
+}
+
+.p-media_viewer_modal {
+  color: $fg;
+  box-shadow: 0 0 0 1px $borderLight;
+  background: $contrast;
+
+  .p-media_viewer__video {
+    background: $contrast;
+  }
+}
+
+.p-media_viewer_modal__navigation__button {
+  color: $fg;
+  background: $button;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+    box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight;
+  }
+}
+
+.p-media_controls_toolbar {
+  color: $fg;
+  background: $bg;
+}
+
+.p-media_controls_toolbar__bar {
+  background: $bg;
+}
+
+.p-media_viewer_modal__flexpane {
+  @include pane;
+}
+
+.p-media_viewer_modal__flexpane__hide {
+  color: $text;
+}
+
+.p-media_viewer_modal__header__divider {
+  border-left: 1px solid $border;
+}
+
+.p-media_viewer_modal__reactions__reaction {
+  background: $bg;
+}
+
+.p-media_viewer_modal__reactions__reaction:hover {
+  box-shadow: inset 0 0 0 1px $accentT;
+  background: $bg2;
+  color: $primary;
+}
+
+.p-media_viewer_modal__reactions__reaction--reacted,
+.p-media_viewer_modal__reactions__reaction--reacted:hover {
+  background: $active;
+  box-shadow: inset 0 0 0 1px $accent;
+}
+
+.p-media_viewer_modal__reactions__reaction--reacted .p-media_viewer_modal__reactions__reaction__count:not(:empty) {
+  color: $primary;
+}
+
+.p-media_viewer_modal__reactions__add {
+  background: $button;
+  color: $fg;
+}
+
+.p-media_viewer_modal__reactions__add:hover {
+  box-shadow: inset 0 0 0 1px $primary;
+  background: $hl;
+  color: $selectFg;
+}
+
+.p-media_viewer_modal__reactions__add__cookie {
+  color: $yellow;
+}
+
+.p-media_viewer_modal__multimedia_video {
+  background: $contrast;
+}
+
+.p-media_viewer_modal__footer__button {
+  background: $button;
+  color: $fg;
+}
+
+.p-media_viewer_modal__footer__button_captions--on {
+  background: $green;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__control_group {
+  background-color: transparent;
+  color: $text;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-moz-range-thumb {
+  background: $accent;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-moz-range-track {
+  background: $hl;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-webkit-slider-thumb {
+  background: $accent;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-webkit-slider-runnable-track {
+  background: $hl;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-ms-thumb {
+  background: $accent;
+  box-shadow: none;
+}
+
+.p-media_viewer_modal__zoom_control .p-zoom__slider::-ms-track {
+  background: $hl;
+}
