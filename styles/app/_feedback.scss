@@ -1,0 +1,10 @@
+.p-feedback_drag_overlay__anim_readonly,
+.p-feedback_drag_overlay__anim_locked {
+  &:before {
+    color: $text;
+  }
+}
+
+.p-feedback_drag_overlay__subtitle {
+  color: $text;
+}

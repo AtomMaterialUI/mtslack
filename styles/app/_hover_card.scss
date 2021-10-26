@@ -1,0 +1,26 @@
+.p-member_profile_hover_card__container {
+  @include card;
+  background: $bg;
+}
+
+.p-member_profile_hover_card__title {
+  color: $fg;
+}
+
+.p-member_profile_hover_card__pronouns {
+  color: $text;
+}
+
+.p-member_profile_hover_card__custom_status {
+  color: $text;
+}
+
+.p-select_members_banner {
+  background-color: $bg2;
+}
+
+.p-selected_member_entities {
+  .c-member {
+    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
