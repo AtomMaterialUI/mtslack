@@ -161,6 +161,10 @@
 .p-composer__body--floating {
   @include dropShadow;
   background: $bg;
+
+  .p-composer__separator {
+    background: $border;
+  }
 }
 
 .p-composer__button--floating {

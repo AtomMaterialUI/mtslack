@@ -161,6 +161,12 @@
         border-left: 1px solid $borderLight;
         border-right: 1px solid $borderLight;
       }
+
+      &[class*='ql-border-'] {
+        &:before {
+          background-color: $borderLight;
+        }
+      }
     }
 
     > {
@@ -180,7 +186,7 @@
           color: $accent;
         }
 
-        > .slack-list-item-checkbox:before {
+        > .slack-docs-list-item-checkbox:before {
           color: $accent;
         }
 
@@ -192,15 +198,15 @@
         color: $bg;
       }
 
-      &[data-checked='false'] > li > .slack-list-item-checkbox:before {
+      &[data-checked='false'] > li > .slack-docs-list-item-checkbox:before {
         color: $fg;
       }
 
-      &[data-checked='false'] > li > .slack-list-item-checkbox:focus:before {
+      &[data-checked='false'] > li > .slack-docs-list-item-checkbox:focus:before {
         color: $hl;
       }
 
-      &[data-checked='true'] > li > .slack-list-item-checkbox {
+      &[data-checked='true'] > li > .slack-docs-list-item-checkbox {
         &:focus:before {
           box-shadow: none;
           color: $accent;
@@ -217,6 +223,17 @@
     opacity: 1;
     filter: none;
     color: $disabled;
+  }
+}
+
+.sk-client-theme--dark .c-texty_input .ql-editor .ql-code-block[class*='ql-border-']:before {
+  background-color: $bg2;
+}
+
+.c-texty_input .ql-editor {
+  ol[class*='ql-border-']:before,
+  ul[class*='ql-border-']:before {
+    background-color: $bg2;
   }
 }
 

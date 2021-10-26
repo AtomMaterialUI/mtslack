@@ -262,3 +262,24 @@
     background-color: $primary;
   }
 }
+
+.p-promote_scdm_screen__send_button--aubergine {
+  color: $selectFg;
+  background-color: $accentT;
+  border: none;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    border: none;
+  }
+
+  &[disabled] {
+    background-color: $accentT;
+    color: $disabled;
+  }
+}
+
+.p-promote_scdm_screen__close_cta {
+  color: $text;
+}

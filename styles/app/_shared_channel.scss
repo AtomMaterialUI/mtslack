@@ -427,6 +427,18 @@ input[type='text'].c-input_text {
     color: $text;
   }
 
+  .p-shared_invite_creator_welcome_modal__footer {
+    background-color: $bg2;
+  }
+
+  .p-shared_invite_creator_welcome_modal__footer--dark_mode {
+    background-color: $bg2;
+  }
+
+  .p-shared_invite_creator_welcome_modal__footer_body {
+    color: $text;
+  }
+
   .p-shared_invite_creator_welcome_modal__ok_button {
     background: $accent;
     color: $selectFg;
@@ -469,5 +481,13 @@ input[type='text'].c-input_text {
 }
 
 .p-shared_channel_invite_flow_modal_tip__text {
+  color: $text;
+}
+
+.p-message_pane_modal_pigeon__header--dark {
+  background: $bg2;
+}
+
+.p-channel_share_channel_by_email_modal__success_channel_name {
   color: $text;
 }
