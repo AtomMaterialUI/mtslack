@@ -26,6 +26,12 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .c-wysiwyg_container {
   background: $contrast;
 
+  &.p-message_input__input_container_unstyled.c-wysiwyg_container--composer_ia {
+    &:focus-within {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+  }
+
   &.p-message_input__input_container_unstyled--with_subject_expanded {
     .c-texty_input_unstyled__subject {
       border-bottom: 1px solid $hl;
@@ -38,11 +44,11 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 }
 
 .c-wysiwyg_container__button--emoji_highlighted .c-icon {
-  background: rgba(var(--sk_secondary_highlight, 242, 199, 68), 1); //yellow emoji
+  background: $yellow; //yellow emoji
 }
 
 .sk-client-theme--dark .c-wysiwyg_container__button--emoji_highlighted .c-icon {
-  color: #1d1c1d; // emoji contour
+  color: $black; // emoji contour
 }
 
 .c-wysiwyg_container__button--with_badge {
@@ -59,11 +65,11 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .c-wysiwyg_container__button {
   &.c-wysiwyg_container__button--send,
   &.c-wysiwyg_container__button--send_options {
-    background: $accentT;
+    background: $button;
     color: $fg;
 
     &:hover {
-      background: $accent;
+      background: $hl;
       color: $selectFg;
     }
 
@@ -72,9 +78,28 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     }
   }
 
+  &.c-wysiwyg_container__button--send_options {
+    background: $contrast;
+    border-radius: 0;
+  }
+
   &.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
   &.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
     color: $disabled;
+  }
+
+  &.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
+    background: $contrast !important;
+  }
+
+  &.c-wysiwyg_container__button--send.c-wysiwyg_container__button--experiment_draft_scheduling {
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &.c-wysiwyg_container__button--disabled:hover {
+      box-shadow: none;
+    }
   }
 
   &.c-wysiwyg_container__button--shortcuts {
@@ -117,6 +142,10 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 }
 
 .c-wysiwyg_container__send_button--with_options {
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+
   .c-wysiwyg_container__button {
     &.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
     &.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
@@ -124,18 +153,34 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
       color: $disabled;
     }
 
+    &.c-wysiwyg_container__button--send_options {
+      background: $contrast;
+    }
+
     &.c-wysiwyg_container__button--send {
-      border-right: 1px solid $borderLight;
+      border-right: none;
 
       &.c-wysiwyg_container__button--disabled {
-        border-right: 1px solid $border;
+        border-right: none;
       }
+    }
+
+    .c-icon {
+      border-right: none;
+    }
+
+    &.c-wysiwyg_container__button--disabled .c-icon {
+      border-right: none;
     }
   }
 }
 
 .c-wysiwyg_container--day1-prog-disc {
   border-color: $primary;
+
+  &:focus-within {
+    border-color: $primary;
+  }
 }
 
 .c-wysiwyg_container:focus-within .c-wysiwyg_container__button.c-icon_button.c-wysiwyg_container__button--composer {
@@ -241,4 +286,49 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
   &.c-wysiwyg_container--theme_dark {
     background: $contrast;
   }
+}
+
+.c-wysiwyg_container--composer_ia {
+  .c-wysiwyg_container__formatting + .c-texty_input_unstyled__container--multiline_overflow--top {
+    box-shadow: inset 0 1px 0 $border;
+  }
+
+  .c-texty_input_unstyled__container--multiline_overflow--bottom + .c-wysiwyg_container__footer {
+    box-shadow: 0 -1px 0 $border;
+
+    &:focus-within {
+      box-shadow: 0 -1px 0 $primaryT;
+    }
+  }
+
+  .c-wysiwyg_container__footer {
+    background-color: transparent;
+    border-top: unset;
+  }
+
+  &:focus-within .c-wysiwyg_container__footer {
+    background-color: $bg2;
+  }
+
+  .c-texty_buttons {
+    .c-wysiwyg_container__button.c-icon_button.c-wysiwyg_container__button--composer.c-wysiwyg_container__button--composer_active {
+      color: $primary;
+    }
+  }
+
+  .c-wysiwyg_container__footer_divider {
+    background: $border;
+  }
+}
+
+.c-wysiwyg_container--composer_ia.c-wysiwyg_container--theme_light_bordered {
+  border-color: $border;
+
+  &:focus-within {
+    border-color: $primaryT;
+  }
+}
+
+.c-wysiwyg_container__button--expand_toggle {
+  color: $text;
 }

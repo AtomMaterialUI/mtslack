@@ -8,6 +8,7 @@
 
   .c-tabs__tab {
     color: $fg;
+    border-left: 2px solid transparent;
 
     &.c-tabs__tab--active,
     &:active {
