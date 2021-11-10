@@ -1,0 +1,13 @@
+.p-file_quip {
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-file_quip__embed {
+  &:after {
+    background: linear-gradient(
+      0deg,
+      rgba(var(--sk_primary_background, 255, 255, 255), 1),
+      rgba(var(--sk_primary_background, 255, 255, 255), 0) 40px
+    );
+  }
+}

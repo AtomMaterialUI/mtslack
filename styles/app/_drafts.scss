@@ -79,6 +79,7 @@
 }
 
 .p-draft_unfurls__remove_btn:focus:hover .p-draft_unfurls__remove_btn_circle,
+.p-draft_unfurls__unfurl_container:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle,
 .p-draft_unfurls__unfurl:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle {
   color: $fg;
 }
@@ -119,4 +120,31 @@
 
 .p-schedule_message__radio_button_subtext {
   color: $text;
+}
+
+.p-schedule_message__time_zone_details {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.7);
+}
+
+.p-drafts_page--scrolled > .p-drafts_page__edit_header {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 1px 0 0 var(--saf-0);
+}
+
+.p-drafts_page__edit_buttons {
+  .p-drafts_page__edit_buttons__button {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
+
+  .p-drafts_page__edit_buttons__delete--highlighted {
+    color: #e01e5a;
+  }
+
+  .p-drafts_page__edit_buttons__send--highlighted {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+
+  .p-drafts_page__edit_buttons__divider {
+    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.13);
+  }
 }

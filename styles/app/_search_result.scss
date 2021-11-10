@@ -79,3 +79,7 @@
 .c-channel_search_result__action_join:hover {
   background: $tree;
 }
+
+.p-people_search_result__label {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}

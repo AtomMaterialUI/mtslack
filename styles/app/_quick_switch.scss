@@ -18,8 +18,18 @@
   }
 }
 
-
 .p-quick_switcher .c-dialog__footer {
   background-color: $bg2;
 }
 
+.p-quip_deleted_state {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-quip_deleted_state__icon {
+  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+}
+
+.p-quip_flexpane__header_actions_divider {
+  border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}

@@ -31,3 +31,16 @@
 .p-deprecated_channel_name__team_name--xws {
   color: $fg;
 }
+
+.p-channel_sidebar__presence_icon {
+  &.c-presence {
+    &.p-channel_sidebar__channel_icon_prefix--comfy {
+      margin-right: 8px;
+    }
+  }
+
+  &.c-presence--away {
+    opacity: 0.64;
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}

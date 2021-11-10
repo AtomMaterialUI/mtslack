@@ -5,3 +5,10 @@
 .p-modal_three_column_row_item__title {
   color: $fg;
 }
+
+.p-modal_more_history_menu__container {
+  .c-menu_item__button--highlighted {
+    background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}

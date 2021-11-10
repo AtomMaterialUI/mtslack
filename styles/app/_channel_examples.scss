@@ -120,3 +120,32 @@
     border-color: $bg2;
   }
 }
+
+.p-channel_sidebar__channel {
+  color: var(--p-channel_sidebar__computed-text-color);
+
+  &:hover,
+  &:link,
+  &:visited {
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}
+
+.p-channel_sidebar__link {
+  color: var(--p-channel_sidebar__computed-text-color);
+
+  &:hover,
+  &:link,
+  &:visited {
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}
+
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter {
+  background: var(--p-channel_sidebar__column-bg);
+}
+
+.p-channel_sidebar__channel--context,
+.p-channel_sidebar__section_placeholder {
+  color: var(--p-channel_sidebar__computed-text-color);
+}

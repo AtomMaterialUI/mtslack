@@ -68,3 +68,17 @@
     border-bottom: 1px solid $border;
   }
 }
+
+.p-share_workflow_block__container {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-share_workflow_block__caption {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-share_workflow_block__pill {
+  background-color: rgba(74, 21, 75, 0.1);
+  color: #4a154b;
+}

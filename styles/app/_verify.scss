@@ -1,0 +1,22 @@
+.p-verify_email_modal_success__header {
+  i {
+    color: #007a5a;
+    background-color: rgba(0, 122, 90, 0.05);
+  }
+}
+
+.p-unverified_email_received_empty_page {
+  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-unverified_email_received_empty_page__subtitle {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unverified_email_received_empty_page__alert_subtext {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-unverified_email_received_empty_page__alert .c-link--button {
+  color: #1264a3;
+}

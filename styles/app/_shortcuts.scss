@@ -182,3 +182,19 @@
 .p-shortcuts_menu_v2_search_input_wrapper--end {
   border-top: 1px solid $borderLight;
 }
+
+.p-shortcuts_modal_prototype {
+  .p-shortcuts_menu_v2_item--active * {
+    color: #fff !important;
+  }
+}
+
+.p-shortcuts_menu_v2_heading__icon {
+  &.c-icon--bolt-filled {
+    color: #1264a3;
+  }
+}
+
+.p-shortcuts_menu_v2_search_input_bolt_icon {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}

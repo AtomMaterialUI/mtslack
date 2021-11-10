@@ -53,8 +53,40 @@
   }
 }
 
+.p-bookmarks_bar--dropping {
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
 .p-bookmarks_bar--with-hide-on-scroll {
   border-bottom: 1px solid $borderLight;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 0 0 var(--saf-0);
+}
+
+.p-bookmarks_bar__folder_bookmarks_button button {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  &:active {
+    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_button--collapsed button {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  &:active {
+    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_add_bookmark {
+  &.c-menu_item__button {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  }
+
+  &.c-menu_item__button--highlighted {
+    color: #fff;
+  }
 }
 
 .p-bookmarks_bar__item {
@@ -170,11 +202,19 @@
   border-top: 2px solid $hl !important;
 }
 
+.p-bookmarks_bar__folder_bookmarks_button__bookmark {
+  .p-bookmarks_bar__bookmark {
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_button__bookmark_pin_option,
 .p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
   color: $primary;
 }
 
 .p-bookmarks_bar__collapsed_bookmarks__add_bookmarks_option.c-menu_item__button--highlighted {
+  .p-bookmarks_bar__folder_bookmarks_button__bookmark_pin_option,
   .p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
     color: $primary;
   }
@@ -227,6 +267,38 @@
   }
 }
 
-.p-tiles__minimized_tile {
-  box-shadow: 0 0 0 1px $primary, 0 18px 48px 0 $primaryT;
+.p-bookmarks_bar__pins_popover_button__overflow--highlighted {
+  color: #fff;
+}
+
+.p-bookmarks_bar_modal__input_section_title__container__image__icon--chevron-down {
+  &:after {
+    border-left: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.p-bookmarks_bar__calls_button {
+  button {
+    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+    &:active {
+      background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    }
+  }
+}
+
+.p-bookmarks_bar__ez_subscribe_button {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+
+  &:active {
+    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+}
+
+.p-bookmarks_bar__ez_subscribe_button__overflow--highlighted {
+  color: #fff;
+}
+
+.p-bookmarks_bar__last_updated_indicator {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }

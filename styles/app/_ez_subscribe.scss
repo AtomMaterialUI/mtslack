@@ -1,0 +1,13 @@
+.p-ez_subscribe_subscription_entity--highlight {
+  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+}
+
+.p-ez_subscribe_popover {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-ez_subscribe_popover__heading {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}

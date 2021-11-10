@@ -159,10 +159,6 @@
   &.valid_cards {
     border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
   }
-
-  &.reports {
-    grid-template-columns: repeat(3, 128px);
-  }
 }
 
 .p-rimeto_org_chart_member_card {
@@ -218,10 +214,6 @@
   }
 }
 
-.p-rimeto_org_chart_member_card_name {
-  font-family: Slack-Lato, appleLogo, sans-serif;
-}
-
 .p-rimeto_org_chart_member_card_reports {
   --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
   --saf-1: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
@@ -235,7 +227,16 @@
 
 .p-rimeto_org_chart_member_card_dim {
   color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  -webkit-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  filter: grayscale(1);
+}
+
+.p-rimeto_member_profile_field__country--text {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-rimeto_profile_sections__edit--icon {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+
+.p-rimeto_profile_sections__element--edit {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }

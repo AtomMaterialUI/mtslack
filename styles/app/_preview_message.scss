@@ -1,0 +1,16 @@
+.p-preview_message {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-history_preview__label {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-history_preview__list_wrapper {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+}
+
+.p-history_menu__entry__show_more.c-menu_item__button--highlighted {
+  color: #fff;
+}

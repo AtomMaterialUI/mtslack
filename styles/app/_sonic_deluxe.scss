@@ -2,7 +2,9 @@
   background: $notif;
   color: $fg;
 
-  .c-button--focus-visible:focus, .c-link--focus-visible:focus, .focus-ring {
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus,
+  .focus-ring {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
@@ -11,7 +13,8 @@
   background: $notif;
   color: $fg;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     color: $primary;
   }
 }
@@ -23,7 +26,9 @@ button:focus > .p-sonic_deluxe_toast__close {
 a.p-sonic_deluxe_toast__link {
   color: $fg;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $primary;
   }
 }
@@ -37,7 +42,8 @@ a.p-sonic_deluxe_toast__link {
   background: $notif;
   color: $fg;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     color: $selectFg;
   }
 }
@@ -57,11 +63,12 @@ button:focus > .p-workflow_builder_deluxe_toast__close {
 a.p-workflow_builder_deluxe_toast__link {
   color: $primary;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $selectFg;
   }
 }
-
 
 .p-workflowtoken__channel {
   .c-link--button {
@@ -78,4 +85,55 @@ a.p-workflow_builder_deluxe_toast__link {
 .p-workflowtoken__missing {
   color: $red;
   background: $bg2;
+}
+
+.p-workflow_details__subtitle {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}
+
+.p-workflow_config__input_button {
+  border-bottom: 2px dashed #1264a3;
+}
+
+.p-workflow_config__input_button--warning {
+  border-bottom-color: #e8912d;
+}
+
+.p-workflow_config_modal__content_section {
+  background-color: rgba(29, 155, 209, 0.1);
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-workflow_config_modal__trigger_preview_icon {
+  background-color: #1264a3;
+  color: #fff;
+
+  &:before {
+    background-color: #1264a3;
+  }
+}
+
+.p-workflow_config_modal__step_preview_icon {
+  background-color: rgba(29, 155, 209, 0.1);
+  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.p-workflow_config_modal__trigger_button {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border: 1px solid var(--saf-0);
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-workflow_config_modal__trigger_button--selected {
+  background-color: #e8f5fa;
+  border-color: #1264a3;
+}
+
+.p-workflow_config_modal__trigger_icon {
+  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+
+.p-workflow_config_modal__trigger_container {
+  background-color: #4a154b;
 }

@@ -2,6 +2,11 @@
   border: 1px solid $hl;
   background: transparent;
 
+  + .p-huddle_switch_button__toggle_animation-exit.p-huddle_switch__visual:after {
+    border: 1px solid var(--p-huddle__active_item_opacity_13);
+    background-color: var(--p-huddle__active_item_text);
+  }
+
   &:hover {
     border-color: $primary;
     background-color: transparent;
@@ -17,6 +22,7 @@
       }
 
       &:after {
+        border: 1px solid var(--p-huddle__active_item_opacity_13);
         background-color: $selectFg;
       }
     }
@@ -106,5 +112,36 @@
 .p-huddle_nav_button {
   &:hover .p-huddle_nav_button__svg--headset path:last-of-type {
     fill: $primary;
+  }
+}
+
+.p-huddle_sidebar_footer--join_active:hover .p-huddle_switch__visual:after,
+.p-huddle_sidebar_footer--join_non_active:hover .p-huddle_switch__visual:after {
+  background-color: var(--p-huddle__text_color);
+}
+
+.p-huddle_screen_viewer__mic_button {
+  color: #fff;
+  background-color: #616061;
+
+  &:hover {
+    background-color: #616061;
+  }
+
+  &:focus-visible {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  }
+}
+
+.p-huddle_screen_viewer__mic_button--mute .p-huddle_mic_icon__microphone--input_level {
+  background-color: #fff;
+}
+
+.p-huddle_screen_picker_modal {
+  .p-video_recorder_screen_picker_tile--selected,
+  .p-video_recorder_screen_picker_tile:hover {
+    background-color: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+    color: #fff;
   }
 }

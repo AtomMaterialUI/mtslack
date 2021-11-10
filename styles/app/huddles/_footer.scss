@@ -88,6 +88,19 @@
   .p-huddle_sidebar_footer__controls_w_topic {
     background-color: $text;
   }
+
+  &.p-huddle_sidebar_footer--education-card-border {
+    border: 4px solid var(--p-huddle__active_item);
+    border-bottom: none;
+  }
+
+  &.p-huddle_sidebar_footer--discovery-banner {
+    border: 2px solid var(--p-huddle__active_item);
+  }
+}
+
+.p-huddle_sidebar_footer__container_survey {
+  border: 2px solid var(--p-huddle__text_color_opacity);
 }
 
 .p-huddle_sidebar_footer_popover_container {
@@ -126,6 +139,7 @@
 
 .p-huddle_sidebar_footer__survey {
   background-color: $bg;
+  color: var(--p-huddle__text_color);
 }
 
 .p-huddle_sidebar_footer__button--join,
@@ -155,4 +169,20 @@
 .p-huddle_sidebar_footer--join_active:hover .p-huddle_sidebar_footer__join_non_active_container,
 .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__join_non_active_container {
   color: $fg;
+}
+
+.p-huddle_sidebar_footer--join_active:hover .p-huddle_switch__input,
+.p-huddle_sidebar_footer--join_non_active:hover .p-huddle_switch__input {
+  border: 1px solid var(--p-huddle__text_color_opacity_50);
+  background-color: var(--p-huddle__hover_item);
+
+  &:hover {
+    border: 1px solid var(--p-huddle__text_color_opacity_50);
+    background-color: var(--p-huddle__hover_item);
+  }
+}
+
+.p-huddle_switch__input:checked {
+  background-color: var(--p-huddle__active_item);
+  border: 1px solid var(--p-huddle__active_item);
 }

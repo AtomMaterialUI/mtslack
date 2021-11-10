@@ -1,0 +1,15 @@
+.deprecation-browser-banner {
+  background-color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+}
+
+.depreaction-browser-icon {
+  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+}
+
+.deprecation-browser-banner {
+  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+
+  .c-banner__close {
+    color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+  }
+}

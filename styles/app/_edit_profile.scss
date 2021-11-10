@@ -51,3 +51,11 @@
 .p-edit_profile__rules {
   color: $fg;
 }
+
+.p-edit_prefs_settings_modal__footer_text {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-edit_profile_section_form_pane__current_location_clear--text {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}

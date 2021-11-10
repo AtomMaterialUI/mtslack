@@ -18,6 +18,57 @@
 
 .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link {
   color: $accent2;
+
+  &.p-huddle_education_card__learn_more_link--dark_mode {
+    color: #fff;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+    border-radius: 4px;
+    border-color: transparent;
+    -webkit-appearance: none;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: #1e1d1e;
+    }
+  }
+}
+
+.p-huddle_education_card__learn_more_lightbulb {
+  color: #e8912d;
+}
+
+.p-huddle_trial_card__learn_more_link {
+  color: #1264a3;
+}
+
+.sk-client-theme--dark .p-huddle_trial_card__learn_more_link {
+  color: #fff;
+}
+
+.p-huddle_trial_card__learn_more_link {
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: #1e1d1e;
+    }
+  }
 }
 
 .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link:focus {

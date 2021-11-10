@@ -312,12 +312,18 @@
   color: $disabled;
 }
 
+.p-shared_channel_trial_banner,
 .p-shared_channel_trial_banner--persistent {
   background-color: $notif;
+  border-top: 1px solid rgba(185, 138, 9, 0.3);
+  border-bottom: 1px solid rgba(185, 138, 9, 0.3);
 }
 
+.sk-client-theme--dark .p-shared_channel_trial_banner,
 .sk-client-theme--dark .p-shared_channel_trial_banner--persistent {
   background: $notif;
+  border-top: 1px solid rgba(241, 176, 23, 0.3);
+  border-bottom: 1px solid rgba(241, 176, 23, 0.3);
 }
 
 .p-shared_channel_trial_banner--persistent_edu {

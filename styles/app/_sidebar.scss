@@ -51,6 +51,10 @@ a.c-sidebar_menu__list_item {
   color: $bg2;
 }
 
+.p-team_sidebar__govslack_icon {
+  background-color: #868686;
+}
+
 .p-team_sidebar__signed_out_badge {
   color: $yellow;
 }
@@ -106,6 +110,12 @@ a.c-sidebar_menu__list_item {
 
 .c-menu_item__li--highlighted .p-channel_sidebar__channel_section_menu_submenu_label__secondary_text {
   color: $selectFg;
+}
+
+.p-channel_sidebar__close {
+  &:focus {
+    background: var(--p-channel_sidebar__column-bg);
+  }
 }
 
 .p-channel_sidebar__close:focus {
@@ -292,6 +302,11 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .p-channel_sidebar__history_button {
   background: $button;
+
+  &:hover {
+    background: var(--p-channel_sidebar__navigation-bar-color--hover);
+    color: var(--p-channel_sidebar__top-nav-text);
+  }
 }
 
 .p-ia__view_header {
@@ -313,6 +328,17 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .p-channel_sidebar__history_button:hover {
   background: $hl;
+}
+
+.p-team_sidebar {
+  background: var(--p-team_sidebar__nav-bg);
+}
+
+.p-channel_sidebar__history_button--disabled {
+  &:hover {
+    background: var(--p-channel_sidebar__navigation-bar-color);
+    color: var(--p-channel_sidebar__top-nav-text);
+  }
 }
 
 .p-channel_sidebar__history_button--disabled:hover {
@@ -437,6 +463,12 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   color: $accent;
 }
 
+.p-team_sidebar__icon {
+  &:hover {
+    box-shadow: 0 0 0 3px var(--p-team_sidebar__nav-bg), 0 0 0 6px var(--p-team_sidebar__text-color--opacity-30);
+  }
+}
+
 .p-team_sidebar__icon:hover {
   box-shadow: 0 0 0 3px $button, 0 0 0 6px $hl;
 }
@@ -514,6 +546,28 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   color: $selectFg;
 }
 
+.p-channel_sidebar__organize_action {
+  color: var(--p-channel_sidebar__theme-text);
+  background-color: var(--p-channel_sidebar__theme-text--opacity-11);
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: var(--p-channel_sidebar__theme-text--opacity-20);
+  }
+}
+
+.p-channel_sidebar__organize_action--primary {
+  color: var(--p-channel_sidebar__column-bg);
+  background-color: var(--p-channel_sidebar__theme-text);
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: var(--p-channel_sidebar__theme-text--opacity-89);
+  }
+}
+
 .p-channel_sidebar__organize_mode_menu {
   .p-channel_sidebar__organize_action {
     color: $text;
@@ -577,6 +631,27 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   background: transparent;
 }
 
+.p-channel_sidebar__link--all-threads--disabled:hover,
+.p-channel_sidebar__link--page--disabled:hover {
+  color: var(--p-channel_sidebar__computed-text-color);
+  background: var(--p-channel_sidebar__column-bg);
+}
+
+.p-channel_sidebar__link--selected {
+  &.p-channel_sidebar__link--all-threads--disabled,
+  &.p-channel_sidebar__link--page--disabled {
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}
+
+.p-channel_sidebar__link--add_suggestions {
+  background: var(--p-channel_sidebar__navigation-bar-color);
+
+  &:hover {
+    background: var(--p-channel_sidebar__navigation-bar-color--hover);
+  }
+}
+
 .p-channel_sidebar__link--selected.p-channel_sidebar__link--page--disabled,
 .p-channel_sidebar__link--selected.p-channel_sidebar__link--all-threads--disabled {
   color: $disabled;
@@ -630,6 +705,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-channel_sidebar__compose_button--disabled {
   background: $disabled;
+  color: var(--p-channel_sidebar__computed-text-color);
 }
 
 .p-channel_sidebar__compose_button--iap1:active {
@@ -768,6 +844,16 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   border-color: $borderLight;
 }
 
+.p-channel_sidebar__setup_channel_input {
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}
+
 .p-channel_sidebar__channel.p-channel_sidebar__setup_channel_input {
   background: $contrast;
   color: $fg;
@@ -813,6 +899,10 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   border-top: 1px solid $borderLight;
   color: $fg;
   background: $contrast;
+
+  .c-icon {
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
 }
 
 .p-channel_sidebar__setup_prompt a,
@@ -859,14 +949,4 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-tiles__tile:not(.p-tiles__tile--active)::after {
   background-color: $bg;
-}
-
-.p-tiles__minimized_tile {
-  background-color: $bg;
-}
-
-.p-tiles__minimized_tile__title,
-.p-tiles__minimized_tile__button.c-icon_button--light,
-.p-tiles__minimized_tile__button.c-icon_button--light.c-button-unstyled:hover:hover {
-  color: $fg;
 }

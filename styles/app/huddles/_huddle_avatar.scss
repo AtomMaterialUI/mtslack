@@ -50,6 +50,12 @@
   fill: $bg;
 }
 
+.p-huddle_antenna_icon__antenna--text_color_all,
+.p-huddle_antenna_icon__inner_wave--text_color_all,
+.p-huddle_antenna_icon__outer_wave--text_color_all {
+  fill: var(--p-huddle__text_color);
+}
+
 .p-huddle_antenna_icon__antenna--text_color_opacity_50,
 .p-huddle_antenna_icon__inner_wave--text_color_opacity_50,
 .p-huddle_antenna_icon__outer_wave--text_color_opacity_50 {
@@ -78,4 +84,28 @@
 
 .p-channel_sidebar__channel--selected .p-huddle_avatar_stack.p-huddle_avatar_stack--not-last {
   background-color: $bg2;
+}
+
+.p-huddle_antenna_icon__antenna--sk_sapphire_blue,
+.p-huddle_antenna_icon__inner_wave--sk_sapphire_blue,
+.p-huddle_antenna_icon__outer_wave--sk_sapphire_blue {
+  fill: #1264a3;
+}
+
+.p-huddle_antenna_icon__antenna--sk_true_white,
+.p-huddle_antenna_icon__inner_wave--sk_true_white,
+.p-huddle_antenna_icon__outer_wave--sk_true_white {
+  fill: #fff;
+}
+
+.p-huddle_avatar_stack__avatars_container {
+  &.p-huddle_avatar_stack__quick_switcher_icon {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    color: #1264a3;
+
+    &.p-huddle_avatar_stack__avatars_container--selected {
+      background: #1264a3;
+      color: #fff;
+    }
+  }
 }

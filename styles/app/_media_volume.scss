@@ -1,0 +1,16 @@
+.p-media_volume_slider__track {
+  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  }
+}
+
+.p-media_volume_slider--popover .p-media_volume_slider__track {
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.p-media_volume_slider__fill {
+  background: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+}

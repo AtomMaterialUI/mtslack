@@ -151,19 +151,37 @@
 
 .p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_contrasted_text,
 .p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__download .p-workspace_banner__desktop_banner_contrasted_text,
 .p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_contrasted_text {
   color: $text;
 }
 
 .p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_dont_ask_again,
 .p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__download .p-workspace_banner__desktop_banner_dont_ask_again,
 .p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_dont_ask_again {
   color: $text;
 }
 
-.p-workspace_banner__download_ssb {
+.p-workspace_banner__download_ssb,
+.p-workspace_banner__download {
+  .p-workspace_banner__download_content_link--secondary,
   .p-workspace_banner__download_ssb_content_link--secondary {
     color: $text;
+  }
+
+  .p-workspace_banner__download_content_link--primary {
+    &:focus {
+      color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+    }
+  }
+
+  .p-workspace_banner__download_content_link--secondary {
+    color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.7);
+
+    &:focus {
+      color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.7);
+    }
   }
 }
 
