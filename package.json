@@ -57,23 +57,23 @@
     "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
     "configstore": "^6.0.0",
-    "figlet": "^1.5.0",
-    "inquirer": "^8.1.0",
-    "is-elevated": "^4.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "is-elevated": "^3.0.0",
     "is-root": "^3.0.0",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
-    "rimraf": "latest"
+    "rimraf": "^3.0.2"
   },
   "publishConfig": {
     "access": "public",
     "cache": "~/.npm"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
+    "eslint": "8.2.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "gulp": "4.0.2",
@@ -89,7 +89,7 @@
     "http-server": "14.0.0",
     "npx": "10.2.2",
     "prettier": "2.4.1",
-    "stylelint": "13.13.1",
-    "stylelint-prettier": "1.2.0"
+    "stylelint": "14.0.1",
+    "stylelint-prettier": "2.0.0"
   }
 }
