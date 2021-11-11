@@ -63,7 +63,8 @@
     "is-root": "^3.0.0",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.4"
   },
   "publishConfig": {
     "access": "public",

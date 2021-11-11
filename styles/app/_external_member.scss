@@ -12,37 +12,37 @@
   .p-external_member_awareness_banner__company_pile_container
   .p-connection_info_icon__icon
   + .p-connection_info_icon__icon {
-  box-shadow: -2px 0 0 #1f2e2d, (-2px) 1px 0 #1f2e2d, (-2px) -1px #1f2e2d;
+  box-shadow: -2px 0 0 $button, (-2px) 1px 0 $button, (-2px) -1px $button;
 }
 
 .p-external_member_awareness_banner {
   .p-external_member_awareness_banner__description__text {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 
   .p-external_member_awareness_banner__description__title {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 
   .p-external_member_awareness_banner__description__text__cta {
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    color: $primary;
 
     &:hover {
-      color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+      color: $primary;
     }
 
     &:focus {
-      color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
-      --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-      box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+      color: $primary;
+      --saf-0: $primary;
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
     }
   }
 
   .p-external_member_awareness_banner__close_button {
     &:focus {
-      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-      --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-      box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+      color: $fg;
+      --saf-0: $primary;
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
     }
   }
 }

@@ -111,7 +111,7 @@
 }
 
 //.p-drafts_page__older_drafts_label:after {
-//  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  color: $border;
 //}
 
 .p-drafts_page__draft_date_scheduled {
@@ -123,28 +123,27 @@
 }
 
 .p-schedule_message__time_zone_details {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-drafts_page--scrolled > .p-drafts_page__edit_header {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 1px 0 0 var(--saf-0);
+  box-shadow: 0 1px 0 0 $border;
 }
 
 .p-drafts_page__edit_buttons {
   .p-drafts_page__edit_buttons__button {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    color: $text;
   }
 
   .p-drafts_page__edit_buttons__delete--highlighted {
-    color: #e01e5a;
+    color: $red;
   }
 
   .p-drafts_page__edit_buttons__send--highlighted {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 
   .p-drafts_page__edit_buttons__divider {
-    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.13);
+    background-color: $borderLight;
   }
 }

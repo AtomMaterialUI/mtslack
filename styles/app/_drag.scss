@@ -64,24 +64,15 @@
 .p-drag_layer__sidebar_section_heading {
   color: $fg;
   background: $active !important;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-}
-
-.p-drag_layer__sidebar_channels_container {
-  position: relative;
-  display: flex;
-  width: 0;
-  justify-content: space-around;
 }
 
 .p-drag_layer__sidebar_channels {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 0.05);
-  box-shadow: 0 0 0 1px var(--saf-0);
-  color: var(--p-channel_sidebar__computed-text-color);
-  background: var(--p-channel_sidebar__column-bg);
+  box-shadow: 0 0 0 1px $bg;
+  color: $text;
+  background: $contrast;
 }
 
 .p-drag_layer__sidebar_section_heading {
-  color: var(--p-channel_sidebar__computed-text-color);
-  background: var(--p-channel_sidebar__column-bg);
+  color: $text;
+  background: $contrast;
 }

@@ -172,15 +172,15 @@
 
   .p-workspace_banner__download_content_link--primary {
     &:focus {
-      color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
+      color: $fg;
     }
   }
 
   .p-workspace_banner__download_content_link--secondary {
-    color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.7);
+    color: $text;
 
     &:focus {
-      color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.7);
+      color: $text;
     }
   }
 }

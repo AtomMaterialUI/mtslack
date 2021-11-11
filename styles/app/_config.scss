@@ -1,36 +1,35 @@
 .p-config_section__container {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
+  border: 1px solid $border;
 
   + .p-config_section__container {
     &:before {
-      background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+      background-color: $border;
     }
   }
 }
 
 .p-config_section__subtitle {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $text;
+  background-color: $bg;
 }
 
 .p-install_config_icon__container {
-  background-color: #4a154b;
-  color: #fff;
+  background-color: $contrast;
+  color: $fg;
 }
 
 .p-install_config_icon__container--rounded-top {
-  background-color: #007a5a;
+  background-color: $green;
 }
 
 .p-install_config_icon__container--rounded-bottom {
-  background-color: #1264a3;
+  background-color: $accent;
 }
 
 .p-install_config_icon__container--rounded {
-  background-color: #1264a3;
+  background-color: $accent;
 }
 
 .p-config_preview__subtitle {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }

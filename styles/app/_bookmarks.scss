@@ -54,38 +54,36 @@
 }
 
 .p-bookmarks_bar--dropping {
-  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-top: 1px solid $border;
 }
 
 .p-bookmarks_bar--with-hide-on-scroll {
   border-bottom: 1px solid $borderLight;
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 0 0 var(--saf-0);
 }
 
 .p-bookmarks_bar__folder_bookmarks_button button {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $fg;
 
   &:active {
-    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    background-color: $border;
   }
 }
 
 .p-bookmarks_bar__folder_bookmarks_button--collapsed button {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $fg;
 
   &:active {
-    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    background-color: $border;
   }
 }
 
 .p-bookmarks_bar__folder_bookmarks_add_bookmark {
   &.c-menu_item__button {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    color: $fg;
   }
 
   &.c-menu_item__button--highlighted {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
@@ -116,7 +114,7 @@
 
 .p-bookmarks_bar__bookmark__icon {
   background: $contrast;
-  border: 1px solid var(--saf-0);
+  border: 1px solid $border;
 }
 
 .p-bookmarks_bar__bookmark__tooltip_url {
@@ -204,7 +202,7 @@
 
 .p-bookmarks_bar__folder_bookmarks_button__bookmark {
   .p-bookmarks_bar__bookmark {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 }
 
@@ -268,37 +266,37 @@
 }
 
 .p-bookmarks_bar__pins_popover_button__overflow--highlighted {
-  color: #fff;
+  color: $primary;
 }
 
 .p-bookmarks_bar_modal__input_section_title__container__image__icon--chevron-down {
   &:after {
-    border-left: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    border-left: 1px solid $borderLight;
   }
 }
 
 .p-bookmarks_bar__calls_button {
   button {
-    color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+    color: $fg;
 
     &:active {
-      background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+      background-color: $border;
     }
   }
 }
 
 .p-bookmarks_bar__ez_subscribe_button {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $fg;
 
   &:active {
-    background-color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    background-color: $border;
   }
 }
 
 .p-bookmarks_bar__ez_subscribe_button__overflow--highlighted {
-  color: #fff;
+  color: $primary;
 }
 
 .p-bookmarks_bar__last_updated_indicator {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $accent;
 }
