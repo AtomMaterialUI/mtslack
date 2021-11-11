@@ -22,6 +22,14 @@ async function run() {
   );
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
+  console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
+  console.log(`Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`);
+  console.log('As a result, this plugin is now becoming obsolete 😭');
+  console.log('');
+  console.log('You can still use it for older versions though, if you still had those. I will keep on posting style updates from time to time, until it will be no longer available.');
+  console.log('');
+  console.log(chalk.bold.green('So long, and thanks for the 🐟!'));
+
   console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
 
@@ -61,7 +69,8 @@ async function checkForUpdates() {
     if (shouldUpdate) {
       console.log('Update finished. Please rerun the command.');
       process.exit(0);
-    } else {
+    }
+    else {
       await run();
     }
   });
