@@ -1,5 +1,8 @@
 {
-  "plugins": ["stylelint-prettier"],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "customSyntax": "postcss-sass",
   "rules": {
     "prettier/prettier": true,
     "color-hex-length": "short",
