@@ -1,0 +1,35 @@
+.p-config_section__container {
+  border: 1px solid $border;
+
+  + .p-config_section__container {
+    &:before {
+      background-color: $border;
+    }
+  }
+}
+
+.p-config_section__subtitle {
+  color: $text;
+  background-color: $bg;
+}
+
+.p-install_config_icon__container {
+  background-color: $contrast;
+  color: $fg;
+}
+
+.p-install_config_icon__container--rounded-top {
+  background-color: $green;
+}
+
+.p-install_config_icon__container--rounded-bottom {
+  background-color: $accent;
+}
+
+.p-install_config_icon__container--rounded {
+  background-color: $accent;
+}
+
+.p-config_preview__subtitle {
+  color: $text;
+}

@@ -6,10 +6,19 @@
     background: $bg !important;
     color: $selectFg !important;
   }
+
+  .c-button--focus-visible:focus {
+    box-shadow: var(--p-channel_sidebar__focus-outline-box-shadow);
+  }
+
+  .p-ia__sidebar_header__mode {
+    background: var(--p-channel_sidebar__column-bg);
+  }
 }
 
 .p-workspace__channel_sidebar {
-  .p-ia__sidebar_header__mode__info_button, .p-ia__sidebar_header__mode__find_button {
+  .p-ia__sidebar_header__mode__info_button,
+  .p-ia__sidebar_header__mode__find_button {
     border: 1px solid $button;
     background: $button;
     color: $fg;
@@ -22,6 +31,10 @@
 }
 
 .p-client_desktop--ia-top-nav {
+  .p-team_sidebar {
+    box-shadow: inset -1px 0 0 0 var(--p-team_sidebar__text-color--mix-10);
+  }
+
   .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
   .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__mode {
     border-bottom: 1px solid $borderLight;
@@ -32,6 +45,7 @@
     border-color: $borderLight !important;
   }
 }
+
 .p-channel_sidebar__compose_button--iap1 {
   background: $button !important;
   color: $fg !important;
@@ -47,4 +61,8 @@
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__divider {
   border-bottom-color: $border !important;
+}
+
+.p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
+  color: var(--p-channel_sidebar__column-bg);
 }

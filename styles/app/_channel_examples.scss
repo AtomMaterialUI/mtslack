@@ -120,3 +120,32 @@
     border-color: $bg2;
   }
 }
+
+.p-channel_sidebar__channel {
+  color: $text;
+
+  &:hover,
+  &:link,
+  &:visited {
+    color: $text;
+  }
+}
+
+.p-channel_sidebar__link {
+  color: $text;
+
+  &:hover,
+  &:link,
+  &:visited {
+    color: $text;
+  }
+}
+
+.p-channel_sidebar__channel.p-channel_sidebar__channel--mpim .p-channel_sidebar__mpim_counter {
+  background: $contrast;
+}
+
+.p-channel_sidebar__channel--context,
+.p-channel_sidebar__section_placeholder {
+  color: $text;
+}

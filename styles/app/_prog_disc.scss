@@ -52,6 +52,16 @@
   .p-setup_prog_disc_explainer_tip_text {
     color: $fg;
   }
+
+  .p-setup_prog_disc_explainer_tip_dismissal {
+    .p-setup_prog_disc_explainer_tip_dismissal_icon {
+      color: #fff;
+    }
+  }
+
+  .p-setup_prog_disc_explainer_tip_text {
+    color: #fff;
+  }
 }
 
 .p-setup_prog_disc_success_coachmark {
@@ -106,6 +116,10 @@
   &:hover {
     color: $selectFg;
   }
+}
+
+.p-setup_prog_disc_explainer_tip_container {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }
 
 .p-composer__body--prog-disc-tip {
@@ -210,6 +224,7 @@
     background: $bg2;
   }
 
+  .p-setup_prog_disc_empty_reply_bar__text,
   .p-setup_prog_disc_empty_reply_bar__cta_text {
     color: $selectFg;
   }
@@ -282,4 +297,94 @@
 
 .p-promote_scdm_screen__close_cta {
   color: $text;
+}
+
+.p-setup_prog_disc_modal_explainer_tip {
+  background-color: rgba(29, 155, 209, 0.1);
+}
+
+.p-setup_joiner_coachmark {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: #fff;
+
+  .c-coachmark__close.c-icon_button--light {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &.c-coachmark--right {
+    &:after,
+    &:before {
+      border-right-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    }
+  }
+}
+
+.p-setup_prog_disc_user_flag_tip--visible {
+  .p-setup_prog_disc_user_flag_tip__wrapper {
+    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  }
+
+  &.p-setup_prog_disc_user_flag_tip--exiting {
+    .p-setup_prog_disc_user_flag_tip__wrapper {
+      background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    }
+  }
+}
+
+@keyframes prog_disc_user_flag_tip--bg-color {
+  0% {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+
+  to {
+    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  }
+}
+
+@keyframes prog_disc_user_flag_tip--bg-color-restore {
+  0% {
+    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.p-setup_prog_disc_user_menu_explainer_tip {
+  &.p-setup_prog_disc_user_menu_explainer_tip--notifications {
+    background-color: rgba(29, 155, 209, 0.1);
+
+    .p-setup_prog_disc_user_menu_explainer_tip__text {
+      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    }
+  }
+
+  &.p-setup_prog_disc_user_menu_explainer_tip--status {
+    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+
+    .p-setup_prog_disc_user_menu_explainer_tip__text {
+      color: #fff;
+    }
+
+    .p-setup_prog_disc_user_menu_explainer_tip__close {
+      :before {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.p-setup_prog_disc_sidebar_tip__enclose {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  border: 2px solid var(--saf-0);
+}
+
+.p-setup_prog_disc_sidebar_tip__content {
+  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: #fff;
 }

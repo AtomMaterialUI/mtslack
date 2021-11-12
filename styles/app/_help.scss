@@ -195,6 +195,7 @@
   color: $text;
 }
 
+.p-help_search__content__card__slack_connect .p-help_search__resource_card__image img,
 .p-help_search__content__card__new_ia .p-help_search__resource_card__image img {
   background-color: $accent;
 }
@@ -338,5 +339,146 @@
   .p-help_search__content__card__live_chat_support_card_icon {
     color: $accent;
     background-color: $bg;
+  }
+}
+
+.p-help_search__product_release_card__container {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px solid var(--saf-0);
+}
+
+.p-help_search__product_release_card__image {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 0 solid var(--saf-0);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-help_home_actionable_card {
+  background-color: rgba(224, 30, 90, 0.1);
+  border: 1px solid rgba(224, 30, 90, 0.1);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.p-help_home_actionable_card__badge {
+  color: #e01e5a;
+}
+
+.p-help_home_slider__arrow {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  --saf-0: rgba(var(--sk_foreground_mid_solid, 187, 186, 187), 1);
+  border: 1px solid var(--saf-0);
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+  &:focus,
+  &:hover {
+    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  }
+}
+
+.p-help_home_product_release_card__link {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  width: 100%;
+  height: unset;
+
+  &:active,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.p-help_home_product_release_card__container {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 1px solid var(--saf-0);
+
+  &:hover {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+  }
+}
+
+.p-help_home_product_release_card__image {
+  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border: 0 solid var(--saf-0);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-help_home_product_release_card__badge {
+  background-color: #e8f5fa;
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 1px 3px 0 #000;
+}
+
+.p-help_home_featured__header {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-help_home {
+  .p-help_modal__browse {
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+
+    &:hover {
+      color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    }
+  }
+}
+
+.p-help_home__actionables_title {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+
+.p-help_home {
+  .p-help_modal__footer {
+    border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  }
+
+  .p-help_modal__requests:hover {
+    .p-help_modal__requests__message {
+      color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    }
+  }
+
+  .p-help_modal__requests__message {
+    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+
+    &.read:not(.p-help_modal__requests__message__redesign) {
+      color: #007a5a;
+    }
+  }
+
+  .p-help_modal__requests_badge {
+    color: #fff;
+
+    &.read {
+      background-color: #007a5a;
+    }
+
+    &.unread {
+      background-color: #e01e5a;
+    }
+
+    &.p-help_modal__requests_badge__redesign {
+      &.read {
+        background-color: transparent;
+        color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      }
+    }
+  }
+
+  .p-help_search_filter_input__prog_disc_explainer {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    border: 2px solid var(--saf-0);
   }
 }

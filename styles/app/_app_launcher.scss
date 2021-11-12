@@ -51,6 +51,10 @@
   color: $text;
 }
 
+.p-app_launcher__app_card__text--org {
+  color: $text;
+}
+
 .p-app_launcher__category_header__link,
 .p-app_launcher__category_header__title {
   color: $primary;
@@ -103,6 +107,10 @@
 
 .p-app_launcher--non_ia .c-filter_input:not(.c-filter_input--active) {
   border-color: $borderLight;
+}
+
+.p-app_launcher__app_card__org {
+  color: $text;
 }
 
 .p-activity_page {

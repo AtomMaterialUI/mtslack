@@ -102,3 +102,39 @@
     color: $text;
   }
 }
+
+.p-integrations_item {
+  background: #fff;
+  border: 1px solid rgba(29, 28, 29, 0.13);
+
+  &:hover {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}
+
+.p-integrations_item__name {
+  span {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.p-integrations_item__details {
+  color: #616061;
+}
+
+.p-integrations_item__author {
+  color: #1264a3;
+}
+
+.p-integrations_page {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-integrations_page__category_filter_title {
+  color: rgba(29, 28, 29, 0.7);
+}
+
+.p-integrations_page__no_results {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}

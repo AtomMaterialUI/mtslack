@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "21.8.0",
+  "version": "23.0.0",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "bin": {
@@ -10,8 +10,8 @@
     "start": "node ./bin/mtslack",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "local": "sudo LOCALHOST=1 npx ./main.js",
-    "apply": "sudo npx ./main.js",
+    "local": "LOCALHOST=1 npx ./main.js",
+    "apply": "npx ./main.js",
     "server": "http-server --cors",
     "windows": "npx ./main.js",
     "styles": "gulp styles",
@@ -51,29 +51,30 @@
   "homepage": "https://github.com/mallowigi/mtslack#readme",
   "dependencies": {
     "@feizheng/next-sample": "^1.2.2",
-    "@mallowigi/asar": "^1.3.0",
+    "@mallowigi/asar": "^1.5.1",
     "chalk": "^4.1.1",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
     "configstore": "^6.0.0",
-    "figlet": "^1.5.0",
-    "inquirer": "^8.1.0",
-    "is-elevated": "^4.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "is-elevated": "^3.0.0",
     "is-root": "^3.0.0",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
-    "rimraf": "latest"
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.4"
   },
   "publishConfig": {
     "access": "public",
     "cache": "~/.npm"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
+    "eslint": "8.2.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-import": "2.25.3",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "gulp": "4.0.2",
@@ -89,7 +90,7 @@
     "http-server": "14.0.0",
     "npx": "10.2.2",
     "prettier": "2.4.1",
-    "stylelint": "13.13.1",
-    "stylelint-prettier": "1.2.0"
+    "stylelint": "14.0.1",
+    "stylelint-prettier": "2.0.0"
   }
 }

@@ -79,6 +79,7 @@
 }
 
 .p-draft_unfurls__remove_btn:focus:hover .p-draft_unfurls__remove_btn_circle,
+.p-draft_unfurls__unfurl_container:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle,
 .p-draft_unfurls__unfurl:hover .p-draft_unfurls__remove_btn:hover .p-draft_unfurls__remove_btn_circle {
   color: $fg;
 }
@@ -110,7 +111,7 @@
 }
 
 //.p-drafts_page__older_drafts_label:after {
-//  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  color: $border;
 //}
 
 .p-drafts_page__draft_date_scheduled {
@@ -119,4 +120,30 @@
 
 .p-schedule_message__radio_button_subtext {
   color: $text;
+}
+
+.p-schedule_message__time_zone_details {
+  color: $text;
+}
+
+.p-drafts_page--scrolled > .p-drafts_page__edit_header {
+  box-shadow: 0 1px 0 0 $border;
+}
+
+.p-drafts_page__edit_buttons {
+  .p-drafts_page__edit_buttons__button {
+    color: $text;
+  }
+
+  .p-drafts_page__edit_buttons__delete--highlighted {
+    color: $red;
+  }
+
+  .p-drafts_page__edit_buttons__send--highlighted {
+    color: $fg;
+  }
+
+  .p-drafts_page__edit_buttons__divider {
+    background-color: $borderLight;
+  }
 }

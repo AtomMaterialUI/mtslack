@@ -1,0 +1,33 @@
+.p-ignore_all_success_modal__icon_container {
+  background-color: rgba(224, 30, 90, 0.1);
+
+  i {
+    color: #e01e5a;
+  }
+}
+
+.p-ignore_forked_modal__button {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+  i {
+    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  }
+
+  &.c-button-unstyled:hover {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+
+    i {
+      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    }
+  }
+}
+
+.p-ignore_forked_modal__button--icon_container {
+  &:first-of-type {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+}
+
+.p-ignore_forked_modal__button--subtext {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}

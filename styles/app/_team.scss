@@ -38,3 +38,11 @@
 .p-team_row__manage_item:not(.c-menu_item__button--highlighted) {
   color: $red;
 }
+
+.p-rename_team_modal_icon {
+  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+}
+
+.c-menu_item__li--highlighted .p-classic_nav__team_menu__blurb__sub {
+  color: #fff;
+}

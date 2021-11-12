@@ -220,8 +220,19 @@
   color: $text;
 }
 
-.p-recently_uploaded_files.c-menu_item__button--highlighted .p-recently_uploaded_files__datestamp {
-  color: $selectFg;
+.p-recently_uploaded_files {
+  .c-menu_item__button--highlighted .p-recently_uploaded_files__datestamp {
+    color: $selectFg;
+  }
+
+  &.p-recently_uploaded_files--disable_highlight.c-menu_item__button.c-menu_item__button--highlighted {
+    background: none;
+    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+
+    .c-menu_item__description {
+      color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    }
+  }
 }
 
 .p-file_upload_malware_dialog__alert {
@@ -231,4 +242,8 @@
   .p-file_upload_malware_dialog__alert_warning_icon {
     color: $orange;
   }
+}
+
+.p-new_file_menu_source_header--composer_ia {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
 }

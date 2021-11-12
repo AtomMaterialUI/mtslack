@@ -53,3 +53,9 @@
 .p-flexpane__footer {
   border-top: 1px solid $borderLight;
 }
+
+.p-flexpane--ia_details_popover .p-flexpane_header {
+  border-bottom: none;
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  box-shadow: 0 1px 0 0 var(--saf-0);
+}

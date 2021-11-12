@@ -1,0 +1,15 @@
+.deprecation-browser-banner {
+  background-color: $excluded;
+}
+
+.depreaction-browser-icon {
+  color: $fg;
+}
+
+.deprecation-browser-banner {
+  color: $fg;
+
+  .c-banner__close {
+    color: $fg;
+  }
+}

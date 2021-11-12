@@ -34,6 +34,7 @@
   }
 }
 
+.c-coachmark--left-top,
 .c-coachmark--left {
   &:after {
     border-left-color: $notif;
@@ -222,4 +223,12 @@
   &:after {
     border-top: 12px solid $bg2;
   }
+}
+
+.p-introductions_education__coachmark_icon_container {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-introductions_education__coachmark_icon_container {
+  background-color: $notif;
 }

@@ -229,3 +229,101 @@
 .p-setup_prog_disc_invite_modal_explainer_tip {
   background-color: $notif;
 }
+
+.p-setup_page__content_button--google {
+  background-color: #4285f4;
+
+  &:hover {
+    background-color: rgba(66, 133, 244, 0.9);
+  }
+}
+
+.p-setup_page__footer--fixed {
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+}
+
+.p-setup_page__content__select_teammates_step_list {
+  --saf-0: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.3);
+  border: 1px solid var(--saf-0);
+
+  &:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: #1e1d1e;
+    }
+  }
+
+  &[disabled] {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  }
+}
+
+.p-setup_page__content__select_teammates_step_list_item {
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-setup_page__content__select_teammates_step_list_item_invite {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+
+  &:focus,
+  &:hover {
+    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  }
+}
+
+.p-setup_page__step_summary {
+  .p-setup_page__step_summary_card {
+    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border: 1px solid var(--saf-0);
+  }
+
+  .p-setup_page__step_summary_card_avatar_stack_wrapper {
+    .p-setup_page__step_summary_card_avatar_stack {
+      .p-setup_page__step_summary_card_avatar {
+        border: 1px solid #fff;
+      }
+    }
+
+    .p-setup_page__step_summary_card_avatar_count {
+      color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    }
+  }
+
+  .p-setup_page__summary_card_main {
+    background: #ddd;
+  }
+
+  .p-setup_page__summary_card_main--external {
+    background: #cbedf5;
+  }
+
+  .p-setup_page__summary_card_main--internal {
+    background: #d6edb8;
+  }
+
+  .p-setup_page__summary_no_contacts_copy {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  }
+}
+
+.p-setup_page___google_icon_container {
+  background-color: #fff;
+}
+
+.p-setup_channel_banner--channel_joiner_banner,
+.p-setup_channel_banner--people_joiner_banner {
+  background: rgba(var(--sk_secondary_highlight, 242, 199, 68), 0.1);
+}
+
+.p-setup_channel_banner__text--joiner_banner {
+  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+}

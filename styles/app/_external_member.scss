@@ -6,3 +6,43 @@
 .sk-client-theme--dark .p-external_member_awareness_banner {
   background-color: $excluded;
 }
+
+.sk-client-theme--dark
+  .p-external_member_awareness_banner
+  .p-external_member_awareness_banner__company_pile_container
+  .p-connection_info_icon__icon
+  + .p-connection_info_icon__icon {
+  box-shadow: -2px 0 0 $button, (-2px) 1px 0 $button, (-2px) -1px $button;
+}
+
+.p-external_member_awareness_banner {
+  .p-external_member_awareness_banner__description__text {
+    color: $fg;
+  }
+
+  .p-external_member_awareness_banner__description__title {
+    color: $fg;
+  }
+
+  .p-external_member_awareness_banner__description__text__cta {
+    color: $primary;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:focus {
+      color: $primary;
+      --saf-0: $primary;
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+
+  .p-external_member_awareness_banner__close_button {
+    &:focus {
+      color: $fg;
+      --saf-0: $primary;
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+}

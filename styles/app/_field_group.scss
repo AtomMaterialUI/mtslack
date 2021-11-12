@@ -1,4 +1,4 @@
-.p-field_group {
+.p-field_group:not(:empty) {
   background: $bg2;
   border: 1px solid $borderLight;
 
@@ -17,6 +17,20 @@
     background: $excluded;
     border: 1px solid $primary;
   }
+}
+
+.sk-client-theme--dark .p-field_group__banner {
+  background-color: rgba(241, 176, 23, 0.08);
+  color: #f1b017;
+
+  &:before {
+    background: unset;
+    border-color: #40371f;
+  }
+}
+
+.p-field__disabled_text {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
 }
 
 .p-field_group__banner_icon {

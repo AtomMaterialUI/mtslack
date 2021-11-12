@@ -64,5 +64,15 @@
 .p-drag_layer__sidebar_section_heading {
   color: $fg;
   background: $active !important;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.p-drag_layer__sidebar_channels {
+  box-shadow: 0 0 0 1px $bg;
+  color: $text;
+  background: $contrast;
+}
+
+.p-drag_layer__sidebar_section_heading {
+  color: $text;
+  background: $contrast;
 }

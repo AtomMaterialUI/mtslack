@@ -94,3 +94,50 @@
 .p-about_modal__debug_data_text {
   color: $text;
 }
+
+.p-about_modal__tab_panel {
+  background-color: $bg;
+}
+
+.p-about_modal__header--tabless {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-about_modal__action_icon_prefix {
+  color: $text;
+}
+
+.p-about_modal__notifications--dimmed {
+  color: $text;
+}
+
+.p-about_modal__section_picker {
+  .c-icon--star-o {
+    color: $text;
+  }
+
+  .c-icon--star {
+    color: $primary;
+  }
+}
+
+.p-about_modal__member_title_meta {
+  color: $text;
+}
+
+.p-about_modal__mpdm_avatars {
+  .p-about_modal__member_avatar {
+    img {
+      border: 2px solid $bg;
+    }
+  }
+}
+
+.p-about_modal__debug_data_text {
+  color: $text;
+}
+
+.p-about_modal__badge {
+  color: $primary;
+  background-color: $accent;
+}

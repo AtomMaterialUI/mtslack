@@ -491,3 +491,19 @@ input[type='text'].c-input_text {
 .p-channel_share_channel_by_email_modal__success_channel_name {
   color: $text;
 }
+
+.p-shared_channel_member_orgs_modal__team_info_separator {
+  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-shared_channel_member_orgs_modal__team_verified_icon {
+  color: #4a154b;
+}
+
+.sk-client-theme--dark .p-shared_channel_member_orgs_modal__team_verified_icon {
+  color: #fff;
+}
+
+.p-shared_channel_member_orgs_modal__team_additional_info {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}

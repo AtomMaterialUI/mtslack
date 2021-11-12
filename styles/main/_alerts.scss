@@ -47,9 +47,14 @@
   }
 }
 
-.c-alert--boxed, .c-alert--custom {
+.c-alert--boxed,
+.c-alert--custom {
   color: $fg;
-  padding: .5em;
+  padding: 0.5em;
+}
+
+.c-alert--inline_boxed {
+  color: $fg;
 }
 
 .c-alert--inline {

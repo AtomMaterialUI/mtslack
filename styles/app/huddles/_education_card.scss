@@ -18,6 +18,46 @@
 
 .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link {
   color: $accent2;
+
+  &.p-huddle_education_card__learn_more_link--dark_mode {
+    color: $accent2;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+}
+
+.p-huddle_education_card__learn_more_lightbulb {
+  color: $accent;
+}
+
+.p-huddle_trial_card__learn_more_link {
+  color: $accent2;
+}
+
+.sk-client-theme--dark .p-huddle_trial_card__learn_more_link {
+  color: $accent2;
+}
+
+.p-huddle_trial_card__learn_more_link {
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
 }
 
 .p-huddle_education_card__learn_more .p-huddle_education_card__learn_more_link:focus {

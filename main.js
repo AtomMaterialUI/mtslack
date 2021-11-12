@@ -2,34 +2,42 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const isRoot = require('is-elevated');
-const sample  = require('@feizheng/next-sample');
+const sample = require('@feizheng/next-sample');
 const cli = require('./lib/cli');
-const {execute} = require('./lib/command');
+const { execute } = require('./lib/command');
 const pkg = require('./package.json');
 
 async function run() {
-  console.log(chalk.yellow(figlet.textSync('mtslack', {
-    font: sample(['Whimsy']),
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 80,
-    whitespaceBreak: true
-  })));
+  console.log(
+    chalk.yellow(
+      figlet.textSync('mtslack', {
+        font: sample(['Whimsy']),
+        horizontalLayout: 'default',
+        verticalLayout: 'default',
+        width: 80,
+        whitespaceBreak: true,
+      })
+    )
+  );
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
+  console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
+  console.log('');
+  console.log(
+    `Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`
+  );
+  console.log(
+    'However, you can still generate the custom code, that you can paste in Slack dev tools while in dev mode (see README).'
+  );
+  console.log('');
+  console.log('');
   console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
 
-  if (!isRoot()) {
-    console.log(chalk.red('You must be root to execute this command. Run with "sudo mtslack" (or run as a Windows Administrator)'));
-    process.exit(1);
-  }
-
   // noinspection JSDeclarationsAtScopeStart
-  const {ask: answer} = await cli.ask();
+  const { ask: answer } = await cli.ask();
 
-  execute(answer);
+  await execute(answer);
 }
 
 // Start
@@ -55,8 +63,7 @@ async function checkForUpdates() {
     if (shouldUpdate) {
       console.log('Update finished. Please rerun the command.');
       process.exit(0);
-    }
-    else {
+    } else {
       await run();
     }
   });

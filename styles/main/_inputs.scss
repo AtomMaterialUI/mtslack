@@ -290,6 +290,10 @@ input[type='text'].c-input_text {
   background-color: $contrast;
 }
 
+.p-message_pane_input__preview_back_to_channel_browser {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}
+
 .p-message_pane_input__preview_subtitle {
   color: $fg;
 }

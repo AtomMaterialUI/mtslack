@@ -267,6 +267,7 @@
     background-color: $bg;
   }
 
+  .c-message__reply_bar_prog_disc_flag,
   .c-message__reply_bar_progressive_disclosure_flag {
     color: $fg;
     background: $contrast;
@@ -459,6 +460,7 @@ a.c-message__call_name--linked {
   background-color: $excluded;
 }
 
+.c-message_kit__labels--reminder .c-message_kit__labels__icon,
 .c-message_kit__labels--message_type .c-message_kit__labels__icon {
   color: $accent;
 }

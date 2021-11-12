@@ -1,11 +1,24 @@
 # mtslack (Material Themed Slack)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Beautify your Slack application from a list of popular themes!!!
 
-Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
+# IMPORTANT NOTICE
+
+Since version 4.22.0, there is no longer a way to patch the Slack application as Slack has patched the option to add
+custom code.
+
+This makes sense, as doing so would potentially allow people to inject malicious code into the application (this plugin
+isn't, of course).
+
+Therefore, this great plugin will no longer patch the Slack application; instead, it will generate a code snippet that
+can be pasted into the Slack application to inject the themes manually.
+
+Currently works only for Mac OS and Linux, as it uses `pbcopy` to handle the copy to clipboard. Contributions for
+Windows are welcome.
 
 **Theme List**:
 
@@ -34,7 +47,7 @@ Currently works only for Mac OS, Windows and Linux non-SNAP (Marketplace)
 If you like this plugin, you can buy me a beer (or a coffee, or something else)
 using [PayPal](https://paypal.me/mallowigi?locale.x=en_US)
 
-You can also support this theme by subscribing to the Material Theme
+You can also support this theme by subscribing to the
 OpenCollective. [[Become a sponsor](https://opencollective.com/atom-material-themes-and-plugins#sponsor)]
 
 ## Backers
@@ -67,21 +80,15 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 
 1. Run `npm install -g mtslack` in a terminal (or run `sudo npx mtslack` if you don't want to install it globally)
 2. Run the command `sudo mtslack` (in Windows, you need to open the Terminal in Administrator Mode)
-3. You will be prompted with a menu with two options:
-    - Apply Theme
-    - Remove Theme
+3. You will be prompted with a menu the following options:
+    - Copy code to clipboard
+    - Show plugin version
 
-4. Select *Apply Theme* to apply the theme.
-5. Open or Restart (with Cmd-Q) Slack
-6. ?????
-7. PROFIT!!!!!!!
-
-### Revert to the default theme
-
-The best way to revert to the default theme would be to use the backup copy you made and overwrite the patched Slack.app
-
-There is also a `Remove Theme` option in the menu but it is less robust.
-
+4. Select *Copy to clipboard* to copy the code snippet to your clipboard.
+5. Open Slack in dev mode: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
+6. Open the Dev Tools and paste the code snippet in the console.
+7. ?????
+8. PROFIT!!!!!!!
 
 ----
 
@@ -148,10 +155,6 @@ Settings.
 Switch the current theme's links color with the one of your choice. You can set the desired color in the Slack Tweak
 Settings.
 
-### Important Note!
-
-Please note that these tweaks rely on modifying the app realtime. There's a high chance further updates from Slack would
-break those tweaks. In this case please report to the repository, thanks!
 
 ----
 
@@ -233,4 +236,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
+Contributions of any kind welcome!

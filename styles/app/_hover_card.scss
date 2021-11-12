@@ -24,3 +24,7 @@
     background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
   }
 }
+
+.p-member_profile_hover_card__secondary {
+  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}

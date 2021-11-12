@@ -37,6 +37,23 @@
 }
 
 .p-shortcuts_menu_trigger_button {
+  &:not(.p-shortcuts_menu_trigger_button--only_workflows):not(.p-shortcuts_menu_trigger_button--composer_ia) {
+    &:active,
+    &:hover {
+      background: rgba(var(--sk_highlight, 18, 100, 163), 1) !important;
+      color: #fff !important;
+    }
+  }
+}
+
+.p-shortcuts_menu_trigger_button--composer_ia {
+  &:active,
+  &:hover {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}
+
+.p-shortcuts_menu_trigger_button {
   &:active,
   &:hover {
     background: $button;
@@ -44,21 +61,25 @@
   }
 
   &:not(.p-shortcuts_menu_trigger_button--only_workflows) {
-    &:active, &:hover {
+    &:active,
+    &:hover {
       background: $accentT;
       color: $selectFg !important;
     }
   }
 
   &.p-shortcuts_menu_trigger_button--only_workflows {
-    &:active, &:hover {
+    &:active,
+    &:hover {
       color: $accent;
     }
   }
 }
 
+.p-shortcuts_menu_trigger_button--dark:not(.p-shortcuts_menu_trigger_button--only_workflows):not(.p-shortcuts_menu_trigger_button--composer_ia).p-shortcuts_menu_trigger_button,
 .p-shortcuts_menu_trigger_button--dark:not(.p-shortcuts_menu_trigger_button--only_workflows).p-shortcuts_menu_trigger_button {
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background: $accentT !important;
   }
 }
@@ -66,7 +87,6 @@
 .p-shortcuts_menu_trigger_button--highlighted:not(.p-shortcuts_menu_trigger_button--only_workflows) {
   color: $accent !important;
 }
-
 
 .p-shortcuts_menu_trigger_button--highlighted {
   color: $primary !important;
@@ -82,4 +102,8 @@
     background: $bg;
     border: 1px solid $bg;
   }
+}
+
+.p-shortcuts_menu_trigger_button--badge {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
 }
