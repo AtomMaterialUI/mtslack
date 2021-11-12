@@ -2,7 +2,6 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const isRoot = require('is-elevated');
 const sample = require('@feizheng/next-sample');
 const cli = require('./lib/cli');
 const { execute } = require('./lib/command');
@@ -23,27 +22,22 @@ async function run() {
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
   console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
-  console.log(`Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`);
-  console.log('As a result, this plugin is now becoming obsolete 😭');
   console.log('');
-  console.log('You can still use it for older versions though, if you still had those. I will keep on posting style updates from time to time, until it will be no longer available.');
+  console.log(
+    `Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`
+  );
+  console.log(
+    'However, you can still generate the custom code, that you can paste in Slack dev tools while in dev mode (see README).'
+  );
   console.log('');
-  console.log(chalk.bold.green('So long, and thanks for the 🐟!'));
-
+  console.log('');
   console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
-
-  if (!isRoot()) {
-    console.log(
-      chalk.red('You must be root to execute this command. Run with "sudo mtslack" (or run as a Windows Administrator)')
-    );
-    process.exit(1);
-  }
 
   // noinspection JSDeclarationsAtScopeStart
   const { ask: answer } = await cli.ask();
 
-  execute(answer);
+  await execute(answer);
 }
 
 // Start
@@ -69,8 +63,7 @@ async function checkForUpdates() {
     if (shouldUpdate) {
       console.log('Update finished. Please rerun the command.');
       process.exit(0);
-    }
-    else {
+    } else {
       await run();
     }
   });
