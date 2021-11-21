@@ -6,6 +6,7 @@
   "commitBodyTable": true,
   "prHourlyLimit": 6,
   "prConcurrentLimit": 6,
+  "automerge": true,
   "packageRules": [
     {
       "matchUpdateTypes": [
