@@ -52,7 +52,7 @@
   "dependencies": {
     "@feizheng/next-sample": "^1.2.2",
     "@mallowigi/asar": "^1.5.1",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
