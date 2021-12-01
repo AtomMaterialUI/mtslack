@@ -91,7 +91,7 @@
     "gulp-sass": "5.0.0",
     "hosted-git-info": "^2.8.8",
     "http-server": "14.0.0",
-    "lodash.template": "^3.6.2",
+    "lodash.template": "^4.5.0",
     "npx": "10.2.2",
     "nth-check": "2.0.1",
     "path-parse": "1.0.7",
