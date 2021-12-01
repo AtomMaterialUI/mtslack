@@ -52,7 +52,7 @@
   "dependencies": {
     "@feizheng/next-sample": "^1.2.2",
     "@mallowigi/asar": "^1.5.1",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
     "clui": "^0.3.6",
@@ -72,7 +72,7 @@
   },
   "devDependencies": {
     "browserslist": "4.18.1",
-    "css-what": "^4.0.0",
+    "css-what": "^5.1.0",
     "eslint": "8.3.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.3.0",
