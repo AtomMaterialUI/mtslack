@@ -19,3 +19,27 @@
 .p-keyboard_shortcuts_list__subtitle {
   color: $text;
 }
+
+.c-keyboard_key {
+  background: $button;
+  color: $fg;
+  --saf-0: $fg;
+}
+
+.c-keyboard_key--dark {
+  background: $button;
+  color: $fg;
+}
+
+.c-keyboard_key__tooltip {
+  background: $notif;
+  color: $fg;
+}
+
+.c-keyboard_keys--title {
+  color: $fg;
+}
+
+.c-keyboard_key__tooltip_text {
+  color: $text;
+}
