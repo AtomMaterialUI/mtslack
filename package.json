@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "24.0.2",
+  "version": "24.0.3",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "bin": {
@@ -72,7 +72,7 @@
   },
   "devDependencies": {
     "browserslist": "4.18.1",
-    "css-what": "5.1.0",
+    "css-what": "6.0.1",
     "eslint": "8.3.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.3.0",
