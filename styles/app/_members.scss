@@ -636,65 +636,42 @@ button.p-admin_member_table__menu_item--disabled {
 }
 
 .p-browse_page_layout__input_container--background {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-color: $bg;
 }
 
 .p-browse_page_member_card_entity--has_hover_overlay:hover {
   .p-browse_page_member_card_entity__info {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background: $bg;
   }
 }
 
 .p-browse_page_member_card_entity--is-selected {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  box-shadow: 0 0 0 2px var(--saf-0);
+  box-shadow: 0 0 0 2px $primaryT;
 
   &:active,
   &:hover {
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 2px var(--saf-0);
+    box-shadow: 0 0 0 2px $primary;
   }
 
   .p-browse_page_member_card_entity__select_circle {
-    border-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    border-color: $primary;
   }
 
   .p-browse_page_member_card_entity__select_circle_icon {
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    color: $primary;
   }
 }
 
 .sk-client-theme--dark .p-browse_page_member_card_entity--is-selected .p-browse_page_member_card_entity__select_circle {
-  border-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  border-color: $primary;
 }
 
 .p-browse_page_member_card_entity__select_circle {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  z-index: 1;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  --saf-0: rgba(var(--sk_foreground_mid_solid, 187, 186, 187), 1);
-  border: 2px solid var(--saf-0);
-  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-  display: flex;
-
-  .p-browse_page_member_card_entity__select_circle_icon {
-    margin: 0 auto;
-  }
+  border: 2px solid $hl;
+  background: $bg2;
 }
 
 .sk-client-theme--dark .p-browse_page_member_card_entity__select_circle {
-  border-color: #ddd;
-  background: #fff;
-}
-
-.p-browse_page_member_card_entity__avatar--hover_overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  border-color: $hl;
+  background: $bg2;
 }
