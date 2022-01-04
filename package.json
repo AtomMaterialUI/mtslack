@@ -73,7 +73,7 @@
   "devDependencies": {
     "browserslist": "4.19.1",
     "css-what": "6.0.1",
-    "eslint": "8.5.0",
+    "eslint": "8.6.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.3",
