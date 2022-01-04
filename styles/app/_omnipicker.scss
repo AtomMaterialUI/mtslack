@@ -1,7 +1,14 @@
 .p-omnipicker_dialog__menu {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-color: $contrast;
+  margin-right: 0;
+  @include shadow;
 
   .c-menu {
+    .c-menu_item__button {
+      border: 1px solid $bg;
+      border-radius: 0;
+    }
+
     .c-menu_item__button--highlighted {
       background-color: $tree;
       border: 1px solid $tree;
@@ -15,11 +22,11 @@
 }
 
 .p-omnipicker_dialog__file.c-pillow_file_container--full_width {
-  border-bottom: 1px solid $borderLight;
+  border-bottom: 1px solid $border;
 }
 
 .p-omnipicker_dialog__list--loading {
-  color: $fg;
+  color: $text;
 }
 
 .p-omnipicker_dialog__list--empty {
@@ -32,7 +39,7 @@
 }
 
 .c-menu_item__button__selected {
-  background-color: $primary;
+  background-color: $selectBg;
   color: $selectFg;
 
   .c-menu_item__icon {
@@ -55,10 +62,10 @@
 }
 
 .p-omnipicker_dialog__footer {
-  background-color: $bg2;
+  background-color: $bg;
 }
 
 .p-omnipicker_dialog__header.c-sk-modal_header,
 .p-omnipicker_dialog {
-  background-color: $bg2;
+  background-color: $bg;
 }
