@@ -246,25 +246,6 @@
   color: $fg;
 }
 
-.p-tiles__container--has_primary_tile {
-  background: $bg2;
-  border-left: 1px solid $borderLight;
-
-  .p-tiles__tile {
-    background: $bg;
-  }
-
-  .p-tiles__tile {
-    &:not(.p-tiles__tile--primary) {
-      box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
-
-      &.p-tiles__tile--active {
-        box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
-      }
-    }
-  }
-}
-
 .p-bookmarks_bar__pins_popover_button__overflow--highlighted {
   color: $primary;
 }
