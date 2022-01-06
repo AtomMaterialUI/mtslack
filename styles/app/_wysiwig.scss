@@ -314,11 +314,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     background-color: transparent;
     border-top: unset;
   }
-
-  &:focus-within .c-wysiwyg_container__footer {
-    background-color: $bg2;
-  }
-
+  
   .c-texty_buttons {
     .c-wysiwyg_container__button.c-icon_button.c-wysiwyg_container__button--composer.c-wysiwyg_container__button--composer_active {
       color: $primary;
@@ -343,5 +339,5 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 }
 
 .c-wysiwyg_container--composer_ia .c-wysiwyg_container__formatting {
-  background-color: $bg2;
+  background-color: $contrast;
 }

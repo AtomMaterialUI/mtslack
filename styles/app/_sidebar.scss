@@ -71,10 +71,6 @@ a.c-sidebar_menu__list_item {
   color: $fg;
 }
 
-.p-channel_sidebar__banner--mentions {
-  background: $red;
-}
-
 .p-channel_sidebar__banner--unreads {
   background: $accent;
   color: $selectFg;
@@ -244,6 +240,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
   background: $accent;
+  color: $selectFg;
 }
 
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
