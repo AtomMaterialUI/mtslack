@@ -88,52 +88,51 @@ a.p-workflow_builder_deluxe_toast__link {
 }
 
 .p-workflow_details__subtitle {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-workflow_config__input_button {
-  border-bottom: 2px dashed #1264a3;
+  border-bottom: 2px dashed $accent;
 }
 
 .p-workflow_config__input_button--warning {
-  border-bottom-color: #e8912d;
+  border-bottom-color: $orange;
 }
 
 .p-workflow_config_modal__content_section {
-  background-color: rgba(29, 155, 209, 0.1);
-  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background-color: $contrast;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
 }
 
 .p-workflow_config_modal__trigger_preview_icon {
-  background-color: #1264a3;
-  color: #fff;
+  background-color: $accent;
+  color: $selectFg;
 
   &:before {
-    background-color: #1264a3;
+    background-color: $accent;
   }
 }
 
 .p-workflow_config_modal__step_preview_icon {
-  background-color: rgba(29, 155, 209, 0.1);
-  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  background-color: $contrast;
+  color: $text;
 }
 
 .p-workflow_config_modal__trigger_button {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border: 1px solid $border;
+  background-color: $bg;
 }
 
 .p-workflow_config_modal__trigger_button--selected {
-  background-color: #e8f5fa;
-  border-color: #1264a3;
+  background-color: $tree;
+  border-color: $accent;
 }
 
 .p-workflow_config_modal__trigger_icon {
-  color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  color: $fg;
 }
 
 .p-workflow_config_modal__trigger_container {
-  background-color: #4a154b;
+  background-color: $bg2;
 }

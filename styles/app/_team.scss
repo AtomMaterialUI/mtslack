@@ -40,9 +40,9 @@
 }
 
 .p-rename_team_modal_icon {
-  color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  color: $text;
 }
 
 .c-menu_item__li--highlighted .p-classic_nav__team_menu__blurb__sub {
-  color: #fff;
+  color: $primary;
 }

@@ -493,17 +493,17 @@ input[type='text'].c-input_text {
 }
 
 .p-shared_channel_member_orgs_modal__team_info_separator {
-  color: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  color: $border;
 }
 
 .p-shared_channel_member_orgs_modal__team_verified_icon {
-  color: #4a154b;
+  color: $accent;
 }
 
 .sk-client-theme--dark .p-shared_channel_member_orgs_modal__team_verified_icon {
-  color: #fff;
+  color: $accent;
 }
 
 .p-shared_channel_member_orgs_modal__team_additional_info {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }

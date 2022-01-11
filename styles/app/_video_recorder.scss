@@ -78,11 +78,11 @@
 }
 
 .p-video_recorder_mic_button__level {
-  background-color: #fff;
+  background-color: $accent;
 }
 
 .p-video_recorder_mic_button__level--dark {
-  background-color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  background-color: $accent;
 }
 
 .p-video_recorder_canvas_buttons__background--over_video {
@@ -90,7 +90,7 @@
 }
 
 .p-video_recorder_canvas_buttons__button_slash {
-  color: #e01e5a;
+  color: $red;
 }
 
 .p-video_recorder_canvas__container--camera {
@@ -98,5 +98,5 @@
 }
 
 .p-video_recorder_header--bottom_border {
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-bottom: 1px solid $border;
 }

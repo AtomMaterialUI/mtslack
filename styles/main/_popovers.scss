@@ -154,28 +154,22 @@
 }
 
 .p-ia_pins_popover {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 18px 48px 0 rgba(0, 0, 0, 0.1);
   background-color: $notif;
 
-  .p-pinned_message {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  }
-
   .c-message_kit__pillow {
-    border-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    border-color: $borderLight;
   }
 }
 
 .p-ia_pins_popover_placeholder {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px solid var(--saf-0);
+  background: $bg;
+  border: 1px solid $borderLight;
 }
 
 .p-ia_pins_popover_placeholder_avatar,
 .p-ia_pins_popover_placeholder_member,
 .p-ia_pins_popover_placeholder_message {
-  background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background: $bg2;
 }
 
 .p-ia_pins_popover__files {
@@ -331,7 +325,6 @@
 }
 
 .p-ia_pins_popover_header {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 1px 0 0 var(--saf-0);
+  background: $bg;
+  box-shadow: 0 1px 0 0 $border;
 }

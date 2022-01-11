@@ -79,40 +79,23 @@ input[type='radio'] {
 }
 
 .p-radio_option_panel_box {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
-}
-
-.p-radio_option_panel_box--unselected {
-  &:focus,
-  &:hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.01);
-  }
-}
-
-.p-radio_option_panel_box--selected {
-  &:focus,
-  &:hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.01);
-  }
+  color: $fg;
+  border: 1px solid $border;
 }
 
 .p-radio_option_panel_box--disabled {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
+  color: $text;
+  border: 1px solid $border;
 }
 
 .p-radio_option_panel_content__text--secondary {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-radio_option_panel_icon--selected {
-  color: #1264a3;
+  color: $accent;
 }
 
 .p-radio_option_panel_icon--disabled {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $disabled;
 }

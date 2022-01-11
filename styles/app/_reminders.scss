@@ -1,39 +1,37 @@
 .p-reminders_page__prototype {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace !important;
-  background: #e01e5a;
-  color: #fff;
+  background: $red;
+  color: $selectFg;
 }
 
 .sk-client-theme--dark .p-reminders_page__prototype {
-  background: #e8912d;
+  background: $red;
 }
 
 .p-reminders_page__title_icon {
-  color: #e01e5a;
+  color: $red;
 }
 
 .p-reminders_page__floating-loader {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-reminders_page__reminder__header__channel {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-reminders_page__reminder__header__past {
-  color: #e01e5a;
+  color: $red;
 }
 
 .sk-client-theme--dark .p-reminders_page__reminder__header__past {
-  color: #e8912d;
+  color: $red;
 }
 
 .p-reminders_page__reminder__header__badge {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-reminders_page__create-modal__input-variation-toggle {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }

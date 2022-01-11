@@ -62,7 +62,7 @@
 }
 
 .p-draft_image_file__pencil {
-  color: #fff;
+  color: $fg;
 }
 
 .p-draft_image_file__dropping_divider {
@@ -131,9 +131,9 @@
 }
 
 .p-file_image_toolbar_controls {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 }
 
 .p-file_image_toolbar_controls__bar {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }

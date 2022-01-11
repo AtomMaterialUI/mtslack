@@ -246,7 +246,7 @@
   background: none;
 
   &:hover {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background: $tree;
   }
 }
 
@@ -304,77 +304,76 @@
 }
 
 .p-huddle_base_card {
-  color: #1d1c1d;
-  background-color: #fcf4da;
+  color: $fg;
+  background-color: $notif;
   border: 4px solid var(--p-huddle__active_item);
 
   &.p-huddle_base_card--dark_mode {
-    background-color: #222529;
-    color: #fff;
+    background-color: $notif;
+    color: $fg;
 
     &:after {
-      background-color: #222529;
+      background-color: $fg;
     }
   }
 
   &:after {
-    background-color: #fcf4da;
+    background-color: $notif;
     border-top: 4px solid var(--p-huddle__active_item);
     border-right: 4px solid var(--p-huddle__active_item);
   }
 
   .p-huddle_base_card__close_button {
-    color: #1d1c1d;
+    color: $fg;
 
     &.p-huddle_base_card__close_button--dark_mode {
-      color: #fff;
+      color: $fg;
     }
 
     &:hover {
-      color: #1d1c1d;
+      color: $primary;
 
       &.p-huddle_base_card__close_button--dark_mode {
-        color: #fff;
+        color: $primary;
       }
     }
 
     &:focus {
-      --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-      box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 
       &:-moz-placeholder,
       &:-ms-input-placeholder,
       &::-moz-placeholder,
       &::-webkit-input-placeholder {
-        color: #1e1d1e;
+        color: $disabled;
       }
     }
   }
 }
 
 .p-huddle_video_modal_footer__button--active {
-  background-color: rgba(29, 155, 209, 0.1);
+  background-color: $button;
 }
 
 .p-huddle_video_modal__container {
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background-color: $bg;
 }
 
 .p-huddle_video_modal_footer,
 .p-huddle_video_modal_header {
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background-color: $bg;
 }
 
 .p-huddle_video_modal__header {
-  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-bottom: 1px solid $border;
 }
 
 .p-huddle_video_modal__footer {
-  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-top: 1px solid $border;
 }
 
 .p-huddle_video_modal_threads {
-  border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-left: 1px solid $border;
 }
 
 .p-huddle_activity_header {
@@ -481,7 +480,7 @@
 
 .p-huddle_sidebar_footer {
   background-color: var(--p-huddle__column_bg);
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 }
 
 .p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override {

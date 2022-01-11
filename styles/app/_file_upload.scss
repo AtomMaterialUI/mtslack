@@ -227,10 +227,10 @@
 
   &.p-recently_uploaded_files--disable_highlight.c-menu_item__button.c-menu_item__button--highlighted {
     background: none;
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
 
     .c-menu_item__description {
-      color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+      color: $text;
     }
   }
 }
@@ -245,5 +245,5 @@
 }
 
 .p-new_file_menu_source_header--composer_ia {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 }

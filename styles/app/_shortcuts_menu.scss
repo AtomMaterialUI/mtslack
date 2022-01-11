@@ -40,8 +40,8 @@
   &:not(.p-shortcuts_menu_trigger_button--only_workflows):not(.p-shortcuts_menu_trigger_button--composer_ia) {
     &:active,
     &:hover {
-      background: rgba(var(--sk_highlight, 18, 100, 163), 1) !important;
-      color: #fff !important;
+      background: $accent !important;
+      color: $selectFg !important;
     }
   }
 }
@@ -49,7 +49,7 @@
 .p-shortcuts_menu_trigger_button--composer_ia {
   &:active,
   &:hover {
-    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    background: $button;
   }
 }
 
@@ -105,5 +105,5 @@
 }
 
 .p-shortcuts_menu_trigger_button--badge {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $accent;
 }

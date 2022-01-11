@@ -1,54 +1,50 @@
 .p-container {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-container__item__controls {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  background: $bg;
 }
 
 .p-container__item__control {
-  border-left: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-left: 1px solid $borderLight;
 
   &:first-child {
     border-left: none;
   }
 }
 
-.p-container__add__button {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-}
-
-.p-container__actions {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-}
+//.p-container__add__button {
+//  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+//}
+//
+//.p-container__actions {
+//  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+//}
 
 .p-container__actions__button {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 
   &:focus,
   &:hover {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    background: $button;
+    color: $fg;
   }
 }
 
 .p-container__actions__huddle--active {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  color: #fff;
+  background: $accentT;
+  color: $selectFg;
 
   &:focus,
   &:hover {
-    background: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
-    color: #fff;
+    background: $accent;
+    color: $selectFg;
   }
 }
 
 .p-container--placeholder {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $disabled;
 }

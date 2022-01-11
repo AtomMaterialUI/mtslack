@@ -809,7 +809,7 @@
 
 .p-slack_connect_card__interactive {
   &:hover {
-    background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    background-color: $bg2;
   }
 }
 
@@ -879,7 +879,7 @@
 }
 
 .p-slack_connect_sent_email_invite__footer_icon--warning {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-slack_connect_sent_email_invite__member_entity {

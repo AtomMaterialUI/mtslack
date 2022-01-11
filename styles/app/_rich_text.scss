@@ -2,14 +2,14 @@
   .c-mrkdwn__pre {
     &[data-border='1'] {
       &:before {
-        background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+        background-color: $bg2;
       }
     }
   }
 }
 
 .sk-client-theme--dark .p-rich_text_block .c-mrkdwn__pre[data-border='1']:before {
-  background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  background-color: $borderLight;
 }
 
 .p-rich_text_list {

@@ -2,32 +2,32 @@
   background-color: rgba(224, 30, 90, 0.1);
 
   i {
-    color: #e01e5a;
+    color: $red;
   }
 }
 
 .p-ignore_forked_modal__button {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 
   i {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    color: $text;
   }
 
   &.c-button-unstyled:hover {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: $button;
 
     i {
-      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+      color: $fg;
     }
   }
 }
 
 .p-ignore_forked_modal__button--icon_container {
   &:first-of-type {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: $button;
   }
 }
 
 .p-ignore_forked_modal__button--subtext {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }

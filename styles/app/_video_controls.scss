@@ -2,8 +2,7 @@
   background: $bg2;
 
   &:focus {
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 5px rgba(29, 155, 209, 0.3);
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
@@ -21,7 +20,7 @@
 
 .p-video_controls_overlay--controls {
   &:before {
-    background: linear-gradient(180deg, rgba(29, 28, 29, 0), rgba(29, 28, 29, 0.7) 70%);
+    background: linear-gradient(180deg, transparent, $text 70%);
   }
 }
 
@@ -37,7 +36,7 @@
 
 .p-video_controls_overlay--active .p-video_controls_overlay__controls__pill,
 .p-video_controls_overlay--controls:hover .p-video_controls_overlay__controls__pill {
-  background: rgba(29, 28, 29, 0);
+  background: transparent;
 }
 
 .p-video_controls_overlay__controls__button {
@@ -86,8 +85,7 @@
 
   .p-media_viewer__video {
     &::cue {
-      background-color: rgba(0, 0, 0, 0.8);
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+      background-color: $bg;
     }
   }
 }

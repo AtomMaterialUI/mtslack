@@ -101,32 +101,32 @@
 
 .p-media_viewer_modal__zoom_control {
   .p-zoom__control_group {
-    color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+    color: $text;
   }
 
   .p-zoom__slider {
     &::-moz-range-thumb {
-      background: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+      background: $accent;
     }
 
     &::-moz-range-track {
-      background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+      background: $contrast;
     }
 
     &::-webkit-slider-thumb {
-      background: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+      background: $accent;
     }
 
     &::-webkit-slider-runnable-track {
-      background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+      background: $contrast;
     }
 
     &::-ms-thumb {
-      background: rgba(var(--sk_highlight_accent, 29, 155, 209), 1);
+      background: $accent;
     }
 
     &::-ms-track {
-      background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+      background: $contrast;
     }
   }
 }
@@ -163,40 +163,40 @@
 
 .p-media_viewer_modal--design-polish {
   .p-media_viewer_modal__icon_button:hover {
-    background: rgba(29, 28, 29, 0.85);
+    background: $hl;
   }
 
   .p-media_viewer_modal__playback_speed_button {
-    color: hsla(0, 0%, 100%, 0.7);
+    color: $text;
 
     .c-select_button__icon {
-      color: hsla(0, 0%, 100%, 0.7);
+      color: $text;
     }
   }
 
   .p-media_viewer_modal__zoom_control .p-media_viewer_modal__zoom_icon_button {
-    color: hsla(0, 0%, 100%, 0.7);
+    color: $text;
   }
 
   .p-media_viewer_modal__playback_speed_button {
     .c-select_button__icon:hover,
     &:hover {
-      color: #fff;
+      color: $primary;
     }
   }
 
   .p-media_viewer_modal__zoom_control .p-media_viewer_modal__zoom_icon_button:hover {
-    color: #fff;
+    color: $primary;
   }
 
   .p-media_viewer_modal__playback_speed_button {
     &:hover {
-      background: rgba(29, 28, 29, 0.85);
+      background: $bg;
     }
   }
 
   .p-media_viewer_modal__tabs_close--fullscreen {
-    background: rgba(29, 28, 29, 0.5);
+    background: $bg;
   }
 
   .p-media_progress_bar {
@@ -204,42 +204,42 @@
   }
 
   .p-media_progress_bar__bar {
-    background: #1d9bd1;
+    background: $accentT;
   }
 
   .p-media_progress_bar--scrubbable {
     &:hover {
       .p-media_progress_bar__bar {
         &:after {
-          background: #1d9bd1;
+          background: $accent;
         }
       }
     }
   }
 
   .p-media_viewer_modal__header__gradient {
-    background: linear-gradient(rgba(29, 28, 29, 0.6), rgba(29, 28, 29, 0));
+    background: linear-gradient($contrast, rgba(29, 28, 29, 0));
   }
 
   .p-media_viewer_modal__footer__gradient {
-    background: linear-gradient(rgba(29, 28, 29, 0), rgba(29, 28, 29, 0.6));
+    background: linear-gradient(rgba(29, 28, 29, 0), $contrast);
   }
 
   .p-media_viewer_modal__header .c-icon,
   .p-media_viewer_modal__header__channel_info,
   .p-media_viewer_modal__header__info .c-icon--hash-medium,
   .p-media_viewer_modal__header__name {
-    color: #fff;
+    color: $fg;
   }
 
   .p-media_viewer_modal__header span {
     &.c-channel_entity__name,
     &.c-timestamp__label {
-      color: #fff;
+      color: $fg;
     }
   }
 
   .p-media_viewer_modal__flexpane {
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    background: $bg;
   }
 }

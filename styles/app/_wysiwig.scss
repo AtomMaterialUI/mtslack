@@ -166,7 +166,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
       }
 
       &.c-wysiwyg_container__button--disabled .c-icon {
-        border-right: 1px solid rgba(var(--sk_primary_foreground, 29, 28, 29), 0.3);
+        border-right: 1px solid $border;
       }
 
       &.c-wysiwyg_container__button--disabled {
@@ -314,7 +314,7 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     background-color: transparent;
     border-top: unset;
   }
-  
+
   .c-texty_buttons {
     .c-wysiwyg_container__button.c-icon_button.c-wysiwyg_container__button--composer.c-wysiwyg_container__button--composer_active {
       color: $primary;

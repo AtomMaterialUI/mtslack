@@ -33,27 +33,25 @@
 .c-search_autocomplete__suggestion_list {
   .c-search_autocomplete__suggestion_item .c-small_mpim_entity__mpim_avatars {
     .c-small_mpim_entity__mpim_counter {
-      --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-      box-shadow: 0 0 0 2px var(--saf-0);
+      box-shadow: 0 0 0 2px $bg;
     }
 
     &.c-small_mpim_entity__mpim_avatars--inverted {
       &.c-small_mpim_entity__mpim_avatars--dark .c-small_mpim_entity__mpim_counter {
-        box-shadow: 0 0 0 2px #1264a3;
+        box-shadow: 0 0 0 2px $accent;
       }
 
       .c-small_mpim_entity__mpim_counter {
-        background-color: #3e72a7;
-        --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-        box-shadow: 0 0 0 2px var(--saf-0);
-        color: #fff;
+        background-color: $accent;
+        box-shadow: 0 0 0 2px $primary;
+        color: $selectFg;
       }
     }
   }
 }
 
 .c-base_list_entity__profile_only_user_denotation {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $disabled;
 }
 
 .c-small_mpim_entity__mpim_counter {

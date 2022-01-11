@@ -53,10 +53,9 @@
 
 .p-inbox__item--expanded {
   display: block;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
 
   .p-inbox__item_actions {
-    background: rgba(29, 155, 209, 0.1);
+    background: $button;
   }
 }
 
@@ -85,40 +84,40 @@
 }
 
 .p-inbox_empty_landing_page__header {
-  background-color: #e0eee7;
+  background-color: $bg2;
 }
 
 .sk-client-theme--dark .p-inbox_empty_landing_page__header {
-  background-color: rgba(76, 191, 157, 0.1);
+  background-color: $bg2;
 }
 
 .p-inbox_empty_landing_page__header_subtext {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-inbox_empty_landing_page__security_info__description {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-inbox_empty_landing_page__learn_more {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  border: 1px solid rgba(224, 238, 231, 0.1);
+  background-color: $bg2;
+  color: $fg;
+  border: 1px solid $border;
 }
 
 .sk-client-theme--dark .p-inbox_empty_landing_page__learn_more {
-  border-color: rgba(76, 191, 157, 0.1);
+  border-color: $border;
 }
 
 .p-inbox_page__prototype {
-  background: #e01e5a;
-  color: #fff;
+  background: $red;
+  color: $selectFg;
 }
 
 .sk-client-theme--dark .p-inbox_page__prototype {
-  background: #e8912d;
+  background: $red;
 }
 
 .p-inbox_page__body {
-  background: rgba(29, 28, 29, 0.04);
+  background: $contrast;
 }

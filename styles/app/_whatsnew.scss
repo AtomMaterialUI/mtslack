@@ -17,15 +17,13 @@
 }
 
 .p-whats_new__notify {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-whats_new__entry {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px solid var(--saf-0);
+  border: 1px solid $borderLight;
 
   img {
-    --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-    border: 1px solid var(--saf-0);
+    border: 1px solid $borderLight;
   }
 }

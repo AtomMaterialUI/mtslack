@@ -55,12 +55,12 @@
 
   .p-setup_prog_disc_explainer_tip_dismissal {
     .p-setup_prog_disc_explainer_tip_dismissal_icon {
-      color: #fff;
+      color: $selectFg;
     }
   }
 
   .p-setup_prog_disc_explainer_tip_text {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
@@ -119,7 +119,7 @@
 }
 
 .p-setup_prog_disc_explainer_tip_container {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $accent;
 }
 
 .p-composer__body--prog-disc-tip {
@@ -304,50 +304,50 @@
 }
 
 .p-setup_joiner_coachmark {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  color: #fff;
+  background: $primary;
+  color: $selectFg;
 
   .c-coachmark__close.c-icon_button--light {
-    color: #fff;
+    color: $selectFg;
 
     &:hover {
-      color: #fff;
+      color: $primary;
     }
   }
 
   &.c-coachmark--right {
     &:after,
     &:before {
-      border-right-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      border-right-color: $primary;
     }
   }
 }
 
 .p-setup_prog_disc_user_flag_tip--visible {
   .p-setup_prog_disc_user_flag_tip__wrapper {
-    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: $primary;
   }
 
   &.p-setup_prog_disc_user_flag_tip--exiting {
     .p-setup_prog_disc_user_flag_tip__wrapper {
-      background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+      background-color: $primary;
     }
   }
 }
 
 @keyframes prog_disc_user_flag_tip--bg-color {
   0% {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: transparent;
   }
 
   to {
-    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: $primary;
   }
 }
 
 @keyframes prog_disc_user_flag_tip--bg-color-restore {
   0% {
-    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: $primary;
   }
 
   to {
@@ -357,34 +357,33 @@
 
 .p-setup_prog_disc_user_menu_explainer_tip {
   &.p-setup_prog_disc_user_menu_explainer_tip--notifications {
-    background-color: rgba(29, 155, 209, 0.1);
+    background-color: $notif;
 
     .p-setup_prog_disc_user_menu_explainer_tip__text {
-      color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+      color: $fg;
     }
   }
 
   &.p-setup_prog_disc_user_menu_explainer_tip--status {
-    background-color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background-color: $accent;
 
     .p-setup_prog_disc_user_menu_explainer_tip__text {
-      color: #fff;
+      color: $selectFg;
     }
 
     .p-setup_prog_disc_user_menu_explainer_tip__close {
       :before {
-        color: #fff;
+        color: $selectFg;
       }
     }
   }
 }
 
 .p-setup_prog_disc_sidebar_tip__enclose {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border: 2px solid var(--saf-0);
+  border: 2px solid $primary;
 }
 
 .p-setup_prog_disc_sidebar_tip__content {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  color: #fff;
+  background: $notif;
+  color: $selectFg;
 }
