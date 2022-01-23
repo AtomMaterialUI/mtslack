@@ -9,7 +9,8 @@
 .p-file_details__user_link {
   color: $fg;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $accent2;
   }
 }
@@ -21,7 +22,6 @@
     &:hover {
       color: $selectFg;
     }
-
   }
 
   .active .c-file__action_button {
@@ -51,7 +51,6 @@
   color: $text;
 }
 
-
 .p-file_details__tombstone {
   color: $disabled;
 }
@@ -59,7 +58,6 @@
 .p-file_details__tombstone_icon {
   color: $disabled;
 }
-
 
 .p-file_details__comment_separator {
   color: $border;
@@ -73,4 +71,27 @@
   color: $fg;
   background-color: $bg;
   border-bottom: 1px solid $borderLight;
+}
+
+.c-file_entity__img_icon {
+  border: 1px solid $border;
+}
+
+.c-base_list_entity--highlight-dark .c-file_entity__icon:before {
+  color: $fg;
+}
+
+.c-base_list_entity--dim .c-file_entity__icon:before {
+  color: $text;
+}
+
+.c-file_entity__link,
+.c-file_entity__link.c-link--button,
+.c-file_entity__link:link:focus,
+.c-file_entity__link:link:hover {
+  color: $accent2;
+}
+
+.c-file-entity-bold-description {
+  color: $text;
 }
