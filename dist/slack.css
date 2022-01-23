@@ -9856,7 +9856,7 @@
   color: var(--text);
 }
 #mtslack .p-emoji_picker__preview_text {
-  background: var(--secondBg);
+  background: var(--bg);
   color: var(--fg);
 }
 #mtslack .p-emoji_picker__skintone_btn_container,
@@ -10308,6 +10308,24 @@
   color: var(--fg);
   background-color: var(--bg);
   border-bottom: 1px solid var(--active);
+}
+#mtslack .c-file_entity__img_icon {
+  border: 1px solid var(--border);
+}
+#mtslack .c-base_list_entity--highlight-dark .c-file_entity__icon:before {
+  color: var(--fg);
+}
+#mtslack .c-base_list_entity--dim .c-file_entity__icon:before {
+  color: var(--text);
+}
+#mtslack .c-file_entity__link,
+#mtslack .c-file_entity__link.c-link--button,
+#mtslack .c-file_entity__link:link:focus,
+#mtslack .c-file_entity__link:link:hover {
+  color: var(--accent2);
+}
+#mtslack .c-file-entity-bold-description {
+  color: var(--text);
 }
 #mtslack .c-pillow_file__email__sender__address {
   color: var(--text);
@@ -25590,6 +25608,9 @@ body:not(.mtslack--hljs) pre {
   color: var(--fg);
 }
 
+#pluginsSection {
+  padding-top: 8px;
+}
 #pluginsSection > button {
   padding: 0 16px;
 }
