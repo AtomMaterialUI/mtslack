@@ -10,6 +10,10 @@
   color: $selectFg;
 }
 
+.c-multi_select_input__placeholder {
+  color: $disabled;
+}
+
 .p-block_kit_input_block--invalid {
   .c-input_text,
   .c-input_textarea,

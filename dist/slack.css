@@ -2695,6 +2695,7 @@
 }
 #mtslack .c-sk-modal {
   background-color: var(--bg);
+  box-shadow: 0 0 0 1px var(--border), 0 18px 48px 0 rgba(0, 0, 0, 0.35);
 }
 #mtslack .c-sk-modal__close_button--inverted {
   background: var(--primary) !important;
@@ -6628,6 +6629,9 @@
 }
 #mtslack .p-block_kit_error_message {
   color: var(--selectFg2);
+}
+#mtslack .c-multi_select_input__placeholder {
+  color: var(--disabled);
 }
 #mtslack .p-block_kit_input_block--invalid .c-input_text,
 #mtslack .p-block_kit_input_block--invalid .c-input_textarea,
@@ -24875,6 +24879,9 @@
 }
 #mtslack .c-wysiwyg_container--day1.c-wysiwyg_container--theme_dark {
   background: var(--contrast);
+}
+#mtslack .c-wysiwyg_container--theme_dark_bordered.c-wysiwyg_container--composer_ia {
+  box-shadow: inset 0 1px 0 var(--border);
 }
 #mtslack .c-wysiwyg_container--composer_ia .c-wysiwyg_container__formatting + .c-texty_input_unstyled__container--multiline_overflow--top {
   box-shadow: inset 0 1px 0 var(--border);

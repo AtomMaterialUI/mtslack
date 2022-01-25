@@ -25,6 +25,7 @@
 
 .c-sk-modal {
   background-color: $bg;
+  box-shadow: 0 0 0 1px $border, 0 18px 48px 0 rgba(0, 0, 0, 0.35);
 }
 
 .c-sk-modal__close_button--inverted {
