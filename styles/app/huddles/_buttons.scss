@@ -9,6 +9,10 @@
   background-color: $button;
 }
 
+.p-huddle_sidebar_trial_feature_tooltip__overlay.c-button--primary {
+  background: transparent;
+}
+
 .p-huddle_sidebar_footer__container--always_on_exp .p-huddle_sidebar_footer_buttons__label,
 .p-huddle_sidebar_footer_buttons__label {
   color: $fg;

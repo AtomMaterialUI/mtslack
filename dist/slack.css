@@ -12078,6 +12078,9 @@
   color: var(--fg);
   background-color: var(--hl);
 }
+#mtslack .p-huddle_sidebar_trial_feature_tooltip__overlay.c-button--primary {
+  background: transparent;
+}
 #mtslack .p-huddle_sidebar_footer__container--always_on_exp .p-huddle_sidebar_footer_buttons__label,
 #mtslack .p-huddle_sidebar_footer_buttons__label {
   color: var(--fg);
