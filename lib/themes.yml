@@ -780,3 +780,48 @@ other:
     attributes: '#ffbd76'
     numbers: '#ff9668'
     parameters: '#f3c1ff'
+
+  - catppuccin:
+    name: Catppuccin
+    name2: Catppuccin
+    className: catppuccin
+    desc: Pastel theme based on Catppuccin colors
+    dark: true
+    background: '#1E1E2E' # Changes main area
+    foreground: '#D9E0EE'
+    text: '#D9E0EE'
+    selectBg: '#302D41' # Not sure
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#302D41'
+    second: '#1E1E2E' # Changes headers and selection
+    disabled: '#6E6C7E'
+    contrast: '#1E1E2E' # Changes sidebar and others
+    table: '#1E1E2E' # This is the actual border
+    border: '#302D41' # Doesnt change the border?
+    hl: '#575268'
+    tree: '#57526870'
+    notif: '#161320'
+    accent: '#96CDFB'
+    excluded: '#302D41' # Hover over message background
+    green: '#7af8ca'
+    red: '#F28FAD'
+    yellow: '#FAE3B0'
+    blue: '#96CDFB'
+    purple: '#DDB6F2'
+    orange: '#F8BD96'
+    cyan: '#B5E8E0'
+    white: '#D9E0EE'
+    gray: '#7e8eda'
+    error: '#ff5370'
+    comments: '#7e8eda'
+    vars: '#c8d3f5'
+    links: '#96CDFB'
+    functions: '#96CDFB'
+    keywords: '#FAE3B0'
+    tags: '#ff757f'
+    strings: '#ABE9B3'
+    operators: '#FAE3B0'
+    attributes: '#96CDFB' # This is the primary for some reason
+    numbers: '#F8BD96'
+    parameters: '#F5C2E7'
