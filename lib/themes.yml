@@ -787,23 +787,23 @@ other:
     className: catppuccin
     desc: Pastel theme based on Catppuccin colors
     dark: true
-    background: '#1E1E2E' # Changes main area
+    background: '#1E1E2E'
     foreground: '#D9E0EE'
     text: '#D9E0EE'
-    selectBg: '#302D41' # Not sure
+    selectBg: '#302D41'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#302D41'
-    second: '#1E1E2E' # Changes headers and selection
+    second: '#1E1E2E'
     disabled: '#6E6C7E'
-    contrast: '#1E1E2E' # Changes sidebar and others
-    table: '#1E1E2E' # This is the actual border
-    border: '#302D41' # Doesnt change the border?
-    hl: '#575268'
+    contrast: '#1E1E2E'
+    table: '#1E1E2E'
+    border: '#302D41'
+    hl: '#302D41'
     tree: '#57526870'
     notif: '#161320'
     accent: '#96CDFB'
-    excluded: '#302D41' # Hover over message background
+    excluded: '#302D41'
     green: '#7af8ca'
     red: '#F28FAD'
     yellow: '#FAE3B0'
@@ -822,6 +822,6 @@ other:
     tags: '#ff757f'
     strings: '#ABE9B3'
     operators: '#FAE3B0'
-    attributes: '#96CDFB' # This is the primary for some reason
+    attributes: '#96CDFB'
     numbers: '#F8BD96'
     parameters: '#F5C2E7'
