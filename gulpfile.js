@@ -1,9 +1,12 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const rename = require('gulp-rename');
-const cleanCSS = require('gulp-clean-css');
-const fileInclude = require('gulp-browser-js-include');
-const injectVersion = require('gulp-inject-version');
+import gulp from 'gulp';
+import gulpSass from 'gulp-sass';
+import sass from 'sass';
+import rename from 'gulp-rename';
+import cleanCSS from 'gulp-clean-css';
+import fileInclude from 'gulp-browser-js-include';
+import injectVersion from 'gulp-inject-version';
+
+const useSass = gulpSass(sass);
 
 const paths = {
   styles: {
@@ -20,7 +23,7 @@ const paths = {
 gulp.task('styles', () => {
   return gulp
     .src(paths.styles.src)
-    .pipe(sass())
+    .pipe(useSass())
     .pipe(injectVersion())
     .pipe(cleanCSS())
     .pipe(
@@ -34,7 +37,7 @@ gulp.task('styles', () => {
 gulp.task('debugStyles', () => {
   return gulp
     .src(paths.styles.src)
-    .pipe(sass())
+    .pipe(useSass())
     .pipe(injectVersion())
     .pipe(
       rename({

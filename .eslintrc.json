@@ -1,14 +1,13 @@
 {
   "plugins": ["node", "prettier"],
   "parserOptions": {
-    "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
-    }
+      "modules": true
+    },
+    "ecmaVersion": 2021
   },
   "env": {
     "node": true,
-    "es6": true,
     "browser": true
   },
   "extends": [
