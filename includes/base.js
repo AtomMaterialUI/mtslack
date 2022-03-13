@@ -44,9 +44,6 @@ class PluginBase {
    * Action to run upon initialization
    */
   init() {
-    // Already initted
-    if (this.$el) return
-
     // Next Theme
     const $toolbarBtn = document.createElement('button');
     this.$el = $toolbarBtn;
