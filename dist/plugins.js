@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v25.0.1',
+  version: 'v25.1.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -2245,6 +2245,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'lightowl',
       'moonlight',
       'synthwave',
+      'catppuccin',
       'default',
     ];
     // Current theme

@@ -1,5 +1,5 @@
 :root {
-  --version: "v24.1.0";
+  --version: "v25.1.0";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -23910,10 +23910,10 @@
   background: var(--accent);
 }
 #mtslack .p-video_controls_overlay {
-  color: var(--bg);
+  color: var(--fg);
 }
 #mtslack .p-video_controls_overlay--controls:before {
-  background: linear-gradient(180deg, transparent, var(--text) 70%);
+  background: linear-gradient(180deg, transparent, #000a 70%);
 }
 #mtslack .p-video_controls_overlay__button.c-button--focus-visible:focus {
   box-shadow: inset 0 0 0 1px var(--accent), inset 0 0 0 5px var(--accentT);
@@ -24742,7 +24742,7 @@
   color: var(--disabled);
 }
 #mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
-  background: var(--contrast) !important;
+  background: transparent !important;
 }
 #mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--experiment_draft_scheduling:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -24852,7 +24852,7 @@
   background-color: var(--bg);
 }
 #mtslack .c-wysiwyg_container--theme_dark {
-  background-color: var(--contrast);
+  background-color: var(--button);
   border-color: var(--active);
 }
 #mtslack .c-wysiwyg_container--theme_dark code {
