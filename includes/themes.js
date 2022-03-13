@@ -38,6 +38,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'lightowl',
       'moonlight',
       'synthwave',
+      'catppuccin',
       'default',
     ];
     // Current theme
