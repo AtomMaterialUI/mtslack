@@ -1,12 +1,15 @@
 #!/usr/bin/env node
-const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
-const sample = require('@feizheng/next-sample');
-const cli = require('./lib/cli');
-const { isMac } = require('./lib/utils');
-const { execute } = require('./lib/command');
-const pkg = require('./package.json');
+import chalk from 'chalk';
+import clear from 'clear';
+import figlet from 'figlet';
+import sample from '@feizheng/next-sample';
+import AutoUpdate from 'cli-autoupdate';
+
+import * as cli from './lib/cli.js';
+import { execute } from './lib/command.js';
+import { getPackageJson, isMac } from './lib/utils.js';
+
+const packageJson = getPackageJson();
 
 async function run() {
   console.log(
@@ -20,7 +23,7 @@ async function run() {
       })
     )
   );
-  console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
+  console.log(chalk.italic(`version ${packageJson.version} by @mallowigi`));
 
   if (isMac()) {
     console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
@@ -51,10 +54,9 @@ async function main() {
 
 async function checkForUpdates() {
   // noinspection LocalVariableNamingConventionJS
-  const AutoUpdate = require('cli-autoupdate');
   let shouldUpdate = false;
 
-  const update = new AutoUpdate(pkg);
+  const update = new AutoUpdate(packageJson);
   console.log(chalk.bold('Checking for updates...'));
 
   update.on('update', () => {
