@@ -55,6 +55,7 @@
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
     "cli-autoupdate": "^2.0.4",
+    "clipboardy": "^3.0.0",
     "clui": "^0.3.6",
     "configstore": "^6.0.0",
     "figlet": "^1.5.2",
