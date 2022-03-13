@@ -258,10 +258,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable -->``
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Saghen"><img src="https://avatars.githubusercontent.com/u/10467983?v=4" width="100px;" alt=""/><br /><sub><b>Saghen</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3ASaghen" title="Bugs, Infrastructure and Themes">🐛</a></td>
+    <td align="center"><a href="https://github.com/Saghen"><img src="https://avatars.githubusercontent.com/u/10467983?v=4" width="100px;" alt=""/><br /><sub><b>Saghen</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3ASaghen" title="Bugs, Infrastructure and Themes">🐛🚇🎨</a></td>
     <td align="center"><a href="https://github.com/daniloisr"><img src="https://avatars.githubusercontent.com/u/157134?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Danilo Resende</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Adaniloisr" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/jlevier"><img src="https://avatars.githubusercontent.com/u/74258557?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jlevier</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Ajlevier" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/sid-maddy"><img src="https://avatars.githubusercontent.com/u/10049286?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhesh Mhadnak</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Asid-maddy" title="Bug reports">🐛</a></td>
