@@ -27,6 +27,10 @@ Windows are welcome.
 - Material Palenight ![palenight.png](doc/v2/palenight.png)
 - Material Lighter ![lighter.png](doc/v2/lighter.png)
 - Material DeepOcean ![deepocean.png](doc/v2/deepocean.png)
+- Material Forest
+- Material Sky Blue
+- Material Sandy Beach
+- Material Volcano
 - Monokai Pro ![monokai.png](doc/v2/monokai.png)
 - Arc Dark ![arcdark.png](doc/v2/arcdark.png)
 - Dracula ![dracula.png](doc/v2/dracula.png)
@@ -37,8 +41,10 @@ Windows are welcome.
 - Solarized Dark ![solardark.png](doc/v2/solardark.png)
 - Solarized Light ![solarlight.png](doc/v2/solarlight.png)
 - Night Owl ![nightowl.png](doc/v2/nightowl.png)
-- Light Owl ![lightowl.png](doc/v2/lightowl.png)
+- Light Owl ![lightowl.png](doc/v2/lighto``wl.png)
 - Moonlight ![moonlight.png](doc/v2/moonlight.png)
+- SynthWave '84
+- Catpuccin
 
 ----------------------------
 
@@ -78,6 +84,8 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 
 ### Global installation (only for Unix based systems)
 
+**You will need node > 16 to use it.**
+
 1. Run `npm install -g mtslack` in a terminal (or run `sudo npx mtslack` if you don't want to install it globally)
 2. Run the command `sudo mtslack` (in Windows, you need to open the Terminal in Administrator Mode)
 3. You will be prompted with a menu the following options:
@@ -89,6 +97,34 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 6. Open the Dev Tools and paste the code snippet in the console.
 7. ?????
 8. PROFIT!!!!!!!
+
+---- 
+
+### Troubleshooting
+
+- I'm getting the following error after updating to version v25+:
+
+```
+internal/modules/run_main.js:54
+    internalBinding('errors').triggerUncaughtException(
+                              ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '/usr/local/lib/node_modules/mtslack/node_modules/chalk/source/node_modules/' imported from /usr/local/lib/node_modules/mtslack/node_modules/chalk/source/index.js
+    at packageMainResolve (internal/modules/esm/resolve.js:465:9)
+    at packageResolve (internal/modules/esm/resolve.js:607:14)
+    at moduleResolve (internal/modules/esm/resolve.js:659:14)
+    at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:752:11)
+    at Loader.resolve (internal/modules/esm/loader.js:97:40)
+    at Loader.getModuleJob (internal/modules/esm/loader.js:242:28)
+    at ModuleWrap.<anonymous> (internal/modules/esm/module_job.js:50:40)
+    at link (internal/modules/esm/module_job.js:49:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+```
+
+-> That means you are using an older version of node. The plugin is now only compatible with ESM Modules, therefore
+older versions are not supported.
+
+Please update to node v16 and reinstall `mtslack`.
 
 ----
 
@@ -225,6 +261,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/Saghen"><img src="https://avatars.githubusercontent.com/u/10467983?v=4" width="100px;" alt=""/><br /><sub><b>Saghen</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3ASaghen" title="Bugs, Infrastructure and Themes">🐛</a></td>
     <td align="center"><a href="https://github.com/daniloisr"><img src="https://avatars.githubusercontent.com/u/157134?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Danilo Resende</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Adaniloisr" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/jlevier"><img src="https://avatars.githubusercontent.com/u/74258557?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jlevier</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Ajlevier" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/sid-maddy"><img src="https://avatars.githubusercontent.com/u/10049286?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhesh Mhadnak</b></sub></a><br /><a href="https://github.com/mallowigi/mtslack/issues?q=author%3Asid-maddy" title="Bug reports">🐛</a></td>
