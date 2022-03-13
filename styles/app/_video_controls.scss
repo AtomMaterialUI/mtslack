@@ -15,12 +15,12 @@
 }
 
 .p-video_controls_overlay {
-  color: $bg;
+  color: $fg;
 }
 
 .p-video_controls_overlay--controls {
   &:before {
-    background: linear-gradient(180deg, transparent, $text 70%);
+    background: linear-gradient(180deg, transparent, #000a 70%);
   }
 }
 
