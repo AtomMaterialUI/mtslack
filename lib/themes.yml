@@ -1073,7 +1073,7 @@ other:
     button: '#302D41'
     second: '#1E1E2E'
     disabled: '#6E6C7E'
-    contrast: '#1E1E2E'
+    contrast: '#0b0b16'
     table: '#1E1E2E'
     border: '#302D41'
     hl: '#302D41'

@@ -1,5 +1,5 @@
 :root {
-  --version: "v25.1.0";
+  --version: "v26.0.0";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -24742,7 +24742,7 @@
   color: var(--disabled);
 }
 #mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
-  background: transparent !important;
+  background: var(--contrast) !important;
 }
 #mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--experiment_draft_scheduling:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -24852,7 +24852,7 @@
   background-color: var(--bg);
 }
 #mtslack .c-wysiwyg_container--theme_dark {
-  background-color: var(--button);
+  background-color: var(--contrast);
   border-color: var(--active);
 }
 #mtslack .c-wysiwyg_container--theme_dark code {
