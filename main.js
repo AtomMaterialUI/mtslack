@@ -4,6 +4,7 @@ const clear = require('clear');
 const figlet = require('figlet');
 const sample = require('@feizheng/next-sample');
 const cli = require('./lib/cli');
+const { getIsMac } = require('./lib/utils');
 const { execute } = require('./lib/command');
 const pkg = require('./package.json');
 
@@ -21,16 +22,18 @@ async function run() {
   );
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
-  console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
-  console.log('');
-  console.log(
-    `Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`
-  );
-  console.log(
-    'However, you can still generate the custom code, that you can paste in Slack dev tools while in dev mode (see README).'
-  );
-  console.log('');
-  console.log('');
+  if (getIsMac()) {
+    console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
+    console.log('');
+    console.log(
+      `Since version 4.22.0 of Slack, it is no longer possible to apply custom tweaks, as they have patched the option to do so.`
+    );
+    console.log(
+      'However, you can still generate the custom code, that you can paste in Slack dev tools while in dev mode (see README).'
+    );
+    console.log('');
+    console.log('');
+  }
   console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
 
