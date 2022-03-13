@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v24.1.0',
+  version: 'v25.0.0',
   // Loaded plugins
   plugins: {
     main: {
@@ -560,6 +560,9 @@ class PluginBase {
    * Action to run upon initialization
    */
   init() {
+    // Already initted
+    if (this.$el) return
+
     // Next Theme
     const $toolbarBtn = document.createElement('button');
     this.$el = $toolbarBtn;
