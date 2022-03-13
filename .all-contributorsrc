@@ -5,6 +5,17 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
+  {
+        "login": "Saghen",
+        "name": "Liam Dyer",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10467983?v=4",
+        "profile": "https://github.com/Saghen",
+        "contributions": [
+          "bug",
+          "infrastructure",
+          "themes"
+        ]
+      },
     {
       "login": "daniloisr",
       "name": "Danilo Resende",

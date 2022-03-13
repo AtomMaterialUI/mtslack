@@ -1,7 +1,8 @@
 material:
   - oceanic:
-    name: Material Oceanic
-    name2: Material Oceanic Contrast
+    id: mt.oceanic
+    name: Oceanic
+    name2: Oceanic Contrast
     className: oceanic
     desc: An oceanic blue flat theme
     dark: true
@@ -42,12 +43,14 @@ material:
     strings: '#c3e88d'
     operators: '#89ddff'
     attributes: '#ffcb6b'
+    classes: '#ffcb6b'
     numbers: '#f78c6c'
     parameters: '#f78c6c'
 
   - darker:
-    name: Material Darker
-    name2: Material Darker Contrast
+    id: mt.darker
+    name: Darker
+    name2: Darker Contrast
     className: darker
     desc: A pitch-black flat theme
     dark: true
@@ -88,12 +91,14 @@ material:
     strings: '#c3e88d'
     operators: '#89ddff'
     attributes: '#ffcb6b'
+    classes: '#ffcb6b'
     numbers: '#f78c6c'
     parameters: '#f78c6c'
 
   - lighter:
-    name: Material Lighter
-    name2: Material Lighter Contrast
+    id: mt.lighter
+    name: Lighter
+    name2: Lighter Contrast
     className: lighter
     desc: A bright light flat theme
     dark: false
@@ -101,7 +106,7 @@ material:
     background: '#FAFAFA'
     foreground: '#546E7A'
     text: '#94A7B0'
-    selectBg: '#CCD7DA'
+    selectBg: '#80CBC440'
     selectFg: '#546e7a'
     selectFg2: '#272727'
     button: '#F3F4F5'
@@ -114,7 +119,7 @@ material:
     tree: '#80CBC440'
     notif: '#eae8e8'
     accent: '#00BCD4'
-    excluded: '#d3e1e8'
+    excluded: '#CCD7DA50'
     green: '#91b859'
     red: '#e53935'
     yellow: '#f6a434'
@@ -134,12 +139,14 @@ material:
     strings: '#91B859'
     operators: '#39ADB5'
     attributes: '#F6A434'
+    classes: '#F6A434'
     numbers: '#F76D47'
     parameters: '#F76D47'
 
   - palenight:
-    name: Material Palenight
-    name2: Material Palenight Contrast
+    id: mt.palenight
+    name: Palenight
+    name2: Palenight Contrast
     className: palenight
     desc: A purplish flat theme
     dark: true
@@ -147,7 +154,7 @@ material:
     background: '#292D3E'
     foreground: '#A6ACCD'
     text: '#676E95'
-    selectBg: '#4C578B'
+    selectBg: '#717CB470'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#303348'
@@ -157,7 +164,7 @@ material:
     table: '#414863'
     border: '#2b2a3e'
     hl: '#444267'
-    tree: '#676E9550'
+    tree: '#676E95'
     notif: '#202331'
     accent: '#ab47bc'
     excluded: '#2f2e43'
@@ -180,12 +187,14 @@ material:
     strings: '#c3e88d'
     operators: '#89ddff'
     attributes: '#ffcb6b'
+    classes: '#ffcb6b'
     numbers: '#f78c6c'
     parameters: '#f78c6c'
 
   - deepocean:
-    name: Material Deep Ocean
-    name2: Material Deep Ocean Contrast
+    id: mt.deepocean
+    name: Deep Ocean
+    name2: Deep Ocean Contrast
     className: deepocean
     desc: A deep sea black flat theme
     dark: true
@@ -193,7 +202,7 @@ material:
     background: '#0F111A'
     foreground: '#8F93A2'
     text: '#4B526D'
-    selectBg: '#222533'
+    selectBg: '#485279'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#191A21'
@@ -226,11 +235,205 @@ material:
     strings: '#c3e88d'
     operators: '#89ddff'
     attributes: '#ffcb6b'
+    classes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
+  - forest:
+    id: mt.forest
+    name: Forest
+    name2: Forest Contrast
+    className: forest
+    desc: A forests and trees based flat theme
+    dark: true
+    scheme: Material Forest
+    background: '#002626'
+    foreground: '#B2C2B0'
+    text: '#49694D'
+    selectBg: '#1E611E'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#003535'
+    second: '#002E2E'
+    disabled: '#005454'
+    contrast: '#002020'
+    table: '#104110'
+    border: '#003838'
+    hl: '#003F3F'
+    tree: '#32CD3250'
+    notif: '#002020'
+    accent: '#FFCC80'
+    excluded: '#113711'
+    green: '#c3e88d'
+    red: '#f07178'
+    yellow: '#ffcb6b'
+    blue: '#82aaff'
+    purple: '#c792ea'
+    orange: '#f78c6c'
+    cyan: '#89ddff'
+    white: '#eeffff'
+    gray: '#005454'
+    error: '#ff5370'
+    comments: '#005454'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    classes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
+  - skyblue:
+    id: mt.skyblue
+    name: Sky Blue
+    name2: Sky Blue Contrast
+    className: skyblue
+    desc: A clear and light blue flat theme
+    dark: false
+    scheme: Material Sky Blue
+    background: '#F5F5F5'
+    foreground: '#005761'
+    text: '#01579B'
+    selectBg: '#ade2eb'
+    selectFg: '#272727'
+    selectFg2: '#272727'
+    button: '#c9eef2'
+    second: '#e7f2f3'
+    disabled: '#e7f2f3'
+    contrast: '#E4F2F2'
+    table: '#caedf2'
+    border: '#d0edf1'
+    hl: '#d1eafa'
+    tree: '#b6e1e780'
+    notif: '#e0eff1'
+    accent: '#00c6e0'
+    excluded: '#c1def0'
+    green: '#91b859'
+    red: '#e53935'
+    yellow: '#f6a434'
+    blue: '#6182b8'
+    purple: '#7c4dff'
+    orange: '#f76d47'
+    cyan: '#39adb5'
+    white: '#272727'
+    gray: '#01579B'
+    error: '#e53935'
+    comments: '#01579B'
+    vars: '#272727'
+    links: '#39ADB5'
+    functions: '#6182B8'
+    keywords: '#7C4DFF'
+    tags: '#E53935'
+    strings: '#91B859'
+    operators: '#39ADB5'
+    attributes: '#F6A434'
+    classes: '#F6A434'
+    numbers: '#F76D47'
+    parameters: '#F76D47'
+
+  - sandybeach:
+    id: mt.sanybeach
+    name: Sandy Beach
+    name2: Sandy Beach Contrast
+    className: sandybeach
+    desc: A sandy based flat theme
+    dark: false
+    scheme: Material Sandy Beach
+    background: '#FFF8ED'
+    foreground: '#546E7A'
+    text: '#888477'
+    selectBg: '#e7c496'
+    selectFg: '#272727'
+    selectFg2: '#272727'
+    button: '#f6d7b0'
+    second: '#f6edda'
+    disabled: '#B8B6A5'
+    contrast: '#FFF3DB'
+    table: '#fef8ec'
+    border: '#f2edde'
+    hl: '#fbf1df'
+    tree: '#e7c49680'
+    notif: '#f6d7b0'
+    accent: '#53c7f0'
+    excluded: '#f2e7ca'
+    green: '#91b859'
+    red: '#e53935'
+    yellow: '#f6a434'
+    blue: '#6182b8'
+    purple: '#7c4dff'
+    orange: '#f76d47'
+    cyan: '#39adb5'
+    white: '#272727'
+    gray: '#888477'
+    error: '#e53935'
+    comments: '#888477'
+    vars: '#272727'
+    links: '#39ADB5'
+    functions: '#6182B8'
+    keywords: '#7C4DFF'
+    tags: '#E53935'
+    strings: '#91B859'
+    operators: '#39ADB5'
+    attributes: '#F6A434'
+    classes: '#F6A434'
+    numbers: '#F76D47'
+    parameters: '#F76D47'
+
+  - volcano:
+    id: mt.volcano
+    name: Volcano
+    name2: Volcano Contrast
+    className: volcano
+    desc: A rock and fiery based theme
+    dark: true
+    scheme: Material Volcano
+    background: '#390000'
+    foreground: '#ffeaea'
+    text: '#ffd0aa'
+    selectBg: '#750000'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#700000'
+    second: '#330000'
+    disabled: '#7f3c3c'
+    contrast: '#300000'
+    table: '#440000'
+    border: '#400000'
+    hl: '#550000'
+    tree: '#77000050'
+    notif: '#300a0a'
+    accent: '#00bcd4'
+    excluded: '#662222'
+    green: '#c3e88d'
+    red: '#f07178'
+    yellow: '#ffcb6b'
+    blue: '#82aaff'
+    purple: '#c792ea'
+    orange: '#f78c6c'
+    cyan: '#89ddff'
+    white: '#eeffff'
+    gray: '#7F6451'
+    error: '#ff5370'
+    comments: '#7F6451'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    classes: '#ffcb6b'
     numbers: '#f78c6c'
     parameters: '#f78c6c'
 
 other:
   - monokai:
+    id: monokai
     name: Monokai Pro
     name2: Monokai Pro Contrast
     className: monokai
@@ -241,8 +444,8 @@ other:
     foreground: '#fcfcfa'
     text: '#939293'
     selectBg: '#6E6C6F'
-    selectFg: '#ffd866'
-    selectFg2: '#FFFFFF'
+    selectFg: '#FFFFFF'
+    selectFg2: '#ffd866'
     button: '#403E41'
     second: '#403E41'
     disabled: '#5b595c'
@@ -273,10 +476,12 @@ other:
     strings: '#FFD866'
     operators: '#FF6188'
     attributes: '#78DCE8'
+    classes: '#78DCE8'
     numbers: '#AB9DF2'
     parameters: '#F59762'
 
   - dracula:
+    id: dracula
     name: Dracula
     name2: Dracula Contrast
     className: dracula
@@ -319,12 +524,14 @@ other:
     strings: '#feff80'
     operators: '#f780bf'
     attributes: '#8aff80'
+    classes: '#8aff80'
     numbers: '#9580ff'
     parameters: '#f89580'
 
   - github:
+    id: github
     name: GitHub
-    name2: GitHub
+    name2: GitHub Contrast
     className: github
     desc: Theme based on the GitHub UI
     dark: false
@@ -332,9 +539,9 @@ other:
     background: '#F7F8FA'
     foreground: '#5B6168'
     text: '#292D31'
-    selectBg: '#c6e5ff'
+    selectBg: '#bbd2f5'
     selectFg: '#111111'
-    selectFg2: '#FFFFFF'
+    selectFg2: '#111111'
     button: '#edf1f5'
     second: '#F3f3f3'
     disabled: '#9ba0a3'
@@ -342,7 +549,7 @@ other:
     table: '#cce5ff'
     border: '#DFE1E4'
     hl: '#CCE5FF'
-    tree: '#e1e4e8'
+    tree: '#ebebeb'
     notif: '#DFECFE'
     accent: '#79CB60'
     excluded: '#dcdcdc'
@@ -365,14 +572,16 @@ other:
     strings: '#032F62'
     operators: '#D73A49'
     attributes: '#6F42C1'
+    classes: '#6F42C1'
     numbers: '#005CC5'
     parameters: '#E36209'
 
 
-  - githubdark:
+  - github_dark:
+    id: github_dark
     name: GitHub Dark
-    name2: GitHub Dark
-    className: githubdark
+    name2: GitHub Dark Contrast
+    className: github_dark
     desc: Theme based on the GitHub Dark UI
     dark: true
     scheme: GitHub Dark
@@ -412,11 +621,13 @@ other:
     strings: '#79b8ff'
     operators: '#f97583'
     attributes: '#b392f0'
+    classes: '#b392f0'
     numbers: '#79b8ff'
     parameters: '#ffab70'
 
 
   - arcdark:
+    id: arc.dark
     name: Arc Dark
     name2: Arc Dark Contrast
     className: arcdark
@@ -426,19 +637,19 @@ other:
     background: '#2f343f'
     foreground: '#D3DAE3'
     text: '#8b9eb5'
-    selectBg: '#414181'
+    selectBg: '#8888FF'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#383C4A'
-    second: '#393f4c'
-    disabled: '#a2a2a2'
+    second: '#393f4c45'
+    disabled: '#D3DAE3'
     contrast: '#262b33'
     table: '#41416A'
     border: '#404552'
-    hl: '#444A58'
+    hl: '#393f4c'
     tree: '#09477170'
     notif: '#262a33'
-    accent: '#5294E2'
+    accent: '#42A5F5'
     excluded: '#37373d'
     green: '#8f9d6a'
     red: '#cf6a4c'
@@ -459,10 +670,12 @@ other:
     strings: '#8F9D6A'
     operators: '#A7A7A7'
     attributes: '#F9EE98'
+    classes: '#F9EE98'
     numbers: '#CDA869'
     parameters: '#CDA869'
 
   - onedark:
+    id: one.dark
     name: Atom One Dark
     name2: Atom One Dark Contrast
     className: onedark
@@ -505,15 +718,18 @@ other:
     strings: '#98C379'
     operators: '#61AFEF'
     attributes: '#E5C17C'
+    classes: '#E5C17C'
     numbers: '#D19A66'
     parameters: '#ABB2BF'
 
   - onelight:
+    id: one.light
     name: Atom One Light
-    name2: Atom One Light
+    name2: Atom One Light Contrast
     className: onelight
     desc: Theme based on the Atom One Light theme
     dark: false
+    scheme: Atom One Light
     background: '#F4F4F4'
     foreground: '#232324'
     text: '#7f7f7f'
@@ -523,10 +739,10 @@ other:
     button: '#DBDBDC'
     second: '#EAEAEB'
     disabled: '#b8b8b9'
-    contrast: '#eaeaea'
+    contrast: '#eaeae'
     table: '#DBDBDC'
     border: '#DBDBDC'
-    hl: '#DBDBDC'
+    hl: '#FFFFFF'
     tree: '#DBDBDC80'
     notif: '#F2F2F2'
     accent: '#2979ff'
@@ -550,12 +766,14 @@ other:
     strings: '#50A14E'
     operators: '#4078F2'
     attributes: '#C18401'
+    classes: '#C18401'
     numbers: '#986801'
     parameters: '#383A42'
 
   - solardark:
+    id: solarized.dark
     name: Solarized Dark
-    name2: Material Solarized Dark Contrast
+    name2: Solarized Dark Contrast
     className: solardark
     desc: Solarized Dark Theme
     dark: true
@@ -596,12 +814,14 @@ other:
     strings: '#2AA198'
     operators: '#93A1A1'
     attributes: '#B58900'
+    classes: '#B58900'
     numbers: '#D33682'
     parameters: '#93A1A1'
 
   - solarlight:
+    id: solarized.light
     name: Solarized Light
-    name2: Material Solarized Light Contrast
+    name2: Solarized Light Contrast
     className: solarlight
     desc: Solarized Light Theme
     dark: false
@@ -642,20 +862,22 @@ other:
     strings: '#2AA198'
     operators: '#657B83'
     attributes: '#657B83'
+    classes: '#657B83'
     numbers: '#D33682'
     parameters: '#657B83'
 
   - nightowl:
+    id: nightowl
     name: Night Owl
     name2: Night Owl Contrast
     className: nightowl
-    desc: Night Owl Theme
+    desc: Theme based on Night Owl by Sarah Drasner
     dark: true
     scheme: Night Owl
     background: '#011627'
     foreground: '#d6deeb'
     text: '#5f7e97'
-    selectBg: '#084d81'
+    selectBg: '#5f7e97'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#0b253a'
@@ -688,15 +910,18 @@ other:
     strings: '#ecc48d'
     operators: '#c792ea'
     attributes: '#addb67'
+    classes: '#addb67'
     numbers: '#f78c6c'
     parameters: '#d6deeb'
 
   - lightowl:
+    id: lightowl
     name: Light Owl
     name2: Light Owl Contrast
     className: lightowl
-    desc: Light Owl Theme
+    desc: Theme based on Light Owl by Sarah Drasner
     dark: false
+    scheme: Light Owl
     background: '#F0F0F0'
     foreground: '#403f53'
     text: '#90A7B2'
@@ -733,15 +958,18 @@ other:
     strings: '#c96765'
     operators: '#994cc3'
     attributes: '#0c969b'
+    classes: '#0c969b'
     numbers: '#aa0982'
     parameters: '#0c969b'
 
   - moonlight:
+    id: moonlight
     name: Moonlight
-    name2: Moonlight
+    name2: Moonlight Contrast
     className: moonlight
-    desc: Dark Blue theme with bubblegum colors
+    desc: Theme based on the Moonlight Theme by Atomiks
     dark: true
+    scheme: Moonlight
     background: '#222436'
     foreground: '#c8d3f5'
     text: '#a9b8e8'
@@ -778,5 +1006,54 @@ other:
     strings: '#7af8ca'
     operators: '#baacff'
     attributes: '#ffbd76'
+    classes: '#ffbd76'
     numbers: '#ff9668'
     parameters: '#f3c1ff'
+
+  - synthwave:
+    id: synthwave
+    name: SynthWave '84
+    name2: SynthWave '84 Contrast
+    className: synthwave
+    desc: Theme based on the SynthWave'84 theme by Robb Owen
+    dark: true
+    scheme: Synthwave
+    background: '#2a2139'
+    foreground: '#ffffff'
+    text: '#999999'
+    selectBg: '#463465'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#382C4D'
+    second: '#2a2139'
+    disabled: '#848bbd'
+    contrast: '#241b2f'
+    table: '#34294f'
+    border: '#34294f'
+    hl: '#463564'
+    tree: '#42384b70'
+    notif: '#191621'
+    accent: '#f92aad'
+    excluded: '#463564'
+    green: '#72f1b8'
+    red: '#fe4450'
+    yellow: '#fede5d'
+    blue: '#34d3fb'
+    purple: '#ff7edb'
+    orange: '#f97e72'
+    cyan: '#36f9f6'
+    white: '#b6b1b1'
+    gray: '#848bbd'
+    error: '#fe4450'
+    comments: '#848bbd'
+    vars: '#b6b1b1'
+    links: '#ff7edb'
+    functions: '#36f9f6'
+    keywords: '#fede5d'
+    tags: '#72f1b8'
+    strings: '#ff8b39'
+    operators: '#fede5d'
+    attributes: '#fede5d'
+    classes: '#f92aad'
+    numbers: '#f97e72'
+    parameters: '#ff7edb'
