@@ -4,7 +4,7 @@ const clear = require('clear');
 const figlet = require('figlet');
 const sample = require('@feizheng/next-sample');
 const cli = require('./lib/cli');
-const { getIsMac } = require('./lib/utils');
+const { isMac } = require('./lib/utils');
 const { execute } = require('./lib/command');
 const pkg = require('./package.json');
 
@@ -22,7 +22,7 @@ async function run() {
   );
   console.log(chalk.italic(`version ${pkg.version} by @mallowigi`));
 
-  if (getIsMac()) {
+  if (isMac()) {
     console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
     console.log('');
     console.log(
