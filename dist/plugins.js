@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v25.0.0',
+  version: 'v25.0.1',
   // Loaded plugins
   plugins: {
     main: {
@@ -2228,6 +2228,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'lighter',
       'palenight',
       'deepocean',
+      'forest',
+      'skyblue',
+      'sandybeach',
+      'volcano',
       'monokai',
       'arcdark',
       'onedark',
@@ -2236,10 +2240,11 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'solarlight',
       'dracula',
       'github',
-      'githubdark',
+      'github_dark',
       'nightowl',
       'lightowl',
       'moonlight',
+      'synthwave',
       'default',
     ];
     // Current theme

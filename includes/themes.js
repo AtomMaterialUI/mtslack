@@ -21,6 +21,10 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'lighter',
       'palenight',
       'deepocean',
+      'forest',
+      'skyblue',
+      'sandybeach',
+      'volcano',
       'monokai',
       'arcdark',
       'onedark',
@@ -29,10 +33,11 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'solarlight',
       'dracula',
       'github',
-      'githubdark',
+      'github_dark',
       'nightowl',
       'lightowl',
       'moonlight',
+      'synthwave',
       'default',
     ];
     // Current theme
