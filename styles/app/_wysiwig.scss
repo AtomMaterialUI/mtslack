@@ -302,6 +302,10 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 }
 
 .c-wysiwyg_container--composer_ia {
+  .c-wysiwyg_container__formatting {
+    background: $bg2;
+  }
+
   .c-wysiwyg_container__formatting + .c-texty_input_unstyled__container--multiline_overflow--top {
     box-shadow: inset 0 1px 0 $border;
   }
