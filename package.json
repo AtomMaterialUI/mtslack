@@ -73,7 +73,7 @@
     "cache": "~/.npm"
   },
   "devDependencies": {
-    "browserslist": "4.20.0",
+    "browserslist": "4.20.2",
     "css-what": "6.0.1",
     "eslint": "8.10.0",
     "eslint-config-oclif": "4.0.0",
