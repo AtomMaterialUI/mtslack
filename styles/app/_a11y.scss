@@ -99,3 +99,73 @@
   .p-a11y_prefs_setup_coachmark__primary_cta_link.c-link--focus-visible:focus {
   box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
+
+.p-a11y_prefs_setup_modal__message_pillow__background .c-radio_button_card__image {
+  background: $bg2;
+}
+
+.p-a11y_prefs_setup_modal__message_pillow__bordered {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-a11y_prefs_setup_modal__up_arrow__option--edit {
+  background-color: $primaryT;
+}
+
+.p-a11y_prefs_setup_modal__up_arrow__cancel_button {
+  border: 1px solid $border;
+  background-color: $bg;
+}
+
+.p-a11y_prefs_setup_modal__up_arrow__save_button {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-a11y_prefs_setup_modal__up_arrow__input {
+  border: 1px solid $border;
+  background-color: $bg;
+}
+
+.p-a11y_prefs_setup_modal__up_arrow__input .cursor {
+  border-right: 1px solid $borderLight;
+}
+
+.p-a11y_prefs_setup_modal__message_pillow__background {
+  background: $bg2;
+}
+
+.c-zoom_slider__minus_button,
+.c-zoom_slider__plus_button {
+  color: $text;
+}
+
+.c-zoom_slider__minus_button:hover,
+.c-zoom_slider__plus_button:hover {
+  color: $fg;
+}
+
+.c-zoom_slider__slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px $accent;
+}
+
+.c-zoom_slider__slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 1px $accent;
+}
+
+.c-zoom_slider__slider {
+  background: linear-gradient(90deg, $hl 100% 100%);
+}
+
+.c-zoom_slider__slider::-webkit-slider-thumb {
+  background: $accent;
+}
+
+.c-zoom_slider__slider::-moz-range-thumb {
+  background: $accent;
+}
+
+.c-zoom_slider__ticker {
+  border-right: 2px solid $hl;
+}

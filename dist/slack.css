@@ -5033,6 +5033,60 @@
 #mtslack .sk-client-theme--dark .p-a11y_prefs_setup_coachmark .p-a11y_prefs_setup_coachmark__primary_cta_link.c-link--focus-visible:focus {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
 }
+#mtslack .p-a11y_prefs_setup_modal__message_pillow__background .c-radio_button_card__image {
+  background: var(--secondBg);
+}
+#mtslack .p-a11y_prefs_setup_modal__message_pillow__bordered {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
+}
+#mtslack .p-a11y_prefs_setup_modal__up_arrow__option--edit {
+  background-color: var(--primaryT);
+}
+#mtslack .p-a11y_prefs_setup_modal__up_arrow__cancel_button {
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+}
+#mtslack .p-a11y_prefs_setup_modal__up_arrow__save_button {
+  background-color: var(--accent);
+  color: var(--selectFg2);
+}
+#mtslack .p-a11y_prefs_setup_modal__up_arrow__input {
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+}
+#mtslack .p-a11y_prefs_setup_modal__up_arrow__input .cursor {
+  border-right: 1px solid var(--active);
+}
+#mtslack .p-a11y_prefs_setup_modal__message_pillow__background {
+  background: var(--secondBg);
+}
+#mtslack .c-zoom_slider__minus_button,
+#mtslack .c-zoom_slider__plus_button {
+  color: var(--text);
+}
+#mtslack .c-zoom_slider__minus_button:hover,
+#mtslack .c-zoom_slider__plus_button:hover {
+  color: var(--fg);
+}
+#mtslack .c-zoom_slider__slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px var(--accent);
+}
+#mtslack .c-zoom_slider__slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 1px var(--accent);
+}
+#mtslack .c-zoom_slider__slider {
+  background: linear-gradient(90deg, var(--hl) 100% 100%);
+}
+#mtslack .c-zoom_slider__slider::-webkit-slider-thumb {
+  background: var(--accent);
+}
+#mtslack .c-zoom_slider__slider::-moz-range-thumb {
+  background: var(--accent);
+}
+#mtslack .c-zoom_slider__ticker {
+  border-right: 2px solid var(--hl);
+}
 #mtslack .p-about_tab__pile__count {
   color: var(--text);
 }
