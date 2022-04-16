@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "26.2.6",
+  "version": "26.2.7",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "type": "module",
@@ -78,7 +78,7 @@
     "eslint": "8.11.0",
     "eslint-config-oclif": "4.0.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "gulp": "4.0.2",
