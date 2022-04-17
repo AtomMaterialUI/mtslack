@@ -10,6 +10,9 @@
       <excludeFolder url="file://$MODULE_DIR$/.github" />
       <excludeFolder url="file://$MODULE_DIR$/sources" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/includes" />
+      <excludeFolder url="file://$MODULE_DIR$/lib" />
     </content>
     <content url="file://$MODULE_DIR$/doc/v2" />
     <orderEntry type="inheritedJdk" />

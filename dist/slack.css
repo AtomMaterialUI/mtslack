@@ -1,5 +1,5 @@
 :root {
-  --version: "v26.2.5";
+  --version: "v26.2.7";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -13273,6 +13273,36 @@
 #mtslack .p-inbox_page__body {
   background: var(--contrast);
 }
+#mtslack .p-inbox_channel_create_modal__label_title {
+  color: var(--text);
+}
+#mtslack .p-inbox_channel_create_modal__label_title strong {
+  color: var(--fg);
+}
+#mtslack .p-inbox_channel_create_modal__label_error {
+  color: var(--red);
+}
+#mtslack .p-inbox_channel_create_modal__input_subtext {
+  color: var(--text);
+}
+#mtslack .p-inbox_channel_create_modal__sub_section_copy_body {
+  color: var(--text);
+}
+#mtslack .p-inbox_channel_create_modal__share {
+  color: var(--text);
+  background-color: var(--bg);
+}
+#mtslack .p-inbox_channel_create_modal__share_disabled {
+  color: var(--disabled);
+}
+#mtslack .p-inbox_channel_create_modal__footer_copy,
+#mtslack .p-inbox_channel_create_modal__footer_copy:hover {
+  color: var(--text);
+}
+#mtslack .p-inbox_channel_create_modal__footer_info_icon,
+#mtslack .p-inbox_channel_create_modal__footer_info_icon:hover {
+  color: var(--text);
+}
 #mtslack .p-incoming_call {
   color: var(--fg);
 }
@@ -21504,6 +21534,9 @@
   border-color: var(--border);
 }
 #mtslack .p-slack_connect_page {
+  background-color: var(--bg);
+}
+#mtslack .p-slack_connect_hub_body {
   background-color: var(--bg);
 }
 #mtslack .p-slack_tip__header {

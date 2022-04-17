@@ -1,0 +1,38 @@
+.p-inbox_channel_create_modal__label_title {
+  color: $text;
+}
+
+.p-inbox_channel_create_modal__label_title strong {
+  color: $fg;
+}
+
+.p-inbox_channel_create_modal__label_error {
+  color: $red;
+}
+
+.p-inbox_channel_create_modal__input_subtext {
+  color: $text;
+}
+
+.p-inbox_channel_create_modal__sub_section_copy_body {
+  color: $text;
+}
+
+.p-inbox_channel_create_modal__share {
+  color: $text;
+  background-color: $bg;
+}
+
+.p-inbox_channel_create_modal__share_disabled {
+  color: $disabled;
+}
+
+.p-inbox_channel_create_modal__footer_copy,
+.p-inbox_channel_create_modal__footer_copy:hover {
+  color: $text;
+}
+
+.p-inbox_channel_create_modal__footer_info_icon,
+.p-inbox_channel_create_modal__footer_info_icon:hover {
+  color: $text;
+}
