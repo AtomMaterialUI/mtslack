@@ -349,3 +349,49 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 .c-wysiwyg_container--composer_ia .c-wysiwyg_container__formatting {
   background-color: $contrast;
 }
+
+.c-wysiwyg_container__formatting {
+  background: $bg2;
+}
+
+.c-wysiwyg_container__button--with_badge:before {
+  border: 2px solid $selectFg;
+  background: $accent;
+}
+
+.c-wysiwyg_container--theme_dark .c-wysiwyg_container__button--with_badge:before {
+  border-color: $selectFg;
+}
+
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send,
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send_options {
+  background: $accent;
+  color: $selectFg;
+}
+
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send:hover,
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send_options:hover {
+  background: $accentT;
+  color: $selectFg;
+}
+
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
+.c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
+  color: $disabled;
+}
+
+.c-wysiwyg_container__send_button--with_options
+  .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
+.c-wysiwyg_container__send_button--with_options
+  .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
+  color: $fg;
+}
+
+.c-wysiwyg_container__send_button--with_options .c-wysiwyg_container__button.c-wysiwyg_container__button--send:after {
+  background: $bg2;
+}
+
+.c-wysiwyg_container__send_button--with_options
+  .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled:after {
+  background: $excluded;
+}

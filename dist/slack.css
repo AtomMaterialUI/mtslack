@@ -6146,7 +6146,7 @@
   color: var(--text);
 }
 #mtslack .c-pillow_file {
-  background: var(--bg);
+  background: var(--button);
   border: 1px solid var(--active);
 }
 #mtslack .c-pillow_file:focus-within:not(.c-link--focus-visible:focus):not(.c-pillow_file--focus),
@@ -25276,6 +25276,40 @@
 }
 #mtslack .c-wysiwyg_container--composer_ia .c-wysiwyg_container__formatting {
   background-color: var(--contrast);
+}
+#mtslack .c-wysiwyg_container__formatting {
+  background: var(--secondBg);
+}
+#mtslack .c-wysiwyg_container__button--with_badge:before {
+  border: 2px solid var(--selectFg2);
+  background: var(--accent);
+}
+#mtslack .c-wysiwyg_container--theme_dark .c-wysiwyg_container__button--with_badge:before {
+  border-color: var(--selectFg2);
+}
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send,
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options {
+  background: var(--accent);
+  color: var(--selectFg2);
+}
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send:hover,
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options:hover {
+  background: var(--accentT);
+  color: var(--selectFg2);
+}
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
+#mtslack .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
+  color: var(--disabled);
+}
+#mtslack .c-wysiwyg_container__send_button--with_options .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
+#mtslack .c-wysiwyg_container__send_button--with_options .c-wysiwyg_container__button.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {
+  color: var(--fg);
+}
+#mtslack .c-wysiwyg_container__send_button--with_options .c-wysiwyg_container__button.c-wysiwyg_container__button--send:after {
+  background: var(--secondBg);
+}
+#mtslack .c-wysiwyg_container__send_button--with_options .c-wysiwyg_container__button.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled:after {
+  background: var(--excluded);
 }
 #mtslack .p-client_container {
   background-color: var(--bg);
