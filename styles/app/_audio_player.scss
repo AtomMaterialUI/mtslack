@@ -1,3 +1,21 @@
+.c-pillow_file {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.c-pillow_file:focus-within:not(.c-link--focus-visible:focus):not(.c-pillow_file--focus),
+.c-pillow_file:hover:not(.c-link--focus-visible:focus):not(.c-pillow_file--focus) {
+  border-color: $borderLight;
+}
+
+.c-pillow_file--focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-pillow_file--active_download {
+  background-color: $bg2;
+}
+
 .sk-client-theme--dark .c-pillow_file__audio {
   filter: none;
   outline: none;

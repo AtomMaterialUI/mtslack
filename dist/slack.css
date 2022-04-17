@@ -6145,6 +6145,20 @@
 #mtslack .c-message_attachment_v2__attribution {
   color: var(--text);
 }
+#mtslack .c-pillow_file {
+  background: var(--bg);
+  border: 1px solid var(--active);
+}
+#mtslack .c-pillow_file:focus-within:not(.c-link--focus-visible:focus):not(.c-pillow_file--focus),
+#mtslack .c-pillow_file:hover:not(.c-link--focus-visible:focus):not(.c-pillow_file--focus) {
+  border-color: var(--active);
+}
+#mtslack .c-pillow_file--focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
+}
+#mtslack .c-pillow_file--active_download {
+  background-color: var(--secondBg);
+}
 #mtslack .sk-client-theme--dark .c-pillow_file__audio {
   filter: none;
   outline: none;
