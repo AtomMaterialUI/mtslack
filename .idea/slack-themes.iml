@@ -13,6 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludeFolder url="file://$MODULE_DIR$/includes" />
       <excludeFolder url="file://$MODULE_DIR$/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/styles" />
     </content>
     <content url="file://$MODULE_DIR$/doc/v2" />
     <orderEntry type="inheritedJdk" />

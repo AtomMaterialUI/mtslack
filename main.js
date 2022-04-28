@@ -25,7 +25,7 @@ async function run() {
   );
   console.log(chalk.italic(`version ${packageJson.version} by @mallowigi`));
 
-  if (isMac()) {
+  // if (isMac()) {
     console.log(chalk.bold.red(`IMPORTANT UPDATE!!!!!`));
     console.log('');
     console.log(
@@ -36,7 +36,7 @@ async function run() {
     );
     console.log('');
     console.log('');
-  }
+  // }
   console.log(chalk.cyan('Welcome to the mtslack CLI!'));
   console.log('');
 
