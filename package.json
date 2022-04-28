@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "26.2.7",
+  "version": "26.3.0",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "type": "module",
