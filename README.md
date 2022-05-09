@@ -94,9 +94,10 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 
 4. Select *Copy to clipboard* to copy the code snippet to your clipboard.
 5. Open Slack in dev mode: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
-6. Open the Dev Tools and paste the code snippet in the console.
-7. ?????
-8. PROFIT!!!!!!!
+6. Go to View -> Developer -> Toggle Deve Tools
+7. In the Dev Tools Console tab, paste the code snippet
+8. ?????
+9. PROFIT!!!!!!!
 
 ---- 
 
