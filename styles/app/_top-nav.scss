@@ -14,6 +14,11 @@
   }
 }
 
+.p-top_nav__search__clear,
+.p-top_nav__search__filters {
+  color: $fg;
+}
+
 .p-top_nav__button,
 .p-top_nav__search,
 .p-top_nav__sidebar .p-channel_sidebar__history_button,

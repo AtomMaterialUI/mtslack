@@ -35,16 +35,21 @@
 .c-icon_button--light {
   color: $selectFg;
 
-  &.c-button-unstyled, &:link {
+  &.c-button-unstyled,
+  &:link {
     color: $text;
   }
 
-  &.c-button-unstyled:hover, &:hover, &:link:hover {
+  &.c-button-unstyled:hover,
+  &:hover,
+  &:link:hover {
     background: $accent;
     color: $selectFg;
   }
 
-  &.c-button-unstyled:active, &:active, &:link:active {
+  &.c-button-unstyled:active,
+  &:active,
+  &:link:active {
     background: $active;
   }
 }
@@ -52,20 +57,31 @@
 .c-icon_button--dark {
   color: $selectFg;
 
-  &.c-button-unstyled, &:link {
+  &.c-button-unstyled,
+  &:link {
     color: $text;
   }
 
-  &.c-button-unstyled:hover, &:hover, &:link:hover {
+  &.c-button-unstyled:hover,
+  &:hover,
+  &:link:hover {
     color: $accent;
     background: $hl;
   }
 
-  &.c-button-unstyled:active, &:active, &:link:active {
+  &.c-button-unstyled:active,
+  &:active,
+  &:link:active {
     background: $active;
   }
 }
 
 .c-texty_input__expand_button {
+  color: $fg;
+}
+
+.c-icon_button--default,
+.c-icon_button--default.c-button-unstyled,
+.c-icon_button--default:link {
   color: $fg;
 }

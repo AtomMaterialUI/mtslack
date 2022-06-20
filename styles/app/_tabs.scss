@@ -16,6 +16,7 @@
       color: $selectFg;
       border-left: 2px solid $accent;
       border-radius: 0;
+      box-shadow: none;
     }
 
     &:not(.c-tabs__tab--active):hover {
