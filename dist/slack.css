@@ -2727,7 +2727,7 @@
   color: var(--selectFg2);
 }
 #mtslack .c-alert--level_info {
-  background-color: var(--blue) !important;
+  background-color: var(--notif) !important;
   border: 1px solid var(--blue) !important;
   color: var(--bg) !important;
 }
@@ -2735,7 +2735,7 @@
   color: var(--bg) !important;
 }
 #mtslack .c-alert--level_success {
-  background-color: var(--green) !important;
+  background-color: var(--notif) !important;
   border: 1px solid var(--green) !important;
   color: var(--bg) !important;
 }
@@ -2743,7 +2743,7 @@
   color: var(--bg) !important;
 }
 #mtslack .c-alert--level_warning {
-  background-color: var(--orange) !important;
+  background-color: var(--notif) !important;
   border: 1px solid var(--orange) !important;
   color: var(--bg) !important;
 }
@@ -2751,7 +2751,7 @@
   color: var(--bg) !important;
 }
 #mtslack .c-alert--level_error {
-  background-color: var(--red) !important;
+  background-color: var(--notif) !important;
   border: 1px solid var(--red) !important;
   color: var(--selectFg2) !important;
 }
@@ -11790,6 +11790,16 @@
 }
 #mtslack .p-member_profile_hover_card__secondary {
   border-top: 1px solid var(--border);
+}
+#mtslack .p-member_profile_hover_card__secondary {
+  border-top: 1px solid var(--active);
+}
+#mtslack .p-member_profile_hover_card__banner {
+  background: var(--secondBg);
+  color: var(--fg);
+}
+#mtslack .p-member_profile_hover_card__primary .p-app_external_team_banner {
+  background: var(--excluded);
 }
 #mtslack .p-hq_page {
   background: var(--bg);

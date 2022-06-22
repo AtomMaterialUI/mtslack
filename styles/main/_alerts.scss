@@ -8,7 +8,7 @@
 }
 
 .c-alert--level_info {
-  background-color: $blue !important;
+  background-color: $notif !important;
   border: 1px solid $blue !important;
   color: $bg !important;
 
@@ -18,7 +18,7 @@
 }
 
 .c-alert--level_success {
-  background-color: $green !important;
+  background-color: $notif !important;
   border: 1px solid $green !important;
   color: $bg !important;
 
@@ -28,7 +28,7 @@
 }
 
 .c-alert--level_warning {
-  background-color: $orange !important;
+  background-color: $notif !important;
   border: 1px solid $orange !important;
   color: $bg !important;
 
@@ -38,7 +38,7 @@
 }
 
 .c-alert--level_error {
-  background-color: $red !important;
+  background-color: $notif !important;
   border: 1px solid $red !important;
   color: $selectFg !important;
 

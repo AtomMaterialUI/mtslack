@@ -28,3 +28,16 @@
 .p-member_profile_hover_card__secondary {
   border-top: 1px solid $border;
 }
+
+.p-member_profile_hover_card__secondary {
+  border-top: 1px solid $borderLight;
+}
+
+.p-member_profile_hover_card__banner {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-member_profile_hover_card__primary .p-app_external_team_banner {
+  background: $excluded;
+}
