@@ -9874,6 +9874,10 @@
 #mtslack .p-edit_profile_section_form_pane__current_location_clear--text {
   color: var(--primary);
 }
+#mtslack .p-edit_profile_section_form_pane__modal-content {
+  border-bottom: var(--active);
+  border-top: var(--active);
+}
 #mtslack .p-add_alias_dialog__container .focus-ring,
 #mtslack .p-add_custom_emoji_dialog__container .focus-ring,
 #mtslack .p-add_emoji_dialog .focus-ring,
