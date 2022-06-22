@@ -1,242 +1,224 @@
 .p-rimeto_org_chart_page__item_content {
   &:hover {
-    background: rgba(29, 155, 209, 0.1);
-    border: 1px solid #1d9bd1;
+    background: $excluded;
+    border: 1px solid $accent;
   }
 
   &.manager {
-    background: rgba(209, 210, 211, 0.13);
-    border: 1px solid rgba(29, 28, 29, 0.13);
+    background: $bg2;
+    border: 1px solid $border;
 
     &:hover {
-      background: rgba(29, 155, 209, 0.1);
-      border: 1px solid #1d9bd1;
+      background: $excluded;
+      border: 1px solid $accent;
 
       .p-rimeto_org_chart_page__item_name,
       .p-rimeto_org_chart_page__item_title {
-        color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+        color: $fg;
       }
     }
   }
 
   &.current_employee {
-    background: #0b4c8c;
+    background: $accentT;
 
     .p-rimeto_org_chart_page__item_name,
     .p-rimeto_org_chart_page__item_title {
-      color: #fff;
+      color: $selectFg;
     }
   }
 }
 
 .p-rimeto_org_chart_page__item_reports {
-  --saf-0: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
-  border: 1px solid var(--saf-0);
-  background-color: #fff;
-  color: #1d1c1d;
+  border: 1px solid $borderLight;
+  background-color: $primary;
+  color: $fg;
 }
 
 .p-rimeto_org_chart_page__item_tick {
-  border-right: 3px solid rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  border-right: 3px solid $primary;
 }
 
 .p-rimeto_org_chart_page__list_arrow_box {
-  background: #fff;
-  border: 1px solid rgba(29, 28, 29, 0.3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: $selectFg;
+  border: 1px solid $border;
 }
 
 .p-rimeto_org_chart_page__reports_header {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 }
 
 .p-rimeto_org_chart_page__items_section {
-  border-top: 3px solid rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  border-top: 3px solid $borderLight;
 
   &.reports {
-    background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background: $excluded;
   }
 }
 
 .p-rimeto_org_chart_page__item_image_overlay {
-  color: #fff;
+  color: $fg;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.5);
+    color: $selectFg;
   }
 }
 
 .p-rimeto_member_profile_field__secondary {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-rimeto_member_profile_field__label {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-rimeto_member_profile_field__status_expiration {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-rimeto_org_chart_page__skeleton_img {
-  background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  background: $bg2;
 }
 
 .p-member_profile_rimeto_link--flexpane_org_chart {
-  color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  color: $accent;
 }
 
 .p-rimeto_member_profile_field_key_peoples__label {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-r_member_profile__link {
-  color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  color: $accent;
 }
 
 .p-r_member_profile__buttons__button_icon {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  background-color: $button;
+  color: $fg;
 
   &:hover {
-    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.1);
+    background-color: $hl;
   }
 
   &:active {
-    background-color: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.15);
+    background-color: $active;
   }
 }
 
 .p-r_member_profile__buttons__button_label {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-r_member_profile__classification_text {
-  background-color: rgba(29, 155, 209, 0.1);
+  background-color: $excluded;
 }
 
 .p-r_member_profile--link {
   &:hover {
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    color: $accent2;
   }
 }
 
 .p-r_member_profile_info_icon {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 0.85);
+  color: $fg;
 }
 
 .p-r_member_profile_section {
-  border-top: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border-top: 1px solid $borderLight;
 }
 
 .p-rimeto_org_chart_page {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  background-color: $bg;
 }
 
 .p-rimeto_org_chart_page_row {
   &.reports {
-    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+    background-color: $bg2;
   }
 }
 
 .p-rimeto_org_chart_page_row_arrow {
-  background: #fff;
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0);
-
-  &:active,
-  &:hover {
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  }
+  background: $selectFg;
 }
 
 .p-rimeto_org_chart_page_row_member_cards {
   &.reports_container {
-    border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border-top: 1px solid $borderLight;
   }
 
   &.valid_cards {
-    border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    border-top: 1px solid $borderLight;
   }
 }
 
 .p-rimeto_org_chart_member_card {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 0 0 1px var(--saf-0);
-
-  &:hover {
-    --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-    box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
-  }
+  background: $bg;
 
   &:active {
-    background: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    box-shadow: 0 0 0 2px var(--saf-0);
+    background: $accent;
+    box-shadow: 0 0 0 2px $accentT;
 
     .p-rimeto_org_chart_member_card_name,
     .p-rimeto_org_chart_member_card_title {
-      color: #fff;
+      color: $selectFg;
     }
 
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    --saf-0: $accent;
+    --saf-1: $accentT;
     box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
 
     &:hover {
-      --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-      --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+      --saf-0: $accent;
+      --saf-1: $accentT;
       box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
     }
   }
 }
 
 .p-rimeto_org_chart_member_card_outline {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  --saf-0: $accent;
   box-shadow: 0 0 0 2px var(--saf-0);
 
   &:active,
   &:hover {
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    --saf-1: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+    --saf-0: $accent;
+    --saf-1: $accentT;
     box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
   }
 }
 
 .p-rimeto_org_chart_member_card_selected {
-  background: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  background: $accent;
 
   .p-rimeto_org_chart_member_card_name,
   .p-rimeto_org_chart_member_card_title {
-    color: #fff;
+    color: $selectFg;
   }
 }
 
 .p-rimeto_org_chart_member_card_reports {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  --saf-1: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  --saf-0: $bg2;
+  --saf-1: $excluded;
   box-shadow: 0 0 0 1px var(--saf-0), 0 2px 8px 0 var(--saf-1);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background-color: $bg;
 }
 
 .p-rimeto_org_chart_member_card_tick {
-  border-right: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-right: 1px solid $borderLight;
 }
 
 .p-rimeto_org_chart_member_card_dim {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-rimeto_member_profile_field__country--text {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-rimeto_profile_sections__edit--icon {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $accent;
 }
 
 .p-rimeto_profile_sections__element--edit {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $accent;
 }
