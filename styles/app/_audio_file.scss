@@ -1,0 +1,25 @@
+.p-audio_file__attach {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-audio_file__cancel {
+  background: $button;
+  color: $fg;
+}
+
+.p-audio_file__strip {
+  background: $bg;
+}
+
+.p-audio_file__strip--speedbump {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-audio_file__timer--warning {
+  color: $red;
+}
+
+.p-audio_file__pending_file {
+  border-color: $border !important;
+}

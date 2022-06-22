@@ -1,5 +1,5 @@
 :root {
-  --version: "v26.2.7";
+  --version: "v27.0.0";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -6149,6 +6149,26 @@
 }
 #mtslack .c-message_attachment_v2__attribution {
   color: var(--text);
+}
+#mtslack .p-audio_file__attach {
+  background: var(--accent);
+  color: var(--selectFg2);
+}
+#mtslack .p-audio_file__cancel {
+  background: var(--button);
+  color: var(--fg);
+}
+#mtslack .p-audio_file__strip {
+  background: var(--bg);
+}
+#mtslack .p-audio_file__strip--speedbump {
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 5px var(--accentT);
+}
+#mtslack .p-audio_file__timer--warning {
+  color: var(--red);
+}
+#mtslack .p-audio_file__pending_file {
+  border-color: var(--border) !important;
 }
 #mtslack .c-pillow_file {
   background: var(--button);
