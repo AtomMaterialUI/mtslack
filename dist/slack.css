@@ -2729,34 +2729,34 @@
 #mtslack .c-alert--level_info {
   background-color: var(--notif) !important;
   border: 1px solid var(--blue) !important;
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_info .c-alert__icon {
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_success {
   background-color: var(--notif) !important;
   border: 1px solid var(--green) !important;
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_success .c-alert__icon {
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_warning {
   background-color: var(--notif) !important;
   border: 1px solid var(--orange) !important;
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_warning .c-alert__icon {
-  color: var(--bg) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_error {
   background-color: var(--notif) !important;
   border: 1px solid var(--red) !important;
-  color: var(--selectFg2) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--level_error .c-alert__icon {
-  color: var(--selectFg2) !important;
+  color: var(--fg) !important;
 }
 #mtslack .c-alert--boxed,
 #mtslack .c-alert--custom {

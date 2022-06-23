@@ -10,40 +10,40 @@
 .c-alert--level_info {
   background-color: $notif !important;
   border: 1px solid $blue !important;
-  color: $bg !important;
+  color: $fg !important;
 
   .c-alert__icon {
-    color: $bg !important;
+    color: $fg !important;
   }
 }
 
 .c-alert--level_success {
   background-color: $notif !important;
   border: 1px solid $green !important;
-  color: $bg !important;
+  color: $fg !important;
 
   .c-alert__icon {
-    color: $bg !important;
+    color: $fg !important;
   }
 }
 
 .c-alert--level_warning {
   background-color: $notif !important;
   border: 1px solid $orange !important;
-  color: $bg !important;
+  color: $fg !important;
 
   .c-alert__icon {
-    color: $bg !important;
+    color: $fg !important;
   }
 }
 
 .c-alert--level_error {
   background-color: $notif !important;
   border: 1px solid $red !important;
-  color: $selectFg !important;
+  color: $fg !important;
 
   .c-alert__icon {
-    color: $selectFg !important;
+    color: $fg !important;
   }
 }
 
