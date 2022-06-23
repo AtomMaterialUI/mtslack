@@ -1,60 +1,55 @@
 .p-unfurled_joiners_carousel__channel_members_info {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-unfurled_joiners_carousel__invite_member_link {
-  border-left: 1px solid rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  border-left: 1px solid $borderLight;
 }
 
 .p-unfurled_joiners_carousel__card {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px solid var(--saf-0);
+  border: 1px solid $borderLight;
 
   &:hover {
-    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+    background: $bg2;
   }
 }
 
 .p-unfurled_joiners_carousel__face_pile_card {
   &:hover .p-unfurled_joiners_carousel__face_pile_card_team_icon {
-    --saf-0: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
-    border: 2px solid var(--saf-0);
+    border: 2px solid $borderLight;
   }
 }
 
 .p-unfurled_joiners_carousel__face_pile_card_team_icon {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  border: 2px solid var(--saf-0);
+  border: 2px solid $bg;
 }
 
 .p-unfurled_joiners_carousel__face_pile_card_label {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-unfurled_joiners_carousel__action_card_label {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-unfurled_joiners_carousel__invite_member_card {
-  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
-  border: 1px dashed var(--saf-0);
+  border: 1px dashed $borderLight;
 }
 
 .p-unfurled_joiners_carousel__invite_member_card_icon {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-unfurled_joiners_company_pile__avatar--stacked {
-  --saf-0: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  box-shadow: 0 0 0 2px var(--saf-0);
+  box-shadow: 0 0 0 2px $bg;
 }
 
 .p-unfurled_joiners_company_pile__count_tile {
-  background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  background-color: $bg2;
 }
 
 .p-unfurled_joiners_company_pile__icon_container {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-unfurled_joiners_company_pile__wrapper__contextual_banner {

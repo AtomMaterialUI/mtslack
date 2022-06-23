@@ -1,7 +1,3 @@
-.c-sk-modal--faded:after {
-  background: rgba(black, 0.1);
-}
-
 .c-sk-modal_content {
   background: $bg;
 }
@@ -182,20 +178,6 @@
 
 .c-sk-modal_footer--speedbump {
   background-color: $bg;
-}
-
-.c-sk-modal__speedbump_overlay {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.c-sk-modal--faded {
-  &:after {
-    background: rgba(0, 0, 0, 0.1);
-  }
-}
-
-.c-modal_speed_bump_overlay {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .c-modal_speed_bump {

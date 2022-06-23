@@ -202,5 +202,5 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 .p-audio_popover_overlay {
-  background: linear-gradient(180deg, rgba(var(--sk_primary_background, 255, 255, 255), 0), $contrast 200px);
+  background: linear-gradient(180deg, $bg, $contrast 200px);
 }

@@ -202,10 +202,3 @@
 .p-get_started_confirmation_code__hint {
   color: $disabled;
 }
-
-.p-workspace__primary_view_contents--members_overlay {
-  &:before {
-    z-index: 203 !important;
-    background: rgba(0, 0, 0, 0.6);
-  }
-}

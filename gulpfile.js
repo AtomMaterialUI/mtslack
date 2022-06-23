@@ -59,7 +59,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('watchStyles', () => {
-  gulp.watch(paths.styles.src, gulp.parallel('debugStyles'));
+  gulp.watch(paths.styles.src, gulp.parallel('debugStyles', 'styles'));
 });
 gulp.task('watchScripts', () => {
   gulp.watch(paths.scripts.src, gulp.parallel('scripts'));

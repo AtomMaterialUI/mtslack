@@ -16,6 +16,7 @@
 }
 
 .p-org_card_container {
+  @include card;
   background-color: $contrast;
   box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 rgba(0, 0, 0, 0.08);
 }
@@ -59,7 +60,6 @@
   &:not(.p-org_card--loading) {
     &:active,
     &:hover {
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
       @include card;
     }
   }
@@ -75,7 +75,6 @@
 
   &:active,
   &:hover {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
     @include card;
   }
 }

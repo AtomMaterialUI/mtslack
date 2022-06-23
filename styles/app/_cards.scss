@@ -1,7 +1,6 @@
 .c-card {
   @include card;
   border: 1px solid $borderLight;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 .c-card--info {

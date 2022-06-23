@@ -31,21 +31,12 @@
 .c-deprecated_rounded_button {
   &:hover {
     color: $selectFg;
-
-    &:after {
-      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
-    }
-  }
-
-  &:active:after {
-    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
 .c-deprecated_rounded_button--outline,
 .c-deprecated_rounded_button--transparent {
   color: $text;
-  box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.3);
 }
 
 .c-deprecated_rounded_button--outline {

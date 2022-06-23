@@ -27,9 +27,6 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
   background: $contrast;
 
   &.p-message_input__input_container_unstyled.c-wysiwyg_container--composer_ia {
-    &:focus-within {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    }
   }
 
   &.p-message_input__input_container_unstyled.c-wysiwyg_container--composer_ia,
@@ -93,16 +90,6 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
     background: $contrast !important;
   }
 
-  &.c-wysiwyg_container__button--send.c-wysiwyg_container__button--experiment_draft_scheduling {
-    &:hover {
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-    }
-
-    &.c-wysiwyg_container__button--disabled:hover {
-      box-shadow: none;
-    }
-  }
-
   &.c-wysiwyg_container__button--shortcuts {
     &:active,
     &:hover {
@@ -143,10 +130,6 @@ button:focus > .p-wysiwyg_deluxe_toast__close {
 }
 
 .c-wysiwyg_container__send_button--with_options {
-  &:hover {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
-  }
-
   .c-wysiwyg_container__button {
     &.c-wysiwyg_container__button--send.c-wysiwyg_container__button--disabled,
     &.c-wysiwyg_container__button--send_options.c-wysiwyg_container__button--disabled {

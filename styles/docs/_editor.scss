@@ -40,7 +40,7 @@ html[data-app='docs'] {
   }
 
   .ql-editor.ql-blank:before {
-    color: rgba(0, 0, 0, 0.6);
+    color: $fg;
   }
 
   .ql-editor blockquote:before {

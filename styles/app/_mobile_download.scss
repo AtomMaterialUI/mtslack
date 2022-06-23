@@ -1,17 +1,17 @@
 .p-mobile_download_modal {
   .p-mobile_download_modal__img_wrapper {
-    background-color: #e8f5fa;
+    background-color: $bg2;
   }
 }
 
 .sk-client-theme--dark .p-mobile_download_modal .p-mobile_download_modal__img_wrapper {
-  background-color: #0b2934;
+  background-color: $bg2;
 }
 
 .p-mobile_download_modal__actions_container {
   .p-mobile_download_modal__actions_container_or_separator {
     .p-mobile_download_modal__actions_container_or_separator--vertical-line {
-      border-left: 1px solid rgba(var(--sk_foreground_mid_solid, 187, 186, 187), 1);
+      border-left: 1px solid $primary;
     }
   }
 }

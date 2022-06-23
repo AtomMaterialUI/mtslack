@@ -1,7 +1,3 @@
-.p-setup_tada_coachmark__ReactModal__Body--open .p-workspace__primary_view_contents:before {
-  background: rgba(0, 0, 0, 0.6);
-}
-
 .p-setup_tada_coachmark {
   box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
 }
@@ -19,7 +15,8 @@
   color: $selectFg;
   background-color: $accentT;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: $accent;
   }
 

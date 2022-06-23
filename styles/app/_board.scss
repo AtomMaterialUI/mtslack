@@ -170,7 +170,7 @@
 }
 
 .p-board__editable_text--untitled:not(.p-board__editable_text--editing) {
-  color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  color: $disabled;
 }
 
 .p-board__empty {
@@ -183,154 +183,144 @@
 
 .p-base_card_new,
 .p-base_card {
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
+  background-color: $bg;
+  border: 1px solid $borderLight;
 
   &:active,
   &:focus,
   &:hover {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 }
 
 .p-card_preview,
 .p-base_card__preview {
-  background-color: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  background-color: $bg2;
 }
 
 .p-card_content,
 .p-base_card__content {
-  border-top: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  border-top: 1px solid $borderLight;
 }
 
 .p-card_content__title,
 .p-base_card__content__title {
-  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+  color: $fg;
 }
 
 .p-card_content__subtitle_wrapper,
 .p-base_card__content__subtitle {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $text;
 }
 
 .p-board__empty--file-drop-hover {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border: 2px solid var(--saf-0);
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  border: 2px solid $primary;
+  color: $primary;
 }
 
 .p-board__empty__file_drop_icon {
-  background-color: rgba(29, 155, 209, 0.1);
+  background-color: $excluded;
 }
 
 .p-board-selected-items-pill {
-  color: rgba(var(--sk_inverted_foreground, 255, 255, 255), 1);
-  background: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+  color: $selectFg;
+  background: $hl;
 }
 
 .p-board-selected-items-pill__button {
+  background: $button;
   &:hover {
-    background: rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.1);
+    background: $hl;
   }
 
   &:first-child {
-    border-right: 1px solid rgba(var(--sk_inverted_foreground, 255, 255, 255), 0.3);
+    border-right: 1px solid $borderLight;
   }
 }
 
 .p-board-selectable-item__select-button .c-icon {
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  background: $bg;
+  color: $text;
 }
 
 .p-board-selectable-item--selected .p-board-selectable-item__select-button .c-icon {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }
 
 .p-board-selectable-item--hovered .p-board-selectable-item__item {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 4px solid var(--saf-0);
+  border: 4px solid $borderLight;
 }
 
 .p-board-selectable-item--selected .p-board-selectable-item__item {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border: 4px solid var(--saf-0);
+  border: 4px solid $primary;
 }
 
 .p-board-item__button--delete {
   &.c-button--outline:hover {
     box-shadow: none;
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    background: $bg;
   }
 }
 
 .p-board_dragIndicator {
-  background-color: rgba(var(--sk_highlight_hover, 11, 76, 140), 1);
+  background-color: $active;
 }
 
 .p-unfurl_card {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+  color: $fg;
 
   &:active,
   &:focus,
   &:hover {
-    color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+    color: $fg;
   }
 }
 
 .p-message_card {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px solid var(--saf-0);
+  color: $fg;
+  background-color: $bg;
+  border: 1px solid $border;
+  @include card;
 }
 
 .p-message_card__channel {
-  color: rgba(var(--sk_foreground_high_solid, 134, 134, 134), 1);
+  color: $text;
 }
 
 .p-message_card__overflow_footer {
-  background: linear-gradient(
-    0deg,
-    rgba(var(--sk_primary_background, 255, 255, 255), 1) 40%,
-    rgba(var(--sk_primary_background, 255, 255, 255), 0)
-  );
+  background: $bg;
 }
 
 .p-board__group--empty {
-  background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  border: 1px dashed var(--saf-0);
+  background-color: $contrast;
+  border: 1px dashed $borderLight;
 }
 
 .p-board__group__instructions {
-  color: rgba(var(--sk_foreground_max_solid, 97, 96, 97), 1);
+  color: $text;
 }
 
 .p-board__group--empty.drop-hover {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-  border: 2px solid var(--saf-0);
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  border: 2px solid $primary;
+  color: $primary;
 }
 
 .p-board-selectable-item__select-button {
   .c-icon {
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
-    color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    background: $bg;
+    color: $primary;
   }
 }
 
 .p-board-selectable-item__delete-button {
   &.c-button--outline:hover {
-    background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+    background: $bg;
   }
 }
 
 .p-board-selectable-item--selected {
   .p-board-selectable-item__item {
-    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
-    border: 3px solid var(--saf-0);
+    border: 3px solid $primary;
   }
 }
 
@@ -338,15 +328,15 @@
   .p-base_card_new,
   .p-base_card,
   .p-message_card {
-    background: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+    background: $bg2;
   }
 }
 
 .p-ia__view_header__button__board--selected {
-  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
-  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  color: $fg;
+  background: $borderLight;
 
   &.p-ia__view_header__button:hover {
-    background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+    background: $borderLight;
   }
 }
