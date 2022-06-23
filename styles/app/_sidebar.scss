@@ -11,6 +11,27 @@
   color: $fg;
 }
 
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__name,
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-shared_channels_icon,
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__name,
+.p-channel_sidebar--dimming
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-shared_channels_icon {
+  color: $disabled;
+}
+
 .p-channel_sidebar__pages_list_spacer {
   border-color: $borderLight;
 }

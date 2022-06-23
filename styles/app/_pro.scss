@@ -1,0 +1,21 @@
+.p-pro_badge--gold {
+  background-color: $primary;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-pro_badge--purple,
+.p-pro_badge--purple {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .c-menu_item__li--highlighted .p-pro_badge--purple,
+.c-menu_item__li--highlighted .p-pro_badge--purple {
+  background-color: $selectBg;
+  color: $selectFg;
+}
+
+.p-pro_badge--white {
+  background-color: $selectFg;
+  color: $accent;
+}
