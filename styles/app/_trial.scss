@@ -339,3 +339,23 @@
 .sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--top-right:after {
   border-bottom-color: $accent;
 }
+
+.p-limited_history_countdown__link {
+  color: $accent2;
+}
+
+.p-limited_history_countdown__link--highlighted {
+  color: $selectFg;
+}
+
+.p-create_bstw_workspace_menu_item .p-create_bstw_workspace_menu_item__link {
+  color: $accent2;
+}
+
+.p-create_bstw_workspace_menu_item:not(.p-create_bstw_workspace_menu_item--highlighted) {
+  background: $bg;
+}
+
+.p-create_bstw_workspace_menu_item--highlighted .p-create_bstw_workspace_menu_item__link {
+  color: $selectFg;
+}
