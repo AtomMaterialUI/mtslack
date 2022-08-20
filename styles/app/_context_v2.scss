@@ -1,0 +1,35 @@
+.p-context_bar_v2 {
+  background: $bg2;
+}
+
+.p-context_bar_v2--teal {
+  background: $bg2;
+}
+
+.sk-client-theme--dark .p-context_bar_v2--teal {
+  background: $bg2;
+}
+
+.p-context_bar_v2--yellow {
+  background: $bg2;
+}
+
+.sk-client-theme--dark .p-context_bar_v2--yellow {
+  background: $bg2;
+}
+
+.p-context_bar_v2__icon {
+  color: $text;
+}
+
+.p-context_bar_v2__icon .p-context_bar_banner__govslack_insert {
+  border-color: $hl;
+}
+
+.p-context_bar_v2--teal .p-context_bar_v2__icon .p-context_bar_banner__govslack_insert {
+  border-color: $hl;
+}
+
+.sk-client-theme--dark .p-context_bar_v2--teal .p-context_bar_v2__icon .p-context_bar_banner__govslack_insert {
+  border-color: $hl;
+}
