@@ -539,6 +539,9 @@ button.p-admin_member_table__menu_item--disabled {
   .p-browse_page_channel__inaction_label {
     color: $disabled;
   }
+  .browse_page_channel_view_button_wrapper {
+    background: $bg2;
+  }
 }
 
 .p-browse_page_layout__autocomplete_reset_button {
