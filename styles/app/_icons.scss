@@ -23,3 +23,9 @@
 .c-base_icon_image_stacked__image--missing {
   fill: $button;
 }
+
+.c-base_icon__width_only_container {
+  background-color: $bg;
+  border-radius: 50%;
+  color: $fg;
+}

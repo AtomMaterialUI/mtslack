@@ -37,6 +37,22 @@
   background: $bg;
 }
 
+.p-view_header__avatar_stack_container {
+  border: 1px solid $borderLight;
+}
+
+.p-view_header__avatar_stack_inner_container {
+  border-right: 1px solid $borderLight;
+}
+
+.p-view_header__avatar_stack_inner_container:hover {
+  background-color: $tree;
+}
+
+.p-view_header__avatar_stack_inner_container:active {
+  background-color: $tree;
+}
+
 .p-view_header__big_button {
   &:not(.p-view_header__big_button--inactive) {
     &:hover {

@@ -1,5 +1,9 @@
 // Dim sidebar
 .mtslack--dim {
+  .p-channel_sidebar__channel:has(.p-channel_sidebar__name--away) {
+    color: red !important;
+  }
+
   .p-channel_sidebar__name.p-channel_sidebar__name--away,
   .p-channel_sidebar__name > .p-channel_sidebar__name--away {
     opacity: 0.4 !important;
