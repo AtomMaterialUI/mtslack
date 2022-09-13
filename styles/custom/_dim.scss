@@ -1,8 +1,8 @@
 // Dim sidebar
 .mtslack--dim {
-  .p-channel_sidebar__channel:has(> div > .p-channel_sidebar__name--away) {
-    color: red !important;
-  }
+  //.p-channel_sidebar__channel:has(> div > .p-channel_sidebar__name--away) {
+  //  color: red !important;
+  //}
 
   .p-channel_sidebar__name.p-channel_sidebar__name--away,
   .p-channel_sidebar__name > .p-channel_sidebar__name--away {

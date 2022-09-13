@@ -25803,9 +25803,6 @@
   margin-right: 1em;
 }
 
-.mtslack--dim .p-channel_sidebar__channel:has(> div > .p-channel_sidebar__name--away) {
-  color: red !important;
-}
 .mtslack--dim .p-channel_sidebar__name.p-channel_sidebar__name--away,
 .mtslack--dim .p-channel_sidebar__name > .p-channel_sidebar__name--away {
   opacity: 0.4 !important;
