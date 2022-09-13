@@ -1,6 +1,6 @@
 // Dim sidebar
 .mtslack--dim {
-  .p-channel_sidebar__channel:has(.p-channel_sidebar__name--away) {
+  .p-channel_sidebar__channel:has(> div > .p-channel_sidebar__name--away) {
     color: red !important;
   }
 
