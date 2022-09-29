@@ -24,22 +24,26 @@
 
 .c-banner--info {
   background-color: $notif;
-  color: $blue;
+  border: 1px solid $blue;
+  color: $fg;
 }
 
 .c-banner--success {
   background-color: $notif;
-  color: $green;
+  border: 1px solid $green;
+  color: $fg;
 }
 
 .c-banner--warning {
   background-color: $notif;
-  color: $orange;
+  border: 1px solid $orange;
+  color: $fg;
 }
 
 .c-banner--urgent {
   background-color: $notif;
-  color: $red;
+  border: 1px solid $red;
+  color: $fg;
 }
 
 .c-banner--neutral {

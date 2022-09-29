@@ -6516,19 +6516,23 @@
 }
 #mtslack .c-banner--info {
   background-color: var(--notif);
-  color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--fg);
 }
 #mtslack .c-banner--success {
   background-color: var(--notif);
-  color: var(--green);
+  border: 1px solid var(--green);
+  color: var(--fg);
 }
 #mtslack .c-banner--warning {
   background-color: var(--notif);
-  color: var(--orange);
+  border: 1px solid var(--orange);
+  color: var(--fg);
 }
 #mtslack .c-banner--urgent {
   background-color: var(--notif);
-  color: var(--red);
+  border: 1px solid var(--red);
+  color: var(--fg);
 }
 #mtslack .c-banner--neutral {
   background-color: var(--notif);
