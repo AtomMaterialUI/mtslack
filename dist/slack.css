@@ -6515,20 +6515,20 @@
   box-shadow: 2px 4px 6px black;
 }
 #mtslack .c-banner--info {
-  background-color: var(--blue);
-  color: var(--selectFg2);
+  background-color: var(--notif);
+  color: var(--blue);
 }
 #mtslack .c-banner--success {
-  background-color: var(--green);
-  color: var(--bg);
+  background-color: var(--notif);
+  color: var(--green);
 }
 #mtslack .c-banner--warning {
-  background-color: var(--orange);
-  color: var(--selectFg2);
+  background-color: var(--notif);
+  color: var(--orange);
 }
 #mtslack .c-banner--urgent {
-  background-color: var(--red);
-  color: var(--selectFg2);
+  background-color: var(--notif);
+  color: var(--red);
 }
 #mtslack .c-banner--neutral {
   background-color: var(--notif);

@@ -23,23 +23,23 @@
 }
 
 .c-banner--info {
-  background-color: $blue;
-  color: $selectFg;
+  background-color: $notif;
+  color: $blue;
 }
 
 .c-banner--success {
-  background-color: $green;
-  color: $bg;
+  background-color: $notif;
+  color: $green;
 }
 
 .c-banner--warning {
-  background-color: $orange;
-  color: $selectFg;
+  background-color: $notif;
+  color: $orange;
 }
 
 .c-banner--urgent {
-  background-color: $red;
-  color: $selectFg;
+  background-color: $notif;
+  color: $red;
 }
 
 .c-banner--neutral {
