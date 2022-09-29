@@ -1,0 +1,32 @@
+.p-sent_page_item {
+  background: $bg2;
+  @include card;
+}
+
+.p-sent_page_item:hover {
+  background: $hl;
+}
+
+.p-sent_page_item__timestamp {
+  color: $text;
+}
+
+.p-sent_page_item__message {
+  color: $text;
+}
+
+.p-sent_page_item--unread .p-sent_page_item__message {
+  color: $fg;
+}
+
+.p-sent_page {
+  background: $bg;
+}
+
+.p-sent_page__loading {
+  background: $bg;
+}
+
+.p-icon_avatar-container {
+  background: $contrast;
+}

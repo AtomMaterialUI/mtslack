@@ -24160,6 +24160,34 @@
 #mtslack .p-upgrade_footer__subheading {
   color: var(--text);
 }
+#mtslack .p-sent_page_item {
+  background: var(--secondBg);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#mtslack .p-sent_page_item:hover {
+  box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+#mtslack .p-sent_page_item:hover {
+  background: var(--hl);
+}
+#mtslack .p-sent_page_item__timestamp {
+  color: var(--text);
+}
+#mtslack .p-sent_page_item__message {
+  color: var(--text);
+}
+#mtslack .p-sent_page_item--unread .p-sent_page_item__message {
+  color: var(--fg);
+}
+#mtslack .p-sent_page {
+  background: var(--bg);
+}
+#mtslack .p-sent_page__loading {
+  background: var(--bg);
+}
+#mtslack .p-icon_avatar-container {
+  background: var(--contrast);
+}
 #mtslack .p-upgrades_icon {
   color: var(--primary);
 }
