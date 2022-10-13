@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="general" version="1">
+  <component name="general">
     <commitTypes>
       <entry providerId="37415b03-9388-4c55-b949-8c4526f6934d" order="3" />
       <entry providerId="e9ce9acf-f4a6-4b36-b43c-531169556c29" order="2" />

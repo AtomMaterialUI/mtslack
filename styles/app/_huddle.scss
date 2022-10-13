@@ -503,3 +503,11 @@
     color: var(--p-huddle__text_color);
   }
 }
+
+.p-huddle_sidebar_footer--trial-feature {
+  border-top: 2px solid $hl;
+}
+
+.p-huddle_sidebar_footer--trial-feature:hover {
+  border-top: 2px solid $hl;
+}
