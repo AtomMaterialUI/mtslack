@@ -60,7 +60,7 @@
     "clui": "^0.3.6",
     "configstore": "^6.0.0",
     "figlet": "^1.5.2",
-    "inquirer": "^8.2.0",
+    "inquirer": "^9.1.4",
     "is-elevated": "^4.0.0",
     "is-root": "^3.0.0",
     "js-yaml": "^4.1.0",
