@@ -511,3 +511,192 @@
 .p-huddle_sidebar_footer--trial-feature:hover {
   border-top: 2px solid $hl;
 }
+
+.p-huddle_sidebar_footer__coachmark {
+  background: $bg;
+}
+
+.p-huddle_sidebar_footer--join_active_container_canvas_exp {
+  background-color: $active;
+}
+
+.p-huddle_sidebar_footer--trial-feature {
+  border-top: 2px solid $borderLight;
+}
+
+.p-huddle_sidebar_footer--trial-feature:hover {
+  border-top: 2px solid $primary;
+}
+
+.p-huddle_sidebar_footer__container_survey {
+  border: 2px solid $borderLight;
+}
+
+.p-huddle_sidebar_footer__popover_container {
+  color: $text;
+}
+
+.p-huddle_sidebar_footer__popover_container.p-huddle_sidebar_footer__popover_container--join_active {
+  background-color: $hl;
+}
+
+.p-huddle_sidebar_footer__survey {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-huddle_sidebar_footer__button--join,
+.p-huddle_sidebar_footer__button.c-icon_button {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-huddle_sidebar_footer__button--join:hover,
+.p-huddle_sidebar_footer__button.c-icon_button:hover {
+  background: $hl;
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer__button--join_active {
+  background: $button;
+  color: $text;
+}
+
+.p-huddle_sidebar_footer__button--join_active:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer__join_non_active_container {
+  color: $text;
+}
+
+.p-huddle_sidebar_footer--join_active:hover .p-huddle_sidebar_footer__join_non_active_container,
+.p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__join_non_active_container {
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer--join_non_active:hover
+  .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh
+  .p-huddle_antenna_icon__antenna,
+.p-huddle_sidebar_footer--join_non_active:hover
+  .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh
+  .p-huddle_antenna_icon__inner_wave,
+.p-huddle_sidebar_footer--join_non_active:hover
+  .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh
+  .p-huddle_antenna_icon__outer_wave,
+.p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__antenna,
+.p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__inner_wave,
+.p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__outer_wave {
+  fill: $fg;
+}
+
+.p-huddle_sidebar_footer__controls,
+.p-huddle_sidebar_footer__join_active_container,
+.p-huddle_sidebar_footer__join_non_active_container {
+  border-top: 1px solid $borderLight;
+}
+
+.p-huddle_sidebar_footer__controls__trial_card_refresh {
+  border: 2px solid $borderLight;
+  box-shadow: 0 0 5px 3px $borderLight;
+}
+
+.p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override {
+  color: $text;
+}
+
+.p-huddle_sidebar_footer__channel_name__trial_card_refresh,
+.p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override:hover {
+  color: $selectFg;
+}
+
+.p-huddle_sidebar_footer__channel_name__menu_container:hover {
+  background: $bg2;
+}
+
+.p-huddle_sidebar_footer__trial_feature_border_active {
+  border-top: 2px solid $fg;
+}
+
+.p-huddle_sidebar_footer__button--options {
+  color: $fg;
+}
+
+.p-huddle_base_card {
+  background-color: $bg2;
+  border: 4px solid $borderLight;
+  color: $fg;
+}
+
+.p-huddle_base_card.p-huddle_base_card--dark_mode {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-huddle_base_card.p-huddle_base_card--dark_mode:after {
+  background-color: $bg2;
+}
+
+.p-huddle_base_card:after {
+  background-color: $bg2;
+  border-right: 4px solid $borderLight;
+  border-top: 4px solid $borderLight;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button {
+  color: $fg;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button.p-huddle_base_card__close_button--dark_mode {
+  color: $fg;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button:hover {
+  color: $primary;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button:hover.p-huddle_base_card__close_button--dark_mode {
+  color: $primary;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button:focus {
+  border-color: $accent;
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-huddle_base_card .p-huddle_base_card__close_button:focus:-moz-placeholder,
+.p-huddle_base_card .p-huddle_base_card__close_button:focus:-ms-input-placeholder,
+.p-huddle_base_card .p-huddle_base_card__close_button:focus::-moz-placeholder,
+.p-huddle_base_card .p-huddle_base_card__close_button:focus::-webkit-input-placeholder {
+  color: $fg;
+}
+
+.p-huddle_education_coachmark {
+  background-color: $bg2;
+}
+
+.p-huddle_education_coachmark:after {
+  background-color: $bg2;
+}
+
+.p-huddle_trial_card--refresh {
+  background-color: $bg2;
+}
+
+.p-huddle_trial_card--refresh:after {
+  background-color: $bg2;
+}
+
+.p-huddle_alert {
+  background-color: $notif;
+}
+
+.p-huddle_alert .p-huddle_mic_icon__microphone--slash,
+.p-huddle_alert__content {
+  color: $primary;
+}
+
+.p-huddle_alert__content {
+  background-color: $notif;
+}

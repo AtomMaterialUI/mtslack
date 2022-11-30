@@ -12908,6 +12908,156 @@
 #mtslack .p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override:hover {
   color: var(--p-huddle__text_color);
 }
+#mtslack .p-huddle_sidebar_footer--trial-feature {
+  border-top: 2px solid var(--hl);
+}
+#mtslack .p-huddle_sidebar_footer--trial-feature:hover {
+  border-top: 2px solid var(--hl);
+}
+#mtslack .p-huddle_sidebar_footer__coachmark {
+  background: var(--bg);
+}
+#mtslack .p-huddle_sidebar_footer--join_active_container_canvas_exp {
+  background-color: var(--active);
+}
+#mtslack .p-huddle_sidebar_footer--trial-feature {
+  border-top: 2px solid var(--active);
+}
+#mtslack .p-huddle_sidebar_footer--trial-feature:hover {
+  border-top: 2px solid var(--primary);
+}
+#mtslack .p-huddle_sidebar_footer__container_survey {
+  border: 2px solid var(--active);
+}
+#mtslack .p-huddle_sidebar_footer__popover_container {
+  color: var(--text);
+}
+#mtslack .p-huddle_sidebar_footer__popover_container.p-huddle_sidebar_footer__popover_container--join_active {
+  background-color: var(--hl);
+}
+#mtslack .p-huddle_sidebar_footer__survey {
+  background-color: var(--secondBg);
+  color: var(--fg);
+}
+#mtslack .p-huddle_sidebar_footer__button--join,
+#mtslack .p-huddle_sidebar_footer__button.c-icon_button {
+  background-color: var(--button);
+  color: var(--fg);
+}
+#mtslack .p-huddle_sidebar_footer__button--join:hover,
+#mtslack .p-huddle_sidebar_footer__button.c-icon_button:hover {
+  background: var(--hl);
+  color: var(--selectFg2);
+}
+#mtslack .p-huddle_sidebar_footer__button--join_active {
+  background: var(--button);
+  color: var(--text);
+}
+#mtslack .p-huddle_sidebar_footer__button--join_active:hover {
+  background-color: var(--hl);
+  color: var(--selectFg2);
+}
+#mtslack .p-huddle_sidebar_footer__join_non_active_container {
+  color: var(--text);
+}
+#mtslack .p-huddle_sidebar_footer--join_active:hover .p-huddle_sidebar_footer__join_non_active_container,
+#mtslack .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__join_non_active_container {
+  color: var(--selectFg2);
+}
+#mtslack .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__antenna,
+#mtslack .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__inner_wave,
+#mtslack .p-huddle_sidebar_footer--join_non_active:hover .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__outer_wave,
+#mtslack .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__antenna,
+#mtslack .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__inner_wave,
+#mtslack .p-huddle_sidebar_footer__button__antenna_icon__trial_card_refresh .p-huddle_antenna_icon__outer_wave {
+  fill: var(--fg);
+}
+#mtslack .p-huddle_sidebar_footer__controls,
+#mtslack .p-huddle_sidebar_footer__join_active_container,
+#mtslack .p-huddle_sidebar_footer__join_non_active_container {
+  border-top: 1px solid var(--active);
+}
+#mtslack .p-huddle_sidebar_footer__controls__trial_card_refresh {
+  border: 2px solid var(--active);
+  box-shadow: 0 0 5px 3px var(--active);
+}
+#mtslack .p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override {
+  color: var(--text);
+}
+#mtslack .p-huddle_sidebar_footer__channel_name__trial_card_refresh,
+#mtslack .p-huddle_sidebar_footer__icon--open_view.p-huddle_sidebar_footer__icon--override:hover {
+  color: var(--selectFg2);
+}
+#mtslack .p-huddle_sidebar_footer__channel_name__menu_container:hover {
+  background: var(--secondBg);
+}
+#mtslack .p-huddle_sidebar_footer__trial_feature_border_active {
+  border-top: 2px solid var(--fg);
+}
+#mtslack .p-huddle_sidebar_footer__button--options {
+  color: var(--fg);
+}
+#mtslack .p-huddle_base_card {
+  background-color: var(--secondBg);
+  border: 4px solid var(--active);
+  color: var(--fg);
+}
+#mtslack .p-huddle_base_card.p-huddle_base_card--dark_mode {
+  background-color: var(--secondBg);
+  color: var(--fg);
+}
+#mtslack .p-huddle_base_card.p-huddle_base_card--dark_mode:after {
+  background-color: var(--secondBg);
+}
+#mtslack .p-huddle_base_card:after {
+  background-color: var(--secondBg);
+  border-right: 4px solid var(--active);
+  border-top: 4px solid var(--active);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button {
+  color: var(--fg);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button.p-huddle_base_card__close_button--dark_mode {
+  color: var(--fg);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:hover {
+  color: var(--primary);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:hover.p-huddle_base_card__close_button--dark_mode {
+  color: var(--primary);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 5px var(--accentT);
+}
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:focus:-moz-placeholder,
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:focus:-ms-input-placeholder,
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:focus::-moz-placeholder,
+#mtslack .p-huddle_base_card .p-huddle_base_card__close_button:focus::-webkit-input-placeholder {
+  color: var(--fg);
+}
+#mtslack .p-huddle_education_coachmark {
+  background-color: var(--secondBg);
+}
+#mtslack .p-huddle_education_coachmark:after {
+  background-color: var(--secondBg);
+}
+#mtslack .p-huddle_trial_card--refresh {
+  background-color: var(--secondBg);
+}
+#mtslack .p-huddle_trial_card--refresh:after {
+  background-color: var(--secondBg);
+}
+#mtslack .p-huddle_alert {
+  background-color: var(--notif);
+}
+#mtslack .p-huddle_alert .p-huddle_mic_icon__microphone--slash,
+#mtslack .p-huddle_alert__content {
+  color: var(--primary);
+}
+#mtslack .p-huddle_alert__content {
+  background-color: var(--notif);
+}
 #mtslack .p-ia__main_menu {
   border-top: 1px solid var(--active);
 }
