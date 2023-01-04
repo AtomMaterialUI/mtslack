@@ -23428,7 +23428,8 @@
 #mtslack .p-threads_view_header__participant_list {
   color: var(--text);
 }
-#mtslack .p-threads_view_load_newer_message, #mtslack .p-threads_view_load_older_message,
+#mtslack .p-threads_view_load_newer_message,
+#mtslack .p-threads_view_load_older_message,
 #mtslack .p-threads_view_load_newer_button,
 #mtslack .p-threads_view_load_older_button {
   background: var(--button);
@@ -23436,7 +23437,8 @@
   border-left: 1px solid var(--active);
   border-right: 1px solid var(--active);
 }
-#mtslack .p-threads_view_load_newer_message:hover, #mtslack .p-threads_view_load_older_message:hover,
+#mtslack .p-threads_view_load_newer_message:hover,
+#mtslack .p-threads_view_load_older_message:hover,
 #mtslack .p-threads_view_load_newer_button:hover,
 #mtslack .p-threads_view_load_older_button:hover {
   background: var(--hl);
@@ -23536,15 +23538,27 @@
 #mtslack .p-threads_flexpane .p-threads_flexpane__marked_as_read_divider__label {
   color: var(--accent);
 }
-#mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line__read, #mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line__unread {
+#mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line__read,
+#mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line__unread {
   border-top-color: var(--accent);
 }
-#mtslack .p-thread_separator--dark .p-threads_flexpane__read_divider__label, #mtslack .p-thread_separator--dark .p-threads_flexpane__unread_divider__label {
+#mtslack .p-thread_separator--dark .p-threads_flexpane__read_divider__label,
+#mtslack .p-thread_separator--dark .p-threads_flexpane__unread_divider__label {
   color: var(--accent);
 }
 #mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line--is-unread-appear-active,
 #mtslack .p-thread_separator--dark .p-threads_flexpane__separator_line--is-unread-enter-active {
   box-shadow: 0 0 5px 0 var(--accent), 0 0 5px 0 var(--accentT), 0 0 5px 0 var(--accentT);
+}
+#mtslack .p-threads_footer__input.p-message_input.p-message_input--dark ::selection,
+#mtslack .p-threads_footer__input.p-message_input.p-message_input--dark ::-moz-selection {
+  background-color: var(--selectBg);
+}
+#mtslack .p-threads_footer__input.p-message_input.p-message_input--day1:not(.p-message_input--disabled) .c-texty_input .ql-placeholder {
+  color: var(--accent);
+}
+#mtslack .p-threads_footer__input_container__broadcast_controls--thread_typing_indicators {
+  color: var(--text);
 }
 #mtslack .p-file_thumbnail__container--document,
 #mtslack .p-file_thumbnail__container--image,
