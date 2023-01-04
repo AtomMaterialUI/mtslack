@@ -1,6 +1,5 @@
 .p-threads_footer__input.p-message_input--dark,
 .p-threads_footer__input {
-
   .ql-attachments,
   .ql-files {
     background: $bg2;
@@ -83,8 +82,12 @@
     }
   }
 
-  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
-  &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+  &.p-message_input--attachments-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky,
+  &.p-message_input--files-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker)
+    .ql-composer-sticky {
     background: $active;
   }
 
@@ -163,7 +166,8 @@
   color: $text;
 }
 
-.p-threads_view_load_newer_message, .p-threads_view_load_older_message,
+.p-threads_view_load_newer_message,
+.p-threads_view_load_older_message,
 .p-threads_view_load_newer_button,
 .p-threads_view_load_older_button {
   background: $button;
@@ -172,7 +176,8 @@
   border-right: 1px solid $borderLight;
 }
 
-.p-threads_view_load_newer_message:hover, .p-threads_view_load_older_message:hover,
+.p-threads_view_load_newer_message:hover,
+.p-threads_view_load_older_message:hover,
 .p-threads_view_load_newer_button:hover,
 .p-threads_view_load_older_button:hover {
   background: $hl;
@@ -313,11 +318,13 @@
 }
 
 .p-thread_separator--dark {
-  .p-threads_flexpane__separator_line__read, .p-threads_flexpane__separator_line__unread {
+  .p-threads_flexpane__separator_line__read,
+  .p-threads_flexpane__separator_line__unread {
     border-top-color: $accent;
   }
 
-  .p-threads_flexpane__read_divider__label, .p-threads_flexpane__unread_divider__label {
+  .p-threads_flexpane__read_divider__label,
+  .p-threads_flexpane__unread_divider__label {
     color: $accent;
   }
 
@@ -325,4 +332,19 @@
   .p-threads_flexpane__separator_line--is-unread-enter-active {
     box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT, 0 0 5px 0 $accentT;
   }
+}
+
+.p-threads_footer__input.p-message_input.p-message_input--dark ::selection,
+.p-threads_footer__input.p-message_input.p-message_input--dark ::-moz-selection {
+  background-color: $selectBg;
+}
+
+.p-threads_footer__input.p-message_input.p-message_input--day1:not(.p-message_input--disabled)
+  .c-texty_input
+  .ql-placeholder {
+  color: $accent;
+}
+
+.p-threads_footer__input_container__broadcast_controls--thread_typing_indicators {
+  color: $text;
 }
