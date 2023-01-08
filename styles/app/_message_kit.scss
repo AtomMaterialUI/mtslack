@@ -134,3 +134,20 @@
 .p-mpdm_add_people_modal__footer__warning__icon {
   color: $accent;
 }
+
+.p-mpdm_add_people_modal_content__select__subtext {
+  color: $text;
+}
+
+.p-degraded_list__loading {
+  background: $bg;
+  color: $disabled;
+}
+
+.p-degraded_list__loading--offline {
+  color: $fg;
+}
+
+.p-end_dm_dialog_learn_more:hover {
+  color: $text;
+}

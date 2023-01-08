@@ -15495,6 +15495,19 @@
 #mtslack .p-mpdm_add_people_modal__footer__warning__icon {
   color: var(--accent);
 }
+#mtslack .p-mpdm_add_people_modal_content__select__subtext {
+  color: var(--text);
+}
+#mtslack .p-degraded_list__loading {
+  background: var(--bg);
+  color: var(--disabled);
+}
+#mtslack .p-degraded_list__loading--offline {
+  color: var(--fg);
+}
+#mtslack .p-end_dm_dialog_learn_more:hover {
+  color: var(--text);
+}
 #mtslack .p-message_limit_banner {
   color: var(--text);
   background-color: var(--bg);
