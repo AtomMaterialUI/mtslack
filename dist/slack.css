@@ -15457,6 +15457,44 @@
   color: var(--primary);
   background: var(--accent);
 }
+#mtslack .c-message_kit__resend--has_pending_files,
+#mtslack .c-message_kit__resend--with_buttons {
+  color: var(--text);
+}
+@keyframes c-message_kit--to-grey {
+  0% {
+    color: inherit;
+  }
+  to {
+    color: var(--text);
+  }
+}
+#mtslack .p-multi_thread_background {
+  background: var(--bg);
+}
+#mtslack .p-multi_thread_background__drag_overlay {
+  background: var(--bg);
+  border-left: 1px solid var(--active);
+  border-right: 1px solid var(--active);
+}
+#mtslack .p-multi_thread_background__drag_overlay--first {
+  border-top: 1px solid var(--active);
+}
+#mtslack .p-multi_thread_background__drag_overlay--last {
+  border-bottom: 1px solid var(--active);
+}
+#mtslack .p-mpdm_select_history_form {
+  background-color: var(--secondBg);
+}
+#mtslack .p-mpdm_history_modal_header__subheader {
+  color: var(--text);
+}
+#mtslack .p-mpdm_add_people_modal__footer__warning {
+  color: var(--text);
+}
+#mtslack .p-mpdm_add_people_modal__footer__warning__icon {
+  color: var(--accent);
+}
 #mtslack .p-message_limit_banner {
   color: var(--text);
   background-color: var(--bg);

@@ -1,4 +1,3 @@
-
 .c-message_kit__file__remove {
   color: $fg;
 }
@@ -10,7 +9,9 @@
 .c-message_kit__file__meta__attribution__link {
   color: $fg;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $primary;
   }
 }
@@ -18,7 +19,6 @@
 .c-message_kit__file__meta__separator {
   color: $border;
 }
-
 
 .c-message_kit__tombstone__icon {
   background: $tree;
@@ -84,4 +84,53 @@
 .p-message_file__email_draft_prefix {
   color: $primary;
   background: $accent;
+}
+
+.c-message_kit__resend--has_pending_files,
+.c-message_kit__resend--with_buttons {
+  color: $text;
+}
+
+@keyframes c-message_kit--to-grey {
+  0% {
+    color: inherit;
+  }
+
+  to {
+    color: $text;
+  }
+}
+
+.p-multi_thread_background {
+  background: $bg;
+}
+
+.p-multi_thread_background__drag_overlay {
+  background: $bg;
+  border-left: 1px solid $borderLight;
+  border-right: 1px solid $borderLight;
+}
+
+.p-multi_thread_background__drag_overlay--first {
+  border-top: 1px solid $borderLight;
+}
+
+.p-multi_thread_background__drag_overlay--last {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-mpdm_select_history_form {
+  background-color: $bg2;
+}
+
+.p-mpdm_history_modal_header__subheader {
+  color: $text;
+}
+
+.p-mpdm_add_people_modal__footer__warning {
+  color: $text;
+}
+
+.p-mpdm_add_people_modal__footer__warning__icon {
+  color: $accent;
 }
