@@ -1,0 +1,16 @@
+.p-history_preview__label {
+  color: $fg;
+}
+
+.p-history_preview__list_wrapper {
+  background-color: $bg2;
+  border: 1px solid $border;
+}
+
+.p-history_preview__list_wrapper__empty_message {
+  color: $fg;
+}
+
+[lang] .p-history_preview__list_component--more-messages.c-message_kit__message {
+  color: $fg;
+}

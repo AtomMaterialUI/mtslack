@@ -25585,6 +25585,19 @@
 #mtslack .sk-client-theme--dark .p-context_bar_v2--teal .p-context_bar_v2__icon .p-context_bar_banner__govslack_insert {
   border-color: var(--hl);
 }
+#mtslack .p-history_preview__label {
+  color: var(--fg);
+}
+#mtslack .p-history_preview__list_wrapper {
+  background-color: var(--secondBg);
+  border: 1px solid var(--border);
+}
+#mtslack .p-history_preview__list_wrapper__empty_message {
+  color: var(--fg);
+}
+#mtslack [lang] .p-history_preview__list_component--more-messages.c-message_kit__message {
+  color: var(--fg);
+}
 #mtslack .p-client_container {
   background-color: var(--bg);
 }
