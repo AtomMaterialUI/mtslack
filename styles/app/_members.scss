@@ -402,6 +402,11 @@ button.p-admin_member_table__menu_item--disabled {
 
 .p-browse_page_member_card_entity--dim {
   color: $disabled;
+  filter: none;
+
+  img {
+    filter: grayscale(1);
+  }
 }
 
 .p-browse_page_member_card_entity__guest_badge {
