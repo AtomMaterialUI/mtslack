@@ -129,6 +129,10 @@
   &:visited {
     color: $text;
   }
+
+  &:has(.p-channel_sidebar__name--away) {
+    display: none;
+  }
 }
 
 .p-channel_sidebar__link {
