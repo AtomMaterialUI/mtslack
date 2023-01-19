@@ -121,6 +121,12 @@
   }
 }
 
+.p-channel_sidebar__static_list__item {
+  &:has(.p-channel_sidebar__name--away) {
+    display: none;
+  }
+}
+
 .p-channel_sidebar__channel {
   color: $text;
 
@@ -128,10 +134,6 @@
   &:link,
   &:visited {
     color: $text;
-  }
-
-  &:has(.p-channel_sidebar__name--away) {
-    display: none;
   }
 }
 
