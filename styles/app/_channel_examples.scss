@@ -120,12 +120,12 @@
     border-color: $bg2;
   }
 }
-
-.p-channel_sidebar__static_list__item {
-  &:has(.p-channel_sidebar__name--away) {
-    display: none;
-  }
-}
+//
+//.p-channel_sidebar__static_list__item {
+//  &:has(.p-channel_sidebar__name--away) {
+//    display: none;
+//  }
+//}
 
 .p-channel_sidebar__channel {
   color: $text;

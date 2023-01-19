@@ -7998,9 +7998,6 @@
 #mtslack .sk-client-theme--dark .p_channel_examples_section__spacer--top {
   border-color: var(--secondBg);
 }
-#mtslack .p-channel_sidebar__static_list__item:has(.p-channel_sidebar__name--away) {
-  display: none;
-}
 #mtslack .p-channel_sidebar__channel {
   color: var(--text);
 }
