@@ -1,0 +1,9 @@
+.p-canvas_msg_avatar {
+  background: $excluded;
+  color: $text;
+}
+
+.p-canvas_msg_avatar--live {
+  background: $accent;
+  color: $selectFg;
+}

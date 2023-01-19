@@ -700,3 +700,27 @@
 .p-huddle_alert__content {
   background-color: $notif;
 }
+
+.p-huddle_placeholder_for_child_window {
+  background-color: $button;
+  border: 1px solid $borderLight;
+}
+
+.p-huddle_placeholder_for_child_window__link {
+  color: $fg;
+}
+
+.p-huddle_placeholder_for_child_window__link:active,
+.p-huddle_placeholder_for_child_window__link:focus,
+.p-huddle_placeholder_for_child_window__link:hover {
+  color: $primary;
+}
+
+.p-huddle_placeholder_for_child_window__text {
+  color: $text;
+}
+
+.p-huddle_placeholder_for_child_window__icon {
+  background: $button;
+  color: $fg;
+}
