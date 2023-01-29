@@ -13146,6 +13146,9 @@
   background: var(--button);
   color: var(--fg);
 }
+#mtslack .p-huddle_sidebar_footer__join_active_container {
+  background-color: var(--active);
+}
 #mtslack .p-ia__main_menu {
   border-top: 1px solid var(--active);
 }
@@ -23732,6 +23735,9 @@
   color: var(--accent);
 }
 #mtslack .p-threads_footer__input_container__broadcast_controls--thread_typing_indicators {
+  color: var(--text);
+}
+#mtslack .p-thread_footer_typing_indicator {
   color: var(--text);
 }
 #mtslack .p-file_thumbnail__container--document,
