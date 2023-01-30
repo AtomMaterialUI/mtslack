@@ -1,8 +1,8 @@
 material:
   - oceanic:
     id: mt.oceanic
-    name: Oceanic
-    name2: Oceanic Contrast
+    name: Material Oceanic
+    name2: Material Oceanic Contrast
     className: oceanic
     desc: An oceanic blue flat theme
     dark: true
@@ -20,7 +20,7 @@ material:
     table: '#314549'
     border: '#2A373E'
     hl: '#425B67'
-    tree: '#546E7A70'
+    tree: '#30454d'
     notif: '#1E272C'
     accent: '#009688'
     excluded: '#2E3C43'
@@ -49,8 +49,8 @@ material:
 
   - darker:
     id: mt.darker
-    name: Darker
-    name2: Darker Contrast
+    name: Material Darker
+    name2: Material Darker Contrast
     className: darker
     desc: A pitch-black flat theme
     dark: true
@@ -68,7 +68,7 @@ material:
     table: '#323232'
     border: '#292929'
     hl: '#3F3F3F'
-    tree: '#323232C0'
+    tree: '#2d2d2d'
     notif: '#1A1A1A'
     accent: '#FF9800'
     excluded: '#323232'
@@ -97,8 +97,8 @@ material:
 
   - lighter:
     id: mt.lighter
-    name: Lighter
-    name2: Lighter Contrast
+    name: Material Lighter
+    name2: Material Lighter Contrast
     className: lighter
     desc: A bright light flat theme
     dark: false
@@ -106,7 +106,7 @@ material:
     background: '#FAFAFA'
     foreground: '#546E7A'
     text: '#94A7B0'
-    selectBg: '#80CBC440'
+    selectBg: '#CCD7DA'
     selectFg: '#546e7a'
     selectFg2: '#272727'
     button: '#F3F4F5'
@@ -116,10 +116,10 @@ material:
     table: '#E7E7E8'
     border: '#d3e1e8'
     hl: '#E7E7E8'
-    tree: '#80CBC440'
+    tree: '#d7eeec'
     notif: '#eae8e8'
     accent: '#00BCD4'
-    excluded: '#CCD7DA50'
+    excluded: '#d3e1e8'
     green: '#91b859'
     red: '#e53935'
     yellow: '#f6a434'
@@ -145,8 +145,8 @@ material:
 
   - palenight:
     id: mt.palenight
-    name: Palenight
-    name2: Palenight Contrast
+    name: Material Palenight
+    name2: Material Palenight Contrast
     className: palenight
     desc: A purplish flat theme
     dark: true
@@ -154,7 +154,7 @@ material:
     background: '#292D3E'
     foreground: '#A6ACCD'
     text: '#676E95'
-    selectBg: '#717CB470'
+    selectBg: '#444267'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#303348'
@@ -162,9 +162,9 @@ material:
     disabled: '#515772'
     contrast: '#202331'
     table: '#414863'
-    border: '#2b2a3e'
+    border: '#323147'
     hl: '#444267'
-    tree: '#676E9570'
+    tree: '#3b415b'
     notif: '#202331'
     accent: '#ab47bc'
     excluded: '#2f2e43'
@@ -193,8 +193,8 @@ material:
 
   - deepocean:
     id: mt.deepocean
-    name: Deep Ocean
-    name2: Deep Ocean Contrast
+    name: Material Deep Ocean
+    name2: Material Deep Ocean Contrast
     className: deepocean
     desc: A deep sea black flat theme
     dark: true
@@ -202,7 +202,7 @@ material:
     background: '#0F111A'
     foreground: '#8F93A2'
     text: '#4B526D'
-    selectBg: '#485279'
+    selectBg: '#222533'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#191A21'
@@ -212,7 +212,7 @@ material:
     table: '#1A1C25'
     border: '#0F111A'
     hl: '#1F2233'
-    tree: '#717CB430'
+    tree: '#212639'
     notif: '#090B10'
     accent: '#84ffff'
     excluded: '#292D3E'
@@ -241,8 +241,8 @@ material:
 
   - forest:
     id: mt.forest
-    name: Forest
-    name2: Forest Contrast
+    name: Material Forest
+    name2: Material Forest Contrast
     className: forest
     desc: A forests and trees based flat theme
     dark: true
@@ -260,7 +260,7 @@ material:
     table: '#104110'
     border: '#003838'
     hl: '#003F3F'
-    tree: '#32CD3250'
+    tree: '#004724'
     notif: '#002020'
     accent: '#FFCC80'
     excluded: '#113711'
@@ -289,13 +289,13 @@ material:
 
   - skyblue:
     id: mt.skyblue
-    name: Sky Blue
-    name2: Sky Blue Contrast
+    name: Material Sky Blue
+    name2: Material Sky Blue Contrast
     className: skyblue
     desc: A clear and light blue flat theme
     dark: false
     scheme: Material Sky Blue
-    background: '#F5F5F5'
+    background: '#f1fffe'
     foreground: '#005761'
     text: '#01579B'
     selectBg: '#ade2eb'
@@ -303,12 +303,12 @@ material:
     selectFg2: '#272727'
     button: '#c9eef2'
     second: '#e7f2f3'
-    disabled: '#e7f2f3'
+    disabled: '#87a7ab'
     contrast: '#E4F2F2'
     table: '#caedf2'
     border: '#d0edf1'
     hl: '#d1eafa'
-    tree: '#b6e1e780'
+    tree: '#ccf1f4'
     notif: '#e0eff1'
     accent: '#00c6e0'
     excluded: '#c1def0'
@@ -337,8 +337,8 @@ material:
 
   - sandybeach:
     id: mt.sanybeach
-    name: Sandy Beach
-    name2: Sandy Beach Contrast
+    name: Material Sandy Beach
+    name2: Material Sandy Beach Contrast
     className: sandybeach
     desc: A sandy based flat theme
     dark: false
@@ -353,13 +353,13 @@ material:
     second: '#f6edda'
     disabled: '#B8B6A5'
     contrast: '#FFF3DB'
-    table: '#fef8ec'
-    border: '#f2edde'
-    hl: '#fbf1df'
-    tree: '#e7c49680'
+    table: '#F0E2C2'
+    border: '#d9d4c7'
+    hl: '#FAF0DE'
+    tree: '#f7ddbd'
     notif: '#f6d7b0'
     accent: '#53c7f0'
-    excluded: '#f2e7ca'
+    excluded: '#f6d7b0'
     green: '#91b859'
     red: '#e53935'
     yellow: '#f6a434'
@@ -385,8 +385,8 @@ material:
 
   - volcano:
     id: mt.volcano
-    name: Volcano
-    name2: Volcano Contrast
+    name: Material Volcano
+    name2: Material Volcano Contrast
     className: volcano
     desc: A rock and fiery based theme
     dark: true
@@ -404,7 +404,7 @@ material:
     table: '#440000'
     border: '#400000'
     hl: '#550000'
-    tree: '#77000050'
+    tree: '#4c0000'
     notif: '#300a0a'
     accent: '#00bcd4'
     excluded: '#662222'
@@ -500,13 +500,13 @@ other:
     contrast: '#191A21'
     table: '#44475A'
     border: '#21222C'
-    hl: '#6272A4'
-    tree: '#44475A50'
+    hl: '#44475a'
+    tree: '#2f3342'
     notif: '#1D2228'
     accent: '#FF79C5'
     excluded: '#313341'
     green: '#8aff80'
-    red: '#f780bf'
+    red: '#FF79C5'
     yellow: '#feff80'
     blue: '#79cbdc'
     purple: '#9580ff'
@@ -519,10 +519,10 @@ other:
     vars: '#F8F8F2'
     links: '#feff80'
     functions: '#8aff80'
-    keywords: '#f780bf'
-    tags: '#f780bf'
+    keywords: '#FF79C5'
+    tags: '#FF79C5'
     strings: '#feff80'
-    operators: '#f780bf'
+    operators: '#FF79C5'
     attributes: '#8aff80'
     classes: '#8aff80'
     numbers: '#9580ff'
@@ -539,7 +539,7 @@ other:
     background: '#F7F8FA'
     foreground: '#5B6168'
     text: '#292D31'
-    selectBg: '#bbd2f5'
+    selectBg: '#c6e5ff'
     selectFg: '#111111'
     selectFg2: '#111111'
     button: '#edf1f5'
@@ -549,7 +549,7 @@ other:
     table: '#cce5ff'
     border: '#DFE1E4'
     hl: '#CCE5FF'
-    tree: '#ebebeb'
+    tree: '#ebedf0'
     notif: '#DFECFE'
     accent: '#79CB60'
     excluded: '#dcdcdc'
@@ -637,19 +637,19 @@ other:
     background: '#2f343f'
     foreground: '#D3DAE3'
     text: '#8b9eb5'
-    selectBg: '#8888FF'
+    selectBg: '#414181'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#383C4A'
-    second: '#393f4c45'
-    disabled: '#D3DAE3'
+    second: '#393f4c'
+    disabled: '#a2a2a2'
     contrast: '#262b33'
     table: '#41416A'
     border: '#404552'
-    hl: '#393f4c'
-    tree: '#09477170'
+    hl: '#444A58'
+    tree: '#0f3d56'
     notif: '#262a33'
-    accent: '#42A5F5'
+    accent: '#5294E2'
     excluded: '#37373d'
     green: '#8f9d6a'
     red: '#cf6a4c'
@@ -695,7 +695,7 @@ other:
     table: '#383E49'
     border: '#282C34'
     hl: '#383D48'
-    tree: '#3A3F4B80'
+    tree: '#303540'
     notif: '#282C34'
     accent: '#2979ff'
     excluded: '#3c4150'
@@ -739,11 +739,11 @@ other:
     button: '#DBDBDC'
     second: '#EAEAEB'
     disabled: '#b8b8b9'
-    contrast: '#eaeae'
+    contrast: '#eaeaeb'
     table: '#DBDBDC'
     border: '#DBDBDC'
     hl: '#FFFFFF'
-    tree: '#DBDBDC80'
+    tree: '#e8e8e8'
     notif: '#F2F2F2'
     accent: '#2979ff'
     excluded: '#CACACB'
@@ -791,7 +791,7 @@ other:
     table: '#003946'
     border: '#0D3640'
     hl: '#005a6f'
-    tree: '#2E4C5280'
+    tree: '#023c45'
     notif: '#2E4C52'
     accent: '#d33682'
     excluded: '#083F4D'
@@ -839,7 +839,7 @@ other:
     table: '#d1cbb8'
     border: '#edead9'
     hl: '#d1cbb8'
-    tree: '#e8dcb6b0'
+    tree: '#f0e4bf'
     notif: '#EDE8D4'
     accent: '#d33682'
     excluded: '#E3DCC9'
@@ -877,7 +877,7 @@ other:
     background: '#011627'
     foreground: '#d6deeb'
     text: '#5f7e97'
-    selectBg: '#5f7e97'
+    selectBg: '#084d81'
     selectFg: '#FFFFFF'
     selectFg2: '#FFFFFF'
     button: '#0b253a'
@@ -887,7 +887,7 @@ other:
     table: '#13344f'
     border: '#122d42'
     hl: '#084d81'
-    tree: '#13344f50'
+    tree: '#13344f'
     notif: '#01111d'
     accent: '#7e57c2'
     excluded: '#0e293f'
@@ -935,7 +935,7 @@ other:
     table: '#d3e8f8'
     border: '#d9d9d9'
     hl: '#CCCCCC'
-    tree: '#d3e8f87c'
+    tree: '#dfebf4'
     notif: '#F0F0F0'
     accent: '#2AA298'
     excluded: '#E0E7EA'
@@ -983,7 +983,7 @@ other:
     table: '#2f334d'
     border: '#222436'
     hl: '#444a73'
-    tree: '#444a7370'
+    tree: '#2f3452'
     notif: '#191a2a'
     accent: '#74a0f1'
     excluded: '#2f334d'
@@ -1031,7 +1031,7 @@ other:
     table: '#34294f'
     border: '#34294f'
     hl: '#463564'
-    tree: '#42384b70'
+    tree: '#362a42'
     notif: '#191621'
     accent: '#f92aad'
     excluded: '#463564'
@@ -1057,48 +1057,3 @@ other:
     classes: '#f92aad'
     numbers: '#f97e72'
     parameters: '#ff7edb'
-
-  - catppuccin:
-    name: Catppuccin
-    name2: Catppuccin
-    className: catppuccin
-    desc: Pastel theme based on Catppuccin colors
-    dark: true
-    background: '#1E1E2E'
-    foreground: '#D9E0EE'
-    text: '#D9E0EE'
-    selectBg: '#302D41'
-    selectFg: '#FFFFFF'
-    selectFg2: '#FFFFFF'
-    button: '#302D41'
-    second: '#1E1E2E'
-    disabled: '#6E6C7E'
-    contrast: '#0e0e1d'
-    table: '#1E1E2E'
-    border: '#302D41'
-    hl: '#302D41'
-    tree: '#57526870'
-    notif: '#161320'
-    accent: '#96CDFB'
-    excluded: '#302D41'
-    green: '#7af8ca'
-    red: '#F28FAD'
-    yellow: '#FAE3B0'
-    blue: '#96CDFB'
-    purple: '#DDB6F2'
-    orange: '#F8BD96'
-    cyan: '#B5E8E0'
-    white: '#D9E0EE'
-    gray: '#7e8eda'
-    error: '#ff5370'
-    comments: '#7e8eda'
-    vars: '#c8d3f5'
-    links: '#96CDFB'
-    functions: '#96CDFB'
-    keywords: '#FAE3B0'
-    tags: '#ff757f'
-    strings: '#ABE9B3'
-    operators: '#FAE3B0'
-    attributes: '#96CDFB'
-    numbers: '#F8BD96'
-    parameters: '#F5C2E7'
