@@ -1,60 +1,55 @@
-@keyframes slide-right {
-  0% {
-    transform-origin: 0% 50%;
-    transform: scaleX(0) rotate(0deg);
+.mtslack--animations {
+  @keyframes slide-right {
+    0% {
+      transform-origin: 0% 50%;
+      transform: scaleX(0) rotate(0deg);
+    }
+    100% {
+      transform-origin: 0% 50%;
+      transform: scale(1) translate(0) rotate(0deg);
+    }
   }
-  100% {
-    transform-origin: 0% 50%;
-    transform: scale(1) translate(0) rotate(0deg);
-  }
-}
 
-@keyframes brick-down {
-  0% {
-    transform-origin: 50%;
+  @keyframes brick-down {
+    0% {
+      transform-origin: 50%;
+      transform: scale(1) translate(0, -200%) rotate(0deg);
+      opacity: 0;
+    }
+
+    60% {
+      transform-origin: 50%;
+      transform: scale(1) translate(0, 0) rotate(0deg);
+      opacity: 1;
+    }
+    80% {
+      transform-origin: 50%;
+      transform: scale(1) translate(0, -20%) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform-origin: 50%;
+      transform: scale(1) translate(0, 0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .c-message_kit__actions,
+  .c-message_kit__message {
+    animation-fill-mode: forwards;
+    animation-name: brick-down;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
     transform: scale(1) translate(0, -200%) rotate(0deg);
     opacity: 0;
   }
 
-  60% {
-    transform-origin: 50%;
-    transform: scale(1) translate(0, 0) rotate(0deg);
-    opacity: 1;
+  .c-virtual_list__item {
+    transform: scaleX(0) rotate(0deg);
+    animation-delay: 0.49s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: opacity 0.2s ease-in-out;
+    animation-name: slide-right;
   }
-  80% {
-    transform-origin: 50%;
-    transform: scale(1) translate(0, -20%) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform-origin: 50%;
-    transform: scale(1) translate(0, 0) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-#pluginsSection {
-  padding-top: 8px;
-
-  > button {
-    padding: 0 16px;
-  }
-}
-
-.c-message_kit__actions,
-.c-message_kit__message {
-  animation-fill-mode: forwards;
-  animation-name: brick-down;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  transform: scale(1) translate(0, -200%) rotate(0deg);
-  opacity: 0;
-}
-.c-virtual_list__item {
-  transform: scaleX(0) rotate(0deg);
-  animation-delay: 0.49s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  transition: opacity 0.2s ease-in-out;
-  animation-name: slide-right;
 }

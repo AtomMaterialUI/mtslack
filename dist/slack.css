@@ -26230,15 +26230,8 @@ body:not(.mtslack--hljs) pre {
     opacity: 1;
   }
 }
-#pluginsSection {
-  padding-top: 8px;
-}
-#pluginsSection > button {
-  padding: 0 16px;
-}
-
-.c-message_kit__actions,
-.c-message_kit__message {
+.mtslack--animations .c-message_kit__actions,
+.mtslack--animations .c-message_kit__message {
   animation-fill-mode: forwards;
   animation-name: brick-down;
   animation-duration: 0.3s;
@@ -26246,8 +26239,7 @@ body:not(.mtslack--hljs) pre {
   transform: scale(1) translate(0, -200%) rotate(0deg);
   opacity: 0;
 }
-
-.c-virtual_list__item {
+.mtslack--animations .c-virtual_list__item {
   transform: scaleX(0) rotate(0deg);
   animation-delay: 0.49s;
   animation-duration: 1s;
