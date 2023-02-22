@@ -1,5 +1,5 @@
 :root {
-  --version: "v27.0.0";
+  --version: "v28.0.0";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -8587,6 +8587,15 @@
 }
 #mtslack .sk-client-theme--dark .p-introductions_education__coachmark_icon_container {
   background-color: var(--notif);
+}
+#mtslack .c-coachmarkv2 {
+  background: var(--notif);
+}
+#mtslack .c-coachmarkv2__title {
+  color: var(--fg);
+}
+#mtslack .c-coachmarkv2__body {
+  color: var(--text);
 }
 #mtslack .c-command_list_entity .c-command_entity__description, #mtslack .c-command_list_entity .c-command_list_entity__secondary {
   color: var(--text);
@@ -26253,4 +26262,8 @@ body:not(.mtslack--hljs) pre {
 }
 #pluginsSection > button {
   padding: 0 16px;
+}
+
+.p-channel_sidebar__section_heading_button {
+  text-transform: uppercase;
 }

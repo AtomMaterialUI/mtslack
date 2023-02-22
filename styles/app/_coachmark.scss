@@ -228,3 +228,15 @@
 .sk-client-theme--dark .p-introductions_education__coachmark_icon_container {
   background-color: $notif;
 }
+
+.c-coachmarkv2 {
+  background: $notif;
+}
+
+.c-coachmarkv2__title {
+  color: $fg;
+}
+
+.c-coachmarkv2__body {
+  color: $text;
+}
