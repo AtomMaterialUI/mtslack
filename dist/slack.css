@@ -26547,7 +26547,7 @@ body:not(.mtslack--hljs) pre {
 }
 .mtslack--animations .p-channel_sidebar__static_list__item {
   transform: scaleX(0) rotate(0deg);
-  animation-duration: 1s;
+  animation-duration: 0.44s;
   animation-fill-mode: forwards;
   transition: opacity 0.2s ease-in-out;
   animation-name: slide-right;
