@@ -524,6 +524,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 //= include monofonts.js
 //= include dim.js
 //= include overlay.js
+//= include animations.js
 
 /** END DO NOT TOUCH THIS PART */
 

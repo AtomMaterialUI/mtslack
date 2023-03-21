@@ -44,9 +44,14 @@
     opacity: 0;
   }
 
-  .c-virtual_list__item {
+  @for $i from 1 to 100 {
+    .p-channel_sidebar__static_list__item:nth-child(#{$i}) {
+      animation-delay: $i * 0.1s;
+    }
+  }
+
+  .p-channel_sidebar__static_list__item {
     transform: scaleX(0) rotate(0deg);
-    animation-delay: 0.49s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     transition: opacity 0.2s ease-in-out;

@@ -26248,9 +26248,305 @@ body:not(.mtslack--hljs) pre {
   transform: scale(1) translate(0, -200%) rotate(0deg);
   opacity: 0;
 }
-.mtslack--animations .c-virtual_list__item {
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(10) {
+  animation-delay: 1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(12) {
+  animation-delay: 1.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(13) {
+  animation-delay: 1.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(14) {
+  animation-delay: 1.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(15) {
+  animation-delay: 1.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(16) {
+  animation-delay: 1.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(17) {
+  animation-delay: 1.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(18) {
+  animation-delay: 1.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(19) {
+  animation-delay: 1.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(20) {
+  animation-delay: 2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(21) {
+  animation-delay: 2.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(22) {
+  animation-delay: 2.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(23) {
+  animation-delay: 2.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(24) {
+  animation-delay: 2.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(25) {
+  animation-delay: 2.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(26) {
+  animation-delay: 2.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(27) {
+  animation-delay: 2.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(28) {
+  animation-delay: 2.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(29) {
+  animation-delay: 2.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(30) {
+  animation-delay: 3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(31) {
+  animation-delay: 3.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(32) {
+  animation-delay: 3.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(33) {
+  animation-delay: 3.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(34) {
+  animation-delay: 3.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(35) {
+  animation-delay: 3.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(36) {
+  animation-delay: 3.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(37) {
+  animation-delay: 3.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(38) {
+  animation-delay: 3.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(39) {
+  animation-delay: 3.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(40) {
+  animation-delay: 4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(41) {
+  animation-delay: 4.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(42) {
+  animation-delay: 4.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(43) {
+  animation-delay: 4.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(44) {
+  animation-delay: 4.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(45) {
+  animation-delay: 4.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(46) {
+  animation-delay: 4.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(47) {
+  animation-delay: 4.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(48) {
+  animation-delay: 4.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(49) {
+  animation-delay: 4.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(50) {
+  animation-delay: 5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(51) {
+  animation-delay: 5.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(52) {
+  animation-delay: 5.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(53) {
+  animation-delay: 5.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(54) {
+  animation-delay: 5.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(55) {
+  animation-delay: 5.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(56) {
+  animation-delay: 5.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(57) {
+  animation-delay: 5.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(58) {
+  animation-delay: 5.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(59) {
+  animation-delay: 5.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(60) {
+  animation-delay: 6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(61) {
+  animation-delay: 6.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(62) {
+  animation-delay: 6.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(63) {
+  animation-delay: 6.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(64) {
+  animation-delay: 6.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(65) {
+  animation-delay: 6.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(66) {
+  animation-delay: 6.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(67) {
+  animation-delay: 6.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(68) {
+  animation-delay: 6.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(69) {
+  animation-delay: 6.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(70) {
+  animation-delay: 7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(71) {
+  animation-delay: 7.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(72) {
+  animation-delay: 7.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(73) {
+  animation-delay: 7.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(74) {
+  animation-delay: 7.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(75) {
+  animation-delay: 7.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(76) {
+  animation-delay: 7.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(77) {
+  animation-delay: 7.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(78) {
+  animation-delay: 7.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(79) {
+  animation-delay: 7.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(80) {
+  animation-delay: 8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(81) {
+  animation-delay: 8.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(82) {
+  animation-delay: 8.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(83) {
+  animation-delay: 8.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(84) {
+  animation-delay: 8.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(85) {
+  animation-delay: 8.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(86) {
+  animation-delay: 8.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(87) {
+  animation-delay: 8.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(88) {
+  animation-delay: 8.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(89) {
+  animation-delay: 8.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(90) {
+  animation-delay: 9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(91) {
+  animation-delay: 9.1s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(92) {
+  animation-delay: 9.2s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(93) {
+  animation-delay: 9.3s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(94) {
+  animation-delay: 9.4s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(95) {
+  animation-delay: 9.5s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(96) {
+  animation-delay: 9.6s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(97) {
+  animation-delay: 9.7s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(98) {
+  animation-delay: 9.8s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item:nth-child(99) {
+  animation-delay: 9.9s;
+}
+.mtslack--animations .p-channel_sidebar__static_list__item {
   transform: scaleX(0) rotate(0deg);
-  animation-delay: 0.49s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   transition: opacity 0.2s ease-in-out;
