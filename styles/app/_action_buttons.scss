@@ -1,3 +1,13 @@
+@keyframes buttons-fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .c-action_buttons {
   border: 1px solid $border;
 
@@ -49,15 +59,22 @@
   background: $button;
 }
 
+.c-message_actions__container {
+  animation: buttons-fadeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .c-message_actions__container,
 .c-message_actions__group {
   background: none;
   border: none;
   box-shadow: none;
-  transition: opacity 0.3s ease-in;
+  overflow: hidden;
+  max-width: 40px;
+  transition: max-width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border-color: $borderLight;
+    max-width: 380px;
   }
 }
 
