@@ -62,4 +62,4 @@ class AnimationsPlugin extends window.slackPluginsAPI.pluginBase {
   }
 }
 
-window.slackPluginsAPI.plugins.overlay = new AnimationsPlugin();
+window.slackPluginsAPI.plugins.animations = new AnimationsPlugin();
