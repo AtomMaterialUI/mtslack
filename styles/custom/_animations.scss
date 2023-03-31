@@ -40,21 +40,27 @@
     animation-name: brick-down;
     animation-duration: 0.3s;
     animation-timing-function: linear;
-    transform: scale(1) translate(0, -200%) rotate(0deg);
-    opacity: 0;
-  }
-
-  @for $i from 1 to 100 {
-    .p-channel_sidebar__static_list__item:nth-child(#{$i}) {
-      animation-delay: $i * 0.1s;
-    }
+    transform: scale(0);
   }
 
   .p-channel_sidebar__static_list__item {
-    transform: scaleX(0) rotate(0deg);
+    transform: scaleX(0);
     animation-duration: 0.44s;
     animation-fill-mode: forwards;
     transition: opacity 0.2s ease-in-out;
     animation-name: slide-right;
+  }
+
+  @for $i from 1 to 100 {
+    .p-channel_sidebar__static_list__item:nth-child(#{$i}) {
+      animation-delay: $i * 0.05s;
+    }
+
+    .c-virtual_list__item:nth-last-child(#{$i}) {
+      .c-message_kit__actions,
+      .c-message_kit__message {
+        animation-delay: $i * 0.05s;
+      }
+    }
   }
 }
