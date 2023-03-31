@@ -522,6 +522,7 @@ window.slackPluginsAPI = slackPluginsAPI;
 //= include links.js
 //= include fonts.js
 //= include monofonts.js
+//= include clickToEdit.js
 //= include dim.js
 //= include overlay.js
 //= include animations.js
