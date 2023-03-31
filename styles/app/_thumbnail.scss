@@ -55,7 +55,8 @@
   border-color: $button;
   background: $button;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: transparent;
     border-color: $hl;
   }
@@ -65,7 +66,8 @@
   border-color: $button;
   background: $button;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     background-color: transparent;
     border-color: $hl;
   }
@@ -74,4 +76,9 @@
 .p-file_search_menu {
   box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
   background-color: $bg;
+}
+
+.p-file_thumbnail__container--exception,
+.p-file_thumbnail__container--svg {
+  background: $bg2;
 }

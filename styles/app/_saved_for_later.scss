@@ -1,0 +1,116 @@
+.p-saved_for_later_page__list .p-saved_item {
+  @include card;
+  background: $bg;
+
+  &:hover {
+    .c-message_kit__background {
+      background: $bg2;
+    }
+
+    .p-saved_item__header {
+      background: $bg;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-saved_for_later_page__list .c-virtual_list__item--focus .p-saved_item {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-saved_for_later_page__list .p-saved_item--completed .c-icon--bookmark-filled {
+  color: $accent;
+}
+
+@keyframes p-saved_item--highlight {
+  20% {
+    background: $hl;
+  }
+
+  60% {
+    background: $hl;
+  }
+}
+
+.p-saved_for_later_page__list .p-saved_item__undo {
+  color: $accent;
+}
+
+.p-saved_for_later_page__list .p-saved_item__header {
+  background: $contrast;
+  color: $fg;
+  @include dropShadow;
+}
+
+.p-saved_for_later_page__list .p-saved_item__header__date_due {
+  background: $accentT;
+}
+
+.p-saved_for_later_page__list .p-saved_item__header__date_due--overdue {
+  background: $bg;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: 10px;
+}
+
+.p-saved_for_later_page__list .p-saved_item__inline_actions__button--mark-done {
+  border-color: $green;
+  color: $green;
+}
+
+.p-saved_for_later_page__list .p-saved_item__inline_actions__button--mark-done:hover {
+  background-color: $button;
+  color: $primary;
+  border-color: $primary;
+}
+
+.p-saved_for_later_page__list .p-saved_item--file_preview .c-icon--bookmark-filled {
+  color: $accent;
+}
+
+.c-icon_button--default.p-saved_item__action--saved,
+.c-icon_button--default:hover.p-saved_item__action--saved {
+  color: $accent;
+}
+
+.p-saved_for_later_page {
+  background-color: $bg;
+}
+
+.p-saved_for_later_page__header {
+  background: $contrast;
+}
+
+.p-saved_for_later_page__tabs .c-tabs__tab_menu {
+  background: $contrast;
+}
+
+.p-saved_for_later_page__tabs .c-tabs__tab--highlight {
+  animation: tab--highlight 0.5s 2 forwards;
+}
+
+@keyframes tab--highlight {
+  0% {
+    background: #0000;
+  }
+
+  50% {
+    background: $hl;
+  }
+
+  to {
+    background: #0000;
+  }
+}
+
+.p-saved_for_later_page__icon {
+  color: $accent;
+}
+
+.p-saved_for_later_page__icon_copy {
+  color: $fg;
+}
+
+.c-empty_state__image_wrapper {
+  filter: invert(1);
+}

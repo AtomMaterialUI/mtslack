@@ -1,0 +1,53 @@
+.p-later_nux__banner_wrapper {
+  background: $contrast;
+}
+
+.p-later_nux__banner {
+  border-bottom: $border;
+  color: $fg;
+}
+
+.p-later_nux__banner--text--title {
+  line-height: 1.6;
+  font-family: $headerFont;
+}
+
+.p-later_nux__banner--text--body {
+  font-family: $fontFamily;
+  line-height: 1.6;
+}
+
+.p-later_nux__banner--text--button {
+  border-color: $button;
+  background: $button;
+  border-radius: 8px;
+}
+
+.p-later_nux__banner--text--button--text {
+  color: $fg;
+  font-family: $fontFamily;
+}
+
+.p-later_nux__banner--text--button:hover {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT '';
+}
+
+.p-later_nux__banner--dismiss-button {
+  color: $fg;
+  padding: 18px;
+}
+
+.p-later_nux__banner--dismiss-button:hover {
+  color: $primary;
+  background: $accent;
+  border-radius: 50%;
+}
+
+.p-later_nux__coachmark__hero {
+  background: $accent;
+}
+
+.p-later_nux__coachmark--newUser.c-coachmark--right:after,
+.p-later_nux__coachmark--newUser.c-coachmark--right:before {
+  border-right-color: $accent;
+}
