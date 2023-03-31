@@ -546,6 +546,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
   background: $contrast;
   color: $text;
+  border: 1px solid $border;
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_label,
