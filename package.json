@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "30.0.0",
+  "version": "30.0.1",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "type": "module",
@@ -98,7 +98,7 @@
     "nth-check": "2.0.1",
     "path-parse": "1.0.7",
     "prettier": "2.6.2",
-    "stylelint": "14.7.0",
+    "stylelint": "14.16.1",
     "stylelint-prettier": "2.0.0"
   }
 }
