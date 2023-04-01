@@ -1,5 +1,5 @@
 :root {
-  --version: "v29.0.0";
+  --version: "v30.0.0";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -20644,7 +20644,7 @@
 #mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading {
   background: var(--contrast);
   color: var(--text);
-  border: 1px solid var(--border);
+  border-top: 1px solid var(--border);
 }
 #mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_label,
 #mtslack .p-channel_sidebar__section_heading__label {
@@ -26447,7 +26447,6 @@ body:not(.mtslack--hljs) pre {
     opacity: 1;
   }
 }
-.mtslack--animations .c-message_kit__actions,
 .mtslack--animations .c-message_kit__message {
   animation-fill-mode: forwards;
   animation-name: brick-down;
