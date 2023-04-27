@@ -1,5 +1,5 @@
 :root {
-  --version: "v30.0.0";
+  --version: "v30.0.1";
 }
 
 [lang] .p-message_pane_input__disabled,
@@ -25888,6 +25888,38 @@
 #mtslack .p-later_nux__coachmark--newUser.c-coachmark--right:after,
 #mtslack .p-later_nux__coachmark--newUser.c-coachmark--right:before {
   border-right-color: var(--accent);
+}
+#mtslack .p-toggle_channel_space_preview {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+#mtslack .p-toggle_channel_space_preview .p-field__title {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+#mtslack .p-toggle_channel_space_preview__subtitle {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+#mtslack .p-toggle_channel_space_preview__loading {
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+#mtslack .p-toggle_channel_space_preview_empty_state {
+  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+#mtslack .p-toggle_channel_space_preview_empty_state__body {
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
+#mtslack .p-toggle_channel_space_nux .c-coachmarkv2__secondary_button {
+  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+}
+#mtslack .p-toggle_channel_space_nux:after {
+  border-bottom-color: #f2c744;
+}
+#mtslack .p-toggle_channel_space_nux--channel:after {
+  border-bottom-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+}
+#mtslack .p-toggle_channel_space_nux--channel .c-coachmarkv2__close {
+  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
 }
 #mtslack .p-client_container {
   background-color: var(--bg);
