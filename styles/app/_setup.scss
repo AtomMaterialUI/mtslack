@@ -318,3 +318,79 @@
 .p-setup_channel_banner__text--joiner_banner {
   color: $disabled;
 }
+
+.p-setup_banner--dm,
+.p-setup_banner--page {
+  background: $bg2;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-setup_banner__heading,
+.p-setup_banner__heading--joiner_banner {
+  font-family: $headerFont;
+}
+
+.p-setup_banner__cta_text {
+  color: $disabled;
+}
+
+.p-setup_banner__btn:hover {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-setup_banner__btn--completed {
+  background: $hl;
+  border: 1px solid $borderLight;
+}
+
+.p-setup_banner__close_icon {
+  color: $text;
+}
+
+.p-setup_banner__app_icon {
+  border: 1px solid $borderLight;
+}
+
+.p-setup_banner--channel_joiner_banner,
+.p-setup_banner--people_joiner_banner {
+  background: $accentT;
+}
+
+.p-setup_banner__heading--joiner_banner {
+  font-family: $headerFont;
+}
+
+.p-setup_banner__text--joiner_banner {
+  color: $text;
+  font-family: $headerFont;
+}
+
+.p-setup_banner--quip_banner,
+.p-setup_banner__full_page--quip_banner {
+  background: $bg2;
+}
+
+.p-setup_banner--quip_banner {
+  border-color: $border;
+}
+
+.p-setup_banner__btn--quip {
+  border-color: $borderLight;
+  font-family: $fontFamily;
+}
+
+.p-setup_banner__full_page__heading--quip_banner,
+.p-setup_banner__heading--quip_banner {
+  font-family: $headerFont;
+}
+
+.p-setup_banner__full_page__text--quip_banner,
+.p-setup_banner__text--quip_banner {
+  color: $fg;
+  font-family: $headerFont;
+}
+
+.p-setup_banner__heading--quip_canvas_icon {
+  color: $primary;
+}

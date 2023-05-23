@@ -1,0 +1,68 @@
+.p-quip_files_page__nux_banner {
+  border: 1px solid $borderLight;
+}
+
+.p-quip_files_page__nux_banner--light {
+  background-color: $bg;
+}
+
+.p-quip_files_page__nux_banner--dark {
+  background-color: $bg;
+}
+
+.p-quip_files_page__nux_banner_text_body {
+  color: $fg;
+}
+
+.p-quip_files_page {
+  background-color: $bg;
+}
+
+.p-quip_files_page__load_more_button {
+  background-color: $button;
+}
+
+.p-quip_files_page_sort_item--selected {
+  color: $primary;
+}
+
+.c-menu_item__button--highlighted.p-quip_files_page_sort_item--selected {
+  color: $selectFg;
+}
+
+.p-quip_files_page_controls__button {
+  color: $text;
+}
+
+.p-quip_files_page_controls__button:hover {
+  background-color: $hl;
+}
+
+.p-quip_files_page_controls__cta_button {
+  color: $accent;
+}
+
+.p-quip_files_page_controls__new_button:hover:not(:disabled) {
+  background-color: $bg;
+}
+
+.p-quip_files_page_controls__count {
+  color: $text;
+}
+
+.p-quip_files_page-controls_new_row {
+  color: $text;
+}
+
+.p-quip_files_page-file_list_item--first .c-pillow_file {
+  border-top: 1px solid $border;
+}
+
+.p-quip_files_page-search-reset {
+  color: $fg;
+}
+
+.p-quip_files_page-hover-card {
+  border: 1px solid $borderLight;
+  @include card;
+}
