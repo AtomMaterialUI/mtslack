@@ -33,7 +33,7 @@
 }
 
 .c-sk-modal_title_bar__text {
-  h3:nth-child(2) {
+  h2:nth-child(2) {
     color: $text;
   }
 }
@@ -49,4 +49,16 @@
 .c-new_locale_toast .c-link--button:hover,
 .c-new_locale_toast__close_button:hover {
   color: $primary;
+}
+
+@media only screen and (max-width: 640px) {
+  .c-icon_button--default.c-sk-modal__close_button--responsive {
+    background: $button;
+    color: $text;
+
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+    }
+  }
 }

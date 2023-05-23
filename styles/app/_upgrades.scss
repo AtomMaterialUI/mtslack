@@ -13,3 +13,122 @@
     color: $primary;
   }
 }
+
+.p-upgrades_icon--light_purple,
+.p-upgrades_icon--purple {
+  color: $purple;
+}
+
+.sk-client-theme--dark {
+  .p-upgrades_icon--light_purple,
+  .p-upgrades_icon--purple {
+    color: $purple;
+  }
+}
+
+.p-upgrades_icon_container--purple {
+  background-color: $notif;
+
+  .p-upgrades_icon--purple {
+    color: $accent2;
+  }
+}
+
+.sk-client-theme--dark .p-upgrades_icon_container--purple {
+  background-color: $notif;
+
+  .p-upgrades_icon--purple {
+    color: $accent2;
+  }
+}
+
+.p-upgrades_icon_container--light_purple {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-upgrades_icon_container--light_purple {
+  background-color: $notif;
+
+  .p-upgrades_icon--light_purple {
+    color: $accent2;
+  }
+}
+
+.p-upgrades_icon--error {
+  color: $red;
+}
+
+.p-upgrades_icon_container--error {
+  background-color: $notif;
+}
+
+.p-pro_badge--purple {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-pro_badge--purple {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.c-menu_item__li--highlighted .p-pro_badge--purple {
+  background-color: $selectBg;
+  color: $purple;
+}
+
+.sk-client-theme--dark .c-menu_item__li--highlighted .p-pro_badge--purple {
+  color: $purple;
+}
+
+.p-pro_badge--white {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-upgrades_modal_with_banner--close_button_light .c-icon_button {
+  color: $fg;
+
+  &:hover {
+    background: $button;
+    color: $selectFg;
+  }
+}
+
+.p-upgrades_modal_with_banner--close_button_dark .c-icon_button {
+  color: $fg;
+
+  &:hover {
+    background: $button;
+    color: $selectFg;
+  }
+}
+
+.p-upgrades_modal_with_banner--close_button_gold .c-icon_button {
+  color: $yellow;
+
+  &:hover {
+    background: $button;
+    color: $selectFg;
+  }
+}
+
+@media screen and (max-height: 600px), screen and (max-width: 450px) {
+  .p-upgrades_modal_with_banner--close_button .c-icon_button {
+    color: $fg;
+
+    &:hover {
+      background: $button;
+      color: $selectFg;
+    }
+  }
+
+  .sk-client-theme--dark .p-upgrades_modal_with_banner--close_button .c-icon_button {
+    color: $fg;
+
+    &:hover {
+      background: $button;
+      color: $selectFg;
+    }
+  }
+}

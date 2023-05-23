@@ -7,7 +7,9 @@
   .c-link--button {
     color: $fg;
 
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $selectFg;
     }
   }
@@ -15,18 +17,23 @@
   a {
     color: $primary;
 
-    &:active, &:focus, &:hover {
+    &:active,
+    &:focus,
+    &:hover {
       color: $selectFg;
     }
   }
 }
 
 .c-toast__close-button {
+  background: $button;
   color: $fg;
 }
 
 .c-toast {
-  .c-button--focus-visible:focus, .c-link--focus-visible:focus, .focus-ring {
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus,
+  .focus-ring {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }

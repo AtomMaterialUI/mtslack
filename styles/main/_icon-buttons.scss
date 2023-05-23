@@ -32,6 +32,7 @@
   background-color: $accent;
 }
 
+.c-icon_button--default,
 .c-icon_button--light {
   color: $selectFg;
 
@@ -84,4 +85,35 @@
 .c-icon_button--default.c-button-unstyled,
 .c-icon_button--default:link {
   color: $fg;
+}
+
+.c-icon_button--default .c-icon_button__badge,
+.c-icon_button--light .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button--default {
+  &.c-sk-modal__close_button--light {
+    background: $button;
+    color: $fg;
+    opacity: 0.66;
+
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+      opacity: 1;
+    }
+  }
+
+  &.c-sk-modal__close_button--dark {
+    background: $button;
+    color: $fg;
+    opacity: 0.66;
+
+    &:hover {
+      background: $accent;
+      color: $selectFg;
+      opacity: 1;
+    }
+  }
 }

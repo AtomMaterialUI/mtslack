@@ -3,7 +3,8 @@
 }
 
 .c-infinite_spinner--button-white {
-  .c-infinite_spinner__bg, .c-infinite_spinner__path {
+  .c-infinite_spinner__bg,
+  .c-infinite_spinner__path {
     stroke: $bg;
   }
 }
@@ -18,4 +19,8 @@
 
 .c-message_list__spinner {
   color: $hl;
+}
+
+.c-infinite_spinner--floating {
+  background: $primary;
 }
