@@ -1,0 +1,53 @@
+.parts-panel.no-shadow {
+  border: 1px solid $border;
+}
+
+.parts-panel > .body {
+  background-color: $notif;
+}
+
+.parts-bubble.white > .body {
+  background: $notif;
+  color: $fg;
+}
+
+.parts-bubble.dark-gray > .body {
+  background: $notif;
+  color: $fg;
+}
+
+.parts-bubble.dark-gray > .body a {
+  color: $accent2;
+}
+
+.parts-bubble.dark-theme > .body,
+.parts-bubble.light-theme > .body {
+  background: $notif;
+  color: $fg;
+}
+
+.parts-bubble.dark-theme > .body a,
+.parts-bubble.light-theme > .body a {
+  color: $accent2;
+}
+
+.tooltip.parts-tooltip-container.parts-bubble.slackified-tooltip .parts-tooltip {
+  background-color: $notif;
+}
+
+.tooltip.parts-tooltip-container.parts-bubble.slackified-tooltip .arrow {
+  background-color: $notif;
+}
+
+.dark-theme .tooltip.parts-tooltip-container.parts-bubble.slackified-tooltip .parts-tooltip {
+  border: 1px solid $border;
+}
+
+.dark-theme .tooltip.parts-tooltip-container.parts-bubble.slackified-tooltip .arrow {
+  border: 1px solid $border;
+}
+
+.dark-theme .tooltip.parts-tooltip-container.parts-bubble.slackified-tooltip .arrow.down {
+  border-left-color: $bg;
+  border-top-color: $bg;
+}

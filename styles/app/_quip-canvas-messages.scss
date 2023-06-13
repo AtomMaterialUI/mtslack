@@ -1,0 +1,57 @@
+.p-quip_system_messages {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-quip_system_messages {
+  background-color: $bg2;
+  color: $selectFg;
+}
+
+.p-quip_system_messages .c-link--button:focus {
+  box-shadow: 0 0 0 1px $accent2, 0 0 0 5px $accent2T;
+}
+
+.sk-client-theme--dark .p-quip_system_messages--offline svg,
+.sk-client-theme--dark .p-quip_system_messages--quipOffline svg {
+  color: $fg;
+}
+
+.p-quip_system_messages--slackConnect {
+  background-color: $notif;
+  color: $primary;
+}
+
+.sk-client-theme--dark .p-quip_system_messages--slackConnect {
+  background-color: $bg2;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-quip_system_messages--slackConnect .c-icon_button {
+  color: $selectFg;
+}
+
+.p-quip_system_messages__app_notifications_modal {
+  background-color: $bg2;
+  border-top: 1px solid $border;
+}
+
+.p-quip_system_messages__app_notification {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.comment-icon svg,
+.comment-icon svg.dark-mode {
+  text {
+    fill: $bg;
+  }
+
+  path {
+    fill: $primary;
+  }
+}
+
+.editor-drag-overlay .editor-drag-overlay-drop-location.--line:not(.disallowed) {
+  border-color: $primaryT;
+}

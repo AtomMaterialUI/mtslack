@@ -32,3 +32,20 @@
 .c-card_container--elevation_0.c-card_container--active {
   box-shadow: none;
 }
+
+.c-card_container--elevation_1 {
+  box-shadow: 0 0 0 1px $primary;
+}
+
+.c-card_container--elevation_1.c-card_container--active,
+.c-card_container--elevation_2 {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.c-card_container--elevation_3 {
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+}
+
+.c-card_container--elevation_4 {
+  box-shadow: 0 0 0 1px $primary, 0 18px 48px 0 $primaryT;
+}

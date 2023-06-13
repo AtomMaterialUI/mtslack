@@ -1,0 +1,35 @@
+.on-focus-inner-box-shadow::after {
+  box-shadow: inset 0 0 0 2px $primaryT;
+}
+
+.on-focus-inner-box-shadow.double-outline-ring::after {
+  box-shadow: inset 0 0 0 2px $primary, inset 0 0 0 4px $primaryT;
+}
+
+.on-focus-outer-box-shadow::after {
+  box-shadow: 0 0 0 2px $primaryT;
+}
+
+.on-focus-outer-box-shadow.double-outline-ring::after {
+  box-shadow: inset 0 0 0 2px $primary, inset 0 0 0 4px $primaryT;
+}
+
+.on-focus-within-inner-box-shadow::after {
+  box-shadow: inset 0 0 0 2px $primaryT;
+}
+
+.on-focus-within-inner-box-shadow.double-outline-ring::after {
+  box-shadow: inset 0 0 0 2px $primary, inset 0 0 0 4px $primaryT;
+}
+
+.on-focus-within-outer-box-shadow::after {
+  box-shadow: 0 0 0 2px $primaryT;
+}
+
+.on-focus-within-outer-box-shadow.double-outline-ring::after {
+  box-shadow: inset 0 0 0 2px $primary, inset 0 0 0 2px $primaryT;
+}
+
+.on-focus-inner-box-shadow-alternate::before {
+  box-shadow: inset 0 0 0 2px $primaryT;
+}

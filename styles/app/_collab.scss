@@ -1,0 +1,26 @@
+.collab-root input {
+  color: $fg;
+}
+
+.collab-root input,
+.collab-root select,
+.collab-root textarea {
+  background-color: $contrast;
+}
+
+.collab-root textarea {
+  color: $fg;
+}
+
+.collab-root input:not([type='checkbox']):not([type='radio']),
+.collab-root textarea {
+  border: 1px solid $borderLight;
+}
+
+.collab-root::-webkit-input-placeholder {
+  color: $disabled;
+}
+
+.collab-root::placeholder {
+  color: $disabled;
+}

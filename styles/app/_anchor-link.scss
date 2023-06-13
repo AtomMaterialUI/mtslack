@@ -1,0 +1,106 @@
+.anchor-link-toast,
+.collab-root,
+.spaceship-bubble,
+.spaceship-popover {
+  background-color: $notif;
+  font-family: $fontFamily;
+  color: $fg;
+}
+
+.anchor-link-toast button,
+.anchor-link-toast input:not(.c-input_text),
+.anchor-link-toast option,
+.anchor-link-toast select,
+.anchor-link-toast textarea,
+.collab-root button,
+.collab-root input:not(.c-input_text),
+.collab-root option,
+.collab-root select,
+.collab-root textarea,
+.spaceship-bubble button,
+.spaceship-bubble input:not(.c-input_text),
+.spaceship-bubble option,
+.spaceship-bubble select,
+.spaceship-bubble textarea,
+.spaceship-popover button,
+.spaceship-popover input:not(.c-input_text),
+.spaceship-popover option,
+.spaceship-popover select,
+.spaceship-popover textarea {
+  font-family: $fontFamily;
+}
+
+.anchor-link-toast
+  button:not(.c-button-unstyled, .c-button, .c-link--button, .slackified-icon-button, .p-file_image_thumbnail__image_alt_badge),
+.anchor-link-toast h1,
+.anchor-link-toast h2,
+.anchor-link-toast h3,
+.anchor-link-toast h4,
+.anchor-link-toast input:not(.c-input_text),
+.anchor-link-toast option,
+.anchor-link-toast select,
+.anchor-link-toast textarea,
+.collab-root
+  button:not(.c-button-unstyled, .c-button, .c-link--button, .slackified-icon-button, .p-file_image_thumbnail__image_alt_badge),
+.collab-root h1,
+.collab-root h2,
+.collab-root h3,
+.collab-root h4,
+.collab-root input:not(.c-input_text),
+.collab-root option,
+.collab-root select,
+.collab-root textarea,
+.spaceship-bubble
+  button:not(.c-button-unstyled, .c-button, .c-link--button, .slackified-icon-button, .p-file_image_thumbnail__image_alt_badge),
+.spaceship-bubble h1,
+.spaceship-bubble h2,
+.spaceship-bubble h3,
+.spaceship-bubble h4,
+.spaceship-bubble input:not(.c-input_text),
+.spaceship-bubble option,
+.spaceship-bubble select,
+.spaceship-bubble textarea,
+.spaceship-popover
+  button:not(.c-button-unstyled, .c-button, .c-link--button, .slackified-icon-button, .p-file_image_thumbnail__image_alt_badge),
+.spaceship-popover h1,
+.spaceship-popover h2,
+.spaceship-popover h3,
+.spaceship-popover h4,
+.spaceship-popover input:not(.c-input_text),
+.spaceship-popover option,
+.spaceship-popover select,
+.spaceship-popover textarea {
+  color: $fg;
+}
+
+.anchor-link-toast a:not(.c-link),
+.collab-root a:not(.c-link),
+.spaceship-bubble a:not(.c-link),
+.spaceship-popover a:not(.c-link) {
+  color: $fg;
+}
+
+.anchor-link-toast .document-inline-edit blockquote::before,
+.anchor-link-toast blockquote::before,
+.anchor-link-toast div.document blockquote::before,
+.collab-root .document-inline-edit blockquote::before,
+.collab-root blockquote::before,
+.collab-root div.document blockquote::before,
+.spaceship-bubble .document-inline-edit blockquote::before,
+.spaceship-bubble blockquote::before,
+.spaceship-bubble div.document blockquote::before,
+.spaceship-popover .document-inline-edit blockquote::before,
+.spaceship-popover blockquote::before,
+.spaceship-popover div.document blockquote::before {
+  background: $bg2;
+}
+
+.sk-client-theme--dark .collab-root .document-inline-edit blockquote::before,
+.sk-client-theme--dark .collab-root blockquote::before,
+.sk-client-theme--dark .collab-root div.document blockquote::before {
+  background: $borderLight;
+}
+
+.sk-client-theme--dark .collab-root ::selection {
+  background-color: $selectBg;
+}

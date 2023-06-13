@@ -1,41 +1,39 @@
 .p-toggle_channel_space_preview {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-toggle_channel_space_preview .p-field__title {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-toggle_channel_space_preview__subtitle {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-toggle_channel_space_preview__loading {
-  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background-color: $bg;
 }
 
 .p-toggle_channel_space_preview_empty_state {
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  background: $bg;
 }
 
 .p-toggle_channel_space_preview_empty_state__body {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .p-toggle_channel_space_nux .c-coachmarkv2__secondary_button {
-  color: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  color: $primary;
 }
 
 .p-toggle_channel_space_nux:after {
-  border-bottom-color: #f2c744;
+  border-bottom-color: $primary;
 }
 
 .p-toggle_channel_space_nux--channel:after {
-  border-bottom-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border-bottom-color: $bg;
 }
 
 .p-toggle_channel_space_nux--channel .c-coachmarkv2__close {
-  color: rgba(var(--sk_inverted_background, 29, 28, 29), 1);
+  color: $accent;
 }

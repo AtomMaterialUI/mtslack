@@ -1,0 +1,73 @@
+.document-content .section[data-section-type='2'] .card-view,
+.document-content .section[data-section-type='2'] .embedded-ui-placeholder,
+.document-content .section[data-section-type='56'] .card-view,
+.document-content .section[data-section-type='56'] .embedded-ui-placeholder {
+  background: $bg;
+  color: $fg;
+  box-shadow: 0 0 0 1px $border;
+}
+
+.document-content .section[data-section-type='2'] .card-view:hover,
+.document-content .section[data-section-type='2'] .embedded-ui-placeholder:hover,
+.document-content .section[data-section-type='56'] .card-view:hover,
+.document-content .section[data-section-type='56'] .embedded-ui-placeholder:hover {
+  box-shadow: 0 0 0 1px $primary, 0 1px 1px $primaryT;
+}
+
+.document-content .section[data-section-type='2'].has-section-level-comment-highlight .card-view,
+.document-content .section[data-section-type='2'].has-section-level-comment-highlight .embedded-ui-placeholder,
+.document-content .section[data-section-type='56'].has-section-level-comment-highlight .card-view,
+.document-content .section[data-section-type='56'].has-section-level-comment-highlight .embedded-ui-placeholder {
+  box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px $primaryT;
+}
+
+.document-content .section[data-section-type='2'].focused .card-view,
+.document-content .section[data-section-type='2'].focused .embedded-ui-placeholder,
+.document-content .section[data-section-type='2'].section-in-selection .card-view,
+.document-content .section[data-section-type='2'].section-in-selection .embedded-ui-placeholder,
+.document-content .section[data-section-type='56'].focused .card-view,
+.document-content .section[data-section-type='56'].focused .embedded-ui-placeholder,
+.document-content .section[data-section-type='56'].section-in-selection .card-view,
+.document-content .section[data-section-type='56'].section-in-selection .embedded-ui-placeholder {
+  box-shadow: 0 0 0 1px $primaryT, 0 0 0 5px $primaryT;
+}
+
+.document-content .section[data-section-type='2']:not(.focused) .card-view.image:hover,
+.document-content .section[data-section-type='2']:not(.focused) .card-view:hover,
+.document-content .section[data-section-type='2']:not(.section-in-selection) .card-view.image:hover,
+.document-content .section[data-section-type='2']:not(.section-in-selection) .card-view:hover,
+.document-content .section[data-section-type='56']:not(.focused) .card-view.image:hover,
+.document-content .section[data-section-type='56']:not(.focused) .card-view:hover,
+.document-content .section[data-section-type='56']:not(.section-in-selection) .card-view.image:hover,
+.document-content .section[data-section-type='56']:not(.section-in-selection) .card-view:hover {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+}
+
+.document-content.editor-drag-overlay-preview__inner .section[data-section-type='2'] .card-view,
+.document-content.editor-drag-overlay-preview__inner .section[data-section-type='2'] .embedded-ui-placeholder,
+.document-content.editor-drag-overlay-preview__inner .section[data-section-type='56'] .card-view,
+.document-content.editor-drag-overlay-preview__inner .section[data-section-type='56'] .embedded-ui-placeholder {
+  box-shadow: 0 0 0 1px $primary, 0 18px 48px 0 $primaryT;
+}
+
+.document-content .section[data-section-style='18'].focused > .content hr:before,
+.document-content .section[data-section-style='18'].section-in-selection > .content hr:before {
+  box-shadow: 0 0 0 5px $border;
+}
+
+.document-content
+  .section[data-section-style='28'].a11y-navigable-object-activator-focused
+  .table-element:not(:focus-within),
+.document-content .section[data-section-style='28'].section-in-selection .table-element:not(:focus-within) {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.document-content .section[data-section-style='7'] ul li.checked .content {
+  color: $disabled;
+}
+
+.document-content .section[data-section-style='4'] > .content {
+  border: 1px solid $borderLight;
+  background: $bg;
+  font-family: $monoFont;
+}

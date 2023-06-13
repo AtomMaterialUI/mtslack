@@ -1,0 +1,35 @@
+.p-canvas_picker__modal .p-canvas_picker__content .c-pillow_file--clickable:hover {
+  background-color: $bg2;
+}
+
+.p-canvas_picker__modal .p-canvas_picker__content .p-quip_files_page-file_list_item--active .c-pillow_file {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-canvas_picker__modal.p-canvas_picker__modal--new_style
+  .p-quip_files_page-file_list_item_wrapper:hover:not(.p-quip_files_page-file_list_item_wrapper--active) {
+  background-color: $bg2;
+}
+
+.p-canvas_picker__modal.p-canvas_picker__modal--new_style .p-quip_files_page-file_list_item_wrapper--active {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-canvas_picker__modal.p-canvas_picker__modal--new_style .p-canvas_picker__header {
+  border-bottom: 1px solid $border;
+}
+
+.p-canvas_picker__modal.p-canvas_picker__modal--new_style
+  .p-canvas_picker__content
+  .p-quip_files_page
+  .p-quip_files_page_content--scrolled,
+.p-canvas_picker__modal.p-canvas_picker__modal--new_style .p-canvas_picker__footer {
+  border-top: 1px solid $border;
+}
+
+.p-canvas_picker__modal:not(.p-canvas_picker__modal--new_style) .p-canvas_picker__footer,
+.p-canvas_picker__modal:not(.p-canvas_picker__modal--new_style) .p-canvas_picker__header {
+  background-color: $bg2;
+}

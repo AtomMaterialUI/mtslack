@@ -1,0 +1,81 @@
+.p-quip_insertion_toolbar {
+  background-color: $contrast;
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+}
+
+.p-quip_insertion_toolbar .p-quip-insertion_toolbar__separator {
+  background: $border;
+}
+
+.p-quip_insertion_toolbar_formatting_menu,
+.p-quip_insertion_toolbar_menu {
+  background-color: $bg2;
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button {
+  background: rgba(var(--sk_foreground_soft, 29, 28, 29), 0.06);
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button:hover {
+  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button.p-quip_insertion_toolbar_insertion_menu_trigger--open {
+  background: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
+  transform: rotate(45deg);
+}
+
+.p-quip_insertion_toolbar_formatting_menu_trigger.c-icon_button:after {
+  background: currentColor;
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger_blue_pulse.c-icon_button,
+.p-quip_insertion_toolbar_insertion_menu_trigger_blue_pulse.c-icon_button:hover {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger_blue_pulse.c-icon_button:after {
+  animation-name: toggle-switch-pulse-inner;
+  border: 3px solid $accent;
+  box-shadow: 0 0 4px 4px $accentT;
+}
+
+.p-quip_insertion_toolbar_insertion_menu_trigger_blue_pulse_no_animation.c-icon_button,
+.p-quip_insertion_toolbar_insertion_menu_trigger_blue_pulse_no_animation.c-icon_button:hover {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-quip_insertion_toolbar_nux {
+  background: $accent;
+}
+
+.p-quip_insertion_toolbar_nux.c-coachmark--top:after,
+.p-quip_insertion_toolbar_nux.c-coachmark--top:before {
+  border-top-color: $accent;
+}
+
+.p-quip_insertion_toolbar_nux.c-coachmark--bottom-left:after,
+.p-quip_insertion_toolbar_nux.c-coachmark--bottom-left:before {
+  border-bottom-color: $accent;
+}
+
+.p-quip_insertion_toolbar_nux.c-coachmark--left:after,
+.p-quip_insertion_toolbar_nux.c-coachmark--left:before {
+  border-left-color: $accent;
+}
+
+.p-quip_insertion_toolbar_nux.c-coachmark--bottom:after,
+.p-quip_insertion_toolbar_nux.c-coachmark--bottom:before {
+  border-bottom-color: $accent;
+}
+
+.p-quip_insertion_toolbar_nux.c-coachmark--right:after,
+.p-quip_insertion_toolbar_nux.c-coachmark--right:before {
+  border-right-color: $accent;
+}
+
+.p-quip_insertion_toolbar_nux .c-coachmarkv2__title {
+  color: $selectFg;
+}
