@@ -228,3 +228,10 @@
   background: $bg;
   box-shadow: 0 -1px 0 $primaryT;
 }
+
+.c-file_gallery {
+  .c-pillow_file_container {
+    border: none;
+    @include card;
+  }
+}

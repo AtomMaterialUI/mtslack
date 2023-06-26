@@ -44,7 +44,6 @@ Windows are welcome.
 - Light Owl ![lightowl.png](doc/v2/lighto``wl.png)
 - Moonlight ![moonlight.png](doc/v2/moonlight.png)
 - SynthWave '84
-- Catpuccin
 
 ----------------------------
 

@@ -1,9 +1,66 @@
 .p-file_quip {
   border-top: 1px solid $border;
+  background-color: $bg;
 }
 
 .p-file_quip__embed {
   &:after {
     background: $bg;
   }
+}
+
+.p-file_quip--unfurl {
+  border-top: 1px solid $borderLight;
+}
+
+.p-file_quip__snippet {
+  color: $fg;
+}
+
+.p-file_quip__snippet .p-block_kit_renderer div:has(.c-message_kit__avatar) {
+  border: 1px solid $border;
+}
+
+.p-file_quip__snippet .p-block_kit_renderer .c-pillow_file_container {
+  border: none;
+  @include card;
+}
+
+.p-file_quip__snippet__unfurl_container,
+.p-file_quip__snippet__unfurl_container--link_unfurl,
+.p-file_quip__snippet__unfurl_container__single_image {
+  border: none;
+  @include card;
+}
+
+.p-file_quip__snippet__unfurl_container--link_unfurl_content_title {
+  color: $fg;
+}
+
+.p-file_quip__snippet__unfurl_container--link_unfurl_content_text {
+  color: $text;
+}
+
+[lang] .p-file_quip__snippet__unfurl_container--link_unfurl_content_text {
+  font-family: $fontFamily;
+  color: $selectFg;
+}
+
+.p-file_quip__snippet__unfurl_container__icon_and_name__name {
+  color: $text;
+}
+
+.p-message_file--quip {
+  .c-pillow_file {
+    border: none;
+
+    .c-file_entity__text {
+      color: $primary;
+    }
+  }
+}
+
+.p-quip_icon_container {
+  background-color: $accent;
+  border: 1px solid $border;
 }

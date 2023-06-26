@@ -10992,9 +10992,60 @@
 }
 #mtslack .p-file_quip {
   border-top: 1px solid var(--border);
+  background-color: var(--bg);
 }
 #mtslack .p-file_quip__embed:after {
   background: var(--bg);
+}
+#mtslack .p-file_quip--unfurl {
+  border-top: 1px solid var(--active);
+}
+#mtslack .p-file_quip__snippet {
+  color: var(--fg);
+}
+#mtslack .p-file_quip__snippet .p-block_kit_renderer div:has(.c-message_kit__avatar) {
+  border: 1px solid var(--border);
+}
+#mtslack .p-file_quip__snippet .p-block_kit_renderer .c-pillow_file_container {
+  border: none;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#mtslack .p-file_quip__snippet .p-block_kit_renderer .c-pillow_file_container:hover {
+  box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+#mtslack .p-file_quip__snippet__unfurl_container,
+#mtslack .p-file_quip__snippet__unfurl_container--link_unfurl,
+#mtslack .p-file_quip__snippet__unfurl_container__single_image {
+  border: none;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#mtslack .p-file_quip__snippet__unfurl_container:hover,
+#mtslack .p-file_quip__snippet__unfurl_container--link_unfurl:hover,
+#mtslack .p-file_quip__snippet__unfurl_container__single_image:hover {
+  box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+#mtslack .p-file_quip__snippet__unfurl_container--link_unfurl_content_title {
+  color: var(--fg);
+}
+#mtslack .p-file_quip__snippet__unfurl_container--link_unfurl_content_text {
+  color: var(--text);
+}
+#mtslack [lang] .p-file_quip__snippet__unfurl_container--link_unfurl_content_text {
+  font-family: var(--fontFamily, Slack-Lato, "CircularPro", appleLogo, sans-serif);
+  color: var(--selectFg2);
+}
+#mtslack .p-file_quip__snippet__unfurl_container__icon_and_name__name {
+  color: var(--text);
+}
+#mtslack .p-message_file--quip .c-pillow_file {
+  border: none;
+}
+#mtslack .p-message_file--quip .c-pillow_file .c-file_entity__text {
+  color: var(--primary);
+}
+#mtslack .p-quip_icon_container {
+  background-color: var(--accent);
+  border: 1px solid var(--border);
 }
 #mtslack .p-multi_file_upload__add_file_btn {
   color: var(--primary);
@@ -11346,6 +11397,13 @@
 #mtslack .p-file_viewer__footer {
   background: var(--bg);
   box-shadow: 0 -1px 0 var(--primaryT);
+}
+#mtslack .c-file_gallery .c-pillow_file_container {
+  border: none;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#mtslack .c-file_gallery .c-pillow_file_container:hover {
+  box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
 #mtslack .c-filter-pill:hover {
   background: var(--hl);
