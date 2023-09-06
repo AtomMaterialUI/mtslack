@@ -1,0 +1,60 @@
+.p-ia4_client .p-ia4_top_nav__middle_container .p-top_nav__search__container {
+  background-color: $contrast;
+  border-color: $contrast;
+}
+
+.p-ia4_client .p-top_nav__button.p-top_nav__help:hover {
+  background-color: $hl;
+}
+
+.p-ia4_client .p-top_nav__button.p-top_nav__help:active {
+  background-color: $active;
+}
+
+.p-ia4_client .p-top_nav__feedback {
+  color: $fg;
+}
+
+.p-ia4_client .p-top_nav__feedback:hover {
+  background-color: $hl;
+}
+
+.p-ia4_client .p-top_nav__feedback:active {
+  background-color: $active;
+}
+
+.p-ia4_client .p-client_workspace__layout {
+  background-color: $bg;
+}
+
+.sk-client-theme--dark .p-ia4_client .p-client_workspace__layout {
+  border: 1px solid $border;
+}
+
+.p-ia4_client .p-view_contents--sidebar {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-ia4_client .p-view_contents--sidebar {
+  border-right: 1px solid $border;
+}
+
+.p-ia4_client .p-view_contents--sidebar.p-view_contents--channel-list-pry {
+  background-color: $contrast;
+}
+
+.p-ia4_client .p-view_contents--sidebar.p-view_contents--channel-list-ter {
+  background-color: $contrast;
+}
+
+.p-ia4_client .p-view_contents--primary {
+  background-color: $bg;
+}
+
+.p-ia4_client .p-view_contents--secondary {
+  background-color: $bg;
+}
+
+.sk-client-theme--dark .p-ia4_client .p-view_contents--secondary {
+  border-left: 1px solid $border;
+}

@@ -1,0 +1,34 @@
+.p-team_switcher_popover__container {
+  background: $bg;
+}
+
+.p-team_switcher_popover__reorder_row {
+  font-family: $fontFamily;
+}
+
+.p-team_switcher_popover__more_actions {
+  color: $fg;
+}
+
+.p-team_switcher_popover__reorder_handle_container {
+  color: $text;
+}
+
+.p-team_switcher_popover__reorder_handle_container:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-team_switcher_popover__divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-team_switcher_popover__link,
+.p-team_switcher_popover__link:active,
+.p-team_switcher_popover__link:focus,
+.p-team_switcher_popover__link:hover {
+  color: $selectFg;
+}
+
+.p-team_switcher_popover__divider {
+  background-color: $border;
+}
