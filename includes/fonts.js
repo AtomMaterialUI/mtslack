@@ -28,8 +28,20 @@ class FontsPlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   extraContent() {
-    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter fonts, separated by commas' id='fontFamily' name='fontFamily' type='text' value='${this.fontFamily}'>
-<button id='customFontsButton' name='customFontsButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>`;
+    return `
+        <input class='c-input_text p-prefs_modal__custom_theme_input' 
+               style='width:70%;'
+               placeholder='Enter fonts, separated by commas' 
+               id='fontFamily' 
+               name='fontFamily' 
+               type='text'
+               value='${this.fontFamily}'>
+        <button id='customFontsButton' 
+                name='customFontsButton'
+                class='c-button c-button--outline c-button--medium null--outline null--medium' 
+                type='button'>
+          Apply
+        </button>`;
   }
 
   extraContentOnClick() {

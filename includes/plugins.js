@@ -51,8 +51,13 @@ const slackPluginsAPI = {
     $pluginsLinkBtn.className =
       'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
     $pluginsLinkBtn.innerHTML = `
-<i class='mtslack_settings-button c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit' type='list' aria-hidden='true'></i>
-<span class='p-channel_sidebar__name'>Slack Tweaks</span>`;
+            <i class='mtslack_settings-button c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit'
+               type='list' 
+               style="padding: 8px;"
+               aria-hidden='true'></i>
+            <span class='p-channel_sidebar__name' style="padding: 8px;">
+              Slack Tweaks
+            </span>`;
 
     // Add on the top
     $pluginsSection.appendChild($pluginsLinkBtn);
@@ -142,9 +147,9 @@ const slackPluginsAPI = {
     const $header = document.createElement('div');
     $header.className = 'c-sk-modal_header';
     $header.innerHTML = `
-<div data-qa='invite_modal_header' class='c-sk-modal_title_bar c-sk-modal_title_bar--pad_right'>
-<div class='c-sk-modal_title_bar__text'><h1>Slack Tweaks ${this.version}</h1></div>
-</div>`;
+            <div data-qa='invite_modal_header' class='c-sk-modal_title_bar c-sk-modal_title_bar--pad_right'>
+                <div class='c-sk-modal_title_bar__text'><h1>Slack Tweaks ${this.version}</h1></div>
+            </div>`;
 
     // Finally the settings
     const $settings = this._createSettings();
@@ -170,13 +175,14 @@ const slackPluginsAPI = {
     // Wrapper
     const $settingsWrapper = document.createElement('div');
     $settingsWrapper.className = 'mtslack-settings_wrapper c-scrollbar c-scrollbar--inherit_size';
-    $settingsWrapper.innerHTML = `<div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
-    <div role='presentation' class='c-scrollbar__child' style='width: 492px;'>
-        <div class='c-sk-modal__content__inner'>
-            <div data-qa='invite_modal_form' class='c-sk-modal_content_section'></div>
-        </div>
-    </div>
-</div>`;
+    $settingsWrapper.innerHTML = `
+            <div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
+                <div role='presentation' class='c-scrollbar__child' style='width: 492px;'>
+                    <div class='c-sk-modal__content__inner'>
+                        <div data-qa='invite_modal_form' class='c-sk-modal_content_section'></div>
+                    </div>
+                </div>
+            </div>`;
     $settings.append($settingsWrapper);
 
     // Get the placeholder for content
@@ -185,15 +191,18 @@ const slackPluginsAPI = {
     // Plugins List
     const $pluginList = document.createElement('div');
     $pluginList.className = 'mtslack-settings_plugin-list c-virtual_list c-virtual_list--scrollbar c-scrollbar';
-    $pluginList.innerHTML = `<div role='list' class='c-virtual_list c-virtual_list--scrollbar c-scrollbar' style='width: 440px; height: 481px;'>
-    <div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
-        <div role='presentation' class='c-scrollbar__child'>
-            <div data-qa='slack_kit_list' class='c-virtual_list__scroll_container c-plugins_list' role='presentation'>
-                
-            </div>
-        </div>
-    </div>
-</div>`;
+    $pluginList.innerHTML = `
+            <div role='list' class='c-virtual_list c-virtual_list--scrollbar c-scrollbar'
+                 style='width: 440px; height: 481px;'>
+                <div data-qa='slack_kit_scrollbar' role='presentation' class='c-scrollbar__hider'>
+                    <div role='presentation' class='c-scrollbar__child'>
+                        <div data-qa='slack_kit_list' class='c-virtual_list__scroll_container c-plugins_list'
+                             role='presentation'>
+
+                        </div>
+                    </div>
+                </div>
+            </div>`;
     $content.append($pluginList);
 
     // Placeholder for plugins
@@ -201,7 +210,8 @@ const slackPluginsAPI = {
     // Header
     const $pluginListHeader = document.createElement('div');
     $pluginListHeader.className = 'mtslack-settings_plugins-list__header c-virtual_list__item';
-    $pluginListHeader.innerHTML = `<div class='p-channel_browser_section_header p-channel_browser_section_header--first'>Plugins List</div>`;
+    $pluginListHeader.innerHTML = `
+            <div class='p-channel_browser_section_header p-channel_browser_section_header--first'>Plugins List</div>`;
     $pluginList.append($pluginListHeader);
 
     // Now load the plugins
@@ -337,13 +347,15 @@ const slackPluginsAPI = {
 
     // Header
     const $popover = document.createElement('div');
-    $popover.innerHTML = `<div role='presentation'>
-<div id='slack-kit-tooltip' role='tooltip' class='mtslack_tooltip__desc c-tooltip__tip c-tooltip__tip--bottom-right' data-qa='tooltip-tip'>
-${plugin.tooltipDesc}
-<div class='mtslack_tooltip__shortcut c-tooltip__tip_shortcut'>Ctrl-Shift-${plugin.shortcut}</div>
-<div class='mtslack_tooltip__arrow c-tooltip__tip__arrow' style='right: 18px;'></div>
-</div>
-</div>`;
+    $popover.innerHTML = `
+            <div role='presentation'>
+                <div id='slack-kit-tooltip' role='tooltip'
+                     class='mtslack_tooltip__desc c-tooltip__tip c-tooltip__tip--bottom-right' data-qa='tooltip-tip'>
+                    ${plugin.tooltipDesc}
+                    <div class='mtslack_tooltip__shortcut c-tooltip__tip_shortcut'>Ctrl-Shift-${plugin.shortcut}</div>
+                    <div class='mtslack_tooltip__arrow c-tooltip__tip__arrow' style='right: 18px;'></div>
+                </div>
+            </div>`;
 
     $wrapper.append($popover);
 

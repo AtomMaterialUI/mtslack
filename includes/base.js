@@ -60,6 +60,7 @@ class PluginBase {
 
     let $header = document.querySelector('.p-classic_nav__right_header');
     let $newHeader = document.querySelector('.p-top_nav__right');
+    let $newNewHeader = document.querySelector('.p-ia4_top_nav__right_container');
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
@@ -67,6 +68,10 @@ class PluginBase {
     if ($newHeader) {
       // Add buttons
       $newHeader.prepend($toolbarBtn);
+    }
+    if ($newNewHeader) {
+      // Add buttons
+      $newNewHeader.prepend($toolbarBtn);
     }
 
     // Show or hide the toolbar button according to settings
@@ -151,9 +156,9 @@ class PluginBase {
    * @param button
    */
   addIcon() {
-    this.$el.innerHTML = `<i class='c-icon c-icon-plugin c-icon--${
-      this.icon
-    } c-icon-selected--${this.isApplied()}' type='magic' aria-hidden='true'></i>`;
+    this.$el.innerHTML = `
+      <i class='c-icon c-icon-plugin c-icon--${this.icon} c-icon-selected--${this.isApplied()}' 
+         type='magic' aria-hidden='true'></i>`;
   }
 
   /**

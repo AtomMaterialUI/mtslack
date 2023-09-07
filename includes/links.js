@@ -26,18 +26,26 @@ class LinksPlugin extends window.slackPluginsAPI.pluginBase {
 
   extraContent() {
     return `
-<div class='c-color_picker__container'  role='presentation'>
-    <span class='c-color_picker__color_block_container'>
-        <button id='customLinksColor' class='c-button-unstyled c-color_picker__color_block' type='button' style='background: ${
-          this.linksColor
-        };'></button>
-    </span>
-    <span class='c-color_picker__hex_hash'>#</span>
-    <input id='linksColor' name='linksColor' class='c-color_picker__input'  type='text' value='${this.linksColor.slice(
-      1
-    )}' style='min-width: auto'>
-    <button id='customLinksButton' name='customLinksButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>
-</div>`;
+      <div class='c-color_picker__container' role='presentation'>
+                <span class='c-color_picker__color_block_container'>
+                    <button id='customLinksColor'
+                            class='c-button-unstyled c-color_picker__color_block'
+                            type='button'
+                            style='background: ${this.linksColor};'></button>
+                </span>
+        <span class='c-color_picker__hex_hash'>#</span>
+        <input id='linksColor'
+               name='linksColor'
+               class='c-color_picker__input'
+               type='text'
+               value='${this.linksColor.slice(1)}'
+               style='min-width: auto;'>
+        <button id='customLinksButton'
+                name='customLinksButton'
+                class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>
+          Apply
+        </button>
+      </div>`;
   }
 
   extraContentOnClick() {

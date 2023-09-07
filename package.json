@@ -13,7 +13,7 @@
     "major": "npm version major && npm publish",
     "local": "LOCALHOST=1 npx ./main.js",
     "apply": "npx ./main.js",
-    "server": "http-server --cors",
+    "server": "http-server --cors -p 8030",
     "windows": "npx ./main.js",
     "styles": "gulp styles",
     "debugStyles": "gulp debugStyles",

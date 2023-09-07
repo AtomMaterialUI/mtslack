@@ -28,8 +28,19 @@ class MonoFontsPlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   extraContent() {
-    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter monospace fonts, separated by commas' id='monoFontFamily' name='monoFontFamily' type='text' value='${this.monoFontFamily}'>
-<button id='customMonoFontsButton' name='customMonoFontsButton' class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>Apply</button>`;
+    return `
+        <input class='c-input_text p-prefs_modal__custom_theme_input' 
+               style='width:70%'
+               placeholder='Enter monospace fonts, separated by commas' 
+               id='monoFontFamily'
+               name='monoFontFamily' 
+               type='text' 
+               value='${this.monoFontFamily}'>
+        <button id='customMonoFontsButton' 
+                name='customMonoFontsButton'
+                class='c-button c-button--outline c-button--medium null--outline null--medium' type='button'>
+          Apply
+        </button>`;
   }
 
   extraContentOnClick() {

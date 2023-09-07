@@ -34,8 +34,7 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
   applyDim() {
     if (this.tweakEnabled) {
       document.body.classList.add('mtslack--dim');
-    }
-    else {
+    } else {
       document.body.classList.remove('mtslack--dim');
     }
     window.slackPluginsAPI.saveSettings();
@@ -54,7 +53,7 @@ class DimPlugin extends window.slackPluginsAPI.pluginBase {
   saveSettings() {
     return {
       enabled: this.enabled,
-      tweakEnabled: this.tweakEnabled
+      tweakEnabled: this.tweakEnabled,
     };
   }
 

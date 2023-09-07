@@ -431,6 +431,53 @@ material:
     numbers: '#f78c6c'
     parameters: '#f78c6c'
 
+  - space:
+    id: SPACE
+    name: Space
+    name2: Space Contrast
+    className: space
+    desc: An dark blue and purple spacey theme
+    dark: true
+    background: '#1B2240'
+    foreground: '#efeff1'
+    text: '#959DAA'
+    selectBg: '#383f56'
+    selectFg: '#FFFFFF'
+    selectFg2: '#FFFFFF'
+    button: '#313852'
+    second: '#292f4d'
+    disabled: '#5A6270'
+    contrast: '#060F2F'
+    table: '#303c6a'
+    border: '#313852'
+    hl: '#383f56'
+    tree: '#31385270'
+    notif: '#080f30'
+    accent: '#ad9bf6'
+    excluded: '#2f1d76'
+    green: '#c3e88d'
+    red: '#f07178'
+    yellow: '#ffcb6b'
+    blue: '#82aaff'
+    purple: '#c792ea'
+    orange: '#f78c6c'
+    cyan: '#89ddff'
+    white: '#eeffff'
+    gray: '#959DAA'
+    error: '#ff5370'
+    comments: '#959DAA'
+    vars: '#eeffff'
+    links: '#80cbc4'
+    functions: '#82aaff'
+    keywords: '#c792ea'
+    tags: '#f07178'
+    strings: '#c3e88d'
+    operators: '#89ddff'
+    attributes: '#ffcb6b'
+    classes: '#ffcb6b'
+    numbers: '#f78c6c'
+    parameters: '#f78c6c'
+
 other:
   - monokai:
     id: monokai

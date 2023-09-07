@@ -25,6 +25,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
       'skyblue',
       'sandybeach',
       'volcano',
+      'space',
       'monokai',
       'arcdark',
       'onedark',

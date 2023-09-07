@@ -86,9 +86,20 @@ class HighlightPlugin extends window.slackPluginsAPI.pluginBase {
   }
 
   extraContent() {
-    return `<input class='c-input_text p-prefs_modal__custom_theme_input' style='width:70%' placeholder='Enter your highlight.js theme' id='hljsThemeValue'
-  name='hljsThemeValue' type='text' value='${this.theme}'> <button id='hljsThemeButton' name='hljsThemeButton' class='c-button c-button--outline
-  c-button--medium null--outline null--medium' type='button'>Apply</button>`;
+    return `
+        <input class='c-input_text p-prefs_modal__custom_theme_input' 
+               style='width:70%;'
+               placeholder='Enter your highlight.js theme' 
+               id='hljsThemeValue'
+               name='hljsThemeValue' 
+               type='text' 
+               value='${this.theme}'>
+        <button id='hljsThemeButton' 
+                name='hljsThemeButton' 
+                class='c-button c-button--outline c-button--medium null--outline null--medium' 
+                type='button'>
+          Apply
+        </button>`;
   }
 
   extraContentOnClick() {
