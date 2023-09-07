@@ -1993,6 +1993,21 @@
 #mtslack .c-link--invert:visited {
   color: var(--fg);
 }
+#mtslack .c-button--primary.c-button--disabled,
+#mtslack .c-button--primary.c-button--disabled:active,
+#mtslack .c-button--primary.c-button--disabled:hover {
+  background: var(--button);
+  border-color: var(--button);
+  color: var(--disabled);
+  opacity: 0.8;
+}
+#mtslack .c-button--primary.c-button--disabled:active:hover,
+#mtslack .c-button--primary.c-button--disabled:hover,
+#mtslack .c-button--primary.c-button--disabled:hover:hover {
+  background: var(--button);
+  color: var(--fg);
+  opacity: 1;
+}
 #mtslack .sk-client-scheme--purple .c-button--primary,
 #mtslack .c-button--primary {
   background: var(--accentT);
@@ -2046,6 +2061,21 @@
 #mtslack .sk-client-theme--dark .c-button--danger:active,
 #mtslack .c-button--danger:active {
   background: var(--red);
+  opacity: 1;
+}
+#mtslack .c-button--danger.c-button--disabled,
+#mtslack .c-button--danger.c-button--disabled:active,
+#mtslack .c-button--danger.c-button--disabled:hover {
+  background: var(--button);
+  border-color: var(--button);
+  color: var(--disabled);
+  opacity: 0.8;
+}
+#mtslack .c-button--danger.c-button--disabled:active:hover,
+#mtslack .c-button--danger.c-button--disabled:hover,
+#mtslack .c-button--danger.c-button--disabled:hover:hover {
+  background: var(--button);
+  color: var(--red);
   opacity: 1;
 }
 #mtslack .sk-client-theme--dark .c-button--outline,
@@ -2152,6 +2182,52 @@
   color: var(--selectFg2);
   border-color: var(--bg);
 }
+#mtslack .c-button--plan_page {
+  background: var(--button);
+  border: 1px solid var(--button);
+  color: var(--green);
+}
+#mtslack .c-button--plan_page:link,
+#mtslack .c-button--plan_page:visited {
+  color: var(--green);
+}
+#mtslack .c-button--plan_page:hover {
+  background: var(--hl);
+}
+#mtslack .c-button--plan_page:active {
+  background: var(--active);
+  border-color: var(--active);
+}
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled,
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled:active,
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover {
+  background: var(--button);
+  border-color: var(--button);
+  color: var(--disabled);
+  opacity: 0.8;
+}
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled:active:hover,
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover,
+#mtslack .sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover:hover {
+  background: var(--button);
+  color: var(--fg);
+  opacity: 1;
+}
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled,
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled:active,
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover {
+  background: var(--button);
+  border-color: var(--button);
+  color: var(--disabled);
+  opacity: 0.8;
+}
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled:active:hover,
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover,
+#mtslack .sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover:hover {
+  background: var(--button);
+  color: var(--fg);
+  opacity: 1;
+}
 #mtslack .p-about_modal__badge {
   color: var(--primary);
   background-color: var(--excluded);
@@ -2160,6 +2236,7 @@
 #mtslack .c-button--disabled {
   background: var(--bg);
   color: var(--disabled);
+  opacity: 0.8;
 }
 #mtslack .sk-client-theme--dark .c-button--disabled:active, #mtslack .sk-client-theme--dark .c-button--disabled:hover,
 #mtslack .c-button--disabled:active,
@@ -2167,6 +2244,7 @@
   background: var(--bg);
   color: var(--fg);
   border-color: var(--bg);
+  opacity: 1;
 }
 #mtslack .c-button--focus-visible:focus {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
@@ -4738,7 +4816,6 @@
   background: var(--accent);
 }
 #mtslack .p-autoclog_send_viewer_clog__content {
-  pointer-events: none;
   background: var(--bg);
   color: var(--accent);
 }

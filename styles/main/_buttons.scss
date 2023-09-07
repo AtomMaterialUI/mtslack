@@ -95,6 +95,23 @@
   }
 }
 
+.c-button--primary.c-button--disabled,
+.c-button--primary.c-button--disabled:active,
+.c-button--primary.c-button--disabled:hover {
+  background: $button;
+  border-color: $button;
+  color: $disabled;
+  opacity: 0.8;
+}
+
+.c-button--primary.c-button--disabled:active:hover,
+.c-button--primary.c-button--disabled:hover,
+.c-button--primary.c-button--disabled:hover:hover {
+  background: $button;
+  color: $fg;
+  opacity: 1;
+}
+
 .sk-client-scheme--purple .c-button--primary,
 .c-button--primary {
   background: $accentT;
@@ -150,6 +167,23 @@
     background: $red;
     opacity: 1;
   }
+}
+
+.c-button--danger.c-button--disabled,
+.c-button--danger.c-button--disabled:active,
+.c-button--danger.c-button--disabled:hover {
+  background: $button;
+  border-color: $button;
+  color: $disabled;
+  opacity: 0.8;
+}
+
+.c-button--danger.c-button--disabled:active:hover,
+.c-button--danger.c-button--disabled:hover,
+.c-button--danger.c-button--disabled:hover:hover {
+  background: $button;
+  color: $red;
+  opacity: 1;
 }
 
 .sk-client-theme--dark .c-button--outline,
@@ -252,6 +286,60 @@
   }
 }
 
+.c-button--plan_page {
+  background: $button;
+  border: 1px solid $button;
+  color: $green;
+}
+
+.c-button--plan_page:link,
+.c-button--plan_page:visited {
+  color: $green;
+}
+
+.c-button--plan_page:hover {
+  background: $hl;
+}
+
+.c-button--plan_page:active {
+  background: $active;
+  border-color: $active;
+}
+
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled,
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled:active,
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover {
+  background: $button;
+  border-color: $button;
+  color: $disabled;
+  opacity: 0.8;
+}
+
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled:active:hover,
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover,
+.sk-client-theme--dark .c-button--outline-primary.c-button--disabled:hover:hover {
+  background: $button;
+  color: $fg;
+  opacity: 1;
+}
+
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled,
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled:active,
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover {
+  background: $button;
+  border-color: $button;
+  color: $disabled;
+  opacity: 0.8;
+}
+
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled:active:hover,
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover,
+.sk-client-theme--dark .c-button--outline-danger.c-button--disabled:hover:hover {
+  background: $button;
+  color: $fg;
+  opacity: 1;
+}
+
 .p-about_modal__badge {
   color: $primary;
   background-color: $excluded;
@@ -261,12 +349,14 @@
 .c-button--disabled {
   background: $bg;
   color: $disabled;
+  opacity: 0.8;
 
   &:active,
   &:hover {
     background: $bg;
     color: $fg;
     border-color: $bg;
+    opacity: 1;
   }
 }
 
