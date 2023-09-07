@@ -8721,12 +8721,6 @@
 #mtslack .p-client_desktop--ia-top-nav .p-prefs_dialog--peek_sidebar:after {
   background: linear-gradient(180deg, var(--secondBg) 0, var(--secondBg) 39px, transparent 40px);
 }
-#mtslack .p-client_container_placeholder .p-view_header_placeholder {
-  border-bottom: 1px solid var(--border);
-}
-#mtslack .p-client_container_placeholder .p-message_input_placeholder {
-  border: 1px solid var(--border);
-}
 #mtslack .p-client_desktop--ia-top-nav .c-message_list__day_divider__label__pill {
   box-shadow: 0 0 0 1px var(--secondBg), 0 1px 3px 0 var(--tree);
 }
@@ -17425,7 +17419,7 @@
 #mtslack .p-client_container_placeholder .p-message_input_placeholder {
   border: 1px solid var(--active) !important;
 }
-#mtslack .p-client_container_placeholder p-client_container_placeholder--with-team-switcher p-client_container_placeholder--iap1 {
+#mtslack .p-client_container_placeholder .p-client_container_placeholder--with-team-switcher .p-client_container_placeholder--iap1 {
   background: var(--secondBg) !important;
   color: var(--fg) !important;
   border-color: var(--border) !important;
@@ -17433,6 +17427,9 @@
 #mtslack .p-client_container_placeholder--iap1 .p-client_container_placeholder__nav {
   background: var(--contrast) !important;
   color: var(--fg) !important;
+}
+#mtslack .p-ia4_client_container_placeholder--content {
+  background-color: var(--bg);
 }
 #mtslack .p-play_pause_animations__container--has-focus {
   box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);

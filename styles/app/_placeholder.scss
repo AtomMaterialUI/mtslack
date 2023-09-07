@@ -14,7 +14,9 @@
   border: 1px solid $borderLight !important;
 }
 
-.p-client_container_placeholder p-client_container_placeholder--with-team-switcher p-client_container_placeholder--iap1 {
+.p-client_container_placeholder
+  .p-client_container_placeholder--with-team-switcher
+  .p-client_container_placeholder--iap1 {
   background: $bg2 !important;
   color: $fg !important;
   border-color: $border !important;
@@ -23,4 +25,8 @@
 .p-client_container_placeholder--iap1 .p-client_container_placeholder__nav {
   background: $contrast !important;
   color: $fg !important;
+}
+
+.p-ia4_client_container_placeholder--content {
+  background-color: $bg;
 }
