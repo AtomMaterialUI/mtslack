@@ -1,5 +1,9 @@
 .c-presence--active {
   color: $accent !important;
+
+  &:not(.c-presence--resetIA) {
+    color: $accent !important;
+  }
 }
 
 .c-presence--away {
@@ -43,4 +47,8 @@
     opacity: 0.64;
     color: var(--p-channel_sidebar__computed-text-color);
   }
+}
+
+.p-ia4_body :not(.p-ia4_client--theming) :not(.p-tab_rail) .c-presence--active:not(.c-presence--resetIA) {
+  filter: brightness(0.85);
 }

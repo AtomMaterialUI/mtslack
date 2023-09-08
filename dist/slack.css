@@ -3384,6 +3384,9 @@
 #mtslack .c-menu_item__button--disabled .c-menu_item__description, #mtslack .c-menu_item__button--disabled:link .c-menu_item__description, #mtslack .c-menu_item__button--disabled:visited .c-menu_item__description {
   color: var(--disabled);
 }
+#mtslack .c-menu_item__submenu-indicator {
+  color: var(--fg);
+}
 #mtslack .c-menu_item__submenu-indicator:before {
   color: var(--disabled);
 }
@@ -3425,6 +3428,102 @@
 }
 #mtslack .c-menu_item__button--checked.c-menu_item__button--highlighted {
   color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover .c-app_badge,
+#mtslack .c-menu_item--standalone:hover .c-menu_item__description,
+#mtslack .c-menu_item--standalone:hover .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:link .c-menu_item__description,
+#mtslack .c-menu_item--standalone:hover:link .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:link .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:link .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:visited .c-menu_item__description,
+#mtslack .c-menu_item--standalone:hover:visited .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:visited .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item--standalone:hover:visited .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted .c-app_badge,
+#mtslack .c-menu_item__button--highlighted .c-menu_item__description,
+#mtslack .c-menu_item__button--highlighted .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:link .c-menu_item__description,
+#mtslack .c-menu_item__button--highlighted:link .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:link .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:link .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:visited .c-menu_item__description,
+#mtslack .c-menu_item__button--highlighted:visited .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:visited .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .c-menu_item__button--highlighted:visited .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted .c-app_badge,
+#mtslack .no_touch a.c-menu_item__button--highlighted .c-menu_item__description,
+#mtslack .no_touch a.c-menu_item__button--highlighted .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:link .c-menu_item__description,
+#mtslack .no_touch a.c-menu_item__button--highlighted:link .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:link .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:link .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:visited .c-menu_item__description,
+#mtslack .no_touch a.c-menu_item__button--highlighted:visited .c-menu_item__glimmer {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:visited .c-menu_item__icon {
+  color: var(--selectFg2);
+}
+#mtslack .no_touch a.c-menu_item__button--highlighted:visited .c-menu_item__icon .c-icon:before {
+  color: var(--selectFg2);
+}
+#mtslack .c-submenu .c-menu {
+  box-shadow: 2px 4px 6px black;
 }
 #mtslack .c-app_badge, #mtslack .c-app_label {
   color: var(--selectFg2);
@@ -3484,6 +3583,12 @@
 }
 #mtslack .c-input_checkbox--focus-visible:focus {
   box-shadow: 0 0 0 1px var(--accent), 0 0 0 5px var(--accentT);
+}
+#mtslack .c-input_checkbox--disabled,
+#mtslack input.c-input_checkbox--disabled,
+#mtslack input[type=checkbox].c-input_checkbox--disabled {
+  background: var(--bg);
+  color: var(--disabled);
 }
 #mtslack .c-select_input::-webkit-input-placeholder,
 #mtslack .c-select_input__content::-webkit-input-placeholder {
@@ -6689,6 +6794,10 @@
 #mtslack .p-story_root_threads_message.p-threads_view_root {
   border: 1px solid var(--secondBg);
 }
+#mtslack .c-hidden_user_avatar {
+  background: rgba(var(--sk_foreground_soft, 29, 28, 29), 0.06);
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+}
 #mtslack .p-app_external_team_banner {
   background: var(--contrast);
 }
@@ -6935,7 +7044,7 @@
   color: var(--fg);
 }
 #mtslack .p-paid_benefits_card__subtitle {
-  color: var(--fg);
+  color: var(--text);
 }
 #mtslack .p-bp__paginator__arrow_btn:disabled {
   color: var(--disabled);
@@ -7651,6 +7760,22 @@
   color: var(--primary);
   background-color: var(--notif);
   box-shadow: inset 0 0 0 1px var(--notif);
+}
+#mtslack .callout__G9Iwc {
+  background-color: var(--notif);
+  box-shadow: inset 0 0 0 1px var(--notif);
+  color: var(--primary);
+  font-family: var(--fontFamily, Slack-Lato, "CircularPro", appleLogo, sans-serif);
+}
+#mtslack .c-menu_item__li--highlighted > :not(.p-ia4_create_menu__item) .callout__G9Iwc {
+  background-color: var(--notif);
+  box-shadow: inset 0 0 0 1px var(--notif);
+  color: var(--fg);
+}
+#mtslack .sk-client-theme--dark .callout__G9Iwc {
+  background-color: var(--notif);
+  box-shadow: inset 0 0 0 1px var(--notif);
+  color: var(--primary);
 }
 #mtslack .p-calls_draw__name_tag {
   background: var(--bg);
@@ -10591,6 +10716,9 @@
 }
 #mtslack .p-emoji_skin_tone_prefs_section__description {
   color: var(--text);
+}
+#mtslack .c-emoji__loading {
+  background: var(--secondBg);
 }
 #mtslack .p-end_dm_dialog_learn_more {
   color: var(--fg);
@@ -15504,6 +15632,14 @@
   background-color: var(--accent2);
   color: var(--selectFg2);
 }
+#mtslack .c-mention_badge--min_gray {
+  background: var(--button);
+  color: var(--text);
+}
+#mtslack .c-mention_badge--min_gray_darken {
+  background: var(--button);
+  color: var(--text);
+}
 #mtslack .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider, #mtslack .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider, #mtslack .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar) {
   background: var(--bg);
   color: var(--fg);
@@ -17581,6 +17717,9 @@
 #mtslack .c-presence--active {
   color: var(--accent) !important;
 }
+#mtslack .c-presence--active:not(.c-presence--resetIA) {
+  color: var(--accent) !important;
+}
 #mtslack .c-presence--away {
   color: var(--text);
 }
@@ -17610,6 +17749,9 @@
 #mtslack .p-channel_sidebar__presence_icon.c-presence--away {
   opacity: 0.64;
   color: var(--p-channel_sidebar__computed-text-color);
+}
+#mtslack .p-ia4_body :not(.p-ia4_client--theming) :not(.p-tab_rail) .c-presence--active:not(.c-presence--resetIA) {
+  filter: brightness(0.85);
 }
 #mtslack .p-preview_message {
   background: var(--bg);
@@ -23504,6 +23646,14 @@
 }
 #mtslack .p-external_directory_footer_link:hover {
   color: var(--selectFg2);
+}
+#mtslack .c-tabs__tab_overflow.c-tabs__tab--active,
+#mtslack .c-tabs__tab_overflow:active {
+  box-shadow: inset 0 -2px 0 0 var(--accent);
+  color: var(--fg);
+}
+#mtslack .c-tabs__tab_overflow.c-tabs__tab--active.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 5px var(--accentT), inset 0 -2px 0 0 var(--accentT);
 }
 #mtslack .p-tasks_page_controls {
   color: var(--text);

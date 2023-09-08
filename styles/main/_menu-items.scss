@@ -1,4 +1,3 @@
-
 .c-menu_item__button {
   color: $fg;
 
@@ -327,6 +326,10 @@
   }
 }
 
+.c-menu_item__submenu-indicator {
+  color: $fg;
+}
+
 .c-menu_item__submenu-indicator:before {
   color: $disabled;
 }
@@ -381,4 +384,145 @@
   &.c-menu_item__button--highlighted {
     color: $selectFg;
   }
+}
+.c-menu_item--standalone:hover {
+  .c-app_badge,
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.c-menu_item__button--highlighted {
+  .c-app_badge,
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.no_touch a.c-menu_item__button--highlighted {
+  .c-app_badge,
+  .c-menu_item__description,
+  .c-menu_item__glimmer {
+    color: $selectFg;
+  }
+
+  .c-menu_item__icon {
+    color: $selectFg;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
+  }
+
+  &:link {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+
+  &:visited {
+    .c-menu_item__description,
+    .c-menu_item__glimmer {
+      color: $selectFg;
+    }
+
+    .c-menu_item__icon {
+      color: $selectFg;
+
+      .c-icon:before {
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.c-submenu .c-menu {
+  @include dropShadow;
 }
