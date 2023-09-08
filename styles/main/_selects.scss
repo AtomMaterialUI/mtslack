@@ -51,7 +51,8 @@
   }
 }
 
-.c-select_input--offscreen {
+.c-select_input--offscreen,
+.c-select_input--offscreen::selection {
   color: transparent;
 }
 

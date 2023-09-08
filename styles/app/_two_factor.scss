@@ -1,0 +1,107 @@
+.two_factor_input_item {
+  border: 1px solid $borderLight;
+
+  &.focused {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    --saf-1: rgba(var(--sk_highlight, 18, 100, 163), 0.3);
+    border: 1px solid $primary;
+    box-shadow: 0 0 0 1px $primary, 0 0 7px $primaryT;
+  }
+
+  input {
+    color: $fg;
+
+    &:disabled {
+      background: $disabled;
+    }
+  }
+}
+
+.confirmation_code[data-state='error'] .split_input_item {
+  border-color: $red;
+}
+
+.confirmation_code_checker .confirmation_code_state_message {
+  color: $fg;
+}
+
+#enter_code_app_root {
+  background-color: $bg;
+}
+
+.p-enter-code__help_button {
+  color: $text;
+
+  .c-link--button.p-enter-code__get_help_link {
+    color: $text;
+  }
+}
+
+.p-enter-code__logged_in_teams {
+  color: $text;
+}
+
+.p-enter_code_app__view_header {
+  font-family: $headerFont;
+}
+
+.p-enter_code_app__view_sub_header {
+  color: $text;
+}
+
+.p-enter-code-app__accept_app_view_container {
+  background-color: $contrast;
+}
+
+.p-enter_code_aubergine_button {
+  background-color: $accent;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accentT;
+  }
+
+  &[disabled] {
+    background-color: $excluded;
+    color: $disabled;
+  }
+}
+
+.p-enter_code_aubergine_button--bright {
+  background-color: $accent;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accentT;
+  }
+
+  &[disabled] {
+    background-color: $excluded;
+    color: $disabled;
+  }
+}
+
+.p-enter_code_aubergine_outline_button {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-enter_code_aubergine_outline_button--bright {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-enter_code .c-alert--level_default {
+  background-color: initial;
+  border-color: #0000;
+}
+
+.p-enter_code__input_fieldset {
+  border: #0000;
+}
+
+.p-enter_code__hint {
+  color: $text;
+}

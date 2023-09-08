@@ -52,3 +52,15 @@
 .sk-client-theme--dark .p-huddle_invite_modal_footer_banner {
   background-color: $bg2;
 }
+
+.p-huddle_invite_suggestion_tabs__menu_item_button__list_entity:hover {
+  background: $hl;
+}
+
+.p-huddle_invite_suggestion_tabs__menu_item__pending_status_container {
+  color: $text;
+}
+
+.p-huddle_start_suggestion_tabs__menu_item_button__list_entity:hover {
+  background: $hl;
+}

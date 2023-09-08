@@ -1,0 +1,9 @@
+.p-home_header__filter_button {
+  color: $text;
+}
+
+.p-home_header__filter_button--active,
+.p-home_header__filter_button:hover {
+  background-color: $active;
+  color: $selectFg;
+}

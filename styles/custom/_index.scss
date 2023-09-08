@@ -4,14 +4,7 @@
 @import 'title';
 @import 'hljs';
 @import 'animations';
-
-#pluginsSection {
-  padding-top: 8px;
-
-  > button {
-    padding: 0 16px;
-  }
-}
+@import 'fab';
 
 .p-channel_sidebar__section_heading_button {
   text-transform: uppercase;

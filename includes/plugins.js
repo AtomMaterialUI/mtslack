@@ -34,60 +34,58 @@ const slackPluginsAPI = {
     });
   },
 
+  _insertTooltip() {
+    const $tooltipContainer = document.createElement('div');
+    $tooltipContainer.style = 'display: none;';
+    $tooltipContainer.className = 'mtslack-tooltip';
+    $tooltipContainer.innerHTML = `
+    <div class="ReactModalPortal2">
+        <div class="ReactModal__Overlay ReactModal__Overlay--after-open c-popover c-popover--no-pointer c-popover--z_above_fs c-popover--fade" 
+        >
+            <div class="ReactModal__Content ReactModal__Content--after-open popover c-popover__content" 
+                 tabindex="-1"
+                 style=""
+            >
+                <div role="presentation">
+                    <div id="mt-tooltip"
+                         role="tooltip" 
+                         class="c-tooltip__tip c-tooltip__tip--top c-tooltip__tip--small" 
+                         data-qa="tooltip-tip" 
+                         data-sk="tooltip"
+                    >
+                        Slack Tweaks
+                        <div class="c-tooltip__tip__arrow" style="left: 63.8906px; right: initial;"/>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </div>
+    `;
+
+    this.$tooltipText = $tooltipContainer.querySelector('#mt-tooltip');
+    this.$tooltipContainer = $tooltipContainer;
+    document.body.append($tooltipContainer);
+  },
+
   /**
    * Create the plugin section in the sidebar
    */
   _insertPluginSection() {
-    // Plugins menu in the sidebar
-    const $pluginsSection = document.createElement('div');
-    $pluginsSection.id = 'pluginsSection';
-    $pluginsSection.style.fontStyle = 'italic';
-    $pluginsSection.addEventListener('click', () => {
+    const $fabButton = document.createElement('div');
+    $fabButton.id = 'pluginsSection';
+    $fabButton.innerHTML = `<button class='p-fab c-icon c-icon--bolt-filled'></button>`;
+    $fabButton.addEventListener('mouseover', () => {
+      this.$tooltipContainer.style.display = 'block';
+    });
+    $fabButton.addEventListener('mouseout', () => {
+      this.$tooltipContainer.style.display = 'none';
+    });
+    $fabButton.addEventListener('click', () => {
       this._showPluginsUI();
     });
 
-    // Menu item
-    const $pluginsLinkBtn = document.createElement('button');
-    $pluginsLinkBtn.className =
-      'c-button-unstyled p-channel_sidebar__link p-channel_sidebar__section_heading_label position_relative';
-    $pluginsLinkBtn.innerHTML = `
-            <i class='mtslack_settings-button c-icon p-channel_sidebar__link__icon c-icon--star c-icon--inherit'
-               type='list' 
-               style="padding: 8px;"
-               aria-hidden='true'></i>
-            <span class='p-channel_sidebar__name' style="padding: 8px;">
-              Slack Tweaks
-            </span>`;
-
     // Add on the top
-    $pluginsSection.appendChild($pluginsLinkBtn);
-    this.$sideBar.prepend($pluginsSection);
-  },
-
-  /**
-   * Show new version banner TODO
-   * @private
-   */
-  _createBanner() {
-    //     setTimeout(() => {
-    //       const version = getComputedStyle(document.documentElement).getPropertyValue('--version').replaceAll('"', '') || '0.0.0';
-    //       if (version && this.version === version) {
-    //         return;
-    //       }
-    //
-    //       const $notif = document.querySelector('.p-ia__workspace_banner');
-    //       $notif.innerHTML = `
-    // <div role="alert" class="c-banner c-banner--neutral p-ia_banner p-workspace_banner__desktop-notifications" data-qa="banner" style="top: 0px; opacity: 1;">
-    //   <div class="c-banner__text">A new version of mtslack is available (${this.version})! Run <code>mtslack</code> in a terminal to update.</div>
-    //     <button class="c-button-unstyled c-icon_button c-icon_button--dark c-icon_button--size_medium c-banner__close" aria-label="Dismiss" type="button">
-    //     <i class="c-icon c-icon--times" type="times" aria-hidden="true"></i>
-    //     </button>
-    //   </div>
-    // </div>`
-    //       $notif.addEventListener('click', () => {
-    //         $notif.innerHTML = '';
-    //       });
-    //     }, 3000);
+    this.$workspace.append($fabButton);
   },
 
   /**
@@ -492,11 +490,15 @@ const slackPluginsAPI = {
         return;
       }
 
-      this.sidebarLoaded = !!document.querySelector('.p-channel_sidebar__static_list');
+      let getWorkspace = () =>
+        document.querySelector('.p-workspace-layout') || document.querySelector('.p-client_workspace');
 
-      if (this.sidebarLoaded) {
-        this.$sideBar = document.querySelector('.p-channel_sidebar__static_list .c-scrollbar__hider');
+      this.clientLoaded = !!getWorkspace();
+
+      if (this.clientLoaded) {
+        this.$workspace = getWorkspace();
         this._insertPluginSection();
+        this._insertTooltip();
         this.loadSettings();
         this.initPlugins();
         // clearInterval(this.interval);

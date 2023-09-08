@@ -1,0 +1,40 @@
+#pluginsSection {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+
+  .p-fab {
+    background-color: $accent;
+    color: $selectFg;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -16px;
+    right: 30px;
+    opacity: 0.3;
+    z-index: 9999999;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      background-color: $accent;
+      bottom: 8px;
+    }
+  }
+}
+.mtslack-tooltip {
+  .ReactModal__Overlay {
+    animation-duration: 80ms;
+  }
+
+  .ReactModal__Content {
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    outline: none;
+    transition-duration: 80ms;
+  }
+}

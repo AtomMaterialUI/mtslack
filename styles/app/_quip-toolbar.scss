@@ -79,3 +79,8 @@
 .p-quip_insertion_toolbar_nux .c-coachmarkv2__title {
   color: $selectFg;
 }
+
+.p-quip_data_labels__placeholders .p-quip_data_labels__placeholder {
+  background-color: $bg;
+  color: $disabled;
+}

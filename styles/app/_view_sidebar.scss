@@ -1,0 +1,37 @@
+.p-view_sidebar {
+  background-color: $contrast;
+}
+
+.p-view_sidebar .p-channel_sidebar__link:not(.p-channel_sidebar__link--selected) {
+  color: $text;
+}
+
+.p-dms_page_header__button {
+  color: $text;
+}
+
+.p-dms_page_header__toggle-button {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-dms_page_header__toggle-button--selected {
+  background-color: $selectBg;
+  color: $selectFg;
+}
+
+.p-dms_page_header_search_bar__clear {
+  color: $text;
+}
+
+.p-dms_page_header_search_bar__clear:hover {
+  color: $primary;
+}
+
+.p-dms_page_header_search_bar__close:hover.c-icon_button--default.c-button-unstyled {
+  background: inherit;
+}
+
+.p-dms_page_banner {
+  background-color: $bg2;
+}

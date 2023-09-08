@@ -1,0 +1,97 @@
+.p-refreshed_page__heading {
+  font-family: $headerFont;
+}
+
+.p-refreshed_page__heading_highlighted {
+  color: $accent;
+}
+
+.p-refreshed_page__heading_highlighted_redesigned {
+  color: $accent;
+}
+
+.p-refreshed_page__subheader_redesigned {
+  font-family: $headerFont;
+}
+
+.p-refreshed_page__sub_heading {
+  color: $bg2;
+}
+
+.p-refreshed_page__body,
+.p-refreshed_page__sub_heading_redesigned {
+  color: $fg;
+}
+
+.p-refreshed_page__header--landing .p-confirmed_email_pill {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-refreshed_page__header--landing .p-confirmed_email_pill .email {
+  color: $fg;
+}
+
+.p-refreshed_page__header--is_horchata_landing_bg {
+  background: $contrast;
+}
+
+.p-refreshed_page__header--sf_slack_logo {
+  background: $contrast;
+}
+
+.p-refreshed_page__header_sidelink {
+  color: $accent2;
+}
+
+.p-refreshed_page_layout__children--gov_slack {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-refreshed_page__footer_container--gov_slack {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-refreshed_page__footer_link {
+  color: $disabled;
+}
+
+.p-refreshed_page__footer_link:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-refreshed_page__footer_locales {
+  background-color: $bg;
+}
+
+.p-refreshed_page__footer_link--gov_slack,
+.p-refreshed_page__header--gov_slack,
+.p-refreshed_page__layout--gov_slack,
+.p-refreshed_page__sub_heading--gov_slack {
+  color: $fg;
+}
+
+.p-refreshed_page__header--gov_slack,
+.p-refreshed_page__layout--gov_slack {
+  background: $bg2;
+}
+
+.p-refreshed_page__footer_link--gov_slack:active,
+.p-refreshed_page__footer_link--gov_slack:focus,
+.p-refreshed_page__footer_link--gov_slack:hover {
+  color: $primary;
+}
+
+.p-refreshed_page__full_background {
+  background: $contrast;
+}
+
+.p-refreshed_page__two_column_section {
+  background-color: $contrast;
+}
+
+.p-refreshed_page__full_width_footer {
+  background: $contrast;
+}

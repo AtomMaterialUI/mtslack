@@ -107,3 +107,23 @@ input.c-multi_select_input__input {
 .c-multi_select_input__medium_filter_query--edit {
   border: 1px dashed $accent;
 }
+
+.c-multi_select_input__remove_token {
+  background-color: $button;
+  color: $text;
+}
+
+.c-multi_select_input__remove_token:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.c-multi_select_input .c-token--selected .c-multi_select_input__remove_token {
+  background-color: $active;
+  color: $text;
+}
+
+.c-multi_select_input .c-token--selected .c-multi_select_input__remove_token:hover {
+  background-color: $hl;
+  color: $selectFg;
+}

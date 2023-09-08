@@ -35,6 +35,8 @@
 }
 
 .p-quip_edit_link_modal__input_section_title__container__image__icon--chevron-down {
+  border-left: 1px solid $borderLight;
+
   &:after {
     border-left: 1px solid $borderLight;
   }
