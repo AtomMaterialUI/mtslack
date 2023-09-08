@@ -11,6 +11,7 @@
 .p-huddle_invite__button {
   background: $button;
   color: $selectFg;
+  border: $border;
 
   &:hover {
     background: $hl;
@@ -38,4 +39,16 @@
 
 .p-huddle_invite__icon--join {
   fill: $fg;
+}
+
+.p-huddle_invite__button--accept:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-huddle_invite_modal_footer_banner {
+  background-color: $bg2;
+}
+
+.sk-client-theme--dark .p-huddle_invite_modal_footer_banner {
+  background-color: $bg2;
 }

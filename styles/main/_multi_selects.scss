@@ -102,3 +102,8 @@ input.c-multi_select_input__input {
     background-color: $accent;
   }
 }
+
+.c-multi_select_input__large_filter_query--edit,
+.c-multi_select_input__medium_filter_query--edit {
+  border: 1px dashed $accent;
+}

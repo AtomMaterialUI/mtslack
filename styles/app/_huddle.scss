@@ -728,3 +728,30 @@
 .p-huddle_sidebar_footer__join_active_container {
   background-color: $active;
 }
+
+.p-huddle_in_thread_speed_bump_modal .c-sk-modal_header {
+  background: $bg2;
+}
+
+.p-huddle_in_thread_speed_bump_modal .c-sk-modal_title_bar {
+  background-color: $bg;
+}
+
+.p-huddle_invite__header_notif {
+  background-color: $bg;
+}
+
+.p-huddle_invite__avatar_container.p-huddle_invite__avatar_container--with_overflow
+  .p-huddle_invite__avatar_overflow_overlay {
+  background-color: $bg;
+  color: $fg;
+  @include card;
+}
+
+.p-huddle_invite__button--joining_soon {
+  color: $primary;
+}
+
+.p-huddle_invite__button--joining_soon:hover {
+  color: $primaryT;
+}

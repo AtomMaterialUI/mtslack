@@ -3525,7 +3525,8 @@
 #mtslack .c-submenu .c-menu {
   box-shadow: 2px 4px 6px black;
 }
-#mtslack .c-app_badge, #mtslack .c-app_label {
+#mtslack .c-app_badge,
+#mtslack .c-app_label {
   color: var(--selectFg2);
   background-color: var(--accent);
   padding: 2px;
@@ -3758,6 +3759,11 @@
 #mtslack .c-select_options_list__wrapper--nightshade_elevation .c-select_options_list__virtual_list--slack_scrollbar::-webkit-scrollbar-thumb, #mtslack .c-select_options_list__wrapper--nightshade_elevation .c-select_options_list__virtual_list--slack_scrollbar::-webkit-scrollbar-track {
   border-left: 4px solid var(--border);
   border-right: 4px solid var(--border);
+}
+#mtslack .c-select_options_list__footer_banner {
+  background: var(--secondBg);
+  border-bottom: 1px solid var(--border);
+  color: var(--disabled);
 }
 #mtslack .sk-client-theme--dark .c-mrkdwn__quote:before {
   background: var(--fg);
@@ -4074,13 +4080,13 @@
 #mtslack .c-token--medium .c-base_entity__text-contents::selection,
 #mtslack .c-token--medium .c-basic_unified_entity__label::selection,
 #mtslack .c-token--medium .c-token_content__label::selection {
-  background-color: none;
+  background: none;
 }
-#mtslack .c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
+#mtslack .c-token--selected:not(.c-token--loading):not(.c-token--invalid, .c-token--disabled, .c-token--error, .c-token--unknown, .c-token--restricted) {
   background: var(--accentT);
   color: var(--selectFg2);
 }
-#mtslack .c-token--selected:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown):hover {
+#mtslack .c-token--selected:not(.c-token--loading):not(.c-token--invalid, .c-token--disabled, .c-token--error, .c-token--unknown, .c-token--restricted):hover {
   background: var(--accent);
 }
 #mtslack .c-token--selected .c-app_badge {
@@ -4118,11 +4124,13 @@
   color: var(--red);
   background: var(--hl);
 }
+#mtslack .c-token--restricted,
 #mtslack .c-token--dark.c-token--disabled,
 #mtslack .c-token--disabled {
   background: var(--button);
   color: var(--disabled);
 }
+#mtslack .c-token--restricted:hover,
 #mtslack .c-token--dark.c-token--disabled:hover,
 #mtslack .c-token--disabled:hover {
   background: var(--button);
@@ -4179,6 +4187,10 @@
 }
 #mtslack .c-base_list_entity--highlight-dark .c-small_mpim_entity__mpim_counter {
   box-shadow: 0 0 0 2px var(--primary);
+}
+#mtslack .c-token--small .c-base_entity__text-contents::selection,
+#mtslack .c-token--small .c-token_content__label::selection {
+  background-color: var(--selectBg);
 }
 #mtslack .c-multi_select_input {
   border: 1px solid var(--button);
@@ -4248,6 +4260,10 @@
 #mtslack .c-token--selected .c-multi_select_token__remove:hover {
   color: var(--primary);
   background-color: var(--accent);
+}
+#mtslack .c-multi_select_input__large_filter_query--edit,
+#mtslack .c-multi_select_input__medium_filter_query--edit {
+  border: 1px dashed var(--accent);
 }
 #mtslack input[type=radio] {
   margin-right: 10px !important;
@@ -7784,6 +7800,13 @@
 #mtslack .p-active_speaker__member_name {
   color: var(--primary);
 }
+#mtslack .p-huddles_draw__name_tag {
+  background: var(--notif);
+  color: var(--fg);
+}
+#mtslack .p-calls_video {
+  background-color: var(--secondBg);
+}
 #mtslack .p-canvas_msg_avatar {
   background: var(--excluded);
   color: var(--text);
@@ -8295,6 +8318,9 @@
 #mtslack .c-channel_entity__shared_icon_additional_team_icon {
   background-color: var(--hl);
   color: var(--primary);
+}
+#mtslack .c-channel_icon--with-background {
+  background-color: var(--button);
 }
 #mtslack .p-channel_sidebar__activity__toast__tip_sub {
   background: var(--notif);
@@ -12494,7 +12520,7 @@
   background-color: var(--bg);
 }
 #mtslack .p-huddle_screen_viewer__mic_button {
-  color: var(--bg);
+  color: var(--fg);
   background-color: var(--button);
 }
 #mtslack .p-huddle_screen_viewer__mic_button:hover {
@@ -12850,6 +12876,7 @@
 #mtslack .p-huddle_invite__button {
   background: var(--button);
   color: var(--selectFg2);
+  border: var(--border);
 }
 #mtslack .p-huddle_invite__button:hover {
   background: var(--hl);
@@ -12871,6 +12898,15 @@
 }
 #mtslack .p-huddle_invite__icon--join {
   fill: var(--fg);
+}
+#mtslack .p-huddle_invite__button--accept:focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
+}
+#mtslack .p-huddle_invite_modal_footer_banner {
+  background-color: var(--secondBg);
+}
+#mtslack .sk-client-theme--dark .p-huddle_invite_modal_footer_banner {
+  background-color: var(--secondBg);
 }
 #mtslack .p-huddle_popover_footer_controls__secondary_btn {
   background: var(--button);
@@ -13692,6 +13728,29 @@
 }
 #mtslack .p-huddle_sidebar_footer__join_active_container {
   background-color: var(--active);
+}
+#mtslack .p-huddle_in_thread_speed_bump_modal .c-sk-modal_header {
+  background: var(--secondBg);
+}
+#mtslack .p-huddle_in_thread_speed_bump_modal .c-sk-modal_title_bar {
+  background-color: var(--bg);
+}
+#mtslack .p-huddle_invite__header_notif {
+  background-color: var(--bg);
+}
+#mtslack .p-huddle_invite__avatar_container.p-huddle_invite__avatar_container--with_overflow .p-huddle_invite__avatar_overflow_overlay {
+  background-color: var(--bg);
+  color: var(--fg);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#mtslack .p-huddle_invite__avatar_container.p-huddle_invite__avatar_container--with_overflow .p-huddle_invite__avatar_overflow_overlay:hover {
+  box-shadow: 0 0 0 1px var(--primary), 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+#mtslack .p-huddle_invite__button--joining_soon {
+  color: var(--primary);
+}
+#mtslack .p-huddle_invite__button--joining_soon:hover {
+  color: var(--primaryT);
 }
 #mtslack .p-ia__main_menu {
   border-top: 1px solid var(--active);
@@ -24975,6 +25034,27 @@
 #mtslack .p-create_bstw_workspace_menu_item--highlighted .p-create_bstw_workspace_menu_item__link {
   color: var(--selectFg2);
 }
+#mtslack .p-trial_entry_point_modal__footer_text {
+  color: var(--text);
+}
+#mtslack .p-trial_entry_point_modal__speedbump {
+  background-color: var(--notif);
+}
+#mtslack .p-trial_entry_point_modal__speedbump .c-modal_speed_bump_content {
+  background-color: inherit;
+}
+#mtslack .sk-client-theme--dark .p-trial_entry_point_modal__speedbump {
+  background-color: var(--notif);
+}
+#mtslack .p-trial_entry_point_modal__speedbump_icon {
+  color: var(--accent);
+}
+#mtslack .sk-client-theme--dark .p-trial_entry_point_modal__speedbump_icon {
+  color: var(--accent);
+}
+#mtslack .p-trial_feature_tooltip__pro_badge {
+  color: var(--selectFg2);
+}
 #mtslack .p-trouble_loading_overlay {
   background: var(--bg);
   color: var(--fg);
@@ -25309,6 +25389,27 @@
     background: var(--button);
     color: var(--selectFg2);
   }
+}
+#mtslack .p-upgrades_alert_banner--blue,
+#mtslack .p-upgrades_alert_banner--purple {
+  background-color: var(--notif);
+  border-color: var(--notif);
+}
+#mtslack .sk-client-theme--dark .p-upgrades_alert_banner--blue,
+#mtslack .sk-client-theme--dark .p-upgrades_alert_banner--purple {
+  background-color: var(--notif);
+  border-color: var(--notif);
+}
+#mtslack .p-upgrades_alert_banner__body .c-link,
+#mtslack .p-upgrades_alert_banner__body .c-link--button {
+  color: var(--accent2);
+}
+#mtslack .p-upgrades_alert_banner__body .c-link--button:hover,
+#mtslack .p-upgrades_alert_banner__body .c-link:hover {
+  color: var(--accent2T);
+}
+#mtslack .p-modal_content_checklist__checklist_check {
+  color: var(--accent);
 }
 #mtslack .p-team_switcher_popover__container {
   background: var(--bg);

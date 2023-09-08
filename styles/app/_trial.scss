@@ -359,3 +359,31 @@
 .p-create_bstw_workspace_menu_item--highlighted .p-create_bstw_workspace_menu_item__link {
   color: $selectFg;
 }
+
+.p-trial_entry_point_modal__footer_text {
+  color: $text;
+}
+
+.p-trial_entry_point_modal__speedbump {
+  background-color: $notif;
+}
+
+.p-trial_entry_point_modal__speedbump .c-modal_speed_bump_content {
+  background-color: inherit;
+}
+
+.sk-client-theme--dark .p-trial_entry_point_modal__speedbump {
+  background-color: $notif;
+}
+
+.p-trial_entry_point_modal__speedbump_icon {
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-trial_entry_point_modal__speedbump_icon {
+  color: $accent;
+}
+
+.p-trial_feature_tooltip__pro_badge {
+  color: $selectFg;
+}

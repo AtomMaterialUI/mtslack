@@ -239,3 +239,9 @@
     border-right: 4px solid $border;
   }
 }
+
+.c-select_options_list__footer_banner {
+  background: $bg2;
+  border-bottom: 1px solid $border;
+  color: $disabled;
+}

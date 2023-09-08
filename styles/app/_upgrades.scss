@@ -132,3 +132,29 @@
     }
   }
 }
+
+.p-upgrades_alert_banner--blue,
+.p-upgrades_alert_banner--purple {
+  background-color: $notif;
+  border-color: $notif;
+}
+
+.sk-client-theme--dark .p-upgrades_alert_banner--blue,
+.sk-client-theme--dark .p-upgrades_alert_banner--purple {
+  background-color: $notif;
+  border-color: $notif;
+}
+
+.p-upgrades_alert_banner__body .c-link,
+.p-upgrades_alert_banner__body .c-link--button {
+  color: $accent2;
+}
+
+.p-upgrades_alert_banner__body .c-link--button:hover,
+.p-upgrades_alert_banner__body .c-link:hover {
+  color: $accent2T;
+}
+
+.p-modal_content_checklist__checklist_check {
+  color: $accent;
+}

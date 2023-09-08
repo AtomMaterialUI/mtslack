@@ -23,12 +23,12 @@
   .c-base_entity__text-contents::selection,
   .c-basic_unified_entity__label::selection,
   .c-token_content__label::selection {
-    background-color: none;
+    background: none;
   }
 }
 
 .c-token--selected {
-  &:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
+  &:not(.c-token--loading):not(.c-token--invalid, .c-token--disabled, .c-token--error, .c-token--unknown, .c-token--restricted) {
     background: $accentT;
     color: $selectFg;
 
@@ -77,6 +77,7 @@
   background: $hl;
 }
 
+.c-token--restricted,
 .c-token--dark.c-token--disabled,
 .c-token--disabled {
   background: $button;
@@ -143,4 +144,9 @@
 
 .c-base_list_entity--highlight-dark .c-small_mpim_entity__mpim_counter {
   box-shadow: 0 0 0 2px $primary;
+}
+
+.c-token--small .c-base_entity__text-contents::selection,
+.c-token--small .c-token_content__label::selection {
+  background-color: $selectBg;
 }
