@@ -26610,6 +26610,52 @@
   border-radius: 4px;
   padding: 16px 24px;
 }
+#mtslack .p-tab_rail {
+  color: var(--fg);
+}
+#mtslack .p-ia4_client .p-tab_rail {
+  --sk_focused-shadow-color: var(--dt_color-brand-core-white);
+  --sk_focused-shadow-color-opaque: var(--dt_color-theme-otl-inv-pry);
+}
+#mtslack .p-tab_rail .c-mention_badge {
+  background-color: var(--accent);
+  color: var(--selectFg2);
+}
+#mtslack .p-tab_rail__button .c-tabs__tab_content {
+  color: var(--text);
+}
+#mtslack .p-tab_rail__button:hover:not(.p-tab_rail__button--setup) .c-tabs__tab_content {
+  color: var(--primary);
+}
+#mtslack .p-tab_rail__button:hover:not(.p-tab_rail__button--setup) .p-tab_rail__button__icon {
+  background-color: var(--tree);
+}
+#mtslack .p-peek_trigger--is-peek-visible .p-tab_rail__button .c-tabs__tab_content {
+  color: var(--fg);
+}
+#mtslack .p-peek_trigger--is-peek-visible .p-tab_rail__button .p-tab_rail__button__icon {
+  background-color: var(--selectBg);
+}
+#mtslack .p-tab_rail__button.p-tab_rail__button--active .c-tabs__tab_content,
+#mtslack .p-tab_rail__button.p-tab_rail__button--active:hover .c-tabs__tab_content,
+#mtslack .p-tab_rail__button:active:not(.p-tab_rail__button--setup) .c-tabs__tab_content {
+  color: var(--fg);
+}
+#mtslack .p-tab_rail__button.p-tab_rail__button--active .p-tab_rail__button__icon,
+#mtslack .p-tab_rail__button.p-tab_rail__button--active:hover .p-tab_rail__button__icon,
+#mtslack .p-tab_rail__button:active:not(.p-tab_rail__button--setup) .p-tab_rail__button__icon {
+  background-color: var(--tree);
+}
+#mtslack .p-tab_rail__button .c-icon_button__badge {
+  outline: 2px solid var(--accent);
+}
+#mtslack .p-tab_rail__tab_menu.c-tabs__tab_menu--vertical .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px var(--primary), 0 0 0 5px var(--primaryT);
+}
+#mtslack .p-tab_rail__tab_menu.c-tabs__tab_menu--vertical .c-tabs__tab:not(.c-tabs__tab--active):hover {
+  background: rgba(0, 0, 0, 0);
+  color: var(--selectFg2);
+}
 #mtslack .p-whats_new__item:not(.p-whats_new__item_last) {
   border-bottom: 1px solid var(--active);
 }

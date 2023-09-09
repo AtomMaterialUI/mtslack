@@ -1,0 +1,60 @@
+.p-tab_rail {
+  color: $fg;
+}
+
+.p-ia4_client .p-tab_rail {
+  --sk_focused-shadow-color: var(--dt_color-brand-core-white);
+  --sk_focused-shadow-color-opaque: var(--dt_color-theme-otl-inv-pry);
+}
+
+.p-tab_rail .c-mention_badge {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-tab_rail__button .c-tabs__tab_content {
+  color: $text;
+}
+
+.p-tab_rail__button:hover:not(.p-tab_rail__button--setup) .c-tabs__tab_content {
+  color: $primary;
+}
+
+.p-tab_rail__button:hover:not(.p-tab_rail__button--setup) .p-tab_rail__button__icon {
+  background-color: $tree;
+}
+
+.p-peek_trigger--is-peek-visible .p-tab_rail__button .c-tabs__tab_content {
+  color: $fg;
+}
+
+.p-peek_trigger--is-peek-visible .p-tab_rail__button .p-tab_rail__button__icon {
+  background-color: $selectBg;
+}
+
+.p-tab_rail__button.p-tab_rail__button--active .c-tabs__tab_content,
+.p-tab_rail__button.p-tab_rail__button--active:hover .c-tabs__tab_content,
+.p-tab_rail__button:active:not(.p-tab_rail__button--setup) .c-tabs__tab_content {
+  color: $fg;
+}
+
+.p-tab_rail__button.p-tab_rail__button--active .p-tab_rail__button__icon,
+.p-tab_rail__button.p-tab_rail__button--active:hover .p-tab_rail__button__icon,
+.p-tab_rail__button:active:not(.p-tab_rail__button--setup) .p-tab_rail__button__icon {
+  background-color: $tree;
+}
+
+.p-tab_rail__button .c-icon_button__badge {
+  outline: 2px solid $accent;
+}
+
+.p-tab_rail__tab_menu.c-tabs__tab_menu--vertical .c-tabs__tab.c-tabs__tab--active.c-button--focus-visible:focus {
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
+}
+
+.p-tab_rail__tab_menu.c-tabs__tab_menu--vertical .c-tabs__tab:not(.c-tabs__tab--active):hover {
+  background: #0000;
+  color: $selectFg;
+}
