@@ -25,7 +25,9 @@
   &:hover {
     background: $accent;
     color: $selectFg;
-    box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight;
+    box-shadow:
+      0 0 0 1px $borderLight,
+      0 4px 12px 0 $borderLight;
   }
 }
 
@@ -242,4 +244,16 @@
   .p-media_viewer_modal__flexpane {
     background: $bg;
   }
+}
+
+.p-media_scrubber_reactions_overlay__dot:before {
+  background: $selectBg;
+}
+
+.p-media_scrubber_reactions_overlay__dot--reacted:before {
+  background: $accentT;
+}
+
+.p-media_scrubber_reactions_overlay__dot--single:not(.p-media_scrubber_reactions_overlay__dot--reacted):before {
+  background: none;
 }

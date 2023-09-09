@@ -171,7 +171,9 @@
 
 .p-setup_send_message_input {
   .c-texty_input.focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -181,7 +183,9 @@
   }
 
   .c-texty_input.focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -239,7 +243,9 @@
   border: 1px solid $borderLight;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -393,4 +399,38 @@
 
 .p-setup_banner__heading--quip_canvas_icon {
   color: $primary;
+}
+
+.p-setup_dismissal_menu__menu_item_dismiss_tips {
+  color: $red;
+}
+
+.p-setup_dismissal_menu__menu_item_dismiss_tips.c-menu_item__button--highlighted,
+.p-setup_dismissal_menu__menu_item_dismiss_tips:hover {
+  color: $selectFg;
+}
+
+.p-opt_out_button_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-opt_out_button_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-opt_out_button_icon--ia4,
+.sk-client-theme--dark .p-opt_out_button_icon--ia4 {
+  background-color: $button;
+}
+
+.sk-client-theme--dark .p-opt_out_button_icon--ia4 {
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-opt_out_button--threads .p-opt_out_button_icon--ia4,
+.sk-client-theme--dark .p-opt_out_button_icon--ia4.p-opt_out_button_icon--add-teammates {
+  background-color: $button;
+  color: $fg;
 }

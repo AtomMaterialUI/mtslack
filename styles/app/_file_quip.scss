@@ -60,7 +60,32 @@
   }
 }
 
+.p-quip_icon {
+  background: $accent;
+}
+
 .p-quip_icon_container {
   background-color: $accent;
   border: 1px solid $border;
+}
+
+.p-quip_icon_container.p-quip_icon_container__ia4_icon {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-file_thumbnail__container--dark-theme .p-quip_icon_container.p-quip_icon_container__ia4_icon {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.c-base_list_entity--highlight-dark .p-quip_icon_container.p-quip_icon_container__ia4_icon,
+.c-base_list_entity--highlight-dark .p-quip_icon_container {
+  background-color: $bg2;
+  color: $accent;
+}
+
+.p-quip_icon_notification_badge {
+  background-color: $accent;
+  border-color: $bg;
 }

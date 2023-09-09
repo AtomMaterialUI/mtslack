@@ -73,7 +73,8 @@
 .c-mini_calendar__month_button:disabled:hover {
   background-color: $button;
 }
-
+.c-date_picker_calendar__date--first_week_start,
+.c-date_picker_calendar__date--last_week_end,
 .c-mini_calendar__date {
   border: 1px solid $borderLight;
 }

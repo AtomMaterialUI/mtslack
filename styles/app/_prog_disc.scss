@@ -205,6 +205,11 @@
   background-color: $bg2;
 }
 
+.p-setup_prog_disc_message_menu_explainer_tip--ia4 {
+  background-color: $bg2;
+  color: $fg;
+}
+
 .p-setup_prog_disc_empty_reply_bar {
   background: $primary;
 
@@ -252,6 +257,33 @@
   }
 }
 
+@keyframes prog_disc_icon_action_reacji--bg-color--ia4 {
+  0% {
+    background-color: transparent;
+  }
+  to {
+    background-color: $primary;
+  }
+}
+
+@keyframes prog_disc_icon_action_reacji--bg-color--dark-ia4 {
+  0% {
+    background-color: transparent;
+  }
+  to {
+    background-color: $primary;
+  }
+}
+
+@keyframes prog_disc_icon_action_reacji_bg_color--dark {
+  0% {
+    background-color: transparent;
+  }
+  to {
+    background-color: $primary;
+  }
+}
+
 @keyframes prog_disc_icon_action_reacji--bg-color-restore {
   0% {
     background-color: $primary;
@@ -262,13 +294,50 @@
   }
 }
 
+@keyframes prog_disc_icon_action_reacji_bg_color_restore--dark {
+  0% {
+    background-color: $primary;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--at_mention .p-setup_prog_disc_icon_action__icon,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--attachments .p-setup_prog_disc_icon_action__icon,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--completed_all .p-setup_prog_disc_icon_action__icon,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--video_clips .p-setup_prog_disc_icon_action__icon,
 .p-setup_prog_disc_icon_action--at_mention .p-setup_prog_disc_icon_action__icon,
 .p-setup_prog_disc_icon_action--attachments .p-setup_prog_disc_icon_action__icon,
-.p-setup_prog_disc_icon_action--completed_all .p-setup_prog_disc_icon_action__icon {
+.p-setup_prog_disc_icon_action--completed_all .p-setup_prog_disc_icon_action__icon,
+.p-setup_prog_disc_icon_action--video_clips .p-setup_prog_disc_icon_action__icon {
   background-color: $button;
 }
 
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--at_mention .p-top_nav__help,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--attachments .p-top_nav__help,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--completed_all .p-top_nav__help,
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--video_clips .p-top_nav__help,
+.p-setup_prog_disc_icon_action--at_mention .p-top_nav__help,
+.p-setup_prog_disc_icon_action--attachments .p-top_nav__help,
+.p-setup_prog_disc_icon_action--completed_all .p-top_nav__help,
+.p-setup_prog_disc_icon_action--video_clips .p-top_nav__help {
+  background-color: $bg !important;
+  color: $primary !important;
+}
+
 @keyframes prog_disc_icon_action_texty_button--bg-color {
+  0% {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: $primary;
+  }
+}
+
+@keyframes prog_disc_icon_action_texty_button_bg_color--dark {
   0% {
     background-color: transparent;
   }
@@ -386,4 +455,17 @@
 .p-setup_prog_disc_sidebar_tip__content {
   background: $notif;
   color: $selectFg;
+}
+
+.p-setup_prog_disc_icon_action--ia4 {
+  animation-name: prog_disc_icon_action_reacji--bg-color--ia4, prog_disc_icon_action_reacji--width;
+  background-color: var(--dt_color-theme-base-inv-hgl-1, rgb(var(--dt_color-plt-ocean-70)));
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--ia4 {
+  animation-name: prog_disc_icon_action_reacji--bg-color--dark-ia4, prog_disc_icon_action_reacji--width;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_icon_action--ia4 .p-setup_prog_disc_icon_action__text {
+  color: $fg;
 }

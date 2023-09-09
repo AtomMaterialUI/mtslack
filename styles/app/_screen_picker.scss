@@ -1,0 +1,13 @@
+.p-screen_picker__screen:hover {
+  background: $bg2;
+}
+
+.p-video_recorder_screen_picker_tile:hover:not(.p-video_recorder_screen_picker_tile--selected) {
+  background-color: $tree;
+  border-color: $tree;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-video_recorder_screen_picker_tile:hover:not(.p-video_recorder_screen_picker_tile--selected) {
+  color: $fg;
+}

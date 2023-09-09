@@ -45,10 +45,23 @@
 
   &.c-presence--away {
     opacity: 0.64;
-    color: var(--p-channel_sidebar__computed-text-color);
+    color: $text;
   }
 }
 
 .p-ia4_body :not(.p-ia4_client--theming) :not(.p-tab_rail) .c-presence--active:not(.c-presence--resetIA) {
   filter: brightness(0.85);
+}
+
+.p-shouty_rooster_animation--cloud,
+.p-shouty_rooster_animation--shout {
+  fill: #fff;
+}
+
+.p-message_pane_modal_rooster__header--dark .p-shouty_rooster_animation--cloud {
+  fill: #b1b1b1;
+}
+
+.p-message_pane_modal_rooster__header--dark .p-shouty_rooster_animation--shout {
+  fill: #4d4d4d;
 }

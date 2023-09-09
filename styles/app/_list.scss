@@ -1,0 +1,58 @@
+.p-list_icon {
+  background: $bg2;
+}
+
+.p-list_icon--default {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-list_icon--search {
+  background: none;
+}
+
+.c-file_entity_thumbnail_icon--img-border:after {
+  border: 1px solid $border;
+}
+
+.c-base_list_entity--highlight-dark .c-file-entity-bold-description,
+.c-base_list_entity--highlight-dark .c-file_entity__icon:before {
+  color: $selectFg;
+}
+
+.c-base_list_entity--dim .c-file_entity__icon:before {
+  color: $text;
+}
+
+.c-file_entity--exception {
+  color: $disabled;
+}
+
+.c-file-entity-bold-description {
+  color: $text;
+}
+
+.c-file_entity-refresh-link {
+  color: $fg;
+}
+
+.c-file_entity-refresh__highlighted {
+  color: $accent2;
+}
+
+.c-file_entity__view_only_icon {
+  background-color: $excluded;
+  color: $text;
+}
+
+.p-thread_mention_warning__illustration {
+  background: $tree;
+}
+
+.p-message_pane_modal_pigeon__header {
+  background: $bg2;
+}
+
+.p-message_pane_modal_pigeon__header--dark {
+  background: $bg2;
+}

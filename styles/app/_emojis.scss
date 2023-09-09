@@ -5,7 +5,9 @@
 .p-customize_emoji_wrapper__container .focus-ring,
 .p-delete_custom_emoji_dialog__container .focus-ring,
 .p-rename_emoji_dialog__container .focus-ring {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-customize_emoji_list__disabled_table .c-table_view_container {
@@ -130,6 +132,10 @@
 
 .p-emoji_picker__list_container {
   background: $bg2;
+}
+
+.p-emoji_picker__handy_rxns {
+  border-bottom: 1px solid $border;
 }
 
 .supports_custom_scrollbar .p-emoji_picker__list_scroller {
@@ -305,7 +311,7 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker__emoji_deluxe_label {
-  color: $text;
+  color: $primary;
 }
 
 .p-emoji_picker__preview_text {
@@ -456,7 +462,9 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 }
 
 .p-emoji_picker_skintone__radio_button_container--focus-visible img {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-emoji_picker__pack_cta_wrapper {
@@ -470,6 +478,11 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_picker__pack_cta_link {
   color: $primary;
+}
+
+.sk-client-theme--dark .p-productivity_emoji_content-aliases,
+.p-productivity_emoji_content-aliases {
+  border: 1px solid $borderLight;
 }
 
 .p-productivity_emoji_content-aliases--light {
@@ -501,7 +514,9 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
   &:focus-within {
     border-color: $primary;
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -515,4 +530,44 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .c-emoji__loading {
   background: $bg2;
+}
+
+.p-emoji_multi_skintone_popover__container {
+  background: $bg;
+}
+
+.p-emoji_multi_skintone_popover__row--last_row {
+  border-top: 1px solid $border;
+}
+
+.p-emoji_multi_skintone_popover__emoji:hover {
+  border: 1px solid $border;
+}
+
+.p-emoji_multi_skintone_popover__emoji--selected {
+  background: $primaryT;
+}
+
+.p-emoji_multi_skintone_popover_emoji__label_wrapper:focus-within
+  .p-emoji_multi_skintone_popover__emoji--focus-visible {
+  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
+}
+
+.p-emoji_multi_skintone_popover__button.c-link--button.p-emoji_multi_skintone_popover__button--highlight:hover {
+  border: 1px solid $borderLight;
+}
+
+.p-emoji_multi_skintone_popover__pointer {
+  background: $bg;
+}
+
+.p-emoji_multi_skintone_popover__pointer--top {
+  box-shadow: -1px 1px 0 0 $border;
+}
+
+.p-emoji_multi_skintone_popover__pointer--bottom {
+  box-shadow: -1px -1px 0 0 $border;
 }

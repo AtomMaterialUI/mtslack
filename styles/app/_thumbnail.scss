@@ -25,13 +25,17 @@
 }
 
 .p-file_hover_preview__inner_container {
-  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+  box-shadow:
+    0 0 0 1px $contrast,
+    0 4px 12px 0 $contrast;
   background-color: $bg;
 }
 
 .p-file_hover_preview__inner_container--interactive {
   &:hover {
-    box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+    box-shadow:
+      0 0 0 1px $contrast,
+      0 4px 12px 0 $contrast;
   }
 }
 
@@ -74,11 +78,19 @@
 }
 
 .p-file_search_menu {
-  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 $contrast;
+  box-shadow:
+    0 0 0 1px $contrast,
+    0 4px 12px 0 $contrast;
   background-color: $bg;
 }
 
 .p-file_thumbnail__container--exception,
 .p-file_thumbnail__container--svg {
   background: $bg2;
+  color: $fg;
+}
+
+.p-file_thumbnail__slides {
+  background-color: $orange;
+  color: $selectFg;
 }

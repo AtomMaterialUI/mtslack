@@ -3,6 +3,7 @@
   @include dropShadow;
 }
 
+.c-coachmark--refurbish.c-coachmark--top-right,
 .c-coachmark--top-left,
 .c-coachmark--top {
   &:after {
@@ -13,7 +14,8 @@
     border-top-color: $borderLight;
   }
 }
-
+.c-coachmark--refurbish.c-coachmark--bottom-left,
+.c-coachmark--refurbish.c-coachmark--bottom-right,
 .c-coachmark--bottom {
   &:after {
     border-bottom-color: $notif;
@@ -33,7 +35,7 @@
     border-bottom-color: $borderLight;
   }
 }
-
+.c-coachmark--refurbish.c-coachmark--left-bottom,
 .c-coachmark--left-top,
 .c-coachmark--left {
   &:after {
@@ -45,6 +47,8 @@
   }
 }
 
+.c-coachmark--refurbish.c-coachmark--right-bottom,
+.c-coachmark--refurbish.c-coachmark--right-top,
 .c-coachmark--right {
   &:after {
     border-right-color: $notif;
@@ -124,7 +128,9 @@
 
 .p-setup_create_channel_coachmark {
   background: $notif;
-  box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
+  box-shadow:
+    0 0 0 1px $contrast,
+    0 18px 48px 0 $contrast;
 
   &.c-coachmark--right {
     &:after,

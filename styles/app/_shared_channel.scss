@@ -74,8 +74,22 @@
   color: $accent2;
 }
 
+.p-message_pane_modal_rooster__header--dark,
 .p-message_pane_modal_rooster__header {
   background: $bg2;
+}
+
+.p-message_pane_modal_rooster__header--animation.p-message_pane_modal_rooster__header--dark,
+.p-message_pane_modal_rooster__header--animation {
+  background: $accent;
+}
+
+.p-spicy_sparrow_lottie_animation.p-spicy_sparrow_lottie_animation--light {
+  background-color: $primary;
+}
+
+.p-spicy_sparrow_lottie_animation.p-spicy_sparrow_lottie_animation--dark {
+  background-color: $primary;
 }
 
 .p-message_pane_modal_rooster__header--feature_at_here_warning {
@@ -168,7 +182,9 @@
   border: 1px solid $borderLight;
 
   &.c-button--focus-visible:focus {
-    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
   }
 }
 

@@ -2,6 +2,10 @@
   background: $contrast;
 }
 
+.p-composer__selection_comment_count {
+  color: $disabled;
+}
+
 .p-composer__body--overflow {
   background: $bg;
 }
@@ -62,6 +66,20 @@
     &:hover {
       background-color: $selectBg;
     }
+  }
+
+  &[aria-pressed='true'] {
+    background-color: $active;
+    color: $fg;
+  }
+
+  &[aria-pressed='true']:focus,
+  &[aria-pressed='true']:hover {
+    background-color: $hl;
+  }
+
+  &[aria-pressed='true'] .c-basic_container {
+    background: $bg;
   }
 }
 
@@ -141,7 +159,9 @@
 
   .p-composer__link_form_button {
     &:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
     }
   }
 
@@ -149,7 +169,9 @@
     background: transparent;
 
     &:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
     }
   }
 }
@@ -203,7 +225,9 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 
   &.p-composer__button--selected {
@@ -220,6 +244,74 @@
   &:active {
     background-color: $hl;
     color: $selectFg;
+  }
+
+  &.p-composer__separator {
+    background: $borderLight;
+  }
+
+  &.c-icon_button:active {
+    background-color: #fff;
+    color: #1a1d21;
+  }
+
+  &.c-icon_button[aria-pressed='true'] {
+    background-color: $active;
+  }
+
+  &.c-icon_button[aria-pressed='true']:focus,
+  &.c-icon_button[aria-pressed='true']:hover {
+    background-color: $hl;
+  }
+
+  &.c-icon_button[aria-pressed='true'] &.c-basic-select,
+  &.c-icon_button {
+    background: $active;
+    color: $selectFg;
+  }
+
+  &.c-basic-select .c-select_button__icon,
+  &.c-icon_button .c-select_button__icon {
+    color: $selectFg;
+  }
+
+  &.c-basic-select[disabled],
+  &.c-basic-select[disabled]:hover,
+  &.c-icon_button[disabled],
+  &.c-icon_button[disabled]:hover {
+    background-color: $button;
+    color: $disabled;
+  }
+
+  &.c-basic-select[disabled] .c-select_button__icon,
+  &.c-basic-select[disabled]:hover .c-select_button__icon,
+  &.c-icon_button[disabled] .c-select_button__icon,
+  &.c-icon_button[disabled]:hover .c-select_button__icon {
+    color: $disabled;
+  }
+
+  &.c-basic-select:hover,
+  &.c-icon_button:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &.c-basic-select:hover .c-select_button__icon,
+  &.c-icon_button:hover .c-select_button__icon {
+    color: $selectFg;
+  }
+
+  &.c-basic-select:focus,
+  &.c-icon_button:focus {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+    outline: none;
+  }
+
+  &.c-basic-select.p-composer__button--adjoin-left,
+  &.c-basic-select.p-composer__button--adjoin-right {
+    background: $button;
   }
 }
 
@@ -239,6 +331,23 @@
   color: $selectFg;
 }
 
+.p-composer__button__floating_options_list_wrapper:not(.sk-client-theme--dark) {
+  background: $button;
+
+  .p-composer__button__floating__option {
+    color: $text;
+  }
+
+  .c-select_options_list__option--selected:not(:hover, .c-select_options_list__option--active) {
+    color: $accent;
+  }
+
+  .c-select_options_list__divider hr {
+    background: $bg2;
+    border: none;
+  }
+}
+
 .p-composer__separator--floating {
   background: $borderLight;
 }
@@ -253,7 +362,9 @@
 }
 
 .p-composer_page__subheader--focused {
-  box-shadow: 0 1px 0 0 $borderLight, 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 1px 0 0 $borderLight,
+    0 4px 12px -2px rgba(0, 0, 0, 0.08);
 }
 
 .p-composer_page__header {
@@ -442,14 +553,18 @@
   &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
     .ql-attachments,
     .ql-files {
-      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+      box-shadow:
+        0 1px 0 0 $primary,
+        0 -1px 0 0 $primaryT;
     }
   }
 
   &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
     .ql-attachments,
     .ql-files {
-      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+      box-shadow:
+        0 1px 0 0 $primary,
+        0 -1px 0 0 $primaryT;
     }
   }
 
@@ -491,7 +606,9 @@
   }
 
   &.p-message_input--focus-visible .p-message_input_field.focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 
   .p-message_input_file_button {

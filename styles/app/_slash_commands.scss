@@ -1,0 +1,16 @@
+.p-slash_commands_autocomplete_menu_entity__name {
+  color: $fg;
+}
+
+.p-slash_commands_autocomplete_menu_entity__description {
+  color: $text;
+}
+
+.p-slash_commands_autocomplete_menu_entity__container--selected .p-slash_commands_autocomplete_menu_entity__details > *,
+.p-slash_commands_autocomplete_menu_entity__container--selected .p-slash_commands_autocomplete_menu_entity__name {
+  color: $selectFg;
+}
+
+.c-texty_autocomplete.p-slash_commands_autocomplete_menu {
+  @include shadow;
+}

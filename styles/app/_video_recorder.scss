@@ -25,6 +25,10 @@
   background: $bg2;
 }
 
+.p-media_progress_bar--dark {
+  background: $bg2;
+}
+
 .p-video_recorder_footer {
   border-top: 1px solid $borderLight;
 }
@@ -75,6 +79,10 @@
 
 .p-media_progress_bar__bar {
   background: $accent !important;
+
+  &:after {
+    background: $accent;
+  }
 }
 
 .p-video_recorder_mic_button__level {
@@ -90,9 +98,75 @@
 }
 
 .p-video_recorder_canvas__container--camera {
-  background: #000;
+  background: $contrast;
 }
 
 .p-video_recorder_header--bottom_border {
   border-bottom: 1px solid $border;
+}
+
+.p-video_recorder_canvas_buttons__background--over_video {
+  background: linear-gradient(#0000, $contrast);
+}
+
+.p-video_recorder_canvas_buttons__button.c-icon_button--dark:hover {
+  background: $hl;
+}
+
+.p-video_recorder_canvas_buttons__button--highlight,
+.p-video_recorder_canvas_buttons__button--highlight:hover,
+.p-video_recorder_canvas_buttons__button.c-icon_button--dark:hover.p-video_recorder_canvas_buttons__button--highlight {
+  background: $accentT;
+}
+
+.p-video_recorder_countdown_overlay__countdown {
+  color: $selectFg;
+}
+
+.p-video_recorder_loading_spinner {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-video_recorder_loading_spinner span {
+  color: $selectFg;
+}
+
+.p-video_recorder_canvas_screen_picker_tile--no-screen {
+  background-color: $bg;
+}
+.p-video_recorder_screen_picker_tile--selected .p-video_recorder_canvas_screen_picker_tile--no-screen {
+  background: $accent;
+  color: $selectFg;
+}
+.p-video_recorder_screen_picker--gradient:after {
+  background: linear-gradient(to top, $bg, #0000);
+}
+
+.p-video_recorder_screen_picker__no_screen_tile {
+  background: $contrast;
+}
+
+.p-video_recorder_screen_picker_tile--selected .p-video_recorder_screen_picker__no_screen_tile {
+  background: none;
+}
+
+.p-video_thumbnail_dialog__timeline__canvas {
+  box-shadow: 0 0 0 2px $contrast;
+}
+
+.p-video_thumbnail_dialog__timeline__track:focus .p-video_thumbnail_dialog__timeline__canvas {
+  box-shadow: 0 0 0 2px $accent;
+}
+
+.p-video_thumbnail_dialog__timeline__elapsed {
+  border-right: 2px solid $red;
+}
+
+.p-video_thumbnail_dialog__timeline__elapsed__tooltip {
+  background: $notif;
+  color: $fg;
+}
+
+.p-video_thumbnail_dialog__timeline__elapsed__tooltip:after {
+  background: $notif;
 }
