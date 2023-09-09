@@ -15,6 +15,23 @@
   }
 }
 
+.c-member_slug--grey {
+  background: $bg2;
+  color: $text;
+  border-radius: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+
+  &:visited,
+  &:link {
+    color: $text;
+  }
+}
+
 .c-member_slug--unverified {
   border: 1px dotted $active;
   border-radius: 16px;

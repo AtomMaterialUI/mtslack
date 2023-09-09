@@ -1,0 +1,65 @@
+.p-ia4_home_header_menu__button:hover {
+  background-color: $hl;
+}
+
+.p-ia4_home_header_menu__button:active {
+  background-color: $active;
+}
+
+.p-ia4_home_header_menu__row_url {
+  color: $text;
+}
+
+.p-ia4_upgrade_button__container {
+  background-color: $bg;
+}
+
+.p-ia4_upgrade_button__button {
+  background: $button;
+}
+
+.p-ia4_upgrade_button__button:hover {
+  background: $hl;
+}
+
+.p-ia4_sidebar_header {
+  background-color: $contrast;
+}
+
+.p-ia4_sidebar_header.p-ia4_home_header:not(.p-ia4_home_header--setup, .p-ia4_home_header--with_upgrade) {
+  @include shadow;
+}
+
+.p-ia4_sidebar_header.p-ia4_home_header--setup .p-ia4_sidebar_header__title {
+  color: $selectFg;
+}
+
+.p-ia4_sidebar_header__controls {
+  color: $fg;
+}
+
+.p-favorites_sidebar-header {
+  @include shadow;
+}
+
+.p-favorites_sidebar-parent.p-favorites_sidebar-parent--selected,
+.p-favorites_sidebar-parent.p-favorites_sidebar-parent--selected:hover {
+  background-color: $active;
+  color: $selectFg;
+}
+
+.p-favorites_sidebar-parent:hover {
+  background-color: $hl;
+  color: $primary;
+}
+
+.p-favorites_sidebar-child.p-favorites_sidebar-child--selected,
+.p-favorites_sidebar-child.p-favorites_sidebar-child--selected:hover {
+  background-color: $active;
+  color: $selectFg;
+}
+
+.p-favorites_sidebar-child:hover {
+  background-color: $hl;
+  color: $primary;
+}

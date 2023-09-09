@@ -19,6 +19,21 @@
   }
 }
 
+.split_input_item--gov_slack {
+  border-color: $borderLight;
+}
+
+.split_input_item--gov_slack.focused {
+  border: 1px solid $accent;
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 7px $accentT;
+}
+
+.split_input_item--gov_slack input {
+  color: $fg;
+}
+
 .confirmation_code[data-state='error'] .split_input_item {
   border-color: $red;
 }
@@ -49,18 +64,6 @@
 .p-identity_transfer_modal__header__redirect {
   background-color: $bg2;
   color: $primary;
-}
-
-.p-identity_transfer_modal__marketing_consent {
-  border-top: 1px solid $borderLight;
-}
-
-.p-identity_transfer_modal__legal {
-  color: $accent2;
-}
-
-.p-identity_transfer_modal__member_card {
-  @include card;
 }
 
 .p-identity_transfer_modal__content_section {

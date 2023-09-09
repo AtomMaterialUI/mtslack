@@ -1,5 +1,5 @@
 .p-identity_transfer_modal__member_card {
-  border-color: $borderLight;
+  @include card;
 }
 
 .p-identity_transfer_modal__logo--left img {
@@ -8,10 +8,6 @@
 
 .p-identity_transfer_modal__redirect {
   color: $primary;
-}
-
-.p-identity_transfer_modal__member_card {
-  border: 1px solid $borderLight;
 }
 
 .p-identity_transfer_modal__marketing_consent {

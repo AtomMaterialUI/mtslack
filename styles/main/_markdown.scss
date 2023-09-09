@@ -35,7 +35,8 @@
   color: $accent;
 }
 
-.c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
+.c-mrkdwn__mention,
+.c-mrkdwn__user_group--mention {
   background: $active;
 
   &:hover {
@@ -54,4 +55,17 @@
 .sk-client-theme--dark .c-mrkdwn__code,
 .c-mrkdwn__code.c-mrkdwn__code--dark {
   color: $accent2;
+}
+
+@keyframes c-mrkdwn__snitch {
+  0% {
+    background: $accent;
+  }
+  to {
+    background: #0000;
+  }
+}
+
+.c-mrkdwn__snitch {
+  background: $accent;
 }
