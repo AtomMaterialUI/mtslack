@@ -66,3 +66,19 @@
 .p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
   color: var(--p-channel_sidebar__column-bg);
 }
+
+.p-channel_sidebar--iap1 .p-channel_sidebar__list__bottom_banner_fade {
+  background: linear-gradient(to top, $contrast, transparent);
+}
+
+.p-ia__sidebar_header__team_name:hover,
+.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_button:hover,
+.p-channel_sidebar--iap1 .p-channel_sidebar__emoji:hover,
+.p-channel_sidebar__section_heading_button--coachmark-open,
+.p-channel_sidebar__static_list__item:hover .p-channel_sidebar__link--page:not(.p-channel_sidebar__link--selected),
+.p-channel_sidebar__static_list__item:hover .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--selected),
+.p-channel_sidebar__static_list__item:hover .p-channel_sidebar__section-heading--pages-drawer,
+.p-channel_sidebar__static_list__item:hover
+  .p-channel_sidebar__link--all-threads:not(.p-channel_sidebar__link--selected) {
+  background: $hl;
+}

@@ -13,7 +13,9 @@
   }
 
   &.c-texty_input--use_focus_ring.focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -26,6 +28,10 @@
   &.c-texty_input--double_decker.focus:after,
   &.c-texty_input--expanded.focus:after {
     background-color: $primary;
+  }
+
+  code {
+    color: $accent2;
   }
 }
 
@@ -169,7 +175,9 @@
 
 .c-texty_input__container--use_focus_ring {
   .c-texty_input.focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -180,7 +188,9 @@
   }
 
   &.c-texty_input__container--invalid .c-texty_input.focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -302,4 +312,8 @@
       background: $accent;
     }
   }
+}
+
+.c-icon_button.c-texty_input__button--schedule_send.c-texty_input__button--disabled {
+  color: $disabled;
 }

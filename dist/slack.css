@@ -7999,6 +7999,16 @@
 #mtslack .sk-client-theme--dark .p-canvas_nux_coachmark__header_icon {
   color: var(--accent);
 }
+#mtslack .p-canvas_templates_title_badge,
+#mtslack .sk-client-theme--dark .p-canvas_templates_title_badge {
+  background-color: var(--accent);
+  color: var(--selectFg2);
+}
+#mtslack .p-canvas_templates_title_badge.p-canvas_templates_title_badge--channel_canvas,
+#mtslack .sk-client-theme--dark .p-canvas_templates_title_badge.p-canvas_templates_title_badge--channel_canvas {
+  background-color: var(--accent);
+  color: var(--selectFg2);
+}
 #mtslack .c-card {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid var(--active);
@@ -22011,6 +22021,19 @@
 }
 #mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
   color: var(--p-channel_sidebar__column-bg);
+}
+#mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__list__bottom_banner_fade {
+  background: linear-gradient(to top, var(--contrast), transparent);
+}
+#mtslack .p-ia__sidebar_header__team_name:hover,
+#mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_button:hover,
+#mtslack .p-channel_sidebar--iap1 .p-channel_sidebar__emoji:hover,
+#mtslack .p-channel_sidebar__section_heading_button--coachmark-open,
+#mtslack .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__link--page:not(.p-channel_sidebar__link--selected),
+#mtslack .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--selected),
+#mtslack .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__section-heading--pages-drawer,
+#mtslack .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__link--all-threads:not(.p-channel_sidebar__link--selected) {
+  background: var(--hl);
 }
 #mtslack .p-identity_transfer_modal__member {
   border: 1px solid var(--active);

@@ -201,3 +201,15 @@
 .sk-client-theme--dark .p-canvas_nux_coachmark__header_icon {
   color: $accent;
 }
+
+.p-canvas_templates_title_badge,
+.sk-client-theme--dark .p-canvas_templates_title_badge {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-canvas_templates_title_badge.p-canvas_templates_title_badge--channel_canvas,
+.sk-client-theme--dark .p-canvas_templates_title_badge.p-canvas_templates_title_badge--channel_canvas {
+  background-color: $accent;
+  color: $selectFg;
+}

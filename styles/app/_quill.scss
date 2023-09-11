@@ -217,6 +217,10 @@
         }
       }
     }
+
+    blockquote[class*='ql-border-']:after {
+      background-color: $borderLight;
+    }
   }
 
   .ql-placeholder {
@@ -234,6 +238,25 @@
   ol[class*='ql-border-']:before,
   ul[class*='ql-border-']:before {
     background-color: $bg2;
+  }
+
+  ul[data-checked='false'] > li > .slack-docs-list-item-checkbox:before,
+  ul[data-checked='true'] > li > .slack-docs-list-item-checkbox:before {
+    color: $disabled;
+  }
+
+  ul[data-checked='true'] > li {
+    color: $fg;
+  }
+
+  ul[data-checked='false'] > li > .slack-docs-list-item-checkbox:focus:before,
+  ul[data-checked='true'] > li > .slack-docs-list-item-checkbox:focus:before {
+    box-shadow: 0 0 0 5px $accentT;
+    color: $accent;
+  }
+
+  ul[data-checked='true'] > li > .slack-docs-list-item-checkbox:before {
+    color: $accent;
   }
 }
 
@@ -328,11 +351,15 @@
   border-color: $red;
 
   &:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 
   &.c-texty_input--use_focus_ring.focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
