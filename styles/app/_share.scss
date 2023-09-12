@@ -3,7 +3,9 @@
   color: $fg;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -80,4 +82,103 @@
 .p-share_workflow_block__pill {
   background-color: $button;
   color: $accent2;
+}
+
+.p-share_dialog_send_to_huddle__share {
+  color: $accent;
+}
+
+.p-share_dialog_share_locations__conversation_entity {
+  .c-base_list_entity__secondary_content,
+  .c-member__details,
+  .c-small_channel_entity__inline_name_suffix {
+    color: $text;
+  }
+}
+
+.p-share_dialog_share_locations__base_entity .c-base_entity__text-contents {
+  color: $text;
+}
+
+.p-share_dialog_share_locations__revoke_button {
+  border: 1px solid $disabled;
+}
+
+.p-share_dialog_share_locations__add_member_button {
+  &:hover {
+    background-color: $tree;
+  }
+
+  &:active {
+    background-color: $hl;
+  }
+}
+
+.p-share_dialog_share_locations__add_member_icon {
+  background: $tree;
+  color: $primary;
+}
+
+.p-share_dialog_share_locations__tabs--channels .c-scrollbar,
+.p-share_dialog_share_locations__tabs--people .c-scrollbar {
+  border-bottom: 1px solid $border;
+}
+
+.p-share_dialog_share_locations__tabs--channels .c-scrollbar--hidden,
+.p-share_dialog_share_locations__tabs--people .c-scrollbar--hidden {
+  border-bottom: none;
+}
+
+.p-share_dialog_share_locations__tabs--settings {
+  background-color: $bg2;
+
+  .c-scrollbar {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.p-share_dialog_share_locations__settings_group:not(:empty) {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-share_dialog_share_locations__settings_slack_connect_text {
+  color: $text;
+}
+
+.p-canvas_access_management_select__option--danger {
+  &.c-select_options_list__option {
+    color: $red;
+  }
+
+  &.c-select_options_list__option--active {
+    background-color: $red;
+    color: $selectFg;
+  }
+}
+
+.p-share_dialog__private_message_forwarding_coachmark--light {
+  background-color: $bg2;
+}
+
+.p-share_dialog__private_message_forwarding_coachmark--dark {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-share_dialog__private_message_forwarding_coachmark_icon,
+.p-share_dialog__private_message_forwarding_coachmark_icon--light {
+  color: $accent;
+}
+
+.p-share_dialog__private_message_forwarding_coachmark_icon--dark {
+  color: $accent;
+}
+
+.p-share_dialog__private_message_forwarding_coachmark_learn_more_link--light {
+  color: $accent;
+}
+
+.p-share_dialog__private_message_forwarding_coachmark_learn_more_link--dark {
+  color: $accent;
 }

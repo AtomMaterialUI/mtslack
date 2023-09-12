@@ -1,0 +1,10 @@
+.p-slackai_composer_popover {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 $borderLight;
+}
+
+.p-slackai_composer_popover__content_blocks_wrapper {
+  background-color: $overlay;
+}

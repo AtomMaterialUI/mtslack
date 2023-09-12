@@ -43,3 +43,23 @@
     background: $accent;
   }
 }
+
+.p-clips_repackaging_coachmark .p-video_composer_button--highlight.c-button-unstyled {
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-clips_repackaging_coachmark .p-video_composer_button--highlight.c-button-unstyled {
+  color: $accent;
+}
+
+.p-clips_repackaging_coachmark:after {
+  box-shadow:
+    inset 0 0 0 2px $accent,
+    0 0 4px 0 $accent;
+}
+
+.sk-client-theme--dark .p-clips_repackaging_coachmark:after {
+  box-shadow:
+    inset 0 0 0 2px $accent,
+    0 0 4px 0 $accent;
+}

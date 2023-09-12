@@ -258,6 +258,20 @@
   background: $bg2;
 }
 
+.c-texty_input_unstyled__container .ql-editor {
+  ol[class*='ql-border-']:before,
+  ul[class*='ql-border-']:before {
+    background-color: $borderLight;
+  }
+}
+
+.sk-client-theme--dark .c-texty_input_unstyled__container .ql-editor {
+  ol[class*='ql-border-']:before,
+  ul[class*='ql-border-']:before {
+    background-color: $borderLight;
+  }
+}
+
 .c-texty_input__container--sticky_composer {
   .c-texty_input.focus .ql-bp-texty_sticky_formatting_baruttons,
   .c-texty_input.focus ~ .c-texty_buttons,
@@ -316,4 +330,11 @@
 
 .c-icon_button.c-texty_input__button--schedule_send.c-texty_input__button--disabled {
   color: $disabled;
+}
+
+.c-texty_buttons--overflow {
+  background: $button;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 $overlay;
 }
