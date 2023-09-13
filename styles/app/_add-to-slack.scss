@@ -54,7 +54,9 @@
   }
 
   &:focus-within {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -111,4 +113,28 @@
 
 .p-setup_prog_disc_invite_modal_explainer_tip {
   background-color: $notif;
+}
+.sk-client-theme--dark .p-add_to_slack_confirmation__comprehensible_modal .c-sk-modal_header,
+.p-add_to_slack_confirmation__comprehensible_modal .c-sk-modal_header {
+  background-color: $bg2;
+}
+
+.p-add_to_slack_confirmation__invite_list_entity {
+  &:focus-within,
+  &:hover {
+    background-color: $tree;
+  }
+}
+
+.p-add_to_slack_confirmation__invite_list_entity_secondary {
+  color: $text;
+}
+
+.p-add_to_slack_confirmation__invite_list_entity_icon_container {
+  background-color: $excluded;
+}
+
+.p-huddle_onboarding_hover_tip {
+  background-color: $notif;
+  color: $fg;
 }

@@ -8,7 +8,9 @@
   background: $bg;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 
   .p-slack_connect_dm_trial_base_banner__link {
@@ -23,4 +25,9 @@
 .sk-client-theme--dark .p-slack_connect_dm_trial_base_banner__alert {
   background-color: $bg2;
   border-color: $bg2;
+}
+
+.p-slack_connect_dm_invite_success_modal__icon {
+  background-color: $notif;
+  color: $green;
 }

@@ -28,6 +28,7 @@
   background-color: $active;
 }
 
+.p-invite_type_select__two_extra_options__option:nth-last-child(2),
 .p-invite_type_select__option:last-child {
   border-top: solid 1px $borderLight;
 }
@@ -57,12 +58,33 @@
   border-top: 1px solid $borderLight;
 }
 
-.p-comprehensible_invites__type_external__label .p-invite_type_radio_label__image_wrapper {
-  background-color: #cbedf5;
+.p-comprehensible_invites__type__label .p-invite_type_radio_label__image_wrapper,
+.sk-client-theme--dark .p-comprehensible_invites__type__label .p-invite_type_radio_label__image_wrapper,
+.p-comprehensible_invites__type_external__label .p-invite_type_radio_label__image_wrapper,
+.sk-client-theme--dark .p-comprehensible_invites__type_external__label .p-invite_type_radio_label__image_wrapper,
+.p-comprehensible_invites__type_internal__label .p-invite_type_radio_label__image_wrapper,
+.sk-client-theme--dark .p-comprehensible_invites__type_internal__label .p-invite_type_radio_label__image_wrapper {
+  background-color: $active;
 }
 
-.p-comprehensible_invites__type_internal__label .p-invite_type_radio_label__image_wrapper {
-  background-color: #d6edb8;
+.p-comprehensible_invites_invite_note_email_label {
+  color: $text;
+}
+
+.p-comprehensible_invites__trial_speedbump {
+  background-color: $bg;
+
+  .p-trials_gold_color {
+    color: $primary;
+  }
+}
+
+.sk-client-theme--dark .p-comprehensible_invites__trial_speedbump {
+  .p-trials_gold_color {
+    color: $primary;
+  }
+
+  background-color: $bg;
 }
 
 .p-comprehensible_invites_invite_type_modal_footer {
@@ -90,4 +112,8 @@
 
 .p-invite_type_radio_label__icon {
   color: $text;
+}
+
+.p-discount_seats_promo_header {
+  background-color: $contrast;
 }

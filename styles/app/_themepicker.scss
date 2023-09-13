@@ -1,0 +1,68 @@
+.ia4-theming-section {
+  input {
+    position: absolute;
+  }
+}
+.boxContainerWithIcon__SQrZ1 {
+  &:focus-within {
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
+  }
+
+  &.boxContainerSelected__qF-Nd {
+    border-color: $accent;
+    box-shadow: 0 0 0 1px $accent;
+
+    &:hover {
+      box-shadow: 0 0 0 1px $accent;
+    }
+  }
+}
+
+.themePickerContainer__L9qRJ {
+  background-color: $bg2;
+}
+
+.arrowButtons__c-FZm {
+  background-color: $button;
+  box-shadow: 0 0 var(--dt_static_space-0125) $button;
+}
+
+.selectedColorPickerPalette__Yidew {
+  background-color: $selectFg;
+}
+
+.withBorder__UxCrm {
+  border: 1px solid $borderLight;
+}
+
+.boxContainer__qyaod {
+  background-color: $button;
+  border: var(--dt_static_space-px) solid $button;
+}
+
+.boxContainer__qyaod:focus-within,
+.boxContainer__qyaod:hover {
+  background-color: $hl;
+  border-color: $hl;
+}
+
+.boxContainer__qyaod:before {
+  background: $accent;
+}
+
+.boxContainerWithIcon__SQrZ1:focus-within {
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
+}
+
+.boxContainerWithIcon__SQrZ1.boxContainerSelected__qF-Nd {
+  border-color: $accent;
+}
+
+.boxContainerWithIcon__SQrZ1.boxContainerSelected__qF-Nd,
+.boxContainerWithIcon__SQrZ1.boxContainerSelected__qF-Nd:hover {
+  box-shadow: 0 0 0 var(--dt_static_space-px) $primary;
+}

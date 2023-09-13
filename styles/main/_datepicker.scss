@@ -7,7 +7,9 @@
   border: 1px solid $border;
 
   &:focus {
-    box-shadow: 0 0 0 1px $disabled, 0 0 0 5px $tree;
+    box-shadow:
+      0 0 0 1px $disabled,
+      0 0 0 5px $tree;
   }
 }
 
@@ -15,7 +17,9 @@
   border: 1px solid $blue;
 
   &:focus {
-    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+    box-shadow:
+      0 0 0 1px $blue,
+      0 0 0 5px $blue;
   }
 }
 
@@ -23,7 +27,9 @@
   border: 1px solid $green;
 
   &:focus {
-    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+    box-shadow:
+      0 0 0 1px $green,
+      0 0 0 5px $green;
   }
 }
 
@@ -31,7 +37,9 @@
   border: 1px solid $orange;
 
   &:focus {
-    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+    box-shadow:
+      0 0 0 1px $orange,
+      0 0 0 5px $orange;
   }
 }
 
@@ -39,7 +47,9 @@
   border: 1px solid $red;
 
   &:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -49,7 +59,9 @@
   }
 
   &.c-date_picker__input--active {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -89,7 +101,9 @@
   background-color: $bg2;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -117,7 +131,9 @@
   &:focus {
     background-color: $tree;
     color: $selectFg;
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -191,7 +207,9 @@
   background: $button;
 
   &:focus {
-    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -215,4 +233,10 @@
 .c-date_range_picker_calendar--popover {
   background-color: $bg;
   @include dropShadow;
+}
+
+.c-date_range_picker_calendar__date--first_week_start,
+.c-date_range_picker_calendar__date--last_week_end,
+.p-create_event_modal .conference-app-select .conference-link .link-icon {
+  color: $accent;
 }

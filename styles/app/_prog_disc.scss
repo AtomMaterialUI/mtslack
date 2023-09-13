@@ -459,7 +459,7 @@
 
 .p-setup_prog_disc_icon_action--ia4 {
   animation-name: prog_disc_icon_action_reacji--bg-color--ia4, prog_disc_icon_action_reacji--width;
-  background-color: var(--dt_color-theme-base-inv-hgl-1, rgb(var(--dt_color-plt-ocean-70)));
+  background-color: $notif;
 }
 
 .sk-client-theme--dark .p-setup_prog_disc_icon_action--ia4 {
@@ -468,4 +468,110 @@
 
 .sk-client-theme--dark .p-setup_prog_disc_icon_action--ia4 .p-setup_prog_disc_icon_action__text {
   color: $fg;
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark {
+  color: $fg;
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark {
+  background-color: $notif;
+
+  .c-coachmark__close {
+    &.c-icon_button--default,
+    &.c-icon_button--light {
+      color: $fg;
+
+      &:hover {
+        color: $fg;
+      }
+    }
+  }
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark--top {
+  &:after,
+  &:before {
+    border-top-color: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark--top {
+  &:after,
+  &:before {
+    border-top-color: $notif;
+  }
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark--bottom-left {
+  &:after,
+  &:before {
+    border-bottom-color: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark--bottom-left {
+  &:after,
+  &:before {
+    border-bottom-color: $notif;
+  }
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark--left {
+  &:after,
+  &:before {
+    border-left-color: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark--left {
+  &:after,
+  &:before {
+    border-left-color: $notif;
+  }
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark--bottom {
+  &:after,
+  &:before {
+    border-bottom-color: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark--bottom {
+  &:after,
+  &:before {
+    border-bottom-color: $notif;
+  }
+}
+
+.p-setup_prog_disc_success_coachmark--ia4.c-coachmark--right {
+  &:after,
+  &:before {
+    border-right-color: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark--ia4.c-coachmark--right {
+  &:after,
+  &:before {
+    border-right-color: $notif;
+  }
+}
+
+.p-setup_prog_disc_success_coachmark__teach_me_something_else_link {
+  color: $selectFg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_success_coachmark__teach_me_something_else_link {
+  color: $selectFg;
+
+  &:hover {
+    color: $selectFg;
+  }
 }
