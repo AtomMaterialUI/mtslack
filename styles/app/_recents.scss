@@ -14,6 +14,20 @@
   }
 }
 
+
+.p-recent_page__item--active {
+  background: $active;
+
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-recent_page__empty__lightbulb {
+  color: $yellow;
+}
+
+
 .p-recent_page__timestamp {
   color: $text;
 }

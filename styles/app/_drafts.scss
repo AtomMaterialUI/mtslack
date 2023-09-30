@@ -20,7 +20,6 @@
   color: $text;
 }
 
-.p-drafts_page__draft--sending .p-drafts_page__draft_badge,
 .sk-client-theme--dark .p-drafts_page__draft_badge,
 .p-drafts_page__draft_badge {
   background: $accent;
@@ -29,6 +28,8 @@
   border-radius: 5px;
 }
 
+.p-drafts_page__draft--sending .p-drafts_page__draft_badge,
+.p-drafts_page__draft_body--outbounds,
 .p-drafts_page__draft_thread_participants {
   color: $text;
 }
@@ -146,4 +147,10 @@
   .p-drafts_page__edit_buttons__divider {
     background-color: $borderLight;
   }
+}
+
+.sk-client-theme--dark .p-drafts_page__sent-education,
+.p-drafts_page__sent-education {
+  background-color: $bg2;
+  color: $fg;
 }

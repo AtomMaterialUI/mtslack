@@ -55,13 +55,56 @@
   }
 }
 
+.p-prefs_modal__channel_overrides_row {
+  background: $excluded;
+  border: 1px solid $borderLight;
+
+  &:hover {
+    background: $tree;
+    border: 1px solid $borderLight;
+    box-shadow: none;
+  }
+
+  &:hover + .p-prefs_modal__channel_overrides_row,
+  + .p-prefs_modal__channel_overrides_row {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-prefs_modal__channel_overrides_row--isDm {
+  &:hover {
+    border: 1px solid $borderLight;
+
+    &.p-prefs_modal__channel_overrides_row--last {
+      border: 1px solid $borderLight;
+    }
+
+    + .p-prefs_modal__channel_overrides_row {
+      border: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-prefs_modal__channel_overrides_row--last {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-prefs_modal__channel_overrides_row__name--muted,
+.p-prefs_modal__channel_overrides_row__setting {
+  color: $text;
+}
+
+.p-prefs_modal__channel_overrides_row__setting {
+  color: $disabled;
+}
+
 .p-prefs_dialog {
   .p-prefs_modal__channel_overrides_row {
     background: $excluded;
     border: 1px solid $borderLight;
 
     &:hover {
-      background: $bg2;
+      background: $tree;
       border: 1px solid $borderLight;
       box-shadow: none;
     }
@@ -87,7 +130,7 @@
   }
 
   .p-prefs_modal__channel_overrides_row--last {
-    border: 1px solid $borderLight;
+    border-bottom: 1px solid $borderLight;
   }
 
   .p-prefs_modal__channel_overrides_row__name--muted {
@@ -98,6 +141,15 @@
     color: $disabled;
   }
 
+  .p-prefs_modal__radiogroup--theme .p-prefs_modal__radio_decorator {
+    &.p-prefs_modal__radio_decorator--light {
+      background-color: $bg;
+    }
+
+    &.p-prefs_modal__radio_decorator--dark {
+      background-color: $bg;
+    }
+  }
 }
 
 .p-prefs_modal__message_example {
@@ -121,7 +173,8 @@
 }
 
 .p-prefs_dialog {
-  .p-prefs_dialog__message_example_label {
+  .p-prefs_dialog__message_example_label,
+  .p-prefs_dialog__spellcheck_system_prefs_hint {
     color: $text;
   }
 
@@ -132,6 +185,10 @@
   .p-prefs_dialog__message_example_pillow--hovered-example {
     background: $notif;
   }
+}
+
+.p-prefs_dialog__page_options__label--home-dot .p-sidebar_prefs__label__icon:after {
+  background-color: $accent;
 }
 
 .p-prefs_dialog__content:after {

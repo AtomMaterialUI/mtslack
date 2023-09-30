@@ -27,3 +27,37 @@
   bottom: 0;
   border-radius: 0;
 }
+
+.p-lists_access_indicator__button {
+  border: 1px solid $borderLight;
+}
+
+
+.p-status_updated_workflow_modal__trigger .c-select_button__placeholder,
+.p-status_updated_workflow_modal__channel_name_placeholder {
+  color: $primary;
+}
+
+.p-lists_about_modal__download_button {
+  color: $text;
+
+  :hover {
+    color: $primary;
+  }
+}
+
+.p-list_header__list_detail_button {
+  background: $button;
+
+  &:hover {
+    background-color: $tree;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
+.p-list_header__share_button {
+  border: 1px solid $button;
+}
