@@ -210,6 +210,9 @@
   color: $fg;
 }
 
+.sk-client-theme--dark .p-setup_prog_disc_empty_reply_bar,
+.sk-client-theme--dark .p-setup_prog_disc_empty_reply_bar--ia4,
+.p-setup_prog_disc_empty_reply_bar--ia4,
 .p-setup_prog_disc_empty_reply_bar {
   background: $primary;
 
@@ -251,7 +254,6 @@
   0% {
     background-color: transparent;
   }
-
   to {
     background-color: $primary;
   }
@@ -288,7 +290,6 @@
   0% {
     background-color: $primary;
   }
-
   to {
     background-color: transparent;
   }
@@ -298,7 +299,6 @@
   0% {
     background-color: $primary;
   }
-
   to {
     background-color: transparent;
   }
@@ -331,7 +331,6 @@
   0% {
     background-color: transparent;
   }
-
   to {
     background-color: $primary;
   }
@@ -341,7 +340,6 @@
   0% {
     background-color: transparent;
   }
-
   to {
     background-color: $primary;
   }
@@ -408,7 +406,6 @@
   0% {
     background-color: transparent;
   }
-
   to {
     background-color: $primary;
   }
@@ -418,7 +415,6 @@
   0% {
     background-color: $primary;
   }
-
   to {
     background-color: transparent;
   }

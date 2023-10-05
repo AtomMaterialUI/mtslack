@@ -1,0 +1,31 @@
+.p-privacy_prefs_blocked_section__list_item,
+.p-privacy_prefs_hidden_section__list_item {
+  background-color: $bg;
+  color: $fg;
+}
+
+.p-privacy_prefs_blocked_section__verify_section {
+  background-color: $bg2;
+}
+
+.p-privacy_prefs__alert {
+  .c-link--button {
+    color: $accent2;
+  }
+
+  .c-alert__message {
+    color: $text;
+
+    .c-alert__heading {
+      color: $fg;
+    }
+  }
+}
+
+.p-enforced_setting_badge {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}

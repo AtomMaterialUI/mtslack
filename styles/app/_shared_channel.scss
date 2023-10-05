@@ -481,6 +481,19 @@ input[type='text'].c-input_text {
   }
 }
 
+.p-shared_channel_invite_flow_modal_tip__trial_container {
+  background-color: $contrast;
+  border-top: 1px solid $contrast;
+}
+
+.sk-client-theme--dark .p-shared_channel_invite_flow_modal_tip__trial_container {
+  background-color: $contrast;
+}
+
+.p-shared_channel_invite_flow_modal_tip__text_container {
+  color: $fg;
+}
+
 .p-shared_channel_invite_flow_modal_tip__container {
   border-top: 1px solid $borderLight;
   background: $notif;

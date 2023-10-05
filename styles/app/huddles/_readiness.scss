@@ -1,0 +1,25 @@
+.p-huddle_readiness_checker__label--default_color {
+  color: $fg;
+}
+
+.p-huddle_readiness_checker__container {
+  &.pending {
+    color: $fg;
+  }
+
+  &.running {
+    color: $accent;
+  }
+
+  &.success {
+    color: $green;
+  }
+
+  &.failed {
+    color: $red2;
+  }
+}
+
+.p-huddle_readiness_checker__container--title {
+  color: $primary;
+}

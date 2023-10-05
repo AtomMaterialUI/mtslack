@@ -11,10 +11,10 @@
   color: $primary;
 }
 
-//.c-react_virtualized_table__scroll-indicator {
-//  --saf-0: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 0.25);
-//  box-shadow: 4px 0 4px 0 var(--saf-0);
-//}
+.c-table_spacer,
+.c-table_spacer_header {
+  background: $bg;
+}
 
 .c-react_virtualized_table--bottom-left,
 .c-react_virtualized_table--top-left {
@@ -41,17 +41,33 @@
   border-bottom: 1px solid $active;
 }
 
+//.c-data_table__row--warning {
+//  background-color: $excluded;
+//}
+//
+//.c-data_table__row--error {
+//  border: 1px solid $red2;
+//}
+
+.c-data_table__row--selectable:hover {
+  background-color: $hl;
+}
+
 .c-data_table__row--hover {
   background-color: $active;
 }
 
 .c-data_table__header_row--focus:after,
 .c-data_table__row--focus:after {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .c-data_table--focus-visible .c-data_table__header_column:focus .c-table_column_header {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .c-table_row_actions .c-action_buttons__button {
@@ -72,7 +88,12 @@
 }
 
 .c-data_table__row--selected {
-  background-color: $hl;
+  background-color: $active;
+
+  &.c-data_table__row--hover,
+  &:hover {
+    background-color: $hl;
+  }
 }
 
 .c-message_attachment,

@@ -109,3 +109,34 @@
     }
   }
 }
+
+.p-huddle_msg_avatar {
+  background: $bg;
+  color: $text;
+}
+
+.p-huddle_msg_avatar--live {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-ia4_client--theming .p-huddle_msg_avatar--live {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-huddle_msg_avatar--scheduled {
+  background: $bg2;
+  color: $accent;
+}
+
+.p-assistant_thread_avatar {
+  background: $bg;
+  color: $text;
+}
+
+.p-list_edit_avatar__icon {
+  background-color: $accent;
+  color: $selectFg;
+  outline: 2px solid $bg;
+}

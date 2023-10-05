@@ -40,6 +40,10 @@
   }
 }
 
+.c-message__sender--postfix {
+  color: $fg;
+}
+
 .c-message__body,
 .c-message--light .c-message__sender .c-message__sender_button {
   color: $fg;
@@ -182,7 +186,6 @@
 .c-message__body--tombstone {
   color: $disabled;
 }
-
 
 @keyframes c-message--to-grey {
   0% {
@@ -418,6 +421,48 @@ a.c-message__call_name--linked {
   background: $notif;
 }
 
+.c-message_kit__background--labels--saved_for_later {
+  background: $button;
+}
+
+.c-message_kit__background--labels--later {
+  background: $button;
+}
+
+.c-message_kit__background--labels--linked_workflow {
+  background: $button;
+
+  .c-message_kit__labels__link {
+    color: $accent2;
+
+    &:focus,
+    &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-message_kit__background--labels--file_annotation {
+  background: $bg;
+
+  &.c-message_kit__background--hovered {
+    background: $hl;
+  }
+}
+
+.c-message_kit__background--labels--is_auto_send {
+  background: none;
+
+  &.c-message_kit__background--hovered {
+    background: $bg2;
+  }
+}
+
+.p-ia4_client--theming .c-message_kit__background--huddle,
+.c-message_kit__background--huddle {
+  background: $bg2;
+}
+
 .c-message_kit__background--editing {
   background: $hl;
 }
@@ -456,7 +501,9 @@ a.c-message__call_name--linked {
 
 .p-message_pane__top_banners > .p-message_pane__search_tip_banner {
   background: $notif;
-  box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $tree;
+  box-shadow:
+    0 0 0 1px $borderLight,
+    0 4px 12px 0 $tree;
 }
 
 .p-message_pane__search_tip_banner_action {
