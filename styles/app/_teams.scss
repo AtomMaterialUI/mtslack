@@ -162,7 +162,7 @@
 
 .c-base_list_entity--highlight-dark {
   color: $fg;
-  background-color: $hl;
+  background-color: transparent;
 }
 
 .c-base_list_entity--highlight-dim {
@@ -171,7 +171,7 @@
 }
 
 .c-base_list_entity--highlight-light {
-  background-color: $tree;
+  background-color: transparent;
 }
 
 .c-base_list_entity--small {

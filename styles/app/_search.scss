@@ -182,6 +182,10 @@
   border-left: 1px solid $borderLight;
 }
 
+.c-search__pager_feedback_link_grid_view {
+  color: $text;
+}
+
 .c-search__pager_search_as_a_page_feedback {
   color: $accent2;
 
@@ -207,6 +211,16 @@
 .c-search_query_entity__token {
   background-color: $excluded;
   color: $fg;
+}
+
+.c-search_query_entity__member_token--hidden_user {
+  color: $text;
+}
+
+.c-search_query_entity__search-cta {
+  background-color: $accent;
+  box-shadow: 0 1px 0 $accentT;
+  color: $selectFg;
 }
 
 .c-search__no_results {
@@ -296,4 +310,13 @@
 .c-search__query_refinement_suggestion_term--filter__inner {
   background: $bg2;
   color: $primary;
+}
+
+.c-search__query_refinement_suggestion_wrapper,
+.c-search__query_refinement_suggestion_wrapper_experiment {
+  color: $text;
+}
+
+.c-search__query_refinement_suggestion_wrapper_experiment:hover .c-search__query_refinement_suggestion_term {
+  color: $accent;
 }

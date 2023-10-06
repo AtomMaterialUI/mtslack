@@ -208,3 +208,53 @@
     color: $text;
   }
 }
+
+.p-custom_status_modal__expiration_default_label .c-select_button--large {
+  border-color: $button;
+
+  svg path {
+    stroke: $button;
+  }
+}
+
+.p-custom_status_modal__expiration_custom {
+  .c-date_time_picker__date_picker_container {
+    .c-date_picker__select_btn--large,
+    .c-date_picker__select_input,
+    .c-input_text_icon__icon--large,
+    .c-select_input,
+    .c-select_input__content {
+      border-color: $button;
+    }
+  }
+
+  .c-date_time_picker__time_picker_container {
+    .c-date_picker__select_btn--large,
+    .c-date_picker__select_input,
+    .c-input_text_icon__icon--large,
+    .c-select_input,
+    .c-select_input__content {
+      border-color: $button;
+    }
+  }
+
+  .c-date_time_picker__date_picker_container {
+    .c-date_picker__select_btn--large:focus,
+    .c-date_picker__select_input:focus,
+    .c-input_text_icon__icon--large:focus,
+    .c-select_input:focus,
+    .c-select_input__content:focus {
+      border-color: #0000;
+    }
+  }
+
+  .c-date_time_picker__time_picker_container {
+    .c-date_picker__select_btn--large:focus,
+    .c-date_picker__select_input:focus,
+    .c-input_text_icon__icon--large:focus,
+    .c-select_input:focus,
+    .c-select_input__content:focus {
+      border-color: #0000;
+    }
+  }
+}

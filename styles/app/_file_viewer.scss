@@ -14,6 +14,10 @@
   background: $bg;
 }
 
+.c-file_container--has_thumb .c-file__actions:before {
+  background-image: linear-gradient(90deg, #fff0, $bg 20px);
+}
+
 .c-file__title {
   color: $fg;
 }
@@ -43,6 +47,7 @@
 
 .c-file__actions--overflow {
   background: $active;
+  border: 1px solid $borderLight;
 }
 
 .c-file__action_button {
@@ -86,9 +91,8 @@
 }
 
 .c-pillow_file_container {
-  background: $bg2;
-  border: 1px solid $border;
-  @include card;
+  background: none;
+  border: none;
 
   &.c-pillow_file_container--focus-within,
   &:hover {
@@ -168,6 +172,10 @@
   border: 1px solid $borderLight;
 }
 
+.c-pillow_file__preview--document {
+  border-top: 1px solid $borderLight;
+}
+
 .c-pillow_file__video {
   background: $bg;
 }
@@ -234,4 +242,9 @@
     border: none;
     @include card;
   }
+}
+
+.c-pillow_file__video__placeholder_button {
+  background: $bg;
+  color: $fg;
 }

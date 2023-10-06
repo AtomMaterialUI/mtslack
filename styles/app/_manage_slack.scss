@@ -1,0 +1,51 @@
+.p-manage_slack_connect_request_channel_card {
+  border: 1px solid $border;
+  @include card;
+}
+
+.p-manage_slack_connect_request_header {
+  background-color: $bg2;
+}
+
+.p-manage_slack_connect_request_header_copy_color {
+  color: $text;
+}
+
+.p-manage_slack_connect_request_footer {
+  border-top: 1px solid $border;
+}
+
+.p-manage_slack_connect_request_request_date {
+  color: $text;
+}
+
+.p-manage_slack_connect_request_acted_on_state,
+.p-manage_slack_connect_request_acted_on_state__approved_orgs {
+  border-top: 1px solid $border;
+}
+
+.p-manage_slack_connect_request_acted_on_subtext {
+  color: $text;
+}
+
+.p-manage_slack_connect_request_accept_icon,
+.p-manage_slack_connect_request_accept_icon__approved_orgs {
+  color: $green;
+}
+
+.p-manage_slack_connect_request_decline_icon {
+  color: $red;
+}
+
+.p-requests_view__empty {
+  background-color: $contrast;
+}
+
+.p-manage_slack_connect_modal_row__revoked_invites,
+.p-manage_slack_connect_modal_row__revoked_text {
+  color: $text;
+}
+
+.p-manage_slack_connect_modal__inline_channel_entity {
+  color: $fg;
+}

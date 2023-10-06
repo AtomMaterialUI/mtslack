@@ -89,3 +89,30 @@
   background-color: $accent;
   border-color: $bg;
 }
+
+.p-file_quip_canvas {
+  border-top: 1px solid $border;
+}
+
+.p-file_quip_canvas_text_select .c-select_button__icon--small {
+  color: $accent;
+}
+
+.c-file_metadata_avatar_stack .c-file_metadata_avatar_stack__avatar {
+  background-color: $bg;
+  box-shadow: 0 0 0 2px $bg;
+
+  .c-file_metadata_avatar_stack__overlay {
+    background-color: $overlay;
+    color: $fg;
+  }
+}
+
+.c-file_metadata_avatar_stack__tooltip_subtext {
+  color: $text;
+}
+
+.c-pillow_file_container .c-file__callout_badge {
+  background-color: $accent;
+  color: $selectFg;
+}

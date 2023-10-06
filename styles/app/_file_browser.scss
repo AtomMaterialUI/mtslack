@@ -42,3 +42,37 @@
 .p-browse_page_results__channel_files_results_display {
   background-color: $bg;
 }
+
+.p-browse_sidebar {
+  background-color: $contrast;
+}
+
+.p-browse_sidebar__divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-browse_sidebar__item {
+  &:not(.c-link--disabled) {
+    color: inherit;
+  }
+
+  &.p-browse_sidebar__item--selected {
+    background-color: $tree;
+    color: $primary;
+
+    @include left-indicator;
+
+    &:hover {
+      background-color: $selectBg;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-ia4_client--theming .p-browse_sidebar__item.p-browse_sidebar__item--selected {
+  color: $primary;
+}
+
+.p-browse_sidebar__item:hover {
+  background-color: $tree;
+}

@@ -1,0 +1,51 @@
+.sk-client-theme--dark .p-ia4_create_menu__pro_badge.p-pro_badge--purple,
+.p-ia4_create_menu__pro_badge.p-pro_badge--purple {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-ia4_create_menu {
+  background-color: $bg2;
+
+  .c-menu_item__button--highlighted {
+    background-color: $tree;
+    @include left-indicator;
+  }
+}
+
+.p-ia4_create_menu__header {
+  color: $fg;
+}
+
+.p-ia4_create_menu__item__icon {
+  background-color: $button;
+  color: $text;
+}
+
+.p-ia4_create_menu__item__icon--compose,
+.p-ia4_create_menu__item__icon--canvas,
+.p-ia4_create_menu__item__icon--huddle {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-ia4_create_menu__item__icon--invite {
+  background-color: initial;
+}
+
+.p-ia4_create_menu__item__label__title {
+  color: $fg;
+}
+
+.p-ia4_create_menu__item__label__title__badge {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-ia4_create_menu__item__label__subtitle {
+  color: $text;
+}
+
+.p-ia4_create_menu__item__shortcut {
+  color: $text;
+}

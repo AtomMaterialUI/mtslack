@@ -14,8 +14,10 @@
 }
 
 .c-search_autocomplete__suggestion_item--selected {
-  background: $selectBg;
+  background: $tree;
   color: $selectFg;
+  border-radius: 12px;
+  @include left-indicator;
 
   .c-file_entity__icon:before,
   .c-icon,
@@ -284,4 +286,27 @@
   &:hover {
     box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
+}
+
+.c-search_modal:not(.c-search_modal--autocomplete) {
+  background-color: $overlay;
+}
+
+.c-search_modal--ia4 {
+  .c-search__input_box {
+    box-shadow: none;
+  }
+
+  .c-search__input_box__icon,
+  .c-search__input_box__icon--ia4 {
+    color: $fg;
+  }
+
+  .c-search__input_and_close--focused_input_box .c-search__input_box {
+    box-shadow: none;
+  }
+}
+
+.c-search__input_and_close--focused {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }

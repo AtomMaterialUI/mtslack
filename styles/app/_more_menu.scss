@@ -1,0 +1,31 @@
+.p-ia4_client--theming .p-more_menu .c-menu_item__button--highlighted,
+.p-more_menu .c-menu_item__button--highlighted {
+  background-color: $tree;
+  @include left-indicator;
+}
+
+.p-more_menu .c-menu_item__submenu-indicator {
+  color: $text;
+}
+
+.p-more_menu_icon {
+  background-color: $button;
+  color: $text;
+}
+
+.p-more_menu_header {
+  color: $bg2;
+}
+
+.p-more_menu--submenu {
+  background-color: $bg;
+}
+
+.p-more_menu_callout--ts {
+  background-color: $excluded;
+  color: $disabled;
+}
+
+.p-more_menu_shortcuts {
+  color: $text;
+}

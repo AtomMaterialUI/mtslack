@@ -1,0 +1,18 @@
+.p-message_attachment_tableau_dashboard__icon_container {
+  background: $bg;
+}
+
+.p-open_in_new_window_button.p-open_in_new_window_button--pulse {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:not(:focus):after {
+    box-shadow: 0 0 0 6px $accentT;
+  }
+}

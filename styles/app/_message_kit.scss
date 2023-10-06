@@ -6,6 +6,18 @@
   color: $text;
 }
 
+.c-message_kit__hidden__message__unhidden__text {
+  color: $fg;
+}
+
+.c-message_kit__tombstone__text {
+  color: $disabled;
+
+  .c-message_kit__hidden__message__contents--unhidden {
+    color: $fg;
+  }
+}
+
 .c-message_kit__file__meta__attribution__link {
   color: $fg;
 

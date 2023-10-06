@@ -25,16 +25,12 @@
 }
 
 .p-slack_connect_channel--focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_channel {
   &:focus {
-    box-shadow:
-      0 0 0 1px $primary,
-      0 0 0 5px $primaryT;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
@@ -81,16 +77,12 @@
   @include card;
 
   &.c-card_container {
-    box-shadow:
-      0 0 0 1px $primary,
-      0 1px 3px 0 $primaryT;
+    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
   }
 
   &:focus,
   &:hover {
-    box-shadow:
-      0 0 0 1px $primary,
-      0 4px 12px 0 $primaryT;
+    box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
   }
 
   &:focus .p-slack_connect_empty_landing_page__link_icon,
@@ -130,16 +122,12 @@
 }
 
 .p-slack_connect_invite_sequence--focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_invite_sequence {
   &:focus {
-    box-shadow:
-      0 0 0 1px $primary,
-      0 0 0 5px $primaryT;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
@@ -202,9 +190,7 @@
 
 .p-slack_connect_invite_subway--focus,
 .p-slack_connect_invite_subway:focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_invite_subway__icon {
@@ -262,16 +248,12 @@
 }
 
 .p-slack_connect_invite--focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_invite {
   &:focus {
-    box-shadow:
-      0 0 0 1px $primary,
-      0 0 0 5px $primaryT;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
   }
 }
 
@@ -592,10 +574,7 @@
 }
 
 .p-slack_connect_social_proof_banner_icon__icon + .p-slack_connect_social_proof_banner_icon__icon {
-  box-shadow:
-    -2px 0 0 $bg,
-    -2px 1px 0 $bg,
-    -2px -1px 0 $bg;
+  box-shadow: -2px 0 0 $bg, -2px 1px 0 $bg, -2px -1px 0 $bg;
 }
 
 .sk-client-theme--dark .p-slack_connect_edu_banner {
@@ -604,9 +583,7 @@
 
 .p-slack_connect_edu_banner--focus,
 .p-slack_connect_edu_banner:focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_multi_avatar__icon--front {
@@ -620,22 +597,6 @@
 .p-slack_connect_multi_avatar__icon--multi {
   background-color: $hl;
   color: $fg;
-}
-
-.p-end_dm_dialog_learn_more {
-  color: $text;
-
-  .link {
-    color: $text;
-  }
-
-  .icon {
-    margin-right: 8px;
-  }
-
-  &:hover {
-    color: $text;
-  }
 }
 
 .p-slack_connect_channel--first {
@@ -677,9 +638,7 @@
 
 .p-slack_connect_invite--focus,
 .p-slack_connect_invite:focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_invite--first-of-group {
@@ -819,17 +778,12 @@
 }
 
 .p-team_icon_pile__icon + .p-team_icon_pile__icon {
-  box-shadow:
-    -2px 0 0 $bg,
-    (-2px) 1px 0 $bg,
-    (-2px) -1px 0 $bg;
+  box-shadow: -2px 0 0 $bg, (-2px) 1px 0 $bg, (-2px) -1px 0 $bg;
 }
 
 .p-slack_connect_invite_actions__icon_actions {
   background: $button;
-  box-shadow:
-    0 0 0 1px $button,
-    0 1px 3px 0 $button;
+  box-shadow: 0 0 0 1px $button, 0 1px 3px 0 $button;
 }
 
 .p-slack_connect_card {
@@ -844,9 +798,7 @@
 }
 
 .p-slack_connect_card--focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_card__unread_marker {
@@ -1130,9 +1082,7 @@
 
 .p-slack_connect_hub_edu_banner--focus,
 .p-slack_connect_hub_edu_banner:focus {
-  box-shadow:
-    0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
 }
 
 .p-slack_connect_hub_edu_banner__content {

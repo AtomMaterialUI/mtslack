@@ -4,6 +4,10 @@
   &:focus {
     box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
   }
+
+  &:after {
+    background: $accent;
+  }
 }
 
 .p-media_volume_slider--popover .p-media_volume_slider__track {
@@ -12,4 +16,15 @@
 
 .p-media_volume_slider__fill {
   background: $accent;
+}
+
+.p-media_volume_slider--vertical {
+  .p-media_volume_slider__track {
+    background: $excluded;
+  }
+}
+
+.p-media_viewer_modal .p-media_volume_slider__track,
+.p-media_volume_slider--popover .p-media_volume_slider__track {
+  background: $excluded;
 }

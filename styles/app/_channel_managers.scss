@@ -1,0 +1,50 @@
+.p-channel_managers_modal__list_item {
+  background: $bg;
+
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-channel_managers_modal__list_item--focused {
+  background: $active;
+  @include left-indicator;
+}
+
+.p-channel_managers_modal__add_member_list_item--disabled {
+  color: $disabled;
+}
+
+.p-channel_managers_modal__add_member_list_item__icon {
+  background: $excluded;
+  color: $primary;
+}
+
+.p-channel_managers_modal__add_member_list_item__icon--disabled {
+  background: $excluded;
+  color: $disabled;
+}
+
+.p-channel_manager_field__member {
+  color: $accentT;
+
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 $accentT;
+  }
+  40% {
+    box-shadow: 0 0 16px $accentT;
+  }
+  80% {
+    box-shadow: 0 0 36px transparent;
+  }
+  to {
+    box-shadow: 0 0 36px transparent;
+  }
+}

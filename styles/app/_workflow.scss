@@ -1,0 +1,32 @@
+.p-workflow_trigger_type_label {
+  color: $text;
+}
+
+.p-workflow_details_modal__header {
+  border-bottom: 1px solid $border;
+}
+
+.p-workflow_details_modal__content {
+  background-color: $bg2;
+}
+
+.p-workflow_details_modal__content__section {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-workflow_details_modal__footer {
+  border-top: 1px solid $border;
+}
+
+.p-workflow_steps__step {
+  color: $text;
+}
+
+.p-workflow_steps__step__title--loading_stub {
+  background-color: $bg;
+}
+
+.p-workflow_attribution {
+  color: $text;
+}

@@ -37,3 +37,123 @@
 .p-toggle_channel_space_nux--channel .c-coachmarkv2__close {
   color: $accent;
 }
+
+.p-toggle_channel_space_action {
+  color: $text;
+
+  &[aria-pressed='true'] {
+    background-color: $active;
+    color: $fg;
+
+    &:focus,
+    &:hover {
+      background-color: $tree;
+    }
+  }
+}
+
+.p-ia4_client .p-toggle_channel_space_action_button.p-toggle_channel_space_action--overlay,
+.p-window_layout_wrapper--ia4 .p-toggle_channel_space_action_button.p-toggle_channel_space_action--overlay {
+  border: 1px solid $border;
+}
+
+.p-toggle_channel_space_action__bg {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-toggle_channel_space_action__bg {
+  background-color: $contrast;
+}
+
+.p-toggle_channel_space_action__message_unread_dot {
+  background: $accent;
+}
+
+.p-toggle_channel_space_action_button {
+  color: $text;
+
+  &[aria-pressed='true'] {
+    background-color: $active;
+    color: $fg;
+
+    &:focus,
+    &:hover {
+      background-color: $tree;
+    }
+  }
+}
+
+.p-toggle_channel_space_action_button--active {
+  background-color: $active;
+  color: $fg;
+}
+
+.p-toggle_channel_space_action_button {
+  &:hover {
+    color: $selectFg;
+    background-color: $hl;
+  }
+
+  &.p-toggle_channel_space_action_button--active:hover {
+    background-color: $hl;
+  }
+}
+
+.p-toggle_channel_space_action_nux {
+  background: $bg;
+
+  .c-tooltip__tip__arrow {
+    background: $primary;
+  }
+}
+
+.p-toggle_channel_space_action_overlay_icon--pin {
+  color: $accent;
+}
+
+.p-toggle_channel_space_action_overlay_icon--blue-pulse {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:not(:focus):after {
+    box-shadow: 0 0 0 6px $accentT;
+  }
+}
+
+.p-toggle_channel_space_action_overlay_icon--blue-no-animation {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:not(:focus):after {
+    box-shadow: 0 0 0 6px $accentT;
+  }
+}
+
+.p-toggle_channel_space_action_overlay_icon--badged {
+  color: $accent;
+}
+
+.p-toggle_channel_space_action__unread_badge {
+  background-color: $accent;
+  border: 2px solid $selectFg;
+}
+
+.p-toggle_channel_space_action_button:hover .p-toggle_channel_space_action__unread_badge {
+  border-color: $selectFg;
+}
+
+.p-summary_feedback_modal__clarity_subtext {
+  color: $text;
+}

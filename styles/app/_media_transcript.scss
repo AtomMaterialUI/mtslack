@@ -23,3 +23,14 @@
 .p-media_transcript--popover {
   box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
 }
+
+.p-media_transcript__line--current {
+  .p-media_transcript__text,
+  .p-media_transcript__timestamp {
+    color: $primary;
+  }
+}
+
+.p-media_transcript__preview {
+  color: $text;
+}

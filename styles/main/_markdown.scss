@@ -69,3 +69,11 @@
 .c-mrkdwn__snitch {
   background: $accent;
 }
+
+.p-mrkdwn_element {
+  color: $text;
+
+  .c-mrkdwn__code {
+    color: $text;
+  }
+}

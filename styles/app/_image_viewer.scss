@@ -7,6 +7,7 @@
   background: $button;
   border: 1px solid $borderLight;
   color: $fg;
+
   &:hover {
     color: $primary;
   }
@@ -15,39 +16,50 @@
 .p-zoom__slider {
   &::-moz-range-thumb {
     background: $accent;
+
     &:hover {
-      transition: transform .4s ease;
+      transition: transform 0.4s ease;
       transform: scale(1.5);
     }
   }
+
   &::-moz-range-track {
     background: $fg;
+
     &:hover {
       background: $primary;
     }
   }
+
   &::-webkit-slider-thumb {
     background: $accent;
-     &:hover {
-       transition: transform .4s ease;
+
+    &:hover {
+      transition: transform 0.4s ease;
       transform: scale(1.5);
     }
   }
+
   &::-webkit-slider-runnable-track {
     background: $fg;
+
     &:hover {
       background: $primary;
     }
   }
+
   &::-ms-thumb {
     background: $accent;
-     &:hover {
-       transition: transform .4s ease;
+
+    &:hover {
+      transition: transform 0.4s ease;
       transform: scale(1.5);
     }
   }
+
   &::-ms-track {
     background: $fg;
+
     &:hover {
       background: $primary;
     }
@@ -56,4 +68,8 @@
 
 .p-pdf_viewer {
   border-top: 1px solid $borderLight;
+}
+
+.p-pdf_viewer__error {
+  background-color: $bg;
 }

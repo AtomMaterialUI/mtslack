@@ -1,7 +1,8 @@
 .c-timestamp {
   color: $text;
 
-  &:hover, &:link {
+  &:hover,
+  &:link {
     color: $fg;
   }
 }
@@ -18,4 +19,15 @@
 
 .c-time_picker__timezone-caption {
   color: $primary;
+}
+
+.p-file_link_button--link {
+  color: $fg;
+
+  &.c-link--button,
+  &.c-link--focus-visible:focus,
+  &:focus,
+  &:hover {
+    color: $primary;
+  }
 }

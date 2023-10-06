@@ -1,0 +1,119 @@
+.p-explorer_header {
+  background-color: $contrast;
+}
+
+.p-explorer_results {
+  background-color: $contrast;
+}
+
+.p-explorer_results--scrolled {
+  border-top: 1px solid $border;
+}
+
+.p-explorer_controls {
+  color: $text;
+}
+
+.p-explorer_controls__button {
+  background-color: $button;
+  border: 1px solid $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:active {
+    border: 1px solid $primary;
+  }
+}
+
+.p-explorer_controls__button--active {
+  background-color: $active;
+  border: 1px solid $active;
+  color: $selectFg;
+}
+
+.p-explorer_result--list {
+  .c-channel_search_result__channel,
+  .c-pillow_file,
+  .p-search_workflows_item {
+    @include card;
+  }
+}
+
+.p-explorer_result--list--first {
+  .c-channel_search_result__channel,
+  .c-pillow_file {
+    @include card;
+  }
+}
+
+.p-explorer_result--list--last {
+  .c-channel_search_result__channel,
+  .c-pillow_file,
+  .p-search_workflows_item {
+    @include card;
+  }
+}
+
+.p-explorer_actions_heading {
+  color: $fg;
+}
+
+.p-explorer_action_button {
+  background: $button;
+  border: 1px solid $button;
+
+  .p-explorer_action_button__secondary_label {
+    color: $text;
+  }
+}
+
+.p-explorer_action_button_text_center {
+  color: $accent;
+}
+
+.p-explorer_action_button__icon_honeycomb {
+  background-color: rgb(var(--dt_color-plt-honeycomb-20));
+  color: rgb(var(--dt_color-plt-sunflower-0));
+}
+
+.p-explorer_action_button__icon_flamingo {
+  background-color: rgb(var(--dt_color-plt-flamingo-30));
+  color: rgb(var(--dt_color-plt-flamingo-0));
+}
+
+.p-explorer_action_button__icon_sangria {
+  background-color: rgb(var(--dt_color-plt-sangria-50));
+  color: rgb(var(--dt_color-plt-sangria-0));
+}
+
+.p-explorer_action_button__icon_ocean {
+  background-color: rgb(var(--dt_color-plt-ocean-30));
+  color: #fff;
+}
+
+.p-explorer_action_button__badge .p-canvas_templates_title_badge {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-explorer_section {
+  color: $text;
+}
+
+.p-explorer_search__container,
+.p-explorer__banner {
+  background-color: $contrast;
+}
+
+.p-explorer_toggle {
+  background-color: $button;
+  border: 1px solid $button;
+}
+
+.p-explorer_toggle__switch {
+  background-color: $button;
+  border: 1px inset solid $button;
+}
