@@ -30,12 +30,24 @@
   }
 }
 
+.p-channel_section_modal_input__emoji_picker:hover {
+  .p-channel_section_modal_input__emoji_circle_icon {
+    color: $yellow;
+  }
+
+  .p-channel_section_modal_input__emoji_happy_icon {
+    color: $black;
+  }
+}
+
 .p-channel_section_modal_input__empty_emoji {
   color: $disabled;
 }
 
 .p-channel_section_modal_input__duration_picker--focus-visible {
-  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
 }
 
 .p-channel_section_modal_input__duration_picker_select {
@@ -81,6 +93,12 @@
 .p-channel_section_modal_input--for_modern_user_menu .p-channel_section_modal_input__presets,
 .p-channel_section_modal_input--for_team_menu .p-channel_section_modal_input__presets {
   border-top: 1px solid $borderLight;
+}
+
+.p-channel_section_modal_input--for_team_site
+  .p-channel_section_modal_input__duration_picker_select
+  .c-input_select__selected_value--placeholder {
+  color: $fg;
 }
 
 .p-channel_section_modal_input__presets_section_header {
@@ -141,7 +159,9 @@
   }
 
   &.p-channel_section_selector--has_dropdown_focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 

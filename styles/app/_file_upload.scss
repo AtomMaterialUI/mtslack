@@ -94,7 +94,9 @@
   border: 1px solid $hl;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -163,23 +165,6 @@
       background: $button;
     }
   }
-}
-
-.p-workflowtoken__channel {
-  .c-link--button {
-    color: $accent2;
-  }
-}
-
-.p-workflowtoken__user {
-  .c-link--button {
-    color: $accent2;
-  }
-}
-
-.p-workflowtoken__missing {
-  color: $red;
-  background: $bg;
 }
 
 .p-file_card {

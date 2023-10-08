@@ -1,3 +1,13 @@
+.c-mrkdwn__quote {
+  &[data-stringify-border='1']:after {
+    background-color: $borderLight;
+  }
+}
+
+.sk-client-theme--dark .c-mrkdwn__quote[data-stringify-border='1']:after {
+  background-color: $borderLight;
+}
+
 .sk-client-theme--dark .c-mrkdwn__quote:before {
   background: $fg;
 }

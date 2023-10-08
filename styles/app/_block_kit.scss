@@ -23,29 +23,18 @@
   .p-block_kit_date_picker__datepicker_trigger {
     border-color: $red;
   }
-
-  .c-input_text:focus,
-  .c-input_textarea:focus,
-  .c-multi_select_input:focus,
-  .c-select_input:focus,
-  .p-block_kit_date_picker__datepicker_trigger:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
-  }
-
-  .c-input_text:focus-within,
-  .c-input_textarea:focus-within,
-  .c-multi_select_input:focus-within,
-  .c-select_input:focus-within,
-  .p-block_kit_date_picker__datepicker_trigger:focus-within {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
-  }
-
+  
+  .c-input_textarea,
+  .c-multi_select_input,
+  .c-select_input,
+  .c-wysiwyg_container,
+  .p-block_kit_date_picker__datepicker_trigger,
   .c-accessible_multi_select_input {
-    border-color: $accent;
-
     &:focus,
     &:focus-within {
-      box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+      box-shadow:
+        0 0 0 1px $red,
+        0 0 0 5px $red;
     }
   }
 }

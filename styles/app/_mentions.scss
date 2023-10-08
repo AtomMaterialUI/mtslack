@@ -42,3 +42,15 @@
   background: $button;
   color: $text;
 }
+
+.p-canvas_mention,
+.p-file_mention,
+.p-message_mention {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-canvas_mention .p-canvas_mention--grey {
+  background-color: $button;
+  color: $fg;
+}

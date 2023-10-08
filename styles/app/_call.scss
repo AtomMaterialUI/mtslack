@@ -13,12 +13,6 @@
   filter: none;
 }
 
-.p-call_subtype__body,
-.p-call_subtype__footer {
-  border-top: 1px solid $borderLight;
-  background-color: $bg2;
-}
-
 .p-call_subtype__status,
 .p-call_subtype__title {
   color: $fg;
@@ -44,4 +38,29 @@
 
 .p-call_footer_blurb__caret {
   fill: $accent;
+}
+
+.p-call_subtype__migration-education {
+  color: $accent;
+
+  .p-call_subtype__migration-education-avatar {
+    background: $accent;
+    color: $selectFg;
+  }
+
+  &.p-call_subtype__migration-education__phase3 {
+    color: $accent2;
+
+    a {
+      color: $accent2;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-call_subtype__migration-education.p-call_subtype__migration-education__phase3 {
+  color: $accent2;
+
+  a {
+    color: $accent2;
+  }
 }

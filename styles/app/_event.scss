@@ -5,12 +5,16 @@
   &:active,
   &:focus,
   &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 1px 3px 0 $primaryT;
   }
 }
 
 .p-event--focused {
-  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 1px 3px 0 $primaryT;
 }
 
 .p-event_icon {
@@ -18,8 +22,7 @@
   color: $selectFg;
 }
 
-.p-event_datetime,
-.p-event_title {
+.p-event_datetime {
   color: $fg;
 }
 

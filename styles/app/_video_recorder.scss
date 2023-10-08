@@ -1,3 +1,43 @@
+.p-video_overlay {
+  color: $overlay;
+}
+
+.p-video_overlay--controls:before {
+  background: linear-gradient(180deg, #1d1c1d00, $overlay 70%);
+}
+
+.p-video_overlay__controls__play_button {
+  background: $contrast;
+}
+
+.p-video_overlay__corner {
+  .p-video_overlay__controls_ellipsis,
+  .p-video_overlay__controls_overlay_fullscreen {
+    background: $overlay;
+  }
+
+  .p-video_overlay__controls_ellipsis:hover,
+  .p-video_overlay__controls_overlay_fullscreen:hover {
+    background: $overlay;
+  }
+}
+
+.p-video_block__row--subtle_color {
+  color: $text;
+}
+
+.p-video_block__thumb {
+  background-color: $overlay;
+}
+
+.p-video_block__html {
+  background-color: $overlay;
+}
+
+.p-video_block__author_subname {
+  color: $text;
+}
+
 .p-video_recorder_canvas__container {
   background: $bg;
 }
@@ -134,10 +174,12 @@
 .p-video_recorder_canvas_screen_picker_tile--no-screen {
   background-color: $bg;
 }
+
 .p-video_recorder_screen_picker_tile--selected .p-video_recorder_canvas_screen_picker_tile--no-screen {
   background: $accent;
   color: $selectFg;
 }
+
 .p-video_recorder_screen_picker--gradient:after {
   background: linear-gradient(to top, $bg, #0000);
 }

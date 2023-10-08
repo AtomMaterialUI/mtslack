@@ -2,7 +2,9 @@
   background: $bg2;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -36,7 +38,9 @@
 
 .p-video_controls_overlay__button {
   &.c-button--focus-visible:focus {
-    box-shadow: inset 0 0 0 1px $accent, inset 0 0 0 5px $accentT;
+    box-shadow:
+      inset 0 0 0 1px $accent,
+      inset 0 0 0 5px $accentT;
   }
 }
 
@@ -106,28 +110,30 @@
 }
 
 .p-video_controls_overlay--controls:hover .p-video_controls_overlay__controls_container {
-  background: $tree;
+  background: $contrast;
 }
 
 .p-video_controls_overlay__corner.p-video_controls_overlay__corner--embed {
-  background: $tree;
+  background: $contrast;
 }
 
 .p-video_controls_overlay__corner.p-video_controls_overlay__corner--embed:hover {
-  background: $tree;
+  background: $bg;
 }
 
 .p-video_controls_overlay__button.c-button--focus-visible:focus {
-  box-shadow: inset 0 0 0 1px $primary, inset 0 0 0 5px $primaryT;
+  box-shadow:
+    inset 0 0 0 1px $primary,
+    inset 0 0 0 5px $primaryT;
 }
 
 .p-video_controls_overlay__controls__button.c-button--focus-visible:focus,
 .p-video_controls_overlay__controls__button:hover {
-  background: $tree;
+  background: $hl;
 }
 
 .p-video_controls_overlay__controls__speed:hover {
-  background: $tree;
+  background: $hl;
 }
 
 .p-video_controls_overlay__controls__speed .c-select_button__icon,
@@ -139,24 +145,24 @@
 .p-video_controls_overlay__corner .p-video_embed__controls_overlay_fullscreen,
 .p-video_controls_overlay__corner .p-video_message_file__controls_overlay_ellipsis,
 .p-video_controls_overlay__corner .p-video_message_file__controls_overlay_fullscreen {
-  background: $tree;
+  background: $button;
 }
 
 .p-video_controls_overlay__corner .p-video_controls_overlay__start_thread_button:hover,
 .p-video_controls_overlay__corner .p-video_embed__controls_overlay_fullscreen:hover,
 .p-video_controls_overlay__corner .p-video_message_file__controls_overlay_ellipsis:hover,
 .p-video_controls_overlay__corner .p-video_message_file__controls_overlay_fullscreen:hover {
-  background: $tree;
+  background: $hl;
 }
 
 .p-video_controls_overlay__one_click_reactions {
-  background: $tree;
+  background: $button;
 }
 
 .p-video_controls_overlay__one_click_reactions:hover {
-  background: $tree;
+  background: $hl;
 }
 
 .p-video_controls_overlay__one_click_reactions .p-media_reactions_one_click_bar__button:hover {
-  background: $button;
+  background: $hl;
 }

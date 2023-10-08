@@ -198,3 +198,23 @@
 .ql-editor .ql-font-monospace {
   font-family: $monoFont;
 }
+
+.c-pillow_file__snippet__content .CodeMirror-code {
+  font-family: $monoFont !important;
+
+  > div {
+    &:before {
+      font-family: $monoFont !important;
+    }
+  }
+}
+
+.c-pillow_file__email__content {
+  p {
+    font: inherit;
+  }
+
+  pre {
+    font-family: $fontFamily !important;
+  }
+}

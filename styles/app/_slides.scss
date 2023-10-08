@@ -1,0 +1,8 @@
+.p-slides_player__story_progress {
+  background-color: $text;
+}
+
+.p-slides_player__story_progress--complete,
+.p-slides_player__story_progress--active {
+  background-color: $selectFg;
+}

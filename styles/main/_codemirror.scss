@@ -5,7 +5,8 @@
   border-color: $hl;
 }
 
-.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
   background-color: $bg;
 }
 
@@ -54,6 +55,73 @@
 
 .cm-s-yonce,
 .cm-s-default {
+  div.CodeMirror-selected {
+    background: $selectBg;
+  }
+
+  .CodeMirror-line {
+    &::-moz-selection,
+    &::selection {
+      background: $selectBg;
+    }
+
+    > span {
+      &::-moz-selection,
+      &::selection {
+        background: $selectBg;
+      }
+
+      > span {
+        &::-moz-selection,
+        &::selection {
+          background: $selectBg;
+        }
+      }
+    }
+  }
+
+  .CodeMirror-selected,
+  .CodeMirror-selectedtext {
+    background: $selectBg;
+  }
+
+  .CodeMirror-gutters {
+    background: $contrast;
+  }
+
+  .CodeMirror-activeline .CodeMirror-linenumber.CodeMirror-gutter-elt {
+    background: $contrast;
+    color: $accent;
+  }
+
+  .CodeMirror-linenumber {
+    color: $text;
+  }
+
+  .CodeMirror-cursor {
+    border-left: 2px solid $accent;
+  }
+
+  .cm-searching {
+    background: $primary !important;
+    outline: 1px solid $primary;
+    color: black;
+
+    &.CodeMirror-selectedtext {
+      background: $selectBg !important;
+      color: $selectFg;
+    }
+  }
+
+  .CodeMirror-activeline-background {
+    background: $hl;
+  }
+
+  .CodeMirror-matchingbracket {
+    color: $primary !important;
+    outline: 1px solid $accent;
+  }
+
   .cm-negative {
     color: $red;
   }
@@ -61,7 +129,6 @@
   .cm-positive {
     color: $green;
   }
-
 
   .cm-header {
     color: $blue;
@@ -72,7 +139,8 @@
   }
 
   .cm-tag.cm-bracket,
-  .cm-operator, .cm-qualifier {
+  .cm-operator,
+  .cm-qualifier {
     color: $cyan;
   }
 
@@ -84,11 +152,14 @@
     color: $orange;
   }
 
+  span.cm-type,
   .cm-number {
     color: $orange;
   }
 
-  .cm-callee, .cm-property.cm-def, .cm-type.cm-def,
+  .cm-callee,
+  .cm-property.cm-def,
+  .cm-type.cm-def,
   .cm-def {
     color: $blue;
   }
@@ -97,7 +168,8 @@
     color: $red;
   }
 
-  .cm-type, .cm-variable-3 {
+  .cm-type,
+  .cm-variable-3 {
     color: $yellow;
   }
 
@@ -113,7 +185,8 @@
     color: $cyan;
   }
 
-  .cm-meta, .cm-qualifier {
+  .cm-meta,
+  .cm-qualifier {
     color: $purple;
   }
 
@@ -143,13 +216,30 @@
     color: $accent;
   }
 
-  .cm-property, .cm-variable {
+  .cm-property,
+  .cm-variable {
     color: $silver;
   }
 
   .cm-invalidchar,
   .cm-error {
     color: $red2;
+  }
+
+  span {
+    &.cm-variable {
+      color: $silver;
+      font-style: italic;
+    }
+
+    &.cm-variable-2 {
+      color: $purple;
+      font-style: italic;
+    }
+
+    &.cm-variable-3 {
+      color: $cyan;
+    }
   }
 }
 
@@ -189,7 +279,8 @@ div.CodeMirror span {
   }
 
   > span {
-    &::-moz-selection, > span::-moz-selection {
+    &::-moz-selection,
+    > span::-moz-selection {
       background: $tree;
     }
   }
@@ -199,7 +290,8 @@ div.CodeMirror span {
   }
 
   > span {
-    &::selection, > span::selection {
+    &::selection,
+    > span::selection {
       background: $tree;
     }
   }
@@ -209,7 +301,8 @@ div.CodeMirror span {
   }
 
   > span {
-    &::-moz-selection, > span::-moz-selection {
+    &::-moz-selection,
+    > span::-moz-selection {
       background: $tree;
     }
   }
@@ -232,7 +325,8 @@ div.CodeMirror span {
     color: $text;
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     border-color: $disabled;
   }
 }
@@ -242,6 +336,7 @@ div.CodeMirror span {
   border: none;
 }
 
-.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
   color: $fg;
 }
