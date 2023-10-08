@@ -1,0 +1,20 @@
+.p-csv_tsv_viewer {
+  background: $bg;
+  border-left: 1px solid $border;
+  border-top: 1px solid $border;
+  font-family: $monoFont !important;
+
+  .c-virtual_list__item .p-csv_tsv_viewer__row {
+    &:before {
+      background: $bg2;
+      border-right: 1px solid $border;
+      color: $text;
+      font-family: $monoFont !important;
+    }
+
+    .p-csv_tsv_viewer__col {
+      border-bottom: 1px solid $border;
+      border-right: 1px solid $border;
+    }
+  }
+}

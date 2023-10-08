@@ -571,3 +571,46 @@
     color: $selectFg;
   }
 }
+
+.p-setup_prog_disc_explainer_tip_container--ia4 .p-setup_suggest_message__btn {
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_explainer_tip_container--ia4 .p-setup_suggest_message__btn {
+  color: $fg;
+}
+
+.sk-client-theme--dark {
+  .p-setup_prog_disc_explainer_tip
+    .p-setup_prog_disc_explainer_tip_dismissal
+    .p-setup_prog_disc_explainer_tip_dismissal_icon {
+    color: $fg;
+  }
+
+  .p-setup_prog_disc_explainer_tip_container--ia4
+    .p-setup_prog_disc_explainer_tip
+    .p-setup_prog_disc_explainer_tip_dismissal
+    .p-setup_prog_disc_explainer_tip_dismissal_icon {
+    color: $fg;
+  }
+}
+
+.p-setup_prog_disc_explainer_tip .p-setup_prog_disc_explainer_tip_text {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_explainer_tip .p-setup_prog_disc_explainer_tip_text {
+  color: $selectFg;
+}
+
+.p-setup_prog_disc_explainer_tip_container--ia4 {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_explainer_tip_container--ia4 {
+  background-color: $contrast;
+
+  .p-setup_prog_disc_explainer_tip_text {
+    color: $text;
+  }
+}

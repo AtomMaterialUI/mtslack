@@ -114,6 +114,7 @@
 .p-setup_prog_disc_invite_modal_explainer_tip {
   background-color: $notif;
 }
+
 .sk-client-theme--dark .p-add_to_slack_confirmation__comprehensible_modal .c-sk-modal_header,
 .p-add_to_slack_confirmation__comprehensible_modal .c-sk-modal_header {
   background-color: $bg2;
@@ -137,4 +138,17 @@
 .p-huddle_onboarding_hover_tip {
   background-color: $notif;
   color: $fg;
+}
+
+.p-huddle_call_menu_item__banner_container {
+  color: $selectFg;
+
+  .c-menu_item__icon {
+    color: $selectFg;
+  }
+
+  .p-huddle_call_menu_item__banner-bottom-container {
+    background-color: $accentT;
+    color: $selectFg;
+  }
 }

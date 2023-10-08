@@ -1,0 +1,31 @@
+.p-champion_suggest_message_container {
+  background: $accent;
+}
+
+.sk-client-theme--dark .p-champion_suggest_message_container {
+  background-color: $bg2;
+  color: $selectFg;
+}
+
+.p-champion_suggest_message {
+  .p-champion_suggest_message_dismissal .p-champion_suggest_message_dismissal_icon,
+  .p-champion_suggest_message_text {
+    color: $selectFg;
+  }
+}
+
+.p-champion_suggest_message__btn {
+  background-color: $button;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-champion_suggest_message__btn {
+  background-color: $button;
+  border-color: $button;
+
+  &:active,
+  &:hover {
+    background-color: $hl;
+    border-color: $hl;
+  }
+}

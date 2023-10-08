@@ -1,0 +1,21 @@
+.p-message_column__main_link {
+  color: $fg;
+
+  &:focus,
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-message_column__file_entity .c-icon--filetype-tiny:before {
+  color: $text;
+}
+
+.p-file_card__container.p-file_card__container--embedded {
+  border: 1px solid $border;
+}
+
+.p-file_card__container .p-file_card__callout_badge {
+  background-color: $accent;
+  color: $selectFg;
+}

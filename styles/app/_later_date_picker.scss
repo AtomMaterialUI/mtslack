@@ -1,0 +1,28 @@
+.p-later_custom_date_time_picker {
+  .c-date-time_picker__date_picker_button {
+    border: 1px solid $borderLight;
+
+    &:focus {
+      box-shadow:
+        0 0 0 1px var(--sk_focused-shadow-color, $accent),
+        0 0 0 5px var(--sk_focused-shadow-color-opaque, $accentT);
+
+      &:-moz-placeholder,
+      &:-ms-input-placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
+        color: $disabled;
+      }
+    }
+
+    &[disabled] {
+      background: $excluded;
+      border: 1px solid $borderLight;
+    }
+  }
+
+  .c-date-time_picker__calendar_icon,
+  .c-date-time_picker__caret_icon {
+    color: $text;
+  }
+}

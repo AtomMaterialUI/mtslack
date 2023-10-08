@@ -157,9 +157,7 @@
     fill: $text;
     color: $text;
   }
-}
 
-.c-message_stats__viewers_by_department_chart {
   .c3-bar {
     fill: $purple !important;
   }
@@ -172,7 +170,7 @@
     stroke: $fg;
   }
 
-  c3-text.c-message_stats__viewers_by_department_chart__short_text {
+  .c3-text.c-message_stats__viewers_by_department_chart__short_text {
     color: $accent !important;
     fill: $accent !important;
   }
@@ -214,4 +212,16 @@
 
 .p-message_actions_menu__flag.c-menu_item__button--highlighted {
   background-color: $accent;
+}
+
+.c-message_stats__views_by_device_divider {
+  border-right: 1px solid $border;
+}
+
+.c-message_stats__views_by_device_row_container {
+  border: 1px solid $border;
+}
+
+.p-message_actions_menu__report.c-menu_item__button--highlighted {
+  background-color: $hl;
 }

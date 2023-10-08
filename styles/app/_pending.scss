@@ -116,7 +116,10 @@
 
 .p-connection_info_icon__icon + .p-connection_info_icon__icon {
   margin-left: -6px;
-  box-shadow: -2px 0 0 $primary, (-2px) 1px 0 $primary, (-2px) -1px 0 $primary;
+  box-shadow:
+    -2px 0 0 $primary,
+    (-2px) 1px 0 $primary,
+    (-2px) -1px 0 $primary;
 }
 
 .p-connection_info {
@@ -136,4 +139,20 @@
 
 .p-file_image_toolbar_controls__bar {
   background: $bg;
+}
+
+.p-connection_info__link-button.c-link--button {
+  color: $accent2;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-pending_video_file:after {
+  border: 1px solid $border;
+}
+
+.p-pending_video_file__play_icon {
+  color: $selectFg;
 }

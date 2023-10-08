@@ -187,3 +187,8 @@ tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_
     background-color: $bg2;
   }
 }
+
+.p-invite_list--external-email-icon {
+  background-color: $button;
+  color: $text;
+}

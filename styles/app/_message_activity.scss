@@ -1,0 +1,50 @@
+.p-message_activity__message_snippet_text {
+  background: $bg;
+
+  &:after {
+    background: linear-gradient(180deg, transparent, $bg);
+  }
+}
+
+.p-message_activity__message_snippet_engagement {
+  color: $text;
+
+  .c-reaction__count {
+    color: $fg;
+  }
+}
+
+.p-message_activity__message_snippet_reply_count {
+  color: $text;
+
+  &:before {
+    color: $border;
+  }
+}
+
+.p-message_activity__msg__nav_next,
+.p-message_activity__msg__nav_prev {
+  color: $fg;
+}
+
+.p-message_activity__msg__nav_next:disabled,
+.p-message_activity__msg__nav_prev:disabled {
+  color: $border;
+}
+
+.p-message_activity__message_snippet_additional_reactions {
+  color: $text;
+}
+
+.p-message_activity__stats_by_org_table--footer-text,
+.p-message_activity__views_by_device {
+  color: $text;
+}
+
+.p-message_activity__views_by_device_divider {
+  border-right: 1px solid $border;
+}
+
+.p-message_activity__views_by_device_row_container {
+  border: 1px solid $border;
+}

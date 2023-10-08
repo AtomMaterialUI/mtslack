@@ -1,3 +1,11 @@
 .p-embedded_link_editor__edit_view__footer .p-embedded_link_editor__edit_view__cancel_button {
   color: $fg;
 }
+
+.p-embedded_message_header__secondary {
+  color: $text !important;
+
+  .p-embedded_message_header__secondary__inline_channel_link {
+    color: $text !important;
+  }
+}

@@ -35,7 +35,9 @@
 }
 
 .p-drafts_page__draft--focused {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-drafts_page__draft_badge--text {
@@ -114,7 +116,6 @@
 //.p-drafts_page__older_drafts_label:after {
 //  color: $border;
 //}
-
 .p-drafts_page__draft_date_scheduled {
   color: $text;
 }
@@ -153,4 +154,13 @@
 .p-drafts_page__sent-education {
   background-color: $bg2;
   color: $fg;
+}
+
+.p-draft_unfurls__unfurl_document_subheader,
+.p-draft_unfurls__unfurl_subheader {
+  color: $disabled;
+}
+
+.p-draft_unfurls__attachment__access-level-select {
+  color: $accent;
 }

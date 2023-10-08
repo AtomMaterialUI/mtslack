@@ -92,7 +92,6 @@
   0% {
     background: $hl;
   }
-
   to {
     background: transparent;
   }
@@ -475,7 +474,6 @@ a.c-message__call_name--linked {
   20% {
     background: $hl;
   }
-
   60% {
     background: $bg2;
   }
@@ -527,11 +525,9 @@ a.c-message__call_name--linked {
   0% {
     background: transparent;
   }
-
   10% {
     background: $tree;
   }
-
   to {
     background: transparent;
   }
@@ -544,4 +540,69 @@ a.c-message__call_name--linked {
 .c-message_kit__labels--reminder .c-message_kit__labels__icon,
 .c-message_kit__labels--message_type .c-message_kit__labels__icon {
   color: $accent;
+}
+
+.p-message_field_card {
+  background: $bg;
+  color: $fg;
+}
+
+.p-message_field_card__channel_footer .p-message_field_card__file_entity {
+  color: $text;
+
+  .c-icon--filetype-tiny:before {
+    color: $text;
+  }
+}
+
+.p-message_field_card__actions {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.loadingBox__LnQPn {
+  background-color: $overlay;
+}
+
+.nonInteractiveContainer__hVbV0 {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.defaultContainerColors__Sg-cX {
+  background: $bg2;
+}
+
+.previewContainer__WSecM {
+  border-top: 1px solid $border;
+}
+
+.subtext__OgdF6 {
+  color: $text;
+}
+
+.listThumbnail__AhgKW {
+  background: $bg2;
+  color: $selectFg;
+}
+
+.listRecordThumbnail__Ss7Vk {
+  background: $bg2;
+}
+
+.listThumbnail__zlJRV {
+  background: $bg2;
+  color: $selectFg;
+}
+
+.listRecordThumbnail__cEaHq {
+  background: $bg2;
+}
+
+.fieldLabel__BQCQy {
+  color: $text;
 }

@@ -30,3 +30,15 @@
 .p-workflow_attribution {
   color: $text;
 }
+
+.p-workflow_card--error {
+  color: $text;
+}
+
+.p-workflow_card--error__icon {
+  background: $bg2;
+}
+
+.p-workflow_preview__header {
+  background-color: $bg;
+}

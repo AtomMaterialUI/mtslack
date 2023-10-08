@@ -1,0 +1,95 @@
+.p-create_channel_modal {
+  .p-create_channel_modal-alert_above_content button {
+    color: $accent;
+  }
+
+  .callout--pro {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.sk-client-theme--dark .p-create_channel_modal .callout--pro {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-create_channel_modal .p-channel_create_trial_started_coachmark {
+  background-color: $notif;
+  color: $fg;
+
+  &:before {
+    background: $notif;
+  }
+}
+
+.sk-client-theme--dark .p-create_channel_modal .p-channel_create_trial_started_coachmark {
+  background-color: $notif;
+  color: $fg;
+
+  &:before {
+    background: $notif;
+  }
+}
+
+.p-create_channel_modal .p-start_trial_modal_speedbump__container {
+  border-top-color: $borderLight;
+}
+
+.sk-client-theme--dark .p-create_channel_modal .p-start_trial_modal_speedbump__container {
+  border-top-color: $borderLight;
+}
+
+.p-create_channel_modal {
+  .p-channel_create_trial_started_speedbump .c-icon,
+  .p-start_trial_modal_speedbump__trial_icon {
+    color: $accent;
+  }
+}
+
+.sk-client-theme--dark .p-create_channel_modal {
+  .p-channel_create_trial_started_speedbump .c-icon,
+  .p-start_trial_modal_speedbump__trial_icon {
+    color: $accent;
+  }
+}
+
+.p-create_channel_modal .c-modal_speed_bump_content {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-create_channel_modal .c-modal_speed_bump_content {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-create_channel_modal_workspace-selector .c-select_options_list__option {
+  &.c-select_options_list__option--disabled {
+    color: $disabled;
+
+    .c-team_entity__icon--default {
+      background-color: $disabled;
+    }
+  }
+
+  &:not(.c-select_options_list__option--disabled) {
+    &.c-select_options_list__option--selected .c-team_entity__icon--default {
+      background-color: $accent;
+    }
+
+    &.c-select_options_list__option--active .c-team_entity__icon--default,
+    &:hover .c-team_entity__icon--default {
+      background-color: $bg;
+      color: $accent;
+    }
+  }
+}
+
+.p-channel_create_trial_started_coachmark:before {
+  background: $bg2;
+}
+
+.sk-client-theme--dark .p-channel_create_trial_started_coachmark:before {
+  background: $bg2;
+}

@@ -352,7 +352,9 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
 
       &:-moz-placeholder,
       &:-ms-input-placeholder,
@@ -662,7 +664,9 @@
 
 .p-huddle_base_card .p-huddle_base_card__close_button:focus {
   border-color: $accent;
-  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
 }
 
 .p-huddle_base_card .p-huddle_base_card__close_button:focus:-moz-placeholder,
@@ -754,4 +758,52 @@
 
 .p-huddle_invite__button--joining_soon:hover {
   color: $primaryT;
+}
+
+.p-huddle_drag_overlay {
+  background: $overlay;
+}
+
+.p-huddle_drag_overlay--mini_player {
+  background-color: $overlay;
+  color: $fg;
+
+  .p-huddle_drag_overlay__info {
+    background-color: $overlay;
+    border: 1px dashed $accent;
+  }
+}
+
+.p-huddle_status_icon {
+  &.p-huddle_status_icon--other {
+    color: $fg;
+  }
+}
+
+.p-ia4_client--theming .p-huddle_status_icon.p-huddle_status_icon--other {
+  color: $fg;
+}
+
+.p-huddle_status_icon.p-huddle_status_icon--other.p-huddle_status_icon--no_theme {
+  background-color: $bg;
+  color: $fg;
+}
+
+.p-huddle_status_text__channel_name.c-link--button {
+  color: $accent2;
+}
+
+.p-huddle_msg_live_badge {
+  background-color: $button;
+  color: $accent;
+
+  &.p-huddle_msg_live_badge--ia4 {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-ia4_client--theming .p-huddle_msg_live_badge {
+  background-color: $accent;
+  color: $selectFg;
 }

@@ -38,10 +38,6 @@
   color: $text;
 }
 
-.p-ia_details_popover__members_loading {
-  color: $disabled;
-}
-
 .p-ia_details_popover__members_list_item_heading {
   color: $fg;
   border-top: 1px solid $borderLight;
@@ -159,6 +155,15 @@
   .c-message_kit__pillow {
     border-color: $borderLight;
   }
+}
+
+.c-message_kit__pillow_card {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.c-message_kit__pillow:hover .c-message_kit__pillow_card:hover {
+  border-color: $border;
 }
 
 .p-ia_pins_popover_placeholder {
@@ -327,4 +332,59 @@
 .p-ia_pins_popover_header {
   background: $bg;
   box-shadow: 0 1px 0 0 $border;
+}
+
+.p-ia_details_popover__no_results {
+  color: $disabled;
+
+  .p-ia_details_popover__icon {
+    background-color: $bg2;
+  }
+}
+
+.p-ia_details_popover__invite_icon {
+  background: $bg;
+}
+
+.p-ia_details_popover__members_search_input_wrapper--scrolled {
+  border-bottom: 1px solid $border;
+}
+
+.p-ia_details_popover__members_list__empty_state:not(.p-ia_details_popover__members_list__empty_state--entirely):after {
+  background: $bg;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_details_popover__channel_manager_indicator {
+  background: $overlay;
+}
+
+.p-ia_details_popover__filter:not(.p-ia_details_popover__filter--default) .c-select_button {
+  background-color: $button;
+  border: 1px solid $accent;
+  color: $accent;
+
+  &:focus {
+    border: 1px solid $button;
+  }
+
+  .c-select_button__icon {
+    color: $accent;
+  }
+}
+
+.p-ia_details_popover__filter_list_overlay {
+  .c-select_options_list__option--active
+    .c-select_options_list__option_label
+    .p-ia_details_popover__filter_item_member_count {
+    color: $selectFg;
+  }
+
+  .c-select_options_list__option .p-ia_details_popover__filter_item_member_count {
+    color: $text;
+  }
+}
+
+.p-ia_details_popover__loading_text {
+  color: $text;
 }

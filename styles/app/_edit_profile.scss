@@ -32,26 +32,6 @@
   border: 4px dashed $hl;
 }
 
-.p-edit_profile__centered_primary--background {
-  background: $bg2;
-}
-
-.p-edit_profile__cropper {
-  background-color: $bg !important;
-}
-
-.p-edit_profile__upload_preview_label {
-  color: $text;
-}
-
-.p-edit_profile__date_button {
-  border: 1px solid $primary;
-}
-
-.p-edit_profile__rules {
-  color: $fg;
-}
-
 .p-edit_prefs_settings_modal__footer_text {
   color: $text;
 }
@@ -63,4 +43,57 @@
 .p-edit_profile_section_form_pane__modal-content {
   border-bottom: $borderLight;
   border-top: $borderLight;
+}
+
+.p-edit_profile__sc_visibility_checkbox {
+  color: $fg;
+}
+
+.p-edit_profile__external_profiles_coachmark_container {
+  background-color: $bg;
+
+  .p-edit_profile__external_profiles_coachmark--body {
+    color: $disabled;
+  }
+
+  &:after {
+    border-bottom: 12px solid $border;
+  }
+}
+
+.p-edit_profile__disabled_text {
+  color: $disabled;
+}
+
+.list__il965 .c-virtual_list__item {
+  border: 1px solid $borderLight;
+  border-bottom: 0;
+
+  &:last-child {
+    border: 1px solid $borderLight;
+  }
+}
+
+.item__sxbRf {
+  &:focus {
+    color: $fg;
+  }
+
+  &:hover {
+    color: $fg;
+    background-color: $tree;
+  }
+}
+
+.p-edit_profile_photo_drag_overlay {
+  background: $overlay;
+  border: 4px solid $accent;
+}
+
+.sk-client-theme--dark .p-edit_profile_photo_drag_overlay {
+  background: $overlay;
+}
+
+.p-edit_profile_photo_drag_overlay__title {
+  color: $accent;
 }

@@ -69,10 +69,6 @@
   color: $primary;
 }
 
-.p-multi_file_upload__file_count {
-  color: $fg;
-}
-
 .p-multi_file_upload__file_status_btn {
   background: $button;
 }
@@ -231,4 +227,128 @@
 
 .p-new_file_menu_source_header--composer_ia {
   color: $fg;
+}
+
+.p-file_card--focus {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
+  outline: none;
+}
+
+.p-file_card__preview--placeholder-email,
+.p-file_card__preview--placeholder-text {
+  background-color: $excluded;
+}
+
+.p-file_card__preview--preview-zip {
+  background-color: $excluded;
+}
+
+.p-filepile_overflow {
+  background-color: $excluded;
+  color: $selectFg;
+}
+
+.p-select_field_option--gray {
+  background-color: rgb(var(--dt_color-plt-gray-5));
+  color: rgb(var(--dt_color-plt-gray-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--gray {
+  background-color: rgb(var(--dt_color-plt-gray-20));
+  color: rgb(var(--dt_color-plt-gray-70));
+}
+
+.p-select_field_option--brown {
+  background-color: rgb(var(--dt_color-plt-horchata-5));
+  color: rgb(var(--dt_color-plt-horchata-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--brown {
+  background-color: rgb(var(--dt_color-plt-horchata-10));
+  color: rgb(var(--dt_color-plt-horchata-70));
+}
+
+.p-select_field_option--orange,
+.sk-client-theme--dark .p-select_field_option--orange {
+  background-color: rgb(var(--dt_color-plt-campfire-5));
+  color: rgb(var(--dt_color-plt-campfire-70));
+}
+
+.p-select_field_option--yellow {
+  background-color: rgb(var(--dt_color-plt-sunflower-5));
+  color: rgb(var(--dt_color-plt-sunflower-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--yellow {
+  background-color: rgb(var(--dt_color-plt-sunflower-5));
+  color: rgb(var(--dt_color-plt-sunflower-60));
+}
+
+.p-select_field_option--green {
+  background-color: rgb(var(--dt_color-plt-cilantro-5));
+  color: rgb(var(--dt_color-plt-cilantro-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--green {
+  background-color: rgb(var(--dt_color-plt-cilantro-10));
+  color: rgb(var(--dt_color-plt-cilantro-70));
+}
+
+.p-select_field_option--blue {
+  background-color: rgb(var(--dt_color-plt-ocean-5));
+  color: rgb(var(--dt_color-plt-ocean-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--blue {
+  background-color: rgb(var(--dt_color-plt-ocean-10));
+  color: rgb(var(--dt_color-plt-ocean-70));
+}
+
+.p-select_field_option--indigo {
+  background-color: rgb(var(--dt_color-plt-indigo-5));
+  color: rgb(var(--dt_color-plt-indigo-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--indigo {
+  background-color: rgb(var(--dt_color-plt-indigo-10));
+  color: rgb(var(--dt_color-plt-indigo-70));
+}
+
+.p-select_field_option--purple {
+  background-color: rgb(var(--dt_color-plt-aubergine-5));
+  color: rgb(var(--dt_color-plt-aubergine-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--purple {
+  background-color: rgb(var(--dt_color-plt-aubergine-10));
+  color: rgb(var(--dt_color-plt-aubergine-60));
+}
+
+.p-select_field_option--pink {
+  background-color: rgb(var(--dt_color-plt-flamingo-5));
+  color: rgb(var(--dt_color-plt-flamingo-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--pink {
+  background-color: rgb(var(--dt_color-plt-flamingo-5));
+  color: rgb(var(--dt_color-plt-flamingo-60));
+}
+
+.p-select_field_option--red {
+  background-color: rgb(var(--dt_color-plt-tomato-5));
+  color: rgb(var(--dt_color-plt-tomato-70));
+}
+
+.sk-client-theme--dark .p-select_field_option--red {
+  background-color: rgb(var(--dt_color-plt-tomato-5));
+  color: rgb(var(--dt_color-plt-tomato-60));
+}
+
+.p-multi_file_upload__add_file_btn {
+  color: $accent;
 }

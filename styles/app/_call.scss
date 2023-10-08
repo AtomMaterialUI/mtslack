@@ -64,3 +64,13 @@
     color: $accent2;
   }
 }
+
+.p-call_menu__migration-menu-item {
+  .c-menu_item__li .p-classic_nav__call-menu-text {
+    color: $text;
+  }
+
+  .c-menu_item__li--highlighted .p-classic_nav__call-menu-text {
+    color: $selectFg;
+  }
+}

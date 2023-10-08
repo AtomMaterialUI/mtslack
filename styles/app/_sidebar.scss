@@ -12,23 +12,23 @@
 }
 
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__name,
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__name,
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
-.p-shared_channels_icon,
+  .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected)
+  .p-shared_channels_icon,
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__channel_icon_prefix--sidebar_simplification,
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__name,
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-channel_sidebar__name,
 .p-channel_sidebar--dimming
-.p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
-.p-shared_channels_icon {
+  .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--selected)
+  .p-shared_channels_icon {
   color: $disabled;
 }
 
@@ -102,40 +102,38 @@ a.c-sidebar_menu__list_item {
 }
 
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name {
-  box-shadow: 0 0 0 1px $primary,
-  0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-channel_sidebar__link {
   &.c-button--focus-visible:focus .p-channel_sidebar__name,
   &.c-link--focus-visible:focus .p-channel_sidebar__name {
-    box-shadow: 0 0 0 1px $primary,
-    0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
 .p-channel_sidebar__static_list--keyboard_focus
-div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
+  div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   box-shadow: 0 0 0 1px $primary 0 0 0 5px $primaryT;
 }
-
 
 .p-channel_sidebar__user_avatar .c-hidden_user_avatar,
 .p-channel_sidebar__mpim_avatars .c-hidden_user_avatar {
   background-color: $bg;
 }
 
-
 .p-ia4_client--theming .p-channel_sidebar__mpim_counter {
   background-color: $accent;
   color: $bg;
 }
 
-
 .p-channel_sidebar__list.p-channel_sidebar__list--inset {
   border-top: 1px solid $borderLight;
 }
-
 
 .p-channel_sidebar {
   background: $contrast;
@@ -302,8 +300,9 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .client_channels_list_container .focus-ring,
 .p-channel_sidebar.focusablesection:focus .sectionfocusindicator,
 #team_menu.focusablesection:focus .sectionfocusindicator {
-  box-shadow: 0 0 0 1px $primary,
-  0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .client_channels_list_container a:not(.c-link--focus-visible).focus-ring,
@@ -317,8 +316,9 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel.c-link--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__link.c-button--focus-visible:focus .p-channel_sidebar__name,
 .p-channel_sidebar__close.c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px $primary,
-  0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_plus:hover,
@@ -332,7 +332,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(
     .p-channel_sidebar__channel--suggested
   ):not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__name,
+  .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
@@ -452,8 +452,9 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .p-classic_nav__team_header .c-link--focus-visible:focus,
 .p-classic_nav__team_header .c-button--focus-visible:focus {
-  box-shadow: 0 0 0 1px $primary,
-  0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-team_sidebar,
@@ -485,8 +486,9 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-team_sidebar__add_button:active {
   border-color: $primary;
   background: $hl;
-  box-shadow: 0 0 0 3px $button,
-  0 0 0 6px $hl;
+  box-shadow:
+    0 0 0 3px $button,
+    0 0 0 6px $hl;
 }
 
 .p-team_sidebar__unread_dot,
@@ -504,9 +506,10 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .p-team_sidebar__item.c-button--focus-visible:focus,
 .p-team_sidebar__add_button.c-link--focus-visible:focus {
-  box-shadow: 0 0 0 3px $bg,
-  0 0 0 4px $accent,
-  0 0 0 6px $accentT;
+  box-shadow:
+    0 0 0 3px $bg,
+    0 0 0 4px $accent,
+    0 0 0 6px $accentT;
 }
 
 .c-button--focus-visible:focus .p-team_sidebar__icon--active {
@@ -520,37 +523,39 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 
 .p-team_sidebar__icon {
   &:hover {
-    box-shadow: 0 0 0 3px var(--p-team_sidebar__nav-bg),
-    0 0 0 6px var(--p-team_sidebar__text-color--opacity-30);
+    box-shadow:
+      0 0 0 3px var(--p-team_sidebar__nav-bg),
+      0 0 0 6px var(--p-team_sidebar__text-color--opacity-30);
   }
 }
 
 .p-team_sidebar__icon:hover {
-  box-shadow: 0 0 0 3px $button,
-  0 0 0 6px $hl;
+  box-shadow:
+    0 0 0 3px $button,
+    0 0 0 6px $hl;
 }
 
 .p-team_sidebar__icon--active,
 .p-team_sidebar__icon--active:hover {
-  box-shadow: 0 0 0 3px $bg,
-  0 0 0 6px $primary;
+  box-shadow:
+    0 0 0 3px $bg,
+    0 0 0 6px $primary;
 }
 
 .p-channel_sidebar__compose_button {
-  box-shadow: 0 0 0 1px $borderLight,
-  0 4px 12px 0 $borderLight;
+  box-shadow:
+    0 0 0 1px $borderLight,
+    0 4px 12px 0 $borderLight;
 }
 
 @keyframes p-welcome-place__sidebar_animation {
   0% {
     font-weight: 900;
   }
-
   50% {
     font-weight: 900;
     color: $bg;
   }
-
   to {
     font-weight: 900;
     color: inherit;
@@ -665,7 +670,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar__channel.p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--typing)
-.p-channel_sidebar__channel_icon_prefix--comfy {
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   background: transparent;
   color: $text;
 }
@@ -676,13 +681,13 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__channel_icon_prefix--comfy {
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   background: $button;
   color: $primary;
 }
 
 .p-channel_sidebar__channel--suggested:not(.p-channel_sidebar__channel--typing)
-.p-channel_sidebar__channel_icon_prefix--comfy {
+  .p-channel_sidebar__channel_icon_prefix--comfy {
   color: $text;
   background: transparent;
 }
@@ -741,13 +746,13 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(
     .p-channel_sidebar__channel--suggested
   ):not(.p-channel_sidebar__channel--selected)
-.p-channel_sidebar__name,
+  .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__link--add-channel:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__link--add-apps:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading:not(.p-channel_sidebar__section_heading--selected)
-.p-channel_sidebar__section_heading_label--unreads,
+  .p-channel_sidebar__section_heading_label--unreads,
 .p-channel_sidebar__quickswitcher:hover,
 .p-channel_sidebar__section_placeholder--has_cta:hover,
 .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer:hover {
@@ -793,8 +798,8 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-ia__sidebar_header__mode__filter_input,
 .p-ia__sidebar_header__mode__filter_input:hover
-.p-ia__sidebar_header__mode__filter_input:active
-.p-ia__sidebar_header__mode__filter_input:focus {
+  .p-ia__sidebar_header__mode__filter_input:active
+  .p-ia__sidebar_header__mode__filter_input:focus {
   border: 1px solid $borderLight;
 }
 
@@ -1019,4 +1024,13 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-channel_sidebar_filter_pill__container {
   background-color: $contrast;
+}
+
+.p-ia4_toggle_sidebar_button__button {
+  color: $text;
+
+  &:hover {
+    background: $hl;
+    color: $fg;
+  }
 }

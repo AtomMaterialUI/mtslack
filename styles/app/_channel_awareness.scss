@@ -1,0 +1,38 @@
+.p-channel_awareness_suggest_message_container {
+  background: $accent;
+}
+
+.sk-client-theme--dark .p-channel_awareness_suggest_message_container {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-channel_awareness_suggest_message_container .p-channel_awareness_suggest_message {
+  .p-setup_suggest_message__btn {
+    background-color: $button;
+    color: $fg;
+  }
+}
+
+.sk-client-theme--dark
+  .p-channel_awareness_suggest_message_container
+  .p-channel_awareness_suggest_message
+  .p-setup_suggest_message__btn {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-channel_awareness_suggest_message_container
+  .p-channel_awareness_suggest_message
+  .p-channel_awareness_suggest_message_dismissal
+  .p-channel_awareness_suggest_message_dismissal_icon {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark
+  .p-channel_awareness_suggest_message_container
+  .p-channel_awareness_suggest_message
+  .p-channel_awareness_suggest_message_dismissal
+  .p-channel_awareness_suggest_message_dismissal_icon {
+  color: $selectFg;
+}

@@ -536,3 +536,18 @@ input[type='text'].c-input_text {
 .p-shared_channel_member_orgs_modal__team_additional_info {
   color: $text;
 }
+
+.p-channel_set_block {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-channel_set_block__channels_list {
+  border-bottom: thin solid $border;
+  border-top: thin solid $border;
+}
+
+.p-channel_set_block__channel:hover {
+  background-color: $excluded;
+}
