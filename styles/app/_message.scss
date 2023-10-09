@@ -606,3 +606,12 @@ a.c-message__call_name--linked {
 .fieldLabel__BQCQy {
   color: $text;
 }
+
+.c-message_kit__labels--saved_for_later .c-message_kit__labels__icon {
+  color: $accent;
+}
+
+.c-message_kit__labels--file_annotation,
+.c-message_kit__labels--later {
+  color: $accent;
+}

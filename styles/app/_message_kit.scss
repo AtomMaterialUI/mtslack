@@ -102,15 +102,6 @@
   color: $text;
 }
 
-@keyframes c-message_kit--to-grey {
-  0% {
-    color: inherit;
-  }
-  to {
-    color: $text;
-  }
-}
-
 .p-multi_thread_background {
   background: $bg;
 }

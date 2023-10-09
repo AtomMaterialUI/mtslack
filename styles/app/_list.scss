@@ -56,3 +56,22 @@
 .p-message_pane_modal_pigeon__header--dark {
   background: $bg2;
 }
+
+.p-huddle_thread_zero_state__body,
+.p-list_thread_zero_state__body {
+  color: $text;
+}
+
+.c-list_edit_unfurl__container {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.c-list_edit_unfurl__field_name {
+  color: $text;
+}
+
+.c-list_edit_unfurl__field_old_value:after {
+  background: $fg;
+}

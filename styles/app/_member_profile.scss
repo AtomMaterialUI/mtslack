@@ -72,3 +72,25 @@
 .p-member_profile_card__verified_footer_icon {
   color: $accent;
 }
+
+.p-member_profile_base_entity__title {
+  color: $fg;
+}
+
+.p-member_profile_base_entity__pronouns {
+  color: $text;
+}
+
+.p-member_profile_base_entity__primary .p-app_external_team_banner {
+  background: $notif;
+}
+
+.p-member_profile_base_entity__celebration-new-hire,
+.sk-client-theme--dark .p-member_profile_base_entity__celebration-new-hire {
+  background-color: $hl;
+}
+
+.p-member_profile_base_entity__celebration-anniversary,
+.sk-client-theme--dark .p-member_profile_base_entity__celebration-anniversary {
+  background-color: $hl;
+}

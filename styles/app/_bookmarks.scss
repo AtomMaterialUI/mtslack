@@ -281,3 +281,116 @@
 .p-bookmarks_bar__last_updated_indicator {
   background: $accent;
 }
+
+.p-bookmarks_bar--vertical {
+  .p-bookmarks_bar__bookmark {
+    color: $fg;
+  }
+
+  .p-bookmarks_bar__add_bookmark_button {
+    color: $text;
+
+    &:active {
+      background-color: $border;
+    }
+  }
+
+  .c-icon {
+    color: $text;
+  }
+
+  .p-bookmarks_bar__bookmark__folder_carat {
+    color: $text;
+  }
+
+  &.p-bookmarks_bar--dropping {
+    .p-bookmarks_bar__bookmark--dropping_on_bottom {
+      box-shadow: 0 2px 0 0 $accent;
+    }
+
+    .p-bookmarks_bar__bookmark--dropping_on_top {
+      box-shadow: 0 -2px 0 0 $accent;
+    }
+  }
+}
+
+.p-bookmarks_bar_vertical_header__title {
+  color: $fg;
+}
+
+.p-bookmarks_bar_vertical_header__actions button {
+  color: $fg !important;
+}
+
+.p-bookmarks_bar_vertical_show_more_button {
+  color: $accent;
+}
+
+.p-bookmarks_bar_vertical_empty_state {
+  .p-bookmarks_bar_vertical_empty_state__text {
+    color: $text;
+  }
+
+  .p-bookmarks_bar_vertical_empty_state__actions {
+    color: $accent;
+  }
+}
+
+.p-bookmarks_bar--canvas_bar:hover {
+  background: $bg2;
+}
+
+.p-bookmarks_bar__expand_canvas_button_icon {
+  color: $text;
+}
+
+.p-bookmarks_bar__channel_canvas_title--empty {
+  color: $text;
+
+  &:active {
+    background-color: $border;
+  }
+}
+
+.p-bookmarks_bar__channel_canvas_title__divider {
+  background-color: $border;
+}
+
+.p-bookmarks_bar__bookmark--disabled,
+.p-bookmarks_bar__bookmark--dragging {
+  color: $text !important;
+}
+
+.p-bookmarks_bar__bookmark__icon {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-bookmarks_bar__folder_bookmarks_button--hovering:not(.p-bookmarks_bar__bookmark--disabled) .c-button-unstyled {
+  background: $button;
+  color: $fg;
+}
+
+.p-bookmarks_bar__folder_bookmarks_button__item.c-menu_item__button--highlighted .p-bookmarks_bar__bookmark {
+  color: $selectFg;
+
+  .p-bookmarks_bar__bookmark__icon {
+    color: $fg;
+  }
+}
+
+.p-bookmarks_bar_modal__input_section_title__container__image__icon--folder {
+  color: $text;
+
+  &:after {
+    border-left: 1px solid $borderLight;
+  }
+}
+
+.p-bookmarks_bar__placeholder_holder--icon {
+  background: $excluded;
+}
+
+.p-bookmarks_bar__placeholder_holder--text {
+  background-color: $excluded;
+}

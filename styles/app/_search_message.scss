@@ -8,6 +8,11 @@
 
 .c-search_message__body {
   color: $fg;
+
+  a,
+  pre {
+    box-shadow: inset -63px 0 35px -30px $bg;
+  }
 }
 
 .c-search_message--light {
@@ -53,11 +58,30 @@
 .c-search__back_to_filters__button--v2,
 .c-search__back_to_filters--v2_button {
   background: $contrast;
-  box-shadow: 0 0 0 1px $hl, 0 1px 3px 0 $hl;
+  box-shadow:
+    0 0 0 1px $hl,
+    0 1px 3px 0 $hl;
   color: $fg;
 
   &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 1px 3px 0 $primaryT;
     color: $primary;
   }
+}
+
+.c-search_message_hidden__body {
+  color: $text;
+}
+
+.c-search_message__attachments {
+  a,
+  pre {
+    box-shadow: inset -63px 0 35px -30px $bg;
+  }
+}
+
+.c-search_message__file_container:after {
+  box-shadow: inset -63px 0 35px -30px $bg;
 }

@@ -66,3 +66,7 @@
   border: 1px solid $borderLight;
   @include card;
 }
+
+.p-quip_comment_root__tooltip__subtitle {
+  color: $text;
+}

@@ -41,3 +41,13 @@
     box-shadow: none;
   }
 }
+
+.c-pagination__arrow_btn:disabled {
+  color: $border;
+
+  &:active,
+  &:hover {
+    background: none;
+    color: $borderLight;
+  }
+}

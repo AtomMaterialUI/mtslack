@@ -1,0 +1,10 @@
+.p-ai_summary_thread_separator_pill {
+  background-color: $button;
+  box-shadow: 0 0 0 1px $border;
+  color: $fg;
+
+  &.p-ai_summary_thread_separator_pill--in_progress {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}

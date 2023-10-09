@@ -170,7 +170,9 @@ button.p-admin_member_table__menu_item--disabled {
 
 .p-admin_member_table__edit_channels {
   .c-lazy_filter_select__input_container--active {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -178,7 +180,9 @@ button.p-admin_member_table__menu_item--disabled {
   border: 1px solid $red;
 
   &:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -224,7 +228,9 @@ button.p-admin_member_table__menu_item--disabled {
     border: 1px solid $button;
 
     &:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
 
       &:-moz-placeholder,
       &:-ms-input-placeholder,
@@ -387,7 +393,9 @@ button.p-admin_member_table__menu_item--disabled {
 }
 
 .p-bp__grid_cell--focus:after {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-browse_page_member_card_entity {
@@ -396,7 +404,9 @@ button.p-admin_member_table__menu_item--disabled {
 
   &:active,
   &:hover {
-    box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 1px 3px 0 $primaryT;
   }
 }
 
@@ -544,6 +554,7 @@ button.p-admin_member_table__menu_item--disabled {
   .p-browse_page_channel__inaction_label {
     color: $disabled;
   }
+
   .browse_page_channel_view_button_wrapper {
     background: transparent;
   }
@@ -682,4 +693,8 @@ button.p-admin_member_table__menu_item--disabled {
 .sk-client-theme--dark .p-browse_page_member_card_entity__select_circle {
   border-color: $hl;
   background: $bg2;
+}
+
+.p-browse_page_member_card_entity__avatar--hover_overlay {
+  background: $overlay;
 }

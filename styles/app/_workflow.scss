@@ -42,3 +42,15 @@
 .p-workflow_preview__header {
   background-color: $bg;
 }
+
+.p-workflow_with_error {
+  color: $text;
+}
+
+.p-workflow_with_error__icon {
+  background: $excluded;
+}
+
+.p-workflow_with_error__title {
+  color: $text;
+}

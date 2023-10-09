@@ -1,0 +1,12 @@
+.p-aggregation_steps,
+.p-aggregation_steps__button {
+  color: $text;
+}
+
+.p-aggregation_steps__button {
+  color: $accent;
+}
+
+.p-aggregation_steps__label--loading_stub {
+  background-color: $overlay;
+}

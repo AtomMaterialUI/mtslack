@@ -16,3 +16,48 @@
     box-shadow: 0 0 0 6px $accentT;
   }
 }
+
+.p-message_attachment_list_record_container {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:hover .p-message_attachment_list_record__add_comment {
+    background-color: $bg;
+    border: 1px solid $border;
+    box-shadow: 0 1px 3px #00000014;
+  }
+}
+
+.p-message_attachment_list_record_header {
+  border-bottom: 1px solid $border;
+}
+
+.p-message_attachment_list_record__list_action,
+.p-message_attachment_list_record__list_title {
+  color: $text;
+}
+
+.p-message_attachment_list_record__list_link {
+  &:focus,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-message_attachment_list_record__field_label {
+  color: $text;
+}
+
+.p-message_attachment_list_record__field_value .c-timestamp__label {
+  color: $fg;
+}
+
+.p-message_attachment_list_record__fields_container:after {
+  background: linear-gradient(180deg, $bg, $bg);
+}
+
+.p-message_attachment_list_record_header .p-list_icon {
+  color: $text;
+}

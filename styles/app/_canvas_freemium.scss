@@ -1,0 +1,11 @@
+.p-canvas_freemium_banner {
+  background-color: $notif;
+
+  &.p-canvas_freemium_banner--bordered {
+    box-shadow: 0 1px 0 0 $border;
+  }
+}
+
+.sk-client-theme--dark .p-canvas_freemium_banner {
+  background-color: $notif;
+}

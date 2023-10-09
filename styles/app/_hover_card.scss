@@ -26,18 +26,39 @@
 }
 
 .p-member_profile_hover_card__secondary {
-  border-top: 1px solid $border;
-}
-
-.p-member_profile_hover_card__secondary {
   border-top: 1px solid $borderLight;
 }
 
 .p-member_profile_hover_card__banner {
-  background: $bg2;
+  background: $notif;
   color: $fg;
 }
 
 .p-member_profile_hover_card__primary .p-app_external_team_banner {
+  background: $notif;
+}
+
+.p-member_profile_hover_card__container_deleted {
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
   background: $excluded;
+  color: $disabled;
+}
+
+.p-member_profile_hover_card__banner_dark,
+.p-member_profile_hover_card__banner_light {
+  background: $notif;
+  color: $fg;
+}
+
+.p-member_profile_hover_card__banner_deactivated_light,
+.p-member_profile_hover_card__banner_deactivated_dark {
+  background: $notif;
+  color: $disabled;
+}
+
+.p-member_profile_hover_card__share_canvas_banner {
+  background-color: $notif;
+  color: $text;
 }

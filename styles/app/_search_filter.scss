@@ -160,3 +160,38 @@
 .p-search_filter__emoji_picker {
   background-color: $bg2;
 }
+
+.p-search_filter__select-label-highlight-sort {
+  color: $accentT;
+}
+
+.p-search_filter__select-label-highlight-sort--open,
+.p-search_filter__select-label-highlight-sort:hover {
+  color: $accent;
+}
+
+.p-search_filter__select-list {
+  .c-member_name--deactivated {
+    color: $disabled;
+  }
+
+  .c-select_options_list__clear_option {
+    color: $accent;
+  }
+
+  .c-select_options_list__option--active.c-select_options_list__clear_option {
+    color: $bg;
+  }
+
+  .c-select_options_list__option--empty-state {
+    color: $text;
+  }
+}
+
+.p-search_filter__modal_trigger--ia4 {
+  color: $fg;
+}
+
+.p-search_filter__placeholder {
+  color: $text;
+}

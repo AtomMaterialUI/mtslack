@@ -1,0 +1,37 @@
+.c-hero_banner-wrapper {
+  border-color: $borderLight;
+}
+
+.c-hero_banner-focus-wrapper:focus {
+  box-shadow:
+    0 0 0 1px var(--sk_focused-shadow-color, $accent),
+    0 0 0 5px var(--sk_focused-shadow-color-opaque, $accentT);
+}
+
+.c-hero_banner-background-horchata {
+  background-color: rgb(var(--dt_color-plt-horchata-0));
+}
+
+.c-hero_banner-background-lagoon {
+  background-color: rgb(var(--dt_color-plt-lagoon-0));
+}
+
+.c-hero_banner-background-mojito {
+  background-color: rgb(var(--dt_color-plt-mojito-0));
+}
+
+.c-hero_banner-background-gray {
+  background-color: rgb(var(--dt_color-plt-gray-5));
+}
+
+.c-hero_banner-background-campfire {
+  background-color: rgb(var(--dt_color-plt-campfire-0));
+}
+
+.c-hero_banner-background-sunflower {
+  background-color: rgb(var(--dt_color-plt-sunflower-0));
+}
+
+.c-hero_banner-content {
+  color: $text;
+}
