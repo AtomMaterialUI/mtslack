@@ -1,0 +1,9 @@
+.c-search_summary {
+  background-color: $contrast;
+  border: 1px solid $border;
+  color: $fg;
+
+  .c-search_summary__content_header .c-search_summary__content_header__username {
+    color: $fg;
+  }
+}

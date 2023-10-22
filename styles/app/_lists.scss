@@ -32,7 +32,6 @@
   border: 1px solid $borderLight;
 }
 
-
 .p-status_updated_workflow_modal__trigger .c-select_button__placeholder,
 .p-status_updated_workflow_modal__channel_name_placeholder {
   color: $primary;
@@ -60,4 +59,160 @@
 
 .p-list_header__share_button {
   border: 1px solid $button;
+}
+
+.p-lists_new_modal__icon_button {
+  border: 1px solid $border;
+  color: $text;
+}
+
+.p-lists_new_modal__content.c-sk-modal_content {
+  background: $bg2;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+}
+
+.p-lists_new_modal__description_wrapper,
+.p-lists_new_modal__screenshots_wrapper {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-lists_import_modal__step {
+  color: $text;
+}
+
+.p-lists_import_modal__upload_error_icon {
+  color: $red;
+}
+
+.p-lists_import_modal__upload_button {
+  border: 2px dashed $border;
+}
+
+.p-lists_import_modal__upload_button--uploaded {
+  border: 2px solid $border;
+}
+
+.p-lists_import_modal__upload_button_title_link {
+  color: $accent2;
+}
+
+.p-lists_import_modal__drag_overlay {
+  background: $bg;
+  border: 2px solid $border;
+}
+
+.p-lists_import_modal__primary_column_rows {
+  background-color: $border;
+  border: 1px solid $border;
+}
+
+.p-lists_import_modal__primary_column_row {
+  background: $bg;
+}
+
+.p-lists_import_modal__primary_column_header_row {
+  background-color: $border;
+}
+
+.p-lists_import_modal__column_type_row_ex {
+  color: $text;
+}
+
+.p-lists_import_modal__icon_button {
+  border: 1px solid $border;
+  color: $text;
+}
+
+.p-lists_templates__template_item_icon {
+  background-color: $excluded;
+  color: $fg;
+}
+
+.p-lists_templates__template {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 4px 12px 0 #00000014;
+  }
+}
+
+.p-list_entity {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-list_entity__item_icon {
+  background-color: $excluded;
+  color: $fg;
+}
+
+.p-lists_browser_delete_button__item_action_delete.c-message_actions__button {
+  color: $red;
+}
+
+.p-lists_browser_page {
+  background-color: $bg2;
+}
+
+.p-lists_browser__item {
+  background: $bg;
+  border: 1px solid $border;
+
+  &:hover {
+    border-color: $border;
+    box-shadow: 0 1px 1px #0000000f;
+  }
+
+  .p-list_entity {
+    border: none;
+  }
+}
+
+.p-lists_browser__item_icon {
+  background-color: $excluded;
+  color: $fg;
+}
+
+.p-lists_browser__nux_banner {
+  background-color: $notif;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-lists_browser__nux_banner {
+  background-color: $notif;
+}
+
+.p-lists_browser-search-reset {
+  color: $text;
+}
+
+.p-lists_browser__controls__button {
+  color: $text;
+
+  &:hover {
+    background-color: $button;
+  }
+}
+
+.p-lists_browser__controls__menu_item--selected {
+  color: $primary;
+
+  .c-menu_item__icon {
+    color: inherit;
+  }
+}
+
+.c-menu_item__button--highlighted.p-lists_browser__controls__menu_item--selected {
+  color: $selectFg;
+
+  .c-menu_item__icon {
+    color: inherit;
+  }
 }

@@ -1,0 +1,46 @@
+.p-calendar_view {
+  border-top: 1px solid $border;
+}
+
+.p-calendar_view__header_today_button:hover {
+  background-color: $hl;
+}
+
+.p-calendar_view__date_container {
+  border: 1px solid $border;
+}
+
+.p-calendar_view__date--dragging-over {
+  background-color: $tree;
+}
+
+.p-calendar_view__date--weekend {
+  background-color: $bg;
+}
+
+.p-calendar_view__date_header--today {
+  background: $active;
+  color: $selectFg;
+}
+
+.p-calendar_view__date_header--other_month {
+  color: $text;
+}
+
+.p-calendar_view__date_record_name {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:hover {
+    background-color: $tree;
+  }
+}
+
+.p-calendar_view__date_record_name--dragging {
+  background-color: $tree;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}

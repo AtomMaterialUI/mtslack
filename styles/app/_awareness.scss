@@ -1,0 +1,95 @@
+.p-awareness_icon {
+  color: $fg;
+}
+
+.p-awareness_icon--gray {
+  background-color: rgb(var(--dt_color-plt-gray-20));
+  color: rgb(var(--dt_color-plt-gray-80));
+}
+
+.p-awareness_icon--brown {
+  background-color: rgb(var(--dt_color-plt-horchata-20));
+  color: rgb(var(--dt_color-plt-horchata-80));
+}
+
+.p-awareness_icon--orange {
+  background-color: rgb(var(--dt_color-plt-campfire-20));
+  color: rgb(var(--dt_color-plt-campfire-80));
+}
+
+.p-awareness_icon--yellow {
+  background-color: rgb(var(--dt_color-plt-sunflower-20));
+  color: rgb(var(--dt_color-plt-sunflower-80));
+}
+
+.p-awareness_icon--green {
+  background-color: rgb(var(--dt_color-plt-cilantro-20));
+  color: rgb(var(--dt_color-plt-cilantro-80));
+}
+
+.p-awareness_icon--blue {
+  background-color: rgb(var(--dt_color-plt-ocean-20));
+  color: rgb(var(--dt_color-plt-ocean-80));
+}
+
+.p-awareness_icon--indigo {
+  background-color: rgb(var(--dt_color-plt-indigo-20));
+  color: rgb(var(--dt_color-plt-indigo-80));
+}
+
+.p-awareness_icon--purple {
+  background-color: rgb(var(--dt_color-plt-aubergine-30));
+  color: rgb(var(--dt_color-plt-aubergine-80));
+}
+
+.p-awareness_icon--pink {
+  background-color: rgb(var(--dt_color-plt-flamingo-20));
+  color: rgb(var(--dt_color-plt-grflamingoay-80));
+}
+
+.p-awareness_icon--red {
+  background-color: rgb(var(--dt_color-plt-tomato-20));
+  color: rgb(var(--dt_color-plt-tomato-80));
+}
+
+.p-awareness_key_column.p-awareness_key_column--is_aware {
+  &.p-awareness_key_column--is_aware_gray {
+    border-color: rgb(var(--dt_color-plt-gray-20));
+  }
+
+  &.p-awareness_key_column--is_aware_brown {
+    border-color: rgb(var(--dt_color-plt-horchata-20));
+  }
+
+  &.p-awareness_key_column--is_aware_orange {
+    border-color: rgb(var(--dt_color-plt-campfire-20));
+  }
+
+  &.p-awareness_key_column--is_aware_yellow {
+    border-color: rgb(var(--dt_color-plt-sunflower-20));
+  }
+
+  &.p-awareness_key_column--is_aware_green {
+    border-color: rgb(var(--dt_color-plt-cilantro-20));
+  }
+
+  &.p-awareness_key_column--is_aware_blue {
+    border-color: rgb(var(--dt_color-plt-ocean-20));
+  }
+
+  &.p-awareness_key_column--is_aware_indigo {
+    border-color: rgb(var(--dt_color-plt-indigo-20));
+  }
+
+  &.p-awareness_key_column--is_aware_purple {
+    border-color: rgb(var(--dt_color-plt-aubergine-30));
+  }
+
+  &.p-awareness_key_column--is_aware_pink {
+    border-color: rgb(var(--dt_color-plt-flamingo-20));
+  }
+
+  &.p-awareness_key_column--is_aware_red {
+    border-color: rgb(var(--dt_color-plt-tomato-20));
+  }
+}

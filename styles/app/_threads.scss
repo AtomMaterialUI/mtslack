@@ -434,3 +434,45 @@
 .p-quip_loading_skeleton {
   background-color: $bg;
 }
+
+.p-thread_indicator__comment_icon {
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-thread_indicator__comment_icon {
+  color: $fg;
+}
+
+.p-thread_indicator__comment_icon.p-thread_indicator__comment_icon--unread {
+  color: $primary;
+}
+
+.p-thread_indicator__reply_count_value {
+  color: $bg;
+
+  &.p-thread_indicator__reply_count_value--unread {
+    color: $bg;
+  }
+}
+
+.p-thread_column__wrapper {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+  border-left: 1px solid $border;
+}
+
+.p-thread_column__wrapper--dragging {
+  background-color: $tree !important;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-thread_column__header,
+.p-thread_column__row_menu_last_edited_time {
+  color: $text;
+}
+
+.p-thread_column_menu_item--report.c-menu_item__button--highlighted {
+  background-color: $accent;
+}

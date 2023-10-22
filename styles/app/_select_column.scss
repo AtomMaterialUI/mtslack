@@ -1,0 +1,59 @@
+.p-select_column_editor__header {
+  color: $text;
+}
+
+.p-select_column_editor__button {
+  color: $text;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-select_column_editor__option:hover {
+  background-color: $tree;
+}
+
+.p-select_column_editor__option_grabby,
+.p-select_column_editor__option_arrow {
+  color: $text;
+}
+
+.p-select_column_editor__option--dragging_over:not(.p-select_column_editor__option--dragging) {
+  background-color: unset !important;
+}
+
+.p-select_column_editor__option--dragging {
+  background-color: $tree !important;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-select_column_editor__color_button:hover {
+  background-color: $hl;
+}
+
+.p-rating_column_editor__emoji_button,
+.p-vote_column_editor__emoji_button {
+  background-color: $bg;
+}
+
+.p-number_column_editor__format_type_option--selected {
+  background: $active;
+  box-shadow: 0 0 0 1px $accent;
+
+  &:hover {
+    background: $hl;
+    box-shadow: 0 0 0 1px $accent;
+  }
+}
+
+.p-date_column_editor__format_type_option--selected {
+  background: $bg2;
+  border-color: $borderLight;
+}
+
+.p-column_editor__list_item_disabled {
+  color: $disabled;
+}

@@ -1,0 +1,13 @@
+.p-limited_history_search_trial_offer_banner {
+  background-color: $bg;
+  border-color: $border;
+}
+
+.p-limited_history_search_trial_offer_banner__icon {
+  background-color: $border;
+  color: $primary;
+
+  .c-icon--info {
+    color: $fg;
+  }
+}

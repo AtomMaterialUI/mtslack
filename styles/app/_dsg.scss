@@ -1,0 +1,277 @@
+:root {
+  --dsg-selection-border-radius: 4px;
+  --dsg-selection-border-width: 1px;
+  --dsg-selection-background-color: $contrast;
+  --dsg-selection-disabled-border-color: $disabled;
+  --dsg-selection-disabled-background-color: $excluded;
+  --dsg-corner-indicator-width: 10px;
+  --dsg-expand-rows-indicator-width: 7px;
+  --dsg-scroll-shadow-width: 7px;
+  --dsg-scroll-shadow-color: #0003;
+  --dsg-cell-hover-background-color: $hl;
+}
+
+.dsg-container {
+  background-color: $bg2;
+  border-top: 1px solid $border;
+  color: $fg;
+  //&.is-horizontally-scrolled .dsg-cell-stick-column-left:not(.dsg-cell-gutter) {
+  //  --saf-0: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  //  box-shadow: 4px 0 0 0 var(--saf-0);
+  //}
+}
+
+.dsg-corner-indicator {
+  border-bottom: var(--dsg-corner-indicator-width) solid $text;
+  border-left: var(--dsg-corner-indicator-width) solid #0000;
+}
+
+.dsg-row {
+  background-color: $bg;
+
+  &:hover:not(.dsg-row-active) {
+    .dsg-cell,
+    .p-thread_column__wrapper {
+      background-color: $tree;
+    }
+  }
+}
+
+.sk-client-theme--dark .dsg-row:hover:not(.dsg-row-active) {
+  .dsg-cell,
+  .p-thread_column__wrapper {
+    background-color: $tree;
+  }
+}
+
+.dsg-row:hover:not(.dsg-row-header) {
+  .p-thread_indicator__reply_count {
+    outline-color: $excluded;
+  }
+
+  .dsg-cell-gutter .p-list_detail__sticky_buttons,
+  .dsg-cell-sticky-right .p-list_detail__sticky_buttons {
+    background-color: $bg2;
+  }
+
+  .dsg-cell-gutter .p-thread_column__row_hover,
+  .dsg-cell-sticky-right .p-thread_column__row_hover {
+    background-color: $bg;
+    border: 1px solid $border;
+  }
+
+  .dsg-cell-gutter .p-thread_column__row_grab:hover,
+  .dsg-cell-sticky-right .p-thread_column__row_grab:hover {
+    background-color: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+  }
+
+  .dsg-cell-focus input:focus {
+    background-color: $bg;
+  }
+}
+
+.dsg-cell-header:focus {
+  box-shadow:
+    0 0 0 1px var(--sk_focused-shadow-color, $primary),
+    0 0 0 5px var(--sk_focused-shadow-color-opaque, $primaryT);
+}
+
+.dsg-row-active {
+  .dsg-cell,
+  .dsg-cell-bottom-right,
+  .dsg-cell-top-right,
+  .p-thread_column__wrapper {
+    background-color: $active;
+  }
+}
+
+.dsg-row-active--dark {
+  .dsg-cell,
+  .dsg-cell-bottom-right,
+  .dsg-cell-top-right,
+  .p-thread_column__wrapper {
+    background-color: $active;
+  }
+}
+
+.dsg-row-active {
+  .dsg-cell-gutter,
+  .dsg-cell-sticky-right {
+    background-color: $bg2;
+  }
+}
+
+.dsg-cell {
+  background-color: $bg;
+
+  &.dsg-cell-focus {
+    background-color: $bg;
+  }
+
+  border-bottom: 1px solid $border;
+  border-right: 1px solid $border;
+}
+
+.dsg-cell-disabled {
+  background-color: $bg;
+}
+
+.dsg-cell-gutter {
+  box-shadow: none;
+  color: $text;
+}
+
+.dsg-cell-header {
+  box-shadow: none;
+  color: $text;
+}
+
+.dsg-cell-header.dsg-cell-sticky-right {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+  box-shadow: 0 0 $border;
+}
+
+.dsg-cell-gutter {
+  background-color: $bg2;
+  color: $disabled;
+}
+
+.dsg-cell-gutter-active,
+.dsg-cell-header-active {
+  color: $fg;
+}
+
+.dsg-active-cell,
+.dsg-selection-rect {
+  border: solid var(--dsg-selection-border-width) $accent;
+}
+
+.dsg-active-cell-disabled,
+.dsg-selection-rect-disabled {
+  border-color: $border;
+}
+
+.dsg-selection-rect {
+  background-color: $selectBg;
+}
+
+.dsg-selection-rect-disabled {
+  background-color: $disabled;
+}
+
+.dsg-selection-col-marker,
+.dsg-selection-row-marker {
+  background-color: $accent;
+}
+
+.dsg-selection-col-marker-disabled,
+.dsg-selection-row-marker-disabled {
+  background-color: $disabled;
+}
+
+.dsg-add-row {
+  color: $bg2;
+}
+
+.dsg-add-row-btn,
+.dsg-add-row-input {
+  background-color: $accentT;
+  color: $selectFg;
+}
+
+.dsg-add-row-btn:hover,
+.dsg-add-row-input:hover {
+  border-color: $accent;
+}
+
+.dsg-add-row-btn:focus,
+.dsg-add-row-input:focus {
+  border-color: $accent;
+}
+
+.dsg-add-row-btn {
+  &:after,
+  &:before {
+    background-color: #9da6ab;
+  }
+}
+
+.dsg-input {
+  .c-basic_container__body {
+    background-color: $bg;
+    border: solid var(--dsg-selection-border-width) $accent;
+    box-shadow: 0 1px 6px #0000004d;
+  }
+}
+
+.dsg-context-menu {
+  background-color: $bg2;
+}
+
+.dsg-context-menu-item:hover {
+  background-color: $hl;
+}
+
+.dsg-expand-rows-indicator {
+  background-color: $bg;
+  border: 1px solid $accent;
+}
+
+.dsg-expand-rows-indicator-disabled {
+  border: 1px solid $disabled;
+}
+
+.dsg-expand-rows-rect {
+  &.dsg-expand-rows-rect-extend {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    border: 1px solid $accent;
+  }
+}
+
+.dsg-cell-header--dragging {
+  background-color: $border;
+  border: 1px solid $border;
+}
+
+.dsg-cell-sticky-right {
+  background-color: $bg2;
+}
+
+.dsg-row-top {
+  .dsg-cell:not(.dsg-cell-top-left, .dsg-cell-sticky-right),
+  .p-thread_column__wrapper {
+    border-top: 1px solid $border;
+  }
+}
+
+.dsg-cell-top-right {
+  border-right: 1px solid $border;
+}
+
+.dsg-cell-bottom-right,
+.dsg-cell-top-right {
+  background-color: $bg;
+}
+
+.dsg-cell-bottom-right {
+  border-bottom: 1px solid $border;
+  border-right: 1px solid $border;
+}
+
+.dsg-cell-stick-column-left:not(.dsg-cell-gutter) {
+  border-right: 1px solid $border;
+}
+
+.dsg-cell-focus .p-list_detail__select_field {
+  background-color: $bg;
+  border: 1px solid $accent;
+}
+
+.p-data_sheet_grid__resize_handle {
+  &.p-data_sheet_grid__resize_handle--resizing .p-data_sheet_grid__col_indicator,
+  &:hover .p-data_sheet_grid__col_indicator {
+    background-color: $accent;
+    box-shadow: 0 0 0 1px $accent;
+  }
+}

@@ -1,0 +1,232 @@
+.p-list_view {
+  background: $contrast;
+  border-top: 1px solid $border;
+}
+
+.p-list_view__row {
+  background: $bg;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+  }
+}
+
+.p-gallery_view {
+  background: $contrast;
+  border-top: 1px solid $border;
+}
+
+.p-gallery_view__card {
+  background: $bg;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+  }
+}
+
+.p-gallery_view__cover_placeholder {
+  border-bottom: 1px solid $border;
+  color: $text;
+}
+
+.p-view_editor__type_button {
+  border: 1px solid $border;
+  color: $text;
+
+  &:hover:not(.p-view_editor__type_button--selected, [disabled]) {
+    background-color: $border;
+  }
+
+  &:disabled {
+    color: $border;
+  }
+}
+
+.p-view_editor__type_button--selected {
+  background-color: $tree;
+  border-color: $accent;
+}
+
+.p-view_editor__description {
+  color: $text;
+}
+
+.p-view_field_editor__header_button {
+  color: $accent;
+}
+
+.p-view_field_editor__option_arrow {
+  color: $text;
+}
+
+.p-view_field_editor__menu_button:hover,
+.p-sorted_column_list__item:hover {
+  background-color: $contrast;
+}
+
+.p-sorted_column_list__item_grabby {
+  color: $text;
+}
+
+.p-sorted_column_list__item--dragging_over:not(.p-sorted_column_list__item--dragging) {
+  background-color: unset !important;
+}
+
+.p-sorted_column_list__item--dragging {
+  background-color: $tree !important;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-sort_editor__add_button,
+.p-filter_editor__add_button {
+  color: $accentT;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.p-list_detail {
+  background: $bg;
+}
+
+.p-list_detail__multiselect_field {
+  background-color: $bg;
+  border: 1px solid $accent;
+}
+
+.p-list_detail__date_range_field__popover {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 5px 10px #0000001f;
+}
+
+.p-list_detail__field_header:hover {
+  background: $contrast;
+}
+
+.p-list_detail__field_header_name {
+  color: $text;
+}
+
+.p-list_detail__tab {
+  background-color: $bg;
+}
+
+.p-list_detail__rating_emoji {
+  &:focus {
+    .p-list_detail__rating_emoji_content_wrapper {
+      box-shadow: 0 0 1px 1px $accent;
+    }
+  }
+}
+
+.p-list_detail__metadata .c-timestamp__label {
+  color: $fg;
+}
+
+.p-list_detail__toolbar_button:hover {
+  background-color: $contrast;
+
+  .p-list_detail__toolbar_button_icon {
+    color: $fg;
+  }
+}
+
+.p-list_detail__toolbar_button_icon {
+  color: $text;
+}
+
+.p-list_detail__sort--applied {
+  background-color: #1d9bd11a;
+
+  .p-list_detail__toolbar_button_icon {
+    color: $fg;
+  }
+}
+
+.p-list_detail__footer {
+  background: $bg;
+  color: $text;
+}
+
+.p-list_detail__view_menu_delete {
+  color: $red;
+}
+
+.p-list_detail__field_header_menu_item_stick_column_left:not(.c-menu_item__button--highlighted) {
+  color: $accent;
+
+  .c-menu_item__icon {
+    color: $accent;
+  }
+}
+
+.p-list_detail__done_checkbox {
+  .p-list_detail__done_checkbox_checked {
+    color: $accent;
+  }
+
+  .p-list_detail__done_checkbox_unchecked {
+    color: $text;
+  }
+}
+
+.p-list_detail__views_navigation_tab {
+  color: $disabled;
+}
+
+.sk-client-theme--dark .p-list_detail__views_navigation_tab {
+  color: $disabled;
+}
+
+.p-list_detail__views_navigation_tab--selected {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-list_detail__views_navigation_tab--selected {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-lists_new__template {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 4px 12px 0 #00000014;
+  }
+}
+
+.p-lists_new__template_header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.container__3z1wj {
+  background: $bg;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    .avatar__T4nTE:after,
+    .contents__tWr2k {
+      background: $tree;
+    }
+  }
+}
+
+.container__yDHtY {
+  background-color: $bg2;
+}

@@ -48,7 +48,9 @@
 .p-board__card__container {
   &:focus {
     color: $primary;
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -136,7 +138,9 @@
 .p-board_proto__card__preview__mock_file,
 .p-board__card__preview__mock_file {
   background-color: $bg;
-  box-shadow: inset 5px 7px 0 7px $hl, inset -5px 7px 0 7px $hl;
+  box-shadow:
+    inset 5px 7px 0 7px $hl,
+    inset -5px 7px 0 7px $hl;
 }
 
 .p-board_proto__card__preview__mock_file__line,
@@ -229,6 +233,7 @@
 
 .p-board-selected-items-pill__button {
   background: $button;
+
   &:hover {
     background: $hl;
   }
@@ -339,4 +344,36 @@
   &.p-ia__view_header__button:hover {
     background: $borderLight;
   }
+}
+
+.p-board_view {
+  border-top: 1px solid $border;
+}
+
+.p-board_view__column_header {
+  background: $contrast;
+}
+
+.p-board_view__column_list_item {
+  background: $bg;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    background-color: $bg2;
+  }
+
+  &:focus {
+    background-color: $active;
+  }
+}
+
+.p-board_view__column_list_item--dragging {
+  background-color: $tree;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-board_view__list_footer.p-list_detail__footer {
+  background: $bg2;
 }

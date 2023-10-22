@@ -75,3 +75,24 @@
 .c-list_edit_unfurl__field_old_value:after {
   background: $fg;
 }
+
+.p-list_message_banner a {
+  color: $accent;
+}
+
+.p-list_message_banner__info_override {
+  background: $notif;
+  color: $fg;
+
+  .sk-client-theme--dark {
+    color: $fg;
+  }
+}
+
+.p-list_message_banner .c-icon_button {
+  color: $fg;
+
+  .sk-client-theme--dark {
+    color: $fg;
+  }
+}

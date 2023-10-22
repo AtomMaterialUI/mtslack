@@ -1,0 +1,105 @@
+.p-list_record_modal_info__default_field:hover {
+  background-color: $bg2;
+}
+
+.p-list_record_modal_info__field_row_container:hover {
+  background-color: $bg2;
+}
+
+.p-list_record_modal_info__field_row_reorder_control_icon {
+  color: $fg;
+}
+
+.p-list_record_modal_info__field_label {
+  color: $text;
+}
+
+.p-list_record_modal_info__field_value .c-timestamp__label {
+  color: $fg;
+}
+
+.p-list_record_modal_info__field_value_input_container {
+  .c-basic_container--bordered:focus-within,
+  .c-date_picker_input--focused,
+  .c-multi_select_input--focused,
+  .c-select_input:focus {
+    border: 1px solid $accent;
+    box-shadow: 0 1px 6px #0000004d;
+  }
+}
+
+.p-list_release_tier_badge__light {
+  background: $button;
+  color: $accent;
+}
+
+.p-list_release_tier_badge__dark {
+  background: $button;
+  color: $accent;
+}
+
+.p-list_record_modal_top_bar {
+  border-bottom: 1px solid $border;
+}
+
+.p-list_record_modal_top_bar__header .p-list_record_modal_top_bar__list_title {
+  color: $text;
+}
+
+.p-list_record_modal_top_bar__link {
+  color: $text;
+
+  &:focus,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-list_record_modal_top_bar__report_record_menu_item.c-menu_item__button--highlighted {
+  background-color: $primary;
+}
+
+.p-list_record_modal_top_bar__toggle_record_thread {
+  background: #0000;
+  color: $text;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      color: $disabled;
+    }
+  }
+
+  &[aria-pressed='true'] {
+    background-color: $bg;
+    color: $fg;
+
+    &:focus,
+    &:hover {
+      background-color: $bg;
+    }
+  }
+}
+
+.p-list_record_modal_flexpane {
+  border-left: 1px solid $border;
+}
+
+.p-list_record_modal_flexpane__top_bar {
+  border-bottom: 1px solid $border;
+}
+
+.p-list_record_modal_flexpane__filter_action_badge {
+  background: $accent;
+  border: 2px solid $bg;
+}
+
+.p-list_record_nux_banner {
+  background-color: $notif;
+  border: 1px solid $notif;
+
+  .c-alert__icon {
+    color: $accent;
+  }
+}

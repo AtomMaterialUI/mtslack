@@ -8,3 +8,18 @@
 .p-feedback_drag_overlay__subtitle {
   color: $text;
 }
+
+.p-feedback_summary_buttons {
+  .p-feedback_summary_buttons__label {
+    color: $text;
+  }
+
+  .p-feedback_summary_buttons__button {
+    border: 1px solid $borderLight;
+    color: $fg;
+
+    &.p-feedback_summary_buttons__button--selected {
+      background-color: $active;
+    }
+  }
+}
