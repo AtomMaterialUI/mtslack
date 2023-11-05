@@ -1,0 +1,13 @@
+.c-launchpad-inviter__inviter_card {
+  border: 1px solid $borderLight;
+  @include card;
+}
+
+.c-launchpad-inviter_skip {
+  color: $text;
+
+  &:active,
+  &:hover {
+    color: $fg;
+  }
+}
