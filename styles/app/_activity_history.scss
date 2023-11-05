@@ -1,0 +1,61 @@
+.p-activity_history__time_divider {
+  border: 1px solid $border;
+}
+
+.p-activity_history__time_continuation,
+.p-activity_history__time_divider {
+  background-color: $bg;
+  color: $text;
+}
+
+.p-activity_history__time_continuation {
+  border: 1px solid $border;
+}
+
+.p-activity_history__version {
+  border: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-activity_history__unselected_version:hover {
+  background-color: $hl;
+
+  &:active {
+    background-color: $accent;
+    color: $bg;
+  }
+}
+
+.p-activity_history__selected_version,
+.p-activity_history__unselected_version:hover:active .p-activity_history__version_time {
+  color: $bg;
+}
+
+.p-activity_history__selected_version {
+  background-color: $accent;
+
+  .p-activity_history__version_time {
+    color: $bg;
+  }
+}
+
+.p-activity_history__version_last {
+  border-bottom: 1px solid $border;
+}
+
+.p-activity_history__version_time {
+  color: $text;
+}
+
+.p-activity_history_flexpane__footer {
+  background: $bg2;
+}
+
+.p-activity_history_flexpane__footer_button {
+  color: $button;
+}
+
+.p-activity_history__floating_bar__preview {
+  background-color: $bg2;
+  border: 1px solid $border;
+}

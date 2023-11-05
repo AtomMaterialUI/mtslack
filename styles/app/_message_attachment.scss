@@ -61,3 +61,39 @@
 .p-message_attachment_list_record_header .p-list_icon {
   color: $text;
 }
+
+.p-message_attachment_list_view_container {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 1px 3px 0 $primaryT;
+}
+
+.p-message_attachment_list_view__list_action,
+.p-message_attachment_list_view__list_title {
+  color: $text;
+}
+
+.p-message_attachment_list_view__list_link {
+  &:focus,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-message_attachment_huddle_link__container {
+  border: 1px solid $borderLight;
+}
+
+.p-message_attachment_huddle_link__body {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-message_attachment_huddle_link__footer {
+  background-color: $contrast;
+}
+
+.p-message_attachment_huddle_link__body_channel_description,
+.p-message_attachment_huddle_link__footer_text {
+  color: $text;
+}

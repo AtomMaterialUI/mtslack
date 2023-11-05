@@ -241,3 +241,53 @@
 .p-embedded_generic_pins__title {
   color: $fg;
 }
+
+.p-embedded_workflow_template_entity .p-embedded_workflow_template_entity__icon {
+  background-color: $notif;
+  color: $selectFg;
+}
+
+.p-embedded_sample_content_template .p-embedded_sample_content_template__content__button {
+  .p-embedded_sample_content_template__icon {
+    background-color: $contrast;
+    color: $fg;
+  }
+
+  .p-embedded_sample_content_template__title {
+    color: $fg;
+  }
+
+  .p-embedded_sample_content_template__content {
+    color: $text;
+  }
+}
+
+.p-embedded_workflow_template {
+  background-color: $bg;
+}
+
+.p-embedded_canvas_hovercard .p-embedded_canvas_hovercard__last_editor_banner {
+  border-top: 1px solid $border;
+}
+
+.p-embedded_unfurl_in_hovercard__link_preview__body {
+  .p-embedded_public_link_unfurl__source_entity .p-embedded_public_link_unfurl__source_entity__source {
+    color: $fg;
+  }
+}
+
+.p-embedded_file_hovercard .p-embedded_file_hovercard__preview {
+  @include card;
+}
+
+.p-embedded_file_hovercard__audio_preview__play_icon {
+  color: $selectFg;
+}
+
+.p-inline_placeholder_edit_form {
+  background-color: $bg;
+
+  .p-inline_placeholder_edit_form__input_label .c-label__text {
+    color: $fg;
+  }
+}

@@ -1,0 +1,47 @@
+.p-shared_invite_creator_welcome_modal__image {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-shared_invite_creator_welcome_modal__image {
+  background-color: $contrast;
+}
+
+.p-shared_invite_creator_welcome_modal__team_icon--dot {
+  background-color: $bg2;
+}
+
+.p-shared_invite_creator_welcome_modal__footer--sandwich {
+  background-color: $tree;
+  color: $text;
+}
+
+.p-shared_invite_creator_welcome_modal__footer--scdm,
+.sk-client-theme--dark .p-shared_invite_creator_welcome_modal__footer--sandwich {
+  background-color: $tree;
+}
+
+.p-shared_invite_creator_welcome_modal__footer--scdm {
+  border-top: 1px solid $border;
+}
+
+.p-shared_invite_creator_welcome_modal__alert_link.c-link--button {
+  color: $accentT;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+}
+
+.p-gov_slack_modal__title_icon {
+  color: $notif;
+}
+
+.p-gov_slack_modal__title_icon--dark {
+  color: $notif;
+}
+
+.p-gov_slack_modal__header_img_container {
+  background-color: $notif;
+}

@@ -74,14 +74,18 @@
 
   &.c-link--focus-visible:focus,
   &.focus-ring {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
 .c-message_attachment__video_play {
   &.c-button--focus-visible:focus,
   &.focus-ring {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -128,13 +132,18 @@
 }
 
 .c-message_attachment_v2__delete {
-  color: $fg;
+  color: $primary;
 
+  &:focus,
   &:hover {
-    color: $selectFg;
+    color: $text;
   }
 }
 
 .c-message_attachment_v2__attribution {
+  color: $text;
+}
+
+.c-message_attachment_v2__document_unfurl {
   color: $text;
 }

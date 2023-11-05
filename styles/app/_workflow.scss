@@ -54,3 +54,42 @@
 .p-workflow_with_error__title {
   color: $text;
 }
+
+.p-workflow_picker__modal {
+  &.p-workflow_picker__modal--new_style {
+    .p-workflow_picker__header {
+      border-bottom: 1px solid $border;
+    }
+
+    .p-workflow_picker__footer {
+      border-top: 1px solid $border;
+    }
+  }
+
+  &:not(.p-workflow_picker__modal--new_style) {
+    .p-workflow_picker__footer,
+    .p-workflow_picker__header {
+      background-color: $bg2;
+    }
+  }
+}
+
+.p-workflow_picker_list_item_container:hover:not(.p-workflow_picker_list_item_container--selected) {
+  background-color: $bg2;
+}
+
+.p-workflow_picker_list_item_container--selected {
+  background-color: $accent;
+
+  .p-workflow_picker_list_item_information--selected {
+    color: $selectFg;
+  }
+}
+
+.p-workflow_picker_list_item_information {
+  color: $fg;
+}
+
+.p-workflow_picker_list_item_information__description {
+  color: $text;
+}

@@ -94,3 +94,29 @@
 .sk-client-theme--dark .p-member_profile_base_entity__celebration-anniversary {
   background-color: $hl;
 }
+
+.p-member_profile_buttons_deleted_hover_card button:hover {
+  background: $hl;
+}
+
+.p-member_profile_outofoffice {
+  .c-alert__message {
+    a {
+      color: $accent2;
+    }
+
+    .c-member_slug--link {
+      background: $tree;
+      color: $accent2;
+
+      &:hover {
+        background: $hl;
+        color: $selectFg;
+      }
+    }
+  }
+
+  .p-member_profile_outofoffice_coverage_plan:hover {
+    color: $primary;
+  }
+}

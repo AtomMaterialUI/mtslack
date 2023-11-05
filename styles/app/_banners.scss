@@ -10,7 +10,9 @@
   .c-button--focus-visible:focus,
   .c-link--focus-visible:focus {
     color: $selectFg;
-    box-shadow: 0 0 0 1px $selectBg, 0 0 0 5px $selectBg;
+    box-shadow:
+      0 0 0 1px $selectBg,
+      0 0 0 5px $selectBg;
   }
 
   &.c-banner--neutral {
@@ -225,4 +227,12 @@
       }
     }
   }
+}
+
+.p-message_pane_banner--ephemeral {
+  border: 1px solid $borderLight;
+}
+
+.p-message_pane_banner__close_icon {
+  color: $text;
 }
