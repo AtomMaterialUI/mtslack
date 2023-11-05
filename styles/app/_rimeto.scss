@@ -165,12 +165,16 @@
 
     --saf-0: $accent;
     --saf-1: $accentT;
-    box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+    box-shadow:
+      0 0 0 2px var(--saf-0),
+      0 1px 5px 0 var(--saf-1);
 
     &:hover {
       --saf-0: $accent;
       --saf-1: $accentT;
-      box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+      box-shadow:
+        0 0 0 2px var(--saf-0),
+        0 1px 5px 0 var(--saf-1);
     }
   }
 }
@@ -183,7 +187,9 @@
   &:hover {
     --saf-0: $accent;
     --saf-1: $accentT;
-    box-shadow: 0 0 0 2px var(--saf-0), 0 1px 5px 0 var(--saf-1);
+    box-shadow:
+      0 0 0 2px var(--saf-0),
+      0 1px 5px 0 var(--saf-1);
   }
 }
 
@@ -199,7 +205,9 @@
 .p-rimeto_org_chart_member_card_reports {
   --saf-0: $bg2;
   --saf-1: $excluded;
-  box-shadow: 0 0 0 1px var(--saf-0), 0 2px 8px 0 var(--saf-1);
+  box-shadow:
+    0 0 0 1px var(--saf-0),
+    0 2px 8px 0 var(--saf-1);
   background-color: $bg;
 }
 
@@ -221,4 +229,8 @@
 
 .p-rimeto_profile_sections__element--edit {
   color: $accent;
+}
+
+.p-rimeto_member_profile_field__contact_icon {
+  background-color: $overlay;
 }

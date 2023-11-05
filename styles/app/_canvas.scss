@@ -217,3 +217,61 @@
 .p-canvas_smart_cards {
   background: $bg2;
 }
+
+.p-canvas_template_gallery__modal {
+  .p-canvas_template_gallery__canvas_embed,
+  .p-quip_loading_skeleton {
+    box-shadow: 0 0 0 1px $excluded;
+  }
+
+  .p-quip_embed {
+    box-shadow: 0 4px 12px 0 $excluded;
+  }
+}
+
+.p-canvas_template_gallery__modal--ia4 {
+  background: radial-gradient(circle at 50% 50%, $text 20%, #0000 80%),
+    conic-gradient(from 45deg at 50% 50%, $contrast 0, $text 25%, $contrast 50%, $text 75%, $contrast 100%);
+}
+
+.p-canvas_template_gallery__sidebar {
+  border-right: 1px solid $border;
+}
+
+.p-canvas_template_gallery__sidebar--bg {
+  background: $contrast;
+}
+
+.p-canvas_template_gallery__sidebar--bg-ia4 {
+  background-color: $contrast;
+}
+
+.p-canvas_template_gallery__template--selected {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-canvas_template_gallery__template_header {
+  color: $text;
+}
+
+.p-canvas_template_gallery__canvas_container--ia4 {
+  background-color: $bg;
+}
+
+.p-canvas_template_gallery__canvas_header {
+  border-bottom: 1px solid $border;
+}
+
+.p-canvas_template_gallery__canvas_embed {
+  background-color: $bg;
+}
+
+.p-canvas_template_gallery__footer {
+  background-color: $bg;
+  border-top: 1px solid $border;
+}
+
+.p-canvas_template_gallery__last_updated {
+  color: $text;
+}

@@ -10,3 +10,34 @@
   border: 1px solid $borderLight;
   background-color: $bg2;
 }
+
+.p-announce_only_commands_menu {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  .p-announce_only_commands_menu__heading {
+    color: $disabled;
+  }
+
+  .p-announce_only_commands_menu__results {
+    .p-announce_only_commands_menu__container--selected {
+      background-color: $accent;
+
+      * {
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.p-announce_only_commands_menu_trigger--button {
+  background: $button;
+
+  &.c-icon_button--default:hover {
+    background-color: $hl;
+  }
+}
+
+.p-announce_only_commands_menu_trigger--circle:before {
+  background-color: $accent;
+}

@@ -1,0 +1,15 @@
+.p-window_layout_wrapper {
+  background: $bg;
+
+  .p-view_contents {
+    background-color: $bg;
+  }
+}
+
+.p-window_layout_wrapper__secondary {
+  border-left: 1px solid $border;
+}
+
+.p-window_layout_wrapper--multi-view {
+  box-shadow: 0 0 0 1px $border;
+}

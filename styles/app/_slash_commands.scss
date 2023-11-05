@@ -14,3 +14,15 @@
 .c-texty_autocomplete.p-slash_commands_autocomplete_menu {
   @include shadow;
 }
+
+.p-slash_commands_autocomplete_menu_heading {
+  color: $disabled;
+}
+
+.p-slash_commands_autocomplete_menu_heading__icon--highlighted {
+  color: $primary !important;
+}
+
+.p-slash_commands_autocomplete_menu_heading__icon--app {
+  border: 1px solid $borderLight;
+}

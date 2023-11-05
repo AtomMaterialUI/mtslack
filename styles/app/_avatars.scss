@@ -184,3 +184,12 @@
   background: transparent;
   color: $text;
 }
+
+.p-ia4_client .p-avatar_stack--details,
+.p-window_layout_wrapper--ia4 .p-avatar_stack--details {
+  border: 1px solid $borderLight;
+}
+
+.p-avatar_stack__presence_bg {
+  background-color: $bg;
+}

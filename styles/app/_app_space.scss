@@ -44,3 +44,20 @@
 .p-app_space_profile__privacy_disclaimer {
   color: $disabled;
 }
+
+.p-app_space_profile--focus {
+  box-shadow:
+    0 0 0 1px var(--sk_focused-shadow-color, $accent),
+    0 0 0 5px var(--sk_focused-shadow-color-opaque, $accentT);
+  color: $accent;
+}
+
+.p-app_space_profile__screenshots_item {
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 4px 12px 0 #00000014;
+  }
+}

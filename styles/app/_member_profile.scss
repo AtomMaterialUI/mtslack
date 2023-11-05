@@ -7,8 +7,23 @@
   color: $fg;
 }
 
+.p-member_profile_restriction_deleted {
+  background-color: $bg2;
+  color: $disabled;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $fg;
+  }
+}
+
 .p-member_profile__picture {
   border-bottom: 1px solid $border;
+}
+
+.p-member_profile_restriction__text_deleted {
+  color: $disabled;
 }
 
 .p-member_profile_name__link {
@@ -119,4 +134,126 @@
   .p-member_profile_outofoffice_coverage_plan:hover {
     color: $primary;
   }
+}
+
+.p-member_profile_name__on_slack:before {
+  color: $accent;
+}
+
+.p-r_member_profile__avatar__img_container {
+  background-color: $button;
+
+  &:after {
+    box-shadow: inset 0 0 0 1px $button;
+  }
+
+  &.p-r_member_profile_avatar_img_container--hidden_user {
+    background-color: $excluded;
+    color: $text;
+  }
+}
+
+.p-r_member_profile__avatar__celebration_title {
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-r_member_profile__avatar__celebration_title {
+  color: $accent;
+}
+
+.p-r_member_profile__avatar__anniversary_subtitle {
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-r_member_profile__avatar__anniversary_subtitle {
+  color: $accent;
+}
+
+.p-r_member_profile__avatar__anniversary_container {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-r_member_profile__avatar__anniversary_container {
+  background-color: $contrast;
+}
+
+.p-r_member_profile__avatar__new_hire_container {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-r_member_profile__avatar__new_hire_container {
+  background-color: $contrast;
+}
+
+.p-r_member_profile--link.p-r_member_profile--link {
+  &:hover {
+    color: $accent2;
+  }
+}
+
+.p-r_member_profile_channel--link {
+  &:hover {
+    color: $accent2;
+  }
+}
+
+.p-r_member_profile_info_icon {
+  color: $disabled;
+}
+
+.p-r_member_profile_section {
+  border-top: 1px solid $borderLight;
+}
+
+.p-r_member_profile_name_pronunciation--volume:hover {
+  background-color: $bg;
+}
+
+.p-r_member_profile--add-pronunciation-btn {
+  color: $accent;
+}
+
+.p-r_member_profile--animated-sound-icon .p-r_member_profile--animated-sound-icon-child {
+  color: $accent;
+
+  &:hover {
+    background: #0000;
+    color: $accent;
+  }
+}
+
+.p-r_member_profile__preview-menu {
+  background-color: $contrast;
+}
+
+.p-r_member_profile__preview-menu-select-button {
+  background: $accentT;
+  border-color: $accentT;
+  color: $selectFg;
+
+  &:hover {
+    background: $accent;
+    border-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-r_member_profile__preview-view-as-icon.external {
+  color: $fg;
+
+  &.is-selected {
+    color: $primary;
+  }
+}
+
+.c-menu_item__li--highlighted .p-r_member_profile__preview-view-as-icon.external {
+  color: $selectFg;
+}
+
+.p-r_member_profile__menu-item-report.c-menu_item__button--highlighted {
+  background-color: $accent;
+}
+
+.p-flexpane__preview-mode-overlay {
+  background: $contrast;
 }

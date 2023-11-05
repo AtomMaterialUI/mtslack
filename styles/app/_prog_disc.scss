@@ -614,3 +614,69 @@
     color: $text;
   }
 }
+
+.p-progressive_disclosure_huddle_channel_header_button_flag {
+  background-color: $contrast;
+
+  .p-huddle_channel_header_button__container {
+    background-color: $button;
+    color: $fg;
+
+    .p-huddle_channel_header_button__label {
+      color: $text;
+    }
+  }
+}
+
+.sk-client-theme--dark
+  .p-progressive_disclosure_huddle_channel_header_button_flag
+  .p-huddle_channel_header_button__container
+  .p-huddle_channel_header_button__label {
+  color: $text;
+}
+
+.p-progressive_disclosure_huddle_channel_header_button_flag .p-huddle_channel_header_button__container svg {
+  color: $contrast;
+}
+
+.sk-client-theme--dark
+  .p-progressive_disclosure_huddle_channel_header_button_flag
+  .p-huddle_channel_header_button__container
+  svg {
+  color: $contrast;
+}
+
+.p-progressive_disclosure_huddle_channel_header_button_flag
+  .p-huddle_channel_header_button__container.p-huddle_channel_header_button--in_huddle--pd {
+  background-color: $bg;
+  border-color: $bg;
+}
+
+.sk-client-theme--dark
+  .p-progressive_disclosure_huddle_channel_header_button_flag
+  .p-huddle_channel_header_button__container.p-huddle_channel_header_button--in_huddle--pd {
+  color: $selectFg;
+}
+
+.p-progressive_disclosure_huddle_channel_header_button_flag
+  .p-progressive_disclosure_huddle_channel_header_button_flag__text {
+  background-color: $bg;
+  color: $selectFg;
+}
+
+.p-nfx_steps {
+  color: $fg;
+}
+
+.p-nfx_huddle_coachmark {
+  .c-coachmarkv2__close {
+    color: $fg;
+  }
+
+  &.c-coachmark--bottom {
+    &:after,
+    &:before {
+      border-bottom-color: $accent;
+    }
+  }
+}

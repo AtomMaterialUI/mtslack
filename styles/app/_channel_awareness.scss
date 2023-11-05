@@ -36,3 +36,25 @@
   .p-channel_awareness_suggest_message_dismissal_icon {
   color: $selectFg;
 }
+
+.p-channel_awareness_banner {
+  background-color: $notif;
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-channel_awareness_banner {
+  background-color: $notif;
+
+  .p-channel_awareness_banner__btn {
+    background-color: $fg;
+    color: $button;
+  }
+}
+
+.p-channel_awareness_banner .c-banner__close {
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}

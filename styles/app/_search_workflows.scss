@@ -1,0 +1,36 @@
+.p-search_workflows_item {
+  --saf-0: rgba(var(--sk_primary_foreground, 29, 28, 29), 0.1);
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-search_workflows_item--focused,
+.p-search_workflows_item:hover {
+  border-color: $border;
+}
+
+.p-search_workflows_item-information {
+  color: $fg;
+}
+
+.p-search_workflows_item-information--description {
+  color: $text;
+}
+
+.p-search_workflows_nux_banner {
+  background-color: $notif;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+
+  .p-search_workflows_nux_banner_close {
+    color: $fg;
+  }
+}
+
+.p-search_workflows_nux_banner_title {
+  color: $fg;
+}
+
+.p-search_workflows_nux_banner_description {
+  color: $text;
+}

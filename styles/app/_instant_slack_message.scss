@@ -1,0 +1,36 @@
+.p-instant_slack_message_pane__foreword {
+  &:before {
+    background: linear-gradient(180deg, $tree, #0000);
+  }
+}
+
+.p-instant_slack_message_pane__foreword__channel_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-instant_slack_message_pane__foreword__description {
+  color: $text;
+
+  > h2 {
+    color: $fg;
+
+    > .c-inline_channel_entity {
+      color: $accent;
+    }
+  }
+}
+
+.p-instant_slack_message_pane__foreword__actions {
+  grid-gap: 12px;
+  list-style: none;
+
+  button {
+    border-color: $tree;
+    color: $accent;
+
+    > :last-child {
+      color: $text;
+    }
+  }
+}
