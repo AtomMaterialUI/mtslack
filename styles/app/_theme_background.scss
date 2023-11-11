@@ -1,5 +1,18 @@
 .p-theme_background {
   background: $contrast !important;
+
+  &.p-theme_background--sunroof {
+    -webkit-mask: linear-gradient(180deg, $bg, $bg2 200px);
+  }
+}
+
+.p-theme_background.p-theme_background--huddle-mini {
+  border: 1px solid $border;
+}
+
+.p-ia4_client--blurred-window .p-theme_background.p-theme_background--sunroof,
+.p-window--blurred .p-theme_background.p-theme_background--sunroof {
+  filter: brightness(0.9);
 }
 
 .p-theme_background.p-theme_background--huddle-mini {

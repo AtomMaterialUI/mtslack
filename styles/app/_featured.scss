@@ -1,0 +1,29 @@
+.p-featured_contact_card {
+  background-color: $bg;
+
+  &:active,
+  &:hover {
+    filter: brightness(97%);
+  }
+}
+
+.p-featured_contact_card__email {
+  color: $text;
+}
+
+.p-featured_contact_card__primary_button {
+  box-shadow: 0 0 0 1px $border;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: initial;
+  }
+
+  &:active,
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+  }
+}

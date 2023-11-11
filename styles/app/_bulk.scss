@@ -1,0 +1,13 @@
+.c-bulk_multi_select {
+  &.c-bulk_multi_select--view {
+    border: 1px solid $border;
+  }
+}
+
+.c-bulk_multi_select__no_selection {
+  border: 1px solid $borderLight;
+}
+
+.c-bulk_multi_select.c-bulk_multi_select--view .c-data_table__row:last-child {
+  border-bottom: none;
+}

@@ -550,7 +550,6 @@ input[type='text'].c-input_text.p-emoji_picker__input {
 
 .p-emoji_multi_skintone_popover_emoji__label_wrapper:focus-within
   .p-emoji_multi_skintone_popover__emoji--focus-visible {
-  --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
   box-shadow:
     0 0 0 1px $primary,
     0 0 0 5px $primaryT;

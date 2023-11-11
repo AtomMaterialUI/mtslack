@@ -1,5 +1,7 @@
 .p-setup_tada_coachmark {
-  box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
+  box-shadow:
+    0 0 0 1px $contrast,
+    0 18px 48px 0 $contrast;
 }
 
 .p-setup_tada_coachmark__header {
@@ -24,4 +26,8 @@
     background-color: $button;
     color: $disabled;
   }
+}
+
+.p-setup_tada_coachmark__ReactModal__Body--open .p-workspace__primary_view_contents:before {
+  background: $overlay;
 }

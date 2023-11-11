@@ -1,0 +1,33 @@
+.c-zoom_slider__minus_button,
+.c-zoom_slider__plus_button {
+  color: $text;
+}
+
+.c-zoom_slider__minus_button:hover,
+.c-zoom_slider__plus_button:hover {
+  color: $fg;
+}
+
+.c-zoom_slider__slider:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 1px $accent;
+}
+
+.c-zoom_slider__slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 1px $accent;
+}
+
+.c-zoom_slider__slider {
+  background: linear-gradient(90deg, $hl 100% 100%);
+}
+
+.c-zoom_slider__slider::-webkit-slider-thumb {
+  background: $accent;
+}
+
+.c-zoom_slider__slider::-moz-range-thumb {
+  background: $accent;
+}
+
+.c-zoom_slider__ticker {
+  border-right: 2px solid $hl;
+}

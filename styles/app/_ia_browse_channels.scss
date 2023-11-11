@@ -157,11 +157,9 @@
   0% {
     background: transparent;
   }
-
   10% {
     background: $excluded;
   }
-
   to {
     background: transparent;
   }
@@ -191,6 +189,15 @@
 
 .p-ia__view_header__sidebar_toggle_button {
   color: $text;
+
+  .p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+    background-color: $fg;
+    border-color: $bg;
+  }
+
+  .p-ia__view_header__sidebar_toggle_dot--mentions.p-team_sidebar__unread_dot {
+    background-color: $accent;
+  }
 
   &:hover {
     background: $active;

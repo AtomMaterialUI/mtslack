@@ -1,0 +1,94 @@
+.p-peek_card--as-card {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 18px 48px 0 #0000001a;
+}
+
+.p-peek_card__header {
+  box-shadow: 0 1px 0 0 $border;
+}
+
+.p-peek_card__header_subtitle {
+  color: $text;
+}
+
+.p-peek_card--dms {
+  .p-recent_page__item,
+  .p-recent_page__item--first {
+    box-shadow: inset 0 -1px $border;
+  }
+
+  .p-dm_browser_modal__list_row_badge {
+    background-color: $accent;
+    color: $bg;
+  }
+}
+
+.p-peek_card--activity {
+  .p-activity_page__item {
+    box-shadow: inset 0 -1px $border;
+  }
+}
+
+.p-peek_card--later .p-saved_for_later_page__list {
+  .p-saved_item {
+    box-shadow: inset 0 -1px $border;
+  }
+
+  .p-saved_item--selected {
+    background-color: initial;
+  }
+
+  .p-saved_item__actions {
+    background: $bg;
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+  }
+
+  .p-saved_item__header {
+    background: #0000;
+  }
+}
+
+.p-peek_card--browse .c-menu_item__button--highlighted:hover {
+  background-color: $hl;
+}
+
+.p-ia4_client--theming .p-peek_card--browse .c-menu_item__button--highlighted:hover {
+  background-color: $hl;
+}
+
+.p-peek_card--browse .p-browse-section-button {
+  box-shadow: inset 0 -1px $border;
+
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-ia4_client--theming .p-peek_card--browse .p-browse-section-button:hover {
+  background-color: $hl;
+}
+
+.p-peek_card--browse {
+  .p-browse-section-button__icon {
+    background-color: $button;
+    color: $text;
+  }
+
+  .p-browse-section-button__description {
+    color: $text;
+  }
+
+  .p-browse-section-button__badge {
+    background-color: $hl;
+  }
+}
+
+.p-peek_card--home {
+  --p-channel_sidebar__column-bg: $bg;
+  --p-channel_sidebar__item-hover-bg: $tree;
+  --p-channel_sidebar__section-heading-hover-bg: $tree;
+}

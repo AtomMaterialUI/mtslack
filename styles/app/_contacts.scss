@@ -1,0 +1,25 @@
+.p-prompt_to_search {
+  color: $text;
+}
+
+.p-contacts--with_background {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-contacts__input_hint {
+  border-right: 1px solid $borderLight;
+  color: $text;
+}
+
+.p-contacts__input_container--has_error {
+  .c-filter_input:not(.c-filter_input--active) {
+    border-color: $accent;
+  }
+
+  .c-filter_input--active {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+}

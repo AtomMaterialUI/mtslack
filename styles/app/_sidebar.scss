@@ -158,7 +158,7 @@ a.c-sidebar_menu__list_item {
 
 .p-channel_sidebar__close {
   &:focus {
-    background: var(--p-channel_sidebar__column-bg);
+    background: $contrast;
   }
 }
 
@@ -369,16 +369,15 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
   background: $button;
 
   &:hover {
-    background: var(--p-channel_sidebar__navigation-bar-color--hover);
-    color: var(--p-channel_sidebar__top-nav-text);
+    background: $hl;
+    color: $selectFg;
   }
 }
 
 .p-ia__view_header {
   border-bottom: none;
-  box-shadow: 0px 10px 10px -6px $border;
+  box-shadow: 0 10px 10px -6px $border;
   background: $bg2;
-  z-index: 1000;
 
   .p-channel_sidebar__history_button:not(.p-channel_sidebar__history_button--disabled) {
     &:hover {
@@ -396,13 +395,13 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 }
 
 .p-team_sidebar {
-  background: var(--p-team_sidebar__nav-bg);
+  background: $contrast;
 }
 
 .p-channel_sidebar__history_button--disabled {
   &:hover {
-    background: var(--p-channel_sidebar__navigation-bar-color);
-    color: var(--p-channel_sidebar__top-nav-text);
+    background: $bg;
+    color: $disabled;
   }
 }
 
@@ -626,24 +625,24 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar__organize_action {
-  color: var(--p-channel_sidebar__theme-text);
-  background-color: var(--p-channel_sidebar__theme-text--opacity-11);
+  color: $text;
+  background-color: $bg;
 
   &:active,
   &:focus,
   &:hover {
-    background-color: var(--p-channel_sidebar__theme-text--opacity-20);
+    background-color: $hl;
   }
 }
 
 .p-channel_sidebar__organize_action--primary {
-  color: var(--p-channel_sidebar__column-bg);
-  background-color: var(--p-channel_sidebar__theme-text);
+  color: $fg;
+  background-color: $contrast;
 
   &:active,
   &:focus,
   &:hover {
-    background-color: var(--p-channel_sidebar__theme-text--opacity-89);
+    background-color: $bg;
   }
 }
 
@@ -796,7 +795,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 
 .p-channel_sidebar__compose_button--disabled {
   background: $disabled;
-  color: var(--p-channel_sidebar__computed-text-color);
+  color: $text;
 }
 
 .p-channel_sidebar__compose_button--iap1:active {
@@ -941,7 +940,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   &:-ms-input-placeholder,
   &::-ms-input-placeholder,
   &::placeholder {
-    color: var(--p-channel_sidebar__computed-text-color);
+    color: $disabled;
   }
 }
 
@@ -996,7 +995,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   background: $contrast;
 
   .c-icon {
-    color: var(--p-channel_sidebar__computed-text-color);
+    color: $fg;
   }
 }
 
@@ -1246,13 +1245,13 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 }
 
 .p-channel_sidebar__organize_action__colors {
-  background-color: var(--p-channel_sidebar__theme-text--opacity-11);
-  color: var(--p-channel_sidebar__theme-text);
+  background-color: $contrast;
+  color: $text;
 
   &:active,
   &:focus,
   &:hover {
-    background-color: var(--p-channel_sidebar__theme-text--opacity-20);
+    background-color: $bg;
   }
 }
 
@@ -1265,4 +1264,51 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   &:hover {
     background-color: $active;
   }
+}
+
+.p-ia4_client--theming .p-huddle_sidebar_link_peer_count_badge,
+.p-huddle_sidebar_link_peer_count_badge {
+  background-color: $fg;
+  color: $bg;
+}
+
+.p-ia4_client--theming .p-channel_sidebar__channel--selected .p-huddle_sidebar_link_peer_count_badge,
+.p-channel_sidebar__channel--selected .p-huddle_sidebar_link_peer_count_badge {
+  background-color: $selectFg;
+  color: $bg;
+}
+
+.p-ia4_client--theming .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other,
+.p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other {
+  background-color: $text;
+  color: $bg;
+}
+
+.p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other.p-huddle_sidebar_link_peer_count_badge--ia4 {
+  background-color: $text;
+  color: $bg;
+}
+
+.p-channel_sidebar__channel--selected
+  .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other {
+  background-color: $excluded;
+  color: $bg;
+}
+
+.p-ia4_client--theming
+  .p-channel_sidebar__channel--selected
+  .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other {
+  background-color: $excluded;
+  color: $bg;
+}
+
+.p-channel_sidebar__channel--selected
+  .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other.p-huddle_sidebar_link_peer_count_badge--ia4 {
+  background-color: $bg;
+}
+
+.p-ia4_client--theming
+  .p-channel_sidebar__channel--selected
+  .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other.p-huddle_sidebar_link_peer_count_badge--ia4 {
+  background-color: $bg;
 }

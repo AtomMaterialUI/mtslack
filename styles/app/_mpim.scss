@@ -81,10 +81,10 @@
 .p-channel_sidebar__mpim_avatars_mpim2 {
   .c-avatar__image,
   .c-base_icon {
-    box-shadow: 0 0 0 2px var(--p-channel_sidebar__column-bg);
+    box-shadow: 0 0 0 2px $contrast;
   }
 }
 
 .p-channel_sidebar__mpim_counter {
-  box-shadow: 0 0 0 2px var(--p-channel_sidebar__column-bg);
+  box-shadow: 0 0 0 2px $contrast;
 }

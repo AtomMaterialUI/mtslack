@@ -157,3 +157,18 @@
 .p-summary_feedback_modal__clarity_subtext {
   color: $text;
 }
+
+.p-toggle_channel_space_cabinet_preview__container {
+  background: $bg2;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+
+  .c-file_entity__text {
+    color: $fg;
+  }
+}
+
+.p-toggle_channel_space_cabinet_preview__heading {
+  color: $text;
+}

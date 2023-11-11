@@ -1,0 +1,203 @@
+.p-huddles_participants_facepile .c-avatar__additional_overlay {
+  background-color: $bg;
+  color: $fg;
+}
+
+.p-huddles_active_tile {
+  background-color: $accent;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+  color: $selectFg;
+
+  &:focus {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+
+  &.p-huddles_active_tile--joined {
+    background-color: $bg;
+    color: $fg;
+  }
+
+  &.p-huddles_active_tile--invited {
+    border: 2px solid $selectFg;
+  }
+}
+
+.p-huddles_active_tile__header {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  .p-huddles_active_tile__facepile .c-avatar__additional_overlay {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-huddles_active_tile__button_container .p-huddles_active_tile__button {
+  background-color: $accent;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+
+  &:focus {
+    --saf-0: $accent;
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+}
+
+.p-huddles_active_tile--joined {
+  .p-huddles_active_tile__secondary .c-timestamp__label {
+    color: $fg;
+  }
+
+  .p-huddles_active_tile__button_container .p-huddles_active_tile__button {
+    background-color: $button;
+    color: $text;
+  }
+}
+
+.p-huddles_active_tile--invited .p-huddles_active_tile__button_container .p-huddles_active_tile__button {
+  background-color: $bg;
+  color: $accent;
+}
+
+.p-huddles_active_list_item {
+  background-color: $bg;
+  border-left: 1px solid $button;
+  border-right: 1px solid $button;
+  box-shadow: inset 0 -1px $button;
+
+  &.p-huddles_active_list_item__first_item {
+    box-shadow:
+      inset 0 -1px $button,
+      inset 0 1px $button;
+  }
+}
+
+.p-huddles_active_list_item__icon_column .p-huddles_active_list_item__icon_background {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-huddles_active_section__emptystate {
+  background-color: $contrast;
+  color: $fg;
+}
+
+.p-ia4_client--theming .p-huddles_active_section__emptystate {
+  color: $contrast;
+}
+
+.p-huddles_active_section__emptystate
+  .p-huddles_active_section__emptystate__text
+  .p-huddles_active_section__emptystate__button {
+  color: $text;
+}
+
+.p-ia4_client--theming
+  .p-huddles_active_section__emptystate
+  .p-huddles_active_section__emptystate__text
+  .p-huddles_active_section__emptystate__button {
+  color: $text;
+}
+
+.p-huddles_scheduled_list_item {
+  background-color: $bg;
+  border-left: 1px solid $button;
+  border-right: 1px solid $button;
+  box-shadow: inset 0 -1px $button;
+
+  &.p-huddles_scheduled_list_item__first_item {
+    box-shadow:
+      inset 0 -1px $button,
+      inset 0 1px $button;
+  }
+}
+
+.p-huddles_scheduled_list_item__icon_column .p-huddles_scheduled_list_item__icon_background {
+  background-color: $tree;
+}
+
+.p-huddles_scheduled_list_item__participants_column
+  .p-huddles_scheduled_list_item__facepile
+  .c-avatar:last-child
+  .c-avatar__additional_overlay {
+  color: $text;
+}
+
+.p-huddles_thread_open_button__badge_circle {
+  background: $accent;
+  border: 2px solid $accent;
+}
+
+.p-huddles_history_list_item {
+  background-color: $bg;
+  border-left: 1px solid $button;
+  border-right: 1px solid $button;
+  box-shadow: inset 0 -1px $button;
+
+  &.p-huddles_history_list_item__first_item {
+    box-shadow:
+      inset 0 -1px $button,
+      inset 0 1px $button;
+  }
+}
+
+.p-huddles_history_list_item__icon_column .p-huddles_history_list_item__icon_background {
+  background-color: $tree;
+}
+
+.p-huddles_history_list_item__participants_column
+  .p-huddles_history_list_item__facepile
+  .c-avatar:last-child
+  .c-avatar__additional_overlay,
+.p-huddles_history_list_item__notes_column button,
+.p-huddles_history_list_item__thread_column button {
+  color: $text;
+}
+
+.p-huddles_history_list_item__notes_column button:hover,
+.p-huddles_history_list_item__thread_column button:hover {
+  background-color: $hl;
+  color: $fg;
+}
+
+.p-huddles_history_section__loading {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-huddles_page {
+  background-color: $bg2;
+}
+
+.p-huddles_page__live_section {
+  color: $text;
+}
+
+.p-huddles_page__section_header {
+  color: $text;
+
+  .p-huddles_page__section_header__button {
+    color: $fg;
+  }
+
+  .p-huddles_page__section_header__divider {
+    background-color: $border;
+  }
+}
+
+.p-huddles_scheduled_section__loading {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}

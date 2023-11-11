@@ -8,11 +8,11 @@
   }
 
   .c-button--focus-visible:focus {
-    box-shadow: var(--p-channel_sidebar__focus-outline-box-shadow);
+    box-shadow: $border;
   }
 
   .p-ia__sidebar_header__mode {
-    background: var(--p-channel_sidebar__column-bg);
+    background: $contrast;
   }
 }
 
@@ -32,7 +32,7 @@
 
 .p-client_desktop--ia-top-nav {
   .p-team_sidebar {
-    box-shadow: inset -1px 0 0 0 var(--p-team_sidebar__text-color--mix-10);
+    box-shadow: inset -1px 0 0 0 $text;
   }
 
   .p-ia__sidebar_header--top-nav .p-ia__sidebar_header__button,
@@ -64,7 +64,7 @@
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__banner--unreads {
-  color: var(--p-channel_sidebar__column-bg);
+  color: $disabled;
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__list__bottom_banner_fade {

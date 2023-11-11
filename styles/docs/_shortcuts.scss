@@ -1,4 +1,4 @@
-[data-docs-editor="true"] {
+[data-docs-editor='true'] {
   .p-shortcuts_flexpane__shortcut {
     border-color: $border;
   }
@@ -27,5 +27,8 @@
   .p-shortcuts_flexpane__shortcut ul[data-checked='true'] > li:before {
     color: $accent;
   }
+}
 
+.p-keyboard_shortcuts_flexpane .p-shortcuts_flexpane__shortcut_sub_heading {
+  color: $text;
 }

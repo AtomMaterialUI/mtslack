@@ -1,0 +1,262 @@
+.p-sales_home_header__connection {
+  color: $text;
+}
+
+.p-sales_today__container {
+  background-color: $bg2;
+}
+
+.p-sales_today__title_header {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+}
+
+.p-sales_today__feed_item__card {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-sales_today__feed_item__unread_dot {
+  background-color: $accent;
+}
+
+.p-sales_today__feed_item__opp_hover_card .c-card__header,
+.p-sales_today__feed_item__opp_hover_card_avatar .c-base_icon {
+  background-color: $bg;
+}
+
+.p-sales_today__feed_item__opp_hover_card_details_label {
+  color: $text;
+}
+
+.p-sales_today__feed_item__opp_hover_card_stage_details_pill {
+  background-color: $button;
+  color: $fg;
+}
+
+.p-sales_insights {
+  background-color: $contrast;
+}
+
+.sk-client-theme--dark .p-sales_insights_metric,
+.p-sales_insights_metric {
+  background-color: $bg2;
+  border: 1px solid $borderLight;
+
+  &:hover {
+    background-color: $hl;
+    border-color: $primary;
+  }
+}
+
+.p-sales_insights_metric_actions_menu,
+.p-sales_insights_metric_report_url {
+  color: $text;
+}
+
+.p-sales_insights_metric_actions_menu:hover,
+.p-sales_insights_metric_report_url:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-sales_insights_metric_value {
+  &.p-sales_insights_metric_value--job_running,
+  &.p-sales_insights_metric_value--loading,
+  &.p-sales_insights_metric_value--request_limit_exceeded {
+    color: $text;
+  }
+}
+
+.p-sales_insights_metric_last_updated {
+  color: $text;
+}
+
+.sk-client-theme--dark .p-sales_insights_add_insights,
+.p-sales_insights_add_insights {
+  background-color: $button;
+  border: 1px solid $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+    border-color: $hl;
+  }
+}
+
+.p-sales_insights_add_edit_insights_form #salesforceReportId_label_id .c-label__subtext {
+  color: $fg;
+}
+
+.p-sales_onboarding__coachmark__hero {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-sales_onboarding__page__link .p-channel_sidebar__callout {
+  background-color: $notif;
+}
+
+.p-ia4_client--theming .p-sales_onboarding__page__link .p-channel_sidebar__callout {
+  background-color: $notif;
+}
+
+.p-sales_onboarding__coachmark.c-coachmark--right {
+  &:after,
+  &:before {
+    border-right-color: $accent;
+  }
+}
+
+.p-sales_onboarding__card {
+  border: 1px solid $borderLight;
+}
+
+.p-sales_onboarding__card--expanded {
+  border: 2px solid $accent;
+}
+
+.p-sales_onboarding__card--completed {
+  background-color: $bg2;
+}
+
+.p-sales_onboarding__card__title--completed {
+  color: $disabled;
+}
+
+.p-sales_notifications_page {
+  background-color: $bg2;
+}
+
+.p-sales_notifications__my_notifications__table {
+  border: 1px solid $border;
+}
+
+.p-sales_notifications__select_notification_type__container {
+  background-color: $bg2;
+}
+
+.p-sales_notifications__select_notification_type__section {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-sales_notifications__select_notification_type__section_header {
+  border-bottom: 1px solid $border;
+}
+
+.p-sales_notifications__select_notification_type__section_title {
+  color: $primary;
+}
+
+.p-sales_notifications__select_notification_type_button {
+  background-color: $bg;
+  border-top: 1px solid $border;
+}
+
+.p-sales_notifications__select_notification_type_button__legacy {
+  background-color: $bg;
+  border: 1px solid $border;
+
+  &:hover:not(:focus) {
+    box-shadow: 0 1px 5px #00000014;
+  }
+}
+
+.p-sales_notifications__select_notification_type_button__details,
+.p-sales_notifications__workflow_header__description {
+  color: $text;
+}
+
+.p-sales_notifications__workflow__preview {
+  border: 1px solid $border;
+}
+
+.p-sales_notifications__workflow__preview__title {
+  color: $text;
+}
+
+.p-sales_notifications__workflow__form__advanced_options__spinner {
+  background-color: $bg2;
+  border: 1px solid $borderLight;
+}
+
+.p-sales_notifications__workflow__form__advanced_options__fields {
+  background-color: $button;
+  border: 1px solid $border;
+}
+
+.p-sales_notifications__workflow__form__advanced_options__readonly_field {
+  .c-input_text,
+  .c-select_input__content {
+    color: $text;
+  }
+
+  .p-sales_notifications__workflow__form__advanced_options__field__inputs__operator .c-select_button--disabled {
+    background-color: $excluded;
+    border-color: $excluded;
+  }
+}
+
+.p-sales_notifications__workflow__form__advanced_options__field__input__tokenized--invalid .c-multi_select_input {
+  border-color: $accent;
+
+  &:focus,
+  &:focus-within {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+}
+
+.p-sales_admin_page .c-tabs__tab.c-tabs__tab--disabled {
+  color: $disabled;
+
+  &:active {
+    color: $disabled;
+  }
+}
+
+.p-sales_admin__menu {
+  border-right: 1px solid $border;
+}
+
+.p-sales_admin__panel {
+  background-color: $bg2;
+}
+
+.p-sales_admin__panel_sections_container {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-sales_admin__panel_sections_container--filled {
+  background-color: $active;
+}
+
+.p-sales_admin__panel_section:not(:last-child) {
+  border-bottom: 1px solid $border;
+}
+
+.p-sales_admin__connect_section__status--synced {
+  background-color: $active;
+  color: $green;
+}
+
+.p-sales_admin__connect_section__status--connected {
+  background-color: $active;
+  color: $primary;
+}
+
+.p-sales_admin__connect_section__status--error {
+  background-color: $active;
+  color: $red;
+}
+
+.p-sales_admin__connect_section__url,
+.p-sales_admin__organization_section__domain,
+.p-sales_admin__organization_section__info,
+.p-sales_admin__opportunity_section__details {
+  color: $text;
+}

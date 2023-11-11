@@ -1,3 +1,7 @@
+.p-help_search__title {
+  color: $text;
+}
+
 .p-help_search__popular_topics {
   color: $text;
 }
@@ -174,8 +178,16 @@
   border: 1px solid $borderLight;
   @include card;
 
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+  }
+
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -237,12 +249,31 @@
 }
 
 .p-help_article_flexpane {
+  .p-help_article_flexpane__article--focus-visible:focus:after {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+
+  img {
+    border: 1px solid $borderLight;
+  }
+
   .tip {
     border-color: $borderLight;
     background-color: $contrast;
 
     &:before {
       color: $borderLight;
+    }
+  }
+
+  ol:not(.takeaway) {
+    li {
+      &:before {
+        background-color: $green;
+        color: $selectFg;
+      }
     }
   }
 
@@ -268,15 +299,6 @@
     th {
       border-color: $border;
       color: $primary;
-    }
-  }
-
-  ol:not(.takeaway) {
-    li {
-      &:before {
-        background-color: $hl;
-        color: $selectFg;
-      }
     }
   }
 
@@ -387,7 +409,9 @@
   border: 1px solid $borderLight;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -406,7 +430,17 @@
   color: $text;
 }
 
+.p-help_home__actionables_title {
+  color: $text;
+}
+
 .p-help_home {
+  .p-help_recommended .p-help_flexpane__tour-highlight {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+
   .p-help_modal__browse {
     color: $accent2;
 
@@ -414,13 +448,7 @@
       color: $primary;
     }
   }
-}
 
-.p-help_home__actionables_title {
-  color: $text;
-}
-
-.p-help_home {
   .p-help_modal__footer {
     border-top: 1px solid $border;
   }
@@ -464,7 +492,9 @@
 }
 
 .p-help_home_product_release_card .p-help_flexpane__tour-highlight {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-help_home_product_release_card__text {
@@ -489,4 +519,33 @@
 
 .p-help_home .p-help_modal__requests__message {
   color: $fg;
+}
+
+.p-help_search__resource_card__container--actionable {
+  background-color: $accentT;
+  border: 1px solid $accentT;
+}
+
+.p-help_search__resource_card__badge--dot {
+  background-color: $accent;
+  border: 1px solid $selectFg;
+}
+
+.sk-client-theme--dark .p-help_flexpane .p-help_search_filter_input__prog_disc_explainer,
+.p-help_flexpane .p-help_search_filter_input__prog_disc_explainer {
+  border: 2px solid $accent;
+}
+
+.p-help_flexpane {
+  .p-help_flexpane__whats_new_icon {
+    .c-icon_button__badge {
+      background-color: $accent;
+    }
+
+    &.p-help_flexpane__tour-highlight {
+      box-shadow:
+        0 0 0 1px $accent,
+        0 0 0 5px $accentT;
+    }
+  }
 }

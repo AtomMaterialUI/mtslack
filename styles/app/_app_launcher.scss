@@ -149,7 +149,7 @@
   &:focus {
     --saf-0: $accent2;
     box-shadow:
-      0 0 0 1px var(--sk_focused-shadow-color, $excluded),
-      0 0 0 5px var(--sk_focused-shadow-color-opaque, $tree);
+      0 0 0 1px $excluded,
+      0 0 0 5px $tree;
   }
 }

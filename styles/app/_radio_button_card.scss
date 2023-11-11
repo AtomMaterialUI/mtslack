@@ -1,0 +1,20 @@
+.c-radio_button_card {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:not(.c-radio_button_card--checked):hover {
+    box-shadow: 0 1px 4px #0000004d;
+  }
+
+  &:focus-within {
+    box-shadow: 0 1px 3px 0 #00000014;
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+}
+
+.c-radio_button_card__disabled_footer_text {
+  background-color: $excluded;
+}

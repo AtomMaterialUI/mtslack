@@ -1,0 +1,93 @@
+.p-opportunities_list_select_modal__heading,
+.p-opportunities_list_select_modal__footer {
+  color: $text;
+}
+
+.m-square-list {
+  > li:not(.c-stat):before {
+    color: $fg;
+    font-family: $fontFamily;
+  }
+}
+
+.p-opportunities_data_sheet_grid {
+  background-color: $bg2;
+
+  .lob_lock_icon {
+    color: $disabled;
+  }
+
+  .p-select_field_option {
+    background-color: $contrast;
+    color: $fg;
+  }
+
+  .p-opportunities_data_sheet_grid__row_locked {
+    .dsg-cell:not(.dsg-cell-gutter),
+    .p-thread_column__wrapper {
+      background-color: rgb(var(--dt_color-plt-honeycomb-0)) !important;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-opportunities_data_sheet_grid .p-opportunities_data_sheet_grid__row_locked {
+  .dsg-cell:not(.dsg-cell-gutter),
+  .p-thread_column__wrapper {
+    background-color: rgb(var(--dt_color-plt-honeycomb-5)) !important;
+  }
+}
+
+.p-opportunities_data_sheet_grid .p-opportunities_data_sheet_grid__row_failed {
+  .dsg-cell:not(.dsg-cell-gutter),
+  .p-thread_column__wrapper {
+    background-color: rgb(var(--dt_color-plt-flamingo-0)) !important;
+  }
+}
+
+.sk-client-theme--dark .p-opportunities_data_sheet_grid .p-opportunities_data_sheet_grid__row_failed {
+  .dsg-cell:not(.dsg-cell-gutter),
+  .p-thread_column__wrapper {
+    background-color: rgb(var(--dt_color-plt-flamingo-5)) !important;
+  }
+}
+
+.p-opportunities_data_sheet_grid .p-opportunities_data_sheet_grid__row_saved {
+  .dsg-cell:not(.dsg-cell-gutter),
+  .p-thread_column__wrapper {
+    background-color: rgb(var(--dt_color-plt-jade-0)) !important;
+  }
+}
+
+.sk-client-theme--dark .p-opportunities_data_sheet_grid .p-opportunities_data_sheet_grid__row_saved {
+  .dsg-cell:not(.dsg-cell-gutter),
+  .p-thread_column__wrapper {
+    background-color: rgb(var(--dt_color-plt-jade-5)) !important;
+  }
+}
+
+.p-opportunities_sync_indicator {
+  color: $text;
+}
+
+.p-opportunities_list_view__icon {
+  background-color: $bg;
+}
+
+.p-opportunities_list_browser {
+  background-color: $bg2;
+
+  .c-virtual_list__item {
+    background-color: $bg;
+    border-bottom: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+
+    &:first-child {
+      border-top: 1px solid $border;
+    }
+  }
+}
+
+.p-opportunities_list_browser__entity_icon {
+  background-color: $bg;
+}

@@ -15,15 +15,14 @@
 }
 
 .p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button {
-  background: rgba(var(--sk_foreground_soft, 29, 28, 29), 0.06);
+  background: $button;
 }
 
 .p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button:hover {
-  background: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  background: $hl;
 }
 
 .p-quip_insertion_toolbar_insertion_menu_trigger.c-icon_button.p-quip_insertion_toolbar_insertion_menu_trigger--open {
-  background: rgba(var(--sk_foreground_mid, 29, 28, 29), 0.3);
   transform: rotate(45deg);
 }
 

@@ -6,6 +6,15 @@
 
 .p-workspace__primary_view_body {
   box-shadow: inset 1px 0 $borderLight;
+
+  .c-joiner_launchpad {
+    background-color: $bg;
+    color: $fg;
+  }
+}
+
+.sk-client-theme--dark .p-workspace__primary_view_body.c-joiner_launchpad {
+  background-color: $bg;
 }
 
 .p-workspace__primary_view_footer,
@@ -23,7 +32,9 @@
   }
 
   &.p-message_input--focus-visible .p-message_input_field.focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 
   .p-message_input_file_button {
@@ -96,14 +107,18 @@
   &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
     .ql-attachments,
     .ql-files {
-      box-shadow: 0 1px 0 0 $accent, 0 -1px 0 0 $accentT;
+      box-shadow:
+        0 1px 0 0 $accent,
+        0 -1px 0 0 $accentT;
     }
   }
 
   &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
     .ql-attachments,
     .ql-files {
-      box-shadow: 0 1px 0 0 $accent, 0 -1px 0 0 $accentT;
+      box-shadow:
+        0 1px 0 0 $accent,
+        0 -1px 0 0 $accentT;
     }
   }
 

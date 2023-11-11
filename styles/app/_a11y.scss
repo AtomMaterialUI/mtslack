@@ -26,32 +26,34 @@
 
 .p-a11y_prefs_setup_coachmark .c-coachmark__close.c-icon_button--light:focus {
   color: $selectFg;
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-a11y_prefs_setup_coachmark.c-coachmark--top:after,
 .p-a11y_prefs_setup_coachmark.c-coachmark--top:before {
-  border-top-color: var(--prefs_setup_coachmark_bg, $contrast);
+  border-top-color: $contrast;
 }
 
 .p-a11y_prefs_setup_coachmark.c-coachmark--bottom-left:after,
 .p-a11y_prefs_setup_coachmark.c-coachmark--bottom-left:before {
-  border-bottom-color: var(--prefs_setup_coachmark_bg, $contrast);
+  border-bottom-color: $contrast;
 }
 
 .p-a11y_prefs_setup_coachmark.c-coachmark--left:after,
 .p-a11y_prefs_setup_coachmark.c-coachmark--left:before {
-  border-left-color: var(--prefs_setup_coachmark_bg, $contrast);
+  border-left-color: $contrast;
 }
 
 .p-a11y_prefs_setup_coachmark.c-coachmark--bottom:after,
 .p-a11y_prefs_setup_coachmark.c-coachmark--bottom:before {
-  border-bottom-color: var(--prefs_setup_coachmark_bg, $contrast);
+  border-bottom-color: $contrast;
 }
 
 .p-a11y_prefs_setup_coachmark.c-coachmark--right:after,
 .p-a11y_prefs_setup_coachmark.c-coachmark--right:before {
-  border-right-color: var(--prefs_setup_coachmark_bg, $contrast);
+  border-right-color: $contrast;
 }
 
 .p-a11y_prefs_setup_coachmark__primary_cta_link {
@@ -64,7 +66,9 @@
 
 .p-a11y_prefs_setup_coachmark__primary_cta_link:focus {
   color: $selectFg;
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-a11y_prefs_setup_coachmark__cta__container {
@@ -93,7 +97,9 @@
 .sk-client-theme--dark
   .p-a11y_prefs_setup_coachmark
   .p-a11y_prefs_setup_coachmark__primary_cta_link.c-link--focus-visible:focus {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-a11y_prefs_setup_modal__message_pillow__background .c-radio_button_card__image {
@@ -101,7 +107,9 @@
 }
 
 .p-a11y_prefs_setup_modal__message_pillow__bordered {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .p-a11y_prefs_setup_modal__up_arrow__option--edit {
@@ -131,36 +139,12 @@
   background: $bg2;
 }
 
-.c-zoom_slider__minus_button,
-.c-zoom_slider__plus_button {
-  color: $text;
+.p-a11y_prefs_setup_modal__message_pillow {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
 }
 
-.c-zoom_slider__minus_button:hover,
-.c-zoom_slider__plus_button:hover {
-  color: $fg;
-}
-
-.c-zoom_slider__slider:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px $accent;
-}
-
-.c-zoom_slider__slider:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px $accent;
-}
-
-.c-zoom_slider__slider {
-  background: linear-gradient(90deg, $hl 100% 100%);
-}
-
-.c-zoom_slider__slider::-webkit-slider-thumb {
-  background: $accent;
-}
-
-.c-zoom_slider__slider::-moz-range-thumb {
-  background: $accent;
-}
-
-.c-zoom_slider__ticker {
-  border-right: 2px solid $hl;
+.p-a11y_prefs_setup_coachmark__emoji .p-a11y_prefs_setup_coachmark__emoji__orange_circle {
+  background-color: $primary;
 }

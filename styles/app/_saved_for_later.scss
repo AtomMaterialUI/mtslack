@@ -1,71 +1,83 @@
-.p-saved_for_later_page__list .p-saved_item {
-  @include card;
-  background: $bg;
+.p-saved_for_later_page__list {
+  .p-saved_item {
+    @include card;
+    background: $bg;
 
-  &:hover {
-    .c-message_kit__background {
-      background: $bg2;
+    &:hover {
+      .c-message_kit__background {
+        background: $bg2;
+      }
+
+      .p-saved_item__header {
+        background: $bg;
+        color: $selectFg;
+      }
     }
+  }
 
-    .p-saved_item__header {
-      background: $bg;
-      color: $selectFg;
+  .p-saved_item--selected {
+    background-color: $selectBg;
+    color: $selectFg;
+  }
+
+  .p-saved_item .p-file_card__entity {
+    background-color: $bg2;
+  }
+
+  .c-virtual_list__item--focus .p-saved_item {
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
+  }
+
+  .p-saved_item--completed .c-icon--bookmark-filled {
+    color: $accent;
+  }
+
+  .p-saved_item__undo {
+    color: $accent;
+  }
+
+  .p-saved_item__header {
+    background: $contrast;
+    color: $fg;
+    @include dropShadow;
+  }
+
+  .p-saved_item__header__date_due {
+    background: $accentT;
+
+    &.p-saved_item__header__date_due--ia4 {
+      background-color: $accent;
     }
   }
-}
 
-.p-saved_for_later_page__list .c-virtual_list__item--focus .p-saved_item {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
-}
+  .p-saved_item__header__date_due--overdue {
+    background: $bg;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 10px;
 
-.p-saved_for_later_page__list .p-saved_item--completed .c-icon--bookmark-filled {
-  color: $accent;
-}
-
-@keyframes p-saved_item--highlight {
-  20% {
-    background: $hl;
+    &.p-saved_item__header__date_due--ia4 {
+      background-color: $excluded;
+      color: $text;
+    }
   }
 
-  60% {
-    background: $hl;
+  .p-saved_item__inline_actions__button--mark-done {
+    border-color: $green;
+    color: $green;
   }
-}
 
-.p-saved_for_later_page__list .p-saved_item__undo {
-  color: $accent;
-}
+  .p-saved_item__inline_actions__button--mark-done:hover {
+    background-color: $button;
+    color: $primary;
+    border-color: $primary;
+  }
 
-.p-saved_for_later_page__list .p-saved_item__header {
-  background: $contrast;
-  color: $fg;
-  @include dropShadow;
-}
-
-.p-saved_for_later_page__list .p-saved_item__header__date_due {
-  background: $accentT;
-}
-
-.p-saved_for_later_page__list .p-saved_item__header__date_due--overdue {
-  background: $bg;
-  color: $primary;
-  border: 1px solid $primary;
-  border-radius: 10px;
-}
-
-.p-saved_for_later_page__list .p-saved_item__inline_actions__button--mark-done {
-  border-color: $green;
-  color: $green;
-}
-
-.p-saved_for_later_page__list .p-saved_item__inline_actions__button--mark-done:hover {
-  background-color: $button;
-  color: $primary;
-  border-color: $primary;
-}
-
-.p-saved_for_later_page__list .p-saved_item--file_preview .c-icon--bookmark-filled {
-  color: $accent;
+  .p-saved_item--file_preview .c-icon--bookmark-filled {
+    color: $accent;
+  }
 }
 
 .c-icon_button--default.p-saved_item__action--saved,
@@ -81,25 +93,34 @@
   background: $contrast;
 }
 
-.p-saved_for_later_page__tabs .c-tabs__tab_menu {
-  background: $contrast;
-}
+.p-saved_for_later_page__tabs {
+  .c-tabs__tab_menu {
+    background: $contrast;
+  }
 
-.p-saved_for_later_page__tabs .c-tabs__tab--highlight {
-  animation: tab--highlight 0.5s 2 forwards;
+  .c-tabs__tab--highlight {
+    animation: tab--highlight 0.5s 2 forwards;
+  }
 }
 
 @keyframes tab--highlight {
   0% {
     background: #0000;
   }
-
   50% {
     background: $hl;
   }
-
   to {
     background: #0000;
+  }
+}
+
+@keyframes p-saved_item--highlight {
+  20% {
+    background: $hl;
+  }
+  60% {
+    background: $hl;
   }
 }
 
@@ -113,4 +134,67 @@
 
 .c-empty_state__image_wrapper {
   filter: invert(1);
+}
+
+.p-ia4_client .p-saved_for_later_page__list .p-saved_item__header {
+  color: $fg;
+}
+
+.p-ia4_client--theming .p-saved_for_later_page__list .p-saved_item:hover {
+  background-image: $hl;
+}
+
+.p-ia4_client--theming
+  .p-saved_for_later_page__list
+  .p-saved_item__header__date_due.p-saved_item__header__date_due--ia4 {
+  color: $fg;
+}
+
+.p-ia4_client--theming
+  .p-saved_for_later_page__list
+  .p-saved_item__header__date_due--overdue.p-saved_item__header__date_due--ia4 {
+  color: $text;
+}
+
+.p-saved_for_later_page__list .p-saved_item__header__snooze {
+  color: $accent;
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-ia4_client .p-saved_for_later_page__list .p-saved_item__actions {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-saved_for_later_page__list {
+  .p-saved_item__actions__button--mark-done {
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      background-color: $green;
+      color: $selectFg;
+    }
+  }
+
+  .p-saved_item--file_preview .c-icon--bookmark-filled {
+    color: $accent;
+  }
+}
+
+.c-icon_button--default {
+  &.p-saved_item__action--saved,
+  &:hover.p-saved_item__action--saved {
+    color: $accent;
+  }
+}
+
+.p-ia4_client .p-saved_for_later_page__tabs .c-tabs__tab_menu {
+  box-shadow: 0 1px 0 0 $border;
 }

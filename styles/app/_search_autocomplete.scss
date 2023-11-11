@@ -328,7 +328,7 @@
 }
 
 .c-search_autocomplete__quick_message_item__metadata {
-  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  color: $text;
 }
 
 .c-search_autocomplete__quick_message_item--selected {

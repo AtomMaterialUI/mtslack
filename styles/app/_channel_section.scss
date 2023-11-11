@@ -1,0 +1,42 @@
+.c-channel-section {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.c-channel-section__row {
+  border-bottom: 1px solid $borderLight;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $bg2;
+  }
+}
+
+.sk-client-theme--dark .c-channel-section__row-line__recent_badge,
+.c-channel-section__row-line__recent_badge {
+  background-color: $button;
+  color: $accent;
+}
+
+.c-channel-section__row-line__view_cta {
+  color: $text;
+}
+
+.c-channel-section__row-line__avatar-pile {
+  .member_count {
+    color: $text;
+  }
+
+  .avatar img {
+    border: 2px solid $selectFg;
+  }
+}
+
+.sk-client-theme--dark .c-channel-section__row-line__avatar-pile .avatar img {
+  border: 2px solid $selectFg;
+}
+
+.c-channel-section__row-line__last {
+  color: $text;
+}

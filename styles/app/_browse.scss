@@ -1,0 +1,48 @@
+.p-browse_main {
+  background: $bg;
+}
+
+.p-browse_all__cell {
+  background-color: $button;
+  box-shadow: 0 0 0 1px $button 0 4px 12px 0 #00000014;
+}
+
+.p-browse_all__cell_content {
+  background-color: $bg;
+}
+
+.p-browse_all__cell_button {
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-browse_all__cell_button--create {
+  box-shadow:
+    0 0 0 1px $button,
+    0 4px 12px 0 #00000014;
+}
+
+.p-browse_all_actions {
+  background-color: $bg2;
+}
+
+.p-browse_all_action_card {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $button,
+    0 1px 3px 0 #00000014;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $hl,
+      0 4px 12px 0 #00000014;
+  }
+}
+
+.p-browse_all_action_card__icon {
+  background-color: $fg;
+}
+
+.p-browse_all_action_card__subtext {
+  color: $text;
+}

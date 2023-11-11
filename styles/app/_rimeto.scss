@@ -151,8 +151,22 @@
   }
 }
 
+.p-rimeto_org_chart_page_member_card_actions__group {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
 .p-rimeto_org_chart_member_card {
   background: $bg;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px $border,
+      0 4px 12px 0 #00000014;
+  }
 
   &:active {
     background: $accent;
@@ -163,33 +177,27 @@
       color: $selectFg;
     }
 
-    --saf-0: $accent;
-    --saf-1: $accentT;
     box-shadow:
-      0 0 0 2px var(--saf-0),
-      0 1px 5px 0 var(--saf-1);
+      0 0 0 2px $accent,
+      0 1px 5px 0 $accentT;
 
+    &:active,
     &:hover {
-      --saf-0: $accent;
-      --saf-1: $accentT;
       box-shadow:
-        0 0 0 2px var(--saf-0),
-        0 1px 5px 0 var(--saf-1);
+        0 0 0 2px $accent,
+        0 1px 5px 0 $accentT;
     }
   }
 }
 
 .p-rimeto_org_chart_member_card_outline {
-  --saf-0: $accent;
-  box-shadow: 0 0 0 2px var(--saf-0);
+  box-shadow: 0 0 0 2px $accent;
 
   &:active,
   &:hover {
-    --saf-0: $accent;
-    --saf-1: $accentT;
     box-shadow:
-      0 0 0 2px var(--saf-0),
-      0 1px 5px 0 var(--saf-1);
+      0 0 0 2px $accent,
+      0 1px 5px 0 $accentT;
   }
 }
 
@@ -203,11 +211,9 @@
 }
 
 .p-rimeto_org_chart_member_card_reports {
-  --saf-0: $bg2;
-  --saf-1: $excluded;
   box-shadow:
-    0 0 0 1px var(--saf-0),
-    0 2px 8px 0 var(--saf-1);
+    0 0 0 1px $bg2,
+    0 2px 8px 0 $excluded;
   background-color: $bg;
 }
 

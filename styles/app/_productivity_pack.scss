@@ -1,0 +1,8 @@
+.p-productivity_pack_customize_button--active_flexpane {
+  background-color: $button;
+
+  &:active,
+  &:hover {
+    background-color: $hl;
+  }
+}

@@ -94,3 +94,17 @@ input[type='radio'] {
 .p-radio_option_panel_icon--disabled {
   color: $disabled;
 }
+
+.p-radio_option_panel_box--unselected {
+  &:focus,
+  &:hover {
+    background-color: $bg;
+  }
+}
+
+.p-radio_option_panel_box--selected {
+  &:focus,
+  &:hover {
+    background-color: $excluded;
+  }
+}

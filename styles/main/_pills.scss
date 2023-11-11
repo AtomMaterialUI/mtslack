@@ -6,3 +6,12 @@
 .p-pile_item {
   box-shadow: 0 0 0 2px $bg;
 }
+
+.p-pile_item_count {
+  background-color: $button;
+  color: $text;
+}
+
+.p-contact_card_preview__team {
+  color: $fg;
+}

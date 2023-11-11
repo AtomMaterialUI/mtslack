@@ -1,0 +1,39 @@
+.p-huddle_schedule_time_picker.p-huddle_schedule_time_picker--focus_input .c-input_text_icon {
+  border: 1px solid $border;
+
+  &:focus {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $disabled;
+  }
+}
+
+.p-huddle_schedule_members_picker {
+  .c-icon--user {
+    color: $text;
+  }
+}
+
+.p-huddle_schedule_modal__content_section .c-basic_container--bordered {
+  border: 1px solid $border;
+}
+
+.p-huddle_schedule_modal__topic_input_container .p-huddle_schedule_modal__topic_input .ql-placeholder {
+  color: $text;
+}
+
+.p-huddle_schedule_modal__info_msg {
+  color: $text;
+}

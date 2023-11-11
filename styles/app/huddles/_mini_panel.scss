@@ -63,17 +63,19 @@
 .p-huddle_mini_panel--always-on-exp .p-huddle_mini_panel__button {
   background-color: transparent;
   border: 1px solid transparent;
-  color: var(--theme-text_color);
+  color: $fg;
 
   &:hover {
-    background-color: var(--theme-hover_item);
-    border: 1px solid var(--theme-hover_item);
+    background-color: $hl;
+    border: 1px solid $hl;
   }
 }
 
 .p-huddle_mini_panel__button {
   &:focus-visible {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 

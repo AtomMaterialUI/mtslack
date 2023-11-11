@@ -122,7 +122,6 @@
       color: $selectFg;
     }
   }
-
   .sk-client-theme--dark .p-upgrades_modal_with_banner--close_button .c-icon_button {
     color: $fg;
 
@@ -157,4 +156,54 @@
 
 .p-modal_content_checklist__checklist_check {
   color: $accent;
+}
+
+.p-upgrades_coachmark {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+}
+
+.sk-client-theme--dark .p-upgrades_coachmark {
+  background-color: $notif;
+  border-color: $borderLight;
+}
+
+.p-upgrades_coachmark--top-right:before {
+  border-top-color: $button;
+}
+
+.sk-client-theme--dark .p-upgrades_coachmark--top-right:before {
+  border-top-color: $button;
+}
+
+.p-upgrades_coachmark--top-right:after {
+  border-top-color: $button;
+}
+
+.sk-client-theme--dark .p-upgrades_coachmark--top-right:after {
+  border-top-color: $button;
+}
+
+.p-upgrades_coachmark--left:before {
+  border-left-color: $button;
+}
+
+.sk-client-theme--dark .p-upgrades_coachmark--left:before {
+  border-left-color: $button;
+}
+
+.p-upgrades_coachmark--left:after {
+  border-left-color: $button;
+}
+
+.sk-client-theme--dark .p-upgrades_coachmark--left:after {
+  border-left-color: $button;
+}
+
+.p-upgrades_coachmark__label {
+  color: $text;
+}
+
+.p-upgrades_coachmark__heading {
+  color: $fg;
 }

@@ -1,0 +1,59 @@
+.p-summarize_channel_unreads_popover {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-summarize_channel_unreads_popover__summary_description__unreads {
+  color: $text;
+}
+
+.p-summarize_channel_unreads_popover__icon,
+.p-summarize_channel_unreads_popover__secure_text {
+  color: $text;
+}
+
+.p-summarize_channel_unreads_edit__option_message_text {
+  color: $text;
+}
+
+.p-summarize_channel_unreads_edit__select_list
+  .c-select_options_list__option--active
+  .p-summarize_channel_unreads_edit__option_message_text {
+  color: $selectFg;
+}
+
+.p-summarize_channel_unreads_button--active {
+  background-color: $active;
+}
+
+.p-summarize_channel_unreads_button--blue-pulse {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:not(:focus):after {
+    --saf-0: $accentT;
+  }
+}
+
+.p-summarize_channel_unreads_button--blue-no-animation {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:active,
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:not(:focus):after {
+    --saf-0: $accentT;
+  }
+}

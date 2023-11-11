@@ -1,0 +1,139 @@
+.p-today_huddles_happening_item_container {
+  background-color: $bg2;
+  box-shadow: 0 0 0 1px $border;
+
+  &:hover {
+    background-color: $hl;
+  }
+
+  .p-today_huddles_happening_item__icon {
+    color: $fg;
+  }
+
+  .p-today_huddles_happening_item__name {
+    color: $fg;
+  }
+}
+
+.p-today_event_icon {
+  color: $text;
+
+  &.p-today_event_icon--live {
+    background-color: $accentT;
+    color: $selectFg;
+  }
+
+  &.p-today_event_icon--huddle {
+    background-color: $tree;
+    color: $fg;
+  }
+}
+
+.p-today_members_copy {
+  color: $fg;
+  font-family: $fontFamily;
+}
+
+.p-today_event_join_button {
+  background-color: $button;
+  border: 1px solid $button;
+
+  &.p-today_event_join_button--huddle {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-today_event_item {
+  box-shadow: 0 1px 0 0 $border;
+
+  &.p-today_event_item--live {
+    background-color: $accent;
+  }
+
+  &.p-today_event_item--huddle-live {
+    background-color: $accent;
+  }
+
+  &.p-today_event_item--focus,
+  &:hover {
+    background-color: $tree;
+  }
+
+  .p-today_event_item__facepile {
+    .p-today_event_item__facepile_avatar span {
+      border: 2px solid $fg;
+    }
+
+    .c-avatar:last-child .c-avatar__additional_overlay {
+      background-color: unset;
+      color: $text;
+    }
+  }
+}
+
+.p-today_event_item__title_container {
+  color: $fg;
+}
+
+.p-today_event_item__open_calendar_link {
+  color: $text;
+  font-family: $fontFamily;
+}
+
+.p-today_event_item__open_calendar_icon {
+  color: $text;
+}
+
+.p-today_event_item__time_ago.p-today_event_item--huddle_time_ago {
+  color: $disabled;
+}
+
+.p-today_event_item__time {
+  color: $text;
+}
+
+.p-today_event_item__start_time_info {
+  font-family: $fontFamily;
+
+  &.p-today_event_item__start_time_info--huddle {
+    color: $fg;
+  }
+
+  &.p-today_event_item__start_time_info_meeting_provider--non-huddle {
+    color: $disabled;
+  }
+}
+
+.p-today_event_item__join_button {
+  background-color: $button;
+  border: 1px solid $button;
+
+  &.p-today_event_item__join_button--huddle {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-today_event_item__add_huddle_link {
+  border: 1px solid $bg;
+  background-color: $bg;
+  color: $fg;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $tree;
+    color: $selectFg;
+  }
+}
+
+.p-today_event_list__title {
+  box-shadow: 0 1px 0 0 $border;
+}
+
+.p-today_page_container .p-today_page_agenda {
+  .p-today_page_agenda__event_list {
+    box-shadow: 0 0 0 1px $border;
+  }
+}

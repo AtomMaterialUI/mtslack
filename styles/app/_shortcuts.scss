@@ -147,7 +147,9 @@
 
 .p-shortcuts_menu_v2 {
   background: $bg2;
-  box-shadow: 0 0 0 1px $notif, 0 4px 12px 0 $notif;
+  box-shadow:
+    0 0 0 1px $notif,
+    0 4px 12px 0 $notif;
 
   .p-shortcuts_menu_education {
     color: $fg;
@@ -156,6 +158,14 @@
   .p-shortcuts_menu_education__wrapper {
     background: $notif;
   }
+}
+
+.c-select_options_list__option--active .p-shortcuts_menu_v2__action_icon {
+  color: $selectFg;
+}
+
+.p-shortcuts_menu_v2__action_icon {
+  color: $text;
 }
 
 .p-shortcuts_menu_v2_search_input_wrapper {
@@ -184,8 +194,12 @@
 }
 
 .p-shortcuts_modal_prototype {
-  .p-shortcuts_menu_v2_item--active * {
+  .p-shortcuts_menu_v2_item--active .p-shortcuts_menu_v2_item__text--secondary {
     color: $selectFg !important;
+
+    .c-icon:before {
+      color: $selectFg;
+    }
   }
 }
 
@@ -197,4 +211,21 @@
 
 .p-shortcuts_menu_v2_search_input_bolt_icon {
   color: $text;
+}
+
+.p-shortcuts_menu_v2_item {
+  background: #0000 !important;
+  color: inherit !important;
+}
+
+.p-shortcuts_menu_v2_item__text--secondary {
+  color: $text;
+}
+
+.p-shortcuts_menu_trigger_button_container_unstyled--composer_ia
+  .p-shortcuts_menu_trigger_button--composer_ia-open
+  .p-shortcuts_menu_trigger_button_container--composer_ia_standalone
+  .p-shortcuts_menu_trigger_button--composer_ia-open
+  .p-shortcuts_menu_trigger_button--badge {
+  color: $accent;
 }

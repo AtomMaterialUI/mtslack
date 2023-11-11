@@ -22,7 +22,7 @@
     .p-channel_sidebar__presence_icon {
       &.p-channel_sidebar__presence_icon--on-avatar-border {
         -webkit-text-stroke-width: 0;
-        -webkit-text-stroke-color: var(--p-channel_sidebar__column-bg);
+        -webkit-text-stroke-color: $contrast;
       }
 
       &.p-channel_sidebar__presence_icon--on-avatar {

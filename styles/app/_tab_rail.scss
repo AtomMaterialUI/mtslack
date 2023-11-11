@@ -3,8 +3,8 @@
 }
 
 .p-ia4_client .p-tab_rail {
-  --sk_focused-shadow-color: var(--dt_color-brand-core-white);
-  --sk_focused-shadow-color-opaque: var(--dt_color-theme-otl-inv-pry);
+  --sk_focused-shadow-color: $button;
+  --sk_focused-shadow-color-opaque: $button;
 }
 
 .p-tab_rail .c-mention_badge {

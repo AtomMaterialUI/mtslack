@@ -1,0 +1,17 @@
+.p-hub_search_empty_state__contact_lookup {
+  background-color: $bg;
+  border: 1px solid $border;
+}
+
+.p-hub_search_empty_state__contact_lookup_icon {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-hub_search_empty_state__link_button[aria-disabled='true'] {
+  color: $disabled;
+}
+
+.p-hub_dm_invite_modal__footer {
+  background-color: $contrast;
+}

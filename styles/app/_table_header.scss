@@ -48,7 +48,6 @@
 //.c-data_table__row--error {
 //  border: 1px solid $red2;
 //}
-
 .c-data_table__row--selectable:hover {
   background-color: $hl;
 }
@@ -59,11 +58,15 @@
 
 .c-data_table__header_row--focus:after,
 .c-data_table__row--focus:after {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .c-data_table--focus-visible .c-data_table__header_column:focus .c-table_column_header {
-  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  box-shadow:
+    0 0 0 1px $primary,
+    0 0 0 5px $primaryT;
 }
 
 .c-table_row_actions .c-action_buttons__button {
@@ -140,6 +143,10 @@
   background-color: $accentT;
 }
 
+.c-data_table_header_filter--unavailable {
+  color: $text;
+}
+
 .c-data_table_header_multi_filter__filter_button {
   color: $text;
 }
@@ -155,6 +162,10 @@
 
 .c-data_table_header_multi_filter__header_reset {
   color: $text;
+
+  &[disabled] {
+    color: $disabled;
+  }
 }
 
 .p-data_table_header {
@@ -177,4 +188,23 @@
 
 .c-data_table__row--header {
   background: $bg2;
+}
+
+@media screen and (max-width: 480px) {
+  .p-data_table_header--responsive {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.c-pagination-bar__container {
+  background-color: $button;
+}
+
+.p-member_table__date-added {
+  color: $disabled;
+}
+
+.p-member_table__alert {
+  background-color: $excluded;
+  border: 1px solid $red;
 }

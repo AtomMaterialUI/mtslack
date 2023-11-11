@@ -1,0 +1,44 @@
+.p-members_csv_result__container {
+  border: 1px solid $border;
+}
+
+.p-members_csv_result__header {
+  border-bottom: 1px solid $border;
+}
+
+.p-members_csv_result__header_icon {
+  background-color: $button;
+  color: $text;
+}
+
+.p-members_csv_result__header_total_emails {
+  color: $text;
+}
+
+.p-members_csv_result_unknown_emails_container {
+  background: $button;
+}
+
+.p-members_csv_result_unknown_emails_list {
+  background: $bg;
+}
+
+.p-members_csv_file_state_container {
+  border: 1px solid $border;
+}
+
+.p-members_csv_file_state_text {
+  color: $text;
+}
+
+.p-members_csv_file_state_icon {
+  background: $button;
+}
+
+.p-members_add_by_csv__footer_steps {
+  color: $disabled;
+}
+
+.p-members_add_by_csv__file_pill {
+  background: $button;
+}

@@ -44,3 +44,64 @@
     0 0 0 1px $border,
     0 4px 12px 0 #00000014;
 }
+
+.p-calendar_header {
+  .p-calendar_header__navigation i:hover {
+    background-color: $button;
+    color: $selectFg;
+  }
+
+  .p-calendar_header__date_section {
+    color: $accent2;
+  }
+}
+
+.p-calendar_event {
+  border: 1px solid $accent;
+
+  &.p-calendar_event__accepted {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &.p-calendar_event__not_accepted {
+    background-color: $selectFg;
+    color: $accent;
+  }
+
+  &.p-calendar_event__needs_action {
+    background-color: $selectFg;
+    border-color: $accent;
+    color: $accent;
+  }
+
+  &.p-calendar_event__rsvp_none {
+    background-color: $excluded;
+    border-color: $excluded;
+    color: $selectFg;
+  }
+
+  &.p-calendar_event__past {
+    background-color: $excluded;
+    border: 1px solid $excluded;
+    color: $text;
+  }
+}
+
+.p-calendar_event_current_time {
+  .p-calendar_event_current_time_circle {
+    background-color: $accent;
+  }
+
+  .p-calendar_event_current_time_line {
+    border: 1px solid $accent;
+  }
+}
+
+.p-calendar_day {
+  color: $text;
+}
+
+.p-calendar_day__hour_block--event_section {
+  border-bottom: 1px solid $borderLight;
+}

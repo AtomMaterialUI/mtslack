@@ -11,3 +11,29 @@
 .p-workflow_templates_gallery_banner_description {
   color: $text;
 }
+
+.workflowSuggestionFeedbackButtons__M9bEN {
+  color: $text;
+}
+
+.p-workflow_suggestions_modal_header__highlight {
+  background: $hl;
+  color: $accent;
+}
+
+.p-workflow_suggestions_modal_header__highlight--active {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-workflow_suggestion_highlight {
+  background: $hl;
+  color: $accent;
+}
+
+.p-workflow_suggestion_card {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}

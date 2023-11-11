@@ -1,0 +1,20 @@
+.sk-client-theme--dark .c-joiner_launchpad__header-highlight,
+.c-joiner_launchpad__header-highlight {
+  color: $accent;
+}
+
+.c-joiner_launchpad__section-subtitle {
+  color: $text;
+}
+
+.c-joiner_launchpad__people-carousel-card {
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $active;
+  }
+}
+
+.c-joiner_launchpad__people-carousel-view-everyone-card-content {
+  color: $accent;
+}

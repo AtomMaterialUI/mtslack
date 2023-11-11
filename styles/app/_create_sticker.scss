@@ -1,0 +1,25 @@
+.p-create_sticker_modal__picker_button {
+  border: 2px solid $border;
+}
+
+.p-create_sticker_modal__picker_button--picked {
+  box-shadow:
+    0 0 0 4px $border,
+    0 4px 12px 0 #00000014;
+}
+
+.p-create_sticker_modal__picker--rainbow {
+  background: linear-gradient(90deg, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+}
+
+.p-create_sticker_modal__picker--blue {
+  background: linear-gradient(180deg, #24c0fd 0, #00a);
+}
+
+.p-create_sticker_modal__picker--superhero {
+  background: linear-gradient(180deg, #fdea00 0, #fdcf00 44%, #fc2700);
+}
+
+.p-create_sticker_modal__picker--butter {
+  background: linear-gradient(180deg, #ffd662 0, #ff80bf 33%, #ef5097 66%, #6868ac);
+}
