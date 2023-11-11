@@ -354,6 +354,7 @@ input[type='text'].p-channel_sidebar__folder_heading_label_rename:hover {
 .p-channel_sidebar__section_heading_label--unreads,
 .p-channel_sidebar__quickswitcher:hover {
   color: $primary;
+  filter: drop-shadow(0 0 calc(1 * 5px) rgb($primary / 0.3)) drop-shadow(0 0 calc(1 * 2px) rgb($primary / 0.2));
 }
 
 /** Navigation Bar **/
@@ -780,6 +781,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
 .p-channel_sidebar__section_placeholder--has_cta:hover,
 .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer:hover {
   color: $primary;
+  filter: drop-shadow(0 0 calc(1 * 5px) rgb($primary / 0.3)) drop-shadow(0 0 calc(1 * 2px) rgb($primary / 0.2));
 }
 
 .p-channel_sidebar--iap1 .p-channel_sidebar__section-heading--pages-drawer--disabled:hover {
