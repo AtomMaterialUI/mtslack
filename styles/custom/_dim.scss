@@ -1,49 +1,48 @@
 // Dim sidebar
 .mtslack--dim {
-  //.p-channel_sidebar__channel:has(> div > .p-channel_sidebar__name--away) {
-  //  color: red !important;
+  .p-channel_sidebar__static_list__item:has(.p-channel_sidebar__name--away) {
+    opacity: 0.4;
+  }
+
+  //.p-channel_sidebar__name.p-channel_sidebar__name--away,
+  //.p-channel_sidebar__name > .p-channel_sidebar__name--away {
+  //  opacity: 0.4 !important;
   //}
-
-  .p-channel_sidebar__name.p-channel_sidebar__name--away,
-  .p-channel_sidebar__name > .p-channel_sidebar__name--away {
-    opacity: 0.4 !important;
-  }
-
-  &:not(.mtslack--with_presence) {
-    .p-channel_sidebar__list .p-channel_sidebar__user_avatar {
-      .c-icon--presence-external-offline::before,
-      .c-icon--presence-dnd-offline::before,
-      .c-icon--presence-offline::before {
-        position: absolute;
-        content: '';
-        width: 24px;
-        height: 24px;
-        left: -10px;
-        top: -8px;
-        background: $contrast;
-        filter: opacity(0.5);
-      }
-    }
-
-    .p-channel_sidebar__list .p-channel_sidebar__channel:hover,
-    .p-channel_sidebar__list .p-channel_sidebar__link:hover,
-    .p-channel_sidebar__list .p-channel_sidebar__close_container:hover,
-    .p-channel_sidebar__channel--selected,
-    .p-channel_sidebar__channel--selected:hover,
-    .p-channel_sidebar__link--selected,
-    .p-channel_sidebar__link--selected:hover {
-      .c-icon--presence-external-offline::before,
-      .c-icon--presence-dnd-offline::before,
-      .c-icon--presence-offline::before {
-        position: absolute;
-        content: '';
-        width: 24px;
-        height: 24px;
-        left: -10px;
-        top: -8px;
-        background: $tree;
-        filter: opacity(0.5);
-      }
-    }
-  }
+  //&:not(.mtslack--with_presence) {
+  //  .p-channel_sidebar__list .p-channel_sidebar__user_avatar {
+  //    .c-icon--presence-external-offline::before,
+  //    .c-icon--presence-dnd-offline::before,
+  //    .c-icon--presence-offline::before {
+  //      position: absolute;
+  //      content: '';
+  //      width: 24px;
+  //      height: 24px;
+  //      left: -10px;
+  //      top: -8px;
+  //      background: $contrast;
+  //      filter: opacity(0.5);
+  //    }
+  //  }
+  //
+  //  .p-channel_sidebar__list .p-channel_sidebar__channel:hover,
+  //  .p-channel_sidebar__list .p-channel_sidebar__link:hover,
+  //  .p-channel_sidebar__list .p-channel_sidebar__close_container:hover,
+  //  .p-channel_sidebar__channel--selected,
+  //  .p-channel_sidebar__channel--selected:hover,
+  //  .p-channel_sidebar__link--selected,
+  //  .p-channel_sidebar__link--selected:hover {
+  //    .c-icon--presence-external-offline::before,
+  //    .c-icon--presence-dnd-offline::before,
+  //    .c-icon--presence-offline::before {
+  //      position: absolute;
+  //      content: '';
+  //      width: 24px;
+  //      height: 24px;
+  //      left: -10px;
+  //      top: -8px;
+  //      background: $tree;
+  //      filter: opacity(0.5);
+  //    }
+  //  }
+  //}
 }
