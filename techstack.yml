@@ -1,0 +1,431 @@
+repo_name: mallowigi/mtslack
+report_id: cb218f5997e94ff5cdf6d7a9efafab84
+repo_type: Public
+timestamp: '2023-11-19T07:53:58+00:00'
+requested_by: mallowigi
+provider: github
+branch: master
+detected_tools_count: 31
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source: package.json
+  last_updated_by: mallowigi
+  last_updated_on: 2019-07-15 19:43:37.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  version: 3.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: Stylelint
+  description: A mighty, modern CSS linter
+  website_url: http://stylelint.io/
+  version: 15.10.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/5446/V9JsvPul_400x400.jpg
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: gulp
+  description: The streaming build system
+  website_url: http://gulpjs.com/
+  version: 4.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/844/iruTC031.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-03-31 12:18:44.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: package.json
+  last_updated_by: mallowigi
+  last_updated_on: 2019-07-15 19:43:37.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.21
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Renovate Bot
+  last_updated_on: 2021-12-01 07:58:20.000000000 Z
+- name: chalk
+  description: terminal colors
+  website_url: https://github.com/chalk/chalk
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8072/13122722.png
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: browserslist
+  description: Share target browsers between different front-end tools
+  package_url: https://www.npmjs.com/browserslist
+  version: 4.21.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17198/default_eb6674f470fe213f950fd09d858ebb0f6b6e3dda.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: clear
+  description: Clear the terminal screen if possible
+  package_url: https://www.npmjs.com/clear
+  version: 0.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17068/default_88e2e076a71afdc1de87ad42c80c1606f2689af1.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Renovate Bot
+  last_updated_on: 2021-06-10 11:29:28.000000000 Z
+- name: clipboardy
+  description: Access the system clipboard
+  package_url: https://www.npmjs.com/clipboardy
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17902/default_e0b07170ab7d7ea66954ff35fdeaae5255c4c0aa.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Liam Dyer
+  last_updated_on: 2022-03-08 21:20:11.000000000 Z
+- name: clui
+  description: A Node.js toolkit for drawing nice command line tables
+  package_url: https://www.npmjs.com/clui
+  version: 0.3.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17397/default_7b8a4dd0459c1d55636639cb97d216b33a363a7f.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2019-07-17 16:12:02.000000000 Z
+- name: configstore
+  description: Easily load and save config without having to think about where and
+    how
+  package_url: https://www.npmjs.com/configstore
+  version: 6.0.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16988/default_32f63a11ae9faad5eff3053ff1a1600fde8a525b.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  version: 9.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: eslint-plugin-import
+  description: Import with sanity
+  package_url: https://www.npmjs.com/eslint-plugin-import
+  version: 2.28.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: eslint-plugin-node
+  description: Additional ESLint's rules for Node.js
+  package_url: https://www.npmjs.com/eslint-plugin-node
+  version: 11.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15874/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: eslint-plugin-prettier
+  description: Runs prettier as an eslint rule
+  package_url: https://www.npmjs.com/eslint-plugin-prettier
+  version: 5.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: figlet
+  description: Creates ASCII Art from text
+  package_url: https://www.npmjs.com/figlet
+  version: 1.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16424/default_9ae0e75ed749aca83d89f7e1ccb309be2bfc610e.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: gulp-clean-css
+  description: Minify css with clean-css
+  package_url: https://www.npmjs.com/gulp-clean-css
+  version: 4.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16301/default_3b7197abc4df3d7fa7c5292f17b2e6fb0cd1c8d4.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-03-31 12:18:44.000000000 Z
+- name: gulp-rename
+  description: Rename files
+  package_url: https://www.npmjs.com/gulp-rename
+  version: 2.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15895/default_e4668902f8489350db9b0fb228523a571ef05b26.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-03-31 12:18:44.000000000 Z
+- name: gulp-replace
+  description: A string replace plugin for gulp
+  package_url: https://www.npmjs.com/gulp-replace
+  version: 1.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16150/default_73326c44fbfa7369fd17573edb113e5d849468bc.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: renovate[bot]
+  last_updated_on: 2023-03-31 12:18:44.000000000 Z
+- name: gulp-sass
+  description: Gulp plugin for sass
+  package_url: https://www.npmjs.com/gulp-sass
+  version: 5.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16002/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: hosted-git-info
+  description: Provides metadata and conversions from repository urls for Github
+  package_url: https://www.npmjs.com/hosted-git-info
+  version: 7.0.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18382/default_0008ec7bce131ce74614376dd8fedbce07bc8742.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: http-server
+  description: A simple zero-configuration command-line http server
+  package_url: https://www.npmjs.com/http-server
+  version: 14.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16118/default_f905d9556a0330de59b502a579c1f5c4be2b48bf.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-07 06:00:26.000000000 Z
+- name: inquirer
+  description: A collection of common interactive command line user interfaces
+  package_url: https://www.npmjs.com/inquirer
+  version: 9.2.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15911/default_4dc9671df0093fd7061f6455afdf054e6cc9dacb.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: js-yaml
+  description: YAML 1.2 parser and serializer
+  package_url: https://www.npmjs.com/js-yaml
+  version: 4.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15997/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2021-06-10 07:30:27.000000000 Z
+- name: lodash.template
+  description: The Lodash method `_.template` exported as a module
+  package_url: https://www.npmjs.com/lodash.template
+  version: 3.6.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17112/default_0ffbf6d9ee2940fe94be8424fd9afff068fff458.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Renovate Bot
+  last_updated_on: 2021-12-01 07:58:20.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in lodash
+    cve_id: CVE-2019-10744
+    cve_url: https://github.com/advisories/GHSA-jf85-cpcp-j695
+    detected_date: Jan 28
+    severity: critical
+    first_patched: 4.5.0
+- name: minimist
+  description: Parse argument options
+  package_url: https://www.npmjs.com/minimist
+  version: 1.2.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15918/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: rimraf
+  description: A deep deletion module for node
+  package_url: https://www.npmjs.com/rimraf
+  version: 3.0.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
+- name: sass
+  description: A pure JavaScript implementation of Sass
+  package_url: https://www.npmjs.com/sass
+  version: 1.66.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16057/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
