@@ -13,11 +13,9 @@
   0% {
     background: transparent;
   }
-
   10% {
     background: $hl;
   }
-
   to {
     background: transparent;
   }
@@ -166,7 +164,9 @@
 }
 
 .p-download_toast__item:focus {
-  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
 }
 
 .p-download_toast__progress_inner {
@@ -199,6 +199,7 @@
   }
 }
 
+.p-download_modal__body--ia4,
 .p-download_modal__body {
   background-color: $notif;
 }
@@ -207,6 +208,7 @@
   color: $fg;
 }
 
+.p-download_modal__content_text--ia4,
 .p-download_modal__content_text {
   .p-download_modal__title {
     font-family: $headerFont;
@@ -229,6 +231,10 @@
 
   .p-download_modal__try_download_again {
     color: $text;
+
+    .c-link {
+      color: $accent2;
+    }
   }
 
   .p-download_modal__try_download_again--fullscreen {
@@ -236,8 +242,10 @@
   }
 }
 
+.p-download_modal__close--ia4,
 .p-download_modal__close {
   color: $fg;
+  background-color: $button;
 
   &:hover {
     background-color: $accent;
@@ -248,4 +256,37 @@
     background-color: $accent;
     color: $selectFg;
   }
+}
+
+.p-download_modal__content_text--ia4 .p-download_modal__title--ia4 {
+  color: $bg;
+  font-family: $headerFont;
+}
+
+.p-download_modal__subtitle,
+.p-download_modal__content_text--ia4 .p-download_modal__instructions {
+  color: $text;
+}
+
+.p-download_modal__content_text--ia4 .p-download_modal__instructions_list_item {
+  &:before {
+    background-color: $accent;
+    color: $fg;
+    font-family: $headerFont;
+  }
+}
+
+.p-download_modal__cta {
+  background-color: $button;
+  color: $fg;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-download_modal__content_text .p-download_modal__not_now_skip {
+  color: $text;
 }

@@ -5,7 +5,9 @@ textarea.c-input_textarea,
   background-color: $contrast;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -42,7 +44,9 @@ textarea.c-input_textarea::placeholder {
   border: 1px solid $button;
 
   &:focus {
-    box-shadow: 0 0 0 1px $border, 0 0 0 5px $border;
+    box-shadow:
+      0 0 0 1px $border,
+      0 0 0 5px $border;
   }
 }
 
@@ -50,7 +54,9 @@ textarea.c-input_textarea::placeholder {
   border: 1px solid $blue;
 
   &:focus {
-    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+    box-shadow:
+      0 0 0 1px $blue,
+      0 0 0 5px $blue;
   }
 }
 
@@ -58,7 +64,9 @@ textarea.c-input_textarea::placeholder {
   border: 1px solid $green;
 
   &:focus {
-    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+    box-shadow:
+      0 0 0 1px $green,
+      0 0 0 5px $green;
   }
 }
 
@@ -66,7 +74,9 @@ textarea.c-input_textarea::placeholder {
   border: 1px solid $orange;
 
   &:focus {
-    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+    box-shadow:
+      0 0 0 1px $orange,
+      0 0 0 5px $orange;
   }
 }
 
@@ -74,7 +84,9 @@ textarea.c-input_textarea::placeholder {
   border: 1px solid $red;
 
   &:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -85,7 +97,9 @@ textarea {
     background: $contrast;
 
     &:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
 
       &:-moz-placeholder,
       &:-ms-input-placeholder,
@@ -117,7 +131,9 @@ textarea {
     border: 1px solid $button;
 
     &:focus {
-      box-shadow: 0 0 0 1px $button, 0 0 0 5px $button;
+      box-shadow:
+        0 0 0 1px $button,
+        0 0 0 5px $button;
     }
   }
 
@@ -125,7 +141,9 @@ textarea {
     border: 1px solid $blue;
 
     &:focus {
-      box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+      box-shadow:
+        0 0 0 1px $blue,
+        0 0 0 5px $blue;
     }
   }
 
@@ -133,7 +151,9 @@ textarea {
     border: 1px solid $green;
 
     &:focus {
-      box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+      box-shadow:
+        0 0 0 1px $green,
+        0 0 0 5px $green;
     }
   }
 
@@ -141,7 +161,9 @@ textarea {
     border: 1px solid $orange;
 
     &:focus {
-      box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+      box-shadow:
+        0 0 0 1px $orange,
+        0 0 0 5px $orange;
     }
   }
 
@@ -149,7 +171,9 @@ textarea {
     border: 1px solid $red;
 
     &:focus {
-      box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+      box-shadow:
+        0 0 0 1px $red,
+        0 0 0 5px $red;
     }
   }
 }
@@ -160,7 +184,9 @@ textarea {
   background: $contrast;
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
 
     &:-moz-placeholder,
     &:-ms-input-placeholder,
@@ -192,7 +218,9 @@ textarea {
   border: 1px solid $button;
 
   &:focus {
-    box-shadow: 0 0 0 1px $borderLight, 0 0 0 5px $borderLight;
+    box-shadow:
+      0 0 0 1px $borderLight,
+      0 0 0 5px $borderLight;
   }
 }
 
@@ -200,7 +228,9 @@ textarea {
   border: 1px solid $blue;
 
   &:focus {
-    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+    box-shadow:
+      0 0 0 1px $blue,
+      0 0 0 5px $blue;
   }
 }
 
@@ -208,7 +238,9 @@ textarea {
   border: 1px solid $green;
 
   &:focus {
-    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+    box-shadow:
+      0 0 0 1px $green,
+      0 0 0 5px $green;
   }
 }
 
@@ -216,7 +248,9 @@ textarea {
   border: 1px solid $orange;
 
   &:focus {
-    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+    box-shadow:
+      0 0 0 1px $orange,
+      0 0 0 5px $orange;
   }
 }
 
@@ -224,7 +258,9 @@ textarea {
   border: 1px solid $red;
 
   &:focus {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -233,7 +269,9 @@ textarea {
 
   &:focus,
   &:focus-within {
-    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    box-shadow:
+      0 0 0 1px $red,
+      0 0 0 5px $red;
   }
 }
 
@@ -288,6 +326,7 @@ input[type='text'].c-input_text {
 
 .p-message_pane_input__preview {
   background-color: $contrast;
+  border: 1px solid $border;
 }
 
 .p-message_pane_input__preview_back_to_channel_browser {

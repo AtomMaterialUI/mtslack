@@ -3,7 +3,6 @@
     background: hsla(0, 0%, 100%, 0);
     opacity: 0;
   }
-
   to {
     background: $bg;
     opacity: 1;
@@ -52,12 +51,21 @@
 
 .p-channel_sidebar--channel_dragging
   .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
-  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset 0 4px 0 0 $primary, inset -5px 0 0 0 $primaryT,
-    inset 5px 0 0 0 $primaryT, inset 0 5px 0 0 $primaryT;
+  box-shadow:
+    inset -4px 0 0 0 $primary,
+    inset 4px 0 0 0 $primary,
+    inset 0 4px 0 0 $primary,
+    inset -5px 0 0 0 $primaryT,
+    inset 5px 0 0 0 $primaryT,
+    inset 0 5px 0 0 $primaryT;
 }
 
 .p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
-  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT;
+  box-shadow:
+    inset -4px 0 0 0 $primary,
+    inset 4px 0 0 0 $primary,
+    inset -5px 0 0 0 $primaryT,
+    inset 5px 0 0 0 $primaryT;
 }
 
 .p-drag_layer__sidebar_channels,
@@ -66,12 +74,14 @@
   background: $active !important;
 }
 
+.p-ia4_client--theming .p-drag_layer__sidebar_channels,
 .p-drag_layer__sidebar_channels {
   box-shadow: 0 0 0 1px $bg;
   color: $text;
   background: $contrast;
 }
 
+.p-ia4_client--theming .p-drag_layer__sidebar_section_heading,
 .p-drag_layer__sidebar_section_heading {
   color: $text;
   background: $contrast;

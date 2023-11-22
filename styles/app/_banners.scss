@@ -236,3 +236,34 @@
 .p-message_pane_banner__close_icon {
   color: $text;
 }
+
+.p-mobile_social_proof_banner {
+  background-color: $accent;
+  color: $selectFg;
+
+  .c-icon {
+    color: $selectFg;
+  }
+}
+
+.p-huddle_banner .c-banner__close {
+  color: $fg;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.c-deal_suppport_banner {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+
+  .c-alert__icon {
+    color: $accent;
+  }
+}
+
+.c-dsr-channel-create-private-check .c-label__subtext,
+.c-dsr-section-subtitle {
+  color: $text;
+}

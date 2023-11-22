@@ -615,3 +615,106 @@ a.c-message__call_name--linked {
 .c-message_kit__labels--later {
   color: $accent;
 }
+
+.p-message_pane__setup_calendar_banner {
+  background-color: $notif;
+  border: 1px solid $border;
+
+  .c-select_button__placeholder {
+    color: $fg;
+  }
+}
+
+.p-message_pane__setup_calendar_banner_container {
+  background-color: $bg;
+}
+
+.p-message_pane__setup_calendar_banner__time1 {
+  background-color: $bg2;
+  border-bottom: 1px solid $borderLight;
+  color: $disabled;
+}
+
+.p-message_pane__setup_calendar_banner__time2 {
+  .p-message_pane__setup_calendar_banner__time2_spacer {
+    background-color: $bg2;
+  }
+
+  .p-message_pane__setup_calendar_banner__time2_meeting {
+    background-color: $bg2;
+  }
+
+  .p-message_pane__setup_calendar_banner__time2_meeting_spacer {
+    background-color: $accent;
+  }
+
+  .p-message_pane__setup_calendar_banner__time2_meeting_text_time {
+    color: $disabled;
+  }
+}
+
+.p-message_pane__setup_calendar_banner__time3 {
+  color: $disabled;
+  background-color: $bg2;
+
+  .p-message_pane__setup_calendar_banner__time3_text {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.sk-client-theme--dark {
+  .p-message_pane__setup_calendar_banner {
+    background-color: $notif;
+  }
+
+  .p-message_pane__setup_calendar_banner__time1,
+  .p-message_pane__setup_calendar_banner__time3_text {
+    border-color: $borderLight;
+  }
+}
+
+.p-message_pane__foreword__coachmark--blue {
+  background-color: $accent;
+  color: $selectFg;
+
+  &.c-coachmark--bottom {
+    &:after,
+    &:before {
+      border-bottom-color: $accent;
+    }
+  }
+
+  .c-coachmark__close {
+    &.c-icon_button--default,
+    &.c-icon_button--light {
+      color: $selectFg;
+
+      &:hover {
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.sk-client-theme--dark .p-message_pane__foreword__coachmark--blue {
+  background-color: $accent;
+  color: $selectFg;
+
+  &.c-coachmark--bottom {
+    &:after,
+    &:before {
+      border-bottom-color: $selectFg;
+    }
+  }
+
+  .c-coachmark__close {
+    &.c-icon_button--default,
+    &.c-icon_button--light {
+      color: $selectFg;
+
+      &:hover {
+        color: $selectFg;
+      }
+    }
+  }
+}

@@ -8,13 +8,36 @@
   }
 }
 
+.p-info_blurb__link {
+  color: $accent;
+}
+
+.p-info_blurb__link--highlighted {
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-info_blurb__sub_text,
+.p-info_blurb__sub_text {
+  color: $text;
+}
+
+.p-info_blurb__sub_text--highlighted {
+  color: $selectFg;
+}
+
+.p-ia4_client,
+.p-window_layout_wrapper,
 .p-client_desktop--ia-top-nav {
   .c-message_list__day_divider__label__pill {
-    box-shadow: 0 0 0 1px $bg2, 0 1px 3px 0 $tree;
+    box-shadow:
+      0 0 0 1px $bg2,
+      0 1px 3px 0 $tree;
 
     &:focus,
     &.c-button--focus-visible:focus {
-      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
     }
 
     &:hover,

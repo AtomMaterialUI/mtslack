@@ -1,0 +1,17 @@
+.p-nfx_welcome_modal .c-sk-modal__close_button {
+  color: $selectFg;
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+}
+
+.p-nfx_welcome_modal__title,
+.p-nfx_welcome_modal__description {
+  color: $fg;
+}

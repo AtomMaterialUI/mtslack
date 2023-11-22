@@ -25,6 +25,33 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
+}
+
+.p-oauth_account_picker__icon-container {
+  background-color: $bg2;
+}
+
+.p-oauth_account_picker__sub-label {
+  color: $text;
+}
+
+.p-oauth_account_select_modal__list_item {
+  border-top: 1px solid $borderLight;
+
+  &:last-of-type {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-data_sources_info_modal--oauth_picker {
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+}
+
+.p-connect_salesforce_data_source--container {
+  background-color: $bg;
 }

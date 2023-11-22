@@ -6,7 +6,40 @@
   color: $text;
 }
 
-
 .p-comment_list__toggle_container {
   color: $text;
+}
+
+.p-comments_stream .c-virtual_list {
+  background: $bg2;
+}
+
+.p-comments_stream_load_older_message {
+  background: $bg;
+  color: $accent;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-comments_stream__default_background--first {
+  border: 1px solid $border;
+  border-bottom: none;
+}
+
+.p-comments_stream .p-comments_stream__default_background--last {
+  border: 1px solid $border;
+  border-top: none;
+}
+
+.p-comments_stream__default_background {
+  background: $bg;
+  border-left: 1px solid $border;
+  border-right: 1px solid $border;
+}
+
+.c-link--button.p-skip_all_tips__link {
+  color: $accent2;
 }

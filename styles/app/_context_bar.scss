@@ -5,7 +5,10 @@
 
 .p-context_bar__icon_container {
   .p-context_bar__icon + .p-context_bar__icon {
-    box-shadow: -2px 0 0 $bg, -2px 1px 0 $bg, -2px -1px 0 $bg;
+    box-shadow:
+      -2px 0 0 $bg,
+      -2px 1px 0 $bg,
+      -2px -1px 0 $bg;
   }
 }
 
@@ -30,4 +33,14 @@
 .p-context_bar__composer-nux {
   background: $notif;
   color: $fg;
+}
+
+.p-context_bar__divider {
+  color: $border;
+}
+
+.sk-client-theme--dark .p-context_bar__prog_disc_tip .p-context_bar__prog_disc_tip_flag,
+.p-context_bar__prog_disc_tip .p-context_bar__prog_disc_tip_flag {
+  background: $accent;
+  color: $selectFg;
 }

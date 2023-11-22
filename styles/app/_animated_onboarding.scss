@@ -1,0 +1,14 @@
+.sk-client-theme--dark .p-animated_onboarding_toast.c-toast,
+.p-animated_onboarding_toast.c-toast {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-animated_onboarding_toast.c-toast .c-toast__wrapper .c-toast__icon {
+  background-color: $selectFg;
+  color: $primary;
+}
+
+.p-animated_onboarding_toast_icon {
+  background-color: $selectFg;
+}

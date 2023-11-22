@@ -13,6 +13,8 @@
 }
 
 .p-message_pane__unread_banner__banner {
+  background: $accent;
+
   &:hover {
     background: $accent;
     color: $selectFg;
@@ -88,6 +90,8 @@
   border-left: 1px solid $accent;
 }
 
+.p-ia4_client,
+.p-window_layout_wrapper,
 .p-client_desktop--ia-top-nav {
   .p-team_sidebar {
     box-shadow: inset -1px 0 0 0 $border !important;
@@ -128,4 +132,33 @@
   background: $bg2;
   box-shadow: inset 0 -1px $borderLight;
   color: $text;
+}
+
+.p-unreads_simplification_coachmark__hero_container {
+  background-color: $accent;
+}
+
+.sk-client-theme--dark .p-unreads_simplification_coachmark__hero_container {
+  background-color: $accent;
+}
+
+.p-unreads_simplification_coachmark .c-coachmark__close {
+  color: $selectFg;
+
+  &:hover {
+    background: $border;
+    color: $selectFg;
+  }
+}
+
+.p-unreads_simplification_coachmark__content__description {
+  color: $text;
+}
+
+.p-unreads_simplification_coachmark.c-coachmark--refurbish:after {
+  border-right-color: $accent;
+}
+
+.sk-client-theme--dark .p-unreads_simplification_coachmark.c-coachmark--refurbish:after {
+  border-right-color: $accent;
 }

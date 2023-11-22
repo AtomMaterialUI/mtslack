@@ -1,0 +1,49 @@
+.p-discount_seat_promo_one_week_left_banner {
+  background-color: $notif;
+  color: $fg;
+}
+
+.c-banner {
+  &.p-discount_seat_promo_one_week_left_banner .c-icon_button {
+    color: $fg;
+  }
+
+  &.c-banner--neutral.p-discount_seat_promo_one_week_left_banner {
+    .c-banner__close.c-button--focus-visible:focus,
+    .c-link--focus-visible:focus {
+      box-shadow:
+        0 0 0 1px $notif,
+        0 0 0 5px $notif;
+      color: $fg;
+    }
+  }
+}
+
+.p-discount_seat_promo_reminder_coachmark__hero_container {
+  background-color: $notif;
+}
+
+.p-sidebar_simplification_coachmark__hero_container {
+  background-color: $accent;
+}
+
+.sk-client-theme--dark .p-sidebar_simplification_coachmark__hero_container {
+  background-color: $accent;
+}
+
+.p-sidebar_simplification_coachmark__hero {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-sidebar_simplification_coachmark__hero {
+  background-color: $notif;
+}
+
+.p-sidebar_simplification_coachmark .c-coachmark__close {
+  color: $selectFg;
+
+  &:hover {
+    background: $tree;
+    color: $selectFg;
+  }
+}

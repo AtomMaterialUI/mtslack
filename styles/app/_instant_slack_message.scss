@@ -34,3 +34,75 @@
     }
   }
 }
+
+.p-instant_slack_leave_conversation_modal__body {
+  background-color: $contrast;
+
+  .p-instant_slack_leave_conversation_modal__body_content > p {
+    color: $fg;
+  }
+}
+
+.p-instant_slack_you_sidebar_section__profile_name {
+  color: $fg;
+}
+
+.p-ia4_client--theming .p-instant_slack_you_sidebar_section__profile_name {
+  color: $text;
+}
+
+.p-instant_slack_you_sidebar_section__cta--secondary {
+  background-color: initial;
+  border: 1px solid $border;
+  color: $text;
+}
+
+.p-ia4_client--theming .p-instant_slack_you_sidebar_section__cta--secondary {
+  color: $text;
+}
+
+.p-instant_slack_you_sidebar_section__cta--secondary:hover {
+  background-color: $tree;
+  color: $text;
+}
+
+.p-ia4_client--theming .p-instant_slack_you_sidebar_section__cta--secondary:hover {
+  color: $text;
+}
+
+.p-desktop_dogfood_update_banner__container {
+  background: $accent;
+  border: 2px solid $accent;
+  color: $selectFg;
+
+  &:hover {
+    background: $accentT;
+  }
+}
+
+.p-threads_education_banner__container {
+  background: $accent;
+  border: 2px solid $accent;
+  color: $selectFg;
+
+  &:hover {
+    background: $accentT;
+  }
+
+  .p-threads_education_banner__close_icon {
+    color: $fg;
+  }
+}
+
+.container__zanHz {
+  color: $text;
+}
+
+.p-ia4_client--theming__VJR0P .container__zanHz {
+  color: $text;
+}
+
+.container__zanHz.isSelected__RyFNk {
+  background-color: $selectBg;
+  color: $selectFg;
+}

@@ -77,7 +77,9 @@ a.c-sidebar_menu__list_item {
 }
 
 .p-team_sidebar__govslack_icon {
-  background-color: #868686;
+  background-color: $hl;
+  border: 2px solid $hl;
+  color: $selectFg;
 }
 
 .p-team_sidebar__signed_out_badge {
@@ -877,6 +879,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   color: $accent;
 }
 
+.p-ia4_client--theming .p-ia__sidebar_header__user__presence.c-presence--away,
 .p-ia__sidebar_header__user__presence.c-presence--away {
   color: $disabled;
 }
@@ -951,6 +954,7 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   color: $fg;
 }
 
+.p-ia4_client--theming .p-channel_sidebar__setup_channel_input::placeholder,
 .p-channel_sidebar__setup_channel_input::placeholder,
 .p-channel_sidebar__setup_prompt .c-icon {
   color: $disabled;
@@ -1313,4 +1317,76 @@ div[aria-selected='true'].p-channel_sidebar__static_list__item:focus:after {
   .p-channel_sidebar__channel--selected
   .p-huddle_sidebar_link_peer_count_badge.p-huddle_sidebar_link_peer_count_badge--other.p-huddle_sidebar_link_peer_count_badge--ia4 {
   background-color: $bg;
+}
+
+.p-ia4_client--theming .p-channel_sidebar__section_heading--setup-sidebar-see-more,
+.p-channel_sidebar__section_heading--setup-sidebar-see-more {
+  color: $fg;
+}
+
+.p-ia4_client--theming .p-channel_sidebar__section_heading--setup-sidebar-see-more:hover,
+.p-channel_sidebar__section_heading--setup-sidebar-see-more:hover {
+  color: $selectFg;
+}
+
+.p-channel_sidebar .p-channel_sidebar__channel.p-channel_sidebar__channel--ia4_setup {
+  color: $fg;
+}
+
+.p-channel_sidebar--iap1 {
+  .p-channel_sidebar__section_heading.p-channel_sidebar__section_heading--ia4_setup {
+    color: $text;
+  }
+
+  .p-channel_sidebar__section_heading--ia4_setup.p-channel_sidebar__section_heading--ia4_setup_inactive {
+    color: $disabled;
+  }
+}
+
+.p-setup_sidebar_tip__tooltip {
+  background-color: $accent;
+  color: $selectFg;
+
+  .p-setup_sidebar_tip__caret {
+    &.p-setup_sidebar_tip__caret--bottom {
+      border-bottom: 7px solid $accent;
+    }
+
+    &.p-setup_sidebar_tip__caret--left {
+      border-left: 7px solid $accent;
+    }
+
+    &.p-setup_sidebar_tip__caret--right {
+      border-right: 7px solid $accent;
+    }
+
+    &.p-setup_sidebar_tip__caret--top {
+      border-top: 7px solid $accent;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-setup_sidebar_tip__tooltip {
+  background-color: $accent;
+  color: $selectFg;
+
+  .p-setup_sidebar_tip__caret--bottom {
+    border-bottom-color: $accent;
+  }
+
+  .p-setup_sidebar_tip__caret--left {
+    border-left-color: $accent;
+  }
+
+  .p-setup_sidebar_tip__caret--right {
+    border-right-color: $accent;
+  }
+
+  .p-setup_sidebar_tip__caret--top {
+    border-top-color: $accent;
+  }
+
+  .p-setup_sidebar_tip__close_button {
+    color: $selectFg;
+  }
 }

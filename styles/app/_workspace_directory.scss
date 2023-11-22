@@ -19,9 +19,7 @@
   }
 }
 
-
 .p-workspace_directory_card--small {
-
   .p-workspace_directory_card__subtitle {
     color: $text;
   }
@@ -33,9 +31,7 @@
   .p-workspace_directory_card__status {
     color: $fg;
   }
-
 }
-
 
 .p-workspace_directory_dialog {
   .c-dialog__header {
@@ -44,8 +40,11 @@
 }
 
 .p-workspace_directory_dialog--focus_ring {
-  a.focus-ring, button.focus-ring {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  a.focus-ring,
+  button.focus-ring {
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -65,14 +64,12 @@
   color: $red;
 }
 
-
 .p-workspace_directory_dialog__header--mobile {
   margin: 0;
   padding-top: 32px;
   padding-bottom: 32px;
   background: linear-gradient(46.57deg, $accent, $accent2), $fg;
 }
-
 
 .p-workspace_directory_banner {
   background-color: $bg;
@@ -98,8 +95,12 @@
 }
 
 .p-workspace_directory__wrapper {
-  .p-workspace_directory_card.focus-ring, a.focus-ring, button.focus-ring {
-    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  .p-workspace_directory_card.focus-ring,
+  a.focus-ring,
+  button.focus-ring {
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
   }
 }
 
@@ -107,17 +108,16 @@
   background-color: $bg2;
 }
 
-
 .p-workspace_directory__title {
   color: $fg;
 }
-
 
 .p-workspace_directory__list_empty_state_text {
   color: $text;
 }
 
 .p-workspace_directory_empty_state {
+  border: 1px solid $border;
   background-color: $bg;
 }
 
@@ -128,7 +128,8 @@
 .p-workspace_directory_empty_state__footer {
   color: $disabled;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: $disabled;
   }
 }

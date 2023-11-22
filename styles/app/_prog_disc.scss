@@ -444,13 +444,33 @@
   }
 }
 
+.sk-client-theme--dark .p-setup_prog_disc_sidebar_tip__enclose,
 .p-setup_prog_disc_sidebar_tip__enclose {
   border: 2px solid $primary;
 }
 
+.sk-client-theme--dark .p-setup_prog_disc_sidebar_tip__enclose--ia4 i.p-channel_sidebar__channel_icon_prefix,
+.p-setup_prog_disc_sidebar_tip__enclose--ia4 i.p-channel_sidebar__channel_icon_prefix,
+.p-setup_prog_disc_sidebar_tip__enclose i.p-channel_sidebar__channel_icon_prefix {
+  background: $accent;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_sidebar_tip__content,
 .p-setup_prog_disc_sidebar_tip__content {
   background: $notif;
   color: $selectFg;
+}
+
+.sk-client-theme--dark .p-setup_prog_disc_sidebar_tip__content--ia4,
+.p-setup_prog_disc_sidebar_tip__content--ia4 {
+  background-color: $contrast;
+  color: $fg;
+}
+
+.p-setup_prog_disc_sidebar_tip__enclose--ia4,
+.sk-client-theme--dark .p-setup_prog_disc_sidebar_tip__enclose--ia4 {
+  border: 2px solid $borderLight;
 }
 
 .p-setup_prog_disc_icon_action--ia4 {

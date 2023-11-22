@@ -1,4 +1,6 @@
 .p-workspace__sidebar {
+  background: $contrast;
+
   &:after {
     background: $contrast;
   }
@@ -11,6 +13,10 @@
     background-color: $bg;
     color: $fg;
   }
+}
+
+.p-workspace__primary_view_contents--members_overlay:before {
+  background: $overlay;
 }
 
 .sk-client-theme--dark .p-workspace__primary_view_body.c-joiner_launchpad {
@@ -178,6 +184,10 @@
   border-left: none;
 }
 
+.p-workspace__secondary_view:not(.p-workspace__secondary_view--primary_collapsed) {
+  border-left: 1px solid $border;
+}
+
 .p-workspace__boot_failure {
   background: $bg2;
 
@@ -216,4 +226,66 @@
 
 .p-get_started_confirmation_code__hint {
   color: $disabled;
+}
+
+.p-add_workspace_item__icon {
+  background-color: $bg;
+}
+
+.p-get_started_confirmation_code__hint--gov_slack,
+.p-get_started_confirmation_code__open--gov_slack .p-get_started__email_app_link {
+  color: $selectFg;
+}
+
+.p-workspace__primary_view_footer--float {
+  background: $bg;
+}
+
+.p-workspace_banner__download_ia4 {
+  background-color: $notif;
+  color: $fg;
+
+  .p-workspace_banner__download_content_download_button {
+    background-color: $bg;
+    color: $fg;
+  }
+}
+
+.sk-client-theme--dark .p-workspace_banner__download_ia4 .p-workspace_banner__download_content_download_button {
+  background-color: $notif;
+  border-color: $notif;
+  color: $fg;
+}
+
+.p-workspace_banner__download_ia4 .c-banner__close.c-icon_button {
+  color: $fg;
+}
+
+.p-workspace__primary_view--inset {
+  background-color: $contrast;
+
+  .p-workspace__primary_view_contents {
+    background-color: $bg;
+    outline: 1px solid $borderLight;
+  }
+
+  .c-tabs__tab_menu {
+    background-color: $bg;
+  }
+}
+
+.p-workspace__secondary_view--inset {
+  background-color: $contrast;
+
+  .p-workspace__secondary_view_contents--inset {
+    background-color: $bg;
+    border-left: 1px solid $borderLight;
+    box-shadow:
+      1px 1px 0 0 $borderLight,
+      0 -1px 0 0 $borderLight;
+  }
+}
+
+.p-ent_entity_icon:after {
+  box-shadow: inset 0 0 0 1px $overlay;
 }

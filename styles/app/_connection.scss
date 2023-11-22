@@ -1,0 +1,12 @@
+.p-connect_data_source--container {
+  background-color: $bg;
+}
+
+.p-connection_status_badge {
+  background-color: $button;
+  color: $text;
+}
+
+.p-connection_status_badge--inverse {
+  color: $selectFg;
+}

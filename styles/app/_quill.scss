@@ -81,6 +81,13 @@
   }
 }
 
+.p-message_input__input_container_unstyled {
+  .p-message_input__attachments .p-composer_attachments__separator,
+  .p-message_input__files .p-composer_attachments__separator {
+    border-left: 1px solid $borderLight;
+  }
+}
+
 .p-message_input__input_container_unstyled--day1 .c-texty_input_unstyled__container--size_medium .ql-placeholder {
   color: $primary;
 }

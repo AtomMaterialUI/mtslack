@@ -1,0 +1,53 @@
+.sk-client-theme--dark .p-digital_hq_for_sales,
+.p-digital_hq_for_sales {
+  background-color: $notif;
+}
+
+.p-digital_hq_for_sales {
+  .p-digital_hq_for_sales_banner {
+    color: $fg;
+  }
+
+  .p-digital_hq_for_sales_banner--light {
+    background-color: $notif;
+  }
+
+  .p-team_channel--columns {
+    .p-create_account_channels {
+      background-color: $red;
+    }
+
+    .p-celebrate_wins {
+      background-color: $orange;
+    }
+
+    .p-custom_alerts {
+      background-color: $green;
+    }
+
+    .p-group-by-keyword {
+      background-color: $purple;
+    }
+
+    .p-account-sets {
+      background-color: $cyan;
+    }
+
+    .p-organize-by-salesforce {
+      background-color: $blue;
+    }
+  }
+
+  .p-team_channel--columns_body {
+    border: 1px solid $border;
+  }
+
+  .p-team_channel--columns_content,
+  .p-team_channel--columns_content_sidebar {
+    background-color: $contrast;
+  }
+
+  .p-team_channel--columns_desc {
+    color: $text;
+  }
+}

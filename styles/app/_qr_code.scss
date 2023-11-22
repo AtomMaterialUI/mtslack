@@ -1,0 +1,57 @@
+.p-qr_code_signin_modal .p-qr_code_signin_modal__qr_code_wrapper {
+  background-color: $bg2;
+}
+
+.sk-client-theme--dark .p-qr_code_signin_modal .p-qr_code_signin_modal__qr_code_wrapper {
+  background-color: $bg2;
+}
+
+.p-qr_code_signin_modal {
+  .p-qr_code_signin_modal__qr_code_wrapper {
+    .p-qr_code_signin_modal__qr_code_image--wrapper {
+      background: $bg;
+    }
+
+    .p-qr_code_signin_modal__qr_code_workspace_name {
+      background-color: $notif;
+      color: $selectFg;
+    }
+  }
+
+  .p-qr_code_signin_modal__content_section ol li {
+    &:before {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-digital_hq_for_sales_sidebar {
+  background-color: $contrast;
+
+  .p-menu_item {
+    color: $selectFg;
+
+    &.is_active {
+      background: $contrast;
+    }
+
+    &:not(.is_active):hover {
+      background-color: $contrast;
+      color: $selectFg;
+    }
+  }
+
+  .p-menu_header {
+    color: $selectFg;
+  }
+
+  .p-selected_indicator {
+    background: $accent;
+  }
+}
+
+.p-troops_trigger_modal_subtitle {
+  color: $fg;
+  font-family: $fontFamily;
+}

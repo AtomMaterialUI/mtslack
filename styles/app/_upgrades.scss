@@ -207,3 +207,26 @@
 .p-upgrades_coachmark__heading {
   color: $fg;
 }
+
+.p-upgrades_button__rocket {
+  color: $text;
+}
+
+.p-upgrades_button--sidebar {
+  .p-upgrades_button__rocket {
+    color: $text;
+  }
+}
+
+.p-ia4_client--theming .p-upgrades_button--sidebar .p-upgrades_button__rocket {
+  color: $text;
+}
+
+.p-ia__sidebar_header--instant_slack {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+
+  &.p-ia__sidebar_header--dark {
+    border-color: $border;
+  }
+}
