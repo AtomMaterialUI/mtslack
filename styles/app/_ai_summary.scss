@@ -8,3 +8,14 @@
     color: $selectFg;
   }
 }
+
+.p-ai_summary_header_subtitle__permalink {
+  &:focus,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-ai_summary_header_subtitle__channel_name {
+  color: $text;
+}

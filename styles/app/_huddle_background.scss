@@ -1,0 +1,102 @@
+.p-huddle_jukebox_menu--stop {
+  color: $red;
+}
+
+.c-menu_item__li--highlighted .p-huddle_jukebox_menu--stop {
+  color: $selectFg;
+}
+
+.p-huddle_background_menu__category_label {
+  color: $fg;
+}
+
+.p-huddle_background_menu__preview_image_checkbox_icon {
+  color: $accent;
+}
+
+.p-huddle_background_menu__preview_image_checkbox_icon_background {
+  color: $bg;
+}
+
+.p-huddle_background_menu__category_preview_image--selected {
+  box-shadow:
+    0 1px 3px 0 $accentT,
+    0 0 0 2px $accent;
+}
+
+.p-huddle_background_menu__category_previews--tooltip_artist_detailed {
+  color: $text;
+}
+
+.p-huddle_background_dialog .c-sk-modal_footer {
+  border-top: 1px solid $borderLight;
+
+  .p-huddle_background_dialog__footer_copy {
+    color: $text;
+  }
+}
+
+.p-huddle_video_background_menu__category_preview_image--selected {
+  box-shadow:
+    0 1px 3px 0 $accentT,
+    0 0 0 2px $accent;
+}
+
+.p-huddle_video_background_menu__checkbox_icon {
+  color: $accent;
+}
+
+.p-huddle_video_background_menu__checkbox_icon_background {
+  color: $bg;
+}
+
+.p-huddle_video_background_menu__category_preview_image_none {
+  background-color: $contrast;
+}
+
+.p-huddle_video_background_menu__category_preview_image_none--selected {
+  background-color: $hl;
+  border: 2px solid $selectFg;
+  color: $selectFg;
+}
+
+.p-huddle_video_background_menu__category_preview_image_blur {
+  background: radial-gradient(91.15% 91.15% at 50% 8.85%, #93a699 0, #7f945c 52.06%, #6a6b45 92.19%);
+  color: $selectFg;
+}
+
+.p-huddle_video_background_menu__category_preview_image_blur--selected {
+  background: radial-gradient(91.15% 91.15% at 50% 8.85%, #4889af 29.17%, #1a5b7a 92.19%);
+  border: 2px solid $selectFg;
+}
+
+.p-huddle_video_background_dialog__video_stream_container {
+  background-color: $contrast;
+}
+
+.p-huddle_camera_preview_menu__video_stream_container {
+  background-color: $contrast;
+}
+
+.p-huddle_more_actions_menu__menu-header .p-huddle_more_actions_menu__menu-header__label,
+.p-huddle_more_actions_menu__submenu-as-menu-header .p-huddle_more_actions_menu__submenu-as-menu-header__back-button {
+  color: $text;
+}
+
+.p-huddle_camera_icon {
+  .p-huddle_camera_icon--slash {
+    color: $red;
+  }
+
+  .p-huddle_camera_icon--dot {
+    color: $accent;
+  }
+}
+
+.p-huddle_alone_warning__clip_button .c-icon {
+  color: $accent;
+}
+
+.p-huddle_alone_warning__body {
+  color: $text;
+}

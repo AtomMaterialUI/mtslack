@@ -8,3 +8,18 @@
 .p-slackai_composer_popover__content_blocks_wrapper {
   background-color: $overlay;
 }
+
+.p-slackai_huddle_menu_item {
+  background-color: $bg;
+}
+
+.p-slackai_huddle_menu_item__content_description {
+  color: $text;
+}
+
+.p-slackai_huddle_menu_popover {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+}

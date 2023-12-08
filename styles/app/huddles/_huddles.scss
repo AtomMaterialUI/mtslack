@@ -201,3 +201,106 @@
     0 0 0 1px $border,
     0 4px 12px 0 #00000014;
 }
+
+.p-huddles_alert_banner_base--default_background {
+  background-color: $notif;
+  color: $fg;
+
+  &.p-huddles_alert_banner_base__lounge_music--mini_player {
+    border: 1px solid $border;
+  }
+}
+
+.p-huddles_alert_banner_base__warning_banner .c-banner__close {
+  color: $selectFg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-huddles_alert_banner_base__icon_container .p-huddle_lounge_music_icon {
+  fill: $fg;
+}
+
+.sk-client-theme--dark .p-huddles_alert_banner_base--lounge_music,
+.p-ia4_client--theming .p-huddles_alert_banner_base--lounge_music,
+.p-huddles_alert_banner_base--lounge_music {
+  background: $bg;
+  color: $fg;
+}
+
+.p-huddle_lounge_music_icon--lottie path {
+  fill: $fg;
+  stroke: $fg;
+}
+
+.p-huddle_lounge_music_banner .p-huddle_lounge_music_icon--lottie path {
+  fill: $selectFg;
+  stroke: $selectFg;
+}
+
+.p-huddle_lounge_music_banner__icon .p-huddle_lounge_music_icon {
+  fill: $fg;
+}
+
+.sk-client-theme--dark .p-huddle_lounge_music_banner__icon .p-huddle_lounge_music_icon--lottie path {
+  fill: $fg;
+  stroke: $fg;
+}
+
+.p-huddle_lounge_music_banner__divider--bottom {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-huddles_temporary_control_banner_transcript__icon__record {
+  color: $red;
+}
+
+.p-huddle_quick_emoji_picker {
+  background-color: $bg;
+}
+
+.p-huddle_quick_emoji_picker__reaction_panel_subtitle {
+  color: $text;
+}
+
+.p-huddle_quick_emoji_picker__reaction_emoji_wrapper,
+.p-huddle_quick_emoji_picker__sticker_emoji_wrapper {
+  background: $bg2;
+}
+
+.p-huddle_quick_emoji_picker__reaction_emoji_wrapper:hover,
+.p-huddle_quick_emoji_picker__sticker_emoji_wrapper:hover {
+  background-color: $hl;
+}
+
+.p-huddle_quick_emoji_picker__reaction_emoji_wrapper {
+  &.p-huddle_quick_emoji_picker__reaction_emoji_wrapper--selected,
+  &.p-huddle_quick_emoji_picker__sticker_emoji_wrapper--selected {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_quick_emoji_picker__sticker_emoji_wrapper {
+  &.p-huddle_quick_emoji_picker__reaction_emoji_wrapper--selected,
+  &.p-huddle_quick_emoji_picker__sticker_emoji_wrapper--selected {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_quick_emoji_picker__reaction_emoji_wrapper {
+  &.p-huddle_quick_emoji_picker__reaction_emoji_wrapper--selected:hover,
+  &.p-huddle_quick_emoji_picker__sticker_emoji_wrapper--selected:hover {
+    background-color: $accentT;
+  }
+}
+
+.p-huddle_quick_emoji_picker__sticker_emoji_wrapper {
+  &.p-huddle_quick_emoji_picker__reaction_emoji_wrapper--selected:hover,
+  &.p-huddle_quick_emoji_picker__sticker_emoji_wrapper--selected:hover {
+    background-color: $accentT;
+  }
+}

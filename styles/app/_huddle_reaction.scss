@@ -1,0 +1,99 @@
+.p-huddle_reaction_bubble {
+  box-shadow: 0 0 0 1px $border,
+  0 1px 3px 0 #00000014;
+  color: #1d1c1d;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+  }
+}
+
+.p-huddle_reaction_bubble--self_reacted {
+  background-color: $active;
+!important;
+  color: $accent !important;
+
+  &:hover {
+    background-color: $hl !important;
+    color: $accent !important;
+  }
+
+  &.c-button--focus-visible,
+  &:hover {
+    box-shadow: 0 4px 12px 0 #00000014,
+    0 0 0 1px $accent;
+  }
+}
+
+.p-huddle_reaction_bubble_bg_00 {
+  background-color: #ffe0e0;
+}
+
+.p-huddle_reaction_bubble_bg_01 {
+  background-color: #fcf;
+}
+
+.p-huddle_reaction_bubble_bg_02 {
+  background-color: #dbeb8d;
+}
+
+.p-huddle_reaction_bubble_bg_03 {
+  background-color: #b5e0ff;
+}
+
+.p-huddle_reaction_bubble_bg_04 {
+  background-color: #ffe5b2;
+}
+
+.p-huddle_reaction_bubble_bg_05 {
+  background-color: #bde595;
+}
+
+.p-huddle_reaction_bubble_bg_06 {
+  background-color: #d4d5ff;
+}
+
+.p-huddle_reaction_bubble_bg_07 {
+  background-color: #f9ef6e;
+}
+
+.p-huddle_reaction_bubble_bg_08 {
+  background-color: #d0f2ed;
+}
+
+.p-huddle_reaction_list {
+  background: #0000;
+}
+
+.p-huddle_closed_caption_event__wrapper {
+  background-color: $notif;
+}
+
+.p-huddle_closed_caption_event__event_text,
+.p-huddle_closed_caption_event__member_name {
+  color: $fg;
+}
+
+.p-huddle_closed_captions {
+  background: #0000;
+}
+
+.p-huddle_popover_reaction__description {
+  color: $fg;
+}
+
+.p-huddle_peer_tile__sticky_emoji_container.p-huddle_popover_reaction__audio_only_mode--huddle_window {
+  background: $fg;
+  color: $bg;
+}
+
+.p-huddle_popover_reaction__audio_only_mode--huddle_window:not(.p-huddle_peer_tile__emoji_container--small_tile)
+.p-huddle_popover_reaction__description {
+  color: $bg;
+}
+
+.p-peer_tile__sticky_reaction.p-huddle_popover_reaction__audio_only_mode--mini_player {
+  background: $fg;
+  color: $bg;
+}

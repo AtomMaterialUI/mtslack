@@ -6,3 +6,21 @@
     background-color: $hl;
   }
 }
+
+.p-productivity_pack_card {
+  border: 1px solid $borderLight;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 10px #00000026;
+  }
+}
+
+.p-productivity_pack_card--expanded {
+  border: 2px solid $accent;
+}
+
+.p-productivity_pack_card__description {
+  color: $text;
+}

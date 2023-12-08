@@ -216,3 +216,18 @@
     color: inherit;
   }
 }
+
+.p-lists_flexpane__updated {
+  color: $text;
+}
+
+.p-lists_flexpane__header_permalink {
+  &:focus,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-lists_flexpane__header_list_name {
+  color: $text;
+}

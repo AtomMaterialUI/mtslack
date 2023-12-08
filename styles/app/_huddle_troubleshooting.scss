@@ -1,0 +1,60 @@
+.p-huddle_troubleshooting_panel__metric-line-status .p-huddle_troubleshooting_panel__metric-line-divider:after {
+  color: $border;
+}
+
+.p-huddle_troubleshooting_panel__metric-line-value {
+  color: $green;
+}
+
+.p-huddle_troubleshooting_panel__metric-line-value--poor {
+  color: $red;
+}
+
+.p-huddle_troubleshooting_panel__metric-line-content p {
+  color: $text;
+}
+
+.p-huddle_troubleshooting_panel__container {
+  background: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #0000001f;
+}
+
+.p-huddle_troubleshooting_panel__status-text {
+  color: $fg;
+}
+
+.p-huddle_troubleshooting_panel__status-text-tips-intro {
+  color: $text;
+}
+
+.p-huddle_troubleshooting_panel__status-text-tips-line {
+  color: $text;
+
+  &:before {
+    color: $text;
+  }
+}
+
+.p-huddle_troubleshooting_panel__status-text-summary {
+  color: $fg;
+}
+
+.p-huddle_troubleshooting_panel__status-audio-only-mode {
+  background: $bg;
+  border-top: 1px solid $border;
+  color: $fg;
+
+  .p-huddle_troubleshooting_panel__status-text {
+    color: $text;
+  }
+}
+
+.p-huddle_troubleshooting_panel__warning-icon {
+  color: $orange;
+}
+
+.p-huddle_troubleshooting_panel__support-link-container {
+  color: $text;
+}

@@ -125,3 +125,34 @@
 .p-view_header_hover_card__popover_arrow {
   border-bottom: 14px solid $accent;
 }
+
+.p-canvas_notes {
+  background-color: $bg;
+}
+
+.p-canvas_notes__buttons {
+  background-color: $bg;
+  border-bottom: 1px solid $border;
+}
+
+.p-canvas_quip_thread__file_name {
+  color: $text;
+}
+
+.p-canvas_quip_thread--border {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-canvas_quip_thread__header {
+  box-shadow: inset 0 -1px 0 0 $bg2;
+}
+
+.p-huddle_window_content__container:has(.p-canvas_notes) {
+  background-color: $bg;
+}
+
+.p-huddle_window--ia4 .p-huddle_window_content__container:has(.p-canvas_notes) {
+  border-right: 1px solid $border;
+}

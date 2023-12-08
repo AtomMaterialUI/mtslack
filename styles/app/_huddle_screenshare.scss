@@ -1,0 +1,37 @@
+.p-huddle_screenshare_tile_footer {
+  background-color: $contrast;
+
+  .c-hidden_user_avatar {
+    background: $bg2;
+  }
+}
+
+.p-huddle_screenshare_tile_footer__title {
+  color: $fg;
+}
+
+.p-huddle_screenshare_tile_footer__sub_title {
+  color: $text;
+}
+
+.p-huddle_screenshare_tile:focus {
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
+}
+
+.p-huddle_screenshare_tile_small_tile_overlay svg {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-huddle_grid_component:hover .p-huddle_peer_tile__invite_status_overlay__hover,
+.p-huddle_compact_audio_pane--container .p-peer_tile__overflow_text {
+  background-color: $notif;
+}
+
+.p-huddle_compact_pagination_controls .p-huddle_compact_pagination_controls__page_button {
+  background: $bg;
+  box-shadow: 0 1px 3px $bg2;
+  color: $fg;
+}

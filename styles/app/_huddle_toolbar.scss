@@ -1,0 +1,339 @@
+.p-huddle_toolbar__container {
+  .p-huddle_toolbar__button {
+    background-color: $button;
+    box-shadow:
+      0 0 0 1px $border,
+      0 1px 3px 0 #00000014;
+    color: $fg;
+
+    &.p-huddle_toolbar__button--toggled_on,
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $accent;
+      color: $selectFg;
+    }
+
+    .p-huddle_toolbar__mic_volume_indicator .p-huddle_mic_icon__microphone--input_level {
+      color: $green;
+    }
+
+    &.p-huddle_toolbar__button--education {
+      background: $accent;
+      color: $selectFg;
+    }
+
+    &:focus {
+      box-shadow:
+        0 0 0 1px $primary,
+        0 0 0 5px $primaryT;
+    }
+  }
+
+  &.p-huddle_toolbar__container--dark-theme .p-huddle_toolbar__button {
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $accent;
+    }
+
+    &.p-huddle_toolbar__button--toggled_on {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+
+  &.p-huddle_toolbar__container--compact_mode {
+    &.p-huddle_toolbar__container--dark-theme
+      .p-huddle_toolbar__button:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $accent;
+      color: $selectFg;
+    }
+
+    .p-huddle_toolbar__button--compact_mode {
+      background-color: $button;
+      color: $fg;
+
+      &.p-huddle_toolbar__button--toggled_on {
+        background-color: $accent;
+        color: $selectFg;
+      }
+
+      &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+        background-color: $accentT;
+        color: $selectFg;
+      }
+    }
+  }
+}
+
+.p-ia4_client--theming
+  .p-huddle_toolbar__container.p-huddle_toolbar__container--compact_mode
+  .p-huddle_toolbar__button--compact_mode:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-huddle_toolbar__container.p-huddle_toolbar__container--compact_mode .p-huddle_toolbar__button--compact_mode:focus {
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
+}
+
+.p-huddle_toolbar__thread_toggle_container .p-huddle_toolbar__thread_toggle_badge {
+  background: $red;
+}
+
+.p-huddle_toolbar__leave_button:focus {
+  box-shadow:
+    0 0 0 1px $accent,
+    0 0 0 5px $accentT;
+}
+
+.p-huddle_toolbar__container--expanded_mode {
+  .p-huddle_toolbar__vertical_divider {
+    border-left: 1px solid $border;
+  }
+
+  .p-huddle_toolbar__button--expanded_mode {
+    background-color: $button;
+    box-shadow: none;
+    color: $fg;
+
+    &.p-huddle_toolbar__button--toggled_on {
+      background-color: $accent;
+      color: $selectFg;
+    }
+
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $accentT;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-ia4_client--theming
+  .p-huddle_toolbar__container--expanded_mode
+  .p-huddle_toolbar__button--expanded_mode:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-huddle_toolbar__container--expanded_mode {
+  .p-huddle_toolbar__button--expanded_mode:focus {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+
+  .p-huddle_toolbar__button--full_bleed {
+    background: $notif;
+    color: $fg;
+
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background: $notif;
+      box-shadow:
+        0 0 0 1px $notif,
+        0 1px 3px 0 #00000014;
+      color: $selectFg;
+    }
+
+    &:focus {
+      box-shadow:
+        0 0 0 1px $accent,
+        0 0 0 5px $accentT;
+    }
+
+    &.p-huddle_toolbar__button--toggled_on {
+      box-shadow: inset 0 0 0 1px #1d1c1d21;
+    }
+  }
+
+  .p-huddle_toolbar_thread_button {
+    &.p-huddle_toolbar__thread_button--full_bleed {
+      background: $notif;
+      color: $fg;
+
+      &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+        background: $notif;
+        box-shadow:
+          0 0 0 1px $notif,
+          0 1px 3px 0 #00000014;
+        color: $selectFg;
+      }
+    }
+
+    background: none;
+  }
+
+  .p-huddle_toolbar__button--toggled_on {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  .p-huddle_toolbar__troubleshooting_button {
+    color: $text;
+
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $accentT;
+      color: $fg;
+    }
+  }
+
+  .p-huddle_toolbar__troubleshooting_button--toggled_on {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_toolbar__troubleshooting_button--compact_mode {
+  color: $text;
+
+  &:hover {
+    background-color: $hl;
+    color: $fg;
+  }
+}
+
+.p-huddle_toolbar_thread_button__container {
+  .p-huddle_toolbar_thread_button {
+    background: $notif;
+    color: $fg;
+
+    &:hover {
+      box-shadow:
+        0 0 0 1px $border,
+        0 1px 3px 0 #00000014;
+    }
+  }
+
+  .p-huddle_toolbar_thread_button__badge_circle {
+    background: $red;
+  }
+}
+
+.p-huddle_toolbar_thread_button.p-huddle_toolbar_thread_button--closed {
+  background-color: $button;
+  color: $disabled;
+
+  &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+    background-color: $hl;
+    color: $fg;
+  }
+}
+
+.p-ia4_client--theming
+  .p-huddle_toolbar_thread_button.p-huddle_toolbar_thread_button--closed:hover:not(
+    [disabled],
+    .p-huddle_toolbar__button--toggled_on
+  ) {
+  background-color: $button;
+  color: $disabled;
+}
+
+.p-huddle_topic {
+  color: $text;
+
+  &:hover {
+    background-color: $hl;
+    color: $fg;
+  }
+}
+
+.p-huddle_topic--has-topic {
+  color: $fg;
+}
+
+.p-huddle_participants_menu_item__pending_display_container {
+  color: $fg;
+}
+
+.p-huddle_participants_menu__menu_item.c-menu_item__button--highlighted .c-base_entity__subtext {
+  color: $text;
+}
+
+.p-huddle_participants_menu__add_user {
+  background-color: $bg2;
+  color: $accent2;
+}
+
+.p-huddle_participants_menu_trigger__button.p-huddle_participants_menu_trigger__button--full_window {
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &.p-huddle_toolbar__button--toggled_on {
+    color: $accent;
+  }
+}
+
+.p-huddle_participants_menu_trigger__button--active {
+  background: $accent;
+}
+
+.sk-client-theme--dark .p-huddle_participants_menu_trigger__button--active {
+  background-color: $accent;
+  color: $selectFg;
+
+  &:hover {
+    background: $accentT;
+  }
+}
+
+.p-huddle_add_teammates_coachmark {
+  background: $notif;
+  color: $fg;
+
+  .c-coachmarkv2__close {
+    &.c-icon_button--default,
+    &.c-icon_button--light {
+      color: $fg;
+
+      &:hover {
+        color: $selectFg;
+      }
+    }
+  }
+
+  .c-coachmarkv2__content,
+  .c-coachmarkv2__body {
+    color: $fg;
+  }
+
+  &.c-coachmark--top {
+    &:after,
+    &:before {
+      border-top-color: $borderLight;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-huddle_add_teammates_coachmark {
+  background-color: $notif;
+  color: $fg;
+
+  .c-coachmarkv2__body {
+    color: $fg;
+  }
+
+  .c-coachmarkv2__close {
+    &.c-icon_button--default,
+    &.c-icon_button--light {
+      color: $fg;
+
+      &:hover {
+        color: $selectFg;
+      }
+    }
+  }
+
+  .c-coachmarkv2__content {
+    color: $fg;
+  }
+
+  &.c-coachmark--top {
+    &:after,
+    &:before {
+      border-top-color: $borderLight;
+    }
+  }
+}

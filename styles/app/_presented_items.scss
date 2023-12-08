@@ -1,0 +1,33 @@
+.p-presented_items_pane__container {
+  background-color: $bg;
+
+  .p-presented_items_pane__button {
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-presented_items_pane__button {
+  color: $fg;
+}
+
+.p-presented_items_pane__button--left:before,
+.p-presented_items_pane__button--right:before {
+  background-color: $bg;
+}
+
+.p-presented_items_pane__screenshare {
+  background-color: $bg;
+}
+
+.p-presented_items_pane__screenshare_overlay {
+  background-color: $overlay;
+
+  .p-presented_items_pane__screenshare_overlay__expand_label {
+    background-color: $bg;
+    color: $fg;
+  }
+}

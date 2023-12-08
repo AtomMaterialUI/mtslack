@@ -1,0 +1,73 @@
+.p-huddle_peer_tile {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+
+  &:focus {
+    box-shadow:
+      0 0 0 1px $accent,
+      0 0 0 5px $accentT;
+  }
+
+  .p-huddle_peer_tile__hidden_user_avatar,
+  &.p-huddle_peer_tile_hidden_user {
+    background: $button;
+  }
+}
+
+.p-huddle_peer_tile--black_background {
+  background-color: $contrast;
+}
+
+.p-huddle_peer_tile__actions_button {
+  background: $fg !important;
+  box-shadow:
+    0 0 0 1px $border,
+    0 4px 12px 0 #00000014;
+  color: $bg !important;
+}
+
+.p-huddle_peer_tile__mic_overlay,
+.p-huddle_peer_tile__name_overlay,
+.p-huddle_peer_tile__steps_overlay {
+  background: $fg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+  color: $bg;
+}
+
+.p-huddle_peer_tile__invite_status_overlay {
+  background: $fg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+  color: $bg;
+}
+
+.p-huddle_peer_tile__invite_status_overlay__compact {
+  background-color: $bg;
+  color: $fg;
+}
+
+.p-huddle_peer_tile__emoji_container,
+.p-huddle_peer_tile__sticky_emoji_container {
+  background-color: $bg;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-huddle_peer_tile__active_speaker {
+  box-shadow: 0 0 8px 5px $primary;
+  outline: 3px solid $primary;
+
+  &.p-huddle_peer_tile__active_speaker_compact {
+    box-shadow: 0 0 4px 0 $primary;
+
+    .p-huddle_peer_tile__avatar .c-base_icon,
+    video {
+      outline: 2px solid $primary;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.p-huddle_education__screenshare {
+  &:after {
+    background-color: $accent;
+  }
+}
+
+.p-huddle_education__entrypoint .c-banner__close,
+.p-huddle_education__large_window .c-banner__close,
+.p-huddle_education__mini_player .c-banner__close,
+.p-huddle_education__mini_window .c-banner__close,
+.p-huddle_education__screenshare .c-banner__close {
+  color: $selectFg;
+}
