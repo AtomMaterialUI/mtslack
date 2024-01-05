@@ -40,7 +40,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [mallowigi/mtslack](https://github.com/mallowigi/mtslack)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|33<br/>Tools used|12/14/23 <br/>Report generated|
+|35<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -174,12 +174,14 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (20)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (22)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (20)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (22)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
+|[browserslist](https://www.npmjs.com/browserslist)|v4.21.10|09/08/23|Elior |MIT|N/A|
+|[chalk](https://www.npmjs.com/chalk)|v2.4.2|09/08/23|Elior |MIT|N/A|
 |[clear](https://www.npmjs.com/clear)|v0.1.0|06/10/21|Renovate Bot |MIT|N/A|
 |[clipboardy](https://www.npmjs.com/clipboardy)|v3.0.0|03/08/22|Liam Dyer |MIT|N/A|
 |[clui](https://www.npmjs.com/clui)|v0.3.6|07/17/19|Elior |MIT|N/A|
