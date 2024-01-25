@@ -37,8 +37,9 @@
   &:hover {
     background: $accent;
     color: $selectFg;
-    box-shadow: 0 0 0 1px $borderLight,
-    0 4px 12px 0 $borderLight;
+    box-shadow:
+      0 0 0 1px $borderLight,
+      0 4px 12px 0 $borderLight;
   }
 }
 
@@ -319,10 +320,10 @@
 }
 
 .p-media_viewer_modal:not(.p-media_viewer_modal--transparency_fix_themed_blur)
-.p-media_viewer_modal__playback_speed_button:hover,
+  .p-media_viewer_modal__playback_speed_button:hover,
 .sk-client-theme--dark
-.p-media_viewer_modal.p-media_viewer_modal--transparency_fix_themed_blur
-.p-media_viewer_modal__playback_speed_button:hover {
+  .p-media_viewer_modal.p-media_viewer_modal--transparency_fix_themed_blur
+  .p-media_viewer_modal__playback_speed_button:hover {
   background: $contrast;
 }
 
@@ -333,7 +334,7 @@
     }
 
     .p-media_viewer_modal__footer__gradient {
-      background: $bg;);
+      background: $bg;
     }
   }
 
@@ -375,8 +376,9 @@
     .c-button--focus-visible:focus,
     .c-select_button:focus,
     .p-media_volume_slider__track:focus {
-      box-shadow: 0 0 0 1px $bg,
-      0 0 0 5px $tree;
+      box-shadow:
+        0 0 0 1px $bg,
+        0 0 0 5px $tree;
     }
   }
 }

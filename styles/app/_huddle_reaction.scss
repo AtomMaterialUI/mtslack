@@ -1,17 +1,18 @@
 .p-huddle_reaction_bubble {
-  box-shadow: 0 0 0 1px $border,
-  0 1px 3px 0 #00000014;
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
   color: #1d1c1d;
 
   &:hover {
-    box-shadow: 0 0 0 1px $border,
-    0 4px 12px 0 #00000014;
+    box-shadow:
+      0 0 0 1px $border,
+      0 4px 12px 0 #00000014;
   }
 }
 
 .p-huddle_reaction_bubble--self_reacted {
-  background-color: $active;
-!important;
+  background-color: $active !important;
   color: $accent !important;
 
   &:hover {
@@ -21,8 +22,9 @@
 
   &.c-button--focus-visible,
   &:hover {
-    box-shadow: 0 4px 12px 0 #00000014,
-    0 0 0 1px $accent;
+    box-shadow:
+      0 4px 12px 0 #00000014,
+      0 0 0 1px $accent;
   }
 }
 
@@ -89,7 +91,7 @@
 }
 
 .p-huddle_popover_reaction__audio_only_mode--huddle_window:not(.p-huddle_peer_tile__emoji_container--small_tile)
-.p-huddle_popover_reaction__description {
+  .p-huddle_popover_reaction__description {
   color: $bg;
 }
 
