@@ -1,11 +1,11 @@
 repo_name: mallowigi/mtslack
-report_id: cb218f5997e94ff5cdf6d7a9efafab84
+report_id: 9a8b6dc8574db80a4a80e3fe61f461c1
 repo_type: Public
-timestamp: '2023-11-19T07:53:58+00:00'
+timestamp: '2023-12-14T13:14:24+00:00'
 requested_by: mallowigi
 provider: github
 branch: master
-detected_tools_count: 31
+detected_tools_count: 33
 tools:
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -17,6 +17,29 @@ tools:
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
   detection_source: Repo Metadata
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source: package.json
+  last_updated_by: mallowigi
+  last_updated_on: 2019-07-15 19:43:37.000000000 Z
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: ".idea/whitesource/WebStormUsageMetrics.txt"
+  last_updated_by: Elior
+  last_updated_on: 2021-06-25 14:52:43.000000000 Z
 - name: ESLint
   description: The fully pluggable JavaScript code quality tool
   website_url: http://eslint.org/
@@ -48,7 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -62,7 +85,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/5446/V9JsvPul_400x400.jpg
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -76,7 +99,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: JS Build Tools / JS Task Runners
   image_url: https://img.stackshare.io/service/844/iruTC031.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-31 12:18:44.000000000 Z
@@ -91,6 +114,17 @@ tools:
   detection_source: package.json
   last_updated_by: mallowigi
   last_updated_on: 2019-07-15 19:43:37.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: ".idea/whitesource/WebStormUsageMetrics.txt"
+  last_updated_by: Elior
+  last_updated_on: 2021-06-25 14:52:43.000000000 Z
 - name: Lodash
   description: A JavaScript utility library
   website_url: https://lodash.com
@@ -100,30 +134,24 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/2438/lodash.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Renovate Bot
   last_updated_on: 2021-12-01 07:58:20.000000000 Z
+- name: browserslist
+  website_url: https://github.com/ai/browserslist
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/6650/19343.jpeg
+  detection_source: package.json
+  last_updated_by: Elior
+  last_updated_on: 2023-09-08 18:43:13.000000000 Z
 - name: chalk
   description: terminal colors
   website_url: https://github.com/chalk/chalk
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/8072/13122722.png
-  detection_source: package.json
-  last_updated_by: Elior
-  last_updated_on: 2023-09-08 18:43:13.000000000 Z
-- name: browserslist
-  description: Share target browsers between different front-end tools
-  package_url: https://www.npmjs.com/browserslist
-  version: 4.21.10
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/17198/default_eb6674f470fe213f950fd09d858ebb0f6b6e3dda.png
-  detection_source_url: package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -137,7 +165,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17068/default_88e2e076a71afdc1de87ad42c80c1606f2689af1.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Renovate Bot
   last_updated_on: 2021-06-10 11:29:28.000000000 Z
@@ -151,7 +179,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17902/default_e0b07170ab7d7ea66954ff35fdeaae5255c4c0aa.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Liam Dyer
   last_updated_on: 2022-03-08 21:20:11.000000000 Z
@@ -165,7 +193,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17397/default_7b8a4dd0459c1d55636639cb97d216b33a363a7f.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2019-07-17 16:12:02.000000000 Z
@@ -180,7 +208,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16988/default_32f63a11ae9faad5eff3053ff1a1600fde8a525b.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -194,7 +222,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -208,7 +236,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -222,7 +250,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15874/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -236,7 +264,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -250,7 +278,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16424/default_9ae0e75ed749aca83d89f7e1ccb309be2bfc610e.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -264,7 +292,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16301/default_3b7197abc4df3d7fa7c5292f17b2e6fb0cd1c8d4.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-31 12:18:44.000000000 Z
@@ -278,7 +306,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15895/default_e4668902f8489350db9b0fb228523a571ef05b26.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-31 12:18:44.000000000 Z
@@ -292,7 +320,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16150/default_73326c44fbfa7369fd17573edb113e5d849468bc.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: renovate[bot]
   last_updated_on: 2023-03-31 12:18:44.000000000 Z
@@ -306,7 +334,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16002/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -320,7 +348,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18382/default_0008ec7bce131ce74614376dd8fedbce07bc8742.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -334,7 +362,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16118/default_f905d9556a0330de59b502a579c1f5c4be2b48bf.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-07 06:00:26.000000000 Z
@@ -348,7 +376,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15911/default_4dc9671df0093fd7061f6455afdf054e6cc9dacb.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -362,7 +390,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15997/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2021-06-10 07:30:27.000000000 Z
@@ -376,7 +404,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17112/default_0ffbf6d9ee2940fe94be8424fd9afff068fff458.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Renovate Bot
   last_updated_on: 2021-12-01 07:58:20.000000000 Z
@@ -397,7 +425,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15918/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
@@ -411,21 +439,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package-lock.json
-  detection_source: package.json
-  last_updated_by: Elior
-  last_updated_on: 2023-09-08 18:43:13.000000000 Z
-- name: sass
-  description: A pure JavaScript implementation of Sass
-  package_url: https://www.npmjs.com/sass
-  version: 1.66.1
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16057/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/mallowigi/mtslack/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Elior
   last_updated_on: 2023-09-08 18:43:13.000000000 Z
