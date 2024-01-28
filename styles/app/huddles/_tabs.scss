@@ -1,0 +1,31 @@
+.p-huddle_tabs--border {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-huddle_tabs--right_controls {
+  button.c-button-unstyled:focus {
+    --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
+  }
+
+  .p-huddle_tabs__resize_button {
+    color: $text;
+  }
+}
+
+.p-huddle_tabs__collapse_toggle {
+  &.p-huddle_tabs__collapse_toggle--expanded {
+    box-shadow: inset 0 -1px 0 0 $borderLight;
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow:
+      0 0 0 1px $primary,
+      0 0 0 5px $primaryT;
+  }
+}

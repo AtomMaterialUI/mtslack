@@ -1,0 +1,14 @@
+.p-huddle_participant_detail {
+  box-shadow:
+    0 0 0 1px $border,
+    0 1px 3px 0 #00000014;
+}
+
+.p-huddle_participant_detail__header {
+  box-shadow: 0 1px 0 0 $border;
+
+  .p-huddle_participant_detail__back_button,
+  .p-huddle_participant_detail__close_button {
+    color: $text;
+  }
+}

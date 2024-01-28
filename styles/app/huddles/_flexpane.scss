@@ -1,0 +1,8 @@
+.p-huddle_flexpane > *,
+.p-huddle_flexpane__content {
+  background: $bg;
+}
+
+.p-huddle_window--ia4 .p-huddle_flexpane--compact_mode .p-huddle_flexpane__content {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 0 28px rgba(0, 0, 0, 0.16));
+}

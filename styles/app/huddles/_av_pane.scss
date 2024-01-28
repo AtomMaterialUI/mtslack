@@ -1,0 +1,22 @@
+.p-huddle_compact_av_pane {
+  &.p-huddle_compact_av_pane--audio_only_view:not(
+      .p-huddle_compact_av_pane--in_flexpane,
+      .p-huddle_compact_av_pane--ia4
+    )
+    .p-huddle_toolbar__container
+    .p-huddle_toolbar__button {
+    color: $text;
+
+    &:focus-within:not([disabled], .p-huddle_toolbar__button--toggled_on),
+    &:focus:not([disabled], .p-huddle_toolbar__button--toggled_on),
+    &:hover:not([disabled], .p-huddle_toolbar__button--toggled_on) {
+      background-color: $active;
+      color: $text;
+    }
+
+    &.p-huddle_toolbar__button--toggled_on {
+      background-color: $hl;
+      color: $selectFg;
+    }
+  }
+}

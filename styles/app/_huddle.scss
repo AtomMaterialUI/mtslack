@@ -801,3 +801,9 @@
   background-color: $accent;
   color: $selectFg;
 }
+
+.p-huddle_pagination_avatar_stack__avatar {
+  .c-base_icon {
+    border: 2px solid $bg;
+  }
+}

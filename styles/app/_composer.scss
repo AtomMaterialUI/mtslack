@@ -251,8 +251,8 @@
   }
 
   &.c-icon_button:active {
-    background-color: #fff;
-    color: #1a1d21;
+    background-color: $hl;
+    color: $selectFg;
   }
 
   &.c-icon_button[aria-pressed='true'] {
