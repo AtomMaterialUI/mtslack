@@ -1,7 +1,7 @@
 const slackPluginsAPI = {
   LOCAL_STORAGE: 'slack_plugins',
   pluginsEnabled: true,
-  version: 'v30.1.1',
+  version: 'v31.0.1',
   // Loaded plugins
   plugins: {
     main: {
@@ -576,7 +576,14 @@ class PluginBase {
   init() {
     // Next Theme
     const $toolbarBtn = document.createElement('button');
+    $toolbarBtn.id = `mtslack-${this.name}`;
     this.$el = $toolbarBtn;
+
+    // First remove lingering elements
+    let $oldEl = document.getElementById($toolbarBtn.id);
+    if ($oldEl) {
+      $oldEl.remove();
+    }
 
     $toolbarBtn.className =
       'c-button-unstyled p-classic_nav__right__button p-classic_nav__right__button--sidebar p-classic_nav__right__sidebar p-classic_nav__no_drag';
@@ -591,15 +598,14 @@ class PluginBase {
     let $header = document.querySelector('.p-classic_nav__right_header');
     let $newHeader = document.querySelector('.p-top_nav__right');
     let $newNewHeader = document.querySelector('.p-ia4_top_nav__right_container');
+
     if ($header) {
       // Add buttons
       $header.appendChild($toolbarBtn);
-    }
-    if ($newHeader) {
+    } else if ($newHeader) {
       // Add buttons
       $newHeader.prepend($toolbarBtn);
-    }
-    if ($newNewHeader) {
+    } else if ($newNewHeader) {
       // Add buttons
       $newNewHeader.prepend($toolbarBtn);
     }
@@ -632,7 +638,7 @@ class PluginBase {
         detail: {
           plugin: this,
         },
-      })
+      }),
     );
   }
 
