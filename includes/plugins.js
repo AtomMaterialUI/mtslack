@@ -408,9 +408,13 @@ const slackPluginsAPI = {
    */
   getWorkspaceName() {
     let workspaceName = '';
-    const $workspace = document.getElementsByClassName('p-ia__sidebar_header__team_name_text')[0];
+    const $workspace = document.querySelector('.p-ia__sidebar_header__team_name_text');
+    const $newWorkspace = document.querySelector('.p-ia4_home_header_menu__team_name');
+
     if ($workspace) {
       workspaceName = $workspace.textContent;
+    } else if ($newWorkspace) {
+      workspaceName = $newWorkspace.textContent;
     }
     return workspaceName;
   },

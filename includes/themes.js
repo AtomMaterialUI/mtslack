@@ -87,7 +87,7 @@ class NextThemePlugin extends window.slackPluginsAPI.pluginBase {
           name: this.themes[this.currentTheme],
           css: window.themePresets[this.themes[this.currentTheme]],
         },
-      })
+      }),
     );
     window.slackPluginsAPI.saveSettings();
   }
