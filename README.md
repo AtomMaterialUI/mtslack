@@ -85,15 +85,15 @@ website. [[Become a sponsor](https://opencollective.com/atom-material-themes-and
 
 **You will need node > 16 to use it.**
 
-1. Run `npm install -g mtslack` in a terminal (or run `sudo npx mtslack` if you don't want to install it globally)
-2. Run the command `sudo mtslack` (in Windows, you need to open the Terminal in Administrator Mode)
+1. Run `npm install -g mtslack` in a terminal (or run `npx mtslack` if you don't want to install it globally)
+2. Run the command `mtslack`
 3. You will be prompted with a menu the following options:
     - Copy code to clipboard
     - Show plugin version
 
 4. Select *Copy to clipboard* to copy the code snippet to your clipboard.
-5. Open Slack in dev mode: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
-6. Go to View -> Developer -> Toggle Deve Tools
+5. Slack will open in dev mode: `export SLACK_DEVELOPER_MENU=true; open -a /Applications/Slack.app`
+6. Go to View -> Developer -> Toggle Dev Tools
 7. In the Dev Tools Console tab, paste the code snippet
 8. ?????
 9. PROFIT!!!!!!!
@@ -190,6 +190,14 @@ Settings.
 
 Switch the current theme's links color with the one of your choice. You can set the desired color in the Slack Tweak
 Settings.
+
+#### Click to Edit
+
+Double click on your messages to edit it. If you double click on other people's messages, it will copy it to clipboard.
+
+#### Animations
+
+Add animations to your Slack window.
 
 
 ----
