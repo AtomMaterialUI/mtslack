@@ -6,19 +6,16 @@
 
 Beautify your Slack application from a list of popular themes!!!
 
-# IMPORTANT NOTICE
+# Deprecation notice
 
-Since version 4.22.0, there is no longer a way to patch the Slack application as Slack has patched the option to add
-custom code.
+As Slack now blocked the ability to open DevTools, it's no longer possible to apply custom CSS to the Slack Window.
 
-This makes sense, as doing so would potentially allow people to inject malicious code into the application (this plugin
-isn't, of course).
+We had a good run, goodbye folks and thanks for the fish.
 
-Therefore, this great plugin will no longer patch the Slack application; instead, it will generate a code snippet that
-can be pasted into the Slack application to inject the themes manually.
+-------------
 
-Currently works only for Mac OS and Linux, as it uses `pbcopy` to handle the copy to clipboard. Contributions for
-Windows are welcome.
+# Features
+
 
 **Theme List**:
 
