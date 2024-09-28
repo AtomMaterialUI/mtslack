@@ -1,6 +1,6 @@
 {
   "name": "mtslack",
-  "version": "31.1.0",
+  "version": "31.1.1",
   "description": "Material themes (and others) for Slack!",
   "main": "main.js",
   "type": "module",
@@ -91,7 +91,7 @@
     "gulp-rename": "2.0.0",
     "gulp-replace": "1.1.4",
     "gulp-sass": "5.1.0",
-    "hosted-git-info": "7.0.0",
+    "hosted-git-info": "7.0.2",
     "http-server": "14.1.1",
     "lodash.template": "4.5.0",
     "npx": "10.2.2",
